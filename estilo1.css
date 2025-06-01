@@ -1,0 +1,39 @@
+/* Importação de fonte divertida do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;700&display=swap');
+
+/* --- Estilos Globais e Reset Básico --- */
+:root {
+    /* Cores principais */
+    --primary-color: #FF6B6B; /* Vermelho vibrante */
+    --secondary-color: #87CEEB; /* Azul Claro (SkyBlue) para botões secundários */
+    --accent-color: #FFD166; /* Amarelo ensolarado */
+    --dark-blue: #0A1931; /* Azul escuro para texto principal */
+    --light-gray: #F8F8F8; /* Fundo claro */
+    --white: #FFFFFF;
+    --cyan-blue: #00BCD4; /* Azul Ciano para info-section h2 */
+
+    /* Sombras */
+    --btn-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --container-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    /* Bordas */
+    --border-radius-lg: 25px;
+    --border-radius-md: 15px;
+}
+
+/* estilo1.css */
+
+.btn {
+  background: rgba(0,119,204,0.85);
+  color: #fff;
+}
+.btn:hover {
+  background: rgba(0,95,163,0.85);
+}
+.btn.secondary {
+  background: rgba(85,85,85,0.85);
+  color: #fff;
+}
+h1, h2 {
+  color: #0077cc;
+}

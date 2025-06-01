@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap');
+
+/* Variáveis de Tema */
+:root {
+  --primary-color: #8C00FF;        /* Roxo Neon */
+  --secondary-color: #39FF14;      /* Verde Neon */
+  --accent-color: #FF4D4D;         /* Vermelho Vivo */
+  --background-color: #121212;     /* Preto Profundo */
+  --card-color: #1E1E1E;           /* Cinza Escuro */
+  --text-color: #E0E0E0;           /* Cinza Claro */
+  --border-radius-md: 12px;
+  --border-radius-lg: 24px;
+  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* estilo2.css */
+
+.btn {
+  background: #FF6B6B;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn.secondary {
+  background: #87CEEB;
+  color: #fff;
+}
+h1, h2 {
+  color: #222;
+}

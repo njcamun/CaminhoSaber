@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <category name="trivium">
+    <class name="primaria">
+      <grade name="basico">
+        <level name="1">
+          <question>
+            <text>Qual é a primeira letra do seu nome?</text>
+            <description>A primeira letra do nosso nome é muito especial!</description>
+            <option correct="true">Depende do nome da criança (ex: A, B, C, D)</option>
+            <option correct="false">A última letra</option>
+            <option correct="false">Um número</option>
+            <option correct="false">Um desenho</option>
+          </question>
+          <question>
+            <text>Qual destas palavras começa com a letra 'A'?</text>
+            <description>Pense em palavras que começam com o som 'A'.</description>
+            <option correct="true">Avião</option>
+            <option correct="false">Bolo</option>
+            <option correct="false">Casa</option>
+            <option correct="false">Dedo</option>
+          </question>
+          <question>
+            <text>Quantas letras tem a palavra 'SOL'?</text>
+            <description>Vamos contar as letrinhas da palavra SOL.</description>
+            <option correct="true">3</option>
+            <option correct="false">2</option>
+            <option correct="false">4</option>
+            <option correct="false">5</option>
+          </question>
+          <question>
+            <text>Qual a última letra da palavra 'GATO'?</text>
+            <description>A última letra está no final da palavra.</description>
+            <option correct="true">O</option>
+            <option correct="false">A</option>
+            <option correct="false">T</option>
+            <option correct="false">G</option>
+          </question>
+          <question>
+            <text>Qual destas é uma vogal?</text>
+            <description>As vogais são A, E, I, O, U. Elas têm um som especial!</description>
+            <option correct="true">E</option>
+            <option correct="false">B</option>
+            <option correct="false">M</option>
+            <option correct="false">P</option>
+          </question>
+          <question>
+            <text>Qual destas palavras rima com 'PÃO'?</text>
+            <description>Palavras que rimam têm sons finais parecidos.</description>
+            <option correct="true">CÃO</option>
+            <option correct="false">MESA</option>
+            <option correct="false">AGUA</option>
+            <option correct="false">FLOR</option>
+          </question>
+          <question>
+            <text>Complete a palavra: B_LA (para formar 'BOLA')</text>
+            <description>Qual letra faz o som certo para completar a palavra?</description>
+            <option correct="true">O</option>
+            <option correct="false">A</option>
+            <option correct="false">U</option>
+            <option correct="false">E</option>
+          </question>
+          <question>
+            <text>Qual dessas palavras é o nome de um animal?</text>
+            <description>Pense nos animais que você conhece.</description>
+            <option correct="true">LEÃO</option>
+            <option correct="false">CADEIRA</option>
+            <option correct="false">JANELA</option>
+            <option correct="false">LÁPIS</option>
+          </question>
+          <question>
+            <text>Qual o som inicial da palavra 'MACACO'?</text>
+            <description>Qual o som que fazemos quando começamos a dizer 'Macaco'?</description>
+            <option correct="true">Ma</option>
+            <option correct="false">Ca</option>
+            <option correct="false">Co</option>
+            <option correct="false">Mo</option>
+          </question>
+          <question>
+            <text>Qual letra vem depois do 'C' no alfabeto?</text>
+            <description>Vamos recitar o alfabeto: A, B, C...</description>
+            <option correct="true">D</option>
+            <option correct="false">B</option>
+            <option correct="false">E</option>
+            <option correct="false">F</option>
+          </question>
+        </level>
+        <level name="2">
+          <question>
+            <text>Junte as sílabas para formar uma palavra: CA + SA</text>
+            <description>As sílabas, quando se juntam, formam palavras!</description>
+            <option correct="true">CASA</option>
+            <option correct="false">SACA</option>
+            <option correct="false">ASAC</option>
+            <option correct="false">CASAÇO</option>
+          </question>
+          <question>
+            <text>Quantas sílabas tem a palavra 'MESA'?</text>
+            <description>Vamos bater palmas para cada pedacinho da palavra: ME-SA.</description>
+            <option correct="true">Duas</option>
+            <option correct="false">Uma</option>
+            <option correct="false">Três</option>
+            <option correct="false">Quatro</option>
+          </question>
+          <question>
+            <text>Qual a sílaba que falta para completar a palavra 'GA__TO' (para formar 'GATO')?</text>
+            <description>Qual sílaba faz o som do meio da palavra 'Gato'?</description>
+            <option correct="true">TO</option>
+            <option correct="false">TE</option>
+            <option correct="false">TA</option>
+            <option correct="false">TU</option>
+          </question>
+          <question>
+            <text>Qual dessas palavras é maior?</text>
+            <description>Qual palavra tem mais letras ou mais sílabas?</description>
+            <option correct="true">ELEFANTE</option>
+            <option correct="false">PÉ</option>
+            <option correct="false">MÃO</option>
+            <option correct="false">SOL</option>
+          </question>
+          <question>
+            <text>Qual palavra é o oposto de 'GRANDE'?</text>
+            <description>O oposto é o contrário de algo.</description>
+            <option correct="true">PEQUENO</option>
+            <option correct="false">ENORME</option>
+            <option correct="false">ALTO</option>
+            <option correct="false">FORTE</option>
+          </question>
+          <question>
+            <text>Qual palavra completa a frase: 'Eu gosto de comer _______' (comida)?</text>
+            <description>O que você gosta de comer?</description>
+            <option correct="true">COMIDA</option>
+            <option correct="false">CAMA</option>
+            <option correct="false">RUA</option>
+            <option correct="false">LIVRO</option>
+          </question>
+          <question>
+            <text>Qual dessas palavras é um nome de cor?</text>
+            <description>Pense nas cores que você conhece.</description>
+            <option correct="true">AZUL</option>
+            <option correct="false">CACHORRO</option>
+            <option correct="false">BRINQUEDO</option>
+            <option correct="false">ESCOLA</option>
+          </question>
+          <question>
+            <text>Complete a palavra: L_ÃO (para formar 'LEÃO')</text>
+            <description>Qual letra faz o som do meio dessa palavra?</description>
+            <option correct="true">E</option>
+            <option correct="false">I</option>
+            <option correct="false">A</option>
+            <option correct="false">O</option>
+          </question>
+          <question>
+            <text>Qual dessas palavras é um nome de fruta?</text>
+            <description>Pense nas frutas deliciosas que você come.</description>
+            <option correct="true">MAÇÃ</option>
+            <option correct="false">CARRO</option>
+            <option correct="false">CADEIRA</option>
+            <option correct="false">FLOR</option>
+          </question>
+          <question>
+            <text>Qual palavra é formada pelas letras C-A-O?</text>
+            <description>Vamos juntar os sons das letras.</description>
+            <option correct="true">CÃO</option>
+            <option correct="false">COA</option>
+            <option correct="false">OCA</option>
+            <option correct="false">ACO</option>
+          </question>
+        </level>
+        <level name="3">
+          <question>
+            <text>Qual a palavra correta: 'O' ou 'A' para 'menino'?</text>
+            <description>'O' e 'A' são artigos que usamos antes dos nomes.</description>
+            <option correct="true">O</option>
+            <option correct="false">A</option>
+            <option correct="false">UM</option>
+            <option correct="false">UMA</option>
+          </question>
+          <question>
+            <text>Qual a palavra correta: 'O' ou 'A' para 'menina'?</text>
+            <description>Qual artigo combina com 'menina'?</description>
+            <option correct="true">A</option>
+            <option correct="false">O</option>
+            <option correct="false">UM</option>
+            <option correct="false">UMA</option>
+          </question>
+          <question>
+            <text>Se temos um carro, como falamos para muitos carros?</text>
+            <description>Quando é mais de um, a palavra muda um pouquinho.</description>
+            <option correct="true">CARROS</option>
+            <option correct="false">CARRO</option>
+            <option correct="false">CARRA</option>
+            <option correct="false">CARRINHO</option>
+          </question>
+          <question>
+            <text>Como se fala o plural de 'FLOR'?</text>
+            <description>O plural é quando temos mais de uma coisa.</description>
+            <option correct="true">FLORES</option>
+            <option correct="false">FLOR</option>
+            <option correct="false">FLORZINHAS</option>
+            <option correct="false">FLORÃO</option>
+          </question>
+          <question>
+            <text>Qual a palavra correta para '___ bola'?</text>
+            <description>Pense no artigo que combina com 'bola'.</description>
+            <option correct="true">A</option>
+            <option correct="false">O</option>
+            <option correct="false">AS</option>
+            <option correct="false">OS</option>
+          </question>
+          <question>
+            <text>Qual a palavra correta para '___ livros'?</text>
+            <description>Quando são muitos, qual artigo usamos?</description>
+            <option correct="true">OS</option>
+            <option correct="false">AS</option>
+            <option correct="false">A</option>
+            <option correct="false">O</option>
+          </question>
+          <question>
+            <text>Como se fala 'uma maçã' no plural?</text>
+            <description>Vamos transformar uma em muitas!</description>
+            <option correct="true">UMAS MAÇÃS</option>
+            <option correct="false">UM MAÇÃS</option>
+            <option correct="false">UMA MAÇÃ</option>
+            <option correct="false">MAÇÃS</option>
+          </question>
+          <question>
+            <text>Complete a frase: 'Eu vi ___ cachorro' (um ou uma)?</text>
+            <description>Qual palavra combina com 'cachorro'?</description>
+            <option correct="true">UM</option>
+            <option correct="false">UMA</option>
+            <option correct="false">UN</option>
+            <option correct="false">UMAS</option>
+          </question>
+          <question>
+            <text>Complete a frase: 'Ela tem ___ bonecas' (uma ou umas)?</text>
+            <description>Se são muitas bonecas, qual palavra usamos?</description>
+            <option correct="true">UMAS</option>
+            <option correct="false">UMA</option>
+            <option correct="false">UM</option>
+            <option correct="false">UNS</option>
+          </question>
+          <question>
+            <text>Qual a palavra que nomeia 'um grupo de pássaros'?</text>
+            <description>Quando muitos pássaros voam juntos, eles formam um...</description>
+            <option correct="true">BANDO</option>
+            <option correct="false">NINHO</option>
+            <option correct="false">PÁSSARO</option>
+            <option correct="false">REBANHO</option>
+          </question>
+        </level>
+        <level name="4">
+          <question>
+            <text>Qual a palavra que indica uma ação em 'O menino corre'?</text>
+            <description>Ação é o que a pessoa ou o animal faz.</description>
+            <option correct="true">CORRE</option>
+            <option correct="false">MENINO</option>
+            <option correct="false">O</option>
+            <option correct="false">A</option>
+          </question>
+          <question>
+            <text>Qual a palavra que indica o que o passarinho faz em 'O passarinho voa'?</text>
+            <description>O que o passarinho está fazendo?</description>
+            <option correct="true">VOA</option>
+            <option correct="false">PASSARINHO</option>
+            <option correct="false">O</option>
+            <option correct="false">CANTA</option>
+          </question>
+          <question>
+            <text>Qual palavra completa a frase: 'O bebê ___' (chorar)?</text>
+            <description>Qual é o verbo que combina com 'bebê' no presente?</description>
+            <option correct="true">CHORA</option>
+            <option correct="false">CHOROU</option>
+            <option correct="false">CHORAR</option>
+            <option correct="false">CHORARÁ</option>
+          </question>
+          <question>
+            <text>Qual palavra completa a frase: 'A menina ___ um livro' (ler)?</text>
+            <description>O que a menina está fazendo com o livro?</description>
+            <option correct="true">LÊ</option>
+            <option correct="false">LENDO</option>
+            <option correct="false">LEREI</option>
+            <option correct="false">LIDA</option>
+          </question>
+          <question>
+            <text>Qual dessas frases está correta?</text>
+            <description>As palavras têm uma ordem certa para a frase fazer sentido.</description>
+            <option correct="true">A BOLA PULA.</option>
+            <option correct="false">PULA A BOLA.</option>
+            <option correct="false">BOLA A PULA.</option>
+            <option correct="false">A PULA BOLA.</option>
+          </question>
+          <question>
+            <text>Qual dessas frases tem um verbo?</text>
+            <description>Verbo é a palavra que indica ação, estado ou fenômeno da natureza.</description>
+            <option correct="true">O SOL BRILHA.</option>
+            <option correct="false">A CASA BONITA.</option>
+            <option correct="false">UM GATO PRETO.</option>
+            <option correct="false">UMA FLOR AZUL.</option>
+          </question>
+          <question>
+            <text>Qual é o sujeito da frase 'A vovó cozinha'?</text>
+            <description>Sujeito é quem faz a ação na frase.</description>
+            <option correct="true">A VOVÓ</option>
+            <option correct="false">COZINHA</option>
+            <option correct="false">VOVÓ</option>
+            <option correct="false">ELA</option>
+          </question>
+          <question>
+            <text>Qual é a ação na frase 'O pássaro canta'?</text>
+            <description>O que o pássaro está fazendo?</description>
+            <option correct="true">CANTA</option>
+            <option correct="false">PÁSSARO</option>
+            <option correct="false">O</option>
+            <option correct="false">VOAR</option>
+          </question>
+          <question>
+            <text>Complete a frase: 'Os peixes ___ na água' (nadar)?</text>
+            <description>O que os peixes fazem na água?</description>
+            <option correct="true">NADAM</option>
+            <option correct="false">NADANDO</option>
+            <option correct="false">NADOU</option>
+            <option correct="false">NADARÃO</option>
+          </question>
+          <question>
+            <text>Qual palavra indica quem está fazendo a ação em 'O papai lê o jornal'?</text>
+            <description>Quem está lendo o jornal?</description>
+            <option correct="true">O PAPAI</option>
+            <option correct="false">LÊ</option>
+            <option correct="false">JORNAL</option>
+            <option correct="false">ELE</option>
+          </question>
+        </level>
+        <level name="5">
+          <question>
+            <text>Qual palavra descreve a bola em 'A bola é redonda'?</text>
+            <description>A palavra que descreve é um adjetivo, que nos diz como algo é.</description>
+            <option correct="true">REDONDA</option>
+            <option correct="false">BOLA</option>
+            <option correct="false">É</option>
+            <option correct="false">A</option>
+          </question>
+          <question>
+            <text>Qual palavra descreve o sol em 'O sol está quente'?</text>
+            <description>Como o sol está?</description>
+            <option correct="true">QUENTE</option>
+            <option correct="false">SOL</option>
+            <option correct="false">ESTÁ</option>
+            <option correct="false">O</option>
+          </question>
+          <question>
+            <text>Qual a palavra que descreve o cachorro em 'O cachorro é fofo'?</text>
+            <description>Como é o cachorro?</description>
+            <option correct="true">FOFO</option>
+            <option correct="false">CACHORRO</option>
+            <option correct="false">É</option>
+            <option correct="false">O</option>
+          </question>
+          <question>
+            <text>Qual o sinal de pontuação que usamos no final de uma pergunta?</text>
+            <description>Quando fazemos uma pergunta, usamos um sinal especial.</description>
+            <option correct="true">?</option>
+            <option correct="false">.</option>
+            <option correct="false">!</option>
+            <option correct="false">,</option>
+          </question>
+          <question>
+            <text>Qual o sinal de pontuação que usamos no final de uma frase normal?</text>
+            <description>No final de uma frase que não é pergunta nem exclamação.</description>
+            <option correct="true">.</option>
+            <option correct="false">!</option>
+            <option correct="false">?</option>
+            <option correct="false">,</option>
+          </question>
+          <question>
+            <text>Como ficaria a frase 'A flor é cheirosa' se a flor não fosse cheirosa?</text>
+            <description>Vamos mudar a frase para dizer o oposto.</description>
+            <option correct="true">A FLOR NÃO É CHEIROSA.</option>
+            <option correct="false">A FLOR É LINDA.</option>
+            <option correct="false">A FLOR É COLORIDA.</option>
+            <option correct="false">A FLOR CHEIROSA.</option>
+          </question>
+          <question>
+            <text>Qual a palavra que indica o contrário de 'FELIZ'?</text>
+            <description>O que você sente quando não está feliz?</description>
+            <option correct="true">TRISTE</option>
+            <option correct="false">ALEGRE</option>
+            <option correct="false">CONTENTE</option>
+            <option correct="false">SORRIDENTE</option>
+          </question>
+          <question>
+            <text>O que significa a palavra 'RÁPIDO' em 'O coelho é rápido'?</text>
+            <description>Quando algo é rápido, ele se move como?</description>
+            <option correct="true">VELOZ</option>
+            <option correct="false">LENTO</option>
+            <option correct="false">PEQUENO</option>
+            <option correct="false">GRANDE</option>
+          </question>
+          <question>
+            <text>Qual a palavra que indica uma qualidade na frase 'O céu é azul'?</text>
+            <description>Qualidade é como algo é.</description>
+            <option correct="true">AZUL</option>
+            <option correct="false">CÉU</option>
+            <option correct="false">É</option>
+            <option correct="false">O</option>
+          </question>
+          <question>
+            <text>Se você está muito feliz, qual sinal de pontuação você usaria no final da frase 'Eu estou feliz'?</text>
+            <description>Para mostrar uma emoção forte, usamos este sinal.</description>
+            <option correct="true">!</option>
+            <option correct="false">.</option>
+            <option correct="false">?</option>
+            <option correct="false">,</option>
+          </question>
+        </level>
+      </grade>
+    </class>
+  </category>
+</quiz>
