@@ -1,5 +1,5 @@
 // script.js
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
   // ======== SONS ========
   const correctSound   = new Audio('sounds/correct.mp3');
   const incorrectSound = new Audio('sounds/incorrect.mp3');
@@ -16,19 +16,21 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   // --- Estado e Dados ---
-  let quizData = {};
+  let quizData = {};               // JSON carregado para a categoria atual
   let currentCategory = '';
   let currentLevel = '';
-  let quizQuestions = [], currentQuestionIndex = 0, score = 0;
+  let quizQuestions = [],
+      currentQuestionIndex = 0,
+      score = 0;
   let timerInterval, timeLeft;
 
-  // --- Mapeamento de telas ---
+  // --- Mapeamento de telas (IDs de index.html) ---
   const screens = {
     welcome:     document.getElementById('welcomeScreen'),
     home:        document.getElementById('homeScreen'),
+    category:    document.getElementById('categoryScreen'),
     settings:    document.getElementById('settingsScreen'),
     about:       document.getElementById('aboutScreen'),
-    category:    document.getElementById('categoryScreen'),
     level:       document.getElementById('levelScreen'),
     question:    document.getElementById('questionScreen'),
     result:      document.getElementById('resultScreen'),
@@ -61,17 +63,23 @@ document.addEventListener('DOMContentLoaded', async () => {
   const themeStylesheetLink       = document.getElementById('themeStylesheet');
 
   const backFromAbout             = document.getElementById('backFromAbout');
+  const backFromHistory           = document.getElementById('backFromHistory');
+
+  // Novos botões da tela de resultado e o que já existe
+  const playAgainButton           = document.getElementById('playAgainButton');
+  const changeCategoryButton      = document.getElementById('changeCategoryButton'); // ID Alterado
+  const nextLevelButton           = document.getElementById('nextLevelButton'); // NOVO BOTÃO
+  const nextLevelNumDisplay       = document.getElementById('nextLevelNum'); // Para exibir o número do próximo nível
+
 
   const backToHomeFromCategory    = document.getElementById('backToHomeFromCategory');
   const backToCategoryFromLevel   = document.getElementById('backToCategoryFromLevel');
   const backToLevelFromQuestion   = document.getElementById('backToLevelFromQuestion');
-  const backFromHistory           = document.getElementById('backFromHistory');
 
-  const playAgainButton           = document.getElementById('playAgainButton');
-  const backToHomeFromResult      = document.getElementById('backToHomeFromResult');
+  // Botões de categoria (captura via classe)
+  const categoryButtons           = document.querySelectorAll('.category-btn');
 
   // --- Seletores de container para renderização dinâmica ---
-  const categoryGrid              = document.getElementById('categorySelectionGrid');
   const levelGrid                 = document.getElementById('levelSelectionGrid');
 
   // --- Elementos da tela de perguntas ---
@@ -106,10 +114,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     localStorage.setItem('participantName', participantNameInput.value.trim());
   });
 
-  // Carrega dados do XML de perguntas
-  await loadQuizData();
-
-  // Acesso aos botões principais
+  // --- Fluxo de Navegação Inicial ---
   startButton.addEventListener('click', () => {
     const name = participantNameInput.value.trim();
     if (name.length < 2) {
@@ -122,12 +127,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   playQuizButton.addEventListener('click', () => {
-    if (!quizData || Object.keys(quizData).length === 0) {
-      alert('Nenhuma categoria carregada. Verifique o XML em data/perguntas_padrao.xml.');
-      return;
-    }
+    // Ao clicar em “Jogar Quiz”, vai para a tela de categorias
     show('category');
-    renderCategories();
   });
 
   openSettingsButton.addEventListener('click', () => {
@@ -181,111 +182,86 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   // Voltar para menu principal após resultado
-  backToHomeFromResult.addEventListener('click', () => {
-    show('home');
-  });
+  // backToHomeFromResult.addEventListener('click', () => { // REMOVIDO, AGORA É 'changeCategoryButton'
+  //   show('home');
+  // });
 
-  // Rejogar
-  playAgainButton.addEventListener('click', () => {
+  // NOVO EVENTO para o botão "Mudar Categoria"
+  changeCategoryButton.addEventListener('click', () => {
     show('category');
-    renderCategories();
   });
 
-  // Botões de “Voltar” nas telas de seleção
+  // NOVO EVENTO para o botão "Próximo Nível"
+  nextLevelButton.addEventListener('click', () => {
+      const nextLvlNum = parseInt(currentLevel, 10) + 1;
+      // Define o próximo nível como o currentLevel e inicia o quiz
+      currentLevel = nextLvlNum.toString();
+      startQuiz();
+  });
+
+
+  // Voltar de “Categoria” para “Home”
   backToHomeFromCategory.addEventListener('click', () => {
     show('home');
   });
+
+  // Voltar de “Nível” para “Categoria”
   backToCategoryFromLevel.addEventListener('click', () => {
     show('category');
   });
+
+  // Voltar de “Pergunta” para “Nível”
   backToLevelFromQuestion.addEventListener('click', () => {
     show('level');
   });
 
   // ======================================
-  // 2) Carregar e parsear XML
+  // 2) Quando o usuário clica em uma Categoria
   // ======================================
-  async function loadQuizData() {
-    try {
-      console.log('Tentando carregar XML de: data/perguntas_padrao.xml');
-      const res = await fetch('data/perguntas_padrao.xml', { cache: 'no-cache' });
-      console.log('Fetch status:', res.status, res.statusText);
-      if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
-      const xmlText = await res.text();
-      quizData = parseQuizXML(xmlText);
-      console.log('Categorias carregadas:', Object.keys(quizData));
-    } catch (err) {
-      console.error('Erro em loadQuizData:', err);
-      alert('Erro ao carregar perguntas: ' + err.message);
-    }
-  }
+  categoryButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const rawCategory = btn.dataset.category;
+      currentCategory = rawCategory;
 
-  function parseQuizXML(xmlString) {
-    const xml = new DOMParser().parseFromString(xmlString, 'application/xml');
-    if (xml.querySelector('parsererror')) throw new Error('XML mal formado');
-    const data = {};
+      // Constrói o nome do arquivo JSON (minúsculo e sem espaços):
+      // “Cultura Mundial” → "culturamundial.json"
+      const filename = rawCategory.toLowerCase().replace(/\s+/g, '') + '.json';
 
-    xml.querySelectorAll('quiz > category').forEach(catNode => {
-      const cat = catNode.getAttribute('name');
-      if (!cat) return;
-      data[cat] = {};
-
-      catNode.querySelectorAll(':scope > level').forEach(levelNode => {
-        const lv = levelNode.getAttribute('name');
-        if (!lv) return;
-        const questions = Array.from(levelNode.querySelectorAll('question')).map(qNode => ({
-          question:    qNode.querySelector('text')?.textContent.trim()   || '',
-          description: qNode.querySelector('description')?.textContent.trim() || '',
-          options:     Array.from(qNode.querySelectorAll('option')).map(oNode => ({
-            text:      oNode.textContent.trim(),
-            isCorrect: oNode.getAttribute('correct') === 'true'
-          }))
-        }));
-        data[cat][lv] = questions;
-      });
+      // Faz o fetch no JSON da categoria selecionada
+      fetch(`data/${filename}`, { cache: 'no-cache' })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Não foi possível carregar ${filename}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          // JSON deve estar no formato:
+          // {
+          //   "1": [ { "pergunta": "...", "descricao": "...", "opcoes": [{ "texto": "...", "correta": true }, ...] }, ... ],
+          //   "2": [ ... ],
+          //   ...
+          // }
+          quizData = data;
+          show('level');
+          renderLevels();
+        })
+        .catch(err => {
+          console.error(err);
+          alert('Erro ao carregar perguntas para ‘' + rawCategory + '’: ' + err.message);
+        });
     });
-
-    return data;
-  }
+  });
 
   // ======================================
-  // 3) Renderização Dinâmica de Fluxo
+  // 3) Renderização Dinâmica dos Níveis
   // ======================================
-  function renderCategories() {
-    categoryGrid.innerHTML = '';
-    const icons = {
-      trivium:        '📜',
-      quadrivium:     '🧮',
-      bible:          '📖',
-      generalCulture: '🌐',
-      mwangole:       '🇦🇴',
-      misturaTudo:    '🧩',
-      english:        '🗣️',
-      environment:    '🌿',
-      kimbundu:       '🗨️'
-    };
-
-    for (const cat in quizData) {
-      const btn = document.createElement('button');
-      btn.className = 'btn';
-      btn.dataset.category = cat;
-      const icon = icons[cat] || '❓';
-      btn.innerHTML = `<span class="icon">${icon}</span><br /><h3>${capitalize(cat)}</h3>`;
-      btn.addEventListener('click', () => {
-        currentCategory = cat;
-        show('level');
-        renderLevels();
-      });
-      categoryGrid.appendChild(btn);
-    }
-  }
-
   function renderLevels() {
     levelGrid.innerHTML = '';
-    const levelsObj = quizData[currentCategory];
-    const nivelKeys  = Object.keys(levelsObj).sort((a, b) => parseInt(a) - parseInt(b));
-    const prog       = getProgress();
-    const baseKey    = `${currentCategory}`;
+    const levelsObj = quizData || {};
+    const nivelKeys = Object.keys(levelsObj).sort((a, b) => parseInt(a) - parseInt(b));
+    const prog      = getProgress();
+    const baseKey   = currentCategory;
 
     nivelKeys.forEach(lv => {
       const lvNum = parseInt(lv, 10);
@@ -294,20 +270,28 @@ document.addEventListener('DOMContentLoaded', async () => {
       btn.dataset.level = lv;
       btn.textContent = `Nível ${lv}`;
 
-      // --- Lógica de desbloqueio no modo Quiz ---
+      // --- Lógica de desbloqueio e estrelas ---
       const prevLvl = lvNum - 1;
       const progressObj = prog[baseKey] || {};
-      const isUnlocked = (lvNum === 1) ||
-                         (progressObj[`level${prevLvl}`] === 'completed') ||
-                         (progressObj[`level${lvNum}`] === 'completed');
+      const levelProgress = progressObj[`level${lvNum}`];
+      // prevLevelCompleted verifica se o nível anterior existe E não é apenas 'available' (significa que foi concluído de alguma forma)
+      const prevLevelCompleted = progressObj[`level${prevLvl}`] && progressObj[`level${prevLvl}`] !== 'available' && progressObj[`level${prevLvl}`] !== 'failed';
+
+
+      const isUnlocked = lvNum === 1 || prevLevelCompleted; // Primeiro nível sempre desbloqueado, outros se o anterior foi concluído
 
       if (!isUnlocked) {
         btn.classList.add('locked-level');
         btn.disabled = true;
         btn.textContent += ' 🔒';
       } else {
-        if (progressObj[`level${lvNum}`] === 'completed') {
-          btn.textContent += ' ⭐';
+        // Aplica estrelas com base no progresso salvo para este nível
+        if (levelProgress === 'three_stars') {
+            btn.textContent += ' ⭐⭐⭐';
+        } else if (levelProgress === 'two_stars') {
+            btn.textContent += ' ⭐⭐';
+        } else if (levelProgress === 'one_star') { // 'completed' também será 'one_star'
+            btn.textContent += ' ⭐';
         }
       }
 
@@ -326,7 +310,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 4) Lógica Principal do Quiz
   // ======================================
   function startQuiz() {
-    quizQuestions = quizData[currentCategory][currentLevel].slice();
+    // Usa 'currentLevel' para acessar o array de perguntas do quizData
+    quizQuestions = (quizData[currentLevel] || []).slice();
+    if (!quizQuestions.length) {
+      alert('Nenhuma pergunta encontrada neste nível.');
+      return;
+    }
     shuffleArray(quizQuestions);
     currentQuestionIndex = 0;
     score = 0;
@@ -340,7 +329,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     show('question');
     questionCategoryLevelTitle.textContent =
-      `${capitalize(currentCategory)} – Nível ${currentLevel}`;
+      `${currentCategory} – Nível ${currentLevel}`;
     displayQuestion();
   }
 
@@ -349,22 +338,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     const questionObj = quizQuestions[currentQuestionIndex];
 
     currentQuestionNumDisplay.textContent = currentQuestionIndex + 1;
-    questionTextElement.textContent = questionObj.question;
+    questionTextElement.textContent = questionObj.pergunta;
 
-    // Limpa feedback e classes antigas
     feedbackMessageElement.textContent = '';
     feedbackMessageElement.classList.remove('correct', 'incorrect');
     optionsContainer.innerHTML = '';
     nextQuestionButton.classList.add('hidden');
     hintButton.disabled = false;
 
-    // Cria botões de opção
-    const shuffledOptions = shuffleArray(questionObj.options.slice());
+    const shuffledOptions = shuffleArray(questionObj.opcoes.slice());
     shuffledOptions.forEach(opt => {
       const btn = document.createElement('button');
       btn.className = 'btn option-btn';
-      btn.textContent = opt.text;
-      btn.dataset.correct = opt.isCorrect;
+      btn.textContent = opt.texto;
+      btn.dataset.correct = opt.correta;
       btn.addEventListener('click', selectOption);
       optionsContainer.appendChild(btn);
     });
@@ -377,28 +364,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     const selectedBtn = event.currentTarget;
     const isCorrect   = selectedBtn.dataset.correct === 'true';
     const questionObj = quizQuestions[currentQuestionIndex];
-    const correctOptionText = questionObj.options.find(o => o.isCorrect).text;
+    const correctOptionText = questionObj.opcoes.find(o => o.correta).texto;
 
-    // Desabilita todas as opções
+    // Desabilitar todas as opções após a seleção
     document.querySelectorAll('.option-btn').forEach(b => {
       b.disabled = true;
     });
 
     if (isCorrect) {
-      correctSound.play();  // toca som de acerto
-      selectedBtn.classList.add('correct-answer');
+      correctSound.play();
+      selectedBtn.classList.add('correct');
       feedbackMessageElement.textContent = 'Certo! 🎉';
       feedbackMessageElement.classList.add('correct');
       score++;
     } else {
-      incorrectSound.play();  // toca som de erro
-      selectedBtn.classList.add('wrong-answer');
+      incorrectSound.play();
+      selectedBtn.classList.add('wrong');
       feedbackMessageElement.textContent = `Errado! A resposta correta é: "${correctOptionText}"`;
       feedbackMessageElement.classList.add('incorrect');
-      // Destaca a opção correta em verde
+      // Encontrar e aplicar cor verde à opção correta
       const correctBtn = Array.from(document.querySelectorAll('.option-btn'))
                                 .find(b => b.dataset.correct === 'true');
-      if (correctBtn) correctBtn.classList.add('correct-answer');
+      if (correctBtn) correctBtn.classList.add('correct');
     }
 
     nextQuestionButton.classList.remove('hidden');
@@ -435,16 +422,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
   function handleTimeUp() {
-    timeoutSound.play();  // toca som de tempo esgotado
+    timeoutSound.play();
     const questionObj = quizQuestions[currentQuestionIndex];
-    const correctOptionText = questionObj.options.find(o => o.isCorrect).text;
+    const correctOptionText = questionObj.opcoes.find(o => o.correta).texto;
     feedbackMessageElement.textContent = `Tempo esgotado! Resposta: "${correctOptionText}" ⏳`;
     feedbackMessageElement.classList.add('incorrect');
-    // Desabilita todas as opções e marca a correta
+    // Aplicar cor verde à opção correta quando o tempo esgota
     document.querySelectorAll('.option-btn').forEach(b => {
       b.disabled = true;
       if (b.dataset.correct === 'true') {
-        b.classList.add('correct-answer');
+        b.classList.add('correct');
       }
     });
     nextQuestionButton.classList.remove('hidden');
@@ -459,31 +446,55 @@ document.addEventListener('DOMContentLoaded', async () => {
     const totalQ = quizQuestions.length;
     const pct    = (score / totalQ) * 100;
 
-    // Salvar histórico
-    saveQuizHistory(
-      capitalize(currentCategory),
-      currentLevel,
-      score,
-      totalQ
-    );
+    saveQuizHistory(currentCategory, currentLevel, score, totalQ);
 
-    // Atualizar progresso
     const progressObj = getProgress();
-    const keyBase     = `${currentCategory}`;
-    if (!progressObj[keyBase]) progressObj[keyBase] = {};
+    if (!progressObj[currentCategory]) progressObj[currentCategory] = {};
     const levelKey    = `level${currentLevel}`;
-    if (pct >= 80) {
-      progressObj[keyBase][levelKey] = 'completed';
-      const nextLvlNum = parseInt(currentLevel, 10) + 1;
-      if (quizData[currentCategory][nextLvlNum]) {
-        progressObj[keyBase][`level${nextLvlNum}`] = 'available';
-      }
+
+    let newProgressStatus;
+    if (pct === 100) {
+        newProgressStatus = 'three_stars';
+    } else if (pct >= 90) {
+        newProgressStatus = 'two_stars';
+    } else if (pct >= 80) {
+        newProgressStatus = 'one_star'; // Corresponde ao antigo 'completed'
+    } else {
+        newProgressStatus = 'failed'; // Nível não concluído para desbloqueio
     }
-    setProgress(progressObj);
+
+    // Atualiza o status do nível atual APENAS se o novo status for melhor
+    const currentLevelStatus = progressObj[currentCategory][levelKey];
+    const statusOrder = ['failed', 'available', 'one_star', 'two_stars', 'three_stars'];
+
+    // Se o nível não tinha status, ou o novo status é superior ao atual, atualiza
+    if (!currentLevelStatus || statusOrder.indexOf(newProgressStatus) > statusOrder.indexOf(currentLevelStatus)) {
+        progressObj[currentCategory][levelKey] = newProgressStatus;
+    }
+
+
+    // Lógica para desbloquear o próximo nível
+    const nextLvlNum = parseInt(currentLevel, 10) + 1;
+    const nextLevelExists = !!quizData[nextLvlNum]; // Verifica se o próximo nível existe no quizData
+
+    if (newProgressStatus !== 'failed' && nextLevelExists) { // Se o nível atual foi concluído (pelo menos 1 estrela) E o próximo nível existe
+        const nextLevelKey = `level${nextLvlNum}`;
+        // Se o próximo nível ainda não tem status ou é apenas 'available', marca como 'available'
+        if (!progressObj[currentCategory][nextLevelKey] || progressObj[currentCategory][nextLevelKey] === 'failed') {
+            progressObj[currentCategory][nextLevelKey] = 'available';
+        }
+    }
+
+    setProgress(progressObj); // Salva o progresso atualizado no localStorage
+
 
     let msg = `Você acertou ${pct.toFixed(0)}% das perguntas. `;
-    if (pct >= 80) {
-      msg += 'Parabéns, nível concluído! 🎉';
+    if (pct === 100) {
+      msg += 'UAU! Três Estrelas! Nível Perfeito! ⭐⭐⭐';
+    } else if (pct >= 90) {
+      msg += 'Excelente! Duas Estrelas! Continue assim! ⭐⭐';
+    } else if (pct >= 80) {
+      msg += 'Parabéns, nível concluído! Uma Estrela! ⭐';
     } else {
       msg += `É necessário 80% para liberar o próximo nível.`;
     }
@@ -492,11 +503,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     maxScoreSpan.textContent   = totalQ;
     resultMessageParagraph.textContent = msg;
     show('result');
+
+    // Lógica para o botão "Próximo Nível"
+    if (nextLevelExists && newProgressStatus !== 'failed') { // Se o nível foi concluído e há um próximo
+        nextLevelButton.classList.remove('hidden');
+        nextLevelButton.disabled = false;
+        nextLevelNumDisplay.textContent = nextLvlNum; // Exibe o número do próximo nível
+    } else {
+        nextLevelButton.classList.add('hidden'); // Esconde o botão se não houver próximo nível ou não foi concluído
+        nextLevelButton.disabled = true;
+    }
   }
 
   function saveQuizHistory(category, level, score, totalQuestions) {
     const historyArray = JSON.parse(localStorage.getItem('quizHistory') || '[]');
-    const now = new Date().toLocaleString('pt-AO');
+    const now = new Date().toLocaleString('pt-AO', {
+      year: 'numeric', month: 'numeric', day: 'numeric',
+      hour: '2-digit', minute: '2-digit'
+    }); // Formato mais legível para o histórico
     historyArray.push({
       id:          Date.now(),
       participant: participantNameInput.value.trim(),
@@ -535,107 +559,127 @@ document.addEventListener('DOMContentLoaded', async () => {
   // ======================================
   async function loadAboutUs() {
     try {
-      const res = await fetch('./data/sobreNos.xml', { cache: 'no-cache' });
+      const res = await fetch('./data/sobreNos.json', { cache: 'no-cache' });
       if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
-      const xmlText = await res.text();
-      const parser  = new DOMParser().parseFromString(xmlText.trim(), 'application/xml');
-      if (parser.querySelector('parsererror')) throw new Error('XML de Sobre Nós mal formado');
-
-      const root = parser.querySelector('welcomeInfo');
-      if (!root) throw new Error('Tag <welcomeInfo> não encontrada no XML de Sobre Nós.');
-
+      const data = await res.json();
+      const info = data.welcomeInfo;
       const contentDiv = document.getElementById('aboutContent');
       contentDiv.innerHTML = '';
 
-      // <title>
-      const tituloNode = root.querySelector('title');
-      if (tituloNode) {
-        const h3 = document.createElement('h3');
-        h3.textContent = tituloNode.textContent.trim();
-        contentDiv.appendChild(h3);
+      // 1) TÍTULO PRINCIPAL
+      if (info.title) {
+        const h2 = document.createElement('h2');
+        h2.textContent = info.title;
+        contentDiv.appendChild(h2);
       }
-      // <description>
-      const descNode = root.querySelector('description');
-      if (descNode) {
+
+      // 2) LINK DO SITE (se existir)
+      if (info.website) {
+        const pLink = document.createElement('p');
+        pLink.style.marginTop = '0.25rem';
+        // cria <a href="...">Visite nosso site</a>
+        const a = document.createElement('a');
+        a.href = info.website;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = 'Visite nosso site';
+        a.style.color = '#0057e7'; // ou use uma classe CSS
+        pLink.appendChild(a);
+        contentDiv.appendChild(pLink);
+      }
+
+      // 3) DESCRIÇÃO GERAL
+      if (info.description) {
         const pDesc = document.createElement('p');
-        pDesc.textContent = descNode.textContent.trim();
+        pDesc.textContent = info.description;
+        pDesc.style.marginBottom = '1rem';
         contentDiv.appendChild(pDesc);
       }
-      // <whoAreWe>
-      const whoNode = root.querySelector('whoAreWe');
-      if (whoNode) {
-        const tituloWho = whoNode.querySelector('title')?.textContent.trim();
-        const textWho   = whoNode.querySelector('text')?.textContent.trim();
-        if (tituloWho) {
-          const h4 = document.createElement('h4');
-          h4.textContent = tituloWho;
-          contentDiv.appendChild(h4);
+
+      // 4) QUEM SOMOS
+      if (info.whoAreWe && (info.whoAreWe.title || info.whoAreWe.text)) {
+        if (info.whoAreWe.title) {
+          const h3 = document.createElement('h3');
+          h3.textContent = info.whoAreWe.title;
+          h3.style.marginTop = '1rem';
+          contentDiv.appendChild(h3);
         }
-        if (textWho) {
+        if (info.whoAreWe.text) {
           const pWho = document.createElement('p');
-          pWho.textContent = textWho;
+          pWho.textContent = info.whoAreWe.text;
+          pWho.style.marginBottom = '1rem';
           contentDiv.appendChild(pWho);
         }
       }
-      // <location>
-      const locNode = root.querySelector('location');
-      if (locNode) {
-        const tituloLoc = locNode.querySelector('title')?.textContent.trim();
-        if (tituloLoc) {
-          const h4 = document.createElement('h4');
-          h4.textContent = tituloLoc;
-          contentDiv.appendChild(h4);
+
+      // 5) LOCALIZAÇÃO
+      if (info.location && (info.location.title || Array.isArray(info.location.text))) {
+        if (info.location.title) {
+          const h3Loc = document.createElement('h3');
+          h3Loc.textContent = info.location.title;
+          h3Loc.style.marginTop = '1rem';
+          contentDiv.appendChild(h3Loc);
         }
-        locNode.querySelectorAll('text').forEach(txtNode => {
-          const pLoc = document.createElement('p');
-          pLoc.textContent = txtNode.textContent.trim();
-          contentDiv.appendChild(pLoc);
-        });
+        if (Array.isArray(info.location.text)) {
+          const ulLoc = document.createElement('ul');
+          ulLoc.style.listStyle = 'disc';
+          ulLoc.style.marginLeft = '1.5rem';
+          ulLoc.style.marginBottom = '1rem';
+          info.location.text.forEach(linha => {
+            const li = document.createElement('li');
+            li.textContent = linha;
+            ulLoc.appendChild(li);
+          });
+          contentDiv.appendChild(ulLoc);
+        }
       }
-      // <contacts>
-      const contNode = root.querySelector('contacts');
-      if (contNode) {
-        const tituloCont = contNode.querySelector('title')?.textContent.trim();
-        if (tituloCont) {
-          const h4 = document.createElement('h4');
-          h4.textContent = tituloCont;
-          contentDiv.appendChild(h4);
+
+      // 6) CONTACTOS
+      if (info.contacts && (info.contacts.title || info.contacts.email || info.contacts.phone || info.contacts.socialMedia)) {
+        if (info.contacts.title) {
+          const h3Cont = document.createElement('h3');
+          h3Cont.textContent = info.contacts.title;
+          h3Cont.style.marginTop = '1rem';
+          contentDiv.appendChild(h3Cont);
+        }
+        const ulCont = document.createElement('ul');
+        ulCont.style.listStyle = 'none';
+        ulCont.style.paddingLeft = '0';
+        ulCont.style.marginBottom = '1rem';
+
+        if (info.contacts.email) {
+          const liEmail = document.createElement('li');
+          liEmail.innerHTML = `<strong>Email:</strong> ${info.contacts.email}`;
+          ulCont.appendChild(liEmail);
+        }
+        if (info.contacts.phone) {
+          const liPhone = document.createElement('li');
+          liPhone.innerHTML = `<strong>Telefone:</strong> ${info.contacts.phone}`;
+          ulCont.appendChild(liPhone);
+        }
+        if (info.contacts.socialMedia) {
+          const liSM = document.createElement('li');
+          liSM.innerHTML = `<strong>Redes Sociais:</strong> ${info.contacts.socialMedia}`;
+          ulCont.appendChild(liSM);
         }
 
-        const emailNode       = contNode.querySelector('email');
-        const phoneNode       = contNode.querySelector('phone');
-        const socialMediaNode = contNode.querySelector('socialMedia');
-
-        if (emailNode) {
-          const pEmail = document.createElement('p');
-          pEmail.innerHTML = `<strong>Email:</strong> ${emailNode.textContent.trim()}`;
-          contentDiv.appendChild(pEmail);
-        }
-        if (phoneNode) {
-          const pPhone = document.createElement('p');
-          pPhone.innerHTML = `<strong>Telefone:</strong> ${phoneNode.textContent.trim()}`;
-          contentDiv.appendChild(pPhone);
-        }
-        if (socialMediaNode) {
-          const pSM = document.createElement('p');
-          pSM.innerHTML = `<strong>Redes Sociais:</strong> ${socialMediaNode.textContent.trim()}`;
-          contentDiv.appendChild(pSM);
-        }
+        contentDiv.appendChild(ulCont);
       }
     } catch (err) {
-      console.error('Erro ao carregar Sobre Nós:', err);
-      alert('Erro ao carregar informações de Sobre Nós: ' + err.message);
+      console.error('Erro ao carregar sobreNos.json:', err);
+      const contentDiv = document.getElementById('aboutContent');
+      contentDiv.innerHTML = `
+        <p style="color: #c00; font-style: italic;">
+          Falha ao carregar informações de “Sobre Nós”.<br>
+          Verifique se <em>data/sobreNos.json</em> existe e tem formato correto.
+        </p>
+      `;
     }
   }
 
   // ======================================
   // 8) Utilitários
   // ======================================
-  function capitalize(str) {
-    if (!str) return '';
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  }
-
   function shuffleArray(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
