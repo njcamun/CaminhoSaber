@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Caminho do Saber</title>
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-pbC1Vh9GvmkKkD76EC/UdSkLs0Aq0dKu1Eo72hX8nYfXz6+UQsQNsJhAdSDHHXFxsG+QeXKZt9EK5vqKeyqJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link id="themeStylesheet" rel="stylesheet" href="estilo1.css" />
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<main>
+    <section id="welcomeScreen" class="screen active">
+        <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
+        <h1>Bem‐vindo ao Caminho do Saber</h1>
+        <p>Por favor, digite seu nome para continuar:</p>
+        <input
+                type="text"
+                id="participantName"
+                placeholder="Seu nome"
+                aria-label="Campo para digitar o nome"
+        />
+        <p id="nameError" class="error" aria-live="assertive"></p>
+        <button id="startButton" class="btn">
+            <i class="fa-solid fa-arrow-right"></i> Continuar
+        </button>
+    </section>
+
+    <section id="homeScreen" class="screen hidden">
+        <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
+        <h1>Menu Principal</h1>
+        <div class="menu-grid">
+            <button id="playQuizButton" class="btn">
+                <span class="icon">🎲</span><br />
+                <h3>Jogar Quiz</h3>
+            </button>
+            <button id="openSettingsButton" class="btn secondary">
+                <span class="icon">⚙️</span><br />
+                <h3>Configurações</h3>
+            </button>
+        </div>
+    </section>
+
+    <section id="categoryScreen" class="screen hidden">
+        <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
+        <h2>Escolha a Categoria</h2>
+        <div class="grid">
+            <button class="btn category-btn" data-category="Trivium">
+                <span class="icon">📜</span><br />
+                <h3>Trivium</h3>
+            </button>
+            <button class="btn category-btn" data-category="Quadrivium">
+                <span class="icon">🧮</span><br />
+                <h3>Quadrivium</h3>
+            </button>
+            <button class="btn category-btn" data-category="Cultura Mundial">
+                <span class="icon">🌐</span><br />
+                <h3>Cultura Mundial</h3>
+            </button>
+            <button class="btn category-btn" data-category="Mwangole">
+                <span class="icon">🇦🇴</span><br />
+                <h3>Mwangole</h3>
+            </button>
+            <button class="btn category-btn" data-category="Biblia">
+                <span class="icon">📖</span><br />
+                <h3>Bíblia</h3>
+            </button>
+            <button class="btn category-btn" data-category="Ingles">
+                <span class="icon">🗣️</span><br />
+                <h3>Inglês</h3>
+            </button>
+            <button class="btn category-btn" data-category="Kimbundu">
+                <span class="icon">🗨️</span><br />
+                <h3>Kimbundu</h3>
+            </button>
+            <button class="btn category-btn" data-category="Paises">
+                <span class="icon">🏳️</span><br />
+                <h3>Países</h3>
+            </button>
+        </div>
+        <button id="backToHomeFromCategory" class="btn secondary">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </button>
+    </section>
+
+    <section id="settingsScreen" class="screen hidden">
+        <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
+        <h2>Configurações</h2>
+
+        <div id="settingsMenuOptions" class="menu-grid">
+            <button id="changeDesignButton" class="btn">
+                <i class="fa-solid fa-paint-brush"></i> Mudar Design
+            </button>
+            <button id="viewHistoryButton" class="btn">
+                <i class="fa-solid fa-history"></i> Histórico
+            </button>
+            <button id="aboutUsButton" class="btn">
+                <i class="fa-solid fa-info-circle"></i> Sobre Nós
+            </button>
+            <button id="backFromSettings" class="btn secondary">
+                <i class="fa-solid fa-arrow-left"></i> Voltar
+            </button>
+        </div>
+
+        <div id="designOptions" class="menu-grid hidden">
+            <button id="themeDefault" class="btn">
+                <i class="fa-solid fa-adjust"></i> Tema Padrão
+            </button>
+            <button id="themeFlat" class="btn">
+                <i class="fa-solid fa-fill-drip"></i> Tema Flat
+            </button>
+            <button id="themeNeon" class="btn">
+                <i class="fa-solid fa-lightbulb"></i> Tema Neon
+            </button>
+            <button id="backFromDesign" class="btn secondary">
+                <i class="fa-solid fa-arrow-left"></i> Voltar
+            </button>
+        </div>
+    </section>
+
+    <section id="aboutScreen" class="screen hidden">
+        <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
+        <h2>Sobre Nós</h2>
+        <div id="aboutContent" class="about-content">
+        </div>
+        <button id="backFromAbout" class="btn secondary">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </button>
+    </section>
+
+    <section id="levelScreen" class="screen hidden">
+        <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
+        <h2>Escolha o Nível</h2>
+        <div id="levelSelectionGrid" class="grid">
+        </div>
+        <button id="backToCategoryFromLevel" class="btn secondary">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </button>
+    </section>
+
+    <section id="questionScreen" class="screen hidden">
+        <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
+        <h2 id="questionCategoryLevelTitle"></h2>
+
+        <div class="timer-container">
+            ⏱ <span id="timer">15</span>s
+        </div>
+
+        <p class="question-counter">
+            Pergunta <span id="currentQuestionNum">1</span> de
+            <span id="totalQuestionsNum">0</span>
+        </p>
+
+        <h3 id="questionText"></h3>
+
+        <button id="hintButton" class="btn secondary">
+            <i class="fa-solid fa-lightbulb"></i> Dica
+        </button>
+
+        <div id="optionsContainer" class="options-column">
+        </div>
+
+        <button id="nextQuestionButton" class="btn hidden">
+            <i class="fa-solid fa-arrow-right"></i> Próxima
+        </button>
+
+        <p id="feedbackMessage" class="error"></p>
+
+        <button id="backToLevelFromQuestion" class="btn secondary">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </button>
+    </section>
+
+    <section id="resultScreen" class="screen hidden">
+        <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
+        <h1>Resultado</h1>
+        <p>
+            Sua pontuação: <span id="finalScore">0</span> /
+            <span id="maxScore">0</span>
+        </p>
+        <p id="resultMessage"></p>
+        <button id="playAgainButton" class="btn">
+            <i class="fa-solid fa-redo"></i> Jogar Novamente
+        </button>
+        <button id="changeCategoryButton" class="btn secondary"> <i class="fa-solid fa-arrow-left"></i> Mudar Categoria
+        </button>
+        <button id="nextLevelButton" class="btn hidden"> <i class="fa-solid fa-forward"></i> Próximo Nível <span id="nextLevelNum"></span>
+        </button>
+    </section>
+
+    <section id="historyScreen" class="screen hidden">
+        <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
+        <h2>Histórico de Quizzes</h2>
+        <div id="historyList" class="history-list">
+        </div>
+        <button id="backFromHistory" class="btn secondary">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </button>
+    </section>
+</main>
+</body>
+</html>
