@@ -1,0 +1,2282 @@
+{
+  "1": [
+    {
+      "pergunta": "Qual é o fim principal do homem?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 1",
+      "opcoes": [
+        { "texto": "Ser feliz", "correta": false },
+        { "texto": "Glorificar a Deus e gozá-lo para sempre", "correta": true },
+        { "texto": "Acumular riquezas", "correta": false },
+        { "texto": "Viver em paz", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual a regra que Deus nos deu para nos dirigir, e como podemos saber o que devemos crer e qual o nosso dever?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 2",
+      "opcoes": [
+        { "texto": "A tradição da igreja", "correta": false },
+        { "texto": "A razão humana", "correta": false },
+        { "texto": "A Palavra de Deus, que está contida nas Escrituras do Antigo e Novo Testamento", "correta": true },
+        { "texto": "Os sentimentos pessoais", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o primeiro homem criado por Deus?",
+      "descricao": "Gênesis 2:7",
+      "opcoes": [
+        { "texto": "Adão", "correta": true },
+        { "texto": "Noé", "correta": false },
+        { "texto": "Abraão", "correta": false },
+        { "texto": "Moisés", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quantos dias levou a criação do mundo, segundo o relato bíblico?",
+      "descricao": "Gênesis 1:31",
+      "opcoes": [
+        { "texto": "Sete dias", "correta": false },
+        { "texto": "Seis dias", "correta": true },
+        { "texto": "Cinco dias", "correta": false },
+        { "texto": "Dez dias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual foi o animal que tentou Eva no Jardim do Éden, levando à desobediência?",
+      "descricao": "Gênesis 3:1",
+      "opcoes": [
+        { "texto": "Leão", "correta": false },
+        { "texto": "Serpente", "correta": true },
+        { "texto": "Lobo", "correta": false },
+        { "texto": "Macaco", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual foi o nome do filho de Abraão e Sara, nascido na velhice deles, como cumprimento da promessa de Deus?",
+      "descricao": "Gênesis 21:3",
+      "opcoes": [
+        { "texto": "Ismael", "correta": false },
+        { "texto": "Jacó", "correta": false },
+        { "texto": "Isaque", "correta": true },
+        { "texto": "José", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem construiu a arca para salvar sua família e os animais do dilúvio universal?",
+      "descricao": "Gênesis 6:14",
+      "opcoes": [
+        { "texto": "Abraão", "correta": false },
+        { "texto": "Noé", "correta": true },
+        { "texto": "Moisés", "correta": false },
+        { "texto": "Davi", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rio onde Jesus foi batizado por João Batista?",
+      "descricao": "Mateus 3:13",
+      "opcoes": [
+        { "texto": "Rio Nilo", "correta": false },
+        { "texto": "Rio Jordão", "correta": true },
+        { "texto": "Rio Eufrates", "correta": false },
+        { "texto": "Mar da Galileia", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o rei de Israel conhecido por sua grande sabedoria, que pediu discernimento a Deus?",
+      "descricao": "1 Reis 3:12",
+      "opcoes": [
+        { "texto": "Davi", "correta": false },
+        { "texto": "Saul", "correta": false },
+        { "texto": "Salomão", "correta": true },
+        { "texto": "Ezequias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o livro da Bíblia que narra a história de José, o sonhador, e sua jornada do Egito para se tornar governador?",
+      "descricao": "Gênesis 37-50",
+      "opcoes": [
+        { "texto": "Êxodo", "correta": false },
+        { "texto": "Gênesis", "correta": true },
+        { "texto": "Números", "correta": false },
+        { "texto": "Levítico", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual foi o alimento milagroso que Deus enviou do céu para os israelitas no deserto por 40 anos?",
+      "descricao": "Êxodo 16:31",
+      "opcoes": [
+        { "texto": "Pão", "correta": false },
+        { "texto": "Carne", "correta": false },
+        { "texto": "Maná", "correta": true },
+        { "texto": "Peixe", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que foi engolido por um grande peixe após tentar fugir da ordem de Deus para Nínive?",
+      "descricao": "Jonas 1:17",
+      "opcoes": [
+        { "texto": "Elias", "correta": false },
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jonas", "correta": true },
+        { "texto": "Jeremias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o primeiro livro do Novo Testamento, que começa com a genealogia de Jesus?",
+      "descricao": "Ordem dos livros da Bíblia",
+      "opcoes": [
+        { "texto": "Atos", "correta": false },
+        { "texto": "Romanos", "correta": false },
+        { "texto": "Mateus", "correta": true },
+        { "texto": "Marcos", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem traiu Jesus por trinta moedas de prata, levando à sua prisão?",
+      "descricao": "Mateus 26:14-16",
+      "opcoes": [
+        { "texto": "Pedro", "correta": false },
+        { "texto": "João", "correta": false },
+        { "texto": "Judas Iscariotes", "correta": true },
+        { "texto": "Tomé", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da mãe de Jesus, que foi escolhida por Deus para dar à luz o Salvador?",
+      "descricao": "Mateus 1:18",
+      "opcoes": [
+        { "texto": "Maria Madalena", "correta": false },
+        { "texto": "Marta", "correta": false },
+        { "texto": "Maria", "correta": true },
+        { "texto": "Isabel", "correta": false }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "pergunta": "O que as Escrituras principalmente ensinam?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 3",
+      "opcoes": [
+        { "texto": "Como ter sucesso na vida", "correta": false },
+        { "texto": "O que o homem deve crer a respeito de Deus e qual o dever que Deus requer do homem", "correta": true },
+        { "texto": "Histórias antigas e mitos", "correta": false },
+        { "texto": "Regras para a vida social", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem é Deus?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 4",
+      "opcoes": [
+        { "texto": "Um ser humano perfeito", "correta": false },
+        { "texto": "Deus é Espírito, infinito, eterno e imutável em seu ser, sabedoria, poder, santidade, justiça, bondade e verdade", "correta": true },
+        { "texto": "Uma força da natureza", "correta": false },
+        { "texto": "Um conceito abstrato", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do monte onde Moisés recebeu os Dez Mandamentos de Deus?",
+      "descricao": "Êxodo 19:20",
+      "opcoes": [
+        { "texto": "Monte das Oliveiras", "correta": false },
+        { "texto": "Monte Sinai", "correta": true },
+        { "texto": "Monte Carmelo", "correta": false },
+        { "texto": "Monte Sião", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o primeiro rei de Israel, escolhido por Deus, mas que desobedeceu?",
+      "descricao": "1 Samuel 10:1",
+      "opcoes": [
+        { "texto": "Davi", "correta": false },
+        { "texto": "Salomão", "correta": false },
+        { "texto": "Saul", "correta": true },
+        { "texto": "Samuel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o gigante filisteu que Davi derrotou usando apenas uma funda e uma pedra, demonstrando a fidelidade de Deus?",
+      "descricao": "1 Samuel 17:49",
+      "opcoes": [
+        { "texto": "Golias", "correta": true },
+        { "texto": "Sansão", "correta": false },
+        { "texto": "Abner", "correta": false },
+        { "texto": "Filisteu", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que desafiou os profetas de Baal no Monte Carmelo, provando quem era o verdadeiro Deus?",
+      "descricao": "1 Reis 18:20-40",
+      "opcoes": [
+        { "texto": "Eliseu", "correta": false },
+        { "texto": "Elias", "correta": true },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Isaías", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o livro da Bíblia que começa com a afirmação 'No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus'?",
+      "descricao": "João 1:1",
+      "opcoes": [
+        { "texto": "Gênesis", "correta": false },
+        { "texto": "Mateus", "correta": false },
+        { "texto": "João", "correta": true },
+        { "texto": "Apocalipse", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem é considerado o 'Pai da Fé', por ter crido na promessa de Deus de uma grande descendência?",
+      "descricao": "Romanos 4:11",
+      "opcoes": [
+        { "texto": "Moisés", "correta": false },
+        { "texto": "Davi", "correta": false },
+        { "texto": "Abraão", "correta": true },
+        { "texto": "Pedro", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da cidade onde Jesus nasceu, cumprindo as profecias do Antigo Testamento?",
+      "descricao": "Mateus 2:1",
+      "opcoes": [
+        { "texto": "Nazaré", "correta": false },
+        { "texto": "Jerusalém", "correta": false },
+        { "texto": "Belém", "correta": true },
+        { "texto": "Cafarnaum", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o apóstolo que negou Jesus três vezes antes do galo cantar, mas depois se arrependeu?",
+      "descricao": "Mateus 26:69-75",
+      "opcoes": [
+        { "texto": "João", "correta": false },
+        { "texto": "Tiago", "correta": false },
+        { "texto": "Pedro", "correta": true },
+        { "texto": "André", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da parábola de Jesus sobre um filho que pediu sua herança, a desperdiçou e depois retornou arrependido ao pai?",
+      "descricao": "Lucas 15:11-32",
+      "opcoes": [
+        { "texto": "O Bom Samaritano", "correta": false },
+        { "texto": "O Filho Pródigo", "correta": true },
+        { "texto": "O Semeador", "correta": false },
+        { "texto": "As Dez Virgens", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o último livro da Bíblia, que contém visões proféticas sobre o fim dos tempos?",
+      "descricao": "Ordem dos livros da Bíblia",
+      "opcoes": [
+        { "texto": "Judas", "correta": false },
+        { "texto": "Apocalipse", "correta": true },
+        { "texto": "Filemom", "correta": false },
+        { "texto": "Hebreus", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o milagre de Jesus onde ele multiplicou cinco pães de cevada e dois peixes para alimentar uma multidão?",
+      "descricao": "Mateus 14:13-21",
+      "opcoes": [
+        { "texto": "Transformar água em vinho", "correta": false },
+        { "texto": "Andar sobre as águas", "correta": false },
+        { "texto": "Alimentar cinco mil", "correta": true },
+        { "texto": "Curar o cego", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o autor da maioria das epístolas do Novo Testamento, que pregou o Evangelho aos gentios?",
+      "descricao": "Análise dos livros",
+      "opcoes": [
+        { "texto": "Pedro", "correta": false },
+        { "texto": "João", "correta": false },
+        { "texto": "Paulo", "correta": true },
+        { "texto": "Tiago", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do jardim onde Jesus orou intensamente antes de ser preso e levado para o julgamento?",
+      "descricao": "Mateus 26:36",
+      "opcoes": [
+        { "texto": "Jardim do Éden", "correta": false },
+        { "texto": "Jardim do Getsêmani", "correta": true },
+        { "texto": "Jardim do Rei", "correta": false },
+        { "texto": "Jardim das Oliveiras", "correta": false }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "pergunta": "Quantas pessoas há na Divindade?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 6",
+      "opcoes": [
+        { "texto": "Uma", "correta": false },
+        { "texto": "Três: o Pai, o Filho e o Espírito Santo", "correta": true },
+        { "texto": "Duas", "correta": false },
+        { "texto": "Incontáveis", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que são os decretos de Deus?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 7",
+      "opcoes": [
+        { "texto": "As leis civis de uma nação", "correta": false },
+        { "texto": "O propósito eterno de Deus, segundo o conselho da sua própria vontade, pelo qual, para sua própria glória, Ele ordenou tudo o que acontece", "correta": true },
+        { "texto": "As decisões humanas", "correta": false },
+        { "texto": "Os planos de Satanás", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a saída dos israelitas do Egito e a libertação da escravidão?",
+      "descricao": "Êxodo 1:1",
+      "opcoes": [
+        { "texto": "Gênesis", "correta": false },
+        { "texto": "Êxodo", "correta": true },
+        { "texto": "Números", "correta": false },
+        { "texto": "Deuteronômio", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o líder que guiou os israelitas para fora do Egito, através do Mar Vermelho?",
+      "descricao": "Êxodo 3:10",
+      "opcoes": [
+        { "texto": "Abraão", "correta": false },
+        { "texto": "José", "correta": false },
+        { "texto": "Moisés", "correta": true },
+        { "texto": "Josué", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da mulher que escondeu os espias israelitas em Jericó, sendo salva da destruição da cidade?",
+      "descricao": "Josué 2:1-7",
+      "opcoes": [
+        { "texto": "Débora", "correta": false },
+        { "texto": "Raabe", "correta": true },
+        { "texto": "Jael", "correta": false },
+        { "texto": "Ester", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do juiz de Israel conhecido por sua força sobrenatural, que dependia de seu cabelo não ser cortado?",
+      "descricao": "Juízes 16:17",
+      "opcoes": [
+        { "texto": "Gideão", "correta": false },
+        { "texto": "Sansão", "correta": true },
+        { "texto": "Jefté", "correta": false },
+        { "texto": "Débora", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi levado ao céu num redemoinho, sem experimentar a morte?",
+      "descricao": "2 Reis 2:11",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Elias", "correta": true },
+        { "texto": "Ezequiel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei que construiu o primeiro Templo em Jerusalém, conhecido por sua riqueza e sabedoria?",
+      "descricao": "1 Reis 6:1",
+      "opcoes": [
+        { "texto": "Davi", "correta": false },
+        { "texto": "Salomão", "correta": true },
+        { "texto": "Roboão", "correta": false },
+        { "texto": "Acaz", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o livro poético da Bíblia que contém 150 cânticos e orações, muitos deles escritos por Davi?",
+      "descricao": "Livros poéticos",
+      "opcoes": [
+        { "texto": "Provérbios", "correta": false },
+        { "texto": "Eclesiastes", "correta": false },
+        { "texto": "Salmos", "correta": true },
+        { "texto": "Jó", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que profetizou sobre o nascimento de Jesus em Belém, a 'pequena entre os clãs de Judá'?",
+      "descricao": "Miqueias 5:2",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Miqueias", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo conhecido como 'o discípulo amado', que reclinou-se à mesa com Jesus na Última Ceia?",
+      "descricao": "João 21:20",
+      "opcoes": [
+        { "texto": "Pedro", "correta": false },
+        { "texto": "Tiago", "correta": false },
+        { "texto": "João", "correta": true },
+        { "texto": "André", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Em qual cidade os discípulos foram cheios do Espírito Santo no dia de Pentecostes, marcando o início da Igreja?",
+      "descricao": "Atos 2:1-4",
+      "opcoes": [
+        { "texto": "Nazaré", "correta": false },
+        { "texto": "Jerusalém", "correta": true },
+        { "texto": "Antioquia", "correta": false },
+        { "texto": "Roma", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da mulher que ungiu os pés de Jesus com um perfume muito caro, causando indignação em alguns?",
+      "descricao": "João 12:3",
+      "opcoes": [
+        { "texto": "Marta", "correta": false },
+        { "texto": "Maria (irmã de Lázaro)", "correta": true },
+        { "texto": "Maria Madalena", "correta": false },
+        { "texto": "Lídia", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do centurião romano que teve sua fé elogiada por Jesus, dizendo que não havia encontrado fé tão grande em Israel?",
+      "descricao": "Mateus 8:5-10",
+      "opcoes": [
+        { "texto": "Pôncio Pilatos", "correta": false },
+        { "texto": "Cornélio", "correta": false },
+        { "texto": "Centurião de Cafarnaum", "correta": true },
+        { "texto": "Sérgio Paulo", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da cidade para onde Paulo estava indo para prender cristãos quando teve seu encontro transformador com Jesus?",
+      "descricao": "Atos 9:3",
+      "opcoes": [
+        { "texto": "Jerusalém", "correta": false },
+        { "texto": "Damasco", "correta": true },
+        { "texto": "Roma", "correta": false },
+        { "texto": "Antioquia", "correta": false }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "pergunta": "Como Deus executa os seus decretos?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 8",
+      "opcoes": [
+        { "texto": "De forma arbitrária", "correta": false },
+        { "texto": "Pelas obras da criação e da providência", "correta": true },
+        { "texto": "Através de sinais visíveis apenas", "correta": false },
+        { "texto": "Somente pela vontade humana", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi jogado na cova dos leões por se recusar a parar de orar a Deus?",
+      "descricao": "Daniel 6:16",
+      "opcoes": [
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Isaías", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei babilônico que teve um sonho com uma grande estátua, interpretado por Daniel?",
+      "descricao": "Daniel 2:1",
+      "opcoes": [
+        { "texto": "Ciro", "correta": false },
+        { "texto": "Dario", "correta": false },
+        { "texto": "Nabucodonosor", "correta": true },
+        { "texto": "Belsazar", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o livro da Bíblia que contém a famosa frase 'Vaidade de vaidades, tudo é vaidade', refletindo sobre o sentido da vida?",
+      "descricao": "Eclesiastes 1:2",
+      "opcoes": [
+        { "texto": "Provérbios", "correta": false },
+        { "texto": "Jó", "correta": false },
+        { "texto": "Eclesiastes", "correta": true },
+        { "texto": "Cântico dos Cânticos", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que foi chamado por Deus para pregar em Nínive, mas tentou fugir para Társis?",
+      "descricao": "Jonas 1:1-3",
+      "opcoes": [
+        { "texto": "Naum", "correta": false },
+        { "texto": "Ageu", "correta": false },
+        { "texto": "Jonas", "correta": true },
+        { "texto": "Amós", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi levado cativo para Babilônia e teve visões complexas sobre a glória de Deus e a restauração de Israel?",
+      "descricao": "Ezequiel 1:1",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": true },
+        { "texto": "Oséias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da festa judaica que celebra a libertação dos israelitas da escravidão no Egito, com a passagem do anjo da morte?",
+      "descricao": "Êxodo 12:1-14",
+      "opcoes": [
+        { "texto": "Pentecostes", "correta": false },
+        { "texto": "Páscoa", "correta": true },
+        { "texto": "Tabernáculos", "correta": false },
+        { "texto": "Purim", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o primeiro mártir cristão, apedrejado por sua fé após pregar o Evangelho?",
+      "descricao": "Atos 7:54-60",
+      "opcoes": [
+        { "texto": "Tiago", "correta": false },
+        { "texto": "Estêvão", "correta": true },
+        { "texto": "Filipe", "correta": false },
+        { "texto": "Barnabé", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da ilha para onde o apóstolo João foi exilado e onde recebeu as revelações do livro do Apocalipse?",
+      "descricao": "Apocalipse 1:9",
+      "opcoes": [
+        { "texto": "Creta", "correta": false },
+        { "texto": "Chipre", "correta": false },
+        { "texto": "Patmos", "correta": true },
+        { "texto": "Malta", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a soberania de Deus em relação a todas as coisas?",
+      "descricao": "Doutrina da Soberania Divina",
+      "opcoes": [
+        { "texto": "Deus tem poder limitado sobre a criação", "correta": false },
+        { "texto": "Deus é o controle supremo e final sobre todas as coisas, agindo conforme Seus propósitos", "correta": true },
+        { "texto": "O homem tem controle total sobre seu destino", "correta": false },
+        { "texto": "Deus apenas observa, não interfere nos eventos humanos", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que a salvação é inteiramente obra de Deus, desde o início até o fim, sem a cooperação da vontade humana?",
+      "descricao": "Graça Soberana / Monergismo",
+      "opcoes": [
+        { "texto": "Livre-arbítrio", "correta": false },
+        { "texto": "Sinergismo", "correta": false },
+        { "texto": "Graça Soberana", "correta": true },
+        { "texto": "Arminianismo", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do reformador que é amplamente reconhecido por ter sistematizado a teologia reformada em sua obra 'Institutas da Religião Cristã'?",
+      "descricao": "História da Reforma Protestante",
+      "opcoes": [
+        { "texto": "Martinho Lutero", "correta": false },
+        { "texto": "João Calvino", "correta": true },
+        { "texto": "Ulrico Zuínglio", "correta": false },
+        { "texto": "John Knox", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do evento em que Deus confundiu as línguas dos construtores de uma torre, espalhando a humanidade pela terra?",
+      "descricao": "Gênesis 11:1-9",
+      "opcoes": [
+        { "texto": "Torre de Babel", "correta": true },
+        { "texto": "Torre de Siloé", "correta": false },
+        { "texto": "Torre de Jerusalém", "correta": false },
+        { "texto": "Torre de Nínive", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que casou com uma prostituta chamada Gômer, como um sinal profético da infidelidade de Israel para com Deus?",
+      "descricao": "Oséias 1:2",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Oséias", "correta": true },
+        { "texto": "Amós", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre o 'pecado original' e suas consequências para a humanidade?",
+      "descricao": "Doutrina do Pecado",
+      "opcoes": [
+        { "texto": "É um pecado cometido por Adão, mas não afeta a humanidade hoje", "correta": false },
+        { "texto": "É a natureza pecaminosa herdada de Adão que afeta toda a humanidade, tornando-a culpada e depravada", "correta": true },
+        { "texto": "É um pecado que só afeta algumas pessoas", "correta": false },
+        { "texto": "É um conceito inventado pela igreja", "correta": false }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "pergunta": "Quantas pessoas há em Deus?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 5",
+      "opcoes": [
+        { "texto": "Uma pessoa", "correta": false },
+        { "texto": "Três pessoas: o Pai, o Filho e o Espírito Santo", "correta": true },
+        { "texto": "Duas pessoas", "correta": false },
+        { "texto": "Incontáveis pessoas", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi arrebatado por um carro de fogo ao céu, sem provar a morte?",
+      "descricao": "2 Reis 2:11",
+      "opcoes": [
+        { "texto": "Eliseu", "correta": false },
+        { "texto": "Elias", "correta": true },
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história de uma rainha judia que, com coragem, salvou seu povo da aniquilação?",
+      "descricao": "Livro de Ester",
+      "opcoes": [
+        { "texto": "Rute", "correta": false },
+        { "texto": "Ester", "correta": true },
+        { "texto": "Débora", "correta": false },
+        { "texto": "Judite", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do homem que foi o mais velho da Bíblia, vivendo 969 anos antes do Dilúvio?",
+      "descricao": "Gênesis 5:27",
+      "opcoes": [
+        { "texto": "Noé", "correta": false },
+        { "texto": "Adão", "correta": false },
+        { "texto": "Matusalém", "correta": true },
+        { "texto": "Enoque", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que teve a visão do vale de ossos secos, que representava a restauração de Israel?",
+      "descricao": "Ezequiel 37:1-14",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei que teve seu reinado estendido por 15 anos após orar a Deus, e o sol retrocedeu como sinal?",
+      "descricao": "2 Reis 20:8-11",
+      "opcoes": [
+        { "texto": "Davi", "correta": false },
+        { "texto": "Ezequias", "correta": true },
+        { "texto": "Acaz", "correta": false },
+        { "texto": "Josias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que Cristo morreu eficazmente apenas pelos eleitos de Deus, e não por todos os homens?",
+      "descricao": "Expiação Limitada",
+      "opcoes": [
+        { "texto": "Expiação Universal", "correta": false },
+        { "texto": "Expiação Limitada", "correta": true },
+        { "texto": "Expiação Condicional", "correta": false },
+        { "texto": "Expiação Simbólica", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Graça Irresistível', no sentido de que a graça de Deus não pode ser frustrada?",
+      "descricao": "Doutrina da Graça Irresistível",
+      "opcoes": [
+        { "texto": "A graça de Deus pode ser rejeitada", "correta": false },
+        { "texto": "A graça de Deus sempre leva à conversão daqueles a quem é concedida", "correta": true },
+        { "texto": "A graça é dada a todos, mas só alguns aceitam", "correta": false },
+        { "texto": "A graça é um conceito meramente humano", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que era conhecido por sua incredulidade inicial sobre a ressurreição de Jesus, exigindo ver as marcas?",
+      "descricao": "João 20:24-29",
+      "opcoes": [
+        { "texto": "Filipe", "correta": false },
+        { "texto": "Bartolomeu", "correta": false },
+        { "texto": "Tomé", "correta": true },
+        { "texto": "André", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da cidade onde Paulo e Silas foram presos e louvaram a Deus na prisão, resultando na conversão do carcereiro?",
+      "descricao": "Atos 16:25",
+      "opcoes": [
+        { "texto": "Corinto", "correta": false },
+        { "texto": "Filipos", "correta": true },
+        { "texto": "Éfeso", "correta": false },
+        { "texto": "Tessalônica", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da parábola de Jesus sobre um homem rico que se vestia de púrpura e linho fino, e um mendigo à sua porta?",
+      "descricao": "Lucas 16:19-31",
+      "opcoes": [
+        { "texto": "O Bom Samaritano", "correta": false },
+        { "texto": "O Rico e Lázaro", "correta": true },
+        { "texto": "O Semeador", "correta": false },
+        { "texto": "As Dez Virgens", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro profético que contém a profecia das 'setenta semanas' para a vinda do Messias?",
+      "descricao": "Daniel 9:24-27",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Zacarias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia entende por 'Pacto das Obras', feito com Adão no Jardim do Éden?",
+      "descricao": "Teologia Pactual",
+      "opcoes": [
+        { "texto": "Um acordo onde a salvação é por obras humanas", "correta": false },
+        { "texto": "O acordo original de Deus com Adão na criação, exigindo obediência perfeita para a vida, sob pena de morte", "correta": true },
+        { "texto": "O pacto feito com Moisés no Sinai", "correta": false },
+        { "texto": "Um pacto que não existe na Bíblia", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história de Rute, uma moabita que demonstrou lealdade à sua sogra Noemi e se tornou ancestral de Davi?",
+      "descricao": "Livro de Rute",
+      "opcoes": [
+        { "texto": "Juízes", "correta": false },
+        { "texto": "Samuel", "correta": false },
+        { "texto": "Rute", "correta": true },
+        { "texto": "Ester", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do evento em que Jesus se transfigurou diante de Pedro, Tiago e João, revelando sua glória divina?",
+      "descricao": "Mateus 17:1-8",
+      "opcoes": [
+        { "texto": "Ascensão", "correta": false },
+        { "texto": "Pentecostes", "correta": false },
+        { "texto": "Transfiguração", "correta": true },
+        { "texto": "Ressurreição", "correta": false }
+      ]
+    }
+  ],
+  "6": [
+    {
+      "pergunta": "Qual o principal propósito da criação do homem?",
+      "descricao": "Catecismo Maior de Westminster, Pergunta 1",
+      "opcoes": [
+        { "texto": "Para que o homem se sirva de Deus", "correta": false },
+        { "texto": "Glorificar a Deus e desfrutá-lo para sempre", "correta": true },
+        { "texto": "Para que o homem seja feliz", "correta": false },
+        { "texto": "Para que o homem domine a natureza", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que as Escrituras nos ensinam sobre Deus?",
+      "descricao": "Catecismo Maior de Westminster, Pergunta 2",
+      "opcoes": [
+        { "texto": "Que Ele é um ser limitado", "correta": false },
+        { "texto": "Que Ele é o único Deus vivo e verdadeiro, infinito em seu ser e perfeições", "correta": true },
+        { "texto": "Que Ele é apenas uma força impessoal", "correta": false },
+        { "texto": "Que Ele é um ser mutável", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que teve o cabelo cortado por Dalila, perdendo sua força, mas que clamou a Deus em seu fim?",
+      "descricao": "Juízes 16:19",
+      "opcoes": [
+        { "texto": "Gideão", "correta": false },
+        { "texto": "Sansão", "correta": true },
+        { "texto": "Jefté", "correta": false },
+        { "texto": "Abimeleque", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da mulher que se tornou juíza e profetisa em Israel, liderando o povo à vitória?",
+      "descricao": "Juízes 4:4",
+      "opcoes": [
+        { "texto": "Ester", "correta": false },
+        { "texto": "Rute", "correta": false },
+        { "texto": "Débora", "correta": true },
+        { "texto": "Jael", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a conquista da terra prometida de Canaã sob a liderança de Josué?",
+      "descricao": "Livro de Josué",
+      "opcoes": [
+        { "texto": "Números", "correta": false },
+        { "texto": "Deuteronômio", "correta": false },
+        { "texto": "Josué", "correta": true },
+        { "texto": "Juízes", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que foi levado cativo para a Babilônia e serviu na corte do rei, interpretando seus sonhos?",
+      "descricao": "Daniel 1:6",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Ezequiel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei que se arrependeu profundamente de seu pecado após a repreensão do profeta Natã, escrevendo o Salmo 51?",
+      "descricao": "2 Samuel 12:13",
+      "opcoes": [
+        { "texto": "Saul", "correta": false },
+        { "texto": "Salomão", "correta": false },
+        { "texto": "Davi", "correta": true },
+        { "texto": "Acaz", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém a história de Jó, um homem que sofreu provações extremas, mas não amaldiçoou a Deus?",
+      "descricao": "Livro de Jó",
+      "opcoes": [
+        { "texto": "Salmos", "correta": false },
+        { "texto": "Provérbios", "correta": false },
+        { "texto": "Jó", "correta": true },
+        { "texto": "Eclesiastes", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que profetizou sobre o Servo Sofredor em Isaías 53, descrevendo os sofrimentos de Cristo?",
+      "descricao": "Isaías 53",
+      "opcoes": [
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Isaías", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que era um pescador e se tornou uma 'pedra' fundamental na construção da igreja, apesar de suas falhas?",
+      "descricao": "Mateus 4:18, Mateus 16:18",
+      "opcoes": [
+        { "texto": "João", "correta": false },
+        { "texto": "Tiago", "correta": false },
+        { "texto": "Pedro", "correta": true },
+        { "texto": "André", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da cidade onde Paulo pregou seu famoso sermão no Areópago, explicando o Deus verdadeiro aos filósofos?",
+      "descricao": "Atos 17:19-34",
+      "opcoes": [
+        { "texto": "Corinto", "correta": false },
+        { "texto": "Éfeso", "correta": false },
+        { "texto": "Atenas", "correta": true },
+        { "texto": "Roma", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Depravação Total' no contexto da condição humana após a Queda?",
+      "descricao": "Doutrina da Depravação Total",
+      "opcoes": [
+        { "texto": "O homem é tão pecador que não pode fazer nada de bom", "correta": false },
+        { "texto": "Toda a natureza humana está afetada pelo pecado, tornando o homem incapaz de se salvar por si mesmo", "correta": true },
+        { "texto": "O homem é completamente mau e não tem nenhuma bondade", "correta": false },
+        { "texto": "O pecado afeta apenas algumas partes da vida humana", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que a eleição de Deus para a salvação não se baseia em nada que o homem faça ou venha a fazer, mas somente em Sua soberania?",
+      "descricao": "Eleição Incondicional",
+      "opcoes": [
+        { "texto": "Eleição Condicional", "correta": false },
+        { "texto": "Eleição Incondicional", "correta": true },
+        { "texto": "Predestinação por mérito", "correta": false },
+        { "texto": "Graça Comum", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que escreveu a epístola aos Romanos, considerada uma das mais importantes exposições da doutrina da justificação pela fé?",
+      "descricao": "Romanos 1:1",
+      "opcoes": [
+        { "texto": "Pedro", "correta": false },
+        { "texto": "João", "correta": false },
+        { "texto": "Paulo", "correta": true },
+        { "texto": "Tiago", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'imputação do pecado de Adão' a toda a humanidade?",
+      "descricao": "Doutrina da Imputação",
+      "opcoes": [
+        { "texto": "Que cada pessoa é responsável apenas pelos seus próprios pecados", "correta": false },
+        { "texto": "Que o pecado de Adão é atribuído a toda a humanidade, resultando em culpa e depravação herdada", "correta": true },
+        { "texto": "Que Deus perdoa o pecado de Adão automaticamente", "correta": false },
+        { "texto": "Que o pecado de Adão não tem consequências para nós", "correta": false }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "pergunta": "O que Deus fez na obra da criação?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 9",
+      "opcoes": [
+        { "texto": "Criou o mundo em um dia", "correta": false },
+        { "texto": "Criou todas as coisas do nada, pela palavra do seu poder, em seis dias, e tudo muito bom", "correta": true },
+        { "texto": "Apenas organizou a matéria existente", "correta": false },
+        { "texto": "Criou apenas os seres humanos", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como Deus executa os seus decretos na obra da providência?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 11",
+      "opcoes": [
+        { "texto": "Deixando tudo ao acaso", "correta": false },
+        { "texto": "Sustentando, dirigindo e governando todas as suas criaturas e todas as suas ações", "correta": true },
+        { "texto": "Intervindo apenas em momentos de crise", "correta": false },
+        { "texto": "Permitindo que o homem governe tudo sem Sua intervenção", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história de um profeta que se deitou de lado por muitos dias como sinal profético do cerco de Jerusalém?",
+      "descricao": "Ezequiel 4:4-8",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": true },
+        { "texto": "Oséias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que foi jogado numa cisterna lamacenta e depois resgatado por Ebede-Meleque?",
+      "descricao": "Jeremias 38:6",
+      "opcoes": [
+        { "texto": "Daniel", "correta": false },
+        { "texto": "Elias", "correta": false },
+        { "texto": "Jeremias", "correta": true },
+        { "texto": "Jonas", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei que teve seu reinado estendido por 15 anos após orar a Deus, e recebeu um sinal milagroso no relógio de sol?",
+      "descricao": "Isaías 38:5",
+      "opcoes": [
+        { "texto": "Davi", "correta": false },
+        { "texto": "Salomão", "correta": false },
+        { "texto": "Ezequias", "correta": true },
+        { "texto": "Manassés", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém a profecia do 'Vale de Ossos Secos' que representam a restauração da nação de Israel?",
+      "descricao": "Ezequiel 37:1-14",
+      "opcoes": [
+        { "texto": "Daniel", "correta": false },
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Ezequiel", "correta": true },
+        { "texto": "Jonas", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi o último do Antigo Testamento a profetizar sobre a vinda do Messias e o precursor Elias?",
+      "descricao": "Malaquias 4:5-6",
+      "opcoes": [
+        { "texto": "Zacarias", "correta": false },
+        { "texto": "Ageu", "correta": false },
+        { "texto": "Malaquias", "correta": true },
+        { "texto": "Joel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'Sola Scriptura' como princípio da Reforma Protestante?",
+      "descricao": "Doutrina da Sola Scriptura",
+      "opcoes": [
+        { "texto": "Somente a tradição da igreja é a regra de fé", "correta": false },
+        { "texto": "Somente a Escritura é a única regra inerrante e suficiente de fé e prática", "correta": true },
+        { "texto": "Somente a razão humana é suficiente para o conhecimento de Deus", "correta": false },
+        { "texto": "Somente a experiência pessoal é guia para a vida cristã", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Sola Fide', no sentido de como o pecador é justificado diante de Deus?",
+      "descricao": "Doutrina da Sola Fide",
+      "opcoes": [
+        { "texto": "Salvação somente pelas obras da lei", "correta": false },
+        { "texto": "Salvação somente pela fé em Cristo, sem as obras da lei", "correta": true },
+        { "texto": "Salvação somente pela graça, sem necessidade de fé", "correta": false },
+        { "texto": "Salvação somente por Cristo, mas com méritos humanos", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que escreveu a epístola aos Gálatas, defendendo veementemente a justificação pela fé e a liberdade em Cristo?",
+      "descricao": "Gálatas 1:1",
+      "opcoes": [
+        { "texto": "Pedro", "correta": false },
+        { "texto": "João", "correta": false },
+        { "texto": "Paulo", "correta": true },
+        { "texto": "Tiago", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do evento em que Jesus ascendeu ao céu visivelmente, quarenta dias após sua ressurreição?",
+      "descricao": "Atos 1:9-11",
+      "opcoes": [
+        { "texto": "Transfiguração", "correta": false },
+        { "texto": "Pentecostes", "correta": false },
+        { "texto": "Ascensão", "correta": true },
+        { "texto": "Ressurreição", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história da igreja primitiva, começando com a descida do Espírito Santo e as viagens missionárias de Paulo?",
+      "descricao": "Livro de Atos",
+      "opcoes": [
+        { "texto": "Romanos", "correta": false },
+        { "texto": "Coríntios", "correta": false },
+        { "texto": "Atos dos Apóstolos", "correta": true },
+        { "texto": "Hebreus", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'eleição' de Deus para a salvação?",
+      "descricao": "Doutrina da Eleição",
+      "opcoes": [
+        { "texto": "Deus escolhe algumas pessoas para a salvação com base em sua fé futura", "correta": false },
+        { "texto": "Deus escolhe soberanamente algumas pessoas para a salvação antes da fundação do mundo, por Sua livre graça", "correta": true },
+        { "texto": "O homem escolhe a Deus por si mesmo, sem qualquer intervenção divina prévia", "correta": false },
+        { "texto": "A eleição é um conceito sem base bíblica, contradizendo o livre-arbítrio", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi chamado por Deus ainda jovem e hesitou em falar por ser 'apenas um menino', mas foi capacitado por Deus?",
+      "descricao": "Jeremias 1:6",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": true },
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'perseverança dos santos', no sentido de que os verdadeiros crentes não podem cair da graça?",
+      "descricao": "Doutrina da Perseverança dos Santos",
+      "opcoes": [
+        { "texto": "Que os crentes podem perder a salvação a qualquer momento por seus pecados", "correta": false },
+        { "texto": "Que aqueles que são verdadeiramente salvos perseverarão na fé até o fim, sendo preservados pelo poder de Deus", "correta": true },
+        { "texto": "Que a perseverança depende do esforço humano e da força de vontade do crente", "correta": false },
+        { "texto": "Que a salvação é temporária e pode ser perdida se o crente não se esforçar o suficiente", "correta": false }
+      ]
+    }
+  ],
+  "8": [
+    {
+      "pergunta": "Qual o trabalho da providência de Deus?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 10",
+      "opcoes": [
+        { "texto": "Apenas observar o mundo", "correta": false },
+        { "texto": "Sustentar e governar todas as suas criaturas e todas as suas ações", "correta": true },
+        { "texto": "Intervir somente em milagres", "correta": false },
+        { "texto": "Deixar o mundo seguir seu próprio curso", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história da criação, a queda do homem no pecado e o início da história de Israel com Abraão?",
+      "descricao": "Gênesis",
+      "opcoes": [
+        { "texto": "Êxodo", "correta": false },
+        { "texto": "Gênesis", "correta": true },
+        { "texto": "Levítico", "correta": false },
+        { "texto": "Números", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o líder que sucedeu Moisés e guiou Israel na conquista da terra de Canaã, dividindo-a entre as tribos?",
+      "descricao": "Josué 1:1-2",
+      "opcoes": [
+        { "texto": "Calebe", "correta": false },
+        { "texto": "Josué", "correta": true },
+        { "texto": "Arão", "correta": false },
+        { "texto": "Samuel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que confrontou o rei Acabe e Jezabel, e foi sustentado por corvos?",
+      "descricao": "1 Reis 18:17-19",
+      "opcoes": [
+        { "texto": "Eliseu", "correta": false },
+        { "texto": "Elias", "correta": true },
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém os 'Provérbios de Salomão', uma coleção de sabedoria prática e moral?",
+      "descricao": "Provérbios 1:1",
+      "opcoes": [
+        { "texto": "Salmos", "correta": false },
+        { "texto": "Eclesiastes", "correta": false },
+        { "texto": "Provérbios", "correta": true },
+        { "texto": "Jó", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi chamado para ser 'sentinela' sobre a casa de Israel, advertindo o povo sobre seus pecados?",
+      "descricao": "Ezequiel 3:17",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Sola Gratia', no sentido de que a salvação é um dom imerecido de Deus?",
+      "descricao": "Doutrina da Sola Gratia",
+      "opcoes": [
+        { "texto": "Salvação somente pelas obras", "correta": false },
+        { "texto": "Salvação somente pela graça de Deus", "correta": true },
+        { "texto": "Salvação somente pela fé", "correta": false },
+        { "texto": "Salvação somente por Cristo", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que Cristo é o único mediador entre Deus e os homens, e que a salvação é encontrada somente n'Ele?",
+      "descricao": "Solus Christus",
+      "opcoes": [
+        { "texto": "Sola Scriptura", "correta": false },
+        { "texto": "Sola Fide", "correta": false },
+        { "texto": "Solus Christus", "correta": true },
+        { "texto": "Soli Deo Gloria", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que era um fariseu e perseguidor de cristãos antes de sua conversão dramática no caminho de Damasco?",
+      "descricao": "Atos 8:3, Atos 9:1-2",
+      "opcoes": [
+        { "texto": "Pedro", "correta": false },
+        { "texto": "João", "correta": false },
+        { "texto": "Paulo (Saulo)", "correta": true },
+        { "texto": "Tiago", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém o famoso capítulo sobre o amor (1 Coríntios 13), descrevendo suas características?",
+      "descricao": "1 Coríntios 13",
+      "opcoes": [
+        { "texto": "Romanos", "correta": false },
+        { "texto": "Gálatas", "correta": false },
+        { "texto": "1 Coríntios", "correta": true },
+        { "texto": "Efésios", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da parábola de Jesus sobre um homem que semeou sementes em diferentes tipos de solo, representando a recepção da Palavra?",
+      "descricao": "Mateus 13:1-9",
+      "opcoes": [
+        { "texto": "O Filho Pródigo", "correta": false },
+        { "texto": "O Bom Samaritano", "correta": false },
+        { "texto": "O Semeador", "correta": true },
+        { "texto": "As Dez Virgens", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'regeneração', como o novo nascimento espiritual?",
+      "descricao": "Doutrina da Regeneração",
+      "opcoes": [
+        { "texto": "É um processo de autoaperfeiçoamento humano", "correta": false },
+        { "texto": "É o novo nascimento espiritual operado pelo Espírito Santo, que vivifica o pecador para a fé", "correta": true },
+        { "texto": "É a reforma moral de uma pessoa por seus próprios esforços", "correta": false },
+        { "texto": "É um conceito meramente psicológico de mudança de mentalidade", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história de Israel desde a criação até a morte de José, incluindo a formação das doze tribos?",
+      "descricao": "Gênesis",
+      "opcoes": [
+        { "texto": "Êxodo", "correta": false },
+        { "texto": "Gênesis", "correta": true },
+        { "texto": "Números", "correta": false },
+        { "texto": "Jó", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi levado por Deus para o céu sem experimentar a morte, e andou com Deus?",
+      "descricao": "Gênesis 5:24, Hebreus 11:5",
+      "opcoes": [
+        { "texto": "Elias", "correta": false },
+        { "texto": "Enoque", "correta": true },
+        { "texto": "Moisés", "correta": false },
+        { "texto": "Abraão", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'vocação eficaz' (chamado eficaz) de Deus?",
+      "descricao": "Doutrina do Chamado Eficaz",
+      "opcoes": [
+        { "texto": "É um chamado que pode ser resistido e rejeitado pela vontade humana", "correta": false },
+        { "texto": "É o chamado de Deus que infalivelmente leva à fé e ao arrependimento naqueles a quem é dirigido", "correta": true },
+        { "texto": "É um convite geral para todos, sem garantia de resposta", "correta": false },
+        { "texto": "É um chamado apenas para o ministério pastoral ou serviço religioso", "correta": false }
+      ]
+    }
+  ],
+  "9": [
+    {
+      "pergunta": "O que é o pecado?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 14",
+      "opcoes": [
+        { "texto": "Qualquer erro ou falha humana", "correta": false },
+        { "texto": "Qualquer falta de conformidade com a lei de Deus ou transgressão dela", "correta": true },
+        { "texto": "Apenas os grandes crimes", "correta": false },
+        { "texto": "Um conceito social, não espiritual", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história de Israel no deserto, incluindo o censo das tribos e suas jornadas?",
+      "descricao": "Livro de Números",
+      "opcoes": [
+        { "texto": "Êxodo", "correta": false },
+        { "texto": "Levítico", "correta": false },
+        { "texto": "Números", "correta": true },
+        { "texto": "Deuteronômio", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que foi o conselheiro dos reis Davi e Salomão, e repreendeu Davi por seu pecado?",
+      "descricao": "2 Samuel 7:1-17, 1 Reis 1:8",
+      "opcoes": [
+        { "texto": "Elias", "correta": false },
+        { "texto": "Samuel", "correta": false },
+        { "texto": "Natã", "correta": true },
+        { "texto": "Gade", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém a história de Sansão, o juiz de Israel conhecido por sua força e sua queda?",
+      "descricao": "Juízes 13-16",
+      "opcoes": [
+        { "texto": "Josué", "correta": false },
+        { "texto": "Juízes", "correta": true },
+        { "texto": "Rute", "correta": false },
+        { "texto": "1 Samuel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi conhecido como 'o profeta chorão' devido às suas lamentações sobre a destruição de Jerusalém?",
+      "descricao": "Livro de Jeremias",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Jeremias", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei que foi o último de Judá antes do exílio babilônico, e teve seus filhos mortos diante de si?",
+      "descricao": "2 Reis 25:1-7",
+      "opcoes": [
+        { "texto": "Ezequias", "correta": false },
+        { "texto": "Josias", "correta": false },
+        { "texto": "Zedequias", "correta": true },
+        { "texto": "Joaquim", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Soli Deo Gloria', o princípio de que toda glória pertence somente a Deus?",
+      "descricao": "Doutrina da Soli Deo Gloria",
+      "opcoes": [
+        { "texto": "Glória somente aos homens", "correta": false },
+        { "texto": "Glória somente a Deus", "correta": true },
+        { "texto": "Glória à igreja", "correta": false },
+        { "texto": "Glória às obras humanas", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que a Bíblia é a Palavra inspirada e inerrante de Deus, sem erros em seus escritos originais?",
+      "descricao": "Inerrância Bíblica",
+      "opcoes": [
+        { "texto": "Infalibilidade", "correta": false },
+        { "texto": "Inerrância", "correta": true },
+        { "texto": "Inspiração Humana", "correta": false },
+        { "texto": "Revelação Contínua", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que escreveu o livro de Hebreus (embora a autoria seja debatida, é tradicionalmente associado a ele, enfatizando a superioridade de Cristo)?",
+      "descricao": "Autoria de Hebreus",
+      "opcoes": [
+        { "texto": "Pedro", "correta": false },
+        { "texto": "João", "correta": false },
+        { "texto": "Paulo", "correta": true },
+        { "texto": "Tiago", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da cidade onde Jesus foi batizado por João Batista, marcando o início de seu ministério público?",
+      "descricao": "Mateus 3:13",
+      "opcoes": [
+        { "texto": "Nazaré", "correta": false },
+        { "texto": "Belém", "correta": false },
+        { "texto": "Betânia (além do Jordão)", "correta": true },
+        { "texto": "Jerusalém", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém a profecia do 'novo céu e nova terra' e a descrição da Nova Jerusalém?",
+      "descricao": "Apocalipse 21:1",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Apocalipse", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'santificação progressiva', como um processo contínuo na vida do crente?",
+      "descricao": "Doutrina da Santificação",
+      "opcoes": [
+        { "texto": "É um ato único de Deus que nos torna perfeitos instantaneamente", "correta": false },
+        { "texto": "É um processo contínuo de crescimento em santidade e conformidade à imagem de Cristo", "correta": true },
+        { "texto": "É algo que o crente atinge por seus próprios esforços", "correta": false },
+        { "texto": "É um conceito que não existe na Bíblia, pois a santidade é instantânea", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que teve um sonho com uma grande estátua de diferentes metais, representando reinos futuros?",
+      "descricao": "Daniel 2:31-45",
+      "opcoes": [
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Isaías", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém o 'Sermão do Monte' de Jesus, com ensinamentos sobre as Bem-aventuranças?",
+      "descricao": "Mateus 5-7",
+      "opcoes": [
+        { "texto": "Marcos", "correta": false },
+        { "texto": "Lucas", "correta": false },
+        { "texto": "Mateus", "correta": true },
+        { "texto": "João", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'redenção', como o ato de Deus de resgatar os pecadores?",
+      "descricao": "Doutrina da Redenção",
+      "opcoes": [
+        { "texto": "É o ato de Deus de comprar de volta os pecadores da escravidão do pecado através do sacrifício de Cristo", "correta": true },
+        { "texto": "É o ato do homem de se libertar do pecado por seus próprios méritos", "correta": false },
+        { "texto": "É um conceito que se refere apenas a bens materiais resgatados", "correta": false },
+        { "texto": "É o perdão de pecados sem qualquer custo ou sacrifício", "correta": false }
+      ]
+    }
+  ],
+  "10": [
+    {
+      "pergunta": "O que é a criação?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 9",
+      "opcoes": [
+        { "texto": "O processo de evolução natural", "correta": false },
+        { "texto": "A obra de Deus de fazer todas as coisas do nada, pelo poder de sua palavra", "correta": true },
+        { "texto": "A organização da matéria preexistente", "correta": false },
+        { "texto": "Um evento que ocorreu por acaso", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história da queda de Jericó, quando as muralhas caíram após o povo rodear a cidade?",
+      "descricao": "Josué 6",
+      "opcoes": [
+        { "texto": "Números", "correta": false },
+        { "texto": "Juízes", "correta": false },
+        { "texto": "Josué", "correta": true },
+        { "texto": "1 Samuel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que foi levado cativo para a Babilônia e teve visões detalhadas do futuro, incluindo a sucessão de impérios?",
+      "descricao": "Daniel 1:6, 7:1",
+      "opcoes": [
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Isaías", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém o famoso 'Cântico de Débora', celebrado após a vitória sobre Sísera?",
+      "descricao": "Juízes 5",
+      "opcoes": [
+        { "texto": "Rute", "correta": false },
+        { "texto": "Samuel", "correta": false },
+        { "texto": "Juízes", "correta": true },
+        { "texto": "Ester", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei que foi o último de Israel (reino do norte) antes da sua queda para a Assíria e o exílio das dez tribos?",
+      "descricao": "2 Reis 17:6",
+      "opcoes": [
+        { "texto": "Acabe", "correta": false },
+        { "texto": "Jeroboão", "correta": false },
+        { "texto": "Oseias", "correta": true },
+        { "texto": "Peca", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi chamado para profetizar contra a cidade de Nínive, mas tentou fugir, sendo engolido por um grande peixe?",
+      "descricao": "Jonas 1:1-2",
+      "opcoes": [
+        { "texto": "Naum", "correta": false },
+        { "texto": "Ageu", "correta": false },
+        { "texto": "Jonas", "correta": true },
+        { "texto": "Amós", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia entende por 'Pacto da Graça', em contraste com o Pacto das Obras?",
+      "descricao": "Teologia Pactual",
+      "opcoes": [
+        { "texto": "Um acordo onde a salvação é por obras humanas", "correta": false },
+        { "texto": "O acordo de Deus com o homem caído, prometendo salvação através de Cristo por meio da fé", "correta": true },
+        { "texto": "O pacto feito com Adão no Éden", "correta": false },
+        { "texto": "Um pacto que não existe na Bíblia", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que a Bíblia é a Palavra de Deus, e é suficiente para nos guiar em toda a verdade necessária para a salvação e a vida cristã?",
+      "descricao": "Suficiência da Escritura",
+      "opcoes": [
+        { "texto": "Inerrância Bíblica", "correta": false },
+        { "texto": "Suficiência da Escritura", "correta": true },
+        { "texto": "Revelação Contínua", "correta": false },
+        { "texto": "Tradição Eclesiástica", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que escreveu o evangelho de João e as três epístolas de João, enfatizando o amor e a luz?",
+      "descricao": "Autoria dos livros",
+      "opcoes": [
+        { "texto": "Pedro", "correta": false },
+        { "texto": "João", "correta": true },
+        { "texto": "Paulo", "correta": false },
+        { "texto": "Tiago", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da cidade onde Paulo teve a visão de um homem macedônio pedindo ajuda, o que o levou a iniciar sua missão na Europa?",
+      "descricao": "Atos 16:9",
+      "opcoes": [
+        { "texto": "Corinto", "correta": false },
+        { "texto": "Éfeso", "correta": false },
+        { "texto": "Trôade", "correta": true },
+        { "texto": "Atenas", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'adoção' dos crentes, como um privilégio de se tornar parte da família de Deus?",
+      "descricao": "Doutrina da Adoção",
+      "opcoes": [
+        { "texto": "É um processo legal de se tornar filho de Deus por mérito", "correta": false },
+        { "texto": "É o ato de Deus de nos receber como seus filhos e herdeiros em Cristo, por graça e não por obras", "correta": true },
+        { "texto": "É um conceito apenas humano de adoção", "correta": false },
+        { "texto": "É algo que acontece apenas após a morte", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi chamado para ser 'sentinela' sobre a casa de Israel e teve a visão da glória de Deus partindo do Templo de Jerusalém?",
+      "descricao": "Ezequiel 3:17, 10:18",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém a profecia dos 'quatro reinos' representados por uma grande estátua e por animais, que sucedem o império babilônico?",
+      "descricao": "Daniel 2 e 7",
+      "opcoes": [
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Apocalipse", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém o famoso 'capítulo da fé', listando heróis da fé do Antigo Testamento?",
+      "descricao": "Hebreus 11",
+      "opcoes": [
+        { "texto": "Romanos", "correta": false },
+        { "texto": "Gálatas", "correta": false },
+        { "texto": "Hebreus", "correta": true },
+        { "texto": "Tiago", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'União com Cristo', como a união espiritual e vital do crente com Ele?",
+      "descricao": "Doutrina da União com Cristo",
+      "opcoes": [
+        { "texto": "É uma união mística que nos torna divinos", "correta": false },
+        { "texto": "É a união espiritual e vital do crente com Cristo, pela qual ele participa de Seus benefícios e é capacitado a viver uma vida santa", "correta": true },
+        { "texto": "É uma união apenas simbólica, sem efeitos práticos", "correta": false },
+        { "texto": "É um conceito que se refere à união de igrejas ou denominações", "correta": false }
+      ]
+    }
+  ],
+  "11": [
+    {
+      "pergunta": "O que é a providência de Deus?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 11",
+      "opcoes": [
+        { "texto": "O destino cego", "correta": false },
+        { "texto": "A obra pela qual Deus sustenta, dirige e governa todas as suas criaturas e todas as suas ações", "correta": true },
+        { "texto": "A intervenção ocasional de Deus no mundo", "correta": false },
+        { "texto": "A capacidade humana de controlar o futuro", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história do povo de Israel no deserto após o Êxodo, incluindo suas murmurações e a serpente de bronze?",
+      "descricao": "Livro de Números",
+      "opcoes": [
+        { "texto": "Levítico", "correta": false },
+        { "texto": "Números", "correta": true },
+        { "texto": "Deuteronômio", "correta": false },
+        { "texto": "Josué", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que foi levado para o céu em um redemoinho, deixando seu manto para Eliseu como símbolo de sua autoridade?",
+      "descricao": "2 Reis 2:11-13",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Elias", "correta": true },
+        { "texto": "Ezequiel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei que foi o último de Judá antes da destruição de Jerusalém e do exílio babilônico, e quebrou seu juramento a Nabucodonosor?",
+      "descricao": "2 Reis 25:1-7",
+      "opcoes": [
+        { "texto": "Ezequias", "correta": false },
+        { "texto": "Josias", "correta": false },
+        { "texto": "Zedequias", "correta": true },
+        { "texto": "Joaquim", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o livro que contém a profecia da 'virgem que conceberá e dará à luz um filho', um sinal da vinda do Messias?",
+      "descricao": "Isaías 7:14",
+      "opcoes": [
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Isaías", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi chamado para pregar arrependimento a Nínive, mas fugiu, e depois viu a cidade se arrepender?",
+      "descricao": "Jonas 1:1-3",
+      "opcoes": [
+        { "texto": "Naum", "correta": false },
+        { "texto": "Ageu", "correta": false },
+        { "texto": "Jonas", "correta": true },
+        { "texto": "Amós", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Sola Scriptura', o princípio de que a Bíblia é a única autoridade para a fé e a vida cristã?",
+      "descricao": "Doutrina da Sola Scriptura",
+      "opcoes": [
+        { "texto": "Somente a tradição da igreja é a regra de fé", "correta": false },
+        { "texto": "Somente a Escritura é a regra inerrante e suficiente de fé e prática", "correta": true },
+        { "texto": "Somente a razão humana é suficiente para o conhecimento de Deus", "correta": false },
+        { "texto": "Somente a experiência pessoal é guia para a vida cristã", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que a salvação é um dom gratuito e imerecido de Deus, não dependendo de obras humanas?",
+      "descricao": "Sola Gratia",
+      "opcoes": [
+        { "texto": "Salvação por mérito", "correta": false },
+        { "texto": "Salvação pela graça somente", "correta": true },
+        { "texto": "Salvação por obras e fé", "correta": false },
+        { "texto": "Salvação por sacrifícios", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que escreveu a epístola aos Efésios, enfatizando a graça, a eleição e a unidade da igreja em Cristo?",
+      "descricao": "Efésios 1:1",
+      "opcoes": [
+        { "texto": "Pedro", "correta": false },
+        { "texto": "João", "correta": false },
+        { "texto": "Paulo", "correta": true },
+        { "texto": "Tiago", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da cidade onde Paulo pregou um sermão sobre o 'Deus Desconhecido' no Areópago, em Atenas?",
+      "descricao": "Atos 17:22-23",
+      "opcoes": [
+        { "texto": "Corinto", "correta": false },
+        { "texto": "Éfeso", "correta": false },
+        { "texto": "Atenas", "correta": true },
+        { "texto": "Roma", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'expiação substitutiva' de Cristo na cruz?",
+      "descricao": "Doutrina da Expiação",
+      "opcoes": [
+        { "texto": "Cristo morreu como um exemplo moral a ser seguido", "correta": false },
+        { "texto": "Cristo morreu no lugar dos pecadores, pagando a pena por seus pecados e satisfazendo a justiça de Deus", "correta": true },
+        { "texto": "Cristo morreu para possibilitar a salvação, mas o homem ainda precisa completar a obra", "correta": false },
+        { "texto": "Cristo morreu apenas para perdoar pecados leves, não os graves", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém o famoso capítulo da ressurreição (1 Coríntios 15), explicando a importância da ressurreição de Cristo e dos crentes?",
+      "descricao": "1 Coríntios 15",
+      "opcoes": [
+        { "texto": "Romanos", "correta": false },
+        { "texto": "Gálatas", "correta": false },
+        { "texto": "1 Coríntios", "correta": true },
+        { "texto": "Efésios", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'eleição incondicional' de Deus para a salvação?",
+      "descricao": "Doutrina da Eleição Incondicional",
+      "opcoes": [
+        { "texto": "Deus escolhe com base no que o homem fará no futuro", "correta": false },
+        { "texto": "Deus escolhe para a salvação sem qualquer condição prévia no homem, baseando-se apenas em Sua boa vontade e propósito", "correta": true },
+        { "texto": "Deus escolhe apenas os que são bons e merecedores", "correta": false },
+        { "texto": "A eleição é um conceito que não existe na Bíblia, pois contradiz o livre-arbítrio", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que teve a visão da 'mão que escrevia na parede' durante o banquete do rei Belsazar, predizendo a queda da Babilônia?",
+      "descricao": "Daniel 5:5-28",
+      "opcoes": [
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Isaías", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'graça irresistível', que sempre leva à conversão daqueles a quem é aplicada?",
+      "descricao": "Doutrina da Graça Irresistível",
+      "opcoes": [
+        { "texto": "A graça de Deus pode ser resistida e frustrada pela vontade humana", "correta": false },
+        { "texto": "A graça de Deus sempre leva à conversão daqueles a quem é concedida, vencendo a resistência do coração pecador", "correta": true },
+        { "texto": "A graça é um convite que pode ou não ser aceito, dependendo da escolha humana", "correta": false },
+        { "texto": "A graça é apenas um favor, não uma força que transforma o indivíduo", "correta": false }
+      ]
+    }
+  ],
+  "12": [
+    {
+      "pergunta": "O que é a Lei de Deus resumida?",
+      "descricao": "Breve Catecismo de Westminster, Pergunta 40",
+      "opcoes": [
+        { "texto": "Um conjunto de regras sociais", "correta": false },
+        { "texto": "Amar ao Senhor teu Deus de todo o teu coração, de toda a tua alma, de todo o teu entendimento e de todas as tuas forças; e ao teu próximo como a ti mesmo", "correta": true },
+        { "texto": "Os dez mandamentos apenas", "correta": false },
+        { "texto": "As tradições dos anciãos", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história da travessia do Mar Vermelho pelos israelitas, fugindo do exército egípcio?",
+      "descricao": "Êxodo 14",
+      "opcoes": [
+        { "texto": "Gênesis", "correta": false },
+        { "texto": "Êxodo", "correta": true },
+        { "texto": "Números", "correta": false },
+        { "texto": "Deuteronômio", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que foi jogado na cova dos leões por se recusar a parar de orar a Deus, mas foi salvo por um anjo?",
+      "descricao": "Daniel 6:16",
+      "opcoes": [
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Isaías", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei que foi o mais sábio de Israel, mas se desviou por causa de suas muitas esposas estrangeiras e idolatria?",
+      "descricao": "1 Reis 11:1-8",
+      "opcoes": [
+        { "texto": "Davi", "correta": false },
+        { "texto": "Salomão", "correta": true },
+        { "texto": "Saul", "correta": false },
+        { "texto": "Roboão", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o livro que contém a profecia do 'Emanuel' (Deus conosco), que seria um sinal da fidelidade de Deus?",
+      "descricao": "Isaías 7:14",
+      "opcoes": [
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Isaías", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi engolido por um grande peixe após tentar fugir da vontade de Deus para Nínive?",
+      "descricao": "Jonas 1:17",
+      "opcoes": [
+        { "texto": "Elias", "correta": false },
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jonas", "correta": true },
+        { "texto": "Jeremias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Solus Christus', o princípio de que a salvação é somente através de Cristo?",
+      "descricao": "Doutrina do Solus Christus",
+      "opcoes": [
+        { "texto": "Cristo é apenas um entre muitos salvadores", "correta": false },
+        { "texto": "Cristo é o único caminho para Deus e o único mediador e Salvador", "correta": true },
+        { "texto": "A salvação pode ser alcançada por outros meios além de Cristo", "correta": false },
+        { "texto": "Cristo é um modelo, não um salvador necessário", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que a glória de Deus é o propósito final e supremo de todas as coisas, incluindo a criação e a redenção?",
+      "descricao": "Soli Deo Gloria",
+      "opcoes": [
+        { "texto": "Glória humana", "correta": false },
+        { "texto": "Glória somente a Deus", "correta": true },
+        { "texto": "Glória à igreja", "correta": false },
+        { "texto": "Glória às obras", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que era um pescador e se tornou um dos pilares da igreja primitiva, pregando no Pentecostes?",
+      "descricao": "Mateus 4:18, Gálatas 2:9",
+      "opcoes": [
+        { "texto": "João", "correta": false },
+        { "texto": "Tiago", "correta": false },
+        { "texto": "Pedro", "correta": true },
+        { "texto": "André", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história da igreja primitiva, incluindo a descida do Espírito Santo no Pentecostes e a expansão do Evangelho?",
+      "descricao": "Livro de Atos",
+      "opcoes": [
+        { "texto": "Romanos", "correta": false },
+        { "texto": "Coríntios", "correta": false },
+        { "texto": "Atos dos Apóstolos", "correta": true },
+        { "texto": "Hebreus", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'graça comum' de Deus?",
+      "descricao": "Doutrina da Graça Comum",
+      "opcoes": [
+        { "texto": "É a graça salvadora que Deus concede apenas aos eleitos", "correta": false },
+        { "texto": "É a bondade e providência de Deus estendida a toda a humanidade, crentes e não crentes, manifestada em bênçãos gerais", "correta": true },
+        { "texto": "É a graça que torna o homem capaz de se salvar por si mesmo", "correta": false },
+        { "texto": "É um conceito que não existe na Bíblia, pois Deus só abençoa os crentes", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém o famoso capítulo sobre a fé, que define a fé e lista exemplos de fé do Antigo Testamento?",
+      "descricao": "Hebreus 11",
+      "opcoes": [
+        { "texto": "Romanos", "correta": false },
+        { "texto": "Gálatas", "correta": false },
+        { "texto": "Hebreus", "correta": true },
+        { "texto": "Tiago", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'justificação pela fé', como o meio pelo qual o pecador é declarado justo?",
+      "descricao": "Doutrina da Justificação",
+      "opcoes": [
+        { "texto": "Ser declarado justo por obras da lei ou méritos humanos", "correta": false },
+        { "texto": "Ser declarado justo por Deus através da fé em Cristo, não por mérito próprio, mas pela justiça de Cristo imputada", "correta": true },
+        { "texto": "Ser perdoado por ser bom e cumprir rituais religiosos", "correta": false },
+        { "texto": "Ser salvo por rituais religiosos ou tradições", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi chamado para ser 'sentinela' sobre a casa de Israel e teve visões detalhadas do Templo e do futuro de Jerusalém?",
+      "descricao": "Ezequiel 3:17, 40:1-4",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'perseverança final' dos crentes, no sentido de que os verdadeiros salvos são preservados por Deus?",
+      "descricao": "Doutrina da Perseverança dos Santos",
+      "opcoes": [
+        { "texto": "Que os verdadeiros crentes podem cair da fé e perder a salvação", "correta": false },
+        { "texto": "Que aqueles que Deus elegeu e regenerou perseverarão na fé até o fim, sendo preservados pelo poder de Deus para a salvação eterna", "correta": true },
+        { "texto": "Que a salvação é condicional à perseverança humana e ao esforço próprio", "correta": false },
+        { "texto": "Que a perseverança é um esforço humano sem ajuda divina, e a salvação pode ser perdida", "correta": false }
+      ]
+    }
+  ],
+  "13": [
+    {
+      "pergunta": "Qual o primeiro mandamento da Lei de Deus?",
+      "descricao": "Êxodo 20:3",
+      "opcoes": [
+        { "texto": "Não matarás", "correta": false },
+        { "texto": "Não terás outros deuses diante de mim", "correta": true },
+        { "texto": "Honra teu pai e tua mãe", "correta": false },
+        { "texto": "Não furtarás", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história da criação do mundo, a queda do homem e o início da história de Israel com Abraão, Isaque e Jacó?",
+      "descricao": "Gênesis 1-3",
+      "opcoes": [
+        { "texto": "Êxodo", "correta": false },
+        { "texto": "Gênesis", "correta": true },
+        { "texto": "Jó", "correta": false },
+        { "texto": "Salmos", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o líder que guiou os israelitas através do deserto por 40 anos, recebendo a Lei no Monte Sinai?",
+      "descricao": "Êxodo 16:35",
+      "opcoes": [
+        { "texto": "Josué", "correta": false },
+        { "texto": "Moisés", "correta": true },
+        { "texto": "Abraão", "correta": false },
+        { "texto": "Davi", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi o último dos profetas maiores do Antigo Testamento, que profetizou sobre o novo pacto?",
+      "descricao": "Jeremias 1:1",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Jeremias", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o livro que contém a profecia da 'pedra cortada sem mãos' que esmaga a grande estátua, representando o Reino de Deus?",
+      "descricao": "Daniel 2:34-35",
+      "opcoes": [
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Apocalipse", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi levado cativo para Babilônia e interpretou sonhos e visões, servindo a reis pagãos?",
+      "descricao": "Daniel 1:6, 2:1",
+      "opcoes": [
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Isaías", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Sola Fide', o princípio da justificação somente pela fé?",
+      "descricao": "Doutrina da Sola Fide",
+      "opcoes": [
+        { "texto": "Salvação somente pelas obras", "correta": false },
+        { "texto": "Salvação somente pela fé em Cristo, sem as obras da lei", "correta": true },
+        { "texto": "Salvação somente pela graça", "correta": false },
+        { "texto": "Salvação somente por Cristo", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que a Bíblia é a Palavra de Deus, inspirada e inerrante, sem erros em seus escritos originais?",
+      "descricao": "Inerrância Bíblica",
+      "opcoes": [
+        { "texto": "Infalibilidade", "correta": false },
+        { "texto": "Inerrância", "correta": true },
+        { "texto": "Inspiração Humana", "correta": false },
+        { "texto": "Revelação Progressiva", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que escreveu o evangelho de Mateus, com foco em Jesus como o Messias prometido aos judeus?",
+      "descricao": "Autoria do Evangelho",
+      "opcoes": [
+        { "texto": "Marcos", "correta": false },
+        { "texto": "Lucas", "correta": false },
+        { "texto": "Mateus (Levi)", "correta": true },
+        { "texto": "João", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da cidade onde Jesus foi crucificado e ressuscitou, tornando-se o centro da fé cristã?",
+      "descricao": "João 19:18, Mateus 28:6",
+      "opcoes": [
+        { "texto": "Nazaré", "correta": false },
+        { "texto": "Belém", "correta": false },
+        { "texto": "Jerusalém", "correta": true },
+        { "texto": "Cafarnaum", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'eleição' de Deus para a salvação, como um ato de Sua soberania?",
+      "descricao": "Doutrina da Eleição",
+      "opcoes": [
+        { "texto": "Deus escolhe com base na previsão da fé humana", "correta": false },
+        { "texto": "Deus escolhe soberanamente indivíduos para a salvação antes da fundação do mundo, por Sua livre graça e propósito", "correta": true },
+        { "texto": "A eleição é um convite geral para todos, sem distinção", "correta": false },
+        { "texto": "O homem elege a si mesmo para a salvação por sua própria vontade", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém o famoso 'capítulo da criação' (Gênesis 1), descrevendo como Deus fez o universo?",
+      "descricao": "Gênesis 1",
+      "opcoes": [
+        { "texto": "Êxodo", "correta": false },
+        { "texto": "Gênesis", "correta": true },
+        { "texto": "Jó", "correta": false },
+        { "texto": "Salmos", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'depravação total' da humanidade após a Queda?",
+      "descricao": "Doutrina da Depravação Total",
+      "opcoes": [
+        { "texto": "O homem é tão pecador que não pode fazer nada de bom", "correta": false },
+        { "texto": "Toda a pessoa está afetada pelo pecado em todas as suas faculdades (mente, emoções, vontade), tornando-a incapaz de se salvar por si mesma", "correta": true },
+        { "texto": "O homem é completamente mau e não tem nenhuma bondade inerente", "correta": false },
+        { "texto": "O pecado afeta apenas a vontade do homem, deixando sua mente e emoções intactas", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi chamado para pregar a Israel sobre o julgamento e a restauração, e teve visões de Deus no trono?",
+      "descricao": "Isaías 1:1",
+      "opcoes": [
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Isaías", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'expiação limitada' de Cristo, no sentido de que sua morte foi eficaz para um grupo específico?",
+      "descricao": "Doutrina da Expiação Limitada",
+      "opcoes": [
+        { "texto": "Cristo morreu para tornar a salvação possível para todos, mas não a garantiu para ninguém", "correta": false },
+        { "texto": "Cristo morreu eficazmente apenas pelos eleitos de Deus, garantindo a salvação deles", "correta": true },
+        { "texto": "A morte de Cristo foi um exemplo moral para todos, sem um propósito salvífico específico", "correta": false },
+        { "texto": "A expiação de Cristo é limitada em seu poder, não sendo suficiente para todos", "correta": false }
+      ]
+    }
+  ],
+  "14": [
+    {
+      "pergunta": "Qual o segundo mandamento da Lei de Deus?",
+      "descricao": "Êxodo 20:4-6",
+      "opcoes": [
+        { "texto": "Não tomarás o nome do Senhor teu Deus em vão", "correta": false },
+        { "texto": "Não farás para ti imagem de escultura, nem semelhança alguma do que há em cima nos céus, nem embaixo na terra, nem nas águas debaixo da terra", "correta": true },
+        { "texto": "Não matarás", "correta": false },
+        { "texto": "Honra teu pai e tua mãe", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história da vida de Jesus e seu ministério, focado nos gentios e nos marginalizados da sociedade?",
+      "descricao": "Evangelho de Lucas",
+      "opcoes": [
+        { "texto": "Mateus", "correta": false },
+        { "texto": "Marcos", "correta": false },
+        { "texto": "Lucas", "correta": true },
+        { "texto": "João", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que teve a visão da 'carruagem de fogo' e foi levado cativo para Babilônia?",
+      "descricao": "Ezequiel 1:4-28",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei que foi o último de Israel (reino do norte) antes de ser levado cativo pela Assíria, por sua idolatria?",
+      "descricao": "2 Reis 17:6",
+      "opcoes": [
+        { "texto": "Acabe", "correta": false },
+        { "texto": "Jeroboão", "correta": false },
+        { "texto": "Oseias", "correta": true },
+        { "texto": "Peca", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o livro que contém a profecia do 'vale de ossos secos' que se levantam e recebem vida, simbolizando a restauração de Israel?",
+      "descricao": "Ezequiel 37:1-14",
+      "opcoes": [
+        { "texto": "Daniel", "correta": false },
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Ezequiel", "correta": true },
+        { "texto": "Jonas", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi chamado para pregar a Israel sobre o julgamento e a restauração, enfatizando a justiça de Deus e o culto verdadeiro?",
+      "descricao": "Amós 1:1",
+      "opcoes": [
+        { "texto": "Oséias", "correta": false },
+        { "texto": "Joel", "correta": false },
+        { "texto": "Amós", "correta": true },
+        { "texto": "Obadias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Soli Deo Gloria', o princípio de que toda a glória deve ser dada somente a Deus?",
+      "descricao": "Doutrina da Soli Deo Gloria",
+      "opcoes": [
+        { "texto": "Glória somente aos homens", "correta": false },
+        { "texto": "Glória somente a Deus", "correta": true },
+        { "texto": "Glória à igreja", "correta": false },
+        { "texto": "Glória às obras humanas", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que a Bíblia é a Palavra de Deus e é suficiente para nos guiar em toda a verdade necessária para a salvação e a vida cristã, sem a necessidade de outras revelações?",
+      "descricao": "Suficiência da Escritura",
+      "opcoes": [
+        { "texto": "Inerrância Bíblica", "correta": false },
+        { "texto": "Suficiência da Escritura", "correta": true },
+        { "texto": "Revelação Contínua", "correta": false },
+        { "texto": "Tradição Eclesiástica", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que era conhecido como 'o zelote', um grupo político-religioso em Israel?",
+      "descricao": "Mateus 10:4",
+      "opcoes": [
+        { "texto": "Tiago", "correta": false },
+        { "texto": "João", "correta": false },
+        { "texto": "Simão", "correta": true },
+        { "texto": "Judas", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da cidade onde Paulo foi apedrejado e deixado como morto, mas sobreviveu milagrosamente e continuou sua jornada?",
+      "descricao": "Atos 14:19-20",
+      "opcoes": [
+        { "texto": "Antioquia", "correta": false },
+        { "texto": "Listra", "correta": true },
+        { "texto": "Icônio", "correta": false },
+        { "texto": "Derbe", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'adoção' dos crentes como filhos de Deus, um privilégio concedido pela graça?",
+      "descricao": "Doutrina da Adoção",
+      "opcoes": [
+        { "texto": "É um processo legal de se tornar filho de Deus por mérito humano", "correta": false },
+        { "texto": "É o ato de Deus de nos receber como seus filhos e herdeiros em Cristo, por graça e não por obras", "correta": true },
+        { "texto": "É um conceito apenas humano de adoção, sem significado espiritual", "correta": false },
+        { "texto": "É algo que acontece apenas após a morte, quando o crente é aperfeiçoado", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia entende por 'Pacto da Redenção' (ou Pacto Eterno), feito antes da criação do mundo?",
+      "descricao": "Teologia Pactual",
+      "opcoes": [
+        { "texto": "Um acordo entre Deus e o homem para a salvação", "correta": false },
+        { "texto": "O acordo eterno entre as Pessoas da Trindade para a salvação dos eleitos, onde o Filho se comprometeu a redimir o povo", "correta": true },
+        { "texto": "O pacto feito com Moisés no Sinai, que estabeleceu a Lei", "correta": false },
+        { "texto": "Um pacto que não existe na Bíblia, sendo uma invenção teológica", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história da rainha Ester, que salvou os judeus da aniquilação no Império Persa?",
+      "descricao": "Livro de Ester",
+      "opcoes": [
+        { "texto": "Rute", "correta": false },
+        { "texto": "Ester", "correta": true },
+        { "texto": "Neemias", "correta": false },
+        { "texto": "Esdras", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que ungiu tanto Saul quanto Davi como reis de Israel, sob a direção de Deus?",
+      "descricao": "1 Samuel 10:1, 16:13",
+      "opcoes": [
+        { "texto": "Elias", "correta": false },
+        { "texto": "Samuel", "correta": true },
+        { "texto": "Natã", "correta": false },
+        { "texto": "Gade", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'União Mística' com Cristo, como a união espiritual e vital do crente com Ele?",
+      "descricao": "Doutrina da União com Cristo",
+      "opcoes": [
+        { "texto": "É uma união que nos torna divinos e sem pecado", "correta": false },
+        { "texto": "É a união espiritual e vital do crente com Cristo, pela qual ele participa de Seus benefícios e é capacitado a viver uma vida santa", "correta": true },
+        { "texto": "É uma união apenas simbólica, sem efeitos práticos na vida do crente", "correta": false },
+        { "texto": "É um conceito que se refere à união de igrejas ou denominações cristãs", "correta": false }
+      ]
+    }
+  ],
+  "15": [
+    {
+      "pergunta": "Qual o terceiro mandamento da Lei de Deus?",
+      "descricao": "Êxodo 20:7",
+      "opcoes": [
+        { "texto": "Lembra-te do dia do sábado, para o santificar", "correta": false },
+        { "texto": "Não tomarás o nome do Senhor teu Deus em vão", "correta": true },
+        { "texto": "Honra teu pai e tua mãe", "correta": false },
+        { "texto": "Não matarás", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história da libertação do povo de Israel do Egito e a instituição da Páscoa?",
+      "descricao": "Êxodo",
+      "opcoes": [
+        { "texto": "Gênesis", "correta": false },
+        { "texto": "Êxodo", "correta": true },
+        { "texto": "Levítico", "correta": false },
+        { "texto": "Números", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o profeta que foi arrebatado por um carro de fogo e não experimentou a morte, sendo sucedido por Eliseu?",
+      "descricao": "2 Reis 2:11",
+      "opcoes": [
+        { "texto": "Eliseu", "correta": false },
+        { "texto": "Elias", "correta": true },
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do rei que foi o último de Judá antes da destruição de Jerusalém e do exílio babilônico, e foi levado acorrentado?",
+      "descricao": "2 Reis 25:1-7",
+      "opcoes": [
+        { "texto": "Ezequias", "correta": false },
+        { "texto": "Josias", "correta": false },
+        { "texto": "Zedequias", "correta": true },
+        { "texto": "Joaquim", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o livro que contém a profecia da 'virgem que conceberá e dará à luz um filho, e o seu nome será Emanuel' (Deus conosco)?",
+      "descricao": "Isaías 7:14",
+      "opcoes": [
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Ezequiel", "correta": false },
+        { "texto": "Isaías", "correta": true },
+        { "texto": "Daniel", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do profeta que foi engolido por um grande peixe e passou três dias e três noites em seu ventre, um sinal da ressurreição de Cristo?",
+      "descricao": "Jonas 1:17",
+      "opcoes": [
+        { "texto": "Elias", "correta": false },
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jonas", "correta": true },
+        { "texto": "Jeremias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Sola Gratia', o princípio da salvação somente pela graça de Deus?",
+      "descricao": "Doutrina da Sola Gratia",
+      "opcoes": [
+        { "texto": "Salvação somente pelas obras", "correta": false },
+        { "texto": "Salvação somente pela graça de Deus, que é um dom imerecido", "correta": true },
+        { "texto": "Salvação somente pela fé, sem a graça", "correta": false },
+        { "texto": "Salvação somente por Cristo, mas com méritos humanos", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da doutrina que afirma que a Bíblia é a única fonte autoritativa para a fé e a vida cristã, sem a necessidade de tradições ou revelações adicionais?",
+      "descricao": "Sola Scriptura",
+      "opcoes": [
+        { "texto": "Tradição da Igreja", "correta": false },
+        { "texto": "Sola Scriptura", "correta": true },
+        { "texto": "Experiência Pessoal", "correta": false },
+        { "texto": "Razão Humana", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do apóstolo que escreveu a epístola aos Romanos, considerada a mais completa exposição do Evangelho e da doutrina da justificação?",
+      "descricao": "Romanos 1:1",
+      "opcoes": [
+        { "texto": "Pedro", "correta": false },
+        { "texto": "João", "correta": false },
+        { "texto": "Paulo", "correta": true },
+        { "texto": "Tiago", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da cidade onde Jesus foi batizado por João Batista, no rio Jordão?",
+      "descricao": "Mateus 3:13",
+      "opcoes": [
+        { "texto": "Nazaré", "correta": false },
+        { "texto": "Belém", "correta": false },
+        { "texto": "Betânia (além do Jordão)", "correta": true },
+        { "texto": "Jerusalém", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'regeneração' como um ato soberano de Deus, que vivifica o pecador?",
+      "descricao": "Doutrina da Regeneração",
+      "opcoes": [
+        { "texto": "É um processo de autoaperfeiçoamento humano", "correta": false },
+        { "texto": "É o novo nascimento espiritual, onde Deus vivifica o coração do pecador para que ele possa crer e se arrepender", "correta": true },
+        { "texto": "É a reforma moral de uma pessoa por seus próprios esforços", "correta": false },
+        { "texto": "É um conceito meramente psicológico de mudança de mentalidade", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que contém a profecia das 'setenta semanas' e a vinda do Messias, detalhando eventos futuros?",
+      "descricao": "Daniel 9:24-27",
+      "opcoes": [
+        { "texto": "Isaías", "correta": false },
+        { "texto": "Jeremias", "correta": false },
+        { "texto": "Daniel", "correta": true },
+        { "texto": "Zacarias", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia entende por 'Pacto da Graça', como o acordo de Deus com o homem caído?",
+      "descricao": "Teologia Pactual",
+      "opcoes": [
+        { "texto": "Um acordo onde a salvação é por obras humanas", "correta": false },
+        { "texto": "O acordo de Deus com o homem caído, prometendo salvação através de Cristo por meio da fé", "correta": true },
+        { "texto": "O pacto feito com Adão no Éden, exigindo obediência perfeita", "correta": false },
+        { "texto": "Um pacto que não existe na Bíblia, sendo uma invenção teológica", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do livro que narra a história de Rute, uma moabita que se tornou ancestral de Davi e de Jesus Cristo?",
+      "descricao": "Livro de Rute",
+      "opcoes": [
+        { "texto": "Juízes", "correta": false },
+        { "texto": "Samuel", "correta": false },
+        { "texto": "Rute", "correta": true },
+        { "texto": "Ester", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que a Bíblia ensina sobre a 'União com Cristo', como a união espiritual e vital do crente com Ele?",
+      "descricao": "Doutrina da União com Cristo",
+      "opcoes": [
+        { "texto": "É uma união mística que nos torna divinos e sem pecado", "correta": false },
+        { "texto": "É a união espiritual e vital do crente com Cristo, pela qual ele recebe todos os benefícios da salvação e é capacitado a viver uma vida santa", "correta": true },
+        { "texto": "É uma união apenas simbólica, sem efeitos práticos na vida do crente", "correta": false },
+        { "texto": "É um conceito que se refere à união de igrejas ou denominações cristãs", "correta": false }
+      ]
+    }
+  ]
+}
