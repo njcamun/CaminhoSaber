@@ -1799,7 +1799,1406 @@
         { "texto": "Ser declarado justo por obras da lei ou méritos humanos", "correta": false },
         { "texto": "Ser declarado justo por Deus através da fé em Cristo, não por mérito próprio, mas pela justiça de Cristo imputada", "correta": true },
         { "texto": "Ser perdoado por ser bom e cumprir rituais religiosos", "correta": false },
-        { "texto": "Ser salvo por rituais religiosos ou tradições", "correta": false }
+        { "texto": "Ser salvo por rituais religiosos ou tradições", "correta": false },{
+          "quizTitle": "Quiz do Breve Catecismo de Westminster",
+          "niveis": [
+            {
+              "nivel": 1,
+              "perguntas": [
+                {
+                  "pergunta": "Qual é o fim principal do homem?",
+                  "opcoes": [
+                    {"texto": "Apenas obedecer à lei moral de Deus.", "correta": false},
+                    {"texto": "Glorificar e gozar a Deus eternamente.", "correta": true},
+                    {"texto": "Entender todos os decretos divinos.", "correta": false},
+                    {"texto": "Ser justificado, adotado e santificado nesta vida.", "correta": false},
+                    {"texto": "Conhecer a Deus através da natureza.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O fim principal do homem é glorificar a Deus e gozá-lo para sempre.",
+                  "referenciaBiblica": "1 Coríntios 10:31; Romanos 11:36; Salmo 73:25-28; João 17:22, 24."
+                },
+                {
+                  "pergunta": "Que regra deu Deus para nos dirigir na maneira de o glorificar e gozar?",
+                  "opcoes": [
+                    {"texto": "A tradição da igreja e os concílios.", "correta": false},
+                    {"texto": "A razão humana e a consciência individual.", "correta": false},
+                    {"texto": "A Bíblia é nossa única regra.", "correta": true},
+                    {"texto": "Os Dez Mandamentos exclusivamente.", "correta": false},
+                    {"texto": "Os escritos dos pais da igreja primitiva.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A Palavra de Deus, que se acha nas Escrituras do Antigo e Novo Testamentos, é a única regra para nos dirigir na maneira de o glorificar e gozar.",
+                  "referenciaBiblica": "2 Timóteo 3:16-17; Isaías 8:20; Lucas 16:29, 31; Gálatas 1:8-9."
+                },
+                {
+                  "pergunta": "Qual é a coisa principal que as Escrituras nos ensinam?",
+                  "opcoes": [
+                    {"texto": "A história do povo de Israel e da igreja.", "correta": false},
+                    {"texto": "Profecias sobre o fim dos tempos.", "correta": false},
+                    {"texto": "Como alcançar prosperidade material.", "correta": false},
+                    {"texto": "O que crer sobre Deus e nosso dever.", "correta": true},
+                    {"texto": "Regras para o culto e rituais religiosos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A coisa principal que as Escrituras nos ensinam é o que o homem deve crer acerca de Deus, e o dever que Deus requer do homem.",
+                  "referenciaBiblica": "2 Timóteo 1:13; João 5:39; João 20:31; Miqueias 6:8."
+                },
+                {
+                  "pergunta": "O que é Deus?",
+                  "opcoes": [
+                    {"texto": "Uma força impessoal que governa o universo.", "correta": false},
+                    {"texto": "Espírito infinito, eterno e imutável.", "correta": true},
+                    {"texto": "Um ser limitado em poder e conhecimento.", "correta": false},
+                    {"texto": "Apenas um juiz severo e punitivo.", "correta": false},
+                    {"texto": "Um ser criado, superior aos anjos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Deus é espírito, infinito, eterno e imutável em seu ser, sabedoria, poder, santidade, justiça, bondade e verdade.",
+                  "referenciaBiblica": "João 4:24; Jó 11:7-9; Salmo 90:2; Tiago 1:17; Êxodo 3:14; Salmo 147:5; Apocalipse 4:8; Apocalipse 15:4; Deuteronômio 32:4; Êxodo 34:6."
+                },
+                {
+                  "pergunta": "Há mais de um Deus?",
+                  "opcoes": [
+                    {"texto": "Sim, existem muitos deuses e deusas.", "correta": false},
+                    {"texto": "Existem dois deuses: um bom e um mau.", "correta": false},
+                    {"texto": "Deus se manifesta como muitos deuses diferentes.", "correta": false},
+                    {"texto": "Apenas um Deus vivo e verdadeiro.", "correta": true},
+                    {"texto": "O conceito de 'Deus' é apenas uma ideia humana.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Há um só Deus, o Deus vivo e verdadeiro.",
+                  "referenciaBiblica": "Deuteronômio 6:4; Jeremias 10:10; 1 Coríntios 8:4."
+                }
+              ]
+            },
+            {
+              "nivel": 2,
+              "perguntas": [
+                {
+                  "pergunta": "Quantas pessoas há na Divindade?",
+                  "opcoes": [
+                    {"texto": "Apenas uma pessoa, que assume diferentes formas.", "correta": false},
+                    {"texto": "Duas pessoas: o Pai e o Filho.", "correta": false},
+                    {"texto": "Três pessoas, um só Deus.", "correta": true},
+                    {"texto": "Muitas pessoas divinas, como os anjos.", "correta": false},
+                    {"texto": "Quatro pessoas, incluindo a Virgem Maria.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Há três pessoas na Divindade: o Pai, o Filho e o Espírito Santo; e estas três são um Deus, da mesma substância, iguais em poder e glória.",
+                  "referenciaBiblica": "Mateus 28:19; 2 Coríntios 13:14; 1 João 5:7."
+                },
+                {
+                  "pergunta": "Que são os decretos de Deus?",
+                  "opcoes": [
+                    {"texto": "As leis morais que devemos seguir.", "correta": false},
+                    {"texto": "Seu eterno propósito que preordena tudo.", "correta": true},
+                    {"texto": "As profecias bíblicas sobre o futuro.", "correta": false},
+                    {"texto": "As respostas de Deus às nossas orações.", "correta": false},
+                    {"texto": "As regras para a adoração na igreja.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Os decretos de Deus são o seu eterno propósito, segundo o conselho da sua vontade, pelo qual, para sua própria glória, Ele predestinou tudo o que acontece.",
+                  "referenciaBiblica": "Efésios 1:11; Romanos 11:33; Atos 4:27-28."
+                },
+                {
+                  "pergunta": "Como Deus executa os seus decretos?",
+                  "opcoes": [
+                    {"texto": "Apenas através de milagres.", "correta": false},
+                    {"texto": "Somente pela ação dos anjos.", "correta": false},
+                    {"texto": "Interferindo apenas em grandes eventos históricos.", "correta": false},
+                    {"texto": "Pela criação e providência.", "correta": true},
+                    {"texto": "Deixando o mundo seguir seu curso natural sem intervenção.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Deus executa os seus decretos nas obras da criação e da providência.",
+                  "referenciaBiblica": "Apocalipse 4:11; Daniel 4:35; Efésios 1:11."
+                },
+                {
+                  "pergunta": "Qual é a obra da criação?",
+                  "opcoes": [
+                    {"texto": "Deus organizou matéria pré-existente.", "correta": false},
+                    {"texto": "Deus criou tudo do nada em seis dias.", "correta": true},
+                    {"texto": "A criação ocorreu ao longo de milhões de anos.", "correta": false},
+                    {"texto": "Apenas o mundo espiritual foi criado por Deus.", "correta": false},
+                    {"texto": "Deus criou o universo e depois o abandonou.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A obra da criação é aquela pela qual Deus fez todas as coisas do nada, pela palavra do seu poder, no espaço de seis dias, e tudo muito bom.",
+                  "referenciaBiblica": "Gênesis 1:1; Hebreus 11:3; Salmo 33:6, 9; Gênesis 1:31."
+                },
+                {
+                  "pergunta": "Como Deus criou o homem?",
+                  "opcoes": [
+                    {"texto": "O homem evoluiu de formas de vida inferiores sem intervenção divina.", "correta": false},
+                    {"texto": "Criou apenas a alma do homem, o corpo é material.", "correta": false},
+                    {"texto": "Criou homem e mulher à Sua imagem.", "correta": true},
+                    {"texto": "O homem foi criado como um ser puramente espiritual.", "correta": false},
+                    {"texto": "Deus criou o homem, mas não a mulher diretamente.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Deus criou o homem, macho e fêmea, à sua própria imagem, em conhecimento, retidão e santidade, com domínio sobre as criaturas.",
+                  "referenciaBiblica": "Gênesis 1:26-27; Colossenses 3:10; Efésios 4:24; Gênesis 1:28."
+                }
+              ]
+            },
+            {
+              "nivel": 3,
+              "perguntas": [
+                {
+                  "pergunta": "Quais são as obras da providência de Deus?",
+                  "opcoes": [
+                    {"texto": "Apenas os milagres registrados na Bíblia.", "correta": false},
+                    {"texto": "Preserva e governa tudo santamente.", "correta": true},
+                    {"texto": "Deus apenas observa o que acontece, sem intervir.", "correta": false},
+                    {"texto": "A providência divina se limita a proteger os crentes.", "correta": false},
+                    {"texto": "Controlar apenas os grandes eventos mundiais.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "As obras da providência de Deus são a sua mui santa, sábia e poderosa maneira de preservar e governar todas as suas criaturas, e todas as suas ações.",
+                  "referenciaBiblica": "Salmo 145:17; Salmo 104:24; Hebreus 1:3; Mateus 10:29-30."
+                },
+                {
+                  "pergunta": "Que ato especial de providência exerceu Deus para com o homem, no estado em que ele foi criado?",
+                  "opcoes": [
+                    {"texto": "Deu-lhe total liberdade sem nenhuma restrição.", "correta": false},
+                    {"texto": "Ensinou-lhe todos os segredos do universo.", "correta": false},
+                    {"texto": "Pacto de vida sob obediência.", "correta": true},
+                    {"texto": "Impediu que ele pecasse de qualquer forma.", "correta": false},
+                    {"texto": "Tornou-o imortal independentemente de suas ações.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Quando Deus criou o homem, fez com ele um pacto de vida, sob a condição de perfeita obediência; proibindo-lhe comer da árvore da ciência do bem e do mal, sob pena de morte.",
+                  "referenciaBiblica": "Gênesis 2:16-17; Romanos 5:12-14; Gálatas 3:12."
+                },
+                {
+                  "pergunta": "Conservaram-se nossos primeiros pais no estado em que foram criados?",
+                  "opcoes": [
+                    {"texto": "Sim, eles permaneceram perfeitamente obedientes.", "correta": false},
+                    {"texto": "Apenas Eva pecou, Adão permaneceu inocente.", "correta": false},
+                    {"texto": "Foram enganados por Deus para pecarem.", "correta": false},
+                    {"texto": "Não, pecaram e caíram.", "correta": true},
+                    {"texto": "Sim, mas perderam alguns de seus privilégios.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Nossos primeiros pais, sendo deixados à liberdade da sua própria vontade, caíram do estado em que foram criados, pecando contra Deus.",
+                  "referenciaBiblica": "Gênesis 3:6-8, 13; Eclesiastes 7:29; 2 Coríntios 11:3."
+                },
+                {
+                  "pergunta": "Que é pecado?",
+                  "opcoes": [
+                    {"texto": "Apenas ações que prejudicam outras pessoas.", "correta": false},
+                    {"texto": "Desconformidade ou transgressão da lei divina.", "correta": true},
+                    {"texto": "Cometer erros involuntários sem má intenção.", "correta": false},
+                    {"texto": "Ignorar os costumes sociais e culturais.", "correta": false},
+                    {"texto": "Sentimentos negativos como tristeza ou raiva.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Pecado é qualquer falta de conformidade com a lei de Deus, ou qualquer transgressão dela.",
+                  "referenciaBiblica": "1 João 3:4; Romanos 3:23; Tiago 4:17."
+                },
+                {
+                  "pergunta": "Qual foi o pecado pelo qual nossos primeiros pais caíram do estado em que foram criados?",
+                  "opcoes": [
+                    {"texto": "Construir a Torre de Babel.", "correta": false},
+                    {"texto": "Adorar ídolos de ouro.", "correta": false},
+                    {"texto": "Cometer assassinato.", "correta": false},
+                    {"texto": "Comer o fruto proibido.", "correta": true},
+                    {"texto": "Mentir para Deus sobre suas ações.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O pecado pelo qual nossos primeiros pais caíram do estado em que foram criados foi o comerem do fruto proibido.",
+                  "referenciaBiblica": "Gênesis 3:6, 12-13."
+                }
+              ]
+            },
+            {
+              "nivel": 4,
+              "perguntas": [
+                {
+                  "pergunta": "Caiu todo o gênero humano na primeira transgressão de Adão?",
+                  "opcoes": [
+                    {"texto": "Não, apenas Adão e Eva foram afetados.", "correta": false},
+                    {"texto": "Sim, todos pecaram em Adão.", "correta": true},
+                    {"texto": "Apenas aqueles que repetem o pecado de Adão caem.", "correta": false},
+                    {"texto": "Crianças nascem sem pecado e só caem depois.", "correta": false},
+                    {"texto": "O pecado de Adão foi apenas um mau exemplo.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Visto que o pacto foi feito com Adão, não só para ele, mas também para a sua posteridade, todo o gênero humano que dele procede por geração ordinária pecou nele e caiu com ele na sua primeira transgressão.",
+                  "referenciaBiblica": "Romanos 5:12, 18-19; 1 Coríntios 15:21-22."
+                },
+                {
+                  "pergunta": "Para que estado a queda lançou o gênero humano?",
+                  "opcoes": [
+                    {"texto": "Um estado de total aniquilação.", "correta": false},
+                    {"texto": "Um estado de neutralidade moral.", "correta": false},
+                    {"texto": "Estado de pecado e miséria.", "correta": true},
+                    {"texto": "Um estado de aprendizado e crescimento espiritual.", "correta": false},
+                    {"texto": "Um estado temporário de confusão, logo superado.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A queda lançou o gênero humano num estado de pecado e miséria.",
+                  "referenciaBiblica": "Romanos 5:12; Gálatas 3:10; Efésios 2:1-3."
+                },
+                {
+                  "pergunta": "Em que consiste a pecaminosidade do estado em que o homem caiu?",
+                  "opcoes": [
+                    {"texto": "Apenas nas ações pecaminosas que cometemos.", "correta": false},
+                    {"texto": "Na influência negativa da sociedade.", "correta": false},
+                    {"texto": "Em uma leve tendência para o mal, facilmente corrigível.", "correta": false},
+                    {"texto": "Culpa de Adão, falta de retidão, corrupção.", "correta": true},
+                    {"texto": "Na perda da imortalidade física apenas.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A pecaminosidade do estado em que o homem caiu consiste na culpa do primeiro pecado de Adão, na falta de retidão original e na corrupção de toda a sua natureza, que é comumente chamada Pecado Original, juntamente com todas as transgressões atuais que procedem dele.",
+                  "referenciaBiblica": "Romanos 5:19; Romanos 3:10; Efésios 2:1-3, Salmo 51:5; Mateus 15:19."
+                },
+                {
+                  "pergunta": "Qual é a miséria do estado em que o homem caiu?",
+                  "opcoes": [
+                    {"texto": "Apenas dificuldades financeiras e doenças físicas.", "correta": false},
+                    {"texto": "Perda de comunhão, ira divina, morte, inferno.", "correta": true},
+                    {"texto": "Sentimentos ocasionais de culpa e tristeza.", "correta": false},
+                    {"texto": "A necessidade de trabalhar para sobreviver.", "correta": false},
+                    {"texto": "A incapacidade de realizar milagres.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Pela sua queda, todo o gênero humano perdeu comunhão com Deus, está debaixo da sua ira e maldição, e assim sujeito a todas as misérias desta vida, à própria morte e às penas do inferno para sempre.",
+                  "referenciaBiblica": "Gênesis 3:8, 24; Efésios 2:3, Gálatas 3:10; Romanos 6:23, Mateus 25:41, 46."
+                },
+                {
+                  "pergunta": "Deixou Deus todo o gênero humano perecer no estado de pecado e miséria?",
+                  "opcoes": [
+                    {"texto": "Sim, todos estão irremediavelmente perdidos.", "correta": false},
+                    {"texto": "Deus oferece salvação a todos, dependendo de seus méritos.", "correta": false},
+                    {"texto": "Apenas alguns indivíduos muito justos escapam por si mesmos.", "correta": false},
+                    {"texto": "Não, elegeu alguns para salvação por um Redentor.", "correta": true},
+                    {"texto": "Deus deu uma segunda chance a todos através de reencarnações.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Tendo Deus, unicamente da sua boa vontade, desde toda a eternidade, escolhido alguns para a vida eterna, entrou com eles num pacto de graça, para os livrar do estado de pecado e miséria, e os levar a um estado de salvação, por meio de um Redentor.",
+                  "referenciaBiblica": "Efésios 1:4-7; Tito 3:4-7; Romanos 3:21-22; João 3:16."
+                }
+              ]
+            },
+            {
+              "nivel": 5,
+              "perguntas": [
+                {
+                  "pergunta": "Quem é o Redentor dos escolhidos de Deus?",
+                  "opcoes": [
+                    {"texto": "Um anjo poderoso enviado por Deus.", "correta": false},
+                    {"texto": "Jesus Cristo, Deus-homem.", "correta": true},
+                    {"texto": "Cada pessoa é seu próprio redentor.", "correta": false},
+                    {"texto": "A igreja como instituição.", "correta": false},
+                    {"texto": "Um profeta humano com grande sabedoria.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O único Redentor dos escolhidos de Deus é o Senhor Jesus Cristo, o qual, sendo o eterno Filho de Deus, se fez homem, e assim foi e continua a ser Deus e homem, em duas naturezas distintas, e uma só pessoa, para sempre.",
+                  "referenciaBiblica": "1 Timóteo 2:5; João 1:1, 14; Romanos 9:5; Filipenses 2:6-11; Hebreus 13:8."
+                },
+                {
+                  "pergunta": "Como Cristo, sendo o Filho de Deus, se fez homem?",
+                  "opcoes": [
+                    {"texto": "Apenas aparentou ser homem, mas era puramente divino.", "correta": false},
+                    {"texto": "Deixou de ser Deus para se tornar homem.", "correta": false},
+                    {"texto": "Nascido da Virgem Maria, sem pecado.", "correta": true},
+                    {"texto": "Foi um homem comum que Deus adotou como Filho.", "correta": false},
+                    {"texto": "Através de um processo natural de reencarnação.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Cristo, o Filho de Deus, fez-se homem, tomando um corpo verdadeiro e uma alma racional, sendo concebido pelo poder do Espírito Santo, no ventre da Virgem Maria, e nascido dela, mas sem pecado.",
+                  "referenciaBiblica": "Hebreus 2:14, 17; Mateus 26:38; Lucas 1:31, 35; Hebreus 4:15; 2 Coríntios 5:21."
+                },
+                {
+                  "pergunta": "Que ofícios Cristo exerce como nosso Redentor?",
+                  "opcoes": [
+                    {"texto": "Apenas o ofício de Mestre e Exemplo moral.", "correta": false},
+                    {"texto": "Os ofícios de Juiz e Legislador.", "correta": false},
+                    {"texto": "Apenas o ofício de Rei celestial.", "correta": false},
+                    {"texto": "Profeta, Sacerdote e Rei.", "correta": true},
+                    {"texto": "Os ofícios de Curador e Protetor físico.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Cristo, como nosso Redentor, exerce os ofícios de profeta, sacerdote e rei, tanto no seu estado de humilhação como no de exaltação.",
+                  "referenciaBiblica": "Atos 3:22; Hebreus 5:5-6; Salmo 2:6, Lucas 1:33."
+                },
+                {
+                  "pergunta": "Como Cristo exerce o ofício de profeta?",
+                  "opcoes": [
+                    {"texto": "Apenas prevendo eventos futuros.", "correta": false},
+                    {"texto": "Revela a vontade de Deus para salvação.", "correta": true},
+                    {"texto": "Escrevendo livros sagrados adicionais à Bíblia.", "correta": false},
+                    {"texto": "Através de visões e sonhos dados a todos os crentes.", "correta": false},
+                    {"texto": "Realizando milagres para provar sua divindade.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Cristo exerce o ofício de profeta, revelando-nos, pela sua Palavra e pelo seu Espírito, a vontade de Deus para a nossa salvação.",
+                  "referenciaBiblica": "João 1:18; Hebreus 1:1-2; João 14:26; João 15:15."
+                },
+                {
+                  "pergunta": "Como Cristo exerce o ofício de sacerdote?",
+                  "opcoes": [
+                    {"texto": "Oferecendo sacrifícios de animais diariamente.", "correta": false},
+                    {"texto": "Construindo templos físicos para adoração.", "correta": false},
+                    {"texto": "Apenas ensinando sobre como orar a Deus.", "correta": false},
+                    {"texto": "Sacrifício único e intercessão contínua.", "correta": true},
+                    {"texto": "Perdoando pecados independentemente do arrependimento.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Cristo exerce o ofício de sacerdote, oferecendo-se a si mesmo uma só vez em sacrifício, para satisfazer a justiça divina e nos reconciliar com Deus, e fazendo contínua intercessão por nós.",
+                  "referenciaBiblica": "Hebreus 9:14, 28; Romanos 3:24-26; Hebreus 2:17; Hebreus 7:25."
+                }
+              ]
+            },
+            {
+              "nivel": 6,
+              "perguntas": [
+                {
+                  "pergunta": "Como Cristo exerce o ofício de rei?",
+                  "opcoes": [
+                    {"texto": "Governando um reino terrestre com poder político.", "correta": false},
+                    {"texto": "Sujeita, reina, protege, vence inimigos.", "correta": true},
+                    {"texto": "Apenas estabelecendo leis morais para a sociedade.", "correta": false},
+                    {"texto": "Eliminando todo o sofrimento e injustiça imediatamente.", "correta": false},
+                    {"texto": "Delegando todo o seu poder aos líderes da igreja.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Cristo exerce o ofício de rei, sujeitando-nos a si mesmo, reinando sobre nós e nos protegendo, e reprimindo e conquistando todos os seus e os nossos inimigos.",
+                  "referenciaBiblica": "Salmo 110:1-3; 1 Coríntios 15:25; Isaías 33:22."
+                },
+                {
+                  "pergunta": "Em que consistiu a humilhação de Cristo?",
+                  "opcoes": [
+                    {"texto": "Apenas em viver uma vida simples e pobre.", "correta": false},
+                    {"texto": "Em ser mal compreendido pelos seus discípulos.", "correta": false},
+                    {"texto": "Nascimento humilde, sofrimento, morte e sepultamento.", "correta": true},
+                    {"texto": "Na sua incapacidade temporária de usar seus poderes divinos.", "correta": false},
+                    {"texto": "Em ter que aprender as Escrituras como qualquer humano.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A humilhação de Cristo consistiu em Ele nascer, e isso em condição baixa; em sujeitar-se à lei; em padecer as misérias desta vida, a ira de Deus e a morte amaldiçoada da cruz; em ser sepultado e continuar sob o poder da morte por algum tempo.",
+                  "referenciaBiblica": "Lucas 2:7; Gálatas 4:4; Isaías 53:3, Mateus 27:46; Filipenses 2:8; 1 Coríntios 15:3-4."
+                },
+                {
+                  "pergunta": "Em que consiste a exaltação de Cristo?",
+                  "opcoes": [
+                    {"texto": "Em ser reconhecido como um grande profeta após sua morte.", "correta": false},
+                    {"texto": "Na fundação da igreja cristã pelos apóstolos.", "correta": false},
+                    {"texto": "Apenas na sua ressurreição física dos mortos.", "correta": false},
+                    {"texto": "Ressurreição, ascensão, assento à destra de Deus, vinda para julgar.", "correta": true},
+                    {"texto": "Na escrita dos evangelhos que contam sua história.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A exaltação de Cristo consiste em Ele ressurgir dos mortos ao terceiro dia; em subir ao céu e estar sentado à destra de Deus Pai; e em vir para julgar o mundo no último dia.",
+                  "referenciaBiblica": "1 Coríntios 15:4; Marcos 16:19, Efésios 1:20; Atos 1:11, Atos 17:31."
+                },
+                {
+                  "pergunta": "Como somos feitos participantes da redenção adquirida por Cristo?",
+                  "opcoes": [
+                    {"texto": "Através de boas obras e mérito pessoal.", "correta": false},
+                    {"texto": "Pela aplicação do Espírito Santo.", "correta": true},
+                    {"texto": "Simplesmente por nascermos numa família cristã.", "correta": false},
+                    {"texto": "Através da mediação de santos ou anjos.", "correta": false},
+                    {"texto": "Por um conhecimento intelectual profundo da teologia.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Somos feitos participantes da redenção adquirida por Cristo, pela eficaz aplicação dela a nós pelo seu Santo Espírito.",
+                  "referenciaBiblica": "João 1:12-13; Tito 3:5-6; 1 Coríntios 6:11."
+                },
+                {
+                  "pergunta": "Como o Espírito nos aplica a redenção adquirida por Cristo?",
+                  "opcoes": [
+                    {"texto": "Apenas nos dando sentimentos de paz e alegria.", "correta": false},
+                    {"texto": "Revelando novas doutrinas não encontradas na Bíblia.", "correta": false},
+                    {"texto": "Operando fé e unindo-nos a Cristo.", "correta": true},
+                    {"texto": "Concedendo poderes sobrenaturais a todos os crentes.", "correta": false},
+                    {"texto": "Garantindo sucesso material e saúde perfeita.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O Espírito nos aplica a redenção adquirida por Cristo, operando em nós a fé e unindo-nos a Cristo por meio dela, na nossa vocação eficaz.",
+                  "referenciaBiblica": "Efésios 2:8; 1 Coríntios 12:13; Efésios 3:17."
+                }
+              ]
+            },
+            {
+              "nivel": 7,
+              "perguntas": [
+                {
+                  "pergunta": "Que é vocação eficaz?",
+                  "opcoes": [
+                    {"texto": "Um convite geral que todos recebem e podem aceitar ou rejeitar.", "correta": false},
+                    {"texto": "Obra do Espírito que nos leva a Cristo.", "correta": true},
+                    {"texto": "A decisão humana de seguir a Deus baseada na própria força de vontade.", "correta": false},
+                    {"texto": "Um chamado para o ministério pastoral ou missionário.", "correta": false},
+                    {"texto": "Apenas o conhecimento intelectual do evangelho.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Vocação eficaz é a obra do Espírito de Deus, pela qual, convencendo-nos do nosso pecado e da nossa miséria, iluminando as nossas mentes no conhecimento de Cristo e renovando a nossa vontade, Ele nos persuade e habilita a abraçar Jesus Cristo, que nos é gratuitamente oferecido no Evangelho.",
+                  "referenciaBiblica": "2 Timóteo 1:9; Efésios 1:18; Ezequiel 36:26-27; João 6:44-45."
+                },
+                {
+                  "pergunta": "De que bênçãos participam, nesta vida, aqueles que são eficazmente chamados?",
+                  "opcoes": [
+                    {"texto": "Apenas da promessa de vida eterna futura.", "correta": false},
+                    {"texto": "Riqueza material e ausência total de sofrimento.", "correta": false},
+                    {"texto": "Justificação, adoção, santificação e bênçãos associadas.", "correta": true},
+                    {"texto": "A capacidade de realizar milagres e profetizar.", "correta": false},
+                    {"texto": "Perfeição moral completa e ausência de pecado.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Aqueles que são eficazmente chamados participam, nesta vida, da justificação, da adoção e da santificação, e das diversas bênçãos que nesta vida acompanham estas ou delas procedem.",
+                  "referenciaBiblica": "Romanos 8:30; Efésios 1:5; 1 Coríntios 1:30."
+                },
+                {
+                  "pergunta": "Que é justificação?",
+                  "opcoes": [
+                    {"texto": "O processo gradual de se tornar uma pessoa melhor.", "correta": false},
+                    {"texto": "Ser perdoado por Deus com base em boas obras futuras.", "correta": false},
+                    {"texto": "Apenas um sentimento de paz interior.", "correta": false},
+                    {"texto": "Deus nos declara justos pela fé em Cristo.", "correta": true},
+                    {"texto": "O batismo que lava todos os pecados automaticamente.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Justificação é um ato da livre graça de Deus, pelo qual Ele perdoa todos os nossos pecados e nos aceita como justos diante de si, somente pela justiça de Cristo a nós imputada, e recebida só pela fé.",
+                  "referenciaBiblica": "Romanos 3:24-25; Romanos 4:6-8; 2 Coríntios 5:19, 21; Romanos 5:1."
+                },
+                {
+                  "pergunta": "Que é adoção?",
+                  "opcoes": [
+                    {"texto": "Ser um membro formal de uma igreja local.", "correta": false},
+                    {"texto": "Recebidos como filhos de Deus com privilégios.", "correta": true},
+                    {"texto": "Um título honorário dado a crentes muito devotos.", "correta": false},
+                    {"texto": "A crença de que todos os seres humanos são filhos de Deus.", "correta": false},
+                    {"texto": "Um processo legal de ser adotado por outra família humana.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Adoção é um ato da livre graça de Deus, pelo qual somos recebidos no número dos filhos de Deus, e temos direito a todos os seus privilégios.",
+                  "referenciaBiblica": "1 João 3:1; João 1:12; Romanos 8:17."
+                },
+                {
+                  "pergunta": "Que é santificação?",
+                  "opcoes": [
+                    {"texto": "Alcançar a perfeição sem pecado nesta vida.", "correta": false},
+                    {"texto": "Apenas o ato de se separar de práticas mundanas.", "correta": false},
+                    {"texto": "Renovação à imagem de Deus para viver em retidão.", "correta": true},
+                    {"texto": "Um dom especial dado apenas a alguns crentes.", "correta": false},
+                    {"texto": "O mesmo que justificação, apenas um termo diferente.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Santificação é a obra da livre graça de Deus, pela qual somos renovados no homem interior, segundo a imagem de Deus, e habilitados a morrer cada vez mais para o pecado e a viver para a retidão.",
+                  "referenciaBiblica": "2 Tessalonicenses 2:13; Efésios 4:23-24; Romanos 6:4, 6, 14."
+                }
+              ]
+            },
+            {
+              "nivel": 8,
+              "perguntas": [
+                {
+                  "pergunta": "Quais são as bênçãos que nesta vida acompanham a justificação, a adoção e a santificação, ou delas procedem?",
+                  "opcoes": [
+                    {"texto": "Imunidade a todas as doenças e sofrimentos.", "correta": false},
+                    {"texto": "Segurança, paz, gozo, graça, perseverança.", "correta": true},
+                    {"texto": "Conhecimento perfeito de toda a verdade bíblica.", "correta": false},
+                    {"texto": "Prosperidade material garantida e sucesso mundano.", "correta": false},
+                    {"texto": "A capacidade de ver anjos e ter visões celestiais.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "As bênçãos que nesta vida acompanham a justificação, a adoção e a santificação, ou delas procedem, são: segurança do amor de Deus, paz de consciência, gozo no Espírito Santo, aumento de graça e perseverança nela até ao fim.",
+                  "referenciaBiblica": "Romanos 5:1-2, 5; Romanos 14:17; Provérbios 4:18; 1 João 5:13, 1 Pedro 1:5."
+                },
+                {
+                  "pergunta": "Quais são as bênçãos que os crentes recebem de Cristo na hora da morte?",
+                  "opcoes": [
+                    {"texto": "Suas almas dormem inconscientes até a ressurreição.", "correta": false},
+                    {"texto": "Seus corpos são imediatamente transformados em glória.", "correta": false},
+                    {"texto": "Almas à glória, corpos descansam para ressurreição.", "correta": true},
+                    {"texto": "Recebem uma segunda chance de se arrepender de seus pecados.", "correta": false},
+                    {"texto": "Tornam-se anjos guardiões para seus entes queridos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "As almas dos crentes, na hora da morte, são aperfeiçoadas em santidade e imediatamente passam para a glória; e os seus corpos, estando ainda unidos a Cristo, descansam nas suas sepulturas até à ressurreição.",
+                  "referenciaBiblica": "Hebreus 12:23; 2 Coríntios 5:1, 6, 8, Filipenses 1:23; 1 Tessalonicenses 4:14; João 5:28-29."
+                },
+                {
+                  "pergunta": "Quais são as bênçãos que os crentes recebem de Cristo na ressurreição?",
+                  "opcoes": [
+                    {"texto": "Retornam à Terra para viver uma vida humana normal novamente.", "correta": false},
+                    {"texto": "Serão julgados e possivelmente condenados por pecados passados.", "correta": false},
+                    {"texto": "Apenas suas almas são restauradas, seus corpos permanecem mortos.", "correta": false},
+                    {"texto": "Ressurreição gloriosa, gozo eterno de Deus.", "correta": true},
+                    {"texto": "Tornam-se seres espirituais sem corpo físico.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Na ressurreição, os crentes, sendo ressuscitados em glória, serão publicamente reconhecidos e absolvidos no dia do juízo, e tornados perfeitamente benditos no pleno gozo de Deus por toda a eternidade.",
+                  "referenciaBiblica": "1 Coríntios 15:42-43; Mateus 10:32; 1 Tessalonicenses 4:17; Apocalipse 22:3-5."
+                },
+                {
+                  "pergunta": "Qual é o dever que Deus requer do homem?",
+                  "opcoes": [
+                    {"texto": "Apenas crer em Deus sem se preocupar com ações.", "correta": false},
+                    {"texto": "Obediência à vontade revelada de Deus.", "correta": true},
+                    {"texto": "Seguir os preceitos de uma religião específica.", "correta": false},
+                    {"texto": "Alcançar a felicidade pessoal a qualquer custo.", "correta": false},
+                    {"texto": "Cumprir rituais e sacrifícios religiosos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O dever que Deus requer do homem é obediência à sua vontade revelada.",
+                  "referenciaBiblica": "Miqueias 6:8; 1 Samuel 15:22; Lucas 10:28."
+                },
+                {
+                  "pergunta": "Que revelou Deus primeiramente ao homem para regra da sua obediência?",
+                  "opcoes": [
+                    {"texto": "Os Dez Mandamentos escritos em tábuas de pedra.", "correta": false},
+                    {"texto": "As leis cerimoniais do Antigo Testamento.", "correta": false},
+                    {"texto": "A lei moral.", "correta": true},
+                    {"texto": "Os ensinamentos de Jesus no Novo Testamento.", "correta": false},
+                    {"texto": "Um conjunto de tradições orais passadas de geração em geração.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A regra que Deus revelou primeiramente ao homem para sua obediência foi a lei moral.",
+                  "referenciaBiblica": "Romanos 2:14-15; Romanos 10:5."
+                }
+              ]
+            },
+            {
+              "nivel": 9,
+              "perguntas": [
+                {
+                  "pergunta": "Onde está a lei moral resumidamente compreendida?",
+                  "opcoes": [
+                    {"texto": "No livro de Provérbios.", "correta": false},
+                    {"texto": "Nos Dez Mandamentos.", "correta": true},
+                    {"texto": "No Sermão da Montanha.", "correta": false},
+                    {"texto": "Nas cartas de Paulo.", "correta": false},
+                    {"texto": "Nos credos históricos da igreja.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A lei moral está resumidamente compreendida nos Dez Mandamentos.",
+                  "referenciaBiblica": "Deuteronômio 10:4; Mateus 19:17-19."
+                },
+                {
+                  "pergunta": "Qual é o resumo dos Dez Mandamentos?",
+                  "opcoes": [
+                    {"texto": "Não matar, não furtar, não adulterar.", "correta": false},
+                    {"texto": "Amar a Deus e ao próximo.", "correta": true},
+                    {"texto": "Adorar somente a Deus e guardar o sábado.", "correta": false},
+                    {"texto": "Ser justo, misericordioso e humilde.", "correta": false},
+                    {"texto": "Crer em Jesus Cristo para a salvação.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O resumo dos Dez Mandamentos é: Amar ao Senhor teu Deus de todo o teu coração, de toda a tua alma, de todas as tuas forças e de todo o teu entendimento; e ao teu próximo como a ti mesmo.",
+                  "referenciaBiblica": "Mateus 22:37-40."
+                },
+                {
+                  "pergunta": "Qual é o prefácio dos Dez Mandamentos?",
+                  "opcoes": [
+                    {"texto": "'No princípio, Deus criou os céus e a terra.'", "correta": false},
+                    {"texto": "'Ouve, ó Israel, o Senhor nosso Deus é o único Senhor.'", "correta": false},
+                    {"texto": "'Eu sou o caminho, a verdade e a vida.'", "correta": false},
+                    {"texto": "'Eu sou o Senhor teu Deus...' (libertador).", "correta": true},
+                    {"texto": "'Arrependei-vos, porque é chegado o Reino dos Céus.'", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O prefácio dos Dez Mandamentos é: 'Eu sou o Senhor teu Deus, que te tirei da terra do Egito, da casa da servidão'.",
+                  "referenciaBiblica": "Êxodo 20:2; Deuteronômio 5:6."
+                },
+                {
+                  "pergunta": "O que o prefácio dos Dez Mandamentos nos ensina?",
+                  "opcoes": [
+                    {"texto": "Que Deus exige obediência cega sem questionamento.", "correta": false},
+                    {"texto": "Devemos obedecer por Ele ser nosso Deus e Redentor.", "correta": true},
+                    {"texto": "Que os mandamentos se aplicam apenas ao povo de Israel.", "correta": false},
+                    {"texto": "Que a salvação é alcançada pela guarda perfeita da lei.", "correta": false},
+                    {"texto": "Que Deus é um legislador distante e impessoal.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O prefácio dos Dez Mandamentos nos ensina que, por ser Deus o Senhor, e nosso Deus e Redentor, somos obrigados a guardar todos os seus mandamentos.",
+                  "referenciaBiblica": "Lucas 1:74-75; 1 Pedro 1:15-19."
+                },
+                {
+                  "pergunta": "Qual é o primeiro mandamento?",
+                  "opcoes": [
+                    {"texto": "Não farás para ti imagem de escultura.", "correta": false},
+                    {"texto": "Lembra-te do dia do sábado, para o santificar.", "correta": false},
+                    {"texto": "Nenhum outro deus além d'Ele.", "correta": true},
+                    {"texto": "Honra a teu pai e a tua mãe.", "correta": false},
+                    {"texto": "Não tomarás o nome do Senhor teu Deus em vão.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O primeiro mandamento é: 'Não terás outros deuses diante de mim'.",
+                  "referenciaBiblica": "Êxodo 20:3; Deuteronômio 5:7."
+                }
+              ]
+            },
+            {
+              "nivel": 10,
+              "perguntas": [
+                {
+                  "pergunta": "O que exige o primeiro mandamento?",
+                  "opcoes": [
+                    {"texto": "Apenas frequentar os cultos regularmente.", "correta": false},
+                    {"texto": "Conhecer, reconhecer, adorar e glorificar só a Deus.", "correta": true},
+                    {"texto": "Evitar qualquer contato com outras religiões.", "correta": false},
+                    {"texto": "Estudar teologia e filosofia sobre Deus.", "correta": false},
+                    {"texto": "Realizar boas obras em nome de Deus.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O primeiro mandamento exige que conheçamos e reconheçamos a Deus como o único Deus verdadeiro, e nosso Deus; e que o adoremos e glorifiquemos como tal.",
+                  "referenciaBiblica": "1 Crônicas 28:9; Deuteronômio 26:17; Mateus 4:10."
+                },
+                {
+                  "pergunta": "O que proíbe o primeiro mandamento?",
+                  "opcoes": [
+                    {"texto": "Ter dúvidas ocasionais sobre a existência de Deus.", "correta": false},
+                    {"texto": "Estudar outras religiões por curiosidade acadêmica.", "correta": false},
+                    {"texto": "Negar a Deus ou adorar outros.", "correta": true},
+                    {"texto": "Questionar os ensinamentos da igreja.", "correta": false},
+                    {"texto": "Não sentir a presença de Deus constantemente.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O primeiro mandamento proíbe negar, ou não adorar e glorificar o Deus verdadeiro como Deus, e nosso Deus; e dar a qualquer outro a adoração e a glória que só a Ele são devidas.",
+                  "referenciaBiblica": "Salmo 14:1; Romanos 1:20-21; Salmo 81:10-11."
+                },
+                {
+                  "pergunta": "O que especialmente nos ensina o primeiro mandamento nestas palavras: 'diante de mim'?",
+                  "opcoes": [
+                    {"texto": "Que Deus só se importa com o que fazemos em público.", "correta": false},
+                    {"texto": "Que podemos ter outros deuses desde que não sejam superiores a Ele.", "correta": false},
+                    {"texto": "Que a idolatria só é pecado se for praticada abertamente.", "correta": false},
+                    {"texto": "Deus vê e se ofende com a idolatria.", "correta": true},
+                    {"texto": "Que Deus está fisicamente presente apenas em locais sagrados.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Estas palavras, 'diante de mim', no primeiro mandamento, nos ensinam que Deus, que vê todas as coisas, toma conhecimento e muito se ofende com o pecado de ter qualquer outro deus.",
+                  "referenciaBiblica": "Salmo 44:20-21; Ezequiel 8:5-18."
+                },
+                {
+                  "pergunta": "Qual é o segundo mandamento?",
+                  "opcoes": [
+                    {"texto": "Não tomarás o nome do Senhor teu Deus em vão.", "correta": false},
+                    {"texto": "Não adorar imagens nem de forma errada.", "correta": true},
+                    {"texto": "Não matarás.", "correta": false},
+                    {"texto": "Não terás outros deuses diante de mim.", "correta": false},
+                    {"texto": "Lembra-te do dia de sábado para o santificar.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O segundo mandamento é: 'Não farás para ti imagem de escultura, nem semelhança alguma do que há em cima nos céus, nem embaixo na terra, nem nas águas debaixo da terra. Não te encurvarás a elas nem as servirás; porque eu, o Senhor teu Deus, sou Deus zeloso, que visito a iniquidade dos pais nos filhos até a terceira e quarta geração daqueles que me odeiam, e faço misericórdia em milhares aos que me amam e guardam os meus mandamentos'.",
+                  "referenciaBiblica": "Êxodo 20:4-6; Deuteronômio 5:8-10."
+                },
+                {
+                  "pergunta": "O que exige o segundo mandamento?",
+                  "opcoes": [
+                    {"texto": "Destruir todas as formas de arte religiosa.", "correta": false},
+                    {"texto": "Criar novas formas de culto mais modernas e atraentes.", "correta": false},
+                    {"texto": "Adorar a Deus como Ele instituiu.", "correta": true},
+                    {"texto": "Usar imagens como auxílio para a adoração dos incultos.", "correta": false},
+                    {"texto": "Que a adoração seja sempre silenciosa e contemplativa.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O segundo mandamento exige que recebamos, observemos e guardemos puros e íntegros todo o culto e ordenanças religiosas que Deus instituiu na sua Palavra.",
+                  "referenciaBiblica": "Deuteronômio 12:32; Mateus 28:20."
+                }
+              ]
+            },
+            {
+              "nivel": 11,
+              "perguntas": [
+                {
+                  "pergunta": "O que proíbe o segundo mandamento?",
+                  "opcoes": [
+                    {"texto": "Qualquer representação artística de figuras bíblicas.", "correta": false},
+                    {"texto": "Adorar por imagens ou formas não prescritas.", "correta": true},
+                    {"texto": "Cantar hinos ou usar instrumentos musicais no culto.", "correta": false},
+                    {"texto": "Ter cultos em edifícios que não sejam catedrais.", "correta": false},
+                    {"texto": "Usar a imaginação para pensar em Deus.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O segundo mandamento proíbe o culto a Deus por meio de imagens, ou de qualquer outra maneira não determinada na sua Palavra.",
+                  "referenciaBiblica": "Deuteronômio 4:15-19; Atos 17:29; Colossenses 2:18."
+                },
+                {
+                  "pergunta": "Quais são as razões anexas ao segundo mandamento?",
+                  "opcoes": [
+                    {"texto": "A beleza da criação e a arte humana.", "correta": false},
+                    {"texto": "A necessidade de Deus se revelar de forma visível.", "correta": false},
+                    {"texto": "Soberania, propriedade e zelo de Deus.", "correta": true},
+                    {"texto": "A tradição dos antigos patriarcas.", "correta": false},
+                    {"texto": "A eficácia das imagens para ensinar os analfabetos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "As razões anexas ao segundo mandamento são: a soberania de Deus sobre nós, a propriedade que Ele tem em nós, e o zelo que Ele tem pelo seu próprio culto.",
+                  "referenciaBiblica": "Salmo 95:2-3, 6; Salmo 45:11; Êxodo 34:14."
+                },
+                {
+                  "pergunta": "Qual é o terceiro mandamento?",
+                  "opcoes": [
+                    {"texto": "Não matarás.", "correta": false},
+                    {"texto": "Honra a teu pai e a tua mãe.", "correta": false},
+                    {"texto": "Não furtarás.", "correta": false},
+                    {"texto": "Não usar o nome de Deus em vão.", "correta": true},
+                    {"texto": "Não cobiçarás.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O terceiro mandamento é: 'Não tomarás o nome do Senhor teu Deus em vão; porque o Senhor não terá por inocente o que tomar o seu nome em vão'.",
+                  "referenciaBiblica": "Êxodo 20:7; Deuteronômio 5:11."
+                },
+                {
+                  "pergunta": "O que exige o terceiro mandamento?",
+                  "opcoes": [
+                    {"texto": "Nunca mencionar o nome de Deus em conversas comuns.", "correta": false},
+                    {"texto": "Usar o nome de Deus com reverência.", "correta": true},
+                    {"texto": "Apenas evitar juramentos falsos.", "correta": false},
+                    {"texto": "Chamar Deus apenas pelos nomes usados na Bíblia Hebraica.", "correta": false},
+                    {"texto": "Fazer muitos votos e promessas a Deus.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O terceiro mandamento exige o santo e reverente uso dos nomes, títulos, atributos, ordenanças, Palavra e obras de Deus.",
+                  "referenciaBiblica": "Mateus 6:9; Deuteronômio 28:58; Salmo 68:4; Apocalipse 15:3-4; Salmo 138:2; Salmo 107:21-22."
+                },
+                {
+                  "pergunta": "O que proíbe o terceiro mandamento?",
+                  "opcoes": [
+                    {"texto": "Usar o nome de Deus em oração com muita frequência.", "correta": false},
+                    {"texto": "Qualquer forma de blasfêmia ou juramento leviano.", "correta": false},
+                    {"texto": "Profanar ou abusar do que revela Deus.", "correta": true},
+                    {"texto": "Fazer piadas ou comentários irreverentes sobre a religião.", "correta": false},
+                    {"texto": "Questionar a Palavra de Deus ou suas ordenanças.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O terceiro mandamento proíbe toda a profanação ou abuso das coisas pelas quais Deus se faz conhecer.",
+                  "referenciaBiblica": "Malaquias 1:6-7, 12; Levítico 19:12; Mateus 5:33-37."
+                }
+              ]
+            },
+            {
+              "nivel": 12,
+              "perguntas": [
+                {
+                  "pergunta": "Qual é a razão anexa ao terceiro mandamento?",
+                  "opcoes": [
+                    {"texto": "Para que os homens respeitem a autoridade da igreja.", "correta": false},
+                    {"texto": "Deus punirá quem tomar Seu nome em vão.", "correta": true},
+                    {"texto": "Para evitar ofender pessoas religiosas.", "correta": false},
+                    {"texto": "Porque o nome de Deus tem poder mágico.", "correta": false},
+                    {"texto": "Para manter a solenidade dos cultos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A razão anexa ao terceiro mandamento é que, embora os que quebram este mandamento possam escapar da punição dos homens, o Senhor nosso Deus não os deixará escapar do seu justo juízo.",
+                  "referenciaBiblica": "Deuteronômio 28:58-59; Zacarias 5:2-4."
+                },
+                {
+                  "pergunta": "Qual é o quarto mandamento?",
+                  "opcoes": [
+                    {"texto": "Não adulterarás.", "correta": false},
+                    {"texto": "Não dirás falso testemunho.", "correta": false},
+                    {"texto": "Lembra-te do dia de sábado para o santificar.", "correta": true},
+                    {"texto": "Não cobiçarás a casa do teu próximo.", "correta": false},
+                    {"texto": "Honra a teu pai e a tua mãe.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O quarto mandamento é: 'Lembra-te do dia do sábado, para o santificar. Seis dias trabalharás, e farás toda a tua obra; mas o sétimo dia é o sábado do Senhor teu Deus; não farás nenhuma obra, nem tu, nem teu filho, nem tua filha, nem o teu servo, nem a tua serva, nem o teu animal, nem o teu estrangeiro, que está dentro das tuas portas. Porque em seis dias fez o Senhor os céus e a terra, o mar e tudo que neles há, e ao sétimo dia descansou; portanto abençoou o Senhor o dia do sábado, e o santificou'.",
+                  "referenciaBiblica": "Êxodo 20:8-11; Deuteronômio 5:12-15."
+                },
+                {
+                  "pergunta": "O que exige o quarto mandamento?",
+                  "opcoes": [
+                    {"texto": "Descansar um dia qualquer da semana, à escolha do indivíduo.", "correta": false},
+                    {"texto": "Apenas abster-se de trabalho braçal nesse dia.", "correta": false},
+                    {"texto": "Guardar um dia em sete como santo.", "correta": true},
+                    {"texto": "Participar de longos cultos e cerimônias religiosas.", "correta": false},
+                    {"texto": "Dedicar o dia exclusivamente a atividades de lazer e diversão.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O quarto mandamento exige a observância dos tempos que Deus estabeleceu em sua Palavra, particularmente um dia inteiro em cada sete, para ser um santo sábado para Ele.",
+                  "referenciaBiblica": "Levítico 19:30; Deuteronômio 5:12; Isaías 56:2-7."
+                },
+                {
+                  "pergunta": "Que dia da semana Deus designou para o repouso semanal?",
+                  "opcoes": [
+                    {"texto": "Qualquer dia que a pessoa se sinta cansada.", "correta": false},
+                    {"texto": "Apenas o sábado judaico (sétimo dia).", "correta": false},
+                    {"texto": "O domingo (primeiro dia) foi uma invenção puramente humana.", "correta": false},
+                    {"texto": "Sétimo dia (AT), primeiro dia (NT - Domingo).", "correta": true},
+                    {"texto": "Não há um dia específico, apenas o princípio do descanso.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Desde o princípio do mundo até à ressurreição de Cristo, Deus designou o sétimo dia da semana para o repouso semanal; e desde então, o primeiro dia da semana, para continuar até ao fim do mundo, que é o sábado cristão.",
+                  "referenciaBiblica": "Gênesis 2:2-3; Atos 20:7; 1 Coríntios 16:1-2; Apocalipse 1:10."
+                },
+                {
+                  "pergunta": "Como se deve santificar o dia do Senhor?",
+                  "opcoes": [
+                    {"texto": "Apenas indo à igreja pela manhã.", "correta": false},
+                    {"texto": "Evitando todo tipo de trabalho, incluindo cozinhar.", "correta": false},
+                    {"texto": "Santo repouso, culto a Deus, obras de necessidade e misericórdia.", "correta": true},
+                    {"texto": "Dedicando-o a estudos seculares e desenvolvimento pessoal.", "correta": false},
+                    {"texto": "Passando o dia em silêncio absoluto e meditação.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O dia do Senhor deve ser santificado com um santo repouso por todo aquele dia, não somente de obras que são em todos os tempos pecaminosas, mas também de todos os trabalhos e recreios seculares que são lícitos nos outros dias; e empregando todo o tempo (exceto quanto seja ocupado em obras de necessidade e misericórdia) nos exercícios públicos e particulares do culto de Deus.",
+                  "referenciaBiblica": "Êxodo 20:8, 10; Isaías 58:13-14; Lucas 4:16; Atos 20:7; Mateus 12:1-13."
+                }
+              ]
+            },
+            {
+              "nivel": 13,
+              "perguntas": [
+                {
+                  "pergunta": "O que proíbe o quarto mandamento?",
+                  "opcoes": [
+                    {"texto": "Qualquer forma de diversão ou lazer no dia do Senhor.", "correta": false},
+                    {"texto": "Omitir deveres, profanar com ociosidade ou trabalho secular.", "correta": true},
+                    {"texto": "Ajudar os necessitados, pois é considerado trabalho.", "correta": false},
+                    {"texto": "Estudar a Bíblia ou ter comunhão com outros crentes.", "correta": false},
+                    {"texto": "Pensar em negócios ou planejar a semana de trabalho.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O quarto mandamento proíbe a omissão ou a negligente execução dos deveres exigidos, e a profanação do dia por ociosidade, ou fazendo aquilo que é em si pecaminoso, ou por pensamentos, palavras ou obras desnecessárias acerca dos nossos negócios ou recreios seculares.",
+                  "referenciaBiblica": "Neemias 13:15-22; Jeremias 17:21-22; Amós 8:5."
+                },
+                {
+                  "pergunta": "Quais são as razões anexas ao quarto mandamento?",
+                  "opcoes": [
+                    {"texto": "A necessidade humana de descanso físico e mental.", "correta": false},
+                    {"texto": "Para se diferenciar de outras culturas e religiões.", "correta": false},
+                    {"texto": "Deus nos deu seis dias, o sétimo é d'Ele, Seu exemplo e bênção.", "correta": true},
+                    {"texto": "Para aumentar a produtividade nos outros seis dias.", "correta": false},
+                    {"texto": "Porque o número sete é considerado sagrado em muitas culturas.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "As razões anexas ao quarto mandamento são: a permissão que Deus nos concede para usar seis dias da semana para os nossos próprios negócios, o seu desafio de um interesse especial no sétimo, o seu próprio exemplo, e a sua bênção sobre o dia de sábado.",
+                  "referenciaBiblica": "Êxodo 20:9; Êxodo 20:11; Levítico 23:3."
+                },
+                {
+                  "pergunta": "Qual é o quinto mandamento?",
+                  "opcoes": [
+                    {"texto": "Não matarás.", "correta": false},
+                    {"texto": "Não furtarás.", "correta": false},
+                    {"texto": "Não adulterarás.", "correta": false},
+                    {"texto": "Honrar pai e mãe.", "correta": true},
+                    {"texto": "Não cobiçarás.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O quinto mandamento é: 'Honra a teu pai e a tua mãe, para que se prolonguem os teus dias na terra que o Senhor teu Deus te dá'.",
+                  "referenciaBiblica": "Êxodo 20:12; Deuteronômio 5:16."
+                },
+                {
+                  "pergunta": "O que exige o quinto mandamento?",
+                  "opcoes": [
+                    {"texto": "Apenas obedecer aos pais enquanto se é criança.", "correta": false},
+                    {"texto": "Honrar e cumprir deveres em todas as relações.", "correta": true},
+                    {"texto": "Concordar com todas as opiniões dos superiores.", "correta": false},
+                    {"texto": "Submissão cega a qualquer autoridade, mesmo que injusta.", "correta": false},
+                    {"texto": "Apenas dar apoio financeiro aos pais na velhice.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O quinto mandamento exige que conservemos a honra e desempenhemos os deveres pertencentes a cada um em suas diferentes posições e relações, como superiores, inferiores ou iguais.",
+                  "referenciaBiblica": "Efésios 5:21-22, 25; Efésios 6:1, 4-5, 9; Romanos 13:1, 7; 1 Pedro 2:17."
+                },
+                {
+                  "pergunta": "O que proíbe o quinto mandamento?",
+                  "opcoes": [
+                    {"texto": "Qualquer forma de desobediência aos pais, mesmo em idade adulta.", "correta": false},
+                    {"texto": "Criticar ou questionar as decisões de líderes.", "correta": false},
+                    {"texto": "Negligenciar ou agir contra a honra e deveres.", "correta": true},
+                    {"texto": "Ter opiniões diferentes das dos superiores.", "correta": false},
+                    {"texto": "Não seguir a mesma profissão ou tradições familiares.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O quinto mandamento proíbe negligenciar ou fazer qualquer coisa contra a honra e o dever que pertencem a cada um em suas diferentes posições e relações.",
+                  "referenciaBiblica": "Romanos 13:7-8; Efésios 6:1-4 (implícito)."
+                }
+              ]
+            },
+            {
+              "nivel": 14,
+              "perguntas": [
+                {
+                  "pergunta": "Qual é a razão anexa ao quinto mandamento?",
+                  "opcoes": [
+                    {"texto": "Para garantir a ordem e a hierarquia social.", "correta": false},
+                    {"texto": "Promessa de longa vida e prosperidade.", "correta": true},
+                    {"texto": "Porque os superiores são sempre mais sábios.", "correta": false},
+                    {"texto": "Para evitar conflitos e desentendimentos familiares.", "correta": false},
+                    {"texto": "Para que os filhos herdem os bens dos pais.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A razão anexa ao quinto mandamento é uma promessa de longa vida e prosperidade (tanto quanto sirva para a glória de Deus e para o nosso próprio bem) a todos quantos guardam este mandamento.",
+                  "referenciaBiblica": "Efésios 6:2-3; Deuteronômio 5:16."
+                },
+                {
+                  "pergunta": "Qual é o sexto mandamento?",
+                  "opcoes": [
+                    {"texto": "Não furtarás.", "correta": false},
+                    {"texto": "Não adulterarás.", "correta": false},
+                    {"texto": "Não matar.", "correta": true},
+                    {"texto": "Não dirás falso testemunho.", "correta": false},
+                    {"texto": "Não cobiçarás.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O sexto mandamento é: 'Não matarás'.",
+                  "referenciaBiblica": "Êxodo 20:13; Deuteronômio 5:17."
+                },
+                {
+                  "pergunta": "O que exige o sexto mandamento?",
+                  "opcoes": [
+                    {"texto": "Apenas não cometer assassinato premeditado.", "correta": false},
+                    {"texto": "Tornar-se vegetariano e pacifista.", "correta": false},
+                    {"texto": "Preservar nossa vida e a dos outros.", "correta": true},
+                    {"texto": "Evitar qualquer tipo de conflito ou discussão.", "correta": false},
+                    {"texto": "Proteger apenas a vida dos seres humanos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O sexto mandamento exige todos os esforços legítimos para preservar a nossa própria vida e a vida dos outros.",
+                  "referenciaBiblica": "Efésios 5:28-29; Mateus 10:23; Salmo 82:3-4."
+                },
+                {
+                  "pergunta": "O que proíbe o sexto mandamento?",
+                  "opcoes": [
+                    {"texto": "A legítima defesa em caso de ataque.", "correta": false},
+                    {"texto": "Qualquer forma de raiva ou ressentimento.", "correta": false},
+                    {"texto": "A caça de animais para alimentação.", "correta": false},
+                    {"texto": "Tirar vida injustamente ou o que leva a isso.", "correta": true},
+                    {"texto": "Servir nas forças armadas ou na polícia.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O sexto mandamento proíbe o tirar a nossa própria vida, ou a vida do nosso próximo injustamente, ou tudo quanto a isso conduz.",
+                  "referenciaBiblica": "Atos 16:28; Gênesis 9:6; Mateus 5:21-22."
+                },
+                {
+                  "pergunta": "Qual é o sétimo mandamento?",
+                  "opcoes": [
+                    {"texto": "Não furtarás.", "correta": false},
+                    {"texto": "Não adulterar.", "correta": true},
+                    {"texto": "Não matarás.", "correta": false},
+                    {"texto": "Não dirás falso testemunho.", "correta": false},
+                    {"texto": "Não cobiçarás.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O sétimo mandamento é: 'Não adulterarás'.",
+                  "referenciaBiblica": "Êxodo 20:14; Deuteronômio 5:18."
+                }
+              ]
+            },
+            {
+              "nivel": 15,
+              "perguntas": [
+                {
+                  "pergunta": "O que exige o sétimo mandamento?",
+                  "opcoes": [
+                    {"texto": "Apenas a fidelidade conjugal no casamento.", "correta": false},
+                    {"texto": "Preservar nossa castidade e a do próximo.", "correta": true},
+                    {"texto": "Evitar qualquer tipo de relacionamento romântico antes do casamento.", "correta": false},
+                    {"texto": "Manter pensamentos puros apenas durante o culto.", "correta": false},
+                    {"texto": "Vestir-se de forma austera e sem adornos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O sétimo mandamento exige a preservação da nossa própria castidade e da do nosso próximo, no coração, na palavra e no comportamento.",
+                  "referenciaBiblica": "1 Tessalonicenses 4:3-5; Mateus 5:28; Efésios 4:29; 1 Pedro 3:2."
+                },
+                {
+                  "pergunta": "O que proíbe o sétimo mandamento?",
+                  "opcoes": [
+                    {"texto": "Apenas o ato físico do adultério.", "correta": false},
+                    {"texto": "Qualquer forma de afeto físico, mesmo entre casados.", "correta": false},
+                    {"texto": "Todos os pensamentos e atos impuros.", "correta": true},
+                    {"texto": "Ler romances ou assistir a filmes com conteúdo romântico.", "correta": false},
+                    {"texto": "Conversar com pessoas do sexo oposto sem a presença de um cônjuge.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O sétimo mandamento proíbe todos os pensamentos, palavras e ações impuras.",
+                  "referenciaBiblica": "Mateus 5:28; Efésios 5:3-4; Hebreus 13:4."
+                },
+                {
+                  "pergunta": "Qual é o oitavo mandamento?",
+                  "opcoes": [
+                    {"texto": "Não matarás.", "correta": false},
+                    {"texto": "Não adulterarás.", "correta": false},
+                    {"texto": "Não furtar.", "correta": true},
+                    {"texto": "Não dirás falso testemunho.", "correta": false},
+                    {"texto": "Não cobiçarás.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O oitavo mandamento é: 'Não furtarás'.",
+                  "referenciaBiblica": "Êxodo 20:15; Deuteronômio 5:19."
+                },
+                {
+                  "pergunta": "O que exige o oitavo mandamento?",
+                  "opcoes": [
+                    {"texto": "Acumular o máximo de riqueza possível, por quaisquer meios.", "correta": false},
+                    {"texto": "Dar todos os nossos bens aos pobres e viver na pobreza.", "correta": false},
+                    {"texto": "Promover licitamente nossa riqueza e a do próximo.", "correta": true},
+                    {"texto": "Apenas não roubar objetos físicos de outras pessoas.", "correta": false},
+                    {"texto": "Evitar qualquer tipo de transação comercial ou financeira.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O oitavo mandamento exige que procuremos e promovamos licitamente a nossa própria riqueza e a do nosso próximo.",
+                  "referenciaBiblica": "Romanos 12:17; Provérbios 27:23; Filipenses 2:4."
+                },
+                {
+                  "pergunta": "O que proíbe o oitavo mandamento?",
+                  "opcoes": [
+                    {"texto": "Qualquer forma de empréstimo com juros.", "correta": false},
+                    {"texto": "Ser rico ou possuir muitos bens materiais.", "correta": false},
+                    {"texto": "Apenas o roubo à mão armada.", "correta": false},
+                    {"texto": "Impedir injustamente nossa riqueza ou a do próximo.", "correta": true},
+                    {"texto": "Trabalhar em empregos que pagam salários muito altos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O oitavo mandamento proíbe tudo o que impede ou pode impedir injustamente a nossa própria riqueza ou a do nosso próximo.",
+                  "referenciaBiblica": "1 Timóteo 5:8; Provérbios 21:6; Efésios 4:28."
+                }
+              ]
+            },
+            {
+              "nivel": 16,
+              "perguntas": [
+                {
+                  "pergunta": "Qual é o nono mandamento?",
+                  "opcoes": [
+                    {"texto": "Não furtarás.", "correta": false},
+                    {"texto": "Não adulterarás.", "correta": false},
+                    {"texto": "Não matarás.", "correta": false},
+                    {"texto": "Não dar falso testemunho.", "correta": true},
+                    {"texto": "Não cobiçarás.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O nono mandamento é: 'Não dirás falso testemunho contra o teu próximo'.",
+                  "referenciaBiblica": "Êxodo 20:16; Deuteronômio 5:20."
+                },
+                {
+                  "pergunta": "O que exige o nono mandamento?",
+                  "opcoes": [
+                    {"texto": "Sempre dizer tudo o que se pensa, mesmo que magoe.", "correta": false},
+                    {"texto": "Manter e promover a verdade e boa fama.", "correta": true},
+                    {"texto": "Apenas não mentir em tribunal sob juramento.", "correta": false},
+                    {"texto": "Nunca revelar informações confidenciais, mesmo que justificado.", "correta": false},
+                    {"texto": "Elogiar os outros excessivamente para manter boas relações.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O nono mandamento exige a manutenção e promoção da verdade entre os homens, e da nossa boa fama e da do nosso próximo, especialmente quando somos chamados a dar testemunho.",
+                  "referenciaBiblica": "Zacarias 8:16; Efésios 4:25; 3 João 12; Provérbios 14:5, 25."
+                },
+                {
+                  "pergunta": "O que proíbe o nono mandamento?",
+                  "opcoes": [
+                    {"texto": "Qualquer forma de crítica construtiva.", "correta": false},
+                    {"texto": "Guardar segredos pessoais.", "correta": false},
+                    {"texto": "Prejudicar a verdade ou a boa fama.", "correta": true},
+                    {"texto": "Contar piadas ou histórias fictícias.", "correta": false},
+                    {"texto": "Não concordar com a opinião da maioria.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O nono mandamento proíbe tudo o que é prejudicial à verdade, ou injurioso à nossa boa fama ou à do nosso próximo.",
+                  "referenciaBiblica": "Provérbios 19:5; Salmo 15:3; Levítico 19:16."
+                },
+                {
+                  "pergunta": "Qual é o décimo mandamento?",
+                  "opcoes": [
+                    {"texto": "Não matarás.", "correta": false},
+                    {"texto": "Não adulterarás.", "correta": false},
+                    {"texto": "Não furtarás.", "correta": false},
+                    {"texto": "Não cobiçar o que é do próximo.", "correta": true},
+                    {"texto": "Honra a teu pai e a tua mãe.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O décimo mandamento é: 'Não cobiçarás a casa do teu próximo; não cobiçarás a mulher do teu próximo, nem o seu servo, nem a sua serva, nem o seu boi, nem o seu jumento, nem coisa alguma do teu próximo'.",
+                  "referenciaBiblica": "Êxodo 20:17; Deuteronômio 5:21."
+                },
+                {
+                  "pergunta": "O que exige o décimo mandamento?",
+                  "opcoes": [
+                    {"texto": "Não desejar nada que não se possua.", "correta": false},
+                    {"texto": "Contentamento e caridade para com o próximo.", "correta": true},
+                    {"texto": "Aspirar a ter exatamente o mesmo que os outros.", "correta": false},
+                    {"texto": "Suprimir todos os desejos e ambições pessoais.", "correta": false},
+                    {"texto": "Apenas evitar a inveja explícita dos bens alheios.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O décimo mandamento exige pleno contentamento com a nossa própria condição, juntamente com uma disposição caridosa para com o nosso próximo e tudo o que lhe pertence.",
+                  "referenciaBiblica": "Hebreus 13:5; Filipenses 4:11; Romanos 12:15; 1 Coríntios 13:4-6."
+                }
+              ]
+            },
+            {
+              "nivel": 17,
+              "perguntas": [
+                {
+                  "pergunta": "O que proíbe o décimo mandamento?",
+                  "opcoes": [
+                    {"texto": "Qualquer desejo de melhorar a própria condição de vida.", "correta": false},
+                    {"texto": "Admirar as qualidades ou posses de outra pessoa.", "correta": false},
+                    {"texto": "Descontentamento, inveja, desejos desordenados.", "correta": true},
+                    {"texto": "Planejar o futuro e estabelecer metas financeiras.", "correta": false},
+                    {"texto": "Sentir tristeza pelas dificuldades dos outros.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O décimo mandamento proíbe todo o descontentamento com a nossa própria sorte, a inveja ou tristeza pelo bem do nosso próximo, e todos os desejos e afetos desordenados para com as coisas que lhe pertencem.",
+                  "referenciaBiblica": "1 Reis 21:4; Gálatas 5:26; Colossenses 3:5."
+                },
+                {
+                  "pergunta": "Pode alguém guardar perfeitamente os mandamentos de Deus?",
+                  "opcoes": [
+                    {"texto": "Sim, através de muito esforço e disciplina.", "correta": false},
+                    {"texto": "Apenas os santos e profetas conseguiram.", "correta": false},
+                    {"texto": "Não, ninguém guarda perfeitamente, pecamos diariamente.", "correta": true},
+                    {"texto": "Sim, após o batismo e a conversão.", "correta": false},
+                    {"texto": "Apenas Adão antes da queda podia.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Nenhum mero homem, desde a queda, é capaz, nesta vida, de guardar perfeitamente os mandamentos de Deus; mas diariamente os quebra em pensamento, palavra e obra.",
+                  "referenciaBiblica": "Eclesiastes 7:20; 1 João 1:8, 10; Romanos 3:9-12, 23; Tiago 3:2."
+                },
+                {
+                  "pergunta": "São igualmente odiosas todas as transgressões da lei?",
+                  "opcoes": [
+                    {"texto": "Sim, todo pecado é igual aos olhos de Deus.", "correta": false},
+                    {"texto": "Não, alguns pecados são mais odiosos.", "correta": true},
+                    {"texto": "Apenas pecados cometidos intencionalmente são odiosos.", "correta": false},
+                    {"texto": "Pecados de pensamento são menos odiosos que os de ação.", "correta": false},
+                    {"texto": "Deus não considera nenhum pecado particularmente odioso se houver arrependimento.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Alguns pecados em si mesmos, e em razão de diversas circunstâncias agravantes, são mais odiosos à vista de Deus do que outros.",
+                  "referenciaBiblica": "João 19:11; Mateus 11:20-24; Hebreus 10:29; Ezequiel 8:6, 13, 15."
+                },
+                {
+                  "pergunta": "Que merece cada pecado?",
+                  "opcoes": [
+                    {"texto": "Apenas uma punição temporária nesta vida.", "correta": false},
+                    {"texto": "A desaprovação de Deus, mas não Sua ira.", "correta": false},
+                    {"texto": "Ira e maldição de Deus.", "correta": true},
+                    {"texto": "Uma oportunidade de aprendizado e crescimento.", "correta": false},
+                    {"texto": "Ser perdoado automaticamente se não for muito grave.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Cada pecado merece a ira e a maldição de Deus, tanto nesta vida como na vindoura.",
+                  "referenciaBiblica": "Efésios 5:6; Gálatas 3:10; Romanos 6:23; Mateus 25:41."
+                },
+                {
+                  "pergunta": "O que Deus exige de nós para que possamos escapar à sua ira e maldição, que merecemos por causa do pecado?",
+                  "opcoes": [
+                    {"texto": "Realizar boas obras suficientes para compensar os pecados.", "correta": false},
+                    {"texto": "Fé em Cristo, arrependimento, uso dos meios de graça.", "correta": true},
+                    {"texto": "Punir a nós mesmos através de penitências rigorosas.", "correta": false},
+                    {"texto": "Apenas acreditar intelectualmente na existência de Deus e Jesus.", "correta": false},
+                    {"texto": "Pertencer à igreja verdadeira e participar dos sacramentos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Para que possamos escapar à ira e maldição de Deus, que merecemos por causa do pecado, Deus exige de nós fé em Jesus Cristo, arrependimento para a vida, juntamente com o uso diligente de todos os meios exteriores pelos quais Cristo nos comunica as bênçãos da redenção.",
+                  "referenciaBiblica": "Atos 16:30-31; Atos 17:30; Provérbios 2:1-5; Lucas 13:24."
+                }
+              ]
+            },
+            {
+              "nivel": 18,
+              "perguntas": [
+                {
+                  "pergunta": "Que é fé em Jesus Cristo?",
+                  "opcoes": [
+                    {"texto": "Apenas acreditar que Jesus foi uma figura histórica importante.", "correta": false},
+                    {"texto": "Ter um sentimento forte e emocional sobre Jesus.", "correta": false},
+                    {"texto": "Concordar com todos os ensinamentos da igreja sobre Jesus.", "correta": false},
+                    {"texto": "Graça salvadora: receber e confiar só em Cristo para salvação.", "correta": true},
+                    {"texto": "Realizar milagres em nome de Jesus.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Fé em Jesus Cristo é uma graça salvadora, pela qual o recebemos e confiamos somente nEle para a salvação, como Ele nos é oferecido no Evangelho.",
+                  "referenciaBiblica": "Efésios 2:8-9; João 1:12; Filipenses 3:9; Gálatas 2:16."
+                },
+                {
+                  "pergunta": "Que é arrependimento para a vida?",
+                  "opcoes": [
+                    {"texto": "Apenas sentir remorso temporário pelos pecados cometidos.", "correta": false},
+                    {"texto": "Tentar compensar os pecados com boas obras.", "correta": false},
+                    {"texto": "Graça salvadora: tristeza pelo pecado e volta para Deus.", "correta": true},
+                    {"texto": "Prometer nunca mais pecar, confiando na própria força.", "correta": false},
+                    {"texto": "Um ritual de confissão pública dos pecados.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Arrependimento para a vida é uma graça salvadora, pela qual um pecador, tendo uma verdadeira consciência do seu pecado e percebendo a misericórdia de Deus em Cristo para com os penitentes, se entristece pelos seus pecados e os aborrece, de tal maneira que se volta deles para Deus, com pleno propósito de, e esforço para, uma nova obediência.",
+                  "referenciaBiblica": "Atos 11:18; 2 Coríntios 7:10-11; Ezequiel 36:31; Atos 26:18."
+                },
+                {
+                  "pergunta": "Quais são os meios exteriores e ordinários pelos quais Cristo nos comunica as bênçãos da redenção?",
+                  "opcoes": [
+                    {"texto": "Experiências místicas e visões diretas de Deus.", "correta": false},
+                    {"texto": "A intercessão de santos e anjos.", "correta": false},
+                    {"texto": "Apenas a oração individual em particular.", "correta": false},
+                    {"texto": "Palavra, sacramentos e oração.", "correta": true},
+                    {"texto": "Boas obras, caridade e serviço comunitário.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Os meios exteriores e ordinários pelos quais Cristo nos comunica as bênçãos da redenção são as suas ordenanças, especialmente a Palavra, os sacramentos e a oração; todos os quais se tornam eficazes para a salvação dos escolhidos.",
+                  "referenciaBiblica": "Mateus 28:19-20; Atos 2:41-42."
+                },
+                {
+                  "pergunta": "Como a Palavra se torna eficaz para a salvação?",
+                  "opcoes": [
+                    {"texto": "Simplesmente por ser lida ou ouvida, independentemente da fé.", "correta": false},
+                    {"texto": "Através da interpretação alegórica e simbólica de seus mistérios.", "correta": false},
+                    {"texto": "Pelo Espírito, convence, converte e edifica.", "correta": true},
+                    {"texto": "Quando memorizada e recitada diariamente.", "correta": false},
+                    {"texto": "Apenas quando pregada por ministros ordenados com eloquência.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O Espírito de Deus torna a leitura, mas especialmente a pregação da Palavra, um meio eficaz de convencer e converter os pecadores, e de os edificar em santidade e conforto, por meio da fé, para a salvação.",
+                  "referenciaBiblica": "Salmo 19:7; Romanos 1:16; 1 Tessalonicenses 1:5; Romanos 10:14-17; Atos 20:32."
+                },
+                {
+                  "pergunta": "Como se deve ler e ouvir a Palavra para que ela se torne eficaz para a salvação?",
+                  "opcoes": [
+                    {"texto": "De forma casual e esporádica, quando se tem tempo.", "correta": false},
+                    {"texto": "Apenas buscando conhecimento intelectual e fatos históricos.", "correta": false},
+                    {"texto": "Com ceticismo, questionando cada afirmação.", "correta": false},
+                    {"texto": "Com diligência, preparo, oração, fé, amor e prática.", "correta": true},
+                    {"texto": "Comparando-a com outros livros sagrados para encontrar semelhanças.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Para que a Palavra se torne eficaz para a salvação, devemos attendê-la com diligência, preparação e oração; recebê-la com fé e amor; guardá-la em nossos corações e praticá-la em nossas vidas.",
+                  "referenciaBiblica": "Provérbios 8:34; 1 Pedro 2:1-2; Salmo 119:18; Hebreus 4:2; 2 Tessalonicenses 2:10; Salmo 119:11; Tiago 1:22-25."
+                }
+              ]
+            },
+            {
+              "nivel": 19,
+              "perguntas": [
+                {
+                  "pergunta": "Como os sacramentos se tornam meios eficazes para a salvação?",
+                  "opcoes": [
+                    {"texto": "Pela virtude inerente aos elementos físicos (água, pão, vinho).", "correta": false},
+                    {"texto": "Pela bênção de Cristo e obra do Espírito, recebidos com fé.", "correta": true},
+                    {"texto": "Através da correta execução do ritual pelo ministro ordenado.", "correta": false},
+                    {"texto": "Apenas se o participante tiver uma experiência emocional intensa.", "correta": false},
+                    {"texto": "Automaticamente, para todos os que deles participam.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Os sacramentos se tornam meios eficazes para a salvação, não por alguma virtude que eles ou aquele que os administra tenham em si, mas somente pela bênção de Cristo e pela obra do seu Espírito naqueles que pela fé os recebem.",
+                  "referenciaBiblica": "1 Pedro 3:21; 1 Coríntios 3:7; 1 Coríntios 12:13; 1 Coríntios 10:16."
+                },
+                {
+                  "pergunta": "Que é um sacramento?",
+                  "opcoes": [
+                    {"texto": "Um ritual mágico que garante bênçãos divinas.", "correta": false},
+                    {"texto": "Apenas um ato simbólico de lembrança, sem eficácia espiritual.", "correta": false},
+                    {"texto": "Santa ordenança com sinais que representam Cristo e bênçãos.", "correta": true},
+                    {"texto": "Um conjunto de boas obras exigidas para a salvação.", "correta": false},
+                    {"texto": "Uma oração especial ensinada por Jesus.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Um sacramento é uma santa ordenança instituída por Cristo, na qual, por sinais sensíveis, Cristo e as bênçãos do novo pacto são representados, selados e aplicados aos crentes.",
+                  "referenciaBiblica": "Gênesis 17:7, 10; Romanos 4:11; 1 Coríntios 11:23-26."
+                },
+                {
+                  "pergunta": "Quais são os sacramentos do Novo Testamento?",
+                  "opcoes": [
+                    {"texto": "Batismo, Ceia do Senhor e Unção dos Enfermos.", "correta": false},
+                    {"texto": "Apenas o Batismo.", "correta": false},
+                    {"texto": "Batismo, Ceia do Senhor, Confirmação, Penitência, Matrimônio, Ordem e Extrema Unção.", "correta": false},
+                    {"texto": "Batismo e Ceia do Senhor.", "correta": true},
+                    {"texto": "Lava-pés e Batismo.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Os sacramentos do Novo Testamento são o Batismo e a Ceia do Senhor.",
+                  "referenciaBiblica": "Mateus 28:19; 1 Coríntios 11:23-26."
+                },
+                {
+                  "pergunta": "Que é o batismo?",
+                  "opcoes": [
+                    {"texto": "Um ritual que garante a salvação automaticamente.", "correta": false},
+                    {"texto": "Apenas uma cerimônia de boas-vindas à igreja.", "correta": false},
+                    {"texto": "Lavar com água significando inserção em Cristo e compromisso.", "correta": true},
+                    {"texto": "Um ato que remove o pecado original por si só.", "correta": false},
+                    {"texto": "Um juramento de lealdade à denominação específica.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O batismo é um sacramento no qual o lavar com água em nome do Pai, e do Filho, e do Espírito Santo, significa e sela a nossa inserção em Cristo, a participação nas bênçãos do pacto da graça, e o nosso compromisso de sermos do Senhor.",
+                  "referenciaBiblica": "Mateus 28:19; Romanos 6:3-4; Gálatas 3:27."
+                },
+                {
+                  "pergunta": "A quem o batismo deve ser administrado?",
+                  "opcoes": [
+                    {"texto": "Apenas a adultos que podem professar sua fé.", "correta": false},
+                    {"texto": "A todos, incluindo não crentes, como um convite à fé.", "correta": false},
+                    {"texto": "Crentes professos e seus filhos.", "correta": true},
+                    {"texto": "Apenas àqueles que nunca foram batizados em outra denominação.", "correta": false},
+                    {"texto": "Apenas aos descendentes diretos de Abraão.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O batismo não deve ser administrado a ninguém que esteja fora da igreja visível, até que professe a sua fé em Cristo e obediência a Ele; mas os filhos dos que são membros da igreja visível devem ser batizados.",
+                  "referenciaBiblica": "Atos 2:38-39; Atos 16:31-33; Gênesis 17:7, 10 com Colossenses 2:11-12."
+                }
+              ]
+            },
+            {
+              "nivel": 20,
+              "perguntas": [
+                {
+                  "pergunta": "Que é a Ceia do Senhor?",
+                  "opcoes": [
+                    {"texto": "Uma refeição comum compartilhada entre crentes para comunhão.", "correta": false},
+                    {"texto": "Um sacrifício literal do corpo e sangue de Cristo repetido.", "correta": false},
+                    {"texto": "Pão e vinho anunciando a morte de Cristo e nutrindo espiritualmente.", "correta": true},
+                    {"texto": "Apenas um memorial simbólico da Última Ceia, sem presença de Cristo.", "correta": false},
+                    {"texto": "Um ritual que concede perdão automático de pecados recentes.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A Ceia do Senhor é um sacramento no qual, dando e recebendo pão e vinho, segundo a instituição de Cristo, a sua morte é anunciada; e os que dignamente participam dela, comungam do seu corpo e sangue, para seu nutrimento espiritual e crescimento na graça, tendo o seu vínculo e comunhão com Ele confirmados, e testificando e renovando a sua gratidão e dedicação a Deus, e o seu amor mútuo e comunhão uns com os outros, como membros do mesmo corpo místico.",
+                  "referenciaBiblica": "1 Coríntios 11:23-26; 1 Coríntios 10:16-17."
+                },
+                {
+                  "pergunta": "O que se exige para participar dignamente da Ceia do Senhor?",
+                  "opcoes": [
+                    {"texto": "Ser membro de uma igreja específica e ter contribuído financeiramente.", "correta": false},
+                    {"texto": "Ter alcançado um alto nível de perfeição moral.", "correta": false},
+                    {"texto": "Apenas ter sido batizado, independentemente do estado espiritual.", "correta": false},
+                    {"texto": "Autoexame: conhecimento, fé, arrependimento, amor, obediência.", "correta": true},
+                    {"texto": "Jejum rigoroso por vários dias antes da participação.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Exige-se daqueles que desejam participar dignamente da Ceia do Senhor que se examinem a si mesmos quanto ao seu conhecimento para discernir o corpo do Senhor, quanto à sua fé para se alimentarem dEle, quanto ao seu arrependimento, amor e nova obediência; para que, não vindo indignamente, não comam e bebam juízo para si.",
+                  "referenciaBiblica": "1 Coríntios 11:27-29, 31; 2 Coríntios 13:5."
+                },
+                {
+                  "pergunta": "Que é oração?",
+                  "opcoes": [
+                    {"texto": "Apenas a repetição de fórmulas e rezas decoradas.", "correta": false},
+                    {"texto": "Um monólogo interior sobre nossos problemas e desejos.", "correta": false},
+                    {"texto": "Oferecer desejos a Deus conforme Sua vontade, em nome de Cristo.", "correta": true},
+                    {"texto": "Um meio de barganhar com Deus para obter favores.", "correta": false},
+                    {"texto": "Um exercício de meditação para alcançar paz interior, sem dirigir-se a Deus.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Oração é um oferecimento dos nossos desejos a Deus, por coisas conformes à sua vontade, em nome de Cristo, com confissão dos nossos pecados e grato reconhecimento das suas misericórdias.",
+                  "referenciaBiblica": "Salmo 62:8; 1 João 5:14; João 16:23; Salmo 32:5-6, Daniel 9:4; Filipenses 4:6."
+                },
+                {
+                  "pergunta": "Que regra Deus nos deu para nos dirigir na oração?",
+                  "opcoes": [
+                    {"texto": "Apenas a Oração Dominical, nenhuma outra forma é aceitável.", "correta": false},
+                    {"texto": "A intuição pessoal e os sentimentos do momento.", "correta": false},
+                    {"texto": "Os livros de orações escritos por líderes religiosos.", "correta": false},
+                    {"texto": "A Palavra de Deus, especialmente a Oração Dominical.", "correta": true},
+                    {"texto": "As tradições de oração da nossa família ou cultura.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Toda a Palavra de Deus é útil para nos dirigir na oração; mas a regra especial de direção é aquela forma de oração que Cristo ensinou aos seus discípulos, comumente chamada a Oração Dominical.",
+                  "referenciaBiblica": "2 Timóteo 3:16-17; Mateus 6:9-13; Lucas 11:2-4."
+                },
+                {
+                  "pergunta": "O que o prefácio da Oração Dominical nos ensina?",
+                  "opcoes": [
+                    {"texto": "Que devemos orar apenas quando nos sentimos dignos.", "correta": false},
+                    {"texto": "Aproximar de Deus com reverência, confiança; orar pelos outros.", "correta": true},
+                    {"texto": "Que Deus está distante e desinteressado em nossos problemas.", "correta": false},
+                    {"texto": "Que a oração é principalmente um dever individual e privado.", "correta": false},
+                    {"texto": "Que Deus atende apenas às orações dos mais justos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "O prefácio da Oração Dominical, que é: 'Pai nosso, que estás nos céus', nos ensina a nos aproximarmos de Deus com santa reverência e confiança, como filhos a um pai, capaz e pronto a nos ajudar; e que devemos orar com e pelos outros.",
+                  "referenciaBiblica": "Mateus 6:9; Romanos 8:15; Isaías 64:9; Lucas 11:13; Efésios 6:18."
+                }
+              ]
+            },
+            {
+              "nivel": 21,
+              "perguntas": [
+                {
+                  "pergunta": "O que pedimos na primeira petição?",
+                  "opcoes": [
+                    {"texto": "Que Deus nos dê sucesso e prosperidade material.", "correta": false},
+                    {"texto": "Que Deus seja glorificado em tudo.", "correta": true},
+                    {"texto": "Que o nome da nossa igreja seja exaltado.", "correta": false},
+                    {"texto": "Que sejamos perdoados dos nossos pecados diários.", "correta": false},
+                    {"texto": "Que Deus nos livre de todos os sofrimentos.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Na primeira petição, que é: 'Santificado seja o teu nome', pedimos que Deus nos habilite e aos outros a glorificá-lo em tudo aquilo pelo qual Ele se faz conhecer, e que Ele disponha todas as coisas para a sua própria glória.",
+                  "referenciaBiblica": "Mateus 6:9; Salmo 67:1-3; Romanos 11:36."
+                },
+                {
+                  "pergunta": "O que pedimos na segunda petição?",
+                  "opcoes": [
+                    {"texto": "Que a nossa nação se torne um reino teocrático.", "correta": false},
+                    {"texto": "Que a igreja ganhe poder político e influência mundial.", "correta": false},
+                    {"texto": "Que o reino de Deus avance e o de Satanás seja destruído.", "correta": true},
+                    {"texto": "Que o fim do mundo venha imediatamente.", "correta": false},
+                    {"texto": "Que tenhamos um lugar de destaque no reino celestial.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Na segunda petição, que é: 'Venha o teu reino', pedimos que o reino de Satanás seja destruído, que o reino da graça seja avançado, que nós e os outros sejamos introduzidos nele e guardados nele, e que o reino da glória seja apressado.",
+                  "referenciaBiblica": "Mateus 6:10; Salmo 68:1; Apocalipse 12:10-11; 2 Tessalonicenses 3:1; Romanos 10:1; Apocalipse 22:20."
+                },
+                {
+                  "pergunta": "O que pedimos na terceira petição?",
+                  "opcoes": [
+                    {"texto": "Que nossos planos e desejos pessoais sejam realizados.", "correta": false},
+                    {"texto": "Que Deus nos dê força para impor nossa vontade aos outros.", "correta": false},
+                    {"texto": "Que a vontade de Deus seja feita por todos.", "correta": true},
+                    {"texto": "Que Deus mude Sua vontade para se adequar às nossas necessidades.", "correta": false},
+                    {"texto": "Que apenas a vontade dos líderes da igreja seja seguida.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Na terceira petição, que é: 'Seja feita a tua vontade, assim na terra como no céu', pedimos que Deus, pela sua graça, nos torne capazes e desejosos de conhecer, obedecer e submeter-nos à sua vontade em todas as coisas, como os anjos o fazem no céu.",
+                  "referenciaBiblica": "Mateus 6:10; Salmo 119:34-36; Atos 21:14; Salmo 103:20-21."
+                },
+                {
+                  "pergunta": "O que pedimos na quarta petição?",
+                  "opcoes": [
+                    {"texto": "Riqueza abundante e luxo material.", "correta": false},
+                    {"texto": "Apenas alimento espiritual, não necessidades físicas.", "correta": false},
+                    {"texto": "Provisão suficiente das necessidades da vida.", "correta": true},
+                    {"texto": "Que Deus supra todas as nossas vontades e desejos.", "correta": false},
+                    {"texto": "Que não precisemos trabalhar para nosso sustento.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Na quarta petição, que é: 'O pão nosso de cada dia nos dá hoje', pedimos que, do livre dom de Deus, recebamos uma porção suficiente das boas coisas desta vida, e gozemos da sua bênção com elas.",
+                  "referenciaBiblica": "Mateus 6:11; Provérbios 30:8-9; 1 Timóteo 6:6-8."
+                },
+                {
+                  "pergunta": "O que pedimos na quinta petição?",
+                  "opcoes": [
+                    {"texto": "Que Deus nos perdoe, mesmo que não perdoemos os outros.", "correta": false},
+                    {"texto": "Perdão dos pecados, e capacidade de perdoar outros.", "correta": true},
+                    {"texto": "Que Deus esqueça nossos pecados sem necessidade de arrependimento.", "correta": false},
+                    {"texto": "Apenas o perdão de pecados menores, não os graves.", "correta": false},
+                    {"texto": "Que sejamos justificados por nossa capacidade de perdoar.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Na quinta petição, que é: 'E perdoa-nos as nossas dívidas, assim como nós perdoamos aos nossos devedores', pedimos que Deus, por amor de Cristo, perdoe gratuitamente todos os nossos pecados; o que somos encorajados a pedir, porque, pela sua graça, somos habilitados a perdoar de coração aos outros.",
+                  "referenciaBiblica": "Mateus 6:12; Salmo 51:1-2, 7; Efésios 1:7; Mateus 18:35; Lucas 11:4."
+                }
+              ]
+            },
+            {
+              "nivel": 22,
+              "perguntas": [
+                {
+                  "pergunta": "O que pedimos na sexta petição?",
+                  "opcoes": [
+                    {"texto": "Que nunca enfrentemos qualquer tipo de tentação.", "correta": false},
+                    {"texto": "Que Deus nos dê poder para vencer a tentação por nós mesmos.", "correta": false},
+                    {"texto": "Proteção contra tentação ou livramento dela.", "correta": true},
+                    {"texto": "Que sejamos tentados para provar nossa fidelidade.", "correta": false},
+                    {"texto": "Que o mal seja completamente erradicado do mundo agora.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "Na sexta petição, que é: 'E não nos deixes cair em tentação, mas livra-nos do mal', pedimos que Deus ou nos impeça de sermos tentados a pecar, ou nos sustente e livre quando formos tentados.",
+                  "referenciaBiblica": "Mateus 6:13; Mateus 26:41; Salmo 19:13; 1 Coríntios 10:13; João 17:15."
+                },
+                {
+                  "pergunta": "O que a conclusão da Oração Dominical nos ensina?",
+                  "opcoes": [
+                    {"texto": "Que nossas orações são eficazes por causa da nossa fé e sinceridade.", "correta": false},
+                    {"texto": "Encorajamento em Deus, louvor a Ele, e afirmação da oração.", "correta": true},
+                    {"texto": "Que devemos sempre terminar nossas orações com estas palavras exatas.", "correta": false},
+                    {"texto": "Que Deus precisa do nosso louvor para ser completo.", "correta": false},
+                    {"texto": "Que o 'Amém' é uma palavra mágica que garante a resposta à oração.", "correta": false}
+                  ],
+                  "descricaoRespostaCorreta": "A conclusão da Oração Dominical, que é: 'Porque teu é o reino, e o poder, e a glória, para sempre. Amém', nos ensina a tirar o nosso encorajamento na oração somente de Deus; e nas nossas orações a louvá-lo, atribuindo-lhe domínio eterno, poder e glória; e, em testemunho do nosso desejo e certeza de sermos ouvidos, dizemos: Amém.",
+                  "referenciaBiblica": "Mateus 6:13; Daniel 9:18-19; 1 Crônicas 29:11-13; 1 Coríntios 14:16; Apocalipse 22:20-21."
+                }
+              ]
+            }
+          ]
+        }
+
       ]
     },
     {

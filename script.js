@@ -1,10 +1,10 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
   // ======== SONS ========
-  const correctSound   = new Audio('sounds/correct.mp3');
+  const correctSound = new Audio('sounds/correct.mp3');
   const incorrectSound = new Audio('sounds/incorrect.mp3');
-  const timeoutSound   = new Audio('sounds/timeout.mp3');
-  const hintSound      = new Audio('sounds/hint.mp3');
+  const timeoutSound = new Audio('sounds/timeout.mp3');
+  const hintSound = new Audio('sounds/hint.mp3');
 
   // --- Chaves e Funções de Progresso no localStorage ---
   const PROGRESS_KEY = 'quizProgress';
@@ -15,26 +15,35 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
   }
 
+  // --- NOVO: Chave e Estado para as Configurações do Quiz ---
+  const SETTINGS_KEY = 'quizSettings';
+  let quizSettings = {
+    time: true,
+    next: true,
+    audio: true,
+  };
+
   // --- Estado e Dados ---
-  let quizData = {};               // JSON carregado para a categoria atual
+  let quizData = {}; // JSON carregado para a categoria atual
   let currentCategory = '';
   let currentLevel = '';
   let quizQuestions = [],
-      currentQuestionIndex = 0,
-      score = 0;
+    currentQuestionIndex = 0,
+    score = 0;
   let timerInterval, timeLeft;
 
-  // --- Mapeamento de telas (IDs de index.html) ---
+  // --- Mapeamento de telas (adicionar a nova tela) ---
   const screens = {
-    welcome:     document.getElementById('welcomeScreen'),
-    home:        document.getElementById('homeScreen'),
-    category:    document.getElementById('categoryScreen'),
-    settings:    document.getElementById('settingsScreen'),
-    about:       document.getElementById('aboutScreen'),
-    level:       document.getElementById('levelScreen'),
-    question:    document.getElementById('questionScreen'),
-    result:      document.getElementById('resultScreen'),
-    history:     document.getElementById('historyScreen')
+    welcome: document.getElementById('welcomeScreen'),
+    home: document.getElementById('homeScreen'),
+    category: document.getElementById('categoryScreen'),
+    settings: document.getElementById('settingsScreen'),
+    quizOptions: document.getElementById('quizOptionsScreen'),
+    about: document.getElementById('aboutScreen'),
+    level: document.getElementById('levelScreen'),
+    question: document.getElementById('questionScreen'),
+    result: document.getElementById('resultScreen'),
+    history: document.getElementById('historyScreen'),
   };
 
   function show(screenKey) {
@@ -43,78 +52,96 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Botões principais ---
-  const startButton               = document.getElementById('startButton');
-  const participantNameInput      = document.getElementById('participantName');
-  const nameErrorDisplay          = document.getElementById('nameError');
+  const startButton = document.getElementById('startButton');
+  const participantNameInput = document.getElementById('participantName');
+  const nameErrorDisplay = document.getElementById('nameError');
 
-  const playQuizButton            = document.getElementById('playQuizButton');
-  const openSettingsButton        = document.getElementById('openSettingsButton');
+  const playQuizButton = document.getElementById('playQuizButton');
+  const openSettingsButton = document.getElementById('openSettingsButton');
 
-  const changeDesignButton        = document.getElementById('changeDesignButton');
-  const viewHistoryButton         = document.getElementById('viewHistoryButton');
-  const aboutUsButton             = document.getElementById('aboutUsButton');
+  const changeDesignButton = document.getElementById('changeDesignButton');
+  const viewHistoryButton = document.getElementById('viewHistoryButton');
+  const aboutUsButton = document.getElementById('aboutUsButton');
+  const quizOptionsButton = document.getElementById('quizOptionsButton');
 
-  const backFromSettings          = document.getElementById('backFromSettings');
-  const backFromDesign            = document.getElementById('backFromDesign');
-
-  const themeDefaultBtn           = document.getElementById('themeDefault');
-  const themeFlatBtn              = document.getElementById('themeFlat');
-  const themeNeonBtn              = document.getElementById('themeNeon');
-  const themeStylesheetLink       = document.getElementById('themeStylesheet');
-
-  const backFromAbout             = document.getElementById('backFromAbout');
-  const backFromHistory           = document.getElementById('backFromHistory');
-
-  // Novos botões da tela de resultado e o que já existe
-  const playAgainButton           = document.getElementById('playAgainButton');
-  const changeCategoryButton      = document.getElementById('changeCategoryButton'); // ID Alterado
-  const nextLevelButton           = document.getElementById('nextLevelButton'); // NOVO BOTÃO
-  const nextLevelNumDisplay       = document.getElementById('nextLevelNum'); // Para exibir o número do próximo nível
+  const backFromSettings = document.getElementById('backFromSettings');
+  const backFromDesign = document.getElementById('backFromDesign');
+  const backFromQuizOptions = document.getElementById('backFromQuizOptions');
 
 
-  const backToHomeFromCategory    = document.getElementById('backToHomeFromCategory');
-  const backToCategoryFromLevel   = document.getElementById('backToCategoryFromLevel');
-  const backToLevelFromQuestion   = document.getElementById('backToLevelFromQuestion');
+  const themeDefaultBtn = document.getElementById('themeDefault');
+  const themeFlatBtn = document.getElementById('themeFlat');
+  const themeNeonBtn = document.getElementById('themeNeon');
+  const themeStylesheetLink = document.getElementById('themeStylesheet');
 
-  // Botões de categoria (captura via classe)
-  const categoryButtons           = document.querySelectorAll('.category-btn');
+  const backFromAbout = document.getElementById('backFromAbout');
+  const backFromHistory = document.getElementById('backFromHistory');
 
-  // --- Seletores de container para renderização dinâmica ---
-  const levelGrid                 = document.getElementById('levelSelectionGrid');
+  const playAgainButton = document.getElementById('playAgainButton');
+  const changeCategoryButton = document.getElementById('changeCategoryButton');
+  const nextLevelButton = document.getElementById('nextLevelButton');
+  const nextLevelNumDisplay = document.getElementById('nextLevelNum');
 
-  // --- Elementos da tela de perguntas ---
+
+  const backToHomeFromCategory = document.getElementById('backToHomeFromCategory');
+  const backToCategoryFromLevel = document.getElementById('backToCategoryFromLevel');
+  const backToLevelFromQuestion = document.getElementById('backToLevelFromQuestion');
+
+  const categoryButtons = document.querySelectorAll('.category-btn');
+  const levelGrid = document.getElementById('levelSelectionGrid');
+
   const questionCategoryLevelTitle = document.getElementById('questionCategoryLevelTitle');
-  const timerDisplay               = document.getElementById('timer');
-  const questionTextElement        = document.getElementById('questionText');
-  const optionsContainer           = document.getElementById('optionsContainer');
-  const currentQuestionNumDisplay  = document.getElementById('currentQuestionNum');
-  const totalQuestionsNumDisplay   = document.getElementById('totalQuestionsNum');
-  const hintButton                 = document.getElementById('hintButton');
-  const nextQuestionButton         = document.getElementById('nextQuestionButton');
-  const feedbackMessageElement     = document.getElementById('feedbackMessage');
+  const timerDisplay = document.getElementById('timer');
+  const questionTextElement = document.getElementById('questionText');
+  const optionsContainer = document.getElementById('optionsContainer');
+  const currentQuestionNumDisplay = document.getElementById('currentQuestionNum');
+  const totalQuestionsNumDisplay = document.getElementById('totalQuestionsNum');
+  const hintButton = document.getElementById('hintButton');
+  const nextQuestionButton = document.getElementById('nextQuestionButton');
+  const feedbackMessageElement = document.getElementById('feedbackMessage');
 
-  // --- Tela de Resultado ---
-  const finalScoreSpan             = document.getElementById('finalScore');
-  const maxScoreSpan               = document.getElementById('maxScore');
-  const resultMessageParagraph     = document.getElementById('resultMessage');
+  const finalScoreSpan = document.getElementById('finalScore');
+  const maxScoreSpan = document.getElementById('maxScore');
+  const resultMessageParagraph = document.getElementById('resultMessage');
+  const historyListDiv = document.getElementById('historyList');
 
-  // --- Tela de Histórico ---
-  const historyListDiv             = document.getElementById('historyList');
+  const chkTime = document.getElementById('chkTime');
+  const chkNext = document.getElementById('chkNext');
+  const chkAudio = document.getElementById('chkAudio');
+
+  // --- Funções para gerenciar as configurações ---
+  function saveSettings() {
+    quizSettings = {
+      time: chkTime.checked,
+      next: chkNext.checked,
+      audio: chkAudio.checked,
+    };
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify(quizSettings));
+  }
+
+  function loadSettings() {
+    const savedSettings = JSON.parse(localStorage.getItem(SETTINGS_KEY));
+    if (savedSettings) {
+      quizSettings = savedSettings;
+    }
+    chkTime.checked = quizSettings.time;
+    chkNext.checked = quizSettings.next;
+    chkAudio.checked = quizSettings.audio;
+  }
 
   // ======================================
   // 1) Inicialização da página
   // ======================================
-  // Tenta carregar nome salvo
+  loadSettings();
+
   const savedParticipantName = localStorage.getItem('participantName');
   if (savedParticipantName) {
     participantNameInput.value = savedParticipantName;
   }
-  // Salva nome digitado dinamicamente
   participantNameInput.addEventListener('input', () => {
     localStorage.setItem('participantName', participantNameInput.value.trim());
   });
 
-  // --- Fluxo de Navegação Inicial ---
   startButton.addEventListener('click', () => {
     const name = participantNameInput.value.trim();
     if (name.length < 2) {
@@ -127,7 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   playQuizButton.addEventListener('click', () => {
-    // Ao clicar em “Jogar Quiz”, vai para a tela de categorias
     show('category');
   });
 
@@ -157,6 +183,18 @@ document.addEventListener('DOMContentLoaded', () => {
     loadAboutUs();
   });
 
+  quizOptionsButton.addEventListener('click', () => {
+    show('quizOptions');
+  });
+
+  backFromQuizOptions.addEventListener('click', () => {
+    show('settings');
+  });
+
+  chkTime.addEventListener('change', saveSettings);
+  chkNext.addEventListener('change', saveSettings);
+  chkAudio.addEventListener('change', saveSettings);
+
   backFromSettings.addEventListener('click', () => {
     show('home');
   });
@@ -167,7 +205,6 @@ document.addEventListener('DOMContentLoaded', () => {
     show('settings');
   });
 
-  // Mudança de temas
   themeDefaultBtn.addEventListener('click', () => {
     themeStylesheetLink.href = 'estilo1.css';
     show('settings');
@@ -181,36 +218,24 @@ document.addEventListener('DOMContentLoaded', () => {
     show('settings');
   });
 
-  // Voltar para menu principal após resultado
-  // backToHomeFromResult.addEventListener('click', () => { // REMOVIDO, AGORA É 'changeCategoryButton'
-  //   show('home');
-  // });
-
-  // NOVO EVENTO para o botão "Mudar Categoria"
   changeCategoryButton.addEventListener('click', () => {
     show('category');
   });
 
-  // NOVO EVENTO para o botão "Próximo Nível"
   nextLevelButton.addEventListener('click', () => {
-      const nextLvlNum = parseInt(currentLevel, 10) + 1;
-      // Define o próximo nível como o currentLevel e inicia o quiz
-      currentLevel = nextLvlNum.toString();
-      startQuiz();
+    const nextLvlNum = parseInt(currentLevel, 10) + 1;
+    currentLevel = nextLvlNum.toString();
+    startQuiz();
   });
 
-
-  // Voltar de “Categoria” para “Home”
   backToHomeFromCategory.addEventListener('click', () => {
     show('home');
   });
 
-  // Voltar de “Nível” para “Categoria”
   backToCategoryFromLevel.addEventListener('click', () => {
     show('category');
   });
 
-  // Voltar de “Pergunta” para “Nível”
   backToLevelFromQuestion.addEventListener('click', () => {
     show('level');
   });
@@ -222,13 +247,11 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const rawCategory = btn.dataset.category;
       currentCategory = rawCategory;
-
-      // Constrói o nome do arquivo JSON (minúsculo e sem espaços):
-      // “Cultura Mundial” → "culturamundial.json"
       const filename = rawCategory.toLowerCase().replace(/\s+/g, '') + '.json';
 
-      // Faz o fetch no JSON da categoria selecionada
-      fetch(`data/${filename}`, { cache: 'no-cache' })
+      fetch(`data/${filename}`, {
+          cache: 'no-cache'
+        })
         .then(response => {
           if (!response.ok) {
             throw new Error(`Não foi possível carregar ${filename}`);
@@ -236,12 +259,6 @@ document.addEventListener('DOMContentLoaded', () => {
           return response.json();
         })
         .then(data => {
-          // JSON deve estar no formato:
-          // {
-          //   "1": [ { "pergunta": "...", "descricao": "...", "opcoes": [{ "texto": "...", "correta": true }, ...] }, ... ],
-          //   "2": [ ... ],
-          //   ...
-          // }
           quizData = data;
           show('level');
           renderLevels();
@@ -260,38 +277,34 @@ document.addEventListener('DOMContentLoaded', () => {
     levelGrid.innerHTML = '';
     const levelsObj = quizData || {};
     const nivelKeys = Object.keys(levelsObj).sort((a, b) => parseInt(a) - parseInt(b));
-    const prog      = getProgress();
-    const baseKey   = currentCategory;
+    const prog = getProgress();
+    const baseKey = currentCategory;
 
     nivelKeys.forEach(lv => {
       const lvNum = parseInt(lv, 10);
-      const btn   = document.createElement('button');
+      const btn = document.createElement('button');
       btn.className = 'btn';
       btn.dataset.level = lv;
       btn.textContent = `Nível ${lv}`;
 
-      // --- Lógica de desbloqueio e estrelas ---
       const prevLvl = lvNum - 1;
       const progressObj = prog[baseKey] || {};
       const levelProgress = progressObj[`level${lvNum}`];
-      // prevLevelCompleted verifica se o nível anterior existe E não é apenas 'available' (significa que foi concluído de alguma forma)
       const prevLevelCompleted = progressObj[`level${prevLvl}`] && progressObj[`level${prevLvl}`] !== 'available' && progressObj[`level${prevLvl}`] !== 'failed';
 
-
-      const isUnlocked = lvNum === 1 || prevLevelCompleted; // Primeiro nível sempre desbloqueado, outros se o anterior foi concluído
+      const isUnlocked = lvNum === 1 || prevLevelCompleted;
 
       if (!isUnlocked) {
         btn.classList.add('locked-level');
         btn.disabled = true;
         btn.textContent += ' 🔒';
       } else {
-        // Aplica estrelas com base no progresso salvo para este nível
         if (levelProgress === 'three_stars') {
-            btn.textContent += ' ⭐⭐⭐';
+          btn.textContent += ' ⭐⭐⭐';
         } else if (levelProgress === 'two_stars') {
-            btn.textContent += ' ⭐⭐';
-        } else if (levelProgress === 'one_star') { // 'completed' também será 'one_star'
-            btn.textContent += ' ⭐';
+          btn.textContent += ' ⭐⭐';
+        } else if (levelProgress === 'one_star') {
+          btn.textContent += ' ⭐';
         }
       }
 
@@ -310,7 +323,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // 4) Lógica Principal do Quiz
   // ======================================
   function startQuiz() {
-    // Usa 'currentLevel' para acessar o array de perguntas do quizData
     quizQuestions = (quizData[currentLevel] || []).slice();
     if (!quizQuestions.length) {
       alert('Nenhuma pergunta encontrada neste nível.');
@@ -337,10 +349,12 @@ document.addEventListener('DOMContentLoaded', () => {
     stopTimer();
     const questionObj = quizQuestions[currentQuestionIndex];
 
+    document.querySelector('.timer-container').style.display = quizSettings.time ? 'block' : 'none';
+
     currentQuestionNumDisplay.textContent = currentQuestionIndex + 1;
     questionTextElement.textContent = questionObj.pergunta;
 
-    feedbackMessageElement.textContent = '';
+    feedbackMessageElement.innerHTML = '';
     feedbackMessageElement.classList.remove('correct', 'incorrect');
     optionsContainer.innerHTML = '';
     nextQuestionButton.classList.add('hidden');
@@ -356,39 +370,62 @@ document.addEventListener('DOMContentLoaded', () => {
       optionsContainer.appendChild(btn);
     });
 
-    startTimer();
+    if (quizSettings.time) {
+      startTimer();
+    }
   }
 
   function selectOption(event) {
     stopTimer();
     const selectedBtn = event.currentTarget;
-    const isCorrect   = selectedBtn.dataset.correct === 'true';
+    const isCorrect = selectedBtn.dataset.correct === 'true';
     const questionObj = quizQuestions[currentQuestionIndex];
     const correctOptionText = questionObj.opcoes.find(o => o.correta).texto;
 
-    // Desabilitar todas as opções após a seleção
     document.querySelectorAll('.option-btn').forEach(b => {
       b.disabled = true;
     });
 
+    let feedbackHTML = '';
+
     if (isCorrect) {
-      correctSound.play();
+      if (quizSettings.audio) correctSound.play();
       selectedBtn.classList.add('correct');
-      feedbackMessageElement.textContent = 'Certo! 🎉';
+      feedbackHTML = 'Certo! 🎉';
       feedbackMessageElement.classList.add('correct');
+      feedbackMessageElement.classList.remove('incorrect');
       score++;
     } else {
-      incorrectSound.play();
+      if (quizSettings.audio) incorrectSound.play();
       selectedBtn.classList.add('wrong');
-      feedbackMessageElement.textContent = `Errado! A resposta correta é: "${correctOptionText}"`;
+      feedbackHTML = `Errado! A resposta correta é: "${correctOptionText}"`;
       feedbackMessageElement.classList.add('incorrect');
-      // Encontrar e aplicar cor verde à opção correta
+      feedbackMessageElement.classList.remove('correct');
+
       const correctBtn = Array.from(document.querySelectorAll('.option-btn'))
-                                .find(b => b.dataset.correct === 'true');
+        .find(b => b.dataset.correct === 'true');
       if (correctBtn) correctBtn.classList.add('correct');
     }
 
-    nextQuestionButton.classList.remove('hidden');
+    const description = questionObj.descricao;
+    if (description) {
+      feedbackHTML += `<br><span class="question-description">${description}</span>`;
+    }
+
+    feedbackMessageElement.innerHTML = feedbackHTML;
+
+    if (quizSettings.next) {
+      nextQuestionButton.classList.remove('hidden');
+    } else {
+      setTimeout(() => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < quizQuestions.length) {
+          displayQuestion();
+        } else {
+          showResult();
+        }
+      }, 2500);
+    }
   }
 
   nextQuestionButton.addEventListener('click', () => {
@@ -422,19 +459,39 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function handleTimeUp() {
-    timeoutSound.play();
+    if (quizSettings.audio) timeoutSound.play();
     const questionObj = quizQuestions[currentQuestionIndex];
     const correctOptionText = questionObj.opcoes.find(o => o.correta).texto;
-    feedbackMessageElement.textContent = `Tempo esgotado! Resposta: "${correctOptionText}" ⏳`;
+
+    let feedbackHTML = `Tempo esgotado! Resposta: "${correctOptionText}" ⏳`;
     feedbackMessageElement.classList.add('incorrect');
-    // Aplicar cor verde à opção correta quando o tempo esgota
+
+    const description = questionObj.descricao;
+    if (description) {
+      feedbackHTML += `<br><span class="question-description">${description}</span>`;
+    }
+
+    feedbackMessageElement.innerHTML = feedbackHTML;
+
     document.querySelectorAll('.option-btn').forEach(b => {
       b.disabled = true;
       if (b.dataset.correct === 'true') {
         b.classList.add('correct');
       }
     });
-    nextQuestionButton.classList.remove('hidden');
+
+    if (quizSettings.next) {
+      nextQuestionButton.classList.remove('hidden');
+    } else {
+      setTimeout(() => {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < quizQuestions.length) {
+          displayQuestion();
+        } else {
+          showResult();
+        }
+      }, 2500);
+    }
   }
 
   // ======================================
@@ -444,48 +501,43 @@ document.addEventListener('DOMContentLoaded', () => {
     stopTimer();
 
     const totalQ = quizQuestions.length;
-    const pct    = (score / totalQ) * 100;
+    const pct = (score / totalQ) * 100;
 
     saveQuizHistory(currentCategory, currentLevel, score, totalQ);
 
     const progressObj = getProgress();
     if (!progressObj[currentCategory]) progressObj[currentCategory] = {};
-    const levelKey    = `level${currentLevel}`;
+    const levelKey = `level${currentLevel}`;
 
     let newProgressStatus;
     if (pct === 100) {
-        newProgressStatus = 'three_stars';
+      newProgressStatus = 'three_stars';
     } else if (pct >= 90) {
-        newProgressStatus = 'two_stars';
+      newProgressStatus = 'two_stars';
     } else if (pct >= 80) {
-        newProgressStatus = 'one_star'; // Corresponde ao antigo 'completed'
+      newProgressStatus = 'one_star';
     } else {
-        newProgressStatus = 'failed'; // Nível não concluído para desbloqueio
+      newProgressStatus = 'failed';
     }
 
-    // Atualiza o status do nível atual APENAS se o novo status for melhor
     const currentLevelStatus = progressObj[currentCategory][levelKey];
     const statusOrder = ['failed', 'available', 'one_star', 'two_stars', 'three_stars'];
 
-    // Se o nível não tinha status, ou o novo status é superior ao atual, atualiza
     if (!currentLevelStatus || statusOrder.indexOf(newProgressStatus) > statusOrder.indexOf(currentLevelStatus)) {
-        progressObj[currentCategory][levelKey] = newProgressStatus;
+      progressObj[currentCategory][levelKey] = newProgressStatus;
     }
 
-
-    // Lógica para desbloquear o próximo nível
     const nextLvlNum = parseInt(currentLevel, 10) + 1;
-    const nextLevelExists = !!quizData[nextLvlNum]; // Verifica se o próximo nível existe no quizData
+    const nextLevelExists = !!quizData[nextLvlNum];
 
-    if (newProgressStatus !== 'failed' && nextLevelExists) { // Se o nível atual foi concluído (pelo menos 1 estrela) E o próximo nível existe
-        const nextLevelKey = `level${nextLvlNum}`;
-        // Se o próximo nível ainda não tem status ou é apenas 'available', marca como 'available'
-        if (!progressObj[currentCategory][nextLevelKey] || progressObj[currentCategory][nextLevelKey] === 'failed') {
-            progressObj[currentCategory][nextLevelKey] = 'available';
-        }
+    if (newProgressStatus !== 'failed' && nextLevelExists) {
+      const nextLevelKey = `level${nextLvlNum}`;
+      if (!progressObj[currentCategory][nextLevelKey] || progressObj[currentCategory][nextLevelKey] === 'failed') {
+        progressObj[currentCategory][nextLevelKey] = 'available';
+      }
     }
 
-    setProgress(progressObj); // Salva o progresso atualizado no localStorage
+    setProgress(progressObj);
 
 
     let msg = `Você acertou ${pct.toFixed(0)}% das perguntas. `;
@@ -500,35 +552,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     finalScoreSpan.textContent = score;
-    maxScoreSpan.textContent   = totalQ;
+    maxScoreSpan.textContent = totalQ;
     resultMessageParagraph.textContent = msg;
     show('result');
 
-    // Lógica para o botão "Próximo Nível"
-    if (nextLevelExists && newProgressStatus !== 'failed') { // Se o nível foi concluído e há um próximo
-        nextLevelButton.classList.remove('hidden');
-        nextLevelButton.disabled = false;
-        nextLevelNumDisplay.textContent = nextLvlNum; // Exibe o número do próximo nível
+    if (nextLevelExists && newProgressStatus !== 'failed') {
+      nextLevelButton.classList.remove('hidden');
+      nextLevelButton.disabled = false;
+      nextLevelNumDisplay.textContent = nextLvlNum;
     } else {
-        nextLevelButton.classList.add('hidden'); // Esconde o botão se não houver próximo nível ou não foi concluído
-        nextLevelButton.disabled = true;
+      nextLevelButton.classList.add('hidden');
+      nextLevelButton.disabled = true;
     }
   }
 
   function saveQuizHistory(category, level, score, totalQuestions) {
     const historyArray = JSON.parse(localStorage.getItem('quizHistory') || '[]');
     const now = new Date().toLocaleString('pt-AO', {
-      year: 'numeric', month: 'numeric', day: 'numeric',
-      hour: '2-digit', minute: '2-digit'
-    }); // Formato mais legível para o histórico
+      year: 'numeric',
+      month: 'numeric',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
     historyArray.push({
-      id:          Date.now(),
+      id: Date.now(),
       participant: participantNameInput.value.trim(),
       category,
       level,
       score,
       totalQuestions,
-      timestamp:   now
+      timestamp: now
     });
     localStorage.setItem('quizHistory', JSON.stringify(historyArray));
   }
@@ -559,36 +613,34 @@ document.addEventListener('DOMContentLoaded', () => {
   // ======================================
   async function loadAboutUs() {
     try {
-      const res = await fetch('./data/sobreNos.json', { cache: 'no-cache' });
+      const res = await fetch('./data/sobreNos.json', {
+        cache: 'no-cache'
+      });
       if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
       const data = await res.json();
       const info = data.welcomeInfo;
       const contentDiv = document.getElementById('aboutContent');
       contentDiv.innerHTML = '';
 
-      // 1) TÍTULO PRINCIPAL
       if (info.title) {
         const h2 = document.createElement('h2');
         h2.textContent = info.title;
         contentDiv.appendChild(h2);
       }
 
-      // 2) LINK DO SITE (se existir)
       if (info.website) {
         const pLink = document.createElement('p');
         pLink.style.marginTop = '0.25rem';
-        // cria <a href="...">Visite nosso site</a>
         const a = document.createElement('a');
         a.href = info.website;
         a.target = '_blank';
         a.rel = 'noopener';
         a.textContent = 'Visite nosso site';
-        a.style.color = '#0057e7'; // ou use uma classe CSS
+        a.style.color = '#0057e7';
         pLink.appendChild(a);
         contentDiv.appendChild(pLink);
       }
 
-      // 3) DESCRIÇÃO GERAL
       if (info.description) {
         const pDesc = document.createElement('p');
         pDesc.textContent = info.description;
@@ -596,7 +648,6 @@ document.addEventListener('DOMContentLoaded', () => {
         contentDiv.appendChild(pDesc);
       }
 
-      // 4) QUEM SOMOS
       if (info.whoAreWe && (info.whoAreWe.title || info.whoAreWe.text)) {
         if (info.whoAreWe.title) {
           const h3 = document.createElement('h3');
@@ -612,7 +663,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      // 5) LOCALIZAÇÃO
       if (info.location && (info.location.title || Array.isArray(info.location.text))) {
         if (info.location.title) {
           const h3Loc = document.createElement('h3');
@@ -634,7 +684,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      // 6) CONTACTOS
       if (info.contacts && (info.contacts.title || info.contacts.email || info.contacts.phone || info.contacts.socialMedia)) {
         if (info.contacts.title) {
           const h3Cont = document.createElement('h3');

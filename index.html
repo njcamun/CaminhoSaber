@@ -109,6 +109,9 @@
             <button id="aboutUsButton" class="btn">
                 <i class="fa-solid fa-info-circle"></i> Sobre Nós
             </button>
+            <button id="quizOptionsButton" class="btn">
+                <i class="fa-solid fa-list-check"></i> Opções do Quiz
+            </button>
             <button id="backFromSettings" class="btn secondary">
                 <i class="fa-solid fa-arrow-left"></i> Voltar
             </button>
@@ -128,6 +131,29 @@
                 <i class="fa-solid fa-arrow-left"></i> Voltar
             </button>
         </div>
+    </section>
+
+    <section id="quizOptionsScreen" class="screen hidden">
+        <h2>Opções do Quiz</h2>
+
+        <div class="setting-item">
+            <input type="checkbox" id="chkTime" checked />
+            <label for="chkTime">Tempo</label>
+        </div>
+
+        <div class="setting-item">
+            <input type="checkbox" id="chkNext" checked />
+            <label for="chkNext">Próxima</label>
+        </div>
+
+        <div class="setting-item">
+            <input type="checkbox" id="chkAudio" checked />
+            <label for="chkAudio">Áudio</label>
+        </div>
+
+        <button id="backFromQuizOptions" class="btn secondary" onclick="show('settingsScreen')">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </button>
     </section>
 
     <section id="aboutScreen" class="screen hidden">
