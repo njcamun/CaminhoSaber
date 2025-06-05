@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress));
   }
 
-  // --- NOVO: Chave e Estado para as Configurações do Quiz ---
   const SETTINGS_KEY = 'quizSettings';
   let quizSettings = {
     time: true,
@@ -24,15 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // --- Estado e Dados ---
-  let quizData = {}; // JSON carregado para a categoria atual
+  let quizData = {};
   let currentCategory = '';
   let currentLevel = '';
   let quizQuestions = [],
     currentQuestionIndex = 0,
     score = 0;
-  let timerInterval, timeLeft;
+  let timerInterval, timeLeft, autoAdvanceTimeout;
 
-  // --- Mapeamento de telas (adicionar a nova tela) ---
+  // --- Mapeamento de telas ---
   const screens = {
     welcome: document.getElementById('welcomeScreen'),
     home: document.getElementById('homeScreen'),
@@ -51,45 +50,34 @@ document.addEventListener('DOMContentLoaded', () => {
     screens[screenKey].classList.remove('hidden');
   }
 
-  // --- Botões principais ---
+  // --- Seletores de elementos ---
   const startButton = document.getElementById('startButton');
   const participantNameInput = document.getElementById('participantName');
   const nameErrorDisplay = document.getElementById('nameError');
-
   const playQuizButton = document.getElementById('playQuizButton');
   const openSettingsButton = document.getElementById('openSettingsButton');
-
   const changeDesignButton = document.getElementById('changeDesignButton');
   const viewHistoryButton = document.getElementById('viewHistoryButton');
   const aboutUsButton = document.getElementById('aboutUsButton');
   const quizOptionsButton = document.getElementById('quizOptionsButton');
-
   const backFromSettings = document.getElementById('backFromSettings');
   const backFromDesign = document.getElementById('backFromDesign');
   const backFromQuizOptions = document.getElementById('backFromQuizOptions');
-
-
   const themeDefaultBtn = document.getElementById('themeDefault');
   const themeFlatBtn = document.getElementById('themeFlat');
   const themeNeonBtn = document.getElementById('themeNeon');
   const themeStylesheetLink = document.getElementById('themeStylesheet');
-
   const backFromAbout = document.getElementById('backFromAbout');
   const backFromHistory = document.getElementById('backFromHistory');
-
   const playAgainButton = document.getElementById('playAgainButton');
   const changeCategoryButton = document.getElementById('changeCategoryButton');
   const nextLevelButton = document.getElementById('nextLevelButton');
   const nextLevelNumDisplay = document.getElementById('nextLevelNum');
-
-
   const backToHomeFromCategory = document.getElementById('backToHomeFromCategory');
   const backToCategoryFromLevel = document.getElementById('backToCategoryFromLevel');
   const backToLevelFromQuestion = document.getElementById('backToLevelFromQuestion');
-
   const categoryButtons = document.querySelectorAll('.category-btn');
   const levelGrid = document.getElementById('levelSelectionGrid');
-
   const questionCategoryLevelTitle = document.getElementById('questionCategoryLevelTitle');
   const timerDisplay = document.getElementById('timer');
   const questionTextElement = document.getElementById('questionText');
@@ -99,17 +87,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const hintButton = document.getElementById('hintButton');
   const nextQuestionButton = document.getElementById('nextQuestionButton');
   const feedbackMessageElement = document.getElementById('feedbackMessage');
-
   const finalScoreSpan = document.getElementById('finalScore');
   const maxScoreSpan = document.getElementById('maxScore');
   const resultMessageParagraph = document.getElementById('resultMessage');
   const historyListDiv = document.getElementById('historyList');
-
   const chkTime = document.getElementById('chkTime');
   const chkNext = document.getElementById('chkNext');
   const chkAudio = document.getElementById('chkAudio');
 
-  // --- Funções para gerenciar as configurações ---
+  // --- Funções de Configuração ---
   function saveSettings() {
     quizSettings = {
       time: chkTime.checked,
@@ -130,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ======================================
-  // 1) Inicialização da página
+  // 1) Inicialização e Navegação
   // ======================================
   loadSettings();
 
@@ -153,119 +139,73 @@ document.addEventListener('DOMContentLoaded', () => {
     show('home');
   });
 
-  playQuizButton.addEventListener('click', () => {
-    show('category');
-  });
-
+  playQuizButton.addEventListener('click', () => show('category'));
   openSettingsButton.addEventListener('click', () => {
     show('settings');
     document.getElementById('settingsMenuOptions').classList.remove('hidden');
     document.getElementById('designOptions').classList.add('hidden');
   });
-
   changeDesignButton.addEventListener('click', () => {
     document.getElementById('settingsMenuOptions').classList.add('hidden');
     document.getElementById('designOptions').classList.remove('hidden');
   });
-
   backFromDesign.addEventListener('click', () => {
     document.getElementById('designOptions').classList.add('hidden');
     document.getElementById('settingsMenuOptions').classList.remove('hidden');
   });
-
   viewHistoryButton.addEventListener('click', () => {
     show('history');
     displayHistory();
   });
-
   aboutUsButton.addEventListener('click', () => {
     show('about');
     loadAboutUs();
   });
-
-  quizOptionsButton.addEventListener('click', () => {
-    show('quizOptions');
-  });
-
-  backFromQuizOptions.addEventListener('click', () => {
-    show('settings');
-  });
-
+  quizOptionsButton.addEventListener('click', () => show('quizOptions'));
+  backFromQuizOptions.addEventListener('click', () => show('settings'));
   chkTime.addEventListener('change', saveSettings);
   chkNext.addEventListener('change', saveSettings);
   chkAudio.addEventListener('change', saveSettings);
-
-  backFromSettings.addEventListener('click', () => {
-    show('home');
-  });
-  backFromAbout.addEventListener('click', () => {
-    show('settings');
-  });
-  backFromHistory.addEventListener('click', () => {
-    show('settings');
-  });
-
-  themeDefaultBtn.addEventListener('click', () => {
-    themeStylesheetLink.href = 'estilo1.css';
-    show('settings');
-  });
-  themeFlatBtn.addEventListener('click', () => {
-    themeStylesheetLink.href = 'estilo2.css';
-    show('settings');
-  });
-  themeNeonBtn.addEventListener('click', () => {
-    themeStylesheetLink.href = 'estilo3.css';
-    show('settings');
-  });
-
-  changeCategoryButton.addEventListener('click', () => {
-    show('category');
-  });
-
+  backFromSettings.addEventListener('click', () => show('home'));
+  backFromAbout.addEventListener('click', () => show('settings'));
+  backFromHistory.addEventListener('click', () => show('settings'));
+  themeDefaultBtn.addEventListener('click', () => (themeStylesheetLink.href = 'estilo1.css'));
+  themeFlatBtn.addEventListener('click', () => (themeStylesheetLink.href = 'estilo2.css'));
+  themeNeonBtn.addEventListener('click', () => (themeStylesheetLink.href = 'estilo3.css'));
+  changeCategoryButton.addEventListener('click', () => show('category'));
   nextLevelButton.addEventListener('click', () => {
     const nextLvlNum = parseInt(currentLevel, 10) + 1;
     currentLevel = nextLvlNum.toString();
     startQuiz();
   });
-
-  backToHomeFromCategory.addEventListener('click', () => {
-    show('home');
-  });
-
-  backToCategoryFromLevel.addEventListener('click', () => {
-    show('category');
-  });
+  backToHomeFromCategory.addEventListener('click', () => show('home'));
+  backToCategoryFromLevel.addEventListener('click', () => show('category'));
 
   backToLevelFromQuestion.addEventListener('click', () => {
+    stopQuestionActivities();
     show('level');
   });
 
   // ======================================
-  // 2) Quando o usuário clica em uma Categoria
+  // 2) Lógica de Categorias e Níveis
   // ======================================
   categoryButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      const rawCategory = btn.dataset.category;
-      currentCategory = rawCategory;
-      const filename = rawCategory.toLowerCase().replace(/\s+/g, '') + '.json';
-
-      fetch(`data/${filename}`, {
-          cache: 'no-cache'
-        })
+      currentCategory = btn.dataset.category;
+      const filename = currentCategory.toLowerCase().replace(/\s+/g, '') + '.json';
+      fetch(`data/${filename}`, { cache: 'no-cache' })
         .then(response => {
-          if (!response.ok) {
-            throw new Error(`Não foi possível carregar ${filename}`);
-          }
+          if (!response.ok) throw new Error(`Não foi possível carregar ${filename}`);
           return response.json();
         })
         .then(data => {
           quizData = data;
           show('level');
-          renderLevels();
+          renderLevels(); // Esta função agora existe e será chamada corretamente.
         })
         .catch(err => {
           console.error(err);
-          alert('Erro ao carregar perguntas para ‘' + rawCategory + '’: ' + err.message);
+          alert('Erro ao carregar perguntas para ‘' + currentCategory + '’: ' + err.message);
         });
     });
   });
@@ -291,7 +231,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const progressObj = prog[baseKey] || {};
       const levelProgress = progressObj[`level${lvNum}`];
       const prevLevelCompleted = progressObj[`level${prevLvl}`] && progressObj[`level${prevLvl}`] !== 'available' && progressObj[`level${prevLvl}`] !== 'failed';
-
       const isUnlocked = lvNum === 1 || prevLevelCompleted;
 
       if (!isUnlocked) {
@@ -314,7 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
           startQuiz();
         }
       });
-
       levelGrid.appendChild(btn);
     });
   }
@@ -331,35 +269,28 @@ document.addEventListener('DOMContentLoaded', () => {
     shuffleArray(quizQuestions);
     currentQuestionIndex = 0;
     score = 0;
-
     totalQuestionsNumDisplay.textContent = quizQuestions.length;
     nextQuestionButton.classList.add('hidden');
     hintButton.classList.remove('hidden');
     hintButton.disabled = false;
     feedbackMessageElement.textContent = '';
     feedbackMessageElement.classList.remove('correct', 'incorrect');
-
     show('question');
-    questionCategoryLevelTitle.textContent =
-      `${currentCategory} – Nível ${currentLevel}`;
+    questionCategoryLevelTitle.textContent = `${currentCategory} – Nível ${currentLevel}`;
     displayQuestion();
   }
 
   function displayQuestion() {
-    stopTimer();
+    stopQuestionActivities();
     const questionObj = quizQuestions[currentQuestionIndex];
-
     document.querySelector('.timer-container').style.display = quizSettings.time ? 'block' : 'none';
-
     currentQuestionNumDisplay.textContent = currentQuestionIndex + 1;
     questionTextElement.textContent = questionObj.pergunta;
-
     feedbackMessageElement.innerHTML = '';
     feedbackMessageElement.classList.remove('correct', 'incorrect');
     optionsContainer.innerHTML = '';
     nextQuestionButton.classList.add('hidden');
     hintButton.disabled = false;
-
     const shuffledOptions = shuffleArray(questionObj.opcoes.slice());
     shuffledOptions.forEach(opt => {
       const btn = document.createElement('button');
@@ -369,25 +300,21 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', selectOption);
       optionsContainer.appendChild(btn);
     });
-
     if (quizSettings.time) {
       startTimer();
     }
   }
 
   function selectOption(event) {
-    stopTimer();
+    stopQuestionActivities();
     const selectedBtn = event.currentTarget;
     const isCorrect = selectedBtn.dataset.correct === 'true';
     const questionObj = quizQuestions[currentQuestionIndex];
     const correctOptionText = questionObj.opcoes.find(o => o.correta).texto;
-
     document.querySelectorAll('.option-btn').forEach(b => {
       b.disabled = true;
     });
-
     let feedbackHTML = '';
-
     if (isCorrect) {
       if (quizSettings.audio) correctSound.play();
       selectedBtn.classList.add('correct');
@@ -401,23 +328,18 @@ document.addEventListener('DOMContentLoaded', () => {
       feedbackHTML = `Errado! A resposta correta é: "${correctOptionText}"`;
       feedbackMessageElement.classList.add('incorrect');
       feedbackMessageElement.classList.remove('correct');
-
-      const correctBtn = Array.from(document.querySelectorAll('.option-btn'))
-        .find(b => b.dataset.correct === 'true');
+      const correctBtn = Array.from(document.querySelectorAll('.option-btn')).find(b => b.dataset.correct === 'true');
       if (correctBtn) correctBtn.classList.add('correct');
     }
-
     const description = questionObj.descricao;
     if (description) {
       feedbackHTML += `<br><span class="question-description">${description}</span>`;
     }
-
     feedbackMessageElement.innerHTML = feedbackHTML;
-
     if (quizSettings.next) {
       nextQuestionButton.classList.remove('hidden');
     } else {
-      setTimeout(() => {
+      autoAdvanceTimeout = setTimeout(() => {
         currentQuestionIndex++;
         if (currentQuestionIndex < quizQuestions.length) {
           displayQuestion();
@@ -438,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ======================================
-  // 5) Temporizador
+  // 5) Temporizador e Atividades da Pergunta
   // ======================================
   function startTimer() {
     clearInterval(timerInterval);
@@ -454,36 +376,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1000);
   }
 
-  function stopTimer() {
+  function stopQuestionActivities() {
     clearInterval(timerInterval);
+    clearTimeout(autoAdvanceTimeout);
   }
 
   function handleTimeUp() {
     if (quizSettings.audio) timeoutSound.play();
     const questionObj = quizQuestions[currentQuestionIndex];
     const correctOptionText = questionObj.opcoes.find(o => o.correta).texto;
-
     let feedbackHTML = `Tempo esgotado! Resposta: "${correctOptionText}" ⏳`;
     feedbackMessageElement.classList.add('incorrect');
-
     const description = questionObj.descricao;
     if (description) {
       feedbackHTML += `<br><span class="question-description">${description}</span>`;
     }
-
     feedbackMessageElement.innerHTML = feedbackHTML;
-
     document.querySelectorAll('.option-btn').forEach(b => {
       b.disabled = true;
       if (b.dataset.correct === 'true') {
         b.classList.add('correct');
       }
     });
-
     if (quizSettings.next) {
       nextQuestionButton.classList.remove('hidden');
     } else {
-      setTimeout(() => {
+      autoAdvanceTimeout = setTimeout(() => {
         currentQuestionIndex++;
         if (currentQuestionIndex < quizQuestions.length) {
           displayQuestion();
@@ -498,17 +416,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6) Tela de Resultado e Histórico
   // ======================================
   function showResult() {
-    stopTimer();
-
+    stopQuestionActivities();
     const totalQ = quizQuestions.length;
     const pct = (score / totalQ) * 100;
-
     saveQuizHistory(currentCategory, currentLevel, score, totalQ);
-
     const progressObj = getProgress();
     if (!progressObj[currentCategory]) progressObj[currentCategory] = {};
     const levelKey = `level${currentLevel}`;
-
     let newProgressStatus;
     if (pct === 100) {
       newProgressStatus = 'three_stars';
@@ -519,27 +433,20 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       newProgressStatus = 'failed';
     }
-
     const currentLevelStatus = progressObj[currentCategory][levelKey];
     const statusOrder = ['failed', 'available', 'one_star', 'two_stars', 'three_stars'];
-
     if (!currentLevelStatus || statusOrder.indexOf(newProgressStatus) > statusOrder.indexOf(currentLevelStatus)) {
       progressObj[currentCategory][levelKey] = newProgressStatus;
     }
-
     const nextLvlNum = parseInt(currentLevel, 10) + 1;
     const nextLevelExists = !!quizData[nextLvlNum];
-
     if (newProgressStatus !== 'failed' && nextLevelExists) {
       const nextLevelKey = `level${nextLvlNum}`;
       if (!progressObj[currentCategory][nextLevelKey] || progressObj[currentCategory][nextLevelKey] === 'failed') {
         progressObj[currentCategory][nextLevelKey] = 'available';
       }
     }
-
     setProgress(progressObj);
-
-
     let msg = `Você acertou ${pct.toFixed(0)}% das perguntas. `;
     if (pct === 100) {
       msg += 'UAU! Três Estrelas! Nível Perfeito! ⭐⭐⭐';
@@ -550,12 +457,10 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       msg += `É necessário 80% para liberar o próximo nível.`;
     }
-
     finalScoreSpan.textContent = score;
     maxScoreSpan.textContent = totalQ;
     resultMessageParagraph.textContent = msg;
     show('result');
-
     if (nextLevelExists && newProgressStatus !== 'failed') {
       nextLevelButton.classList.remove('hidden');
       nextLevelButton.disabled = false;
@@ -613,21 +518,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // ======================================
   async function loadAboutUs() {
     try {
-      const res = await fetch('./data/sobreNos.json', {
-        cache: 'no-cache'
-      });
+      const res = await fetch('./data/sobreNos.json', { cache: 'no-cache' });
       if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
       const data = await res.json();
       const info = data.welcomeInfo;
       const contentDiv = document.getElementById('aboutContent');
       contentDiv.innerHTML = '';
-
       if (info.title) {
         const h2 = document.createElement('h2');
         h2.textContent = info.title;
         contentDiv.appendChild(h2);
       }
-
       if (info.website) {
         const pLink = document.createElement('p');
         pLink.style.marginTop = '0.25rem';
@@ -640,14 +541,12 @@ document.addEventListener('DOMContentLoaded', () => {
         pLink.appendChild(a);
         contentDiv.appendChild(pLink);
       }
-
       if (info.description) {
         const pDesc = document.createElement('p');
         pDesc.textContent = info.description;
         pDesc.style.marginBottom = '1rem';
         contentDiv.appendChild(pDesc);
       }
-
       if (info.whoAreWe && (info.whoAreWe.title || info.whoAreWe.text)) {
         if (info.whoAreWe.title) {
           const h3 = document.createElement('h3');
@@ -662,7 +561,6 @@ document.addEventListener('DOMContentLoaded', () => {
           contentDiv.appendChild(pWho);
         }
       }
-
       if (info.location && (info.location.title || Array.isArray(info.location.text))) {
         if (info.location.title) {
           const h3Loc = document.createElement('h3');
@@ -683,7 +581,6 @@ document.addEventListener('DOMContentLoaded', () => {
           contentDiv.appendChild(ulLoc);
         }
       }
-
       if (info.contacts && (info.contacts.title || info.contacts.email || info.contacts.phone || info.contacts.socialMedia)) {
         if (info.contacts.title) {
           const h3Cont = document.createElement('h3');
@@ -711,7 +608,6 @@ document.addEventListener('DOMContentLoaded', () => {
           liSM.innerHTML = `<strong>Redes Sociais:</strong> ${info.contacts.socialMedia}`;
           ulCont.appendChild(liSM);
         }
-
         contentDiv.appendChild(ulCont);
       }
     } catch (err) {
