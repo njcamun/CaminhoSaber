@@ -1,0 +1,454 @@
+{
+  "1": [
+    {
+      "pergunta": "Como se diz 'Olá' ou 'Como está?' em Kimbundu?",
+      "descricao": "'Kiambote' (ou 'Kiambote, uli?') é uma das saudações mais comuns em Kimbundu, usada para perguntar como a pessoa está.",
+      "opcoes": [
+        { "texto": "Xé", "correta": false },
+        { "texto": "Kalunga", "correta": false },
+        { "texto": "Kiambote", "correta": true },
+        { "texto": "Mona", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa a palavra 'Muxima'?",
+      "descricao": "'Muxima' é uma palavra muito poética em Kimbundu que significa 'coração'.",
+      "opcoes": [
+        { "texto": "Cabeça", "correta": false },
+        { "texto": "Mão", "correta": false },
+        { "texto": "Coração", "correta": true },
+        { "texto": "Amigo", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Criança' em Kimbundu?",
+      "descricao": "'Mona' significa criança. O plural é 'ana'.",
+      "opcoes": [
+        { "texto": "Tata", "correta": false },
+        { "texto": "Mama", "correta": false },
+        { "texto": "Mona", "correta": true },
+        { "texto": "Poko", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual destas palavras significa 'Homem'?",
+      "descricao": "'Dial'a' ou 'diiala' significa homem. 'Muhatu' significa mulher.",
+      "opcoes": [
+        { "texto": "Muhatu", "correta": false },
+        { "texto": "Dial'a", "correta": true },
+        { "texto": "Kamba", "correta": false },
+        { "texto": "Kota", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Água'?",
+      "descricao": "'Menha' é a palavra para água, um elemento vital.",
+      "opcoes": [
+        { "texto": "Kudia", "correta": false },
+        { "texto": "Menha", "correta": true },
+        { "texto": "Maka", "correta": false },
+        { "texto": "Tubia", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Tata'?",
+      "descricao": "'Tata' é usado para se referir ao 'pai'. 'Mama' refere-se à 'mãe'.",
+      "opcoes": [
+        { "texto": "Mãe", "correta": false },
+        { "texto": "Avô", "correta": false },
+        { "texto": "Pai", "correta": true },
+        { "texto": "Irmão", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Um' em Kimbundu?",
+      "descricao": "A contagem começa com 'Moxi' (um), 'Iari' (dois), 'Tatu' (três).",
+      "opcoes": [
+        { "texto": "Moxi", "correta": true },
+        { "texto": "Iari", "correta": false },
+        { "texto": "Tatu", "correta": false },
+        { "texto": "Kala", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Kamba'?",
+      "descricao": "'Kamba' é uma palavra muito importante e significa 'amigo'.",
+      "opcoes": [
+        { "texto": "Inimigo", "correta": false },
+        { "texto": "Amigo", "correta": true },
+        { "texto": "Chefe", "correta": false },
+        { "texto": "Família", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual destas palavras significa 'Casa'?",
+      "descricao": "'Inzo' (ou 'nzo') é a palavra para casa ou lar.",
+      "opcoes": [
+        { "texto": "Musseke", "correta": false },
+        { "texto": "Inzo", "correta": true },
+        { "texto": "Kilombo", "correta": false },
+        { "texto": "Sanzala", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Dois'?",
+      "descricao": "A sequência é 'Moxi' (um), 'Iari' (dois), 'Tatu' (três).",
+      "opcoes": [
+        { "texto": "Moxi", "correta": false },
+        { "texto": "Tatu", "correta": false },
+        { "texto": "Iari", "correta": true },
+        { "texto": "Kuana", "correta": false }
+      ]
+    },
+    { "pergunta": "O que significa 'Muhatu'?",
+      "descricao": "'Muhatu' é a palavra para 'mulher'.",
+      "opcoes": [
+        { "texto": "Menina", "correta": false },
+        { "texto": "Mulher", "correta": true },
+        { "texto": "Avó", "correta": false },
+        { "texto": "Homem", "correta": false }
+      ]
+    },
+    { "pergunta": "Como se diz 'Obrigado'?",
+      "descricao": "'Sakidila' é a forma de agradecer em Kimbundu.",
+      "opcoes": [
+        { "texto": "Sakidila", "correta": true },
+        { "texto": "Ngana", "correta": false },
+        { "texto": "Mbote", "correta": false },
+        { "texto": "Xala", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual destas palavras significa 'Deus' ou 'divindade suprema'?",
+      "descricao": "'Nzambi' ou 'Kalunga' são termos usados para se referir a Deus.",
+      "opcoes": [
+        { "texto": "Nzambi", "correta": true },
+        { "texto": "Xitu", "correta": false },
+        { "texto": "Jiku", "correta": false },
+        { "texto": "Hoji", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Kudia'?",
+      "descricao": "'Kudia' refere-se a 'comida' ou ao ato de 'comer'.",
+      "opcoes": [
+        { "texto": "Beber", "correta": false },
+        { "texto": "Dormir", "correta": false },
+        { "texto": "Comida / Comer", "correta": true },
+        { "texto": "Falar", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Adeus' para quem fica?",
+      "descricao": "Para quem fica, diz-se 'Xala kiambote', que significa 'Fique bem'.",
+      "opcoes": [
+        { "texto": "Enda kiambote", "correta": false },
+        { "texto": "Xala kiambote", "correta": true },
+        { "texto": "Sakidila", "correta": false },
+        { "texto": "Mbote", "correta": false }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "pergunta": "Qual é a palavra para 'Sol' em Kimbundu?",
+      "descricao": "O sol é 'Muanya', e a lua é 'Mbeji'.",
+      "opcoes": [
+        { "texto": "Mbeji", "correta": false },
+        { "texto": "Tala", "correta": false },
+        { "texto": "Muanya", "correta": true },
+        { "texto": "Nzua", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'ku-sota'?",
+      "descricao": "'Ku-sota' é o verbo 'procurar' ou 'buscar'.",
+      "opcoes": [
+        { "texto": "Encontrar", "correta": false },
+        { "texto": "Perder", "correta": false },
+        { "texto": "Procurar", "correta": true },
+        { "texto": "Comprar", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Eu' em Kimbundu?",
+      "descricao": "O pronome pessoal para a primeira pessoa do singular é 'Eme'.",
+      "opcoes": [
+        { "texto": "Eie", "correta": false },
+        { "texto": "Eme", "correta": true },
+        { "texto": "Ene", "correta": false },
+        { "texto": "Mu", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Maka'?",
+      "descricao": "'Maka' significa 'problema' ou 'conversa', 'assunto'.",
+      "opcoes": [
+        { "texto": "Solução", "correta": false },
+        { "texto": "Problema / Assunto", "correta": true },
+        { "texto": "Festa", "correta": false },
+        { "texto": "Dinheiro", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'eu quero'?",
+      "descricao": "'Ngala ni' significa 'eu tenho'. 'Nga-soto' significa 'eu quero'. O prefixo 'nga-' indica a primeira pessoa.",
+      "opcoes": [
+        { "texto": "Ngala ni", "correta": false },
+        { "texto": "Nga-soto", "correta": true },
+        { "texto": "Uala ni", "correta": false },
+        { "texto": "Wa-soto", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é a palavra para 'Fogo'?",
+      "descricao": "'Tubia' é a palavra para fogo.",
+      "opcoes": [
+        { "texto": "Menha", "correta": false },
+        { "texto": "Tubia", "correta": true },
+        { "texto": "Ixi", "correta": false },
+        { "texto": "Mahaxi", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa a palavra 'Kota'?",
+      "descricao": "'Kota' refere-se a alguém mais velho, um ancião, uma pessoa respeitada.",
+      "opcoes": [
+        { "texto": "Jovem", "correta": false },
+        { "texto": "Mais velho / Ancião", "correta": true },
+        { "texto": "Guerreiro", "correta": false },
+        { "texto": "Caçador", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Onde?' em Kimbundu?",
+      "descricao": "'Kuxi' é a palavra interrogativa para 'Onde?'.",
+      "opcoes": [
+        { "texto": "Kioso", "correta": false },
+        { "texto": "Kuxi", "correta": true },
+        { "texto": "Mukonda", "correta": false },
+        { "texto": "Kima", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'ku-bonga'?",
+      "descricao": "'Ku-bonga' é o verbo 'apanhar', 'pegar' ou 'receber'.",
+      "opcoes": [
+        { "texto": "Dar", "correta": false },
+        { "texto": "Apanhar / Pegar", "correta": true },
+        { "texto": "Cair", "correta": false },
+        { "texto": "Correr", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual destas palavras significa 'rei' ou 'soberano'?",
+      "descricao": "'Soba' é o título tradicional para um chefe ou rei.",
+      "opcoes": [
+        { "texto": "Ngana", "correta": false },
+        { "texto": "Soba", "correta": true },
+        { "texto": "Kamba", "correta": false },
+        { "texto": "Ngoma", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Eu tenho fome'?",
+      "descricao": "A expressão literal é 'Ngala ni nzala', que significa 'Estou com fome'.",
+      "opcoes": [
+        { "texto": "Ngala ni nzala", "correta": true },
+        { "texto": "Ngala ni makutu", "correta": false },
+        { "texto": "Nga-mono sonu", "correta": false },
+        { "texto": "Nga-bela", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Musseke'?",
+      "descricao": "'Musseke' refere-se a uma área de areia, uma aldeia ou, em contexto urbano, a um bairro pobre ou subúrbio.",
+      "opcoes": [
+        { "texto": "Floresta", "correta": false },
+        { "texto": "Rio", "correta": false },
+        { "texto": "Bairro / Aldeia de areia", "correta": true },
+        { "texto": "Montanha", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Cinco' em Kimbundu?",
+      "descricao": "A contagem continua: 'Kuana' (quatro), 'Tanu' (cinco).",
+      "opcoes": [
+        { "texto": "Tatu", "correta": false },
+        { "texto": "Kuana", "correta": false },
+        { "texto": "Tanu", "correta": true },
+        { "texto": "Samunu", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'ku-zola'?",
+      "descricao": "'Ku-zola' é o verbo 'amar' ou 'gostar'.",
+      "opcoes": [
+        { "texto": "Odiar", "correta": false },
+        { "texto": "Amar / Gostar", "correta": true },
+        { "texto": "Chorar", "correta": false },
+        { "texto": "Rir", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "A palavra 'Ngoma' pode significar o quê?",
+      "descricao": "'Ngoma' é uma palavra polissémica que pode significar 'tambor', 'festa' ou 'dança'.",
+      "opcoes": [
+        { "texto": "Guerra", "correta": false },
+        { "texto": "Chuva", "correta": false },
+        { "texto": "Tambor / Festa", "correta": true },
+        { "texto": "Silêncio", "correta": false }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "pergunta": "Na frase 'Eme nga-mono', qual é o significado do prefixo 'nga-'?",
+      "descricao": "Em Kimbundu, o prefixo verbal concorda com o sujeito. 'Nga-' é o prefixo para a 1ª pessoa do singular (Eu).",
+      "opcoes": [
+        { "texto": "Indica o futuro", "correta": false },
+        { "texto": "Indica o sujeito 'Eu'", "correta": true },
+        { "texto": "Indica o sujeito 'Tu'", "correta": false },
+        { "texto": "Indica uma negação", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Meu amigo'?",
+      "descricao": "Em Kimbundu, a posse é frequentemente expressa com 'a eme' (de mim). 'Kamba dya eme' significa literalmente 'amigo de mim'.",
+      "opcoes": [
+        { "texto": "Kamba eme", "correta": false },
+        { "texto": "Eme kamba", "correta": false },
+        { "texto": "Kamba dya eme", "correta": true },
+        { "texto": "Kamba tu", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa a expressão 'Kuala kuame'? ",
+      "descricao": "'Kuala' refere-se a um lugar e 'kuame' é possessivo para 'meu'. Assim, 'Kuala kuame' significa 'minha terra' ou 'meu lugar'.",
+      "opcoes": [
+        { "texto": "Minha casa", "correta": false },
+        { "texto": "Minha família", "correta": false },
+        { "texto": "Minha terra / Meu lugar", "correta": true },
+        { "texto": "Meu trabalho", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o prefixo verbal para 'Tu' (2ª pessoa do singular)?",
+      "descricao": "Assim como 'nga-' é para 'eu', 'u-' (ou 'wa-') é o prefixo para 'tu'. Ex: 'Eie u-mono' (Tu vês).",
+      "opcoes": [
+        { "texto": "a-", "correta": false },
+        { "texto": "u-", "correta": true },
+        { "texto": "tu-", "correta": false },
+        { "texto": "mu-", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'ku-iaia'?",
+      "descricao": "'Ku-iaia' significa 'ser bonito/a' ou 'estar bom/boa'.",
+      "opcoes": [
+        { "texto": "Ser feio", "correta": false },
+        { "texto": "Ser forte", "correta": false },
+        { "texto": "Ser bonito / Estar bom", "correta": true },
+        { "texto": "Ser mau", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se forma o plural de 'mutu' (pessoa)?",
+      "descricao": "O Kimbundu usa classes de nomes com prefixos para singular e plural. O plural de 'mu-tu' (pessoa) é 'a-tu' (pessoas).",
+      "opcoes": [
+        { "texto": "Mutus", "correta": false },
+        { "texto": "Mimitue", "correta": false },
+        { "texto": "Atu", "correta": true },
+        { "texto": "Imitu", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que quer dizer a frase 'Nzala, i-tuala kule'? ",
+      "descricao": "É um provérbio que significa 'A fome leva-te para longe', indicando que a necessidade nos faz ir a lugares ou fazer coisas que normalmente não faríamos.",
+      "opcoes": [
+        { "texto": "A comida está longe", "correta": false },
+        { "texto": "A fome leva-te para longe", "correta": true },
+        { "texto": "Não tenho fome", "correta": false },
+        { "texto": "Estou a voltar para casa", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é a palavra para 'sangue'?",
+      "descricao": "'Menga' é a palavra para sangue.",
+      "opcoes": [
+        { "texto": "Xitu", "correta": false },
+        { "texto": "Menga", "correta": true },
+        { "texto": "Mukutu", "correta": false },
+        { "texto": "Kikoto", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'ku-fwa'? ",
+      "descricao": "'Ku-fwa' é o verbo 'morrer'.",
+      "opcoes": [
+        { "texto": "Nascer", "correta": false },
+        { "texto": "Viver", "correta": false },
+        { "texto": "Morrer", "correta": true },
+        { "texto": "Crescer", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Dez' em Kimbundu?",
+      "descricao": "O número dez é 'Kuinhi'.",
+      "opcoes": [
+        { "texto": "Samunu", "correta": false },
+        { "texto": "Kuinhi", "correta": true },
+        { "texto": "Nake", "correta": false },
+        { "texto": "Tanu", "correta": false }
+      ]
+    },
+    { "pergunta": "Qual o significado de 'ukumbu'?",
+      "descricao": "'Ukumbu' refere-se à vaidade ou ao orgulho.",
+      "opcoes": [
+        { "texto": "Humildade", "correta": false },
+        { "texto": "Vaidade", "correta": true },
+        { "texto": "Tristeza", "correta": false },
+        { "texto": "Alegria", "correta": false }
+      ]
+    },
+    { "pergunta": "O que é um 'kinganje'?",
+      "descricao": "Um 'kinganje' é um sábio, um mestre, alguém com grande conhecimento e experiência.",
+      "opcoes": [
+        { "texto": "Um aprendiz", "correta": false },
+        { "texto": "Um tolo", "correta": false },
+        { "texto": "Um sábio / mestre", "correta": true },
+        { "texto": "Um estrangeiro", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "A palavra 'ilundu' refere-se a quê?",
+      "descricao": "'Ilundu' refere-se aos antepassados ou ancestrais.",
+      "opcoes": [
+        { "texto": "Descendentes", "correta": false },
+        { "texto": "Antepassados", "correta": true },
+        { "texto": "Espíritos da natureza", "correta": false },
+        { "texto": "Crianças por nascer", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'ku-beta'?",
+      "descricao": "'Ku-beta' significa 'bater', seja num tambor ou em alguém.",
+      "opcoes": [
+        { "texto": "Cantar", "correta": false },
+        { "texto": "Correr", "correta": false },
+        { "texto": "Bater", "correta": true },
+        { "texto": "Falar", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'não quero'?",
+      "descricao": "A negação em Kimbundu é complexa, mas uma forma comum é usar o prefixo negativo 'ka-' e o sufixo '-ê'. 'Kina-soto-ê' significa 'não quero'.",
+      "opcoes": [
+        { "texto": "Nga-soto", "correta": false },
+        { "texto": "Kina-soto-ê", "correta": true },
+        { "texto": "Sota ki", "correta": false },
+        { "texto": "Eme sota kana", "correta": false }
+      ]
+    }
+  ]
+}

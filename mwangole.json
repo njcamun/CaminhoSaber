@@ -1,0 +1,458 @@
+{
+  "1": [
+    {
+      "pergunta": "Qual é a capital de Angola?",
+      "descricao": "Luanda foi fundada a 25 de Janeiro de 1576 pelo fidalgo e explorador português Paulo Dias de Novais.",
+      "opcoes": [
+        { "texto": "Benguela", "correta": false },
+        { "texto": "Huambo", "correta": false },
+        { "texto": "Luanda", "correta": true },
+        { "texto": "Cabinda", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Na gíria angolana, o que significa 'bazar'?",
+      "descricao": "'Bazar' é uma gíria comum em Angola e Portugal que significa ir embora ou sair de um lugar.",
+      "opcoes": [
+        { "texto": "Comprar algo", "correta": false },
+        { "texto": "Ir embora / Sair", "correta": true },
+        { "texto": "Trabalhar", "correta": false },
+        { "texto": "Festejar", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual destes pratos é considerado o prato nacional de Angola?",
+      "descricao": "A Moamba de Galinha é um prato emblemático da culinária angolana, apreciado em todo o país.",
+      "opcoes": [
+        { "texto": "Cachupa", "correta": false },
+        { "texto": "Feijoada", "correta": false },
+        { "texto": "Moamba de Galinha", "correta": true },
+        { "texto": "Bacalhau à Brás", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa a gíria 'bué'?",
+      "descricao": "'Bué' é uma das gírias mais populares e significa 'muito' ou 'bastante'.",
+      "opcoes": [
+        { "texto": "Pouco", "correta": false },
+        { "texto": "Nada", "correta": false },
+        { "texto": "Talvez", "correta": false },
+        { "texto": "Muito / Bastante", "correta": true }
+      ]
+    },
+    {
+      "pergunta": "Qual é a principal fonte de riqueza e o principal produto de exportação de Angola?",
+      "descricao": "Angola é o segundo maior produtor de petróleo em África. O petróleo representa pelo menos 88% do total das exportações do país.",
+      "opcoes": [
+        { "texto": "Café", "correta": false },
+        { "texto": "Petróleo", "correta": true },
+        { "texto": "Algodão", "correta": false },
+        { "texto": "Madeira", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual destes é um famoso estilo de música e dança angolano?",
+      "descricao": "Kizomba, Semba e Kuduro são alguns dos estilos musicais mais famosos originários de Angola.",
+      "opcoes": [
+        { "texto": "Salsa", "correta": false },
+        { "texto": "Fado", "correta": false },
+        { "texto": "Kizomba", "correta": true },
+        { "texto": "Tango", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se chama o autocarro em Angola?",
+      "descricao": "A palavra 'machimbombo' é o termo local para autocarro.",
+      "opcoes": [
+        { "texto": "Carroça", "correta": false },
+        { "texto": "Comboio", "correta": false },
+        { "texto": "Machimbombo", "correta": true },
+        { "texto": "Candongueiro", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é a moeda oficial de Angola?",
+      "descricao": "O Kwanza (AOA) é a moeda de Angola, subdividida em 100 lwei.",
+      "opcoes": [
+        { "texto": "Escudo", "correta": false },
+        { "texto": "Metical", "correta": false },
+        { "texto": "Kwanza", "correta": true },
+        { "texto": "Real", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que é 'ginguba' em Angola?",
+      "descricao": "Ginguba é a palavra usada em Angola para amendoim.",
+      "opcoes": [
+        { "texto": "Milho", "correta": false },
+        { "texto": "Amendoim", "correta": true },
+        { "texto": "Feijão", "correta": false },
+        { "texto": "Abóbora", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "A Ilha de Luanda também é conhecida como...",
+      "descricao": "A Ilha do Cabo, ou simplesmente Ilha de Luanda, é famosa pelas suas praias, bares e restaurantes.",
+      "opcoes": [
+        { "texto": "Ilha do Mussulo", "correta": false },
+        { "texto": "Ilha do Fogo", "correta": false },
+        { "texto": "Ilha do Cabo", "correta": true },
+        { "texto": "Ilha de Moçambique", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é a língua oficial de Angola?",
+      "descricao": "O português é a língua oficial, embora Angola tenha diversas línguas nacionais como o Umbundo, Kimbundo e Kikongo.",
+      "opcoes": [
+        { "texto": "Kimbundu", "correta": false },
+        { "texto": "Francês", "correta": false },
+        { "texto": "Português", "correta": true },
+        { "texto": "Inglês", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que é o 'Funge'?",
+      "descricao": "O Funge é um acompanhamento essencial na dieta angolana, feito de farinha de milho ou de mandioca.",
+      "opcoes": [
+        { "texto": "Uma bebida alcoólica", "correta": false },
+        { "texto": "Um tipo de peixe", "correta": false },
+        { "texto": "Uma massa de farinha de milho ou mandioca", "correta": true },
+        { "texto": "Uma dança tradicional", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'dar uma bula'?",
+      "descricao": "É uma gíria que significa faltar ao trabalho ou à escola, geralmente sem uma boa justificação.",
+      "opcoes": [
+        { "texto": "Receber um prémio", "correta": false },
+        { "texto": "Faltar ao trabalho/escola", "correta": true },
+        { "texto": "Dar um presente", "correta": false },
+        { "texto": "Contar uma anedota", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso miradouro perto de Luanda com uma paisagem de falésias avermelhadas?",
+      "descricao": "O Miradouro da Lua é conhecido pela sua paisagem deslumbrante e de aparência lunar.",
+      "opcoes": [
+        { "texto": "Serra da Leba", "correta": false },
+        { "texto": "Miradouro da Lua", "correta": true },
+        { "texto": "Fenda da Tundavala", "correta": false },
+        { "texto": "Pedras Negras de Pungo Andongo", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Em que oceano a costa de Angola está situada?",
+      "descricao": "Angola tem uma vasta costa ao longo do Oceano Atlântico.",
+      "opcoes": [
+        { "texto": "Índico", "correta": false },
+        { "texto": "Pacífico", "correta": false },
+        { "texto": "Atlântico", "correta": true },
+        { "texto": "Ártico", "correta": false }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "pergunta": "Quem foi o primeiro presidente de Angola após a independência?",
+      "descricao": "António Agostinho Neto, líder do MPLA, tornou-se o primeiro presidente de Angola em 1975.",
+      "opcoes": [
+        { "texto": "Jonas Savimbi", "correta": false },
+        { "texto": "Holden Roberto", "correta": false },
+        { "texto": "José Eduardo dos Santos", "correta": false },
+        { "texto": "Agostinho Neto", "correta": true }
+      ]
+    },
+    {
+      "pergunta": "A independência de Angola foi proclamada em que ano?",
+      "descricao": "Angola alcançou a independência de Portugal a 11 de Novembro de 1975, após uma longa guerra de libertação.",
+      "opcoes": [
+        { "texto": "1961", "correta": false },
+        { "texto": "1975", "correta": true },
+        { "texto": "1980", "correta": false },
+        { "texto": "1992", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o ponto mais alto de Angola?",
+      "descricao": "O Morro de Moco, com 2.620 metros de altitude, está localizado na província do Huambo.",
+      "opcoes": [
+        { "texto": "Serra da Leba", "correta": false },
+        { "texto": "Monte Kilimanjaro", "correta": false },
+        { "texto": "Morro de Moco", "correta": true },
+        { "texto": "Fenda da Tundavala", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "A 'Palanca Negra Gigante' é um animal endémico de Angola. Qual o seu estado de conservação?",
+      "descricao": "A Palanca Negra Gigante, um símbolo nacional, foi redescoberta em 2006, mas continua em perigo de extinção.",
+      "opcoes": [
+        { "texto": "Pouco preocupante", "correta": false },
+        { "texto": "Extinto na natureza", "correta": false },
+        { "texto": "Em perigo", "correta": true },
+        { "texto": "Vulnerável", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual província angolana é um enclave, separada do resto do país?",
+      "descricao": "Cabinda é uma província que faz fronteira com a República do Congo e a RDC, sendo uma importante fonte de petróleo para Angola.",
+      "opcoes": [
+        { "texto": "Zaire", "correta": false },
+        { "texto": "Cabinda", "correta": true },
+        { "texto": "Cunene", "correta": false },
+        { "texto": "Moxico", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O prato 'Calulu' é tipicamente feito com que ingredientes principais?",
+      "descricao": "O Calulu é um guisado rico, geralmente feito com peixe seco ou fresco e vários vegetais como quiabo e beringela.",
+      "opcoes": [
+        { "texto": "Carne de porco e feijão", "correta": false },
+        { "texto": "Galinha e amendoim", "correta": false },
+        { "texto": "Peixe seco e vegetais", "correta": true },
+        { "texto": "Carne de cabra e milho", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O nome 'Angola' deriva do título 'Ngola', que era atribuído aos reis de que antigo reino?",
+      "descricao": "O Reino do Ndongo, do povo Mbundu, era governado por reis com o título de 'Ngola'.",
+      "opcoes": [
+        { "texto": "Reino do Kongo", "correta": false },
+        { "texto": "Reino do Ndongo", "correta": true },
+        { "texto": "Império Lunda", "correta": false },
+        { "texto": "Reino de Matamba", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Na gíria, o que é um 'candongueiro'?",
+      "descricao": "Candongueiro é o nome popular dado aos táxis informais, geralmente carrinhas azuis e brancas, que são um meio de transporte essencial em Luanda.",
+      "opcoes": [
+        { "texto": "Um mercado de rua", "correta": false },
+        { "texto": "Um tipo de música", "correta": false },
+        { "texto": "Um táxi informal", "correta": true },
+        { "texto": "Um vendedor ambulante", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é a segunda maior cidade de Angola?",
+      "descricao": "Huambo, no planalto central, é historicamente uma das cidades mais importantes e a segunda maior do país.",
+      "opcoes": [
+        { "texto": "Lubango", "correta": false },
+        { "texto": "Huambo", "correta": true },
+        { "texto": "Benguela", "correta": false },
+        { "texto": "Cabinda", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "As Cataratas de Kalandula, uma das maiores de África em volume, ficam em que província?",
+      "descricao": "As impressionantes Cataratas de Kalandula estão situadas na província de Malanje.",
+      "opcoes": [
+        { "texto": "Uíge", "correta": false },
+        { "texto": "Malanje", "correta": true },
+        { "texto": "Cuanza Sul", "correta": false },
+        { "texto": "Lunda Norte", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Que género musical é o antecessor direto da Kizomba e do Samba?",
+      "descricao": "O Semba é um estilo musical e de dança tradicional de Angola que influenciou a criação de outros géneros musicais.",
+      "opcoes": [
+        { "texto": "Rebita", "correta": false },
+        { "texto": "Kuduro", "correta": false },
+        { "texto": "Semba", "correta": true },
+        { "texto": "Kazukuta", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que são 'kizaka'?",
+      "descricao": "Kizaka (ou kissaca) são as folhas da mandioca, um ingrediente popular usado em vários pratos angolanos.",
+      "opcoes": [
+        { "texto": "Um tipo de feijão", "correta": false },
+        { "texto": "Folhas da mandioca", "correta": true },
+        { "texto": "Larvas comestíveis", "correta": false },
+        { "texto": "Um doce de coco", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "A famosa 'Serra da Leba' e a sua estrada sinuosa localizam-se em que província?",
+      "descricao": "A estrada da Serra da Leba é uma maravilha da engenharia e um ponto turístico famoso na província da Huíla, perto da cidade do Lubango.",
+      "opcoes": [
+        { "texto": "Namibe", "correta": false },
+        { "texto": "Benguela", "correta": false },
+        { "texto": "Huíla", "correta": true },
+        { "texto": "Cunene", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Que figura histórica é conhecida como a 'Rainha de Ndongo e Matamba' pela sua resistência contra os portugueses?",
+      "descricao": "A Rainha Nzinga Mbande foi uma líder poderosa e estratega militar que resistiu à colonização portuguesa no século XVII.",
+      "opcoes": [
+        { "texto": "Kimpa Vita", "correta": false },
+        { "texto": "Nzinga Mbande", "correta": true },
+        { "texto": "Alda Lara", "correta": false },
+        { "texto": "Anália de Victória Pereira", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do deserto que se estende pelo sudoeste de Angola?",
+      "descricao": "O Deserto do Namibe, conhecido pelas suas paisagens únicas e plantas endémicas como a Welwitschia mirabilis, ocupa a costa sudoeste do país.",
+      "opcoes": [
+        { "texto": "Deserto do Kalahari", "correta": false },
+        { "texto": "Deserto do Sara", "correta": false },
+        { "texto": "Deserto do Namibe", "correta": true },
+        { "texto": "Deserto da Arábia", "correta": false }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "pergunta": "Quantas províncias tem Angola?",
+      "descricao": "Angola está administrativamente dividida em 18 províncias.",
+      "opcoes": [
+        { "texto": "15", "correta": false },
+        { "texto": "18", "correta": true },
+        { "texto": "20", "correta": false },
+        { "texto": "16", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual destes rios não faz fronteira com Angola?",
+      "descricao": "O Rio Congo forma parte da fronteira norte, o Zambeze parte da fronteira leste, e o Cunene a fronteira sul. O Nilo não tem qualquer ligação com Angola.",
+      "opcoes": [
+        { "texto": "Rio Congo", "correta": false },
+        { "texto": "Rio Zambeze", "correta": false },
+        { "texto": "Rio Nilo", "correta": true },
+        { "texto": "Rio Cunene", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "A Fortaleza de São Miguel, um dos marcos de Luanda, hoje alberga que instituição?",
+      "descricao": "A Fortaleza de São Miguel, construída no século XVI, é hoje o Museu Nacional de História Militar.",
+      "opcoes": [
+        { "texto": "O Palácio Presidencial", "correta": false },
+        { "texto": "O Museu Nacional de História Militar", "correta": true },
+        { "texto": "A Assembleia Nacional", "correta": false },
+        { "texto": "O Museu Nacional da Escravatura", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Em que província se localiza a cidade de Mbanza Kongo, património mundial da UNESCO?",
+      "descricao": "Mbanza Kongo, a antiga capital do Reino do Kongo, está localizada na província do Zaire, no norte de Angola.",
+      "opcoes": [
+        { "texto": "Uíge", "correta": false },
+        { "texto": "Bengo", "correta": false },
+        { "texto": "Zaire", "correta": true },
+        { "texto": "Cabinda", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual destes países não partilha uma fronteira terrestre com Angola?",
+      "descricao": "Angola partilha fronteiras com a Namíbia a sul, Zâmbia a leste, e a República Democrática do Congo a norte e leste. A África do Sul não tem fronteira direta.",
+      "opcoes": [
+        { "texto": "República Democrática do Congo", "correta": false },
+        { "texto": "Zâmbia", "correta": false },
+        { "texto": "África do Sul", "correta": true },
+        { "texto": "Namíbia", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que é a 'Welwitschia mirabilis'?",
+      "descricao": "A Welwitschia é uma planta única e resistente, endémica do deserto do Namibe, conhecida pela sua longevidade, podendo viver mais de mil anos.",
+      "opcoes": [
+        { "texto": "Uma ave rara", "correta": false },
+        { "texto": "Uma planta do deserto", "correta": true },
+        { "texto": "Um mineral precioso", "correta": false },
+        { "texto": "Um peixe de rio", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual foi o primeiro partido a governar Angola após a independência?",
+      "descricao": "O Movimento Popular de Libertação de Angola (MPLA), liderado por Agostinho Neto, assumiu o poder após a independência em 1975.",
+      "opcoes": [
+        { "texto": "UNITA", "correta": false },
+        { "texto": "FNLA", "correta": false },
+        { "texto": "MPLA", "correta": true },
+        { "texto": "PRS", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O 'Palácio de Ferro' em Luanda é atribuído a que famoso arquiteto ou sua escola?",
+      "descricao": "Embora não haja documentação definitiva, acredita-se que o Palácio de Ferro tenha sido desenhado por Gustave Eiffel ou por um dos seus associados.",
+      "opcoes": [
+        { "texto": "Oscar Niemeyer", "correta": false },
+        { "texto": "Gustave Eiffel", "correta": true },
+        { "texto": "Antoni Gaudí", "correta": false },
+        { "texto": "Le Corbusier", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual destas línguas nacionais é do grupo Khoisan e falada no sul de Angola?",
+      "descricao": "O !Kung (ou San) é uma das línguas da família Khoisan, conhecida pelos seus sons de clique, e é falada por pequenos grupos no sul do país.",
+      "opcoes": [
+        { "texto": "Kimbundu", "correta": false },
+        { "texto": "Umbundu", "correta": false },
+        { "texto": "Tchokwe", "correta": false },
+        { "texto": "!Kung (San)", "correta": true }
+      ]
+    },
+    {
+      "pergunta": "O Mausoléu de que figura proeminente se destaca na paisagem de Luanda?",
+      "descricao": "O imponente Mausoléu de Agostinho Neto é um monumento dedicado ao primeiro presidente de Angola.",
+      "opcoes": [
+        { "texto": "Jonas Savimbi", "correta": false },
+        { "texto": "Agostinho Neto", "correta": true },
+        { "texto": "Lúcio Lara", "correta": false },
+        { "texto": "Viriato da Cruz", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O Acordo de Alvor, assinado em 1975, estabeleceu o quê?",
+      "descricao": "Assinado no Algarve, Portugal, o acordo entre os movimentos de libertação (MPLA, FNLA, UNITA) e Portugal estabeleceu os termos da transição para a independência de Angola.",
+      "opcoes": [
+        { "texto": "O fim da Guerra Fria", "correta": false },
+        { "texto": "A criação da União Africana", "correta": false },
+        { "texto": "A transição para a independência de Angola", "correta": true },
+        { "texto": "A delimitação das fronteiras provinciais", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual parque nacional angolano é famoso pelo projeto de reintrodução de elefantes 'Arca de Noé'?",
+      "descricao": "O Parque Nacional da Quiçama, a sul de Luanda, foi palco deste ambicioso projeto para repovoar a sua fauna.",
+      "opcoes": [
+        { "texto": "Parque Nacional de Iona", "correta": false },
+        { "texto": "Parque Nacional da Cameia", "correta": false },
+        { "texto": "Parque Nacional da Quiçama", "correta": true },
+        { "texto": "Parque Nacional da Cangandala", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da principal unidade de relevo de Angola, que ocupa grande parte do interior do país?",
+      "descricao": "O Planalto Central, também conhecido como Planalto do Bié, é a principal e mais extensa unidade de relevo de Angola, onde nascem importantes rios.",
+      "opcoes": [
+        { "texto": "Planície do Litoral", "correta": false },
+        { "texto": "Bacia do Congo", "correta": false },
+        { "texto": "Planalto Central", "correta": true },
+        { "texto": "Deserto do Namibe", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "A revolta de 4 de Fevereiro de 1961 marcou o início de quê?",
+      "descricao": "O ataque a prisões em Luanda a 4 de Fevereiro de 1961 é considerado o marco do início da Luta Armada de Libertação Nacional contra o domínio colonial português.",
+      "opcoes": [
+        { "texto": "Da Guerra Civil", "correta": false },
+        { "texto": "Da Luta Armada de Libertação Nacional", "correta": true },
+        { "texto": "Das primeiras eleições multipartidárias", "correta": false },
+        { "texto": "Da crise económica", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é a segunda maior bacia hidrográfica de Angola, depois da do Congo?",
+      "descricao": "A bacia do rio Kwanza é a maior bacia hidrográfica inteiramente angolana e de grande importância económica, nomeadamente para a produção de energia hidroelétrica.",
+      "opcoes": [
+        { "texto": "Bacia do Cunene", "correta": false },
+        { "texto": "Bacia do Cubango", "correta": false },
+        { "texto": "Bacia do Kwanza", "correta": true },
+        { "texto": "Bacia do Zambeze", "correta": false }
+      ]
+    }
+  ]
+}

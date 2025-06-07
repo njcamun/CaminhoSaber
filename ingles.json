@@ -1,0 +1,458 @@
+{
+  "1": [
+    {
+      "pergunta": "Qual é a tradução de 'Livro' para inglês?",
+      "descricao": "A palavra 'book' é um dos substantivos mais básicos e essenciais no aprendizado de inglês.",
+      "opcoes": [
+        { "texto": "Paper", "correta": false },
+        { "texto": "Book", "correta": true },
+        { "texto": "Pen", "correta": false },
+        { "texto": "Table", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Gato' em inglês?",
+      "descricao": "'Cat' é a palavra em inglês para gato. 'Dog' é cão.",
+      "opcoes": [
+        { "texto": "Dog", "correta": false },
+        { "texto": "Mouse", "correta": false },
+        { "texto": "Cat", "correta": true },
+        { "texto": "Bird", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Complete a frase: 'They ___ happy.'",
+      "descricao": "Para o pronome 'They' (Eles/Elas), a forma correta do verbo 'to be' é 'are'.",
+      "opcoes": [
+        { "texto": "is", "correta": false },
+        { "texto": "am", "correta": false },
+        { "texto": "be", "correta": false },
+        { "texto": "are", "correta": true }
+      ]
+    },
+    {
+      "pergunta": "Qual é a cor 'vermelho' em inglês?",
+      "descricao": "As cores primárias em inglês são 'red' (vermelho), 'blue' (azul) e 'yellow' (amarelo).",
+      "opcoes": [
+        { "texto": "Blue", "correta": false },
+        { "texto": "Green", "correta": false },
+        { "texto": "Red", "correta": true },
+        { "texto": "Yellow", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o plural de 'car' (carro)?",
+      "descricao": "A maioria dos substantivos em inglês forma o plural adicionando um '-s' no final.",
+      "opcoes": [
+        { "texto": "Cars", "correta": true },
+        { "texto": "Carren", "correta": false },
+        { "texto": "Cares", "correta": false },
+        { "texto": "Car's", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se escreve o número 'cinco' em inglês?",
+      "descricao": "A sequência é: one, two, three, four, five.",
+      "opcoes": [
+        { "texto": "For", "correta": false },
+        { "texto": "Fine", "correta": false },
+        { "texto": "Five", "correta": true },
+        { "texto": "Fife", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Complete a frase: 'She ___ a doctor.'",
+      "descricao": "Para os pronomes 'She', 'He' e 'It', a forma correta do verbo 'to be' é 'is'.",
+      "opcoes": [
+        { "texto": "are", "correta": false },
+        { "texto": "is", "correta": true },
+        { "texto": "am", "correta": false },
+        { "texto": "be", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Hello'?",
+      "descricao": "'Hello' é uma saudação universal, usada para dizer 'Olá'.",
+      "opcoes": [
+        { "texto": "Adeus", "correta": false },
+        { "texto": "Por favor", "correta": false },
+        { "texto": "Olá", "correta": true },
+        { "texto": "Obrigado", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o oposto de 'big' (grande)?",
+      "descricao": "'Small' ou 'little' são os opostos de 'big'.",
+      "opcoes": [
+        { "texto": "Large", "correta": false },
+        { "texto": "Tall", "correta": false },
+        { "texto": "Small", "correta": true },
+        { "texto": "Wide", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'água' em inglês?",
+      "descricao": "'Water' é um substantivo essencial para aprender.",
+      "opcoes": [
+        { "texto": "Fire", "correta": false },
+        { "texto": "Earth", "correta": false },
+        { "texto": "Air", "correta": false },
+        { "texto": "Water", "correta": true }
+      ]
+    },
+    {
+      "pergunta": "Qual artigo usamos antes de 'apple'?",
+      "descricao": "Usa-se 'an' antes de palavras que começam com som de vogal.",
+      "opcoes": [
+        { "texto": "A", "correta": false },
+        { "texto": "An", "correta": true },
+        { "texto": "The", "correta": false },
+        { "texto": "Of", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o plural de 'woman' (mulher)?",
+      "descricao": "Este é um plural irregular. 'Woman' -> 'Women'.",
+      "opcoes": [
+        { "texto": "Womans", "correta": false },
+        { "texto": "Women", "correta": true },
+        { "texto": "Womes", "correta": false },
+        { "texto": "Woman's", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'Thank you'?",
+      "descricao": "É uma das expressões de cortesia mais importantes.",
+      "opcoes": [
+        { "texto": "Obrigado/a", "correta": true },
+        { "texto": "Desculpe", "correta": false },
+        { "texto": "Com licença", "correta": false },
+        { "texto": "Bom dia", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Complete: 'I have ___ brother.'",
+      "descricao": "Usa-se 'a' antes de palavras que começam com som de consoante.",
+      "opcoes": [
+        { "texto": "an", "correta": false },
+        { "texto": "a", "correta": true },
+        { "texto": "the", "correta": false },
+        { "texto": "some", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'sol' em inglês?",
+      "descricao": "'Sun' para o sol, 'Moon' para a lua.",
+      "opcoes": [
+        { "texto": "Moon", "correta": false },
+        { "texto": "Star", "correta": false },
+        { "texto": "Sky", "correta": false },
+        { "texto": "Sun", "correta": true }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "pergunta": "Complete a frase no Simple Present: 'He ___ English.'",
+      "descricao": "No Simple Present, para 'he/she/it', adiciona-se '-s' ou '-es' ao verbo.",
+      "opcoes": [
+        { "texto": "speak", "correta": false },
+        { "texto": "speaks", "correta": true },
+        { "texto": "speaking", "correta": false },
+        { "texto": "spoke", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o passado do verbo 'to go' (ir)?",
+      "descricao": "'Go' é um verbo irregular. O seu passado simples é 'went'.",
+      "opcoes": [
+        { "texto": "Goed", "correta": false },
+        { "texto": "Gone", "correta": false },
+        { "texto": "Went", "correta": true },
+        { "texto": "Going", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Escolha a preposição correta: 'The book is ___ the table.'",
+      "descricao": "'On' é usado para indicar que algo está sobre uma superfície.",
+      "opcoes": [
+        { "texto": "in", "correta": false },
+        { "texto": "at", "correta": false },
+        { "texto": "on", "correta": true },
+        { "texto": "under", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'What time is it?'?",
+      "descricao": "Esta é a pergunta padrão para saber as horas.",
+      "opcoes": [
+        { "texto": "Onde fica?", "correta": false },
+        { "texto": "Qual é o seu nome?", "correta": false },
+        { "texto": "Que horas são?", "correta": true },
+        { "texto": "Quanto custa?", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Complete a frase: 'I ___ to school yesterday.'",
+      "descricao": "A palavra 'yesterday' (ontem) exige o verbo no passado. O passado de 'walk' é 'walked'.",
+      "opcoes": [
+        { "texto": "walk", "correta": false },
+        { "texto": "walked", "correta": true },
+        { "texto": "walks", "correta": false },
+        { "texto": "walking", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o passado do verbo 'to eat' (comer)?",
+      "descricao": "'Eat' é outro verbo irregular comum. O seu passado é 'ate'.",
+      "opcoes": [
+        { "texto": "Eated", "correta": false },
+        { "texto": "Eaten", "correta": false },
+        { "texto": "Ate", "correta": true },
+        { "texto": "Eating", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual palavra de pergunta (Question Word) usamos para saber um lugar?",
+      "descricao": "'Where' pergunta sobre localização. 'What' sobre coisas, 'Who' sobre pessoas.",
+      "opcoes": [
+        { "texto": "What", "correta": false },
+        { "texto": "When", "correta": false },
+        { "texto": "Who", "correta": false },
+        { "texto": "Where", "correta": true }
+      ]
+    },
+    {
+      "pergunta": "Complete: 'She doesn't ___ meat.'",
+      "descricao": "Após os auxiliares 'do/does/did' na forma negativa ou interrogativa, o verbo principal fica no infinitivo sem 'to'.",
+      "opcoes": [
+        { "texto": "eats", "correta": false },
+        { "texto": "eat", "correta": true },
+        { "texto": "eating", "correta": false },
+        { "texto": "ate", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o possessivo correto para 'ela'? 'This is ___ car.'",
+      "descricao": "O adjetivo possessivo para 'she' (ela) é 'her'.",
+      "opcoes": [
+        { "texto": "his", "correta": false },
+        { "texto": "her", "correta": true },
+        { "texto": "its", "correta": false },
+        { "texto": "she's", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'How are you?'?",
+      "descricao": "É a forma mais comum de perguntar sobre o bem-estar de alguém.",
+      "opcoes": [
+        { "texto": "Quantos anos você tem?", "correta": false },
+        { "texto": "Como está?", "correta": true },
+        { "texto": "De onde você é?", "correta": false },
+        { "texto": "Qual é a sua profissão?", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o passado do verbo 'to see' (ver)?",
+      "descricao": "O passado do verbo irregular 'see' é 'saw'.",
+      "opcoes": [
+        { "texto": "Seed", "correta": false },
+        { "texto": "Seen", "correta": false },
+        { "texto": "Saw", "correta": true },
+        { "texto": "Seeing", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Escolha a palavra correta: 'I have ___ money.' (pouco dinheiro)",
+      "descricao": "Usa-se 'much' para substantivos incontáveis (como dinheiro) e 'many' para contáveis (como moedas).",
+      "opcoes": [
+        { "texto": "many", "correta": false },
+        { "texto": "much", "correta": true },
+        { "texto": "a few", "correta": false },
+        { "texto": "lot", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Como se diz 'Eu não gosto' em inglês?",
+      "descricao": "A forma negativa do Simple Present para 'I' é 'do not' ou a contração 'don't'.",
+      "opcoes": [
+        { "texto": "I not like", "correta": false },
+        { "texto": "I no like", "correta": false },
+        { "texto": "I don't like", "correta": true },
+        { "texto": "I am not like", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual palavra usamos para perguntar sobre o tempo (cronológico)?",
+      "descricao": "'When' é usado para perguntar 'Quando?'.",
+      "opcoes": [
+        { "texto": "Where", "correta": false },
+        { "texto": "Why", "correta": false },
+        { "texto": "When", "correta": true },
+        { "texto": "What", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o possessivo de 'they' (eles/elas)? 'That is ___ house.'",
+      "descricao": "O adjetivo possessivo para 'they' é 'their'.",
+      "opcoes": [
+        { "texto": "theirs", "correta": false },
+        { "texto": "there", "correta": false },
+        { "texto": "they're", "correta": false },
+        { "texto": "their", "correta": true }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "pergunta": "Complete no Present Continuous: 'Look! The baby ___.'",
+      "descricao": "O Present Continuous (am/is/are + verbo com -ing) é usado para ações que acontecem agora.",
+      "opcoes": [
+        { "texto": "sleeps", "correta": false },
+        { "texto": "is sleeping", "correta": true },
+        { "texto": "slept", "correta": false },
+        { "texto": "sleep", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é a forma comparativa de 'good' (bom)?",
+      "descricao": "'Good' tem formas comparativas e superlativas irregulares: good -> better -> best.",
+      "opcoes": [
+        { "texto": "Gooder", "correta": false },
+        { "texto": "Better", "correta": true },
+        { "texto": "More good", "correta": false },
+        { "texto": "Best", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Complete com o futuro: 'I think it ___ tomorrow.'",
+      "descricao": "Usa-se 'will' para previsões ou decisões espontâneas sobre o futuro.",
+      "opcoes": [
+        { "texto": "is raining", "correta": false },
+        { "texto": "rains", "correta": false },
+        { "texto": "will rain", "correta": true },
+        { "texto": "rained", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o superlativo de 'big'?",
+      "descricao": "Para adjetivos curtos (CVC), dobra-se a última consoante e adiciona-se '-est': big -> biggest.",
+      "opcoes": [
+        { "texto": "Biger", "correta": false },
+        { "texto": "The biggest", "correta": true },
+        { "texto": "The bigest", "correta": false },
+        { "texto": "Most big", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Escolha a forma correta: 'I am ___ to visit my parents next week.'",
+      "descricao": "A estrutura 'be going to' é usada para planos futuros já decididos.",
+      "opcoes": [
+        { "texto": "go", "correta": false },
+        { "texto": "going", "correta": true },
+        { "texto": "will go", "correta": false },
+        { "texto": "went", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o passado particípio de 'write' (escrever)?",
+      "descricao": "As formas do verbo são: write (presente), wrote (passado), written (particípio passado).",
+      "opcoes": [
+        { "texto": "Wrote", "correta": false },
+        { "texto": "Writed", "correta": false },
+        { "texto": "Written", "correta": true },
+        { "texto": "Writing", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual frase está na voz passiva (Passive Voice)?",
+      "descricao": "Na voz passiva, o objeto da ação torna-se o sujeito da frase (ex: O bolo foi feito por mim).",
+      "opcoes": [
+        { "texto": "The letter was written by John.", "correta": true },
+        { "texto": "John wrote the letter.", "correta": false },
+        { "texto": "John is writing a letter.", "correta": false },
+        { "texto": "Did John write the letter?", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é a forma comparativa de 'expensive'?",
+      "descricao": "Para adjetivos longos (geralmente com 2 ou mais sílabas), usa-se 'more' antes do adjetivo.",
+      "opcoes": [
+        { "texto": "Expensiver", "correta": false },
+        { "texto": "More expensive", "correta": true },
+        { "texto": "Expensiviest", "correta": false },
+        { "texto": "The most expensive", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa o 'phrasal verb' 'give up'?",
+      "descricao": "'To give up' é uma expressão comum que significa parar de tentar ou render-se.",
+      "opcoes": [
+        { "texto": "Dar para cima", "correta": false },
+        { "texto": "Continuar", "correta": false },
+        { "texto": "Desistir", "correta": true },
+        { "texto": "Receber", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Complete a frase: 'You ___ study harder if you want to pass.'",
+      "descricao": "'Should' é um verbo modal usado para dar conselhos ou recomendações.",
+      "opcoes": [
+        { "texto": "can", "correta": false },
+        { "texto": "should", "correta": true },
+        { "texto": "may", "correta": false },
+        { "texto": "are", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual é o superlativo de 'bad' (mau)?",
+      "descricao": "'Bad' é irregular: bad -> worse (pior) -> worst (o pior).",
+      "opcoes": [
+        { "texto": "Baddest", "correta": false },
+        { "texto": "More bad", "correta": false },
+        { "texto": "The worst", "correta": true },
+        { "texto": "The baddest", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Complete: 'She has lived here ___ 2010.'",
+      "descricao": "Usa-se 'since' com um ponto de partida específico no tempo e 'for' com uma duração de tempo.",
+      "opcoes": [
+        { "texto": "for", "correta": false },
+        { "texto": "since", "correta": true },
+        { "texto": "at", "correta": false },
+        { "texto": "in", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "O que significa a palavra 'although'?",
+      "descricao": "'Although' é uma conjunção usada para introduzir uma ideia de contraste, similar a 'mas'.",
+      "opcoes": [
+        { "texto": "Porque", "correta": false },
+        { "texto": "Portanto", "correta": false },
+        { "texto": "Apesar de / Embora", "correta": true },
+        { "texto": "Se", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Qual frase usa o 'Present Perfect' corretamente?",
+      "descricao": "O Present Perfect (have/has + particípio passado) é usado para ações passadas com relevância no presente.",
+      "opcoes": [
+        { "texto": "I have saw that movie.", "correta": false },
+        { "texto": "She has been to Japan.", "correta": true },
+        { "texto": "They has finished the work.", "correta": false },
+        { "texto": "He have ate lunch.", "correta": false }
+      ]
+    },
+    {
+      "pergunta": "Complete: 'If I ___ you, I would study more.'",
+      "descricao": "Esta é a segunda condicional (Second Conditional), usada para situações hipotéticas. Usa-se 'were' para todos os pronomes.",
+      "opcoes": [
+        { "texto": "am", "correta": false },
+        { "texto": "was", "correta": false },
+        { "texto": "were", "correta": true },
+        { "texto": "be", "correta": false }
+      ]
+    }
+  ]
+}
