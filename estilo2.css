@@ -1,31 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap');
+/* Importação de fonte divertida do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;700&display=swap');
 
-/* Variáveis de Tema */
+/* --- Estilos Globais e Reset Básico --- */
 :root {
-  --primary-color: #8C00FF;        /* Roxo Neon */
-  --secondary-color: #39FF14;      /* Verde Neon */
-  --accent-color: #FF4D4D;         /* Vermelho Vivo */
-  --background-color: #121212;     /* Preto Profundo */
-  --card-color: #1E1E1E;           /* Cinza Escuro */
-  --text-color: #E0E0E0;           /* Cinza Claro */
-  --border-radius-md: 12px;
-  --border-radius-lg: 24px;
-  --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.6);
+    /* Cores principais */
+    --primary-color: #FF6B6B; /* Vermelho vibrante */
+    --secondary-color: #87CEEB; /* Azul Claro (SkyBlue) para botões secundários */
+    --accent-color: #FFD166; /* Amarelo ensolarado */
+    --dark-blue: #0A1931; /* Azul escuro para texto principal */
+    --light-gray: #F8F8F8; /* Fundo claro */
+    --white: #FFFFFF;
+    --cyan-blue: #00BCD4; /* Azul Ciano para info-section h2 */
+
+    /* Sombras */
+    --btn-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --container-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    /* Bordas */
+    --border-radius-lg: 25px;
+    --border-radius-md: 15px;
 }
 
-/* estilo2.css */
+/* --- Estilos do Tema Padrão --- */
 
 .btn {
-  background: #FF6B6B;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--white);
 }
+
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.9;
+  transform: translateY(-1px); /* Adicionado um leve efeito no hover */
 }
+
 .btn.secondary {
-  background: #87CEEB;
-  color: #fff;
+  background: var(--secondary-color);
+  color: var(--dark-blue);
 }
+
+.btn.secondary:hover {
+  opacity: 0.9;
+}
+
 h1, h2 {
-  color: #222;
+  color: var(--dark-blue);
 }

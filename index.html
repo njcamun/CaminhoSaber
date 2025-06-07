@@ -22,7 +22,7 @@
 
 <body>
 <main>
-    <section id="welcomeScreen" class="screen active">
+    <section id="welcomeScreen" class="screen visible">
         <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
         <h1>Bem‐vindo ao Caminho do Saber</h1>
         <p>Por favor, digite seu nome para continuar:</p>
@@ -40,17 +40,16 @@
 
     <section id="homeScreen" class="screen hidden">
         <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
-        <h1>Menu Principal</h1>
-        <div class="menu-grid">
-            <button id="playQuizButton" class="btn">
-                <span class="icon">🎲</span><br />
-                <h3>Jogar Quiz</h3>
-            </button>
-            <button id="openSettingsButton" class="btn secondary">
-                <span class="icon">⚙️</span><br />
-                <h3>Configurações</h3>
-            </button>
-        </div>
+        <h2>Menu Principal</h2> <div class="menu-grid">
+        <button id="playQuizButton" class="btn">
+            <span class="icon">🎲</span><br />
+            <h3>Jogar Quiz</h3>
+        </button>
+        <button id="openSettingsButton" class="btn secondary">
+            <span class="icon">⚙️</span><br />
+            <h3>Configurações</h3>
+        </button>
+    </div>
     </section>
 
     <section id="categoryScreen" class="screen hidden">
@@ -98,7 +97,6 @@
     <section id="settingsScreen" class="screen hidden">
         <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
         <h2>Configurações</h2>
-
         <div id="settingsMenuOptions" class="menu-grid">
             <button id="changeDesignButton" class="btn">
                 <i class="fa-solid fa-paint-brush"></i> Mudar Design
@@ -116,7 +114,6 @@
                 <i class="fa-solid fa-arrow-left"></i> Voltar
             </button>
         </div>
-
         <div id="designOptions" class="menu-grid hidden">
             <button id="themeDefault" class="btn">
                 <i class="fa-solid fa-adjust"></i> Tema Padrão
@@ -151,7 +148,7 @@
             <label for="chkAudio">Áudio</label>
         </div>
 
-        <button id="backFromQuizOptions" class="btn secondary" onclick="show('settingsScreen')">
+        <button id="backFromQuizOptions" class="btn secondary">
             <i class="fa-solid fa-arrow-left"></i> Voltar
         </button>
     </section>
