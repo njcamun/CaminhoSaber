@@ -1,4 +1,15 @@
 // script.js (VERSÃO FINAL CORRIGIDA)
+const categoryIcons = {
+    'Trivium': '📜',
+    'Quadrivium': '🧮',
+    'Cultura Mundial': '🌐',
+    'Mwangole': '🇦🇴',
+    'Bíblia': '📖',
+    'Inglês': '🗣️',
+    'Kimbundu': '🗨️',
+    'Países': '🏳️',
+    'default': '🎲' // Um ícone padrão caso a categoria não seja encontrada
+  };
 document.addEventListener('DOMContentLoaded', () => {
   // ======== SONS ========
   const correctSound = new Audio('sounds/correct.mp3');
@@ -456,28 +467,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Histórico ---
   function saveQuizResultToHistory(category, level, score, total) {
-    const history = JSON.parse(localStorage.getItem(KEYS.HISTORY) || '[]');
-    const now = new Date().toLocaleString('pt-AO', { dateStyle: 'short', timeStyle: 'short' });
-    history.push({
-      id: Date.now(),
-      participant: participantNameInput.value.trim() || 'Anónimo',
-      category, level, score, total, timestamp: now
-    });
-    localStorage.setItem(KEYS.HISTORY, JSON.stringify(history));
-  }
+      const history = JSON.parse(localStorage.getItem(KEYS.HISTORY) || '[]');
+      const now = new Date().toLocaleString('pt-AO', { dateStyle: 'short', timeStyle: 'short' });
+      history.push({
+        id: Date.now(),
+        participant: participantNameInput.value.trim() || 'Anónimo',
+        category, level, score, total, timestamp: now
+      });
+      localStorage.setItem(KEYS.HISTORY, JSON.stringify(history));
+    }
   function displayHistory() {
-    const history = JSON.parse(localStorage.getItem(KEYS.HISTORY) || '[]');
-    historyListDiv.innerHTML = history.length === 0
-      ? '<p>Nenhum quiz jogado ainda.</p>'
-      : history.slice().reverse().map(entry => `
+      const history = JSON.parse(localStorage.getItem(KEYS.HISTORY) || '[]');
+      if (history.length === 0) {
+        historyListDiv.innerHTML = '<p style="text-align: center; margin-top: 1rem;">Nenhum quiz jogado ainda.</p>';
+        return;
+      }
+
+      const historyHTML = history.slice().reverse().map(entry => {
+        const icon = categoryIcons[entry.category] || categoryIcons['default'];
+        return `
           <div class="history-item">
-            <p><strong>Nome:</strong> ${entry.participant}</p>
-            <p><strong>Categoria:</strong> ${entry.category} - <strong>Nível:</strong> ${entry.level}</p>
-            <p><strong>Data:</strong> ${entry.timestamp}</p>
-            <p><strong>Pontos:</strong> ${entry.score} / ${entry.total}</p>
+            <div class="history-item-icon">${icon}</div>
+            <div class="history-item-details">
+              <h4>${entry.category} - Nível ${entry.level}</h4>
+              <p class="history-item-meta">
+                <span><i class="fa-solid fa-user"></i> ${entry.participant}</span>
+                <span><i class="fa-solid fa-calendar-days"></i> ${entry.timestamp}</span>
+              </p>
+            </div>
+            <div class="history-item-score">
+              <strong>${entry.score}</strong>/${entry.total}
+            </div>
           </div>
-        `).join('');
-  }
+        `;
+      }).join('');
+
+      historyListDiv.innerHTML = historyHTML;
+    }
 
   // CORRIGIDO: Função "Sobre Nós" restaurada para a versão original mais robusta
   async function loadAboutUsContent() {

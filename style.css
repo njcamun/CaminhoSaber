@@ -172,4 +172,88 @@ input[type="text"], input[type="file"] {
     background-color: #4CAF50 !important;
     color: #fff !important;
 }
-/* ... (resto do ficheiro CSS permanece igual) ... */
+
+/* --- Estilos da Tela de Histórico --- */
+
+.history-list {
+  max-height: 400px; /* Aumentamos um pouco a altura máxima */
+  overflow-y: auto;
+  text-align: left;
+  margin: 1rem 0;
+  padding-right: 0.5rem; /* Espaço para a barra de rolagem */
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Espaçamento entre os itens */
+}
+
+/* O "cartão" de cada item do histórico */
+.history-item {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid var(--primary-color, #FF6B6B); /* Usa a cor primária do tema */
+
+  /* NOVO: Usando Flexbox para alinhar o conteúdo */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.history-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo do ícone da categoria */
+.history-item-icon {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Detalhes principais (título, nome, data) */
+.history-item-details {
+  flex-grow: 1; /* Faz esta seção ocupar o espaço disponível */
+}
+
+.history-item-details h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.history-item-meta {
+  display: flex;
+  flex-direction: column; /* Coloca nome e data um abaixo do outro */
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.history-item-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Estilo da pontuação */
+.history-item-score {
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.history-item-score strong {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-blue, #0A1931);
+}
