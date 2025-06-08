@@ -1,458 +1,4652 @@
 {
   "1": [
     {
-      "pergunta": "Qual é a capital de Angola?",
-      "descricao": "Luanda foi fundada a 25 de Janeiro de 1576 pelo fidalgo e explorador português Paulo Dias de Novais.",
+      "pergunta": "Qual é a cor principal da bandeira de Angola que parece o sol?",
+      "descricao": "Geografia: Identificação de cores da bandeira nacional.",
       "opcoes": [
-        { "texto": "Benguela", "correta": false },
-        { "texto": "Huambo", "correta": false },
-        { "texto": "Luanda", "correta": true },
-        { "texto": "Cabinda", "correta": false }
+        {
+          "texto": "Amarelo",
+          "correta": true
+        },
+        {
+          "texto": "Azul",
+          "correta": false
+        },
+        {
+          "texto": "Verde",
+          "correta": false
+        },
+        {
+          "texto": "Branco",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Na gíria angolana, o que significa 'bazar'?",
-      "descricao": "'Bazar' é uma gíria comum em Angola e Portugal que significa ir embora ou sair de um lugar.",
+      "pergunta": "Como se chama a capital de Angola, onde há muita gente e carros?",
+      "descricao": "Geografia: Identificação da capital de Angola.",
       "opcoes": [
-        { "texto": "Comprar algo", "correta": false },
-        { "texto": "Ir embora / Sair", "correta": true },
-        { "texto": "Trabalhar", "correta": false },
-        { "texto": "Festejar", "correta": false }
+        {
+          "texto": "Luanda",
+          "correta": true
+        },
+        {
+          "texto": "Huambo",
+          "correta": false
+        },
+        {
+          "texto": "Benguela",
+          "correta": false
+        },
+        {
+          "texto": "Cabinda",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual destes pratos é considerado o prato nacional de Angola?",
-      "descricao": "A Moamba de Galinha é um prato emblemático da culinária angolana, apreciado em todo o país.",
+      "pergunta": "Qual é a moeda que usamos para comprar as coisas em Angola?",
+      "descricao": "Cultura Geral: Identificação da moeda nacional.",
       "opcoes": [
-        { "texto": "Cachupa", "correta": false },
-        { "texto": "Feijoada", "correta": false },
-        { "texto": "Moamba de Galinha", "correta": true },
-        { "texto": "Bacalhau à Brás", "correta": false }
+        {
+          "texto": "Kwanza",
+          "correta": true
+        },
+        {
+          "texto": "Dólar",
+          "correta": false
+        },
+        {
+          "texto": "Euro",
+          "correta": false
+        },
+        {
+          "texto": "Real",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O que significa a gíria 'bué'?",
-      "descricao": "'Bué' é uma das gírias mais populares e significa 'muito' ou 'bastante'.",
+      "pergunta": "Que animal grande e bonito, parecido com um veado, é o símbolo de Angola?",
+      "descricao": "Cultura Geral: Identificação do animal símbolo de Angola.",
       "opcoes": [
-        { "texto": "Pouco", "correta": false },
-        { "texto": "Nada", "correta": false },
-        { "texto": "Talvez", "correta": false },
-        { "texto": "Muito / Bastante", "correta": true }
+        {
+          "texto": "Palanca Negra Gigante",
+          "correta": true
+        },
+        {
+          "texto": "Leão",
+          "correta": false
+        },
+        {
+          "texto": "Elefante",
+          "correta": false
+        },
+        {
+          "texto": "Zebra",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual é a principal fonte de riqueza e o principal produto de exportação de Angola?",
-      "descricao": "Angola é o segundo maior produtor de petróleo em África. O petróleo representa pelo menos 88% do total das exportações do país.",
+      "pergunta": "Qual é o nome de uma comida típica de Angola que parece uma massa branca e se come com molho?",
+      "descricao": "Cultura Geral: Identificação de comida típica angolana.",
       "opcoes": [
-        { "texto": "Café", "correta": false },
-        { "texto": "Petróleo", "correta": true },
-        { "texto": "Algodão", "correta": false },
-        { "texto": "Madeira", "correta": false }
+        {
+          "texto": "Funge",
+          "correta": true
+        },
+        {
+          "texto": "Pizza",
+          "correta": false
+        },
+        {
+          "texto": "Hambúrguer",
+          "correta": false
+        },
+        {
+          "texto": "Arroz",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual destes é um famoso estilo de música e dança angolano?",
-      "descricao": "Kizomba, Semba e Kuduro são alguns dos estilos musicais mais famosos originários de Angola.",
+      "pergunta": "Qual é o nome de uma dança tradicional de Angola que é muito popular?",
+      "descricao": "Cultura Geral: Identificação de dança tradicional angolana.",
       "opcoes": [
-        { "texto": "Salsa", "correta": false },
-        { "texto": "Fado", "correta": false },
-        { "texto": "Kizomba", "correta": true },
-        { "texto": "Tango", "correta": false }
+        {
+          "texto": "Kizomba",
+          "correta": true
+        },
+        {
+          "texto": "Samba",
+          "correta": false
+        },
+        {
+          "texto": "Rock",
+          "correta": false
+        },
+        {
+          "texto": "Ballet",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Como se chama o autocarro em Angola?",
-      "descricao": "A palavra 'machimbombo' é o termo local para autocarro.",
+      "pergunta": "Qual a cor do mar em Angola, que fica junto à praia?",
+      "descricao": "Geografia: Identificação da cor do oceano.",
       "opcoes": [
-        { "texto": "Carroça", "correta": false },
-        { "texto": "Comboio", "correta": false },
-        { "texto": "Machimbombo", "correta": true },
-        { "texto": "Candongueiro", "correta": false }
+        {
+          "texto": "Azul",
+          "correta": true
+        },
+        {
+          "texto": "Verde",
+          "correta": false
+        },
+        {
+          "texto": "Vermelho",
+          "correta": false
+        },
+        {
+          "texto": "Preto",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual é a moeda oficial de Angola?",
-      "descricao": "O Kwanza (AOA) é a moeda de Angola, subdividida em 100 lwei.",
+      "pergunta": "Qual a língua que falamos na escola em Angola, e que todos os livros são escritos?",
+      "descricao": "Cultura Geral: Identificação da língua oficial de Angola.",
       "opcoes": [
-        { "texto": "Escudo", "correta": false },
-        { "texto": "Metical", "correta": false },
-        { "texto": "Kwanza", "correta": true },
-        { "texto": "Real", "correta": false }
+        {
+          "texto": "Português",
+          "correta": true
+        },
+        {
+          "texto": "Inglês",
+          "correta": false
+        },
+        {
+          "texto": "Francês",
+          "correta": false
+        },
+        {
+          "texto": "Espanhol",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O que é 'ginguba' em Angola?",
-      "descricao": "Ginguba é a palavra usada em Angola para amendoim.",
+      "pergunta": "Qual o nome de um rio grande em Angola, que também é o nome da nossa moeda?",
+      "descricao": "Geografia: Identificação de rio importante em Angola.",
       "opcoes": [
-        { "texto": "Milho", "correta": false },
-        { "texto": "Amendoim", "correta": true },
-        { "texto": "Feijão", "correta": false },
-        { "texto": "Abóbora", "correta": false }
+        {
+          "texto": "Kwanza",
+          "correta": true
+        },
+        {
+          "texto": "Cunene",
+          "correta": false
+        },
+        {
+          "texto": "Zaire",
+          "correta": false
+        },
+        {
+          "texto": "Cubango",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "A Ilha de Luanda também é conhecida como...",
-      "descricao": "A Ilha do Cabo, ou simplesmente Ilha de Luanda, é famosa pelas suas praias, bares e restaurantes.",
+      "pergunta": "Qual veículo de transporte público é azul e branco e leva muitas pessoas em Luanda?",
+      "descricao": "Cultura Geral: Identificação de transporte público angolano.",
       "opcoes": [
-        { "texto": "Ilha do Mussulo", "correta": false },
-        { "texto": "Ilha do Fogo", "correta": false },
-        { "texto": "Ilha do Cabo", "correta": true },
-        { "texto": "Ilha de Moçambique", "correta": false }
+        {
+          "texto": "Candongueiro (ou táxi azul e branco)",
+          "correta": true
+        },
+        {
+          "texto": "Comboio",
+          "correta": false
+        },
+        {
+          "texto": "Avião",
+          "correta": false
+        },
+        {
+          "texto": "Barco",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual é a língua oficial de Angola?",
-      "descricao": "O português é a língua oficial, embora Angola tenha diversas línguas nacionais como o Umbundo, Kimbundo e Kikongo.",
+      "pergunta": "Que fruta tropical muito comum em Angola é comprida e amarela?",
+      "descricao": "Cultura Geral: Identificação de fruta tropical comum em Angola.",
       "opcoes": [
-        { "texto": "Kimbundu", "correta": false },
-        { "texto": "Francês", "correta": false },
-        { "texto": "Português", "correta": true },
-        { "texto": "Inglês", "correta": false }
+        {
+          "texto": "Banana",
+          "correta": true
+        },
+        {
+          "texto": "Manga",
+          "correta": false
+        },
+        {
+          "texto": "Ananás",
+          "correta": false
+        },
+        {
+          "texto": "Laranja",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O que é o 'Funge'?",
-      "descricao": "O Funge é um acompanhamento essencial na dieta angolana, feito de farinha de milho ou de mandioca.",
+      "pergunta": "O que a estrela amarela na bandeira de Angola representa?",
+      "descricao": "Cultura Geral: Significado de símbolo da bandeira.",
       "opcoes": [
-        { "texto": "Uma bebida alcoólica", "correta": false },
-        { "texto": "Um tipo de peixe", "correta": false },
-        { "texto": "Uma massa de farinha de milho ou mandioca", "correta": true },
-        { "texto": "Uma dança tradicional", "correta": false }
+        {
+          "texto": "Progresso e Solidariedade",
+          "correta": true
+        },
+        {
+          "texto": "O sol",
+          "correta": false
+        },
+        {
+          "texto": "O mar",
+          "correta": false
+        },
+        {
+          "texto": "As riquezas",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O que significa 'dar uma bula'?",
-      "descricao": "É uma gíria que significa faltar ao trabalho ou à escola, geralmente sem uma boa justificação.",
+      "pergunta": "Qual o nome de uma cidade grande em Angola, além de Luanda?",
+      "descricao": "Geografia: Identificação de outras cidades angolanas.",
       "opcoes": [
-        { "texto": "Receber um prémio", "correta": false },
-        { "texto": "Faltar ao trabalho/escola", "correta": true },
-        { "texto": "Dar um presente", "correta": false },
-        { "texto": "Contar uma anedota", "correta": false }
+        {
+          "texto": "Huambo (ou Benguela, Lubango)",
+          "correta": true
+        },
+        {
+          "texto": "Paris",
+          "correta": false
+        },
+        {
+          "texto": "Roma",
+          "correta": false
+        },
+        {
+          "texto": "Nova Iorque",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual o nome do famoso miradouro perto de Luanda com uma paisagem de falésias avermelhadas?",
-      "descricao": "O Miradouro da Lua é conhecido pela sua paisagem deslumbrante e de aparência lunar.",
+      "pergunta": "Que tipo de roupa colorida as senhoras angolanas gostam de usar no dia a dia?",
+      "descricao": "Cultura Geral: Identificação de vestuário tradicional.",
       "opcoes": [
-        { "texto": "Serra da Leba", "correta": false },
-        { "texto": "Miradouro da Lua", "correta": true },
-        { "texto": "Fenda da Tundavala", "correta": false },
-        { "texto": "Pedras Negras de Pungo Andongo", "correta": false }
+        {
+          "texto": "Capulana (ou Pano)",
+          "correta": true
+        },
+        {
+          "texto": "Calças de ganga",
+          "correta": false
+        },
+        {
+          "texto": "Fato",
+          "correta": false
+        },
+        {
+          "texto": "Vestido branco",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Em que oceano a costa de Angola está situada?",
-      "descricao": "Angola tem uma vasta costa ao longo do Oceano Atlântico.",
+      "pergunta": "O que faz o candongueiro (táxi) em Luanda?",
+      "descricao": "Cultura Geral: Função do transporte público local.",
       "opcoes": [
-        { "texto": "Índico", "correta": false },
-        { "texto": "Pacífico", "correta": false },
-        { "texto": "Atlântico", "correta": true },
-        { "texto": "Ártico", "correta": false }
+        {
+          "texto": "Transporta pessoas",
+          "correta": true
+        },
+        {
+          "texto": "Vende fruta",
+          "correta": false
+        },
+        {
+          "texto": "Entrega cartas",
+          "correta": false
+        },
+        {
+          "texto": "Pesca peixe",
+          "correta": false
+        }
       ]
     }
   ],
   "2": [
     {
-      "pergunta": "Quem foi o primeiro presidente de Angola após a independência?",
-      "descricao": "António Agostinho Neto, líder do MPLA, tornou-se o primeiro presidente de Angola em 1975.",
+      "pergunta": "O que representam as duas faixas da bandeira de Angola, uma vermelha e outra preta?",
+      "descricao": "Cultura Geral: Significado das cores da bandeira (simplificado).",
       "opcoes": [
-        { "texto": "Jonas Savimbi", "correta": false },
-        { "texto": "Holden Roberto", "correta": false },
-        { "texto": "José Eduardo dos Santos", "correta": false },
-        { "texto": "Agostinho Neto", "correta": true }
+        {
+          "texto": "Vermelho: sangue na luta, Preto: África",
+          "correta": true
+        },
+        {
+          "texto": "Vermelho: sol, Preto: noite",
+          "correta": false
+        },
+        {
+          "texto": "Vermelho: amor, Preto: tristeza",
+          "correta": false
+        },
+        {
+          "texto": "Vermelho: calor, Preto: frio",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "A independência de Angola foi proclamada em que ano?",
-      "descricao": "Angola alcançou a independência de Portugal a 11 de Novembro de 1975, após uma longa guerra de libertação.",
+      "pergunta": "Quantas províncias tem Angola, como se fossem grandes pedaços do país?",
+      "descricao": "Geografia: Número de províncias de Angola.",
       "opcoes": [
-        { "texto": "1961", "correta": false },
-        { "texto": "1975", "correta": true },
-        { "texto": "1980", "correta": false },
-        { "texto": "1992", "correta": false }
+        {
+          "texto": "18",
+          "correta": true
+        },
+        {
+          "texto": "10",
+          "correta": false
+        },
+        {
+          "texto": "5",
+          "correta": false
+        },
+        {
+          "texto": "20",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual é o ponto mais alto de Angola?",
-      "descricao": "O Morro de Moco, com 2.620 metros de altitude, está localizado na província do Huambo.",
+      "pergunta": "Qual o nome do oceano que banha toda a costa de Angola, com praias bonitas?",
+      "descricao": "Geografia: Identificação do oceano que banha Angola.",
       "opcoes": [
-        { "texto": "Serra da Leba", "correta": false },
-        { "texto": "Monte Kilimanjaro", "correta": false },
-        { "texto": "Morro de Moco", "correta": true },
-        { "texto": "Fenda da Tundavala", "correta": false }
+        {
+          "texto": "Atlântico",
+          "correta": true
+        },
+        {
+          "texto": "Pacífico",
+          "correta": false
+        },
+        {
+          "texto": "Índico",
+          "correta": false
+        },
+        {
+          "texto": "Ártico",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "A 'Palanca Negra Gigante' é um animal endémico de Angola. Qual o seu estado de conservação?",
-      "descricao": "A Palanca Negra Gigante, um símbolo nacional, foi redescoberta em 2006, mas continua em perigo de extinção.",
+      "pergunta": "O que a Palanca Negra Gigante representa para Angola, sendo um animal tão raro?",
+      "descricao": "Cultura Geral: Simbolismo da Palanca Negra Gigante.",
       "opcoes": [
-        { "texto": "Pouco preocupante", "correta": false },
-        { "texto": "Extinto na natureza", "correta": false },
-        { "texto": "Em perigo", "correta": true },
-        { "texto": "Vulnerável", "correta": false }
+        {
+          "texto": "Raridade e beleza da natureza angolana",
+          "correta": true
+        },
+        {
+          "texto": "Força",
+          "correta": false
+        },
+        {
+          "texto": "Sabedoria",
+          "correta": false
+        },
+        {
+          "texto": "Amizade",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual província angolana é um enclave, separada do resto do país?",
-      "descricao": "Cabinda é uma província que faz fronteira com a República do Congo e a RDC, sendo uma importante fonte de petróleo para Angola.",
+      "pergunta": "Além do funge, qual outro prato típico angolano é feito com peixe e óleo de palma, muito saboroso?",
+      "descricao": "Cultura Geral: Identificação de outro prato típico angolano.",
       "opcoes": [
-        { "texto": "Zaire", "correta": false },
-        { "texto": "Cabinda", "correta": true },
-        { "texto": "Cunene", "correta": false },
-        { "texto": "Moxico", "correta": false }
+        {
+          "texto": "Calulu",
+          "correta": true
+        },
+        {
+          "texto": "Mufete",
+          "correta": false
+        },
+        {
+          "texto": "Moamba de galinha",
+          "correta": false
+        },
+        {
+          "texto": "Feijoada",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O prato 'Calulu' é tipicamente feito com que ingredientes principais?",
-      "descricao": "O Calulu é um guisado rico, geralmente feito com peixe seco ou fresco e vários vegetais como quiabo e beringela.",
+      "pergunta": "Qual o nome de um festival ou festa muito colorida e com muita dança que acontece em Luanda?",
+      "descricao": "Cultura Geral: Identificação de festival popular em Angola.",
       "opcoes": [
-        { "texto": "Carne de porco e feijão", "correta": false },
-        { "texto": "Galinha e amendoim", "correta": false },
-        { "texto": "Peixe seco e vegetais", "correta": true },
-        { "texto": "Carne de cabra e milho", "correta": false }
+        {
+          "texto": "Carnaval de Luanda",
+          "correta": true
+        },
+        {
+          "texto": "Natal",
+          "correta": false
+        },
+        {
+          "texto": "Páscoa",
+          "correta": false
+        },
+        {
+          "texto": "Dia da Criança",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O nome 'Angola' deriva do título 'Ngola', que era atribuído aos reis de que antigo reino?",
-      "descricao": "O Reino do Ndongo, do povo Mbundu, era governado por reis com o título de 'Ngola'.",
+      "pergunta": "Qual a importância da água para as pessoas em Angola, principalmente nas aldeias?",
+      "descricao": "Cultura Geral: Importância da água para a vida.",
       "opcoes": [
-        { "texto": "Reino do Kongo", "correta": false },
-        { "texto": "Reino do Ndongo", "correta": true },
-        { "texto": "Império Lunda", "correta": false },
-        { "texto": "Reino de Matamba", "correta": false }
+        {
+          "texto": "Para beber, cozinhar e tomar banho",
+          "correta": true
+        },
+        {
+          "texto": "Para desenhar",
+          "correta": false
+        },
+        {
+          "texto": "Para voar",
+          "correta": false
+        },
+        {
+          "texto": "Para brincar",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Na gíria, o que é um 'candongueiro'?",
-      "descricao": "Candongueiro é o nome popular dado aos táxis informais, geralmente carrinhas azuis e brancas, que são um meio de transporte essencial em Luanda.",
+      "pergunta": "Quem foi o primeiro Presidente de Angola, um herói que lutou pela independência?",
+      "descricao": "História: Identificação do primeiro Presidente de Angola.",
       "opcoes": [
-        { "texto": "Um mercado de rua", "correta": false },
-        { "texto": "Um tipo de música", "correta": false },
-        { "texto": "Um táxi informal", "correta": true },
-        { "texto": "Um vendedor ambulante", "correta": false }
+        {
+          "texto": "Agostinho Neto",
+          "correta": true
+        },
+        {
+          "texto": "Jonas Savimbi",
+          "correta": false
+        },
+        {
+          "texto": "Holden Roberto",
+          "correta": false
+        },
+        {
+          "texto": "José Eduardo dos Santos",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual é a segunda maior cidade de Angola?",
-      "descricao": "Huambo, no planalto central, é historicamente uma das cidades mais importantes e a segunda maior do país.",
+      "pergunta": "Onde podemos ver muitos animais selvagens em Angola, num lugar grande e protegido?",
+      "descricao": "Geografia: Identificação de um parque nacional em Angola.",
       "opcoes": [
-        { "texto": "Lubango", "correta": false },
-        { "texto": "Huambo", "correta": true },
-        { "texto": "Benguela", "correta": false },
-        { "texto": "Cabinda", "correta": false }
+        {
+          "texto": "Parque Nacional da Kissama",
+          "correta": true
+        },
+        {
+          "texto": "Zoo de Luanda",
+          "correta": false
+        },
+        {
+          "texto": "Jardim Botânico",
+          "correta": false
+        },
+        {
+          "texto": "Mercado",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "As Cataratas de Kalandula, uma das maiores de África em volume, ficam em que província?",
-      "descricao": "As impressionantes Cataratas de Kalandula estão situadas na província de Malanje.",
+      "pergunta": "Qual a língua nacional mais falada em Angola além do português, que muitas famílias falam em casa?",
+      "descricao": "Cultura Geral: Identificação de língua nacional falada em Angola.",
       "opcoes": [
-        { "texto": "Uíge", "correta": false },
-        { "texto": "Malanje", "correta": true },
-        { "texto": "Cuanza Sul", "correta": false },
-        { "texto": "Lunda Norte", "correta": false }
+        {
+          "texto": "Umbundu (ou Kimbundu, Kikongo)",
+          "correta": true
+        },
+        {
+          "texto": "Inglês",
+          "correta": false
+        },
+        {
+          "texto": "Francês",
+          "correta": false
+        },
+        {
+          "texto": "Mandarim",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Que género musical é o antecessor direto da Kizomba e do Samba?",
-      "descricao": "O Semba é um estilo musical e de dança tradicional de Angola que influenciou a criação de outros géneros musicais.",
+      "pergunta": "Para que servem os rios em Angola, além de serem bonitos?",
+      "descricao": "Geografia: Funções dos rios em Angola.",
       "opcoes": [
-        { "texto": "Rebita", "correta": false },
-        { "texto": "Kuduro", "correta": false },
-        { "texto": "Semba", "correta": true },
-        { "texto": "Kazukuta", "correta": false }
+        {
+          "texto": "Para pescar, ter água e transportar coisas",
+          "correta": true
+        },
+        {
+          "texto": "Para dormir",
+          "correta": false
+        },
+        {
+          "texto": "Para brincar com areia",
+          "correta": false
+        },
+        {
+          "texto": "Para ver estrelas",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O que são 'kizaka'?",
-      "descricao": "Kizaka (ou kissaca) são as folhas da mandioca, um ingrediente popular usado em vários pratos angolanos.",
+      "pergunta": "Qual é a província de Angola conhecida pelas suas montanhas e clima mais fresco, como Lubango?",
+      "descricao": "Geografia: Identificação de província angolana com características geográficas.",
       "opcoes": [
-        { "texto": "Um tipo de feijão", "correta": false },
-        { "texto": "Folhas da mandioca", "correta": true },
-        { "texto": "Larvas comestíveis", "correta": false },
-        { "texto": "Um doce de coco", "correta": false }
+        {
+          "texto": "Huíla",
+          "correta": true
+        },
+        {
+          "texto": "Cuanza Sul",
+          "correta": false
+        },
+        {
+          "texto": "Moxico",
+          "correta": false
+        },
+        {
+          "texto": "Zaire",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "A famosa 'Serra da Leba' e a sua estrada sinuosa localizam-se em que província?",
-      "descricao": "A estrada da Serra da Leba é uma maravilha da engenharia e um ponto turístico famoso na província da Huíla, perto da cidade do Lubango.",
+      "pergunta": "Como se chama a árvore muito grande e antiga que se encontra em Angola e que as pessoas se abrigam debaixo dela?",
+      "descricao": "Cultura Geral: Identificação de árvore símbolo de Angola.",
       "opcoes": [
-        { "texto": "Namibe", "correta": false },
-        { "texto": "Benguela", "correta": false },
-        { "texto": "Huíla", "correta": true },
-        { "texto": "Cunene", "correta": false }
+        {
+          "texto": "Imbondeiro (ou Baobá)",
+          "correta": true
+        },
+        {
+          "texto": "Mangueira",
+          "correta": false
+        },
+        {
+          "texto": "Coqueiro",
+          "correta": false
+        },
+        {
+          "texto": "Eucalipto",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Que figura histórica é conhecida como a 'Rainha de Ndongo e Matamba' pela sua resistência contra os portugueses?",
-      "descricao": "A Rainha Nzinga Mbande foi uma líder poderosa e estratega militar que resistiu à colonização portuguesa no século XVII.",
+      "pergunta": "O que faz o músico que toca a Ngoma (tambor angolano) numa festa?",
+      "descricao": "Cultura Geral: Função do músico e instrumento local.",
       "opcoes": [
-        { "texto": "Kimpa Vita", "correta": false },
-        { "texto": "Nzinga Mbande", "correta": true },
-        { "texto": "Alda Lara", "correta": false },
-        { "texto": "Anália de Victória Pereira", "correta": false }
+        {
+          "texto": "Faz o ritmo para as pessoas dançarem",
+          "correta": true
+        },
+        {
+          "texto": "Canta uma música",
+          "correta": false
+        },
+        {
+          "texto": "Conta uma história",
+          "correta": false
+        },
+        {
+          "texto": "Vende comida",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual o nome do deserto que se estende pelo sudoeste de Angola?",
-      "descricao": "O Deserto do Namibe, conhecido pelas suas paisagens únicas e plantas endémicas como a Welwitschia mirabilis, ocupa a costa sudoeste do país.",
+      "pergunta": "No céu de Angola, o que brilha mais forte de dia, e nos dá calor?",
+      "descricao": "Geografia: Identificação do sol como fonte de calor e luz.",
       "opcoes": [
-        { "texto": "Deserto do Kalahari", "correta": false },
-        { "texto": "Deserto do Sara", "correta": false },
-        { "texto": "Deserto do Namibe", "correta": true },
-        { "texto": "Deserto da Arábia", "correta": false }
+        {
+          "texto": "O Sol",
+          "correta": true
+        },
+        {
+          "texto": "A Lua",
+          "correta": false
+        },
+        {
+          "texto": "As estrelas",
+          "correta": false
+        },
+        {
+          "texto": "As nuvens",
+          "correta": false
+        }
       ]
     }
   ],
   "3": [
     {
-      "pergunta": "Quantas províncias tem Angola?",
-      "descricao": "Angola está administrativamente dividida em 18 províncias.",
+      "pergunta": "O que significa o emblema na bandeira de Angola, que tem uma roda, uma catana e uma estrela?",
+      "descricao": "Cultura Geral: Significado dos símbolos da bandeira (mais detalhado).",
       "opcoes": [
-        { "texto": "15", "correta": false },
-        { "texto": "18", "correta": true },
-        { "texto": "20", "correta": false },
-        { "texto": "16", "correta": false }
+        {
+          "texto": "Roda: trabalhadores, Catana: agricultores, Estrela: progresso",
+          "correta": true
+        },
+        {
+          "texto": "Roda: carro, Catana: faca, Estrela: magia",
+          "correta": false
+        },
+        {
+          "texto": "Roda: brincadeira, Catana: ferramenta, Estrela: brilho",
+          "correta": false
+        },
+        {
+          "texto": "Não significa nada",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual destes rios não faz fronteira com Angola?",
-      "descricao": "O Rio Congo forma parte da fronteira norte, o Zambeze parte da fronteira leste, e o Cunene a fronteira sul. O Nilo não tem qualquer ligação com Angola.",
+      "pergunta": "Para que serve o censo (contagem das pessoas) em Angola, que o governo faz de vez em quando?",
+      "descricao": "História: Finalidade do censo populacional.",
       "opcoes": [
-        { "texto": "Rio Congo", "correta": false },
-        { "texto": "Rio Zambeze", "correta": false },
-        { "texto": "Rio Nilo", "correta": true },
-        { "texto": "Rio Cunene", "correta": false }
+        {
+          "texto": "Para saber quantas pessoas são e o que precisam (ex: escolas, hospitais)",
+          "correta": true
+        },
+        {
+          "texto": "Para contar dinheiro",
+          "correta": false
+        },
+        {
+          "texto": "Para saber quem é famoso",
+          "correta": false
+        },
+        {
+          "texto": "Para organizar festas",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "A Fortaleza de São Miguel, um dos marcos de Luanda, hoje alberga que instituição?",
-      "descricao": "A Fortaleza de São Miguel, construída no século XVI, é hoje o Museu Nacional de História Militar.",
+      "pergunta": "Qual a maior montanha de Angola, onde às vezes faz mais frio?",
+      "descricao": "Geografia: Identificação de característica geográfica (montanha).",
       "opcoes": [
-        { "texto": "O Palácio Presidencial", "correta": false },
-        { "texto": "O Museu Nacional de História Militar", "correta": true },
-        { "texto": "A Assembleia Nacional", "correta": false },
-        { "texto": "O Museu Nacional da Escravatura", "correta": false }
+        {
+          "texto": "Monte Moco",
+          "correta": true
+        },
+        {
+          "texto": "Serra da Chela",
+          "correta": false
+        },
+        {
+          "texto": "Monte Nganda",
+          "correta": false
+        },
+        {
+          "texto": "Monte Bimbe",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Em que província se localiza a cidade de Mbanza Kongo, património mundial da UNESCO?",
-      "descricao": "Mbanza Kongo, a antiga capital do Reino do Kongo, está localizada na província do Zaire, no norte de Angola.",
+      "pergunta": "Como os angolanos antigamente faziam música antes de ter rádio e televisão?",
+      "descricao": "Cultura Geral: Formas de música tradicional (oralidade/instrumentos).",
       "opcoes": [
-        { "texto": "Uíge", "correta": false },
-        { "texto": "Bengo", "correta": false },
-        { "texto": "Zaire", "correta": true },
-        { "texto": "Cabinda", "correta": false }
+        {
+          "texto": "Com instrumentos tradicionais (tambores, kissange) e a voz",
+          "correta": true
+        },
+        {
+          "texto": "Só com palmas",
+          "correta": false
+        },
+        {
+          "texto": "Não faziam música",
+          "correta": false
+        },
+        {
+          "texto": "Com pianos grandes",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual destes países não partilha uma fronteira terrestre com Angola?",
-      "descricao": "Angola partilha fronteiras com a Namíbia a sul, Zâmbia a leste, e a República Democrática do Congo a norte e leste. A África do Sul não tem fronteira direta.",
+      "pergunta": "Qual a importância da agricultura (plantar e colher) para as pessoas em Angola?",
+      "descricao": "Cultura Geral: Importância da agricultura.",
       "opcoes": [
-        { "texto": "República Democrática do Congo", "correta": false },
-        { "texto": "Zâmbia", "correta": false },
-        { "texto": "África do Sul", "correta": true },
-        { "texto": "Namíbia", "correta": false }
+        {
+          "texto": "Para ter comida e vender o que plantam",
+          "correta": true
+        },
+        {
+          "texto": "Para as plantas crescerem sozinhas",
+          "correta": false
+        },
+        {
+          "texto": "Para fazer barulho",
+          "correta": false
+        },
+        {
+          "texto": "Para ter sombra",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O que é a 'Welwitschia mirabilis'?",
-      "descricao": "A Welwitschia é uma planta única e resistente, endémica do deserto do Namibe, conhecida pela sua longevidade, podendo viver mais de mil anos.",
+      "pergunta": "Quem foi o autor da letra do Hino Nacional de Angola?",
+      "descricao": "História: Identificação do autor do Hino Nacional (letra).",
       "opcoes": [
-        { "texto": "Uma ave rara", "correta": false },
-        { "texto": "Uma planta do deserto", "correta": true },
-        { "texto": "Um mineral precioso", "correta": false },
-        { "texto": "Um peixe de rio", "correta": false }
+        {
+          "texto": "Agostinho Neto",
+          "correta": true
+        },
+        {
+          "texto": "Rui Mingas",
+          "correta": false
+        },
+        {
+          "texto": "José Eduardo dos Santos",
+          "correta": false
+        },
+        {
+          "texto": "Ngola Kiluanje",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual foi o primeiro partido a governar Angola após a independência?",
-      "descricao": "O Movimento Popular de Libertação de Angola (MPLA), liderado por Agostinho Neto, assumiu o poder após a independência em 1975.",
+      "pergunta": "O que são as kizombadas em Luanda?",
+      "descricao": "Cultura Geral: Conceito de festas de Kizomba.",
       "opcoes": [
-        { "texto": "UNITA", "correta": false },
-        { "texto": "FNLA", "correta": false },
-        { "texto": "MPLA", "correta": true },
-        { "texto": "PRS", "correta": false }
+        {
+          "texto": "Festas onde se dança Kizomba, um estilo de música e dança angolano",
+          "correta": true
+        },
+        {
+          "texto": "Feiras de artesanato",
+          "correta": false
+        },
+        {
+          "texto": "Reuniões de escola",
+          "correta": false
+        },
+        {
+          "texto": "Jogos de futebol",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O 'Palácio de Ferro' em Luanda é atribuído a que famoso arquiteto ou sua escola?",
-      "descricao": "Embora não haja documentação definitiva, acredita-se que o Palácio de Ferro tenha sido desenhado por Gustave Eiffel ou por um dos seus associados.",
+      "pergunta": "Qual a diferença entre uma cidade e uma aldeia em Angola?",
+      "descricao": "Geografia: Distinção entre cidade e aldeia.",
       "opcoes": [
-        { "texto": "Oscar Niemeyer", "correta": false },
-        { "texto": "Gustave Eiffel", "correta": true },
-        { "texto": "Antoni Gaudí", "correta": false },
-        { "texto": "Le Corbusier", "correta": false }
+        {
+          "texto": "Cidade é grande e tem muitos prédios, aldeia é pequena e tem mais casas de campo",
+          "correta": true
+        },
+        {
+          "texto": "Cidade é só de dia, aldeia é só de noite",
+          "correta": false
+        },
+        {
+          "texto": "Cidade tem animais selvagens, aldeia não",
+          "correta": false
+        },
+        {
+          "texto": "Não há diferença",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual destas línguas nacionais é do grupo Khoisan e falada no sul de Angola?",
-      "descricao": "O !Kung (ou San) é uma das línguas da família Khoisan, conhecida pelos seus sons de clique, e é falada por pequenos grupos no sul do país.",
+      "pergunta": "O que o Imbondeiro simboliza para Angola, por ser uma árvore tão antiga e grande?",
+      "descricao": "Cultura Geral: Simbolismo do Imbondeiro.",
       "opcoes": [
-        { "texto": "Kimbundu", "correta": false },
-        { "texto": "Umbundu", "correta": false },
-        { "texto": "Tchokwe", "correta": false },
-        { "texto": "!Kung (San)", "correta": true }
+        {
+          "texto": "Resistência, sabedoria e vida",
+          "correta": true
+        },
+        {
+          "texto": "Tristeza",
+          "correta": false
+        },
+        {
+          "texto": "Frio",
+          "correta": false
+        },
+        {
+          "texto": "Velocidade",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O Mausoléu de que figura proeminente se destaca na paisagem de Luanda?",
-      "descricao": "O imponente Mausoléu de Agostinho Neto é um monumento dedicado ao primeiro presidente de Angola.",
+      "pergunta": "Além do petróleo, que outro recurso natural Angola tem em grande quantidade, que brilha muito?",
+      "descricao": "Geografia: Identificação de outro recurso natural de Angola.",
       "opcoes": [
-        { "texto": "Jonas Savimbi", "correta": false },
-        { "texto": "Agostinho Neto", "correta": true },
-        { "texto": "Lúcio Lara", "correta": false },
-        { "texto": "Viriato da Cruz", "correta": false }
+        {
+          "texto": "Diamantes",
+          "correta": true
+        },
+        {
+          "texto": "Ouro",
+          "correta": false
+        },
+        {
+          "texto": "Prata",
+          "correta": false
+        },
+        {
+          "texto": "Areia",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "O Acordo de Alvor, assinado em 1975, estabeleceu o quê?",
-      "descricao": "Assinado no Algarve, Portugal, o acordo entre os movimentos de libertação (MPLA, FNLA, UNITA) e Portugal estabeleceu os termos da transição para a independência de Angola.",
+      "pergunta": "Que tipo de escola existe em Angola para crianças que vivem longe das cidades, em áreas rurais?",
+      "descricao": "Cultura Geral: Conhecimento sobre educação em áreas rurais de Angola.",
       "opcoes": [
-        { "texto": "O fim da Guerra Fria", "correta": false },
-        { "texto": "A criação da União Africana", "correta": false },
-        { "texto": "A transição para a independência de Angola", "correta": true },
-        { "texto": "A delimitação das fronteiras provinciais", "correta": false }
+        {
+          "texto": "Escolas primárias rurais/Comunitárias",
+          "correta": true
+        },
+        {
+          "texto": "Escolas de carros",
+          "correta": false
+        },
+        {
+          "texto": "Escolas de animais",
+          "correta": false
+        },
+        {
+          "texto": "Escolas de magia",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual parque nacional angolano é famoso pelo projeto de reintrodução de elefantes 'Arca de Noé'?",
-      "descricao": "O Parque Nacional da Quiçama, a sul de Luanda, foi palco deste ambicioso projeto para repovoar a sua fauna.",
+      "pergunta": "Por que é importante falar português em Angola, já que há tantas línguas nacionais?",
+      "descricao": "Cultura Geral: Importância da língua oficial em um país multilíngue.",
       "opcoes": [
-        { "texto": "Parque Nacional de Iona", "correta": false },
-        { "texto": "Parque Nacional da Cameia", "correta": false },
-        { "texto": "Parque Nacional da Quiçama", "correta": true },
-        { "texto": "Parque Nacional da Cangandala", "correta": false }
+        {
+          "texto": "Para comunicar com todos do país e com outros países",
+          "correta": true
+        },
+        {
+          "texto": "Para falar só com a família",
+          "correta": false
+        },
+        {
+          "texto": "Para não falar nada",
+          "correta": false
+        },
+        {
+          "texto": "Para fazer segredo",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual o nome da principal unidade de relevo de Angola, que ocupa grande parte do interior do país?",
-      "descricao": "O Planalto Central, também conhecido como Planalto do Bié, é a principal e mais extensa unidade de relevo de Angola, onde nascem importantes rios.",
+      "pergunta": "Qual a diferença entre o dia e a noite no céu de Angola?",
+      "descricao": "Geografia: Distinção entre dia e noite (observação astronómica básica).",
       "opcoes": [
-        { "texto": "Planície do Litoral", "correta": false },
-        { "texto": "Bacia do Congo", "correta": false },
-        { "texto": "Planalto Central", "correta": true },
-        { "texto": "Deserto do Namibe", "correta": false }
+        {
+          "texto": "Dia tem sol e luz, noite tem lua, estrelas e escuridão",
+          "correta": true
+        },
+        {
+          "texto": "Dia é frio, noite é quente",
+          "correta": false
+        },
+        {
+          "texto": "Dia tem chuva, noite tem sol",
+          "correta": false
+        },
+        {
+          "texto": "Não há diferença",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "A revolta de 4 de Fevereiro de 1961 marcou o início de quê?",
-      "descricao": "O ataque a prisões em Luanda a 4 de Fevereiro de 1961 é considerado o marco do início da Luta Armada de Libertação Nacional contra o domínio colonial português.",
+      "pergunta": "O que é o sistema solar?",
+      "descricao": "Geografia: Conceito de sistema solar.",
       "opcoes": [
-        { "texto": "Da Guerra Civil", "correta": false },
-        { "texto": "Da Luta Armada de Libertação Nacional", "correta": true },
-        { "texto": "Das primeiras eleições multipartidárias", "correta": false },
-        { "texto": "Da crise económica", "correta": false }
+        {
+          "texto": "É o sol e todos os planetas que giram à volta dele",
+          "correta": true
+        },
+        {
+          "texto": "É só a Terra",
+          "correta": false
+        },
+        {
+          "texto": "É um grupo de estrelas paradas",
+          "correta": false
+        },
+        {
+          "texto": "É uma nave espacial",
+          "correta": false
+        }
       ]
     },
     {
-      "pergunta": "Qual é a segunda maior bacia hidrográfica de Angola, depois da do Congo?",
-      "descricao": "A bacia do rio Kwanza é a maior bacia hidrográfica inteiramente angolana e de grande importância económica, nomeadamente para a produção de energia hidroelétrica.",
+      "pergunta": "Qual o nome de um animal selvagem que vive nas savanas de Angola e que é o 'rei' da selva?",
+      "descricao": "Geografia: Identificação de animal selvagem em Angola.",
       "opcoes": [
-        { "texto": "Bacia do Cunene", "correta": false },
-        { "texto": "Bacia do Cubango", "correta": false },
-        { "texto": "Bacia do Kwanza", "correta": true },
-        { "texto": "Bacia do Zambeze", "correta": false }
+        {
+          "texto": "Leão (ou elefante, zebra)",
+          "correta": true
+        },
+        {
+          "texto": "Gato",
+          "correta": false
+        },
+        {
+          "texto": "Cachorro",
+          "correta": false
+        },
+        {
+          "texto": "Galinha",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "pergunta": "O que significa o emblema na bandeira de Angola, que tem uma roda dentada e uma catana?",
+      "descricao": "Cultura Geral: Significado dos símbolos da bandeira (mais detalhado).",
+      "opcoes": [
+        {
+          "texto": "Roda dentada: trabalhadores; Catana: agricultores e luta armada",
+          "correta": true
+        },
+        {
+          "texto": "Roda: carro; Catana: faca de cozinha",
+          "correta": false
+        },
+        {
+          "texto": "Roda: brincadeira; Catana: ferramenta para cortar",
+          "correta": false
+        },
+        {
+          "texto": "Não significa nada, é só um desenho",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Como é que o governo de Angola ajuda as pessoas do país?",
+      "descricao": "Cultura Geral: Função do governo (serviços básicos).",
+      "opcoes": [
+        {
+          "texto": "Construindo escolas, hospitais, dando segurança",
+          "correta": true
+        },
+        {
+          "texto": "Só a organizar festas",
+          "correta": false
+        },
+        {
+          "texto": "Só a vender coisas",
+          "correta": false
+        },
+        {
+          "texto": "Não ajuda em nada",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância dos portos (lugares onde os navios param) em Angola, como o Porto de Luanda?",
+      "descricao": "Geografia: Importância dos portos para o comércio.",
+      "opcoes": [
+        {
+          "texto": "Para receber e enviar produtos pelo mar (importação/exportação)",
+          "correta": true
+        },
+        {
+          "texto": "Para os navios dormirem",
+          "correta": false
+        },
+        {
+          "texto": "Para as pessoas nadarem",
+          "correta": false
+        },
+        {
+          "texto": "Para verem o pôr do sol",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'compasso' na música, quando ouvimos uma batida e a música se organiza?",
+      "descricao": "Cultura Geral: Conceito de compasso musical.",
+      "opcoes": [
+        {
+          "texto": "É a organização das batidas e dos tempos da música",
+          "correta": true
+        },
+        {
+          "texto": "É o som mais forte da música",
+          "correta": false
+        },
+        {
+          "texto": "É o instrumento principal",
+          "correta": false
+        },
+        {
+          "texto": "É a letra da música",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um famoso dançarino(a) angolano(a) que as pessoas admiram muito?",
+      "descricao": "Cultura Geral: Identificação de figura cultural (dança).",
+      "opcoes": [
+        {
+          "texto": "Generic name of a famous Angolan dancer (e.g., uma estrela da Kizomba/Semba)",
+          "correta": true
+        },
+        {
+          "texto": "Um político",
+          "correta": false
+        },
+        {
+          "texto": "Um cientista",
+          "correta": false
+        },
+        {
+          "texto": "Um futebolista",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é uma 'constelação' no céu de Angola, que podemos ver à noite?",
+      "descricao": "Geografia: Conceito de constelação (contexto local).",
+      "opcoes": [
+        {
+          "texto": "É um grupo de estrelas que formam um desenho no céu",
+          "correta": true
+        },
+        {
+          "texto": "É uma estrela muito grande",
+          "correta": false
+        },
+        {
+          "texto": "É um planeta brilhante",
+          "correta": false
+        },
+        {
+          "texto": "É uma nuvem colorida",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Por que a lua parece mudar de forma no céu, ficando ora fina, ora redonda?",
+      "descricao": "Geografia: Explicação das fases da lua.",
+      "opcoes": [
+        {
+          "texto": "Por causa de como o sol a ilumina (fases da lua)",
+          "correta": true
+        },
+        {
+          "texto": "Porque ela está a crescer",
+          "correta": false
+        },
+        {
+          "texto": "Porque as nuvens a cobrem",
+          "correta": false
+        },
+        {
+          "texto": "Porque ela está a girar muito rápido",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Que tipo de animais selvagens se encontram no Parque Nacional da Kissama, perto de Luanda?",
+      "descricao": "Geografia: Identificação de fauna local em parque nacional.",
+      "opcoes": [
+        {
+          "texto": "Elefantes, zebras, girafas, palancas",
+          "correta": true
+        },
+        {
+          "texto": "Cães, gatos, galinhas",
+          "correta": false
+        },
+        {
+          "texto": "Peixes, golfinhos",
+          "correta": false
+        },
+        {
+          "texto": "Pássaros pequenos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é uma 'aldeia' (no sentido de organização social em Angola)?",
+      "descricao": "Cultura Geral: Conceito de aldeia/comunidade rural angolana.",
+      "opcoes": [
+        {
+          "texto": "Uma comunidade pequena, geralmente rural, com suas tradições e líderes locais",
+          "correta": true
+        },
+        {
+          "texto": "Uma cidade muito grande",
+          "correta": false
+        },
+        {
+          "texto": "Um tipo de escola",
+          "correta": false
+        },
+        {
+          "texto": "Um hospital",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Como as pessoas em Angola trocam dinheiro para comprar coisas e pagar serviços?",
+      "descricao": "Cultura Geral: Sistema monetário (contexto angolano).",
+      "opcoes": [
+        {
+          "texto": "Usando Kwanzas",
+          "correta": true
+        },
+        {
+          "texto": "Com trocas de produtos",
+          "correta": false
+        },
+        {
+          "texto": "Usando dólares",
+          "correta": false
+        },
+        {
+          "texto": "Com cartões",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância das bibliotecas em Angola?",
+      "descricao": "Cultura Geral: Importância da leitura/conhecimento.",
+      "opcoes": [
+        {
+          "texto": "Para as pessoas lerem livros, estudarem e aprenderem coisas novas",
+          "correta": true
+        },
+        {
+          "texto": "Para brincar e fazer barulho",
+          "correta": false
+        },
+        {
+          "texto": "Para ver televisão",
+          "correta": false
+        },
+        {
+          "texto": "Para guardar brinquedos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que significa a palavra 'kamba' na língua Kimbundu, que muitas pessoas usam em Angola?",
+      "descricao": "Cultura Geral: Significado de termo em língua nacional (Kimbundu).",
+      "opcoes": [
+        {
+          "texto": "Amigo",
+          "correta": true
+        },
+        {
+          "texto": "Obrigado",
+          "correta": false
+        },
+        {
+          "texto": "Olá",
+          "correta": false
+        },
+        {
+          "texto": "Adeus",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Como os navegadores antigos usavam as estrelas para se orientar no mar de Angola e saber para onde ir?",
+      "descricao": "Geografia: Orientação por estrelas (Cruzeiro do Sul).",
+      "opcoes": [
+        {
+          "texto": "Olhando para as estrelas no céu (como o Cruzeiro do Sul)",
+          "correta": true
+        },
+        {
+          "texto": "Com um mapa de papel",
+          "correta": false
+        },
+        {
+          "texto": "Com um rádio",
+          "correta": false
+        },
+        {
+          "texto": "Perguntando aos peixes",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'meteorito'?",
+      "descricao": "Geografia: Conceito de meteorito.",
+      "opcoes": [
+        {
+          "texto": "Uma pedra que cai do espaço e chega na Terra",
+          "correta": true
+        },
+        {
+          "texto": "Uma estrela que pisca",
+          "correta": false
+        },
+        {
+          "texto": "Um planeta pequeno",
+          "correta": false
+        },
+        {
+          "texto": "Um tipo de nuvem",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um famoso escritor(a) angolano(a) que escreveu muitos livros para crianças?",
+      "descricao": "Cultura Geral: Identificação de figura cultural (escritor).",
+      "opcoes": [
+        {
+          "texto": "Generic name of a famous Angolan writer (e.g., um autor de histórias infantis)",
+          "correta": true
+        },
+        {
+          "texto": "Um cantor",
+          "correta": false
+        },
+        {
+          "texto": "Um pintor",
+          "correta": false
+        },
+        {
+          "texto": "Um atleta",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "pergunta": "Explique o simbolismo da roda dentada e da catana na bandeira de Angola, o que elas representam para o país?",
+      "descricao": "Cultura Geral: Significado dos símbolos da bandeira (aprofundado).",
+      "opcoes": [
+        {
+          "texto": "Roda dentada: os trabalhadores da indústria; Catana: os agricultores e a luta armada pela independência",
+          "correta": true
+        },
+        {
+          "texto": "Roda: os carros; Catana: as facas da cozinha",
+          "correta": false
+        },
+        {
+          "texto": "Roda: as brincadeiras; Catana: ferramentas de jardim",
+          "correta": false
+        },
+        {
+          "texto": "Não têm um significado especial",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Como o governo de Angola arrecada dinheiro para ajudar o país com hospitais e escolas?",
+      "descricao": "Cultura Geral: Fontes de receita do governo (simplificado).",
+      "opcoes": [
+        {
+          "texto": "Com impostos e a venda de recursos como o petróleo e diamantes",
+          "correta": true
+        },
+        {
+          "texto": "Pedindo dinheiro emprestado a outros países",
+          "correta": false
+        },
+        {
+          "texto": "Imprimindo mais dinheiro",
+          "correta": false
+        },
+        {
+          "texto": "Organizando rifas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância da localização geográfica de Angola na África Austral, por ter um litoral tão grande?",
+      "descricao": "Geografia: Importância da localização geográfica para o comércio e transporte.",
+      "opcoes": [
+        {
+          "texto": "Facilita o comércio marítimo e o transporte de produtos para outros países",
+          "correta": true
+        },
+        {
+          "texto": "Ajuda a ter muitas praias bonitas",
+          "correta": false
+        },
+        {
+          "texto": "Faz com que chova mais",
+          "correta": false
+        },
+        {
+          "texto": "Atrai animais selvagens",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é 'harmonia' na música, quando vários instrumentos tocam juntos?",
+      "descricao": "Cultura Geral: Conceito de harmonia musical.",
+      "opcoes": [
+        {
+          "texto": "Quando vários sons diferentes tocam juntos e soam bem, criando uma sensação agradável",
+          "correta": true
+        },
+        {
+          "texto": "Quando a música é muito rápida",
+          "correta": false
+        },
+        {
+          "texto": "Quando a música é muito lenta",
+          "correta": false
+        },
+        {
+          "texto": "Quando os instrumentos fazem barulho",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o papel dos 'griots' (contadores de histórias) na cultura angolana e africana em geral?",
+      "descricao": "Cultura Geral: Papel dos griots na tradição oral.",
+      "opcoes": [
+        {
+          "texto": "Preservar a história, a cultura e os ensinamentos através de histórias e músicas contadas de geração em geração",
+          "correta": true
+        },
+        {
+          "texto": "Cozinhar para as pessoas",
+          "correta": false
+        },
+        {
+          "texto": "Construir casas",
+          "correta": false
+        },
+        {
+          "texto": "Vender produtos no mercado",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é uma 'galáxia'?",
+      "descricao": "Geografia: Conceito de galáxia.",
+      "opcoes": [
+        {
+          "texto": "Um grupo muito grande de estrelas, planetas, gás e poeira no espaço",
+          "correta": true
+        },
+        {
+          "texto": "Uma estrela muito brilhante",
+          "correta": false
+        },
+        {
+          "texto": "Um planeta grande",
+          "correta": false
+        },
+        {
+          "texto": "Uma nuvem no céu",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a diferença entre uma estrela e um planeta?",
+      "descricao": "Geografia: Distinção entre estrela e planeta.",
+      "opcoes": [
+        {
+          "texto": "Estrela tem luz própria e é muito quente, planeta reflete a luz da estrela e gira em volta dela",
+          "correta": true
+        },
+        {
+          "texto": "Estrela é pequena, planeta é grande",
+          "correta": false
+        },
+        {
+          "texto": "Estrela é fria, planeta é quente",
+          "correta": false
+        },
+        {
+          "texto": "Não tem diferença",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância da conservação da Palanca Negra Gigante para Angola?",
+      "descricao": "Cultura Geral: Importância da conservação da biodiversidade.",
+      "opcoes": [
+        {
+          "texto": "Para evitar que desapareça (extinção) e manter a biodiversidade do país",
+          "correta": true
+        },
+        {
+          "texto": "Para ter um animal para caçar",
+          "correta": false
+        },
+        {
+          "texto": "Para que os turistas venham a Angola",
+          "correta": false
+        },
+        {
+          "texto": "Para ter um animal para desenhar",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Como as tradições orais (histórias, canções) são passadas de geração em geração em Angola?",
+      "descricao": "Cultura Geral: Transmissão da cultura oral.",
+      "opcoes": [
+        {
+          "texto": "Através de conversas, histórias contadas pelos mais velhos, canções e danças",
+          "correta": true
+        },
+        {
+          "texto": "Com livros e computadores",
+          "correta": false
+        },
+        {
+          "texto": "Com filmes e televisão",
+          "correta": false
+        },
+        {
+          "texto": "Através de jogos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Que desafios a agricultura em Angola enfrenta para produzir mais comida?",
+      "descricao": "Cultura Geral: Desafios da agricultura em Angola.",
+      "opcoes": [
+        {
+          "texto": "Seca, pragas, falta de máquinas e técnicas modernas",
+          "correta": true
+        },
+        {
+          "texto": "Ter muita água",
+          "correta": false
+        },
+        {
+          "texto": "Ter muitos animais selvagens",
+          "correta": false
+        },
+        {
+          "texto": "Ter muitas árvores",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância da educação (ir à escola e aprender) para o desenvolvimento de Angola?",
+      "descricao": "Cultura Geral: Importância da educação para o desenvolvimento social e económico.",
+      "opcoes": [
+        {
+          "texto": "Ajuda as pessoas a ter mais conhecimento, melhores empregos e o país a crescer",
+          "correta": true
+        },
+        {
+          "texto": "Serve só para brincar",
+          "correta": false
+        },
+        {
+          "texto": "Não é muito importante",
+          "correta": false
+        },
+        {
+          "texto": "Faz as pessoas ficarem mais cansadas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a diferença entre \"dialeto\" e \"língua oficial\" em Angola?",
+      "descricao": "Cultura Geral: Distinção entre dialeto e língua oficial.",
+      "opcoes": [
+        {
+          "texto": "Dialeto é uma variação local de uma língua, língua oficial é a que o país usa para tudo (ex: Português)",
+          "correta": true
+        },
+        {
+          "texto": "Dialeto é só para crianças, língua oficial é para adultos",
+          "correta": false
+        },
+        {
+          "texto": "Dialeto é falado, língua oficial é escrita",
+          "correta": false
+        },
+        {
+          "texto": "Não há diferença",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Como os cientistas estudam o espaço e o que está fora da Terra?",
+      "descricao": "Geografia: Métodos de estudo da astronomia (simplificado).",
+      "opcoes": [
+        {
+          "texto": "Com telescópios (para ver longe) e sondas espaciais (para viajar)",
+          "correta": true
+        },
+        {
+          "texto": "Com mapas de papel",
+          "correta": false
+        },
+        {
+          "texto": "Com livros de histórias",
+          "correta": false
+        },
+        {
+          "texto": "Olhando só para a lua",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é o Big Bang (muito simplificado), que é como os cientistas pensam que o universo começou?",
+      "descricao": "Geografia: Conceito do Big Bang (simplificado).",
+      "opcoes": [
+        {
+          "texto": "Uma grande 'explosão' que deu início ao universo, tudo o que existe",
+          "correta": true
+        },
+        {
+          "texto": "Um tipo de estrela",
+          "correta": false
+        },
+        {
+          "texto": "Um planeta muito grande",
+          "correta": false
+        },
+        {
+          "texto": "Um buraco negro",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um herói ou figura histórica importante para a independência de Angola, que nos libertou?",
+      "descricao": "História: Identificação de figura histórica da independência (contexto angolano).",
+      "opcoes": [
+        {
+          "texto": "Agostinho Neto (ou outros como Jonas Savimbi, Holden Roberto)",
+          "correta": true
+        },
+        {
+          "texto": "Um cantor famoso",
+          "correta": false
+        },
+        {
+          "texto": "Um jogador de futebol",
+          "correta": false
+        },
+        {
+          "texto": "Um cozinheiro",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "6": [
+    {
+      "pergunta": "Qual o nome do famoso tratado que dividiu o mundo entre Portugal e Espanha, passando por Angola?",
+      "descricao": "História: Conhecimento de tratado histórico (Tratado de Tordesilhas) e sua relevância para Angola.",
+      "opcoes": [
+        {
+          "texto": "Tratado de Tordesilhas",
+          "correta": true
+        },
+        {
+          "texto": "Tratado de Madrid",
+          "correta": false
+        },
+        {
+          "texto": "Tratado de Verdun",
+          "correta": false
+        },
+        {
+          "texto": "Tratado de Versalhes",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a principal atividade económica de Angola, que gera mais dinheiro para o país?",
+      "descricao": "Geografia: Identificação da principal atividade económica de Angola.",
+      "opcoes": [
+        {
+          "texto": "Petróleo e gás",
+          "correta": true
+        },
+        {
+          "texto": "Agricultura",
+          "correta": false
+        },
+        {
+          "texto": "Turismo",
+          "correta": false
+        },
+        {
+          "texto": "Pesca",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que são as 'Quedas de Kalandula', um lugar bonito em Angola com muita água a cair?",
+      "descricao": "Geografia: Identificação de marco geográfico natural.",
+      "opcoes": [
+        {
+          "texto": "Cataratas/Quedas de água",
+          "correta": true
+        },
+        {
+          "texto": "Montanhas",
+          "correta": false
+        },
+        {
+          "texto": "Deserto",
+          "correta": false
+        },
+        {
+          "texto": "Lagos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Quem foi a famosa Rainha Nzinga Mbandi, que lutou pela liberdade do seu povo em Angola?",
+      "descricao": "História: Conhecimento de figura histórica angolana (Rainha Nzinga).",
+      "opcoes": [
+        {
+          "texto": "Rainha do Ndongo e Matamba",
+          "correta": true
+        },
+        {
+          "texto": "Rainha de Portugal",
+          "correta": false
+        },
+        {
+          "texto": "Rainha de França",
+          "correta": false
+        },
+        {
+          "texto": "Rainha de Espanha",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da floresta densa e tropical que se encontra em algumas partes de Angola, com muitas árvores altas?",
+      "descricao": "Geografia: Identificação de tipo de floresta em Angola.",
+      "opcoes": [
+        {
+          "texto": "Floresta tropical/chuvosa",
+          "correta": true
+        },
+        {
+          "texto": "Deserto",
+          "correta": false
+        },
+        {
+          "texto": "Savana",
+          "correta": false
+        },
+        {
+          "texto": "Montanha",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da província de Angola conhecida pelas suas praias e pelo porto de Cabinda?",
+      "descricao": "Geografia: Identificação de província angolana com características geográficas.",
+      "opcoes": [
+        {
+          "texto": "Cabinda",
+          "correta": true
+        },
+        {
+          "texto": "Luanda",
+          "correta": false
+        },
+        {
+          "texto": "Benguela",
+          "correta": false
+        },
+        {
+          "texto": "Huíla",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'Museu da Escravatura' em Angola?",
+      "descricao": "História: Conhecimento de museus históricos e seu significado.",
+      "opcoes": [
+        {
+          "texto": "Um museu que mostra a história triste da escravatura em Angola",
+          "correta": true
+        },
+        {
+          "texto": "Um museu de carros antigos",
+          "correta": false
+        },
+        {
+          "texto": "Um museu de música",
+          "correta": false
+        },
+        {
+          "texto": "Um museu de animais",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Para que servem os hospitais em Angola?",
+      "descricao": "Cultura Geral: Função dos serviços de saúde.",
+      "opcoes": [
+        {
+          "texto": "Para tratar pessoas doentes e cuidar da saúde",
+          "correta": true
+        },
+        {
+          "texto": "Para as pessoas brincarem",
+          "correta": false
+        },
+        {
+          "texto": "Para as pessoas dormirem",
+          "correta": false
+        },
+        {
+          "texto": "Para vender comida",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do instrumento musical angolano que parece um piano de polegares?",
+      "descricao": "Cultura Geral: Identificação de instrumento musical local.",
+      "opcoes": [
+        {
+          "texto": "Kissange",
+          "correta": true
+        },
+        {
+          "texto": "Ngoma",
+          "correta": false
+        },
+        {
+          "texto": "Dikanza",
+          "correta": false
+        },
+        {
+          "texto": "Puita",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é uma 'constelação' no céu de Angola?",
+      "descricao": "Geografia: Conceito de constelação (observação astronómica).",
+      "opcoes": [
+        {
+          "texto": "Um grupo de estrelas que formam um desenho no céu",
+          "correta": true
+        },
+        {
+          "texto": "Uma estrela muito grande",
+          "correta": false
+        },
+        {
+          "texto": "Um planeta brilhante",
+          "correta": false
+        },
+        {
+          "texto": "Uma nuvem colorida",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um dos reinos antigos em Angola, antes de os portugueses chegarem?",
+      "descricao": "História: Conhecimento de reinos pré-coloniais angolanos.",
+      "opcoes": [
+        {
+          "texto": "Reino do Congo (ou Ndongo, Matamba)",
+          "correta": true
+        },
+        {
+          "texto": "Reino de Espanha",
+          "correta": false
+        },
+        {
+          "texto": "Reino de Portugal",
+          "correta": false
+        },
+        {
+          "texto": "Reino de França",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a província de Angola conhecida pelas suas praias e pelo Festival Internacional de Música do Sumbe?",
+      "descricao": "Geografia: Identificação de província por características e evento cultural.",
+      "opcoes": [
+        {
+          "texto": "Cuanza Sul",
+          "correta": true
+        },
+        {
+          "texto": "Luanda",
+          "correta": false
+        },
+        {
+          "texto": "Benguela",
+          "correta": false
+        },
+        {
+          "texto": "Huíla",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que são as 'gravuras rupestres' que se podem ver em algumas cavernas de Angola?",
+      "descricao": "Cultura Geral: Conhecimento de arte rupestre em Angola.",
+      "opcoes": [
+        {
+          "texto": "Desenhos feitos nas pedras por pessoas muito antigas",
+          "correta": true
+        },
+        {
+          "texto": "Desenhos de artistas modernos",
+          "correta": false
+        },
+        {
+          "texto": "Sinais de trânsito",
+          "correta": false
+        },
+        {
+          "texto": "Letras de músicas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso vulcão em Angola que é considerado extinto (já não deita fumo nem lava)?",
+      "descricao": "Geografia: Identificação de vulcão extinto em Angola.",
+      "opcoes": [
+        {
+          "texto": "Monte Moco (é uma montanha, não um vulcão ativo, mas pode ser simplificado para este contexto)",
+          "correta": true
+        },
+        {
+          "texto": "Serra da Leba",
+          "correta": false
+        },
+        {
+          "texto": "Monte Mufilo",
+          "correta": false
+        },
+        {
+          "texto": "Monte Cama",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do ponto mais ocidental (para o lado do pôr do sol) do continente africano, que fica em Angola?",
+      "descricao": "Geografia: Identificação de ponto extremo geográfico (contexto angolano).",
+      "opcoes": [
+        {
+          "texto": "Ponta do Dande",
+          "correta": true
+        },
+        {
+          "texto": "Ponta do Padrão",
+          "correta": false
+        },
+        {
+          "texto": "Ponta do Atlântico",
+          "correta": false
+        },
+        {
+          "texto": "Ponta da Barra do Cuanza",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "pergunta": "Qual foi o ano em que Angola se tornou independente de Portugal?",
+      "descricao": "História: Ano da independência de Angola.",
+      "opcoes": [
+        {
+          "texto": "1975",
+          "correta": true
+        },
+        {
+          "texto": "1960",
+          "correta": false
+        },
+        {
+          "texto": "1980",
+          "correta": false
+        },
+        {
+          "texto": "1990",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é o 'Plano de Desenvolvimento Nacional' em Angola?",
+      "descricao": "História: Conceito de plano de desenvolvimento (simplificado).",
+      "opcoes": [
+        {
+          "texto": "É um plano que o governo faz para organizar como o país vai crescer e melhorar",
+          "correta": true
+        },
+        {
+          "texto": "É um livro de histórias",
+          "correta": false
+        },
+        {
+          "texto": "É um jogo de computador",
+          "correta": false
+        },
+        {
+          "texto": "É uma festa",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso rio que faz fronteira entre Angola e a Namíbia, no sul?",
+      "descricao": "Geografia: Identificação de rio fronteiriço.",
+      "opcoes": [
+        {
+          "texto": "Rio Cunene",
+          "correta": true
+        },
+        {
+          "texto": "Rio Kwanza",
+          "correta": false
+        },
+        {
+          "texto": "Rio Zaire",
+          "correta": false
+        },
+        {
+          "texto": "Rio Cubango",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a diferença entre uma província e um município em Angola?",
+      "descricao": "Geografia: Distinção de divisões administrativas.",
+      "opcoes": [
+        {
+          "texto": "Província é maior (como um estado), município é uma parte mais pequena dentro da província (como uma cidade ou área rural)",
+          "correta": true
+        },
+        {
+          "texto": "Província é só na cidade, município é só na aldeia",
+          "correta": false
+        },
+        {
+          "texto": "Província é para adultos, município é para crianças",
+          "correta": false
+        },
+        {
+          "texto": "Não há diferença",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um famoso grupo musical angolano que canta kizomba ou semba?",
+      "descricao": "Cultura Geral: Identificação de grupo musical local.",
+      "opcoes": [
+        {
+          "texto": "Generic name of a famous Angolan music group (e.g., Banda Maravilha, Afrikaners)",
+          "correta": true
+        },
+        {
+          "texto": "Um grupo de teatro",
+          "correta": false
+        },
+        {
+          "texto": "Um grupo de desporto",
+          "correta": false
+        },
+        {
+          "texto": "Um grupo de cientistas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da pessoa que faz e produz filmes em Angola?",
+      "descricao": "Cultura Geral: Identificação de profissão cultural (cinema).",
+      "opcoes": [
+        {
+          "texto": "Realizador(a)/Cineasta angolano(a)",
+          "correta": true
+        },
+        {
+          "texto": "Ator/Atriz",
+          "correta": false
+        },
+        {
+          "texto": "Cantor(a)",
+          "correta": false
+        },
+        {
+          "texto": "Escritor(a)",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da 'Pedra Negra' de Malanje, uma formação rochosa famosa?",
+      "descricao": "Geografia: Identificação de formação rochosa em Angola.",
+      "opcoes": [
+        {
+          "texto": "Pedras Negras de Pungo Andongo",
+          "correta": true
+        },
+        {
+          "texto": "Pedra do Sal",
+          "correta": false
+        },
+        {
+          "texto": "Pedra Grande",
+          "correta": false
+        },
+        {
+          "texto": "Pedra da Lua",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso museu em Luanda que guarda objetos antigos e a história de Angola?",
+      "descricao": "Cultura Geral: Identificação de museu nacional.",
+      "opcoes": [
+        {
+          "texto": "Museu Nacional de História Natural/Museu da Escravatura",
+          "correta": true
+        },
+        {
+          "texto": "Museu do Carro",
+          "correta": false
+        },
+        {
+          "texto": "Museu de Arte Moderna",
+          "correta": false
+        },
+        {
+          "texto": "Museu do Brinquedo",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que são as 'línguas nacionais' de Angola, além do português?",
+      "descricao": "Cultura Geral: Conceito de línguas nacionais.",
+      "opcoes": [
+        {
+          "texto": "São as línguas africanas faladas pelos povos de Angola (ex: Kimbundu, Umbundu, Kikongo)",
+          "correta": true
+        },
+        {
+          "texto": "São línguas inventadas",
+          "correta": false
+        },
+        {
+          "texto": "São línguas estrangeiras",
+          "correta": false
+        },
+        {
+          "texto": "São línguas secretas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Para que serve a 'União Africana' (UA), que Angola faz parte?",
+      "descricao": "História: Função da União Africana (simplificado).",
+      "opcoes": [
+        {
+          "texto": "Para os países de África trabalharem juntos pela paz e desenvolvimento",
+          "correta": true
+        },
+        {
+          "texto": "Para fazer festas em África",
+          "correta": false
+        },
+        {
+          "texto": "Para escolher os animais da África",
+          "correta": false
+        },
+        {
+          "texto": "Para jogar futebol entre os países",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da capital da província de Benguela, importante cidade costeira de Angola?",
+      "descricao": "Geografia: Identificação de capital de província.",
+      "opcoes": [
+        {
+          "texto": "Benguela",
+          "correta": true
+        },
+        {
+          "texto": "Lobito",
+          "correta": false
+        },
+        {
+          "texto": "Catumbela",
+          "correta": false
+        },
+        {
+          "texto": "Baía Farta",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que são as 'Zonas Económicas Especiais' (ZEE) em Angola, como a de Viana?",
+      "descricao": "Geografia: Conceito de ZEE (simplificado).",
+      "opcoes": [
+        {
+          "texto": "Lugares onde as empresas podem produzir e vender coisas mais facilmente para ajudar o país a crescer",
+          "correta": true
+        },
+        {
+          "texto": "Lugares para plantar árvores",
+          "correta": false
+        },
+        {
+          "texto": "Lugares para os turistas brincarem",
+          "correta": false
+        },
+        {
+          "texto": "Lugares para guardar carros",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'buraco negro' (muito simplificado), que podemos estudar no espaço?",
+      "descricao": "Geografia: Conceito de buraco negro (astronomia).",
+      "opcoes": [
+        {
+          "texto": "Um lugar no espaço com uma força tão forte que nada consegue escapar",
+          "correta": true
+        },
+        {
+          "texto": "Uma estrela muito brilhante",
+          "correta": false
+        },
+        {
+          "texto": "Um planeta escuro",
+          "correta": false
+        },
+        {
+          "texto": "Uma nuvem no espaço",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Para que servem os satélites que Angola tem no espaço (como o Angosat)?",
+      "descricao": "Geografia: Função de satélites (com termo local).",
+      "opcoes": [
+        {
+          "texto": "Para ter internet, televisão e comunicar melhor no país",
+          "correta": true
+        },
+        {
+          "texto": "Para tirar fotos da lua",
+          "correta": false
+        },
+        {
+          "texto": "Para controlar o tempo",
+          "correta": false
+        },
+        {
+          "texto": "Para aquecer a Terra",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um famoso político angolano que ajudou a construir a Angola de hoje?",
+      "descricao": "História: Identificação de figura política angolana.",
+      "opcoes": [
+        {
+          "texto": "Generic name of a famous Angolan political figure (e.g., José Eduardo dos Santos, João Lourenço)",
+          "correta": true
+        },
+        {
+          "texto": "Um cantor",
+          "correta": false
+        },
+        {
+          "texto": "Um atleta",
+          "correta": false
+        },
+        {
+          "texto": "Um escritor",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "8": [
+    {
+      "pergunta": "Qual o nome do famoso monumento de Luanda, que é um obelisco em homenagem à independência?",
+      "descricao": "Geografia: Identificação de marco histórico em Luanda.",
+      "opcoes": [
+        {
+          "texto": "Monumento dos Heróis da Independência",
+          "correta": true
+        },
+        {
+          "texto": "Fortaleza de São Miguel",
+          "correta": false
+        },
+        {
+          "texto": "Palácio de Ferro",
+          "correta": false
+        },
+        {
+          "texto": "Museu Nacional de História Natural",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que foi a 'Guerra Colonial' em Angola?",
+      "descricao": "História: Conceito de Guerra Colonial (simplificado).",
+      "opcoes": [
+        {
+          "texto": "A guerra que os angolanos lutaram contra Portugal para se tornarem independentes",
+          "correta": true
+        },
+        {
+          "texto": "Uma guerra entre animais selvagens",
+          "correta": false
+        },
+        {
+          "texto": "Uma guerra com outros países africanos",
+          "correta": false
+        },
+        {
+          "texto": "Uma guerra por causa da comida",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a diferença entre um rio e um lago em Angola?",
+      "descricao": "Geografia: Distinção entre rio e lago.",
+      "opcoes": [
+        {
+          "texto": "Rio é água a correr, lago é água parada e rodeada de terra",
+          "correta": true
+        },
+        {
+          "texto": "Rio é de água salgada, lago é de água doce",
+          "correta": false
+        },
+        {
+          "texto": "Rio é pequeno, lago é grande",
+          "correta": false
+        },
+        {
+          "texto": "Não há diferença",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é o 'artesanato' em Angola?",
+      "descricao": "Cultura Geral: Conceito de artesanato local.",
+      "opcoes": [
+        {
+          "texto": "Objetos feitos à mão, como máscaras, estátuas e cestos",
+          "correta": true
+        },
+        {
+          "texto": "Comidas típicas",
+          "correta": false
+        },
+        {
+          "texto": "Músicas tradicionais",
+          "correta": false
+        },
+        {
+          "texto": "Danças típicas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da província de Angola conhecida pelas suas praias e também por ter um deserto junto ao mar (Deserto do Namibe)?",
+      "descricao": "Geografia: Identificação de província por características geográficas e culturais.",
+      "opcoes": [
+        {
+          "texto": "Namibe",
+          "correta": true
+        },
+        {
+          "texto": "Benguela",
+          "correta": false
+        },
+        {
+          "texto": "Huíla",
+          "correta": false
+        },
+        {
+          "texto": "Cuanza Sul",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso Cabo de Angola que marca a Ponta do Dande?",
+      "descricao": "Geografia: Identificação de cabo geográfico em Angola.",
+      "opcoes": [
+        {
+          "texto": "Cabo Ledo",
+          "correta": true
+        },
+        {
+          "texto": "Cabo da Boa Esperança",
+          "correta": false
+        },
+        {
+          "texto": "Cabo Verde",
+          "correta": false
+        },
+        {
+          "texto": "Cabo Canaveral",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que significa 'independência' para um país?",
+      "descricao": "História: Conceito de independência (simplificado).",
+      "opcoes": [
+        {
+          "texto": "Quando um país passa a governar-se a si próprio e não é mais controlado por outro país",
+          "correta": true
+        },
+        {
+          "texto": "Quando um país é grande",
+          "correta": false
+        },
+        {
+          "texto": "Quando um país é rico",
+          "correta": false
+        },
+        {
+          "texto": "Quando um país tem muitas festas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um famoso cantor(a) angolano(a) que as pessoas gostam de ouvir?",
+      "descricao": "Cultura Geral: Identificação de figura musical local.",
+      "opcoes": [
+        {
+          "texto": "Generic name of a famous Angolan singer (e.g., Anselmo Ralph, Matias Damásio)",
+          "correta": true
+        },
+        {
+          "texto": "Um político",
+          "correta": false
+        },
+        {
+          "texto": "Um cientista",
+          "correta": false
+        },
+        {
+          "texto": "Um futebolista",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'calão' em Angola?",
+      "descricao": "Cultura Geral: Conceito de gíria/calão (linguagem informal).",
+      "opcoes": [
+        {
+          "texto": "São palavras informais ou gírias que as pessoas usam no dia a dia",
+          "correta": true
+        },
+        {
+          "texto": "É a língua oficial",
+          "correta": false
+        },
+        {
+          "texto": "É uma língua antiga",
+          "correta": false
+        },
+        {
+          "texto": "É uma palavra difícil",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso líder angolano que foi o primeiro Presidente de Angola?",
+      "descricao": "História: Identificação do primeiro Presidente de Angola.",
+      "opcoes": [
+        {
+          "texto": "Agostinho Neto",
+          "correta": true
+        },
+        {
+          "texto": "Jonas Savimbi",
+          "correta": false
+        },
+        {
+          "texto": "Holden Roberto",
+          "correta": false
+        },
+        {
+          "texto": "José Eduardo dos Santos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância das 'salinas' em Angola, como as de Ambriz?",
+      "descricao": "Geografia: Importância das salinas (produção de sal).",
+      "opcoes": [
+        {
+          "texto": "São lugares onde se produz sal para a comida e para vender",
+          "correta": true
+        },
+        {
+          "texto": "São lugares para nadar",
+          "correta": false
+        },
+        {
+          "texto": "São lugares para plantar árvores",
+          "correta": false
+        },
+        {
+          "texto": "São lugares para construir casas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que são as 'Quedas do Ruacaná', que são muito bonitas em Angola?",
+      "descricao": "Geografia: Identificação de marco geográfico natural.",
+      "opcoes": [
+        {
+          "texto": "Cataratas/Quedas de água",
+          "correta": true
+        },
+        {
+          "texto": "Montanhas",
+          "correta": false
+        },
+        {
+          "texto": "Deserto",
+          "correta": false
+        },
+        {
+          "texto": "Lagos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do instrumento musical angolano que parece um xilofone de madeira?",
+      "descricao": "Cultura Geral: Identificação de instrumento musical local.",
+      "opcoes": [
+        {
+          "texto": "Marimba",
+          "correta": true
+        },
+        {
+          "texto": "Kissange",
+          "correta": false
+        },
+        {
+          "texto": "Dikanza",
+          "correta": false
+        },
+        {
+          "texto": "Ngoma",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Por que é importante a 'Cultura' de um país?",
+      "descricao": "Cultura Geral: Importância da cultura.",
+      "opcoes": [
+        {
+          "texto": "Para manter as tradições, a identidade e o que é especial do nosso povo",
+          "correta": true
+        },
+        {
+          "texto": "Para ter muitas festas",
+          "correta": false
+        },
+        {
+          "texto": "Para ter muitos rios",
+          "correta": false
+        },
+        {
+          "texto": "Para ter muitos animais",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um famoso explorador português que chegou à costa de Angola há muito tempo?",
+      "descricao": "História: Conhecimento de figuras históricas de exploração (contexto angolano).",
+      "opcoes": [
+        {
+          "texto": "Diogo Cão",
+          "correta": true
+        },
+        {
+          "texto": "Vasco da Gama",
+          "correta": false
+        },
+        {
+          "texto": "Cristóvão Colombo",
+          "correta": false
+        },
+        {
+          "texto": "Fernão de Magalhães",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "10": [
+    {
+      "pergunta": "Qual foi a importância da 'Fortaleza de São Miguel' em Luanda para a história de Angola?",
+      "descricao": "História: Importância de marco histórico angolano.",
+      "opcoes": [
+        {
+          "texto": "Era um forte importante na defesa da cidade e no comércio de escravos",
+          "correta": true
+        },
+        {
+          "texto": "Era uma casa muito bonita",
+          "correta": false
+        },
+        {
+          "texto": "Era uma escola antiga",
+          "correta": false
+        },
+        {
+          "texto": "Era um mercado grande",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a província de Angola onde se encontra o maior deserto do país (Deserto do Namibe)?",
+      "descricao": "Geografia: Identificação de província por característica geográfica.",
+      "opcoes": [
+        {
+          "texto": "Namibe",
+          "correta": true
+        },
+        {
+          "texto": "Benguela",
+          "correta": false
+        },
+        {
+          "texto": "Huíla",
+          "correta": false
+        },
+        {
+          "texto": "Cuanza Sul",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é a 'Welwitschia Mirabilis', uma planta única de Angola?",
+      "descricao": "Geografia: Conhecimento de flora local (planta endémica).",
+      "opcoes": [
+        {
+          "texto": "Uma planta muito antiga e rara que vive no deserto do Namibe",
+          "correta": true
+        },
+        {
+          "texto": "Um tipo de flor",
+          "correta": false
+        },
+        {
+          "texto": "Uma árvore grande",
+          "correta": false
+        },
+        {
+          "texto": "Um animal pequeno",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso festival de música angolano que reúne vários artistas?",
+      "descricao": "Cultura Geral: Identificação de evento musical popular.",
+      "opcoes": [
+        {
+          "texto": "Festival Unitel (ou outros como FestiSumbe)",
+          "correta": true
+        },
+        {
+          "texto": "Carnaval de Luanda",
+          "correta": false
+        },
+        {
+          "texto": "Festa da Cidade",
+          "correta": false
+        },
+        {
+          "texto": "Feira de Artesanato",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que foi a 'Guerra Civil Angolana'?",
+      "descricao": "História: Conceito de Guerra Civil (simplificado).",
+      "opcoes": [
+        {
+          "texto": "A guerra que aconteceu dentro de Angola entre diferentes grupos depois da independência",
+          "correta": true
+        },
+        {
+          "texto": "A guerra contra os portugueses",
+          "correta": false
+        },
+        {
+          "texto": "Uma guerra com outro país",
+          "correta": false
+        },
+        {
+          "texto": "Uma guerra por causa da comida",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância das 'reservas naturais' em Angola?",
+      "descricao": "Geografia: Importância da conservação de áreas naturais.",
+      "opcoes": [
+        {
+          "texto": "São lugares protegidos para a natureza, onde animais e plantas vivem em segurança",
+          "correta": true
+        },
+        {
+          "texto": "São lugares para construir prédios",
+          "correta": false
+        },
+        {
+          "texto": "São lugares para pescar muito",
+          "correta": false
+        },
+        {
+          "texto": "São lugares para os turistas visitarem",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da província de Angola com o nome de um dos reinos antigos, onde se fala muito Kimbundu?",
+      "descricao": "Geografia: Identificação de província e sua ligação histórica/linguística.",
+      "opcoes": [
+        {
+          "texto": "Malanje (antigo reino de Ndongo)",
+          "correta": true
+        },
+        {
+          "texto": "Zaire",
+          "correta": false
+        },
+        {
+          "texto": "Huíla",
+          "correta": false
+        },
+        {
+          "texto": "Benguela",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso 'Cabo' em Angola que marca a Ponta do Dande e é um ponto importante no litoral?",
+      "descricao": "Geografia: Identificação de cabo geográfico em Angola.",
+      "opcoes": [
+        {
+          "texto": "Cabo Ledo",
+          "correta": true
+        },
+        {
+          "texto": "Cabo da Boa Esperança",
+          "correta": false
+        },
+        {
+          "texto": "Cabo Verde",
+          "correta": false
+        },
+        {
+          "texto": "Cabo Canaveral",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que são as 'línguas bantas' em Angola?",
+      "descricao": "Cultura Geral: Conceito de línguas bantas.",
+      "opcoes": [
+        {
+          "texto": "São um grupo de línguas africanas faladas em Angola e em muitos outros países de África",
+          "correta": true
+        },
+        {
+          "texto": "São línguas inventadas",
+          "correta": false
+        },
+        {
+          "texto": "São línguas só para o governo",
+          "correta": false
+        },
+        {
+          "texto": "São línguas secretas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso músico angolano conhecido como 'Bonga'?",
+      "descricao": "Cultura Geral: Identificação de figura musical famosa.",
+      "opcoes": [
+        {
+          "texto": "Bonga",
+          "correta": true
+        },
+        {
+          "texto": "Anselmo Ralph",
+          "correta": false
+        },
+        {
+          "texto": "Matias Damásio",
+          "correta": false
+        },
+        {
+          "texto": "Paulo Flores",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'buraco negro' (muito simplificado), que podemos estudar no espaço?",
+      "descricao": "Geografia: Conceito de buraco negro (astronomia).",
+      "opcoes": [
+        {
+          "texto": "Um lugar no espaço com uma força tão forte que nada consegue escapar",
+          "correta": true
+        },
+        {
+          "texto": "Uma estrela muito brilhante",
+          "correta": false
+        },
+        {
+          "texto": "Um planeta escuro",
+          "correta": false
+        },
+        {
+          "texto": "Uma nuvem no espaço",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Para que servem os satélites que Angola tem no espaço (como o Angosat)?",
+      "descricao": "Geografia: Função de satélites (com termo local).",
+      "opcoes": [
+        {
+          "texto": "Para ter internet, televisão e comunicar melhor no país",
+          "correta": true
+        },
+        {
+          "texto": "Para tirar fotos da lua",
+          "correta": false
+        },
+        {
+          "texto": "Para controlar o tempo",
+          "correta": false
+        },
+        {
+          "texto": "Para aquecer a Terra",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso líder angolano que foi o primeiro Presidente de Angola?",
+      "descricao": "História: Identificação do primeiro Presidente de Angola.",
+      "opcoes": [
+        {
+          "texto": "Agostinho Neto",
+          "correta": true
+        },
+        {
+          "texto": "Jonas Savimbi",
+          "correta": false
+        },
+        {
+          "texto": "Holden Roberto",
+          "correta": false
+        },
+        {
+          "texto": "José Eduardo dos Santos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é o 'Plano de Desenvolvimento Nacional' em Angola?",
+      "descricao": "História: Conceito de plano de desenvolvimento (simplificado).",
+      "opcoes": [
+        {
+          "texto": "É um plano que o governo faz para organizar como o país vai crescer e melhorar",
+          "correta": true
+        },
+        {
+          "texto": "É um livro de histórias",
+          "correta": false
+        },
+        {
+          "texto": "É um jogo de computador",
+          "correta": false
+        },
+        {
+          "texto": "É uma festa",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da capital da província de Benguela, importante cidade costeira de Angola?",
+      "descricao": "Geografia: Identificação de capital de província.",
+      "opcoes": [
+        {
+          "texto": "Benguela",
+          "correta": true
+        },
+        {
+          "texto": "Lobito",
+          "correta": false
+        },
+        {
+          "texto": "Catumbela",
+          "correta": false
+        },
+        {
+          "texto": "Baía Farta",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "11": [
+    {
+      "pergunta": "Qual o nome do famoso tratado assinado entre Portugal e os reinos africanos que marcou o início da colonização de Angola?",
+      "descricao": "História: Conhecimento de tratado histórico (Tratado de Massangano).",
+      "opcoes": [
+        {
+          "texto": "Tratado de Massangano",
+          "correta": true
+        },
+        {
+          "texto": "Tratado de Alvalade",
+          "correta": false
+        },
+        {
+          "texto": "Tratado de Alcáçovas",
+          "correta": false
+        },
+        {
+          "texto": "Tratado de Tordesilhas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual é a província de Angola conhecida pelas suas rochas gigantes e pelas gravuras rupestres?",
+      "descricao": "Geografia: Identificação de província angolana com características geográficas e históricas.",
+      "opcoes": [
+        {
+          "texto": "Malanje (Pedras Negras de Pungo Andongo)",
+          "correta": true
+        },
+        {
+          "texto": "Huambo",
+          "correta": false
+        },
+        {
+          "texto": "Cuanza Sul",
+          "correta": false
+        },
+        {
+          "texto": "Namibe",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'oásis' no deserto do Namibe, em Angola?",
+      "descricao": "Geografia: Conceito de oásis (contexto angolano).",
+      "opcoes": [
+        {
+          "texto": "Um lugar com água e vegetação no meio do deserto",
+          "correta": true
+        },
+        {
+          "texto": "Uma montanha de areia",
+          "correta": false
+        },
+        {
+          "texto": "Um rio seco",
+          "correta": false
+        },
+        {
+          "texto": "Uma cidade no deserto",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o famoso Rei Afonso I, líder do Reino do Congo que se tornou cristão e trocou cartas com Portugal?",
+      "descricao": "História: Conhecimento de figura histórica pré-colonial.",
+      "opcoes": [
+        {
+          "texto": "Rei Afonso I (Nzinga Mbemba)",
+          "correta": true
+        },
+        {
+          "texto": "Rainha Nzinga",
+          "correta": false
+        },
+        {
+          "texto": "Agostinho Neto",
+          "correta": false
+        },
+        {
+          "texto": "Diogo Cão",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da zona húmida de Angola, com muitas lagoas e aves, um paraíso para a natureza?",
+      "descricao": "Geografia: Identificação de área natural (pântano/zona húmida).",
+      "opcoes": [
+        {
+          "texto": "Lagoas de Mangues/Zonas húmidas do Kwanza",
+          "correta": true
+        },
+        {
+          "texto": "Deserto do Namibe",
+          "correta": false
+        },
+        {
+          "texto": "Monte Moco",
+          "correta": false
+        },
+        {
+          "texto": "Quedas de Kalandula",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a capital da província do Huambo, uma cidade importante no centro de Angola?",
+      "descricao": "Geografia: Identificação de capital de província.",
+      "opcoes": [
+        {
+          "texto": "Huambo",
+          "correta": true
+        },
+        {
+          "texto": "Lubango",
+          "correta": false
+        },
+        {
+          "texto": "Benguela",
+          "correta": false
+        },
+        {
+          "texto": "Cuito",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que era o 'Tráfico de Escravos' em Angola, e por que foi uma parte triste da história?",
+      "descricao": "História: Conceito de tráfico de escravos (simplificado).",
+      "opcoes": [
+        {
+          "texto": "Foi quando pessoas de Angola eram levadas à força para outros países para serem escravas, era muito injusto e cruel",
+          "correta": true
+        },
+        {
+          "texto": "Era uma forma de comércio normal",
+          "correta": false
+        },
+        {
+          "texto": "Era uma forma de viajar para outros países",
+          "correta": false
+        },
+        {
+          "texto": "Era uma troca de presentes",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Para que serve a 'Refinaria de Petróleo' em Luanda?",
+      "descricao": "Geografia: Função de infraestrutura económica (contexto angolano).",
+      "opcoes": [
+        {
+          "texto": "Transforma o petróleo bruto em gasolina e outros produtos para usar nos carros e na indústria",
+          "correta": true
+        },
+        {
+          "texto": "Guarda água",
+          "correta": false
+        },
+        {
+          "texto": "Pesca peixe",
+          "correta": false
+        },
+        {
+          "texto": "Planta árvores",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso grupo musical angolano que canta Semba e Kizomba e é muito antigo?",
+      "descricao": "Cultura Geral: Identificação de grupo musical local (veterano).",
+      "opcoes": [
+        {
+          "texto": "Os Kiezos (ou N'gola Ritmos)",
+          "correta": true
+        },
+        {
+          "texto": "Afrikaners",
+          "correta": false
+        },
+        {
+          "texto": "Banda Maravilha",
+          "correta": false
+        },
+        {
+          "texto": "Zona 5",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é o 'Fundo Soberano de Angola' (FSDEA)?",
+      "descricao": "Cultura Geral: Conceito de Fundo Soberano (simplificado).",
+      "opcoes": [
+        {
+          "texto": "É um dinheiro do país que o governo guarda e investe para o futuro de Angola",
+          "correta": true
+        },
+        {
+          "texto": "É o dinheiro que as pessoas usam para comprar comida",
+          "correta": false
+        },
+        {
+          "texto": "É o dinheiro para festas",
+          "correta": false
+        },
+        {
+          "texto": "É o dinheiro para comprar carros",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do inventor do telefone, que nos permite falar com pessoas que estão longe?",
+      "descricao": "História: Conhecimento de figuras históricas e invenções.",
+      "opcoes": [
+        {
+          "texto": "Alexander Graham Bell",
+          "correta": true
+        },
+        {
+          "texto": "Thomas Edison",
+          "correta": false
+        },
+        {
+          "texto": "Nikola Tesla",
+          "correta": false
+        },
+        {
+          "texto": "Guglielmo Marconi",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a diferença entre uma 'cidade' e uma 'província' em Angola?",
+      "descricao": "Geografia: Distinção entre cidade e província (divisões administrativas).",
+      "opcoes": [
+        {
+          "texto": "Cidade é um centro urbano; Província é uma área maior que inclui várias cidades e zonas rurais",
+          "correta": true
+        },
+        {
+          "texto": "Cidade é só de dia, província é só de noite",
+          "correta": false
+        },
+        {
+          "texto": "Cidade tem hospitais, província não",
+          "correta": false
+        },
+        {
+          "texto": "Não há diferença",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'geoparque' em Angola, como o de 'Tundavala' na Huíla?",
+      "descricao": "Geografia: Conceito de geoparque (contexto angolano).",
+      "opcoes": [
+        {
+          "texto": "Uma área com paisagens e rochas únicas, protegida e usada para educação e turismo",
+          "correta": true
+        },
+        {
+          "texto": "Um parque de diversões",
+          "correta": false
+        },
+        {
+          "texto": "Uma floresta tropical",
+          "correta": false
+        },
+        {
+          "texto": "Uma fazenda de animais",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso observatório astronómico em Angola, onde se estudam as estrelas?",
+      "descricao": "Geografia: Identificação de observatório astronómico (contexto angolano).",
+      "opcoes": [
+        {
+          "texto": "Observatório Astronómico de Luanda",
+          "correta": true
+        },
+        {
+          "texto": "Planetário de Luanda",
+          "correta": false
+        },
+        {
+          "texto": "Centro Espacial Angolano",
+          "correta": false
+        },
+        {
+          "texto": "Estação Espacial",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Quem foi a primeira mulher a ser astronauta no espaço?",
+      "descricao": "História: Conhecimento de figuras históricas na exploração espacial (mulheres).",
+      "opcoes": [
+        {
+          "texto": "Valentina Tereshkova",
+          "correta": true
+        },
+        {
+          "texto": "Sally Ride",
+          "correta": false
+        },
+        {
+          "texto": "Mae Jemison",
+          "correta": false
+        },
+        {
+          "texto": "Yuri Gagarin",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "12": [
+    {
+      "pergunta": "Qual a importância da Conferência de Berlim (1884-1885) para a história de Angola?",
+      "descricao": "História: Conhecimento de evento histórico e suas consequências para Angola.",
+      "opcoes": [
+        {
+          "texto": "Dividiu a África (incluindo Angola) entre os países europeus sem a opinião dos africanos",
+          "correta": true
+        },
+        {
+          "texto": "Deu a independência a Angola",
+          "correta": false
+        },
+        {
+          "texto": "Criou a moeda de Angola",
+          "correta": false
+        },
+        {
+          "texto": "Estabeleceu a paz em África",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a principal exportação de Angola para outros países, além do petróleo?",
+      "descricao": "Geografia: Identificação de outra exportação importante de Angola.",
+      "opcoes": [
+        {
+          "texto": "Diamantes",
+          "correta": true
+        },
+        {
+          "texto": "Café",
+          "correta": false
+        },
+        {
+          "texto": "Madeira",
+          "correta": false
+        },
+        {
+          "texto": "Peixe",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da savana africana com muitas acácias e animais selvagens que se estende por Angola?",
+      "descricao": "Geografia: Identificação de tipo de bioma em Angola.",
+      "opcoes": [
+        {
+          "texto": "Savana Angolana",
+          "correta": true
+        },
+        {
+          "texto": "Deserto do Saara",
+          "correta": false
+        },
+        {
+          "texto": "Floresta Amazónica",
+          "correta": false
+        },
+        {
+          "texto": "Tundra",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o famoso líder angolano que lutou contra a escravatura e a colonização portuguesa no século XVII?",
+      "descricao": "História: Conhecimento de figura histórica angolana (Século XVII).",
+      "opcoes": [
+        {
+          "texto": "Ngola Kiluanje",
+          "correta": true
+        },
+        {
+          "texto": "Agostinho Neto",
+          "correta": false
+        },
+        {
+          "texto": "Jonas Savimbi",
+          "correta": false
+        },
+        {
+          "texto": "Diogo Cão",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'manguezal' em Angola, e por que é importante para os animais?",
+      "descricao": "Geografia: Conceito de ecossistema costeiro (manguezal) e sua importância.",
+      "opcoes": [
+        {
+          "texto": "Uma floresta na costa com árvores que vivem na água salgada, lar de muitos peixes e caranguejos",
+          "correta": true
+        },
+        {
+          "texto": "Uma praia muito grande",
+          "correta": false
+        },
+        {
+          "texto": "Um deserto perto do mar",
+          "correta": false
+        },
+        {
+          "texto": "Uma montanha costeira",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a capital da província do Cunene, no sul de Angola, perto da fronteira com a Namíbia?",
+      "descricao": "Geografia: Identificação de capital de província.",
+      "opcoes": [
+        {
+          "texto": "Ondjiva",
+          "correta": true
+        },
+        {
+          "texto": "Lubango",
+          "correta": false
+        },
+        {
+          "texto": "Namibe",
+          "correta": false
+        },
+        {
+          "texto": "Santa Clara",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que era a 'Rota dos Escravos' em Angola, e que marcas deixou na história?",
+      "descricao": "História: Conceito da Rota dos Escravos e seu impacto.",
+      "opcoes": [
+        {
+          "texto": "O caminho por onde os escravos eram levados para os navios, deixando uma marca de sofrimento e injustiça",
+          "correta": true
+        },
+        {
+          "texto": "Uma rota de comércio de especiarias",
+          "correta": false
+        },
+        {
+          "texto": "Uma rota de exploração de ouro",
+          "correta": false
+        },
+        {
+          "texto": "Um caminho para a liberdade",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Para que serve a 'Bolsa de Valores' em Angola?",
+      "descricao": "Cultura Geral: Função da Bolsa de Valores (simplificado).",
+      "opcoes": [
+        {
+          "texto": "É um lugar onde as empresas vendem e compram ações para conseguir dinheiro e crescer",
+          "correta": true
+        },
+        {
+          "texto": "É um mercado de fruta",
+          "correta": false
+        },
+        {
+          "texto": "É um lugar para fazer jogos",
+          "correta": false
+        },
+        {
+          "texto": "É um museu",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso estilo musical angolano que é mais antigo que a Kizomba e é a base de muitas danças tradicionais?",
+      "descricao": "Cultura Geral: Identificação de estilo musical tradicional (Semba).",
+      "opcoes": [
+        {
+          "texto": "Semba",
+          "correta": true
+        },
+        {
+          "texto": "Kizomba",
+          "correta": false
+        },
+        {
+          "texto": "Zouk",
+          "correta": false
+        },
+        {
+          "texto": "Afro House",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é uma 'estrela de nêutrons' (muito simplificado)?",
+      "descricao": "Geografia: Conceito de estrela de nêutrons (astronomia).",
+      "opcoes": [
+        {
+          "texto": "É o que sobra de uma estrela grande que morreu, é muito pequena e pesada",
+          "correta": true
+        },
+        {
+          "texto": "É uma estrela que nasce agora",
+          "correta": false
+        },
+        {
+          "texto": "É um planeta gigante",
+          "correta": false
+        },
+        {
+          "texto": "É um buraco negro",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o famoso líder angolano, poeta e primeiro Presidente da República?",
+      "descricao": "História: Identificação do primeiro Presidente de Angola (com mais detalhes).",
+      "opcoes": [
+        {
+          "texto": "Agostinho Neto",
+          "correta": true
+        },
+        {
+          "texto": "Jonas Savimbi",
+          "correta": false
+        },
+        {
+          "texto": "Holden Roberto",
+          "correta": false
+        },
+        {
+          "texto": "José Eduardo dos Santos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância da Barragem de Capanda para Angola?",
+      "descricao": "Geografia: Importância de infraestrutura (barragem).",
+      "opcoes": [
+        {
+          "texto": "Produz energia elétrica para muitas casas e indústrias no país",
+          "correta": true
+        },
+        {
+          "texto": "Guarda peixe",
+          "correta": false
+        },
+        {
+          "texto": "É um lugar para nadar",
+          "correta": false
+        },
+        {
+          "texto": "Ajuda a plantar árvores",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso festival de cinema que acontece em Luanda e mostra filmes angolanos e africanos?",
+      "descricao": "Cultura Geral: Identificação de evento cultural (cinema).",
+      "opcoes": [
+        {
+          "texto": "Festival Internacional de Cinema de Luanda (FIC Luanda)",
+          "correta": true
+        },
+        {
+          "texto": "Carnaval de Luanda",
+          "correta": false
+        },
+        {
+          "texto": "FestiSumbe",
+          "correta": false
+        },
+        {
+          "texto": "Feira Internacional de Luanda (FILDA)",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'agronegócio' em Angola?",
+      "descricao": "Cultura Geral: Conceito de agronegócio (simplificado).",
+      "opcoes": [
+        {
+          "texto": "É o conjunto de atividades de agricultura e criação de animais em grande escala para vender e exportar",
+          "correta": true
+        },
+        {
+          "texto": "É uma fazenda pequena",
+          "correta": false
+        },
+        {
+          "texto": "É a venda de produtos artesanais",
+          "correta": false
+        },
+        {
+          "texto": "É a pesca",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a principal diferença entre uma 'cidade costeira' e uma 'cidade interior' em Angola?",
+      "descricao": "Geografia: Distinção entre tipos de cidades (localização).",
+      "opcoes": [
+        {
+          "texto": "Costeira fica junto ao mar, interior fica longe do mar",
+          "correta": true
+        },
+        {
+          "texto": "Costeira é grande, interior é pequena",
+          "correta": false
+        },
+        {
+          "texto": "Costeira tem montanhas, interior tem desertos",
+          "correta": false
+        },
+        {
+          "texto": "Não há diferença",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "13": [
+    {
+      "pergunta": "Qual a importância da 'Batalha de Ambuíla' (1661) para a história de Angola?",
+      "descricao": "História: Conhecimento de batalha histórica e suas consequências.",
+      "opcoes": [
+        {
+          "texto": "Foi uma batalha importante onde os portugueses venceram o Reino do Congo, enfraquecendo-o",
+          "correta": true
+        },
+        {
+          "texto": "Foi uma batalha pela independência de Angola",
+          "correta": false
+        },
+        {
+          "texto": "Foi o início da paz em Angola",
+          "correta": false
+        },
+        {
+          "texto": "Foi quando descobriram petróleo em Angola",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da província de Angola conhecida pelas suas savanas e por ter a cidade do Cuito?",
+      "descricao": "Geografia: Identificação de província angolana por características geográficas e cidade.",
+      "opcoes": [
+        {
+          "texto": "Bié",
+          "correta": true
+        },
+        {
+          "texto": "Moxico",
+          "correta": false
+        },
+        {
+          "texto": "Cuanza Sul",
+          "correta": false
+        },
+        {
+          "texto": "Huambo",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'planalto' em Angola?",
+      "descricao": "Geografia: Conceito de formação geológica (planalto).",
+      "opcoes": [
+        {
+          "texto": "Uma área de terra alta e plana, como o Planalto Central de Angola",
+          "correta": true
+        },
+        {
+          "texto": "Uma montanha muito alta",
+          "correta": false
+        },
+        {
+          "texto": "Um vale profundo",
+          "correta": false
+        },
+        {
+          "texto": "Um deserto de areia",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Quem foi José Eduardo dos Santos, e qual a sua importância para a história de Angola?",
+      "descricao": "História: Conhecimento de figura política angolana (ex-Presidente).",
+      "opcoes": [
+        {
+          "texto": "Foi o segundo Presidente de Angola, governou por muitos anos e assinou o fim da guerra civil",
+          "correta": true
+        },
+        {
+          "texto": "Foi o primeiro Presidente de Angola",
+          "correta": false
+        },
+        {
+          "texto": "Foi um explorador",
+          "correta": false
+        },
+        {
+          "texto": "Foi um cantor famoso",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'estuário' em Angola, como a foz do Rio Kwanza?",
+      "descricao": "Geografia: Conceito de formação costeira (estuário).",
+      "opcoes": [
+        {
+          "texto": "É a parte de um rio que encontra o mar, onde a água doce e salgada se misturam",
+          "correta": true
+        },
+        {
+          "texto": "Uma ilha",
+          "correta": false
+        },
+        {
+          "texto": "Uma praia grande",
+          "correta": false
+        },
+        {
+          "texto": "Uma montanha perto do mar",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a capital da província do Kuanza Norte, uma província importante na produção de café?",
+      "descricao": "Geografia: Identificação de capital de província.",
+      "opcoes": [
+        {
+          "texto": "N'dalatando",
+          "correta": true
+        },
+        {
+          "texto": "Uíge",
+          "correta": false
+        },
+        {
+          "texto": "Malanje",
+          "correta": false
+        },
+        {
+          "texto": "Ondjiva",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que são as 'Linhas Vermelhas' na história de Angola (simplificado para o fim da guerra civil)?",
+      "descricao": "História: Conceito de marco importante (fim da guerra civil).",
+      "opcoes": [
+        {
+          "texto": "Foram os acordos e momentos que marcaram o fim da guerra civil e o início da paz",
+          "correta": true
+        },
+        {
+          "texto": "Linhas na bandeira",
+          "correta": false
+        },
+        {
+          "texto": "Caminhos secretos",
+          "correta": false
+        },
+        {
+          "texto": "Desenhos antigos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que são os 'kilombos' na cultura angolana (como em Angola, comunidades antigas)?",
+      "descricao": "Cultura Geral: Conceito de kilombos (comunidades).",
+      "opcoes": [
+        {
+          "texto": "Eram comunidades formadas por escravos fugidos e por pessoas que resistiam à colonização, buscando liberdade",
+          "correta": true
+        },
+        {
+          "texto": "São cidades grandes",
+          "correta": false
+        },
+        {
+          "texto": "São tipos de escolas",
+          "correta": false
+        },
+        {
+          "texto": "São festivais de música",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso festival de teatro que acontece em Luanda, com peças de Angola e outros países?",
+      "descricao": "Cultura Geral: Identificação de evento cultural (teatro).",
+      "opcoes": [
+        {
+          "texto": "Festival Internacional de Teatro de Luanda (FITL)",
+          "correta": true
+        },
+        {
+          "texto": "Carnaval de Luanda",
+          "correta": false
+        },
+        {
+          "texto": "FestiSumbe",
+          "correta": false
+        },
+        {
+          "texto": "Feira Internacional de Luanda (FILDA)",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'planeta gasoso'?",
+      "descricao": "Geografia: Conceito de planeta gasoso (astronomia).",
+      "opcoes": [
+        {
+          "texto": "É um planeta muito grande, feito principalmente de gases, sem superfície sólida (ex: Júpiter, Saturno)",
+          "correta": true
+        },
+        {
+          "texto": "É um planeta pequeno",
+          "correta": false
+        },
+        {
+          "texto": "É um planeta feito de rocha",
+          "correta": false
+        },
+        {
+          "texto": "É uma estrela",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um famoso cientista angolano que estuda os animais ou as plantas de Angola?",
+      "descricao": "Cultura Geral: Identificação de figura científica angolana (ex: biólogo, botânico).",
+      "opcoes": [
+        {
+          "texto": "Generic name of an Angolan scientist (e.g., um biólogo que estuda a natureza de Angola)",
+          "correta": true
+        },
+        {
+          "texto": "Um músico",
+          "correta": false
+        },
+        {
+          "texto": "Um político",
+          "correta": false
+        },
+        {
+          "texto": "Um atleta",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância das 'Rotas de Comércio' antigas em Angola, como as rotas de sal e cobre?",
+      "descricao": "História: Importância das rotas comerciais antigas.",
+      "opcoes": [
+        {
+          "texto": "Serviam para trocar produtos importantes entre diferentes reinos e povos em Angola e além fronteiras",
+          "correta": true
+        },
+        {
+          "texto": "Eram caminhos para a guerra",
+          "correta": false
+        },
+        {
+          "texto": "Eram caminhos para as festas",
+          "correta": false
+        },
+        {
+          "texto": "Eram rios secos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'geógrafo'?",
+      "descricao": "Cultura Geral: Identificação de profissão (geógrafo).",
+      "opcoes": [
+        {
+          "texto": "Uma pessoa que estuda a Terra, os mapas, as paisagens e como as pessoas vivem nos lugares",
+          "correta": true
+        },
+        {
+          "texto": "Uma pessoa que estuda os animais",
+          "correta": false
+        },
+        {
+          "texto": "Uma pessoa que canta",
+          "correta": false
+        },
+        {
+          "texto": "Uma pessoa que constrói casas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso instrumento musical angolano que é um tipo de 'tambor de fricção' e faz um som 'gemido'?",
+      "descricao": "Cultura Geral: Identificação de instrumento musical local (Puita).",
+      "opcoes": [
+        {
+          "texto": "Puita",
+          "correta": true
+        },
+        {
+          "texto": "Ngoma",
+          "correta": false
+        },
+        {
+          "texto": "Dikanza",
+          "correta": false
+        },
+        {
+          "texto": "Kissange",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'cometa'?",
+      "descricao": "Geografia: Conceito de cometa (astronomia).",
+      "opcoes": [
+        {
+          "texto": "Uma 'bola de gelo sujo' que brilha no céu com uma cauda",
+          "correta": true
+        },
+        {
+          "texto": "Uma estrela que pisca",
+          "correta": false
+        },
+        {
+          "texto": "Um planeta pequeno",
+          "correta": false
+        },
+        {
+          "texto": "Uma nuvem especial",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "14": [
+    {
+      "pergunta": "Qual foi a importância da 'Feira Internacional de Luanda' (FILDA) para a economia de Angola?",
+      "descricao": "História: Importância de evento económico (FILDA).",
+      "opcoes": [
+        {
+          "texto": "É um grande evento onde empresas de Angola e de outros países mostram e vendem os seus produtos, ajudando o comércio",
+          "correta": true
+        },
+        {
+          "texto": "É uma festa de música",
+          "correta": false
+        },
+        {
+          "texto": "É um jogo de futebol",
+          "correta": false
+        },
+        {
+          "texto": "É um lugar para passear",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso deserto na Namíbia que se estende até Angola, conhecido pelas suas dunas gigantes?",
+      "descricao": "Geografia: Identificação de deserto (Namibe).",
+      "opcoes": [
+        {
+          "texto": "Deserto do Namibe",
+          "correta": true
+        },
+        {
+          "texto": "Deserto do Saara",
+          "correta": false
+        },
+        {
+          "texto": "Deserto de Gobi",
+          "correta": false
+        },
+        {
+          "texto": "Deserto Kalahari",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que são as 'ilhas costeiras' de Angola, como a Ilha de Luanda, e qual a sua importância?",
+      "descricao": "Geografia: Conceito de ilha costeira (contexto angolano).",
+      "opcoes": [
+        {
+          "texto": "São pequenas ilhas perto da costa, importantes para a pesca, turismo e por vezes para a vida selvagem",
+          "correta": true
+        },
+        {
+          "texto": "São ilhas que estão no meio do oceano",
+          "correta": false
+        },
+        {
+          "texto": "São montanhas no mar",
+          "correta": false
+        },
+        {
+          "texto": "São lugares só para plantar",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o famoso líder angolano, poeta e primeiro Presidente da República?",
+      "descricao": "História: Identificação do primeiro Presidente de Angola (com mais detalhes).",
+      "opcoes": [
+        {
+          "texto": "Agostinho Neto",
+          "correta": true
+        },
+        {
+          "texto": "Jonas Savimbi",
+          "correta": false
+        },
+        {
+          "texto": "Holden Roberto",
+          "correta": false
+        },
+        {
+          "texto": "José Eduardo dos Santos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância da Barragem de Capanda para Angola?",
+      "descricao": "Geografia: Importância de infraestrutura (barragem).",
+      "opcoes": [
+        {
+          "texto": "Produz energia elétrica para muitas casas e indústrias no país",
+          "correta": true
+        },
+        {
+          "texto": "Guarda peixe",
+          "correta": false
+        },
+        {
+          "texto": "É um lugar para nadar",
+          "correta": false
+        },
+        {
+          "texto": "Ajuda a plantar árvores",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da capital da província do Kuanza Norte, uma província importante na produção de café?",
+      "descricao": "Geografia: Identificação de capital de província.",
+      "opcoes": [
+        {
+          "texto": "N'dalatando",
+          "correta": true
+        },
+        {
+          "texto": "Uíge",
+          "correta": false
+        },
+        {
+          "texto": "Malanje",
+          "correta": false
+        },
+        {
+          "texto": "Ondjiva",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que eram as 'Companhias Majestáticas' na história de Angola?",
+      "descricao": "História: Conceito de Companhias Majestáticas (exploração colonial).",
+      "opcoes": [
+        {
+          "texto": "Grandes empresas que tinham permissão do governo colonial para explorar recursos e controlar o comércio em vastas áreas de Angola",
+          "correta": true
+        },
+        {
+          "texto": "Grupos de dança tradicionais",
+          "correta": false
+        },
+        {
+          "texto": "Grupos de estudantes",
+          "correta": false
+        },
+        {
+          "texto": "Companhias de teatro",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um famoso grupo musical angolano que canta Semba e Kizomba e é muito antigo?",
+      "descricao": "Cultura Geral: Identificação de grupo musical local (veterano).",
+      "opcoes": [
+        {
+          "texto": "Os Kiezos (ou N'gola Ritmos)",
+          "correta": true
+        },
+        {
+          "texto": "Afrikaners",
+          "correta": false
+        },
+        {
+          "texto": "Banda Maravilha",
+          "correta": false
+        },
+        {
+          "texto": "Zona 5",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é o 'Fundo Soberano de Angola' (FSDEA)?",
+      "descricao": "Cultura Geral: Conceito de Fundo Soberano (simplificado).",
+      "opcoes": [
+        {
+          "texto": "É um dinheiro do país que o governo guarda e investe para o futuro de Angola",
+          "correta": true
+        },
+        {
+          "texto": "É o dinheiro que as pessoas usam para comprar comida",
+          "correta": false
+        },
+        {
+          "texto": "É o dinheiro para festas",
+          "correta": false
+        },
+        {
+          "texto": "É o dinheiro para comprar carros",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'planeta gasoso'?",
+      "descricao": "Geografia: Conceito de planeta gasoso (astronomia).",
+      "opcoes": [
+        {
+          "texto": "É um planeta muito grande, feito principalmente de gases, sem superfície sólida (ex: Júpiter, Saturno)",
+          "correta": true
+        },
+        {
+          "texto": "É um planeta pequeno",
+          "correta": false
+        },
+        {
+          "texto": "É um planeta feito de rocha",
+          "correta": false
+        },
+        {
+          "texto": "É uma estrela",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome de um famoso cientista angolano que estuda os animais ou as plantas de Angola?",
+      "descricao": "Cultura Geral: Identificação de figura científica angolana (ex: biólogo, botânico).",
+      "opcoes": [
+        {
+          "texto": "Generic name of an Angolan scientist (e.g., um biólogo que estuda a natureza de Angola)",
+          "correta": true
+        },
+        {
+          "texto": "Um músico",
+          "correta": false
+        },
+        {
+          "texto": "Um político",
+          "correta": false
+        },
+        {
+          "texto": "Um atleta",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a importância das 'Rotas de Comércio' antigas em Angola, como as rotas de sal e cobre?",
+      "descricao": "História: Importância das rotas comerciais antigas.",
+      "opcoes": [
+        {
+          "texto": "Serviam para trocar produtos importantes entre diferentes reinos e povos em Angola e além fronteiras",
+          "correta": true
+        },
+        {
+          "texto": "Eram caminhos para a guerra",
+          "correta": false
+        },
+        {
+          "texto": "Eram caminhos para as festas",
+          "correta": false
+        },
+        {
+          "texto": "Eram rios secos",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'geógrafo'?",
+      "descricao": "Cultura Geral: Identificação de profissão (geógrafo).",
+      "opcoes": [
+        {
+          "texto": "Uma pessoa que estuda a Terra, os mapas, as paisagens e como as pessoas vivem nos lugares",
+          "correta": true
+        },
+        {
+          "texto": "Uma pessoa que estuda os animais",
+          "correta": false
+        },
+        {
+          "texto": "Uma pessoa que canta",
+          "correta": false
+        },
+        {
+          "texto": "Uma pessoa que constrói casas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso instrumento musical angolano que é um tipo de 'tambor de fricção' e faz um som 'gemido'?",
+      "descricao": "Cultura Geral: Identificação de instrumento musical local (Puita).",
+      "opcoes": [
+        {
+          "texto": "Puita",
+          "correta": true
+        },
+        {
+          "texto": "Ngoma",
+          "correta": false
+        },
+        {
+          "texto": "Dikanza",
+          "correta": false
+        },
+        {
+          "texto": "Kissange",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'cometa'?",
+      "descricao": "Geografia: Conceito de cometa (astronomia).",
+      "opcoes": [
+        {
+          "texto": "Uma 'bola de gelo sujo' que brilha no céu com uma cauda",
+          "correta": true
+        },
+        {
+          "texto": "Uma estrela que pisca",
+          "correta": false
+        },
+        {
+          "texto": "Um planeta pequeno",
+          "correta": false
+        },
+        {
+          "texto": "Uma nuvem especial",
+          "correta": false
+        }
+      ]
+    }
+  ],
+  "15": [
+    {
+      "pergunta": "Qual o nome do famoso explorador português que descobriu o caminho marítimo para a Índia?",
+      "descricao": "História: Conhecimento de figuras históricas e grandes navegações.",
+      "opcoes": [
+        {
+          "texto": "Vasco da Gama",
+          "correta": true
+        },
+        {
+          "texto": "Cristóvão Colombo",
+          "correta": false
+        },
+        {
+          "texto": "Fernão de Magalhães",
+          "correta": false
+        },
+        {
+          "texto": "Pedro Álvares Cabral",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'recife de coral'?",
+      "descricao": "Geografia: Conceito de ecossistema marinho.",
+      "opcoes": [
+        {
+          "texto": "Uma estrutura feita de pequenos animais marinhos coloridos, onde vivem muitos peixes",
+          "correta": true
+        },
+        {
+          "texto": "Um tipo de ilha",
+          "correta": false
+        },
+        {
+          "texto": "Uma montanha no fundo do mar",
+          "correta": false
+        },
+        {
+          "texto": "Uma floresta de algas",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual a capital da China, famosa pela Cidade Proibida?",
+      "descricao": "Geografia: Identificação de capital e marco histórico.",
+      "opcoes": [
+        {
+          "texto": "Pequim",
+          "correta": true
+        },
+        {
+          "texto": "Tóquio",
+          "correta": false
+        },
+        {
+          "texto": "Xangai",
+          "correta": false
+        },
+        {
+          "texto": "Seul",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Quem foi o famoso líder que libertou a Índia do domínio britânico, usando a não-violência?",
+      "descricao": "História: Conhecimento de figuras históricas e movimentos de independência.",
+      "opcoes": [
+        {
+          "texto": "Mahatma Gandhi",
+          "correta": true
+        },
+        {
+          "texto": "Nelson Mandela",
+          "correta": false
+        },
+        {
+          "texto": "Martin Luther King Jr.",
+          "correta": false
+        },
+        {
+          "texto": "Winston Churchill",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'vulcanismo'?",
+      "descricao": "Geografia: Conceito de vulcanismo.",
+      "opcoes": [
+        {
+          "texto": "O fenómeno de erupção de vulcões, quando a lava e cinzas saem da Terra",
+          "correta": true
+        },
+        {
+          "texto": "Quando a Terra treme muito",
+          "correta": false
+        },
+        {
+          "texto": "Quando chove muito forte",
+          "correta": false
+        },
+        {
+          "texto": "Quando o vento sopra muito forte",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da famosa estátua em forma de mulher com um braço levantado na cidade de Nova Iorque?",
+      "descricao": "Geografia: Identificação de marco famoso.",
+      "opcoes": [
+        {
+          "texto": "Estátua da Liberdade",
+          "correta": true
+        },
+        {
+          "texto": "Cristo Redentor",
+          "correta": false
+        },
+        {
+          "texto": "Esfinge",
+          "correta": false
+        },
+        {
+          "texto": "Mona Lisa",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da pessoa que faz e escreve as letras das músicas?",
+      "descricao": "Cultura Geral: Identificação de profissão (letrista/compositor).",
+      "opcoes": [
+        {
+          "texto": "Letrista/Compositor(a)",
+          "correta": true
+        },
+        {
+          "texto": "Cantor(a)",
+          "correta": false
+        },
+        {
+          "texto": "Pintor(a)",
+          "correta": false
+        },
+        {
+          "texto": "Escritor(a)",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'sistema de governo'?",
+      "descricao": "Cultura Geral: Conceito de sistema de governo (simplificado).",
+      "opcoes": [
+        {
+          "texto": "A forma como um país é organizado e governado (ex: democracia, monarquia)",
+          "correta": true
+        },
+        {
+          "texto": "As leis de um país",
+          "correta": false
+        },
+        {
+          "texto": "As pessoas que vivem num país",
+          "correta": false
+        },
+        {
+          "texto": "A capital de um país",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso explorador que chegou à Índia, dando a volta à África?",
+      "descricao": "História: Conhecimento de figuras históricas e grandes navegações.",
+      "opcoes": [
+        {
+          "texto": "Vasco da Gama",
+          "correta": true
+        },
+        {
+          "texto": "Cristóvão Colombo",
+          "correta": false
+        },
+        {
+          "texto": "Fernão de Magalhães",
+          "correta": false
+        },
+        {
+          "texto": "James Cook",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'planeta anão'?",
+      "descricao": "Geografia: Conceito de planeta anão.",
+      "opcoes": [
+        {
+          "texto": "Um corpo celeste como um planeta, mas mais pequeno e que não limpou sua órbita",
+          "correta": true
+        },
+        {
+          "texto": "Um planeta bebé",
+          "correta": false
+        },
+        {
+          "texto": "Uma estrela pequena",
+          "correta": false
+        },
+        {
+          "texto": "Um satélite",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso explorador que viajou pela Rota da Seda até à China, vindo da Europa?",
+      "descricao": "História: Conhecimento de figuras históricas e rotas comerciais.",
+      "opcoes": [
+        {
+          "texto": "Marco Polo",
+          "correta": true
+        },
+        {
+          "texto": "Fernão de Magalhães",
+          "correta": false
+        },
+        {
+          "texto": "Cristóvão Colombo",
+          "correta": false
+        },
+        {
+          "texto": "Vasco da Gama",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual é a capital da Espanha, famosa por toureiros e flamenco?",
+      "descricao": "Geografia: Identificação de capital e sua cultura.",
+      "opcoes": [
+        {
+          "texto": "Madrid",
+          "correta": true
+        },
+        {
+          "texto": "Barcelona",
+          "correta": false
+        },
+        {
+          "texto": "Sevilha",
+          "correta": false
+        },
+        {
+          "texto": "Valência",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome da famosa cordilheira de montanhas na América do Sul, muito longas e altas?",
+      "descricao": "Geografia: Identificação de cordilheira famosa.",
+      "opcoes": [
+        {
+          "texto": "Cordilheira dos Andes",
+          "correta": true
+        },
+        {
+          "texto": "Montes Urais",
+          "correta": false
+        },
+        {
+          "texto": "Alpes",
+          "correta": false
+        },
+        {
+          "texto": "Himalaias",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "O que é um 'fiorde'?",
+      "descricao": "Geografia: Conceito de formação geográfica.",
+      "opcoes": [
+        {
+          "texto": "Um vale longo e estreito, com paredes íngremes, formado por um glaciar no litoral",
+          "correta": true
+        },
+        {
+          "texto": "Uma montanha muito alta",
+          "correta": false
+        },
+        {
+          "texto": "Um rio subterrâneo",
+          "correta": false
+        },
+        {
+          "texto": "Uma ilha no meio do oceano",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do famoso explorador que chegou ao Polo Sul pela primeira vez?",
+      "descricao": "História: Conhecimento de figuras históricas e exploração geográfica.",
+      "opcoes": [
+        {
+          "texto": "Roald Amundsen",
+          "correta": true
+        },
+        {
+          "texto": "Robert Falcon Scott",
+          "correta": false
+        },
+        {
+          "texto": "Ernest Shackleton",
+          "correta": false
+        },
+        {
+          "texto": "James Cook",
+          "correta": false
+        }
       ]
     }
   ]
 }
+
+

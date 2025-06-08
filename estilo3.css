@@ -4,7 +4,7 @@
 /* --- Estilos Globais e Reset Básico --- */
 :root {
     /* Cores principais */
-    --primary-color: #FF6B6B; /* Vermelho vibrante */
+    --primary-color: #b300b3; /* Vermelho vibrante */
     --secondary-color: #87CEEB; /* Azul Claro (SkyBlue) para botões secundários */
     --accent-color: #FFD166; /* Amarelo ensolarado */
     --dark-blue: #0A1931; /* Azul escuro para texto principal */
@@ -21,27 +21,27 @@
     --border-radius-md: 15px;
 }
 
-/* estilo3.css */
+/* --- Estilos do Tema Padrão --- */
 
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
-body {
-  font-family: 'Orbitron', sans-serif;
-}
-.screen {
-  background: #1E1E1Edd !important;
-}
 .btn {
-  background: #8C00FF;
-  color: #1E1E1E;
+  background: var(--primary-color);
+  color: var(--white);
 }
+
 .btn:hover {
-  transform: scale(1.05);
+  opacity: 0.9;
+  transform: translateY(-1px); /* Adicionado um leve efeito no hover */
 }
+
 .btn.secondary {
-  background: #39FF14;
-  color: #1E1E1E;
+  background: var(--secondary-color);
+  color: var(--dark-blue);
 }
+
+.btn.secondary:hover {
+  opacity: 0.9;
+}
+
 h1, h2 {
-  color: #39FF14;
+  color: var(--dark-blue);
 }
