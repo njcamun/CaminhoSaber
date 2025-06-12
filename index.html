@@ -21,6 +21,7 @@
 </head>
 
 <body>
+<audio id="background-music" src="sounds/jogo.mp3" loop></audio>
 <main>
     <section id="welcomeScreen" class="screen visible">
         <img src="assets/logo.png" alt="Logo Caminho do Saber" class="logo" />
@@ -145,7 +146,16 @@
 
         <div class="setting-item">
             <input type="checkbox" id="chkAudio" checked />
-            <label for="chkAudio">Áudio</label>
+            <label for="chkAudio">Áudio (Efeitos)</label> </div>
+
+        <div class="setting-item">
+            <label for="volume-background">Volume da Música:</label>
+            <input type="range" id="volume-background" min="0" max="1" step="0.1" value="0.3">
+        </div>
+
+        <div class="setting-item">
+            <label for="volume-effects">Volume dos Efeitos:</label>
+            <input type="range" id="volume-effects" min="0" max="1" step="0.1" value="0.5">
         </div>
 
         <button id="backFromQuizOptions" class="btn secondary">

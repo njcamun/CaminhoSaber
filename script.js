@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const incorrectSound = new Audio('sounds/incorrect.mp3');
   const timeoutSound = new Audio('sounds/timeout.mp3');
   const hintSound = new Audio('sounds/hint.mp3');
+  const reprovouSound = new Audio('sounds/reprovou.mp3');
+  const passouSound = new Audio('sounds/passou.mp3');
 
   // --- Constantes para chaves e estados ---
   const KEYS = {
@@ -124,21 +126,90 @@ document.addEventListener('DOMContentLoaded', () => {
   const chkTime = document.getElementById('chkTime');
   const chkNext = document.getElementById('chkNext');
   const chkAudio = document.getElementById('chkAudio');
+  const backgroundMusic = document.getElementById('background-music');
+  const volumeBackgroundSlider = document.getElementById('volume-background');
+  const volumeEffectsSlider = document.getElementById('volume-effects');
 
   // Funções de Persistência
   function getProgress() { return JSON.parse(localStorage.getItem(KEYS.PROGRESS) || '{}'); }
   function setProgress(progress) { localStorage.setItem(KEYS.PROGRESS, JSON.stringify(progress)); }
   function saveSettings() {
-    quizSettings = { time: chkTime.checked, next: chkNext.checked, audio: chkAudio.checked };
+    quizSettings = {
+    time: chkTime.checked,
+    next: chkNext.checked,
+    audio: chkAudio.checked,
+    volumeBackground: volumeBackgroundSlider.value,
+    volumeEffects: volumeEffectsSlider.value};
     localStorage.setItem(KEYS.SETTINGS, JSON.stringify(quizSettings));
   }
   function loadSettings() {
-    const savedSettings = JSON.parse(localStorage.getItem(KEYS.SETTINGS));
-    if (savedSettings) quizSettings = savedSettings;
-    chkTime.checked = quizSettings.time;
-    chkNext.checked = quizSettings.next;
-    chkAudio.checked = quizSettings.audio;
-  }
+      const savedSettings = JSON.parse(localStorage.getItem(KEYS.SETTINGS));
+
+      // Define os valores padrão primeiro
+      let defaultSettings = { time: true, next: true, audio: true, volumeBackground: 0.1, volumeEffects: 0.3 };
+      quizSettings = { ...defaultSettings, ...savedSettings }; // Junta as configurações salvas com as padrão
+
+      // Aplica as configurações aos elementos HTML
+      chkTime.checked = quizSettings.time;
+      chkNext.checked = quizSettings.next;
+      chkAudio.checked = quizSettings.audio;
+      volumeBackgroundSlider.value = quizSettings.volumeBackground;
+      volumeEffectsSlider.value = quizSettings.volumeEffects;
+
+      // Aplica o volume aos elementos de áudio
+      if (backgroundMusic)
+      backgroundMusic.volume = quizSettings.volumeBackground;
+      correctSound.volume = quizSettings.volumeEffects;
+      incorrectSound.volume = quizSettings.volumeEffects;
+      passouSound.volume = quizSettings.volumeEffects;
+      reprovouSound.volume = quizSettings.volumeEffects;
+      timeoutSound.volume = quizSettings.volumeEffects;
+      hintSound.volume = quizSettings.volumeEffects;
+      backgroundMusic.muted = !quizSettings.audio;
+      correctSound.muted = !quizSettings.audio;
+      incorrectSound.muted = !quizSettings.audio;
+      timeoutSound.muted = !quizSettings.audio;
+      hintSound.muted = !quizSettings.audio;
+      passouSound.muted = !quizSettings.audio;
+      reprovouSound.muted = !quizSettings.audio;
+    }
+    if(volumeBackgroundSlider && backgroundMusic) {
+        volumeBackgroundSlider.addEventListener('input', (e) => {
+          const newVolume = e.target.value;
+          backgroundMusic.volume = newVolume;
+
+          // NOVO: Se o utilizador mexe no volume, assumimos que ele quer ouvir o som.
+          // Isto torna o controlo mais intuitivo.
+          if (newVolume > 0 && backgroundMusic.muted) {
+            // Ativa o som mestre e o checkbox correspondente
+            chkAudio.checked = true;
+            // Dispara o evento 'change' para que toda a lógica de desmutar seja executada
+            chkAudio.dispatchEvent(new Event('change'));
+          }
+
+          saveSettings(); // Guarda a alteração
+        });
+      }
+
+      if(volumeEffectsSlider) {
+        volumeEffectsSlider.addEventListener('input', (e) => {
+          const newVolume = e.target.value;
+          correctSound.volume = newVolume;
+          incorrectSound.volume = newVolume;
+          timeoutSound.volume = newVolume;
+          hintSound.volume = newVolume;
+          passouSound.volume = newVolume;
+          reprovouSound.volume = newVolume;
+
+          // NOVO: Se o utilizador mexe no volume, também ativa o som mestre.
+          if (newVolume > 0 && correctSound.muted) {
+            chkAudio.checked = true;
+            chkAudio.dispatchEvent(new Event('change'));
+          }
+
+          saveSettings(); // Guarda a alteração
+        });
+      }
 
   // ======================================
   // 1) Inicialização e Navegação
@@ -198,6 +269,10 @@ document.addEventListener('DOMContentLoaded', () => {
   backToHomeFromCategoryButton.addEventListener('click', () => showScreen('home'));
   backToCategoryFromLevelButton.addEventListener('click', () => showScreen('category'));
   backToLevelFromQuestionButton.addEventListener('click', () => {
+  if (backgroundMusic) {
+          backgroundMusic.pause();
+          backgroundMusic.currentTime = 0; // Reinicia a música para a próxima vez
+        }
     stopQuestionActivities();
     showScreen('level');
   });
@@ -205,7 +280,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // Checkboxes de Opções do Quiz
   chkTime.addEventListener('change', saveSettings);
   chkNext.addEventListener('change', saveSettings);
-  chkAudio.addEventListener('change', saveSettings);
+  chkAudio.addEventListener('change', () => {
+      const isAudioEnabled = chkAudio.checked;
+
+      // Aplica o estado a todos os elementos de áudio
+      backgroundMusic.muted = !isAudioEnabled;
+      correctSound.muted = !isAudioEnabled;
+      incorrectSound.muted = !isAudioEnabled;
+      timeoutSound.muted = !isAudioEnabled;
+      hintSound.muted = !isAudioEnabled;
+      passouSound.muted = !isAudioEnabled;
+      reprovouSound.muted = !isAudioEnabled;
+
+      // Se o áudio foi reativado e a música estava parada, tenta tocá-la novamente
+      // (Apenas se já estivermos dentro do quiz)
+      if (isAudioEnabled && backgroundMusic.paused && currentVisibleScreen === screens.question) {
+          backgroundMusic.play();
+      } else if (!isAudioEnabled) {
+          backgroundMusic.pause();
+      }
+
+      saveSettings(); // Guarda a nova configuração (ligado/desligado)
+    });
 
   // --- Funcionalidade de Dica ---
   hintButton.addEventListener('click', useHint);
@@ -278,6 +374,9 @@ document.addEventListener('DOMContentLoaded', () => {
       levelButton.addEventListener('click', () => {
         if (!levelButton.disabled) {
           currentLevel = levelId;
+          if (backgroundMusic) {
+                    backgroundMusic.play().catch(e => console.error("A reprodução de áudio foi bloqueada:", e));
+                  }
           startQuiz();
         }
       });
@@ -287,6 +386,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Lógica Principal do Quiz ---
   function startQuiz() {
+  if (backgroundMusic) {
+              backgroundMusic.play().catch(e => console.error("A reprodução de áudio falhou:", e));
+            }
     quizQuestions = shuffleArray([...(quizData[currentLevel] || [])]);
     if (quizQuestions.length === 0) {
       feedbackMessageElement.textContent = 'Nenhuma pergunta encontrada para este nível.';
@@ -300,6 +402,14 @@ document.addEventListener('DOMContentLoaded', () => {
     questionCategoryLevelTitle.textContent = `${currentCategory} – Nível ${currentLevel}`;
     displayCurrentQuestion();
   }
+
+  function playBackgroundMusic() {
+      if (backgroundMusic && quizSettings.audio) {
+            backgroundMusic.play().catch(error => {
+              console.log("A reprodução de áudio foi bloqueada pelo navegador.");
+         });
+      }
+    }
 
   function displayCurrentQuestion() {
     stopQuestionActivities();
@@ -418,6 +528,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Tela de Resultado ---
   function showResultScreen() {
+  if (backgroundMusic) {
+        backgroundMusic.pause();
+        backgroundMusic.currentTime = 0; // Reinicia a música para a próxima vez
+      }
     stopQuestionActivities();
     const total = quizQuestions.length;
     const percentage = total > 0 ? (score / total) * 100 : 0;
@@ -435,9 +549,11 @@ document.addEventListener('DOMContentLoaded', () => {
     resultMessageParagraph.textContent = message;
     const nextLevelExists = quizData[(parseInt(currentLevel, 10) + 1).toString()];
     if (nextLevelExists && newStatus !== STATUS.FAILED) {
+      passouSound.play();
       nextLevelButton.classList.remove('hidden');
       nextLevelNumDisplay.textContent = parseInt(currentLevel, 10) + 1;
     } else {
+      reprovouSound.play();
       nextLevelButton.classList.add('hidden');
     }
     showScreen('result');

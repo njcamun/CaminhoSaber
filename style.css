@@ -257,3 +257,24 @@ input[type="text"], input[type="file"] {
   font-weight: 700;
   color: var(--dark-blue, #0A1931);
 }
+#quizOptionsScreen .setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.1em;
+  gap: 1rem; /* Adiciona espaço entre o label e o input */
+}
+#quizOptionsScreen .setting-item input[type="checkbox"] {
+  width: auto;
+  transform: scale(1.2);
+}
+#quizOptionsScreen .setting-item input[type="range"] {
+  width: 50%; /* Faz o slider ocupar mais espaço */
+  cursor: pointer;
+}
+#quizOptionsScreen .setting-item label {
+  cursor: pointer;
+  flex-basis: 150px; /* Alinha os labels */
+  text-align: right;
+}
