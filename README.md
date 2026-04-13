@@ -1,16 +1,19 @@
-# caminho_do_saber
+# Caminho do Saber
 
-A new Flutter project.
+Aplicativo educacional desenvolvido em Flutter.
 
-## Getting Started
+## Web
 
-This project is a starting point for a Flutter application.
+O projeto esta configurado para publicar automaticamente no GitHub Pages a cada push na branch `main`.
 
-A few resources to get you started if this is your first Flutter project:
+Link esperado de publicacao:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- https://njcamun.github.io/CaminhoSaber/
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Desenvolvimento
+
+Comandos principais:
+
+- `flutter pub get`
+- `flutter run`
+- `flutter build web --release`
