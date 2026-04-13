@@ -1,0 +1,805 @@
+{
+  "disciplina": "Quadrivium - Astronomia",
+  "quizzes": [
+    {
+      "id": "astronomia_quiz_1",
+      "capitulo": "Nível 1: O Céu, o Sol, a Lua e as Estrelas",
+      "perguntas": [
+        {
+          "pergunta": "O que vemos no céu durante o dia?",
+          "opcoes": ["A Lua", "O Sol", "As estrelas", "Os planetas"],
+          "respostaCorreta": "O Sol"
+        },
+        {
+          "pergunta": "O que vemos no céu durante a noite?",
+          "opcoes": ["Estrelas e a Lua", "O Sol", "Nuvens sempre", "Fumaça"],
+          "respostaCorreta": "Estrelas e a Lua"
+        },
+        {
+          "pergunta": "Qual é o astro que ilumina a Terra durante o dia?",
+          "opcoes": ["A Lua", "O Sol", "As estrelas", "Os planetas"],
+          "respostaCorreta": "O Sol"
+        },
+        {
+          "pergunta": "Qual astro aparece no céu de noite e muda de forma?",
+          "opcoes": ["A Lua", "O Sol", "As estrelas", "Os cometas"],
+          "respostaCorreta": "A Lua"
+        },
+        {
+          "pergunta": "Como se chamam os pontinhos brilhantes que vemos no céu à noite?",
+          "opcoes": ["Planetas", "Estrelas", "Nuvens", "Pássaros"],
+          "respostaCorreta": "Estrelas"
+        },
+        {
+          "pergunta": "O Sol é:",
+          "opcoes": ["Uma estrela", "Um planeta", "Um satélite", "Um cometa"],
+          "respostaCorreta": "Uma estrela"
+        },
+        {
+          "pergunta": "A Lua é:",
+          "opcoes": ["Um planeta", "Um satélite natural da Terra", "Uma estrela", "Um meteoro"],
+          "respostaCorreta": "Um satélite natural da Terra"
+        },
+        {
+          "pergunta": "As estrelas brilham porque:",
+          "opcoes": [
+            "São bolas de gás muito quente",
+            "São lâmpadas no céu",
+            "Refletem a luz da Lua",
+            "São feitas de pedras"
+          ],
+          "respostaCorreta": "São bolas de gás muito quente"
+        },
+        {
+          "pergunta": "Quando o Sol se põe e escurece, começa:",
+          "opcoes": ["O dia", "A noite", "A manhã", "A tarde"],
+          "respostaCorreta": "A noite"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A identificar o Sol, a Lua e as estrelas no céu",
+            "A calcular órbitas de planetas",
+            "A usar telescópios avançados",
+            "A medir distâncias em anos-luz"
+          ],
+          "respostaCorreta": "A identificar o Sol, a Lua e as estrelas no céu"
+        }
+      ]
+    },
+	{
+      "id": "astronomia_quiz_2",
+      "capitulo": "Nível 2: Luz, Sombra e Céu Claro/Escuro",
+      "perguntas": [
+        {
+          "pergunta": "O que faz o dia ficar claro?",
+          "opcoes": ["A Lua", "O Sol", "As estrelas", "As nuvens"],
+          "respostaCorreta": "O Sol"
+        },
+        {
+          "pergunta": "O que faz a noite ficar escura?",
+          "opcoes": [
+            "A ausência da luz do Sol",
+            "As nuvens",
+            "As estrelas",
+            "A chuva"
+          ],
+          "respostaCorreta": "A ausência da luz do Sol"
+        },
+        {
+          "pergunta": "O que é sombra?",
+          "opcoes": [
+            "A falta de luz atrás de um objeto",
+            "Um raio de luz",
+            "Uma estrela fraca",
+            "Um planeta distante"
+          ],
+          "respostaCorreta": "A falta de luz atrás de um objeto"
+        },
+        {
+          "pergunta": "Se ficas em frente ao Sol, atrás de ti aparece:",
+          "opcoes": ["Uma sombra", "Mais luz", "Uma estrela", "Um planeta"],
+          "respostaCorreta": "Uma sombra"
+        },
+        {
+          "pergunta": "Quando o Sol nasce de manhã, começa o:",
+          "opcoes": ["Dia", "Anoitecer", "Meio-dia", "Inverno"],
+          "respostaCorreta": "Dia"
+        },
+        {
+          "pergunta": "Quando o Sol se põe, começa a:",
+          "opcoes": ["Escurecer", "Clarear", "Chover", "Brilhar mais forte"],
+          "respostaCorreta": "Escurecer"
+        },
+        {
+          "pergunta": "O que vemos melhor durante o dia?",
+          "opcoes": ["As estrelas", "O Sol e as nuvens", "A Lua cheia", "Constelações"],
+          "respostaCorreta": "O Sol e as nuvens"
+        },
+        {
+          "pergunta": "O que vemos melhor durante a noite?",
+          "opcoes": ["As estrelas e a Lua", "O Sol", "As nuvens brancas", "O arco-íris"],
+          "respostaCorreta": "As estrelas e a Lua"
+        },
+        {
+          "pergunta": "Se colocares a tua mão perto de uma lâmpada, o que aparece atrás dela?",
+          "opcoes": ["Uma sombra", "Mais luz", "Um arco-íris", "Um planeta"],
+          "respostaCorreta": "Uma sombra"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "Como a luz do Sol traz o dia, a ausência dele traz a noite, e como as sombras se formam",
+            "Como funcionam os telescópios",
+            "Como calcular distâncias de estrelas",
+            "Como medir o tempo com relógios solares avançados"
+          ],
+          "respostaCorreta": "Como a luz do Sol traz o dia, a ausência dele traz a noite, e como as sombras se formam"
+        }
+      ]
+    },
+	 {
+      "id": "astronomia_quiz_3",
+      "capitulo": "Nível 3: Rotação, Translação e Estações do Ano",
+      "perguntas": [
+        {
+          "pergunta": "O que é rotação da Terra?",
+          "opcoes": [
+            "O movimento da Terra em volta de si mesma",
+            "O movimento da Terra em volta do Sol",
+            "O movimento da Lua em volta da Terra",
+            "O movimento do Sol em volta da Terra"
+          ],
+          "respostaCorreta": "O movimento da Terra em volta de si mesma"
+        },
+        {
+          "pergunta": "Quanto tempo a Terra demora para dar uma volta completa em torno de si mesma?",
+          "opcoes": ["1 hora", "1 dia (24h)", "1 mês", "1 ano"],
+          "respostaCorreta": "1 dia (24h)"
+        },
+        {
+          "pergunta": "O que causa o dia e a noite?",
+          "opcoes": [
+            "A rotação da Terra",
+            "A translação da Terra",
+            "A Lua",
+            "As estrelas"
+          ],
+          "respostaCorreta": "A rotação da Terra"
+        },
+        {
+          "pergunta": "O que é translação da Terra?",
+          "opcoes": [
+            "O movimento da Terra em volta do Sol",
+            "O movimento da Lua em volta da Terra",
+            "O movimento do Sol em volta da Lua",
+            "A rotação da Lua"
+          ],
+          "respostaCorreta": "O movimento da Terra em volta do Sol"
+        },
+        {
+          "pergunta": "Quanto tempo a Terra demora para dar uma volta completa em torno do Sol?",
+          "opcoes": ["1 dia", "1 mês", "1 ano", "10 anos"],
+          "respostaCorreta": "1 ano"
+        },
+        {
+          "pergunta": "O que causa as estações do ano?",
+          "opcoes": [
+            "A translação da Terra e a inclinação do seu eixo",
+            "A rotação da Terra",
+            "As fases da Lua",
+            "O movimento das estrelas"
+          ],
+          "respostaCorreta": "A translação da Terra e a inclinação do seu eixo"
+        },
+        {
+          "pergunta": "Quais são as quatro estações do ano?",
+          "opcoes": [
+            "Verão, Outono, Inverno e Primavera",
+            "Dia, Noite, Chuva e Sol",
+            "Calor, Frio, Vento e Nuvem",
+            "Janeiro, Fevereiro, Março e Abril"
+          ],
+          "respostaCorreta": "Verão, Outono, Inverno e Primavera"
+        },
+        {
+          "pergunta": "Se é verão no hemisfério norte, no hemisfério sul é:",
+          "opcoes": ["Verão também", "Inverno", "Outono", "Primavera"],
+          "respostaCorreta": "Inverno"
+        },
+        {
+          "pergunta": "O que acontece quando a Terra gira em torno do seu próprio eixo?",
+          "opcoes": [
+            "Dia e noite",
+            "Estações do ano",
+            "Eclipse",
+            "Mudança da Lua"
+          ],
+          "respostaCorreta": "Dia e noite"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A diferença entre rotação e translação, e como acontecem o dia/noite e as estações do ano",
+            "Como usar telescópios avançados",
+            "Como medir distâncias até as estrelas",
+            "Como viajar para a Lua"
+          ],
+          "respostaCorreta": "A diferença entre rotação e translação, e como acontecem o dia/noite e as estações do ano"
+        }
+      ]
+    },
+	{
+      "id": "astronomia_quiz_4",
+      "capitulo": "Nível 4: Fases da Lua e Eclipses",
+      "perguntas": [
+        {
+          "pergunta": "A Lua é o satélite natural de qual planeta?",
+          "opcoes": ["Marte", "Júpiter", "Terra", "Vénus"],
+          "respostaCorreta": "Terra"
+        },
+        {
+          "pergunta": "O que causa as fases da Lua?",
+          "opcoes": [
+            "A posição da Lua em relação à Terra e ao Sol",
+            "A rotação da Terra",
+            "O movimento das estrelas",
+            "O vento solar"
+          ],
+          "respostaCorreta": "A posição da Lua em relação à Terra e ao Sol"
+        },
+        {
+          "pergunta": "Qual é a fase da Lua quando ela parece totalmente iluminada?",
+          "opcoes": ["Lua Nova", "Lua Cheia", "Quarto Crescente", "Quarto Minguante"],
+          "respostaCorreta": "Lua Cheia"
+        },
+        {
+          "pergunta": "Qual é a fase da Lua quando não conseguimos vê-la no céu?",
+          "opcoes": ["Lua Nova", "Lua Cheia", "Quarto Crescente", "Quarto Minguante"],
+          "respostaCorreta": "Lua Nova"
+        },
+        {
+          "pergunta": "Qual é a fase da Lua quando só aparece metade iluminada?",
+          "opcoes": ["Lua Nova", "Lua Cheia", "Quarto Crescente ou Minguante", "Eclipse"],
+          "respostaCorreta": "Quarto Crescente ou Minguante"
+        },
+        {
+          "pergunta": "O que é um eclipse solar?",
+          "opcoes": [
+            "Quando a Lua passa entre a Terra e o Sol",
+            "Quando a Terra passa entre a Lua e o Sol",
+            "Quando o Sol desaparece sozinho",
+            "Quando várias estrelas cobrem o Sol"
+          ],
+          "respostaCorreta": "Quando a Lua passa entre a Terra e o Sol"
+        },
+        {
+          "pergunta": "O que é um eclipse lunar?",
+          "opcoes": [
+            "Quando a Terra passa entre o Sol e a Lua",
+            "Quando a Lua passa entre a Terra e o Sol",
+            "Quando a Lua deixa de girar",
+            "Quando as estrelas escondem a Lua"
+          ],
+          "respostaCorreta": "Quando a Terra passa entre o Sol e a Lua"
+        },
+        {
+          "pergunta": "Qual eclipse acontece apenas de noite?",
+          "opcoes": ["Eclipse Solar", "Eclipse Lunar"],
+          "respostaCorreta": "Eclipse Lunar"
+        },
+        {
+          "pergunta": "Qual eclipse acontece apenas de dia?",
+          "opcoes": ["Eclipse Solar", "Eclipse Lunar"],
+          "respostaCorreta": "Eclipse Solar"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "As fases da Lua e como acontecem os eclipses solar e lunar",
+            "Como usar telescópios avançados",
+            "Como calcular órbitas dos planetas",
+            "Como medir a distância até a Lua"
+          ],
+          "respostaCorreta": "As fases da Lua e como acontecem os eclipses solar e lunar"
+        }
+      ]
+    },
+	{
+      "id": "astronomia_quiz_5",
+      "capitulo": "Nível 5: O Sistema Solar e os Planetas",
+      "perguntas": [
+        {
+          "pergunta": "Quantos planetas existem no Sistema Solar?",
+          "opcoes": ["7", "8", "9", "10"],
+          "respostaCorreta": "8"
+        },
+        {
+          "pergunta": "Qual é o planeta mais próximo do Sol?",
+          "opcoes": ["Vénus", "Terra", "Mercúrio", "Marte"],
+          "respostaCorreta": "Mercúrio"
+        },
+        {
+          "pergunta": "Qual é o segundo planeta a partir do Sol?",
+          "opcoes": ["Terra", "Marte", "Vénus", "Júpiter"],
+          "respostaCorreta": "Vénus"
+        },
+        {
+          "pergunta": "Qual é o terceiro planeta a partir do Sol?",
+          "opcoes": ["Marte", "Terra", "Júpiter", "Saturno"],
+          "respostaCorreta": "Terra"
+        },
+        {
+          "pergunta": "Qual é o planeta conhecido como 'planeta vermelho'?",
+          "opcoes": ["Vénus", "Júpiter", "Marte", "Saturno"],
+          "respostaCorreta": "Marte"
+        },
+        {
+          "pergunta": "Qual é o maior planeta do Sistema Solar?",
+          "opcoes": ["Terra", "Júpiter", "Saturno", "Urano"],
+          "respostaCorreta": "Júpiter"
+        },
+        {
+          "pergunta": "Qual planeta tem anéis muito visíveis?",
+          "opcoes": ["Saturno", "Netuno", "Urano", "Vénus"],
+          "respostaCorreta": "Saturno"
+        },
+        {
+          "pergunta": "Qual planeta é conhecido por ter ventos muito fortes e cor azulada?",
+          "opcoes": ["Netuno", "Urano", "Saturno", "Júpiter"],
+          "respostaCorreta": "Netuno"
+        },
+        {
+          "pergunta": "Qual planeta é inclinado e parece 'deitado' em sua rotação?",
+          "opcoes": ["Urano", "Terra", "Marte", "Mercúrio"],
+          "respostaCorreta": "Urano"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "Os 8 planetas do Sistema Solar e a ordem correta deles",
+            "Como calcular eclipses",
+            "Como medir distâncias estelares",
+            "Como usar telescópios avançados"
+          ],
+          "respostaCorreta": "Os 8 planetas do Sistema Solar e a ordem correta deles"
+        }
+      ]
+    },
+	{
+      "id": "astronomia_quiz_6",
+      "capitulo": "Nível 6: Astros Menores e o Sol como Estrela Central",
+      "perguntas": [
+        {
+          "pergunta": "O que são asteroides?",
+          "opcoes": [
+            "Grandes pedras que giram em torno do Sol",
+            "Estrelas cadentes",
+            "Planetas pequenos",
+            "Satélites da Terra"
+          ],
+          "respostaCorreta": "Grandes pedras que giram em torno do Sol"
+        },
+        {
+          "pergunta": "O que são cometas?",
+          "opcoes": [
+            "Corpos celestes de gelo e poeira que deixam uma cauda brilhante",
+            "Planetas pequenos",
+            "Estrelas cadentes",
+            "Sondas espaciais"
+          ],
+          "respostaCorreta": "Corpos celestes de gelo e poeira que deixam uma cauda brilhante"
+        },
+        {
+          "pergunta": "O que são meteoros?",
+          "opcoes": [
+            "Fragmentos de rochas que entram na atmosfera da Terra e queimam",
+            "Planetas pequenos",
+            "Asteroides gigantes",
+            "Satélites naturais"
+          ],
+          "respostaCorreta": "Fragmentos de rochas que entram na atmosfera da Terra e queimam"
+        },
+        {
+          "pergunta": "Quando um meteoro chega até o solo da Terra, é chamado de:",
+          "opcoes": ["Asteroide", "Cometa", "Meteorito", "Satélite"],
+          "respostaCorreta": "Meteorito"
+        },
+        {
+          "pergunta": "O que é o Cinturão de Asteroides?",
+          "opcoes": [
+            "A região entre Marte e Júpiter com muitos asteroides",
+            "Um anel em volta da Terra",
+            "Um círculo de cometas em volta do Sol",
+            "O anel de Saturno"
+          ],
+          "respostaCorreta": "A região entre Marte e Júpiter com muitos asteroides"
+        },
+        {
+          "pergunta": "O que é o Sol?",
+          "opcoes": ["Um planeta", "Uma estrela", "Um satélite", "Um cometa"],
+          "respostaCorreta": "Uma estrela"
+        },
+        {
+          "pergunta": "Por que o Sol é importante para a Terra?",
+          "opcoes": [
+            "Porque dá luz e calor para a vida",
+            "Porque brilha à noite",
+            "Porque gira em volta da Lua",
+            "Porque é feito de pedras"
+          ],
+          "respostaCorreta": "Porque dá luz e calor para a vida"
+        },
+        {
+          "pergunta": "Qual é a principal fonte de energia do Sistema Solar?",
+          "opcoes": ["A Lua", "O Sol", "Júpiter", "As estrelas distantes"],
+          "respostaCorreta": "O Sol"
+        },
+        {
+          "pergunta": "O que são cometas conhecidos por formar quando se aproximam do Sol?",
+          "opcoes": ["Cauda brilhante", "Novo planeta", "Eclipse", "Estrelas"],
+          "respostaCorreta": "Cauda brilhante"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "O que são asteroides, cometas, meteoros e por que o Sol é a estrela central do Sistema Solar",
+            "Como calcular órbitas estelares",
+            "Como medir anos-luz",
+            "Como usar telescópios espaciais avançados"
+          ],
+          "respostaCorreta": "O que são asteroides, cometas, meteoros e por que o Sol é a estrela central do Sistema Solar"
+        }
+      ]
+    },
+	{
+      "id": "astronomia_quiz_7",
+      "capitulo": "Nível 7: Estrelas e Constelações",
+      "perguntas": [
+        {
+          "pergunta": "O que são estrelas?",
+          "opcoes": [
+            "Grandes esferas de gás quente que brilham",
+            "Pedras brilhantes no céu",
+            "Satélites da Terra",
+            "Planetas iluminados pelo Sol"
+          ],
+          "respostaCorreta": "Grandes esferas de gás quente que brilham"
+        },
+        {
+          "pergunta": "De que são feitas principalmente as estrelas?",
+          "opcoes": ["Pedras e terra", "Gelo e poeira", "Hidrogênio e hélio", "Água e ar"],
+          "respostaCorreta": "Hidrogênio e hélio"
+        },
+        {
+          "pergunta": "Como nascem as estrelas?",
+          "opcoes": [
+            "De nuvens de gás e poeira chamadas nebulosas",
+            "De meteoros que se chocam",
+            "De buracos negros",
+            "De planetas que explodem"
+          ],
+          "respostaCorreta": "De nuvens de gás e poeira chamadas nebulosas"
+        },
+        {
+          "pergunta": "O que acontece quando uma estrela muito grande morre?",
+          "opcoes": ["Pode explodir como supernova", "Vira um planeta", "Desaparece sem deixar nada", "Vira um cometa"],
+          "respostaCorreta": "Pode explodir como supernova"
+        },
+        {
+          "pergunta": "O que pode restar depois da morte de uma estrela gigante?",
+          "opcoes": ["Buraco negro ou estrela de nêutrons", "Outro Sol", "Um planeta novo", "Um cometa"],
+          "respostaCorreta": "Buraco negro ou estrela de nêutrons"
+        },
+        {
+          "pergunta": "O que são constelações?",
+          "opcoes": [
+            "Conjuntos de estrelas que formam desenhos no céu",
+            "Planetas alinhados",
+            "Asteroides próximos",
+            "Nuvens escuras"
+          ],
+          "respostaCorreta": "Conjuntos de estrelas que formam desenhos no céu"
+        },
+        {
+          "pergunta": "Qual destas é uma constelação famosa?",
+          "opcoes": ["Órion", "Andrômeda", "Cruzeiro do Sul", "Todas as opções"],
+          "respostaCorreta": "Todas as opções"
+        },
+        {
+          "pergunta": "Em que hemisfério podemos ver o Cruzeiro do Sul?",
+          "opcoes": ["Norte", "Sul", "Leste", "Oeste"],
+          "respostaCorreta": "Sul"
+        },
+        {
+          "pergunta": "O que é uma supernova?",
+          "opcoes": [
+            "Uma grande explosão que acontece quando uma estrela morre",
+            "Um planeta gigante",
+            "Um meteoro muito brilhante",
+            "Um cometa com cauda enorme"
+          ],
+          "respostaCorreta": "Uma grande explosão que acontece quando uma estrela morre"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "O que são estrelas, como nascem, morrem e como identificar constelações",
+            "Como calcular órbitas planetárias",
+            "Como medir eclipses",
+            "Como usar telescópios espaciais avançados"
+          ],
+          "respostaCorreta": "O que são estrelas, como nascem, morrem e como identificar constelações"
+        }
+      ]
+    },
+	{
+      "id": "astronomia_quiz_8",
+      "capitulo": "Nível 8: Galáxias e Anos-Luz",
+      "perguntas": [
+        {
+          "pergunta": "O que é uma galáxia?",
+          "opcoes": [
+            "Um conjunto enorme de estrelas, planetas e poeira cósmica",
+            "Um único planeta gigante",
+            "Um cometa muito brilhante",
+            "Uma estrela cadente"
+          ],
+          "respostaCorreta": "Um conjunto enorme de estrelas, planetas e poeira cósmica"
+        },
+        {
+          "pergunta": "Qual é o nome da galáxia onde está a Terra?",
+          "opcoes": ["Via Láctea", "Andrômeda", "Órion", "Sagitário"],
+          "respostaCorreta": "Via Láctea"
+        },
+        {
+          "pergunta": "A Via Láctea é formada por cerca de:",
+          "opcoes": ["Mil estrelas", "Um milhão de estrelas", "Bilhões de estrelas", "Duas estrelas"],
+          "respostaCorreta": "Bilhões de estrelas"
+        },
+        {
+          "pergunta": "O que é um ano-luz?",
+          "opcoes": [
+            "A distância que a luz percorre em um ano",
+            "O tempo que a Terra demora para girar em torno do Sol",
+            "A idade de uma estrela",
+            "Um calendário especial de astronomia"
+          ],
+          "respostaCorreta": "A distância que a luz percorre em um ano"
+        },
+        {
+          "pergunta": "A luz viaja muito rápido, aproximadamente:",
+          "opcoes": [
+            "300 mil km por segundo",
+            "3 mil km por segundo",
+            "300 km por hora",
+            "3 milhões de km por hora"
+          ],
+          "respostaCorreta": "300 mil km por segundo"
+        },
+        {
+          "pergunta": "Se uma estrela está a 4 anos-luz de distância, isso significa:",
+          "opcoes": [
+            "A luz dela demora 4 anos para chegar até nós",
+            "Ela aparece apenas de 4 em 4 anos",
+            "É uma estrela muito nova",
+            "Ela gira em torno da Lua"
+          ],
+          "respostaCorreta": "A luz dela demora 4 anos para chegar até nós"
+        },
+        {
+          "pergunta": "Qual é a galáxia mais próxima da Via Láctea?",
+          "opcoes": ["Andrômeda", "Órion", "Sagitário", "Centauro"],
+          "respostaCorreta": "Andrômeda"
+        },
+        {
+          "pergunta": "O que são constelações em relação às galáxias?",
+          "opcoes": [
+            "Pequenos grupos de estrelas vistos da Terra",
+            "Galáxias inteiras",
+            "Planetas agrupados",
+            "Nuvens de poeira"
+          ],
+          "respostaCorreta": "Pequenos grupos de estrelas vistos da Terra"
+        },
+        {
+          "pergunta": "Quando olhamos para o céu à noite, o que vemos é apenas uma parte da:",
+          "opcoes": ["Via Láctea", "Andrômeda", "Todas as galáxias", "A Lua"],
+          "respostaCorreta": "Via Láctea"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "O que são galáxias, o que é a Via Láctea e como medir distâncias em anos-luz",
+            "Como calcular eclipses solares",
+            "Como observar meteoros com telescópio",
+            "Como viajar até Marte"
+          ],
+          "respostaCorreta": "O que são galáxias, o que é a Via Láctea e como medir distâncias em anos-luz"
+        }
+      ]
+    },
+	{
+      "id": "astronomia_quiz_9",
+      "capitulo": "Nível 9: Telescópios e Leis de Kepler",
+      "perguntas": [
+        {
+          "pergunta": "O que é um telescópio?",
+          "opcoes": [
+            "Um instrumento que ajuda a observar objetos distantes no céu",
+            "Um satélite artificial",
+            "Um planeta pequeno",
+            "Uma estrela cadente"
+          ],
+          "respostaCorreta": "Um instrumento que ajuda a observar objetos distantes no céu"
+        },
+        {
+          "pergunta": "Qual foi o cientista que usou o telescópio para observar o céu de forma científica?",
+          "opcoes": ["Newton", "Kepler", "Galileu Galilei", "Einstein"],
+          "respostaCorreta": "Galileu Galilei"
+        },
+        {
+          "pergunta": "O que Galileu descobriu ao observar o céu?",
+          "opcoes": [
+            "As luas de Júpiter e montanhas na Lua",
+            "O planeta Plutão",
+            "A velocidade da luz",
+            "As galáxias distantes"
+          ],
+          "respostaCorreta": "As luas de Júpiter e montanhas na Lua"
+        },
+        {
+          "pergunta": "Quem formulou as leis que explicam os movimentos dos planetas?",
+          "opcoes": ["Galileu", "Newton", "Kepler", "Einstein"],
+          "respostaCorreta": "Kepler"
+        },
+        {
+          "pergunta": "O que dizem as Leis de Kepler?",
+          "opcoes": [
+            "Que os planetas giram em órbitas elípticas em torno do Sol",
+            "Que os planetas giram em círculos perfeitos",
+            "Que o Sol gira em torno da Terra",
+            "Que a Lua não se move"
+          ],
+          "respostaCorreta": "Que os planetas giram em órbitas elípticas em torno do Sol"
+        },
+        {
+          "pergunta": "O que é uma órbita elíptica?",
+          "opcoes": [
+            "Um caminho oval que os planetas percorrem em torno do Sol",
+            "Um círculo perfeito",
+            "Um quadrado no espaço",
+            "Um movimento aleatório"
+          ],
+          "respostaCorreta": "Um caminho oval que os planetas percorrem em torno do Sol"
+        },
+        {
+          "pergunta": "Quem formulou a lei da gravitação universal, que explica a força que mantém os planetas em órbita?",
+          "opcoes": ["Newton", "Kepler", "Galileu", "Einstein"],
+          "respostaCorreta": "Newton"
+        },
+        {
+          "pergunta": "O que os telescópios espaciais, como o Hubble, permitem observar?",
+          "opcoes": [
+            "Galáxias distantes e o universo profundo",
+            "Somente a Lua",
+            "Apenas nuvens da Terra",
+            "O interior do Sol"
+          ],
+          "respostaCorreta": "Galáxias distantes e o universo profundo"
+        },
+        {
+          "pergunta": "Por que as leis de Kepler foram importantes?",
+          "opcoes": [
+            "Porque explicaram com precisão o movimento dos planetas",
+            "Porque mostraram como usar telescópios",
+            "Porque mediram a distância até Plutão",
+            "Porque ensinaram como construir foguetes"
+          ],
+          "respostaCorreta": "Porque explicaram com precisão o movimento dos planetas"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "O uso dos telescópios, as descobertas de Galileu e as Leis de Kepler sobre o movimento dos planetas",
+            "A construir satélites",
+            "A viajar até Marte",
+            "A calcular distâncias em anos-luz"
+          ],
+          "respostaCorreta": "O uso dos telescópios, as descobertas de Galileu e as Leis de Kepler sobre o movimento dos planetas"
+        }
+      ]
+    },
+	{
+      "id": "astronomia_quiz_10",
+      "capitulo": "Nível 10: Gravitação Universal e Exploração Espacial",
+      "perguntas": [
+        {
+          "pergunta": "Quem formulou a Lei da Gravitação Universal?",
+          "opcoes": ["Einstein", "Newton", "Galileu", "Kepler"],
+          "respostaCorreta": "Newton"
+        },
+        {
+          "pergunta": "O que diz a Lei da Gravitação Universal?",
+          "opcoes": [
+            "Todos os corpos no universo se atraem pela força da gravidade",
+            "A Terra é o centro do universo",
+            "O Sol gira em torno da Terra",
+            "As estrelas nunca se movem"
+          ],
+          "respostaCorreta": "Todos os corpos no universo se atraem pela força da gravidade"
+        },
+        {
+          "pergunta": "O que mantém a Terra em órbita em volta do Sol?",
+          "opcoes": ["A gravidade do Sol", "O vento solar", "As estrelas", "Os satélites"],
+          "respostaCorreta": "A gravidade do Sol"
+        },
+        {
+          "pergunta": "O que mantém a Lua em órbita em volta da Terra?",
+          "opcoes": ["A gravidade da Terra", "O Sol", "Os cometas", "Os asteroides"],
+          "respostaCorreta": "A gravidade da Terra"
+        },
+        {
+          "pergunta": "O que são satélites artificiais?",
+          "opcoes": [
+            "Máquinas construídas pelo homem que orbitam a Terra ou outros planetas",
+            "Pequenos planetas",
+            "Estrelas cadentes",
+            "Buracos negros"
+          ],
+          "respostaCorreta": "Máquinas construídas pelo homem que orbitam a Terra ou outros planetas"
+        },
+        {
+          "pergunta": "Para que servem os satélites?",
+          "opcoes": [
+            "Comunicações, previsão do tempo, GPS e pesquisas",
+            "Brilhar como estrelas",
+            "Aumentar a luz da Lua",
+            "Controlar os planetas"
+          ],
+          "respostaCorreta": "Comunicações, previsão do tempo, GPS e pesquisas"
+        },
+        {
+          "pergunta": "O que são sondas espaciais?",
+          "opcoes": [
+            "Robôs enviados ao espaço para explorar planetas e luas",
+            "Astronautas que viajam",
+            "Satélites que giram em volta da Terra",
+            "Pequenas estrelas"
+          ],
+          "respostaCorreta": "Robôs enviados ao espaço para explorar planetas e luas"
+        },
+        {
+          "pergunta": "O que é a Estação Espacial Internacional (ISS)?",
+          "opcoes": [
+            "Um laboratório que orbita a Terra onde astronautas vivem e trabalham",
+            "Um satélite natural",
+            "Um foguete em Marte",
+            "Um telescópio na Lua"
+          ],
+          "respostaCorreta": "Um laboratório que orbita a Terra onde astronautas vivem e trabalham"
+        },
+        {
+          "pergunta": "Quem são os astronautas?",
+          "opcoes": [
+            "Pessoas treinadas para viajar e trabalhar no espaço",
+            "Robôs espaciais",
+            "Estrelas cadentes",
+            "Satélites da Terra"
+          ],
+          "respostaCorreta": "Pessoas treinadas para viajar e trabalhar no espaço"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A Lei da Gravitação de Newton e os avanços da exploração espacial (satélites, sondas, astronautas e estações espaciais)",
+            "A calcular eclipses lunares",
+            "A construir foguetes em casa",
+            "A medir distâncias em anos-luz"
+          ],
+          "respostaCorreta": "A Lei da Gravitação de Newton e os avanços da exploração espacial (satélites, sondas, astronautas e estações espaciais)"
+        }
+      ]
+    }
+  ]
+}

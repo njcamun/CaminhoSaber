@@ -1,0 +1,5717 @@
+{
+"disciplina": "gramática",
+"quizzes": [
+{
+"id": "1",
+"capitulo": "O Nome das Coisas: O Substantivo",
+"nivel": "basico",
+"dicas": "Substantivo é o nome das coisas, pessoas, lugares e animais.",
+"perguntas": [
+{
+"pergunta": "O que é um substantivo?",
+"opcoes": ["Uma ação", "Um nome de algo", "Uma cor", "Um som"],
+"respostaCorreta": "Um nome de algo",
+"dica": "É o nome que damos às coisas."
+},
+{
+"pergunta": "Qual palavra é um substantivo?",
+"opcoes": ["Correr", "Bonito", "Mesa", "Rapidamente"],
+"respostaCorreta": "Mesa",
+"dica": "Substantivo nomeia objetos."
+},
+{
+"pergunta": "Qual destes é nome de pessoa?",
+"opcoes": ["Maria", "Correr", "Azul", "Grande"],
+"respostaCorreta": "Maria",
+"dica": "Pessoas também têm nomes."
+},
+{
+"pergunta": "Qual destes é um animal?",
+"opcoes": ["Livro", "Gato", "Mesa", "Caneta"],
+"respostaCorreta": "Gato",
+"dica": "Animais também são substantivos."
+},
+{
+"pergunta": "Qual destes é um lugar?",
+"opcoes": ["Escola", "Pular", "Bonito", "Cantar"],
+"respostaCorreta": "Escola",
+"dica": "Lugares têm nomes."
+},
+{
+"pergunta": "Qual destes é um objeto?",
+"opcoes": ["Cachorro", "Livro", "João", "Brasil"],
+"respostaCorreta": "Livro",
+"dica": "Objetos são coisas que usamos."
+},
+{
+"pergunta": "Para que servem os substantivos?",
+"opcoes": ["Para correr", "Para dar nomes", "Para pular", "Para cantar"],
+"respostaCorreta": "Para dar nomes",
+"dica": "Eles ajudam a identificar coisas."
+},
+{
+"pergunta": "Qual destes é um substantivo?",
+"opcoes": ["Bonito", "Correr", "Bola", "Rápido"],
+"respostaCorreta": "Bola",
+"dica": "Bola é um objeto."
+},
+{
+"pergunta": "Qual palavra nomeia um lugar?",
+"opcoes": ["Jardim", "Correr", "Azul", "Grande"],
+"respostaCorreta": "Jardim",
+"dica": "Pense em um espaço físico."
+},
+{
+"pergunta": "Qual destes é nome de coisa?",
+"opcoes": ["Mesa", "Pular", "Cantar", "Rir"],
+"respostaCorreta": "Mesa",
+"dica": "Coisas são objetos."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "O Nome das Coisas: O Substantivo",
+"nivel": "medio",
+"dicas": "Substantivos ajudam a organizar o pensamento e identificar tudo ao nosso redor.",
+"perguntas": [
+{
+"pergunta": "Qual frase contém um substantivo?",
+"opcoes": ["O gato corre", "Corre rapidamente", "Muito bonito", "Bem rápido"],
+"respostaCorreta": "O gato corre",
+"dica": "Procure o nome de algo."
+},
+{
+"pergunta": "Qual palavra nomeia um objeto?",
+"opcoes": ["Correr", "Mesa", "Bonito", "Devagar"],
+"respostaCorreta": "Mesa",
+"dica": "Objetos são coisas físicas."
+},
+{
+"pergunta": "Qual destes é substantivo de lugar?",
+"opcoes": ["Cidade", "Correr", "Azul", "Rápido"],
+"respostaCorreta": "Cidade",
+"dica": "Lugar onde vivemos."
+},
+{
+"pergunta": "Na frase 'O menino brinca', qual é o substantivo?",
+"opcoes": ["O", "Menino", "Brinca", "Nenhum"],
+"respostaCorreta": "Menino",
+"dica": "É quem está sendo nomeado."
+},
+{
+"pergunta": "Qual grupo tem apenas substantivos?",
+"opcoes": ["Livro, mesa, bola", "Correr, pular, brincar", "Bonito, alto, rápido", "Muito, pouco, bem"],
+"respostaCorreta": "Livro, mesa, bola",
+"dica": "Todos devem ser nomes."
+},
+{
+"pergunta": "Qual palavra nomeia um animal?",
+"opcoes": ["Leão", "Azul", "Correr", "Grande"],
+"respostaCorreta": "Leão",
+"dica": "Animal é um ser vivo."
+},
+{
+"pergunta": "Para entender uma frase, o substantivo ajuda a identificar:",
+"opcoes": ["A ação", "O tempo", "Quem ou o que", "O modo"],
+"respostaCorreta": "Quem ou o que",
+"dica": "Ele mostra de quem se fala."
+},
+{
+"pergunta": "Qual palavra não é substantivo?",
+"opcoes": ["Caneta", "Livro", "Correr", "Escola"],
+"respostaCorreta": "Correr",
+"dica": "Correr é ação."
+},
+{
+"pergunta": "Qual destes é nome de pessoa?",
+"opcoes": ["Professor", "Mesa", "Livro", "Correr"],
+"respostaCorreta": "Professor",
+"dica": "Pessoa tem profissão."
+},
+{
+"pergunta": "Substantivos ajudam principalmente a:",
+"opcoes": ["Descrever", "Agir", "Nomear", "Ligar palavras"],
+"respostaCorreta": "Nomear",
+"dica": "Eles dão nomes."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "O Nome das Coisas: O Substantivo",
+"nivel": "avancado",
+"dicas": "Substantivos são a base da comunicação e organizam a lógica da linguagem.",
+"perguntas": [
+{
+"pergunta": "Por que os substantivos são importantes?",
+"opcoes": ["Porque indicam ação", "Porque nomeiam e organizam ideias", "Porque mostram tempo", "Porque ligam frases"],
+"respostaCorreta": "Porque nomeiam e organizam ideias",
+"dica": "Eles ajudam a entender o mundo."
+},
+{
+"pergunta": "Na frase 'A professora ensina', qual é o substantivo?",
+"opcoes": ["A", "Professora", "Ensina", "Nenhum"],
+"respostaCorreta": "Professora",
+"dica": "É quem recebe o nome."
+},
+{
+"pergunta": "Qual opção contém apenas substantivos?",
+"opcoes": ["Livro, escola, gato", "Correr, pular, brincar", "Bonito, alto, baixo", "Bem, mal, muito"],
+"respostaCorreta": "Livro, escola, gato",
+"dica": "Todos são nomes."
+},
+{
+"pergunta": "Qual é a função principal do substantivo em uma frase?",
+"opcoes": ["Indicar ação", "Nomear seres", "Descrever qualidades", "Indicar tempo"],
+"respostaCorreta": "Nomear seres",
+"dica": "Ele identifica algo."
+},
+{
+"pergunta": "Sem substantivos, a comunicação seria:",
+"opcoes": ["Mais rápida", "Mais confusa", "Mais bonita", "Mais curta"],
+"respostaCorreta": "Mais confusa",
+"dica": "Não haveria nomes."
+},
+{
+"pergunta": "Qual palavra representa um lugar?",
+"opcoes": ["Jardim", "Correr", "Bonito", "Rápido"],
+"respostaCorreta": "Jardim",
+"dica": "Lugar físico."
+},
+{
+"pergunta": "Na frase 'O cachorro late', o substantivo indica:",
+"opcoes": ["A ação", "O sujeito nomeado", "O tempo", "O modo"],
+"respostaCorreta": "O sujeito nomeado",
+"dica": "Quem faz a ação."
+},
+{
+"pergunta": "Qual destes não é substantivo?",
+"opcoes": ["Mesa", "Livro", "Correr", "Cidade"],
+"respostaCorreta": "Correr",
+"dica": "É um verbo."
+},
+{
+"pergunta": "O substantivo permite:",
+"opcoes": ["Organizar ideias", "Indicar intensidade", "Ligar frases", "Modificar verbos"],
+"respostaCorreta": "Organizar ideias",
+"dica": "Ajuda na lógica."
+},
+{
+"pergunta": "Identifique o substantivo na frase: 'O livro está na mesa'",
+"opcoes": ["Livro e mesa", "Está", "Na", "O"],
+"respostaCorreta": "Livro e mesa",
+"dica": "São os nomes dos objetos."
+}
+]
+},
+{
+"id": "1.1",
+"capitulo": "A Família dos Substantivos: Tipos e Diferenças",
+"nivel": "basico",
+"dicas": "Os substantivos podem ser de vários tipos: comuns, próprios, concretos, abstratos e coletivos.",
+"perguntas": [
+{
+"pergunta": "O que é um substantivo próprio?",
+"opcoes": ["Nome geral", "Nome de ação", "Nome específico", "Nome de cor"],
+"respostaCorreta": "Nome específico",
+"dica": "Ele identifica alguém único."
+},
+{
+"pergunta": "Qual é um substantivo comum?",
+"opcoes": ["Pedro", "Brasil", "Cidade", "Maria"],
+"respostaCorreta": "Cidade",
+"dica": "É um nome geral."
+},
+{
+"pergunta": "Qual começa com letra maiúscula por ser nome próprio?",
+"opcoes": ["cachorro", "menino", "joão", "João"],
+"respostaCorreta": "João",
+"dica": "Nomes próprios usam maiúscula."
+},
+{
+"pergunta": "Qual é um substantivo concreto?",
+"opcoes": ["Amor", "Mesa", "Saudade", "Beleza"],
+"respostaCorreta": "Mesa",
+"dica": "Pode ser visto ou imaginado facilmente."
+},
+{
+"pergunta": "Qual é um substantivo abstrato?",
+"opcoes": ["Livro", "Cadeira", "Amor", "Gato"],
+"respostaCorreta": "Amor",
+"dica": "É um sentimento."
+},
+{
+"pergunta": "O que é um coletivo?",
+"opcoes": ["Um nome de pessoa", "Um conjunto de seres", "Uma ação", "Uma cor"],
+"respostaCorreta": "Um conjunto de seres",
+"dica": "É um grupo em uma palavra."
+},
+{
+"pergunta": "Qual é um coletivo?",
+"opcoes": ["Alcateia", "Lobo", "Mesa", "Casa"],
+"respostaCorreta": "Alcateia",
+"dica": "Significa grupo de lobos."
+},
+{
+"pergunta": "Qual é um substantivo próprio?",
+"opcoes": ["cidade", "escola", "Portugal", "livro"],
+"respostaCorreta": "Portugal",
+"dica": "É um nome único."
+},
+{
+"pergunta": "Qual é um substantivo abstrato?",
+"opcoes": ["Árvore", "Beleza", "Casa", "Livro"],
+"respostaCorreta": "Beleza",
+"dica": "Não podemos tocar."
+},
+{
+"pergunta": "Qual é um substantivo comum?",
+"opcoes": ["Totó", "Pedro", "Menino", "Brasil"],
+"respostaCorreta": "Menino",
+"dica": "Nome geral."
+}
+]
+},
+{
+"id": "1.1",
+"capitulo": "A Família dos Substantivos: Tipos e Diferenças",
+"nivel": "medio",
+"dicas": "Os substantivos têm classificações que ajudam a organizar melhor o significado das palavras.",
+"perguntas": [
+{
+"pergunta": "Qual alternativa contém apenas substantivos próprios?",
+"opcoes": ["Pedro, Maria, Brasil", "menino, cidade, gato", "amor, beleza, saudade", "livro, mesa, cadeira"],
+"respostaCorreta": "Pedro, Maria, Brasil",
+"dica": "São nomes específicos."
+},
+{
+"pergunta": "Qual é um substantivo abstrato?",
+"opcoes": ["Mesa", "Amor", "Cachorro", "Cidade"],
+"respostaCorreta": "Amor",
+"dica": "Não tem forma física."
+},
+{
+"pergunta": "O que diferencia um substantivo próprio de um comum?",
+"opcoes": ["O tamanho", "A cor", "Ser específico", "Ser plural"],
+"respostaCorreta": "Ser específico",
+"dica": "Um é único."
+},
+{
+"pergunta": "Qual palavra é coletivo?",
+"opcoes": ["Biblioteca", "Livro", "Mesa", "Aluno"],
+"respostaCorreta": "Biblioteca",
+"dica": "Conjunto de livros."
+},
+{
+"pergunta": "Qual é um substantivo concreto?",
+"opcoes": ["Saudade", "Beleza", "Árvore", "Amor"],
+"respostaCorreta": "Árvore",
+"dica": "Pode ser visto."
+},
+{
+"pergunta": "Qual grupo tem apenas substantivos abstratos?",
+"opcoes": ["Amor, beleza, saudade", "Mesa, cadeira, livro", "Pedro, Brasil, Maria", "Gato, cachorro, leão"],
+"respostaCorreta": "Amor, beleza, saudade",
+"dica": "São sentimentos."
+},
+{
+"pergunta": "Qual é um substantivo derivado?",
+"opcoes": ["Pedra", "Pedreiro", "Casa", "Flor"],
+"respostaCorreta": "Pedreiro",
+"dica": "Vem de outra palavra."
+},
+{
+"pergunta": "Qual é um substantivo primitivo?",
+"opcoes": ["Pedreiro", "Pedreira", "Pedra", "Livraria"],
+"respostaCorreta": "Pedra",
+"dica": "É a base."
+},
+{
+"pergunta": "Substantivo coletivo representa:",
+"opcoes": ["Uma ação", "Um grupo", "Uma cor", "Um tempo"],
+"respostaCorreta": "Um grupo",
+"dica": "Conjunto de seres."
+},
+{
+"pergunta": "Qual alternativa contém um substantivo próprio?",
+"opcoes": ["cidade", "Brasil", "mesa", "livro"],
+"respostaCorreta": "Brasil",
+"dica": "Nome único."
+}
+]
+},
+{
+"id": "1.1",
+"capitulo": "A Família dos Substantivos: Tipos e Diferenças",
+"nivel": "avancado",
+"dicas": "A classificação dos substantivos ajuda a entender melhor a lógica e a estrutura da língua.",
+"perguntas": [
+{
+"pergunta": "Qual é a principal função dos substantivos próprios?",
+"opcoes": ["Indicar ação", "Nomear seres específicos", "Mostrar qualidade", "Indicar tempo"],
+"respostaCorreta": "Nomear seres específicos",
+"dica": "Eles identificam indivíduos."
+},
+{
+"pergunta": "Substantivos abstratos dependem de quê?",
+"opcoes": ["De objetos", "De seres para existir", "De lugares", "De cores"],
+"respostaCorreta": "De seres para existir",
+"dica": "São sentimentos ou estados."
+},
+{
+"pergunta": "Qual alternativa apresenta apenas substantivos concretos?",
+"opcoes": ["Mesa, árvore, livro", "Amor, beleza, saudade", "Pedro, Maria, Brasil", "Bondade, alegria, tristeza"],
+"respostaCorreta": "Mesa, árvore, livro",
+"dica": "Têm existência própria."
+},
+{
+"pergunta": "O substantivo coletivo 'alcateia' representa:",
+"opcoes": ["Um lobo", "Um grupo de lobos", "Uma floresta", "Um animal doméstico"],
+"respostaCorreta": "Um grupo de lobos",
+"dica": "Coletivo indica conjunto."
+},
+{
+"pergunta": "Qual alternativa contém um substantivo derivado?",
+"opcoes": ["Pedra", "Flor", "Pedreiro", "Mar"],
+"respostaCorreta": "Pedreiro",
+"dica": "Vem de outra palavra."
+},
+{
+"pergunta": "Substantivos primitivos são:",
+"opcoes": ["Criados a partir de outros", "A base de outras palavras", "Sempre abstratos", "Sempre coletivos"],
+"respostaCorreta": "A base de outras palavras",
+"dica": "São a origem."
+},
+{
+"pergunta": "Qual alternativa diferencia concreto de abstrato?",
+"opcoes": ["Concreto é ação", "Abstrato é visível", "Concreto tem existência própria", "Abstrato é sempre objeto"],
+"respostaCorreta": "Concreto tem existência própria",
+"dica": "Pode ser percebido diretamente."
+},
+{
+"pergunta": "O uso de substantivos próprios exige:",
+"opcoes": ["Letra minúscula", "Plural", "Letra maiúscula", "Acento"],
+"respostaCorreta": "Letra maiúscula",
+"dica": "Regra importante."
+},
+{
+"pergunta": "Qual alternativa contém apenas substantivos comuns?",
+"opcoes": ["Cidade, menino, cachorro", "Pedro, Maria, Brasil", "Amor, beleza, saudade", "Alcateia, biblioteca, constelação"],
+"respostaCorreta": "Cidade, menino, cachorro",
+"dica": "Nomes gerais."
+},
+{
+"pergunta": "A classificação dos substantivos ajuda a:",
+"opcoes": ["Confundir frases", "Organizar o pensamento", "Eliminar palavras", "Diminuir vocabulário"],
+"respostaCorreta": "Organizar o pensamento",
+"dica": "Traz lógica à linguagem."
+}
+]
+},
+{
+"id": "1.2",
+"capitulo": "O Gênero das Coisas: Masculino e Feminino",
+"nivel": "basico",
+"dicas": "As palavras podem ser masculinas ou femininas e usamos artigos para identificar.",
+"perguntas": [
+{
+"pergunta": "Qual artigo indica masculino?",
+"opcoes": ["A", "Uma", "O", "As"],
+"respostaCorreta": "O",
+"dica": "É usado antes de palavras masculinas."
+},
+{
+"pergunta": "Qual artigo indica feminino?",
+"opcoes": ["O", "Um", "Os", "A"],
+"respostaCorreta": "A",
+"dica": "É usado antes de palavras femininas."
+},
+{
+"pergunta": "Qual palavra é feminina?",
+"opcoes": ["Gato", "Livro", "Mesa", "Carro"],
+"respostaCorreta": "Mesa",
+"dica": "Usa o artigo 'A'."
+},
+{
+"pergunta": "Qual palavra é masculina?",
+"opcoes": ["Casa", "Menina", "Gato", "Flor"],
+"respostaCorreta": "Gato",
+"dica": "Usa o artigo 'O'."
+},
+{
+"pergunta": "Qual é o feminino de 'aluno'?",
+"opcoes": ["Aluna", "Alunoa", "Alun", "Alunos"],
+"respostaCorreta": "Aluna",
+"dica": "Troca o final."
+},
+{
+"pergunta": "Qual é o masculino de 'professora'?",
+"opcoes": ["Professor", "Professoro", "Professores", "Professorao"],
+"respostaCorreta": "Professor",
+"dica": "Retira o 'a'."
+},
+{
+"pergunta": "Qual palavra combina com 'A'?",
+"opcoes": ["Livro", "Carro", "Mesa", "Gato"],
+"respostaCorreta": "Mesa",
+"dica": "É feminina."
+},
+{
+"pergunta": "Qual palavra combina com 'O'?",
+"opcoes": ["Casa", "Flor", "Livro", "Mesa"],
+"respostaCorreta": "Livro",
+"dica": "É masculina."
+},
+{
+"pergunta": "Qual está correto?",
+"opcoes": ["O mesa", "A gato", "A mesa", "O casa"],
+"respostaCorreta": "A mesa",
+"dica": "Artigo deve combinar."
+},
+{
+"pergunta": "O que indica o gênero?",
+"opcoes": ["A cor", "O tamanho", "O artigo", "O som"],
+"respostaCorreta": "O artigo",
+"dica": "Ele mostra masculino ou feminino."
+}
+]
+},
+{
+"id": "1.2",
+"capitulo": "O Gênero das Coisas: Masculino e Feminino",
+"nivel": "medio",
+"dicas": "O gênero das palavras é identificado pelos artigos e pela concordância.",
+"perguntas": [
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["O maçã vermelha", "A maçã vermelha", "O maçã vermelho", "A maçã vermelho"],
+"respostaCorreta": "A maçã vermelha",
+"dica": "Tudo deve concordar."
+},
+{
+"pergunta": "Qual é o feminino de 'leão'?",
+"opcoes": ["Leã", "Leoa", "Leona", "Leãoa"],
+"respostaCorreta": "Leoa",
+"dica": "Muda o final."
+},
+{
+"pergunta": "Qual palavra é masculina?",
+"opcoes": ["Flor", "Mesa", "Livro", "Casa"],
+"respostaCorreta": "Livro",
+"dica": "Usa 'O'."
+},
+{
+"pergunta": "Qual é o masculino de 'gata'?",
+"opcoes": ["Gato", "Gataa", "Gatos", "Gat"],
+"respostaCorreta": "Gato",
+"dica": "Troca a letra final."
+},
+{
+"pergunta": "Os artigos ajudam a identificar:",
+"opcoes": ["O tempo", "O gênero", "A ação", "O lugar"],
+"respostaCorreta": "O gênero",
+"dica": "Masculino ou feminino."
+},
+{
+"pergunta": "Qual frase está errada?",
+"opcoes": ["O gato preto", "A casa bonita", "O flor bonita", "A menina feliz"],
+"respostaCorreta": "O flor bonita",
+"dica": "Flor é feminina."
+},
+{
+"pergunta": "Qual grupo está correto?",
+"opcoes": ["O mesa grande", "A livro azul", "O carro rápido", "A gato preto"],
+"respostaCorreta": "O carro rápido",
+"dica": "Tudo concorda."
+},
+{
+"pergunta": "O que é concordância?",
+"opcoes": ["Misturar palavras", "Combinar palavras", "Trocar palavras", "Apagar palavras"],
+"respostaCorreta": "Combinar palavras",
+"dica": "Devem estar em harmonia."
+},
+{
+"pergunta": "Qual palavra é feminina?",
+"opcoes": ["Livro", "Carro", "Estrela", "Menino"],
+"respostaCorreta": "Estrela",
+"dica": "Usa 'A'."
+},
+{
+"pergunta": "Qual palavra é masculina?",
+"opcoes": ["Casa", "Flor", "Sol", "Mesa"],
+"respostaCorreta": "Sol",
+"dica": "Usa 'O'."
+}
+]
+},
+{
+"id": "1.2",
+"capitulo": "O Gênero das Coisas: Masculino e Feminino",
+"nivel": "avancado",
+"dicas": "O gênero influencia a concordância entre substantivos, artigos e adjetivos.",
+"perguntas": [
+{
+"pergunta": "Por que a concordância é importante?",
+"opcoes": ["Para decorar frases", "Para dar harmonia e clareza", "Para mudar palavras", "Para reduzir frases"],
+"respostaCorreta": "Para dar harmonia e clareza",
+"dica": "Tudo deve combinar."
+},
+{
+"pergunta": "Qual frase apresenta erro de concordância?",
+"opcoes": ["A casa bonita", "O carro rápido", "O menina feliz", "A flor cheirosa"],
+"respostaCorreta": "O menina feliz",
+"dica": "Menina é feminina."
+},
+{
+"pergunta": "Qual é o feminino de 'professor'?",
+"opcoes": ["Professora", "Professoro", "Professores", "Professoras"],
+"respostaCorreta": "Professora",
+"dica": "Troca o final."
+},
+{
+"pergunta": "Qual é o masculino de 'leoa'?",
+"opcoes": ["Leão", "Leoa", "Leos", "Le"],
+"respostaCorreta": "Leão",
+"dica": "Forma original."
+},
+{
+"pergunta": "O artigo 'uma' indica:",
+"opcoes": ["Masculino plural", "Feminino singular", "Masculino singular", "Feminino plural"],
+"respostaCorreta": "Feminino singular",
+"dica": "Observe o uso."
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["Uma gato preto", "Um gata preta", "Uma gata preta", "Um gata preto"],
+"respostaCorreta": "Uma gata preta",
+"dica": "Tudo deve concordar."
+},
+{
+"pergunta": "O gênero das palavras é indicado principalmente por:",
+"opcoes": ["Pontuação", "Artigos", "Verbos", "Advérbios"],
+"respostaCorreta": "Artigos",
+"dica": "Eles mostram masculino/feminino."
+},
+{
+"pergunta": "Qual alternativa está correta?",
+"opcoes": ["O flor cheirosa", "A flor cheirosa", "O flor cheiroso", "A flor cheiroso"],
+"respostaCorreta": "A flor cheirosa",
+"dica": "Concordância correta."
+},
+{
+"pergunta": "Mudança de gênero pode ocorrer:",
+"opcoes": ["Mudando o início", "Mudando o final", "Mudando o meio", "Sem mudar"],
+"respostaCorreta": "Mudando o final",
+"dica": "Ex: aluno → aluna."
+},
+{
+"pergunta": "A concordância correta depende de:",
+"opcoes": ["Somente do verbo", "Somente do artigo", "Da relação entre palavras", "Da cor da palavra"],
+"respostaCorreta": "Da relação entre palavras",
+"dica": "Tudo deve combinar."
+}
+]
+},
+{
+"id": "1.3",
+"capitulo": "Tamanhos e Afetos: O Grau do Substantivo",
+"nivel": "basico",
+"dicas": "O grau do substantivo mostra se algo é grande ou pequeno.",
+"perguntas": [
+{
+"pergunta": "O que indica o diminutivo?",
+"opcoes": ["Algo grande", "Algo pequeno", "Uma ação", "Uma cor"],
+"respostaCorreta": "Algo pequeno",
+"dica": "Mostra tamanho menor."
+},
+{
+"pergunta": "Qual é o diminutivo de 'casa'?",
+"opcoes": ["Casão", "Casinha", "Casas", "Casal"],
+"respostaCorreta": "Casinha",
+"dica": "Usa -inha."
+},
+{
+"pergunta": "Qual é o aumentativo de 'gato'?",
+"opcoes": ["Gatinho", "Gatão", "Gatos", "Gatice"],
+"respostaCorreta": "Gatão",
+"dica": "Mostra tamanho grande."
+},
+{
+"pergunta": "Qual palavra indica algo pequeno?",
+"opcoes": ["Livrão", "Livrinho", "Livro", "Livros"],
+"respostaCorreta": "Livrinho",
+"dica": "Tem -inho."
+},
+{
+"pergunta": "Qual palavra indica algo grande?",
+"opcoes": ["Casinha", "Casão", "Casa", "Casas"],
+"respostaCorreta": "Casão",
+"dica": "Tem -ão."
+},
+{
+"pergunta": "O grau normal é:",
+"opcoes": ["Casa", "Casinha", "Casão", "Casuda"],
+"respostaCorreta": "Casa",
+"dica": "Sem alteração."
+},
+{
+"pergunta": "Qual sufixo indica diminutivo?",
+"opcoes": ["-ão", "-inho", "-oso", "-mente"],
+"respostaCorreta": "-inho",
+"dica": "Indica pequeno."
+},
+{
+"pergunta": "Qual sufixo indica aumentativo?",
+"opcoes": ["-inho", "-zinho", "-ão", "-mente"],
+"respostaCorreta": "-ão",
+"dica": "Indica grande."
+},
+{
+"pergunta": "Qual é o diminutivo de 'livro'?",
+"opcoes": ["Livrão", "Livrinho", "Livros", "Livre"],
+"respostaCorreta": "Livrinho",
+"dica": "Pequeno livro."
+},
+{
+"pergunta": "Qual é o aumentativo de 'casa'?",
+"opcoes": ["Casinha", "Casão", "Casa", "Casita"],
+"respostaCorreta": "Casão",
+"dica": "Grande casa."
+}
+]
+},
+{
+"id": "1.3",
+"capitulo": "Tamanhos e Afetos: O Grau do Substantivo",
+"nivel": "medio",
+"dicas": "Os graus também podem expressar sentimentos como carinho ou desprezo.",
+"perguntas": [
+{
+"pergunta": "O diminutivo pode indicar:",
+"opcoes": ["Apenas tamanho", "Apenas ação", "Tamanho e carinho", "Somente lugar"],
+"respostaCorreta": "Tamanho e carinho",
+"dica": "Pode mostrar afeto."
+},
+{
+"pergunta": "Qual palavra expressa carinho?",
+"opcoes": ["Livrão", "Livrinho", "Livro", "Livros"],
+"respostaCorreta": "Livrinho",
+"dica": "Diminutivo pode ser afetuoso."
+},
+{
+"pergunta": "Qual palavra expressa algo grande?",
+"opcoes": ["Gatinho", "Gato", "Gatão", "Gatice"],
+"respostaCorreta": "Gatão",
+"dica": "Aumentativo."
+},
+{
+"pergunta": "Qual é o grau normal de 'casinha'?",
+"opcoes": ["Casa", "Casão", "Casas", "Casuda"],
+"respostaCorreta": "Casa",
+"dica": "Forma original."
+},
+{
+"pergunta": "Qual sufixo forma aumentativo?",
+"opcoes": ["-inho", "-ão", "-mente", "-oso"],
+"respostaCorreta": "-ão",
+"dica": "Indica grande."
+},
+{
+"pergunta": "Qual frase mostra carinho?",
+"opcoes": ["Meu amiguinho chegou", "Meu amigo chegou", "Meu amigão chegou", "Meu amigo saiu"],
+"respostaCorreta": "Meu amiguinho chegou",
+"dica": "Diminutivo pode indicar afeto."
+},
+{
+"pergunta": "Qual palavra está no aumentativo?",
+"opcoes": ["Casinha", "Casa", "Casão", "Casas"],
+"respostaCorreta": "Casão",
+"dica": "Grande casa."
+},
+{
+"pergunta": "Qual palavra está no diminutivo?",
+"opcoes": ["Livro", "Livrão", "Livrinho", "Livros"],
+"respostaCorreta": "Livrinho",
+"dica": "Pequeno livro."
+},
+{
+"pergunta": "O aumentativo pode indicar:",
+"opcoes": ["Carinho apenas", "Tamanho ou exagero", "Somente ação", "Lugar"],
+"respostaCorreta": "Tamanho ou exagero",
+"dica": "Pode ter sentido figurado."
+},
+{
+"pergunta": "Qual é o diminutivo de 'gato'?",
+"opcoes": ["Gatão", "Gatinho", "Gato", "Gatice"],
+"respostaCorreta": "Gatinho",
+"dica": "Pequeno gato."
+}
+]
+},
+{
+"id": "1.3",
+"capitulo": "Tamanhos e Afetos: O Grau do Substantivo",
+"nivel": "avancado",
+"dicas": "O grau do substantivo pode transmitir tamanho, emoção e intenção do falante.",
+"perguntas": [
+{
+"pergunta": "O diminutivo pode ter função além do tamanho?",
+"opcoes": ["Não", "Sim, pode indicar sentimento", "Apenas cor", "Apenas tempo"],
+"respostaCorreta": "Sim, pode indicar sentimento",
+"dica": "Pode expressar carinho."
+},
+{
+"pergunta": "Qual alternativa mostra desprezo?",
+"opcoes": ["Livrinho", "Livro", "Livreco", "Livros"],
+"respostaCorreta": "Livreco",
+"dica": "Pode indicar algo ruim."
+},
+{
+"pergunta": "O aumentativo pode indicar:",
+"opcoes": ["Somente tamanho", "Somente ação", "Tamanho ou intensidade", "Somente lugar"],
+"respostaCorreta": "Tamanho ou intensidade",
+"dica": "Pode exagerar."
+},
+{
+"pergunta": "Qual é o grau normal de 'gatão'?",
+"opcoes": ["Gato", "Gatinho", "Gatos", "Gatice"],
+"respostaCorreta": "Gato",
+"dica": "Forma original."
+},
+{
+"pergunta": "Qual sufixo indica diminutivo?",
+"opcoes": ["-ão", "-inho", "-oso", "-mente"],
+"respostaCorreta": "-inho",
+"dica": "Pequeno."
+},
+{
+"pergunta": "Qual alternativa mostra aumentativo?",
+"opcoes": ["Casinha", "Casa", "Casão", "Casita"],
+"respostaCorreta": "Casão",
+"dica": "Grande casa."
+},
+{
+"pergunta": "O uso do grau influencia:",
+"opcoes": ["A pontuação", "O sentido da palavra", "A ortografia", "O tempo verbal"],
+"respostaCorreta": "O sentido da palavra",
+"dica": "Muda o significado."
+},
+{
+"pergunta": "Qual frase expressa carinho?",
+"opcoes": ["Meu cachorrinho é fofo", "Meu cachorro é grande", "Meu cachorrão corre", "Meu cachorro late"],
+"respostaCorreta": "Meu cachorrinho é fofo",
+"dica": "Diminutivo afetuoso."
+},
+{
+"pergunta": "Qual alternativa apresenta diminutivo?",
+"opcoes": ["Livrão", "Livro", "Livrinho", "Livre"],
+"respostaCorreta": "Livrinho",
+"dica": "Pequeno."
+},
+{
+"pergunta": "O grau do substantivo contribui para:",
+"opcoes": ["Organizar frases", "Expressar tamanho e emoção", "Indicar tempo", "Ligar palavras"],
+"respostaCorreta": "Expressar tamanho e emoção",
+"dica": "Vai além do tamanho."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Dando Cor ao Mundo: O Adjetivo",
+"nivel": "basico",
+"dicas": "O adjetivo descreve como são as coisas.",
+"perguntas": [
+{
+"pergunta": "O que é um adjetivo?",
+"opcoes": ["Uma ação", "Um nome", "Uma qualidade", "Um número"],
+"respostaCorreta": "Uma qualidade",
+"dica": "Ele descreve algo."
+},
+{
+"pergunta": "Na expressão 'céu azul', qual é o adjetivo?",
+"opcoes": ["Céu", "Azul", "É", "Um"],
+"respostaCorreta": "Azul",
+"dica": "Mostra a cor."
+},
+{
+"pergunta": "Qual palavra descreve 'maçã'?",
+"opcoes": ["Doce", "Correr", "Livro", "Mesa"],
+"respostaCorreta": "Doce",
+"dica": "Indica característica."
+},
+{
+"pergunta": "Qual é o adjetivo em 'menino obediente'?",
+"opcoes": ["Menino", "Obediente", "É", "Um"],
+"respostaCorreta": "Obediente",
+"dica": "Descreve o menino."
+},
+{
+"pergunta": "Qual palavra é um adjetivo?",
+"opcoes": ["Livro", "Bonito", "Correr", "Mesa"],
+"respostaCorreta": "Bonito",
+"dica": "Descreve algo."
+},
+{
+"pergunta": "O adjetivo serve para:",
+"opcoes": ["Nomear", "Descrever", "Agir", "Contar"],
+"respostaCorreta": "Descrever",
+"dica": "Diz como algo é."
+},
+{
+"pergunta": "Qual palavra combina com 'flor'?",
+"opcoes": ["Cheirosa", "Correr", "Livro", "Mesa"],
+"respostaCorreta": "Cheirosa",
+"dica": "Descreve a flor."
+},
+{
+"pergunta": "Na frase 'casa grande', qual é o adjetivo?",
+"opcoes": ["Casa", "Grande", "É", "Uma"],
+"respostaCorreta": "Grande",
+"dica": "Mostra o tamanho."
+},
+{
+"pergunta": "Qual palavra descreve 'carro'?",
+"opcoes": ["Rápido", "Correr", "Livro", "Mesa"],
+"respostaCorreta": "Rápido",
+"dica": "Mostra característica."
+},
+{
+"pergunta": "Qual é um adjetivo?",
+"opcoes": ["Mesa", "Casa", "Alto", "Livro"],
+"respostaCorreta": "Alto",
+"dica": "Descreve algo."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Dando Cor ao Mundo: O Adjetivo",
+"nivel": "medio",
+"dicas": "O adjetivo acompanha o substantivo e concorda com ele.",
+"perguntas": [
+{
+"pergunta": "Qual frase tem adjetivo?",
+"opcoes": ["O gato preto", "O gato corre", "Corre rápido", "Muito bem"],
+"respostaCorreta": "O gato preto",
+"dica": "Preto descreve o gato."
+},
+{
+"pergunta": "Na frase 'mesa limpa', o adjetivo é:",
+"opcoes": ["Mesa", "Limpa", "É", "Uma"],
+"respostaCorreta": "Limpa",
+"dica": "Descreve a mesa."
+},
+{
+"pergunta": "Qual palavra é adjetivo?",
+"opcoes": ["Correr", "Bonito", "Livro", "Cidade"],
+"respostaCorreta": "Bonito",
+"dica": "Indica qualidade."
+},
+{
+"pergunta": "O adjetivo concorda com:",
+"opcoes": ["Verbo", "Substantivo", "Advérbio", "Preposição"],
+"respostaCorreta": "Substantivo",
+"dica": "Devem combinar."
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["Flor cheiroso", "Flor cheirosa", "Flor cheiro", "Flor cheirosos"],
+"respostaCorreta": "Flor cheirosa",
+"dica": "Concordância correta."
+},
+{
+"pergunta": "Qual é o adjetivo em 'livro antigo'?",
+"opcoes": ["Livro", "Antigo", "É", "Um"],
+"respostaCorreta": "Antigo",
+"dica": "Descreve o livro."
+},
+{
+"pergunta": "Qual palavra descreve 'menina'?",
+"opcoes": ["Feliz", "Correr", "Livro", "Mesa"],
+"respostaCorreta": "Feliz",
+"dica": "Característica."
+},
+{
+"pergunta": "Qual frase está errada?",
+"opcoes": ["Casa bonita", "Carro rápido", "Mesa bonito", "Flor cheirosa"],
+"respostaCorreta": "Mesa bonito",
+"dica": "Deveria ser feminina."
+},
+{
+"pergunta": "O adjetivo ajuda a:",
+"opcoes": ["Nomear", "Descrever", "Contar", "Ligar"],
+"respostaCorreta": "Descrever",
+"dica": "Dá detalhes."
+},
+{
+"pergunta": "Qual palavra é adjetivo?",
+"opcoes": ["Cidade", "Grande", "Livro", "Casa"],
+"respostaCorreta": "Grande",
+"dica": "Indica tamanho."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Dando Cor ao Mundo: O Adjetivo",
+"nivel": "avancado",
+"dicas": "Os adjetivos enriquecem a comunicação e devem concordar com o substantivo.",
+"perguntas": [
+{
+"pergunta": "Qual é a função principal do adjetivo?",
+"opcoes": ["Indicar ação", "Nomear seres", "Descrever características", "Ligar frases"],
+"respostaCorreta": "Descrever características",
+"dica": "Mostra qualidades."
+},
+{
+"pergunta": "Na frase 'o livro antigo está na mesa limpa', quantos adjetivos existem?",
+"opcoes": ["1", "2", "3", "4"],
+"respostaCorreta": "2",
+"dica": "Antigo e limpa."
+},
+{
+"pergunta": "Qual frase apresenta erro?",
+"opcoes": ["A casa bonita", "O carro rápido", "A flor cheiroso", "O menino feliz"],
+"respostaCorreta": "A flor cheiroso",
+"dica": "Deve concordar."
+},
+{
+"pergunta": "O adjetivo deve concordar em:",
+"opcoes": ["Tempo", "Pessoa", "Gênero e número", "Lugar"],
+"respostaCorreta": "Gênero e número",
+"dica": "Masculino/feminino e singular/plural."
+},
+{
+"pergunta": "Qual alternativa contém apenas adjetivos?",
+"opcoes": ["Bonito, alto, feliz", "Livro, mesa, casa", "Correr, pular, brincar", "Muito, bem, aqui"],
+"respostaCorreta": "Bonito, alto, feliz",
+"dica": "Todos descrevem."
+},
+{
+"pergunta": "Qual palavra descreve corretamente 'flores'?",
+"opcoes": ["Bonita", "Bonitas", "Bonito", "Bonitos"],
+"respostaCorreta": "Bonitas",
+"dica": "Plural feminino."
+},
+{
+"pergunta": "Na frase 'meninos inteligentes', o adjetivo é:",
+"opcoes": ["Meninos", "Inteligentes", "São", "Os"],
+"respostaCorreta": "Inteligentes",
+"dica": "Descreve o substantivo."
+},
+{
+"pergunta": "O uso de adjetivos melhora:",
+"opcoes": ["A confusão", "A clareza e riqueza", "A pontuação", "O tempo verbal"],
+"respostaCorreta": "A clareza e riqueza",
+"dica": "Dá mais detalhes."
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["Menina feliz", "Menina felizes", "Menina felizs", "Menina felizes"],
+"respostaCorreta": "Menina feliz",
+"dica": "Concordância correta."
+},
+{
+"pergunta": "Sem adjetivos, a linguagem fica:",
+"opcoes": ["Mais rica", "Mais detalhada", "Mais simples e menos descritiva", "Mais longa"],
+"respostaCorreta": "Mais simples e menos descritiva",
+"dica": "Falta descrição."
+}
+]
+},
+{
+"id": "2.1",
+"capitulo": "A Variedade das Qualidades: Tipos de Adjetivos",
+"nivel": "basico",
+"dicas": "Os adjetivos podem ser simples, compostos e indicar origem.",
+"perguntas": [
+{
+"pergunta": "O que é um adjetivo simples?",
+"opcoes": ["Duas palavras", "Uma palavra", "Uma ação", "Um número"],
+"respostaCorreta": "Uma palavra",
+"dica": "Tem apenas um radical."
+},
+{
+"pergunta": "Qual é um adjetivo simples?",
+"opcoes": ["Azul", "Azul-marinho", "Muito bonito", "Correr"],
+"respostaCorreta": "Azul",
+"dica": "Tem uma só palavra."
+},
+{
+"pergunta": "Qual é um adjetivo composto?",
+"opcoes": ["Bonito", "Alto", "Azul-marinho", "Feliz"],
+"respostaCorreta": "Azul-marinho",
+"dica": "Tem mais de uma parte."
+},
+{
+"pergunta": "Qual indica origem?",
+"opcoes": ["Grande", "Brasileiro", "Bonito", "Rápido"],
+"respostaCorreta": "Brasileiro",
+"dica": "Mostra de onde vem."
+},
+{
+"pergunta": "Qual palavra é adjetivo?",
+"opcoes": ["Livro", "Bonito", "Correr", "Mesa"],
+"respostaCorreta": "Bonito",
+"dica": "Descreve algo."
+},
+{
+"pergunta": "Qual é um adjetivo pátrio?",
+"opcoes": ["Alto", "Português", "Grande", "Rápido"],
+"respostaCorreta": "Português",
+"dica": "Indica nacionalidade."
+},
+{
+"pergunta": "Qual é adjetivo simples?",
+"opcoes": ["Claro", "Azul-escuro", "Muito feliz", "Bem rápido"],
+"respostaCorreta": "Claro",
+"dica": "Uma palavra só."
+},
+{
+"pergunta": "Qual é adjetivo composto?",
+"opcoes": ["Feliz", "Triste", "Luso-brasileiro", "Alto"],
+"respostaCorreta": "Luso-brasileiro",
+"dica": "Tem duas partes."
+},
+{
+"pergunta": "Adjetivo descreve:",
+"opcoes": ["Ação", "Qualidade", "Número", "Lugar"],
+"respostaCorreta": "Qualidade",
+"dica": "Diz como algo é."
+},
+{
+"pergunta": "Qual palavra indica nacionalidade?",
+"opcoes": ["Grande", "Chinês", "Bonito", "Forte"],
+"respostaCorreta": "Chinês",
+"dica": "Origem do lugar."
+}
+]
+},
+{
+"id": "2.1",
+"capitulo": "A Variedade das Qualidades: Tipos de Adjetivos",
+"nivel": "medio",
+"dicas": "Os adjetivos podem ser classificados pela sua formação e origem.",
+"perguntas": [
+{
+"pergunta": "Qual é um adjetivo composto?",
+"opcoes": ["Azul", "Claro", "Azul-marinho", "Feliz"],
+"respostaCorreta": "Azul-marinho",
+"dica": "Possui dois radicais."
+},
+{
+"pergunta": "Adjetivos derivados vêm de:",
+"opcoes": ["Nada", "Outras palavras", "Números", "Cores"],
+"respostaCorreta": "Outras palavras",
+"dica": "São formados a partir de outras."
+},
+{
+"pergunta": "Qual é um adjetivo derivado?",
+"opcoes": ["Bom", "Alegre", "Bondoso", "Triste"],
+"respostaCorreta": "Bondoso",
+"dica": "Vem de 'bom'."
+},
+{
+"pergunta": "Qual é um adjetivo primitivo?",
+"opcoes": ["Bondoso", "Tristonho", "Bom", "Alegremente"],
+"respostaCorreta": "Bom",
+"dica": "Não vem de outro."
+},
+{
+"pergunta": "Adjetivo pátrio indica:",
+"opcoes": ["Tempo", "Lugar de origem", "Cor", "Tamanho"],
+"respostaCorreta": "Lugar de origem",
+"dica": "Relaciona-se a países."
+},
+{
+"pergunta": "Qual palavra é locução adjetiva?",
+"opcoes": ["Maternal", "Solar", "De mãe", "Bonito"],
+"respostaCorreta": "De mãe",
+"dica": "Mais de uma palavra."
+},
+{
+"pergunta": "Qual alternativa tem apenas adjetivos?",
+"opcoes": ["Bonito, alto, feliz", "Livro, mesa, casa", "Correr, pular, brincar", "Muito, bem, aqui"],
+"respostaCorreta": "Bonito, alto, feliz",
+"dica": "Todos descrevem."
+},
+{
+"pergunta": "Qual é um adjetivo pátrio?",
+"opcoes": ["Grande", "Brasileiro", "Bonito", "Feliz"],
+"respostaCorreta": "Brasileiro",
+"dica": "Indica nacionalidade."
+},
+{
+"pergunta": "Qual é um adjetivo composto?",
+"opcoes": ["Feliz", "Triste", "Ítalo-americano", "Alto"],
+"respostaCorreta": "Ítalo-americano",
+"dica": "Duas origens."
+},
+{
+"pergunta": "Locução adjetiva é:",
+"opcoes": ["Uma palavra", "Uma frase com verbo", "Grupo de palavras com valor de adjetivo", "Um número"],
+"respostaCorreta": "Grupo de palavras com valor de adjetivo",
+"dica": "Ex: de mãe."
+}
+]
+},
+{
+"id": "2.1",
+"capitulo": "A Variedade das Qualidades: Tipos de Adjetivos",
+"nivel": "avancado",
+"dicas": "A classificação dos adjetivos ajuda a entender sua formação e função na linguagem.",
+"perguntas": [
+{
+"pergunta": "Adjetivos compostos possuem:",
+"opcoes": ["Um radical", "Dois ou mais radicais", "Nenhum radical", "Apenas prefixos"],
+"respostaCorreta": "Dois ou mais radicais",
+"dica": "Ex: azul-marinho."
+},
+{
+"pergunta": "Adjetivos derivados são formados:",
+"opcoes": ["Do nada", "De outras palavras", "De números", "De verbos apenas"],
+"respostaCorreta": "De outras palavras",
+"dica": "Ex: bondoso."
+},
+{
+"pergunta": "Qual alternativa contém adjetivo primitivo?",
+"opcoes": ["Bondoso", "Tristonho", "Bom", "Realmente"],
+"respostaCorreta": "Bom",
+"dica": "É base."
+},
+{
+"pergunta": "Adjetivos pátrios têm função de:",
+"opcoes": ["Indicar ação", "Indicar origem", "Indicar tempo", "Indicar intensidade"],
+"respostaCorreta": "Indicar origem",
+"dica": "Relaciona-se a lugares."
+},
+{
+"pergunta": "Locução adjetiva equivale a:",
+"opcoes": ["Um verbo", "Um substantivo", "Um adjetivo", "Um advérbio"],
+"respostaCorreta": "Um adjetivo",
+"dica": "Ex: amor de mãe = maternal."
+},
+{
+"pergunta": "Qual é um exemplo de locução adjetiva?",
+"opcoes": ["Solar", "Maternal", "De sol", "Bonito"],
+"respostaCorreta": "De sol",
+"dica": "Grupo de palavras."
+},
+{
+"pergunta": "A classificação dos adjetivos ajuda a:",
+"opcoes": ["Confundir frases", "Organizar a linguagem", "Eliminar palavras", "Reduzir vocabulário"],
+"respostaCorreta": "Organizar a linguagem",
+"dica": "Melhora compreensão."
+},
+{
+"pergunta": "Qual alternativa contém adjetivo composto?",
+"opcoes": ["Azul", "Feliz", "Luso-brasileiro", "Alto"],
+"respostaCorreta": "Luso-brasileiro",
+"dica": "Dois radicais."
+},
+{
+"pergunta": "Adjetivos primitivos são:",
+"opcoes": ["Derivados", "Base de outros", "Sempre compostos", "Sempre abstratos"],
+"respostaCorreta": "Base de outros",
+"dica": "Origem das palavras."
+},
+{
+"pergunta": "Entender os tipos de adjetivos melhora:",
+"opcoes": ["A confusão", "A clareza e precisão", "A pontuação", "O tempo verbal"],
+"respostaCorreta": "A clareza e precisão",
+"dica": "Ajuda na comunicação."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "O Motor da Frase: O Verbo",
+"nivel": "basico",
+"dicas": "O verbo indica ação, estado ou fenômeno da natureza.",
+"perguntas": [
+{
+"pergunta": "O que é um verbo?",
+"opcoes": ["Um nome", "Uma ação ou estado", "Uma cor", "Um objeto"],
+"respostaCorreta": "Uma ação ou estado",
+"dica": "Mostra o que acontece."
+},
+{
+"pergunta": "Qual palavra é um verbo?",
+"opcoes": ["Correr", "Mesa", "Livro", "Casa"],
+"respostaCorreta": "Correr",
+"dica": "Indica ação."
+},
+{
+"pergunta": "Na frase 'O menino corre', qual é o verbo?",
+"opcoes": ["Menino", "Corre", "O", "Nenhum"],
+"respostaCorreta": "Corre",
+"dica": "Mostra a ação."
+},
+{
+"pergunta": "Qual verbo indica estado?",
+"opcoes": ["Pular", "Ser", "Correr", "Brincar"],
+"respostaCorreta": "Ser",
+"dica": "Mostra como algo está."
+},
+{
+"pergunta": "Qual verbo indica ação?",
+"opcoes": ["Estar", "Ser", "Correr", "Ser"],
+"respostaCorreta": "Correr",
+"dica": "Movimento."
+},
+{
+"pergunta": "Qual verbo indica fenômeno da natureza?",
+"opcoes": ["Chover", "Correr", "Brincar", "Ler"],
+"respostaCorreta": "Chover",
+"dica": "Acontece na natureza."
+},
+{
+"pergunta": "Qual palavra não é verbo?",
+"opcoes": ["Correr", "Pular", "Mesa", "Brincar"],
+"respostaCorreta": "Mesa",
+"dica": "É um objeto."
+},
+{
+"pergunta": "O verbo serve para:",
+"opcoes": ["Nomear", "Descrever", "Mostrar ação", "Contar"],
+"respostaCorreta": "Mostrar ação",
+"dica": "Indica o que acontece."
+},
+{
+"pergunta": "Na frase 'Choveu ontem', o verbo é:",
+"opcoes": ["Choveu", "Ontem", "Nenhum", "É"],
+"respostaCorreta": "Choveu",
+"dica": "Mostra fenômeno."
+},
+{
+"pergunta": "Qual é um verbo?",
+"opcoes": ["Livro", "Casa", "Estudar", "Mesa"],
+"respostaCorreta": "Estudar",
+"dica": "Indica ação."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "O Motor da Frase: O Verbo",
+"nivel": "medio",
+"dicas": "Os verbos indicam ações e também mostram quando algo acontece.",
+"perguntas": [
+{
+"pergunta": "Na frase 'Eu estudo', o verbo é:",
+"opcoes": ["Eu", "Estudo", "Nenhum", "O"],
+"respostaCorreta": "Estudo",
+"dica": "Mostra ação."
+},
+{
+"pergunta": "Qual tempo indica algo que já aconteceu?",
+"opcoes": ["Presente", "Futuro", "Passado", "Nenhum"],
+"respostaCorreta": "Passado",
+"dica": "Já ocorreu."
+},
+{
+"pergunta": "Qual verbo está no presente?",
+"opcoes": ["Estudei", "Estudo", "Estudarei", "Estudava"],
+"respostaCorreta": "Estudo",
+"dica": "Acontece agora."
+},
+{
+"pergunta": "Qual verbo está no passado?",
+"opcoes": ["Estudo", "Estudarei", "Estudei", "Estudar"],
+"respostaCorreta": "Estudei",
+"dica": "Já aconteceu."
+},
+{
+"pergunta": "Qual verbo está no futuro?",
+"opcoes": ["Estudei", "Estudo", "Estudarei", "Estudava"],
+"respostaCorreta": "Estudarei",
+"dica": "Vai acontecer."
+},
+{
+"pergunta": "Qual frase tem verbo de estado?",
+"opcoes": ["O gato corre", "A flor é bonita", "Ele pula", "Ela brinca"],
+"respostaCorreta": "A flor é bonita",
+"dica": "Verbo 'ser'."
+},
+{
+"pergunta": "Qual frase tem verbo de ação?",
+"opcoes": ["Ele é feliz", "Ela está triste", "Ele corre", "Ela é alta"],
+"respostaCorreta": "Ele corre",
+"dica": "Movimento."
+},
+{
+"pergunta": "Verbos ajudam a indicar:",
+"opcoes": ["Lugar", "Tempo", "Cor", "Número"],
+"respostaCorreta": "Tempo",
+"dica": "Quando acontece."
+},
+{
+"pergunta": "Qual palavra é verbo?",
+"opcoes": ["Mesa", "Livro", "Cantar", "Casa"],
+"respostaCorreta": "Cantar",
+"dica": "Ação."
+},
+{
+"pergunta": "Sem verbo, a frase fica:",
+"opcoes": ["Completa", "Sem sentido", "Mais bonita", "Mais longa"],
+"respostaCorreta": "Sem sentido",
+"dica": "Falta ação."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "O Motor da Frase: O Verbo",
+"nivel": "avancado",
+"dicas": "Os verbos são essenciais para dar movimento e situar ações no tempo.",
+"perguntas": [
+{
+"pergunta": "Qual é a função principal do verbo?",
+"opcoes": ["Nomear", "Descrever", "Indicar ação ou estado", "Ligar palavras"],
+"respostaCorreta": "Indicar ação ou estado",
+"dica": "Mostra o que acontece."
+},
+{
+"pergunta": "Na frase 'Eu estudarei amanhã', o verbo indica:",
+"opcoes": ["Passado", "Presente", "Futuro", "Nenhum"],
+"respostaCorreta": "Futuro",
+"dica": "Ainda vai acontecer."
+},
+{
+"pergunta": "Qual alternativa contém apenas verbos?",
+"opcoes": ["Correr, pular, estudar", "Livro, mesa, casa", "Bonito, alto, feliz", "Muito, bem, aqui"],
+"respostaCorreta": "Correr, pular, estudar",
+"dica": "Todos indicam ação."
+},
+{
+"pergunta": "Verbos de fenômeno da natureza indicam:",
+"opcoes": ["Ações humanas", "Estados físicos", "Eventos naturais", "Qualidades"],
+"respostaCorreta": "Eventos naturais",
+"dica": "Ex: chover."
+},
+{
+"pergunta": "Qual frase contém verbo de estado?",
+"opcoes": ["Ele corre rápido", "Ela está feliz", "Eles pulam", "Nós brincamos"],
+"respostaCorreta": "Ela está feliz",
+"dica": "Verbo 'estar'."
+},
+{
+"pergunta": "O tempo verbal ajuda a indicar:",
+"opcoes": ["Lugar", "Quantidade", "Momento da ação", "Cor"],
+"respostaCorreta": "Momento da ação",
+"dica": "Quando ocorre."
+},
+{
+"pergunta": "Sem verbos, a comunicação seria:",
+"opcoes": ["Mais clara", "Mais confusa", "Mais rica", "Mais detalhada"],
+"respostaCorreta": "Mais confusa",
+"dica": "Falta ação."
+},
+{
+"pergunta": "Qual alternativa contém verbo no passado?",
+"opcoes": ["Corro", "Correrei", "Corri", "Correr"],
+"respostaCorreta": "Corri",
+"dica": "Já aconteceu."
+},
+{
+"pergunta": "O verbo é considerado o:",
+"opcoes": ["Enfeite da frase", "Motor da frase", "Início da frase", "Fim da frase"],
+"respostaCorreta": "Motor da frase",
+"dica": "Dá movimento."
+},
+{
+"pergunta": "A presença do verbo garante:",
+"opcoes": ["A cor da frase", "A ação e sentido", "A pontuação", "O tamanho"],
+"respostaCorreta": "A ação e sentido",
+"dica": "Essencial para entender."
+}
+]
+},
+{
+"id": "3.1",
+"capitulo": "A Engrenagem das Ações: Classificação dos Verbos",
+"nivel": "basico",
+"dicas": "Os verbos podem ser regulares, irregulares e têm diferentes terminações.",
+"perguntas": [
+{
+"pergunta": "O que é um verbo regular?",
+"opcoes": ["Muda sempre", "Não segue regra", "Segue um modelo", "Não é verbo"],
+"respostaCorreta": "Segue um modelo",
+"dica": "Mantém a mesma base."
+},
+{
+"pergunta": "Qual é um verbo regular?",
+"opcoes": ["Cantar", "Ir", "Ser", "Medir"],
+"respostaCorreta": "Cantar",
+"dica": "Segue padrão."
+},
+{
+"pergunta": "O que é um verbo irregular?",
+"opcoes": ["Segue regra", "Muda a forma", "Não existe", "É sempre igual"],
+"respostaCorreta": "Muda a forma",
+"dica": "Não segue padrão."
+},
+{
+"pergunta": "Qual é um verbo irregular?",
+"opcoes": ["Cantar", "Amar", "Ir", "Brincar"],
+"respostaCorreta": "Ir",
+"dica": "Muda bastante."
+},
+{
+"pergunta": "Qual verbo termina em -AR?",
+"opcoes": ["Cantar", "Beber", "Partir", "Ir"],
+"respostaCorreta": "Cantar",
+"dica": "1ª conjugação."
+},
+{
+"pergunta": "Qual verbo termina em -ER?",
+"opcoes": ["Cantar", "Beber", "Partir", "Abrir"],
+"respostaCorreta": "Beber",
+"dica": "2ª conjugação."
+},
+{
+"pergunta": "Qual verbo termina em -IR?",
+"opcoes": ["Cantar", "Beber", "Partir", "Amar"],
+"respostaCorreta": "Partir",
+"dica": "3ª conjugação."
+},
+{
+"pergunta": "Os verbos ajudam a indicar:",
+"opcoes": ["Cor", "Ação", "Lugar", "Número"],
+"respostaCorreta": "Ação",
+"dica": "Mostram o que acontece."
+},
+{
+"pergunta": "Qual é um verbo?",
+"opcoes": ["Mesa", "Livro", "Correr", "Casa"],
+"respostaCorreta": "Correr",
+"dica": "Ação."
+},
+{
+"pergunta": "Verbos são importantes porque:",
+"opcoes": ["Decoram frases", "Dão ação", "Mudam cor", "Indicam lugar"],
+"respostaCorreta": "Dão ação",
+"dica": "Movem a frase."
+}
+]
+},
+{
+"id": "3.1",
+"capitulo": "A Engrenagem das Ações: Classificação dos Verbos",
+"nivel": "medio",
+"dicas": "Os verbos podem ser regulares, irregulares e também se classificam em conjugações.",
+"perguntas": [
+{
+"pergunta": "Verbos regulares mantêm:",
+"opcoes": ["A terminação", "A raiz", "O tempo", "O sujeito"],
+"respostaCorreta": "A raiz",
+"dica": "Não muda."
+},
+{
+"pergunta": "Qual verbo é irregular?",
+"opcoes": ["Cantar", "Amar", "Ir", "Estudar"],
+"respostaCorreta": "Ir",
+"dica": "Forma muda."
+},
+{
+"pergunta": "A 1ª conjugação termina em:",
+"opcoes": ["-ER", "-IR", "-AR", "-OR"],
+"respostaCorreta": "-AR",
+"dica": "Ex: cantar."
+},
+{
+"pergunta": "A 2ª conjugação termina em:",
+"opcoes": ["-AR", "-ER", "-IR", "-OR"],
+"respostaCorreta": "-ER",
+"dica": "Ex: beber."
+},
+{
+"pergunta": "A 3ª conjugação termina em:",
+"opcoes": ["-AR", "-ER", "-IR", "-OR"],
+"respostaCorreta": "-IR",
+"dica": "Ex: partir."
+},
+{
+"pergunta": "Verbos auxiliares servem para:",
+"opcoes": ["Nomear", "Ajudar outro verbo", "Descrever", "Contar"],
+"respostaCorreta": "Ajudar outro verbo",
+"dica": "Ex: tenho estudado."
+},
+{
+"pergunta": "Qual é verbo auxiliar?",
+"opcoes": ["Estudar", "Tenho", "Correr", "Brincar"],
+"respostaCorreta": "Tenho",
+"dica": "Ajuda outro verbo."
+},
+{
+"pergunta": "Verbos defetivos são:",
+"opcoes": ["Completos", "Sem forma", "Com duas formas", "Sempre iguais"],
+"respostaCorreta": "Sem forma",
+"dica": "Faltam conjugações."
+},
+{
+"pergunta": "Qual exemplo de verbo defetivo?",
+"opcoes": ["Cantar", "Chover", "Amar", "Estudar"],
+"respostaCorreta": "Chover",
+"dica": "Não se conjuga em todas pessoas."
+},
+{
+"pergunta": "Verbos abundantes possuem:",
+"opcoes": ["Uma forma", "Duas formas", "Nenhuma forma", "Sempre erro"],
+"respostaCorreta": "Duas formas",
+"dica": "Ex: aceito/aceitado."
+}
+]
+},
+{
+"id": "3.1",
+"capitulo": "A Engrenagem das Ações: Classificação dos Verbos",
+"nivel": "avancado",
+"dicas": "A classificação dos verbos ajuda a entender suas variações e usos na linguagem.",
+"perguntas": [
+{
+"pergunta": "Verbos irregulares se caracterizam por:",
+"opcoes": ["Seguir padrão fixo", "Alterar a raiz ou forma", "Não existir", "Ser sempre iguais"],
+"respostaCorreta": "Alterar a raiz ou forma",
+"dica": "Mudam na conjugação."
+},
+{
+"pergunta": "Qual alternativa contém verbo regular?",
+"opcoes": ["Ir", "Ser", "Cantar", "Medir"],
+"respostaCorreta": "Cantar",
+"dica": "Segue padrão."
+},
+{
+"pergunta": "Verbos auxiliares têm função de:",
+"opcoes": ["Indicar ação principal", "Ajudar na formação verbal", "Descrever substantivos", "Ligar frases"],
+"respostaCorreta": "Ajudar na formação verbal",
+"dica": "Ex: tenho estudado."
+},
+{
+"pergunta": "Verbos principais são:",
+"opcoes": ["Sem sentido", "Que trazem a ação principal", "Que ajudam outros", "Que não existem"],
+"respostaCorreta": "Que trazem a ação principal",
+"dica": "São o núcleo."
+},
+{
+"pergunta": "Verbos defetivos são aqueles que:",
+"opcoes": ["Têm todas as formas", "Não possuem todas as conjugações", "Mudam muito", "São sempre iguais"],
+"respostaCorreta": "Não possuem todas as conjugações",
+"dica": "Ex: chover."
+},
+{
+"pergunta": "Verbos abundantes apresentam:",
+"opcoes": ["Uma única forma", "Duas formas equivalentes", "Nenhuma forma", "Erro gramatical"],
+"respostaCorreta": "Duas formas equivalentes",
+"dica": "Ex: aceito/aceitado."
+},
+{
+"pergunta": "Classificar verbos ajuda a:",
+"opcoes": ["Confundir frases", "Entender melhor a conjugação", "Eliminar verbos", "Reduzir linguagem"],
+"respostaCorreta": "Entender melhor a conjugação",
+"dica": "Facilita uso correto."
+},
+{
+"pergunta": "O verbo 'escrever' pertence a qual conjugação?",
+"opcoes": ["1ª", "2ª", "3ª", "Nenhuma"],
+"respostaCorreta": "2ª",
+"dica": "Termina em -ER."
+},
+{
+"pergunta": "A classificação verbal contribui para:",
+"opcoes": ["Erro gramatical", "Clareza e precisão", "Confusão", "Redução de vocabulário"],
+"respostaCorreta": "Clareza e precisão",
+"dica": "Melhora comunicação."
+},
+{
+"pergunta": "Verbos regulares mantêm:",
+"opcoes": ["Mudanças constantes", "Raiz estável", "Sem conjugação", "Forma irregular"],
+"respostaCorreta": "Raiz estável",
+"dica": "Seguem modelo."
+}
+]
+},
+{
+"id": "4",
+"capitulo": "Os Pequenos Apresentadores: O Artigo",
+"nivel": "basico",
+"dicas": "Os artigos vêm antes do substantivo e indicam masculino ou feminino.",
+"perguntas": [
+{
+"pergunta": "O que é um artigo?",
+"opcoes": ["Uma ação", "Uma palavra que acompanha o substantivo", "Um verbo", "Um número"],
+"respostaCorreta": "Uma palavra que acompanha o substantivo",
+"dica": "Ele vem antes do nome."
+},
+{
+"pergunta": "Qual é um artigo definido?",
+"opcoes": ["Um", "Uma", "O", "Uns"],
+"respostaCorreta": "O",
+"dica": "Indica algo específico."
+},
+{
+"pergunta": "Qual é um artigo indefinido?",
+"opcoes": ["O", "A", "Um", "Os"],
+"respostaCorreta": "Um",
+"dica": "Indica algo qualquer."
+},
+{
+"pergunta": "Qual artigo combina com 'mesa'?",
+"opcoes": ["O", "Um", "A", "Os"],
+"respostaCorreta": "A",
+"dica": "Mesa é feminina."
+},
+{
+"pergunta": "Qual artigo combina com 'livro'?",
+"opcoes": ["A", "Uma", "O", "As"],
+"respostaCorreta": "O",
+"dica": "Livro é masculino."
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["O mesa", "A livro", "O livro", "A gato"],
+"respostaCorreta": "O livro",
+"dica": "Concordância correta."
+},
+{
+"pergunta": "Qual é artigo definido feminino?",
+"opcoes": ["O", "Os", "A", "Um"],
+"respostaCorreta": "A",
+"dica": "Indica algo específico feminino."
+},
+{
+"pergunta": "Qual é artigo indefinido masculino?",
+"opcoes": ["A", "As", "Um", "Uma"],
+"respostaCorreta": "Um",
+"dica": "Masculino singular."
+},
+{
+"pergunta": "Os artigos servem para:",
+"opcoes": ["Indicar ação", "Apresentar o substantivo", "Descrever", "Contar"],
+"respostaCorreta": "Apresentar o substantivo",
+"dica": "Vêm antes do nome."
+},
+{
+"pergunta": "Qual é um artigo?",
+"opcoes": ["Mesa", "Correr", "O", "Bonito"],
+"respostaCorreta": "O",
+"dica": "Palavra pequena antes do nome."
+}
+]
+},
+{
+"id": "4",
+"capitulo": "Os Pequenos Apresentadores: O Artigo",
+"nivel": "medio",
+"dicas": "Os artigos indicam gênero, número e se algo é específico ou não.",
+"perguntas": [
+{
+"pergunta": "Artigos definidos indicam:",
+"opcoes": ["Algo desconhecido", "Algo específico", "Uma ação", "Um tempo"],
+"respostaCorreta": "Algo específico",
+"dica": "Já conhecido."
+},
+{
+"pergunta": "Artigos indefinidos indicam:",
+"opcoes": ["Algo específico", "Algo geral", "Uma ação", "Um lugar"],
+"respostaCorreta": "Algo geral",
+"dica": "Qualquer um."
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["Um mesa", "Uma mesa", "Um casa", "Uma livro"],
+"respostaCorreta": "Uma mesa",
+"dica": "Mesa é feminina."
+},
+{
+"pergunta": "Qual é artigo definido plural?",
+"opcoes": ["Um", "Uma", "Os", "Uns"],
+"respostaCorreta": "Os",
+"dica": "Plural masculino."
+},
+{
+"pergunta": "Qual é artigo indefinido plural?",
+"opcoes": ["Os", "As", "Uns", "O"],
+"respostaCorreta": "Uns",
+"dica": "Plural masculino indefinido."
+},
+{
+"pergunta": "O artigo concorda com:",
+"opcoes": ["Verbo", "Substantivo", "Advérbio", "Preposição"],
+"respostaCorreta": "Substantivo",
+"dica": "Mesmo gênero e número."
+},
+{
+"pergunta": "Qual frase está errada?",
+"opcoes": ["O carro", "A casa", "O flor", "A menina"],
+"respostaCorreta": "O flor",
+"dica": "Flor é feminina."
+},
+{
+"pergunta": "Qual alternativa tem artigo definido?",
+"opcoes": ["Um livro", "Uma casa", "O livro", "Uns meninos"],
+"respostaCorreta": "O livro",
+"dica": "Específico."
+},
+{
+"pergunta": "Qual alternativa tem artigo indefinido?",
+"opcoes": ["O carro", "A casa", "Um carro", "Os carros"],
+"respostaCorreta": "Um carro",
+"dica": "Não específico."
+},
+{
+"pergunta": "Artigos ajudam a indicar:",
+"opcoes": ["Tempo", "Gênero e número", "Ação", "Lugar"],
+"respostaCorreta": "Gênero e número",
+"dica": "Masculino/feminino e singular/plural."
+}
+]
+},
+{
+"id": "4",
+"capitulo": "Os Pequenos Apresentadores: O Artigo",
+"nivel": "avancado",
+"dicas": "Os artigos são essenciais para dar precisão e clareza ao substantivo.",
+"perguntas": [
+{
+"pergunta": "Qual é a função principal do artigo?",
+"opcoes": ["Indicar ação", "Apresentar e determinar o substantivo", "Descrever", "Ligar frases"],
+"respostaCorreta": "Apresentar e determinar o substantivo",
+"dica": "Define ou generaliza."
+},
+{
+"pergunta": "A diferença entre 'o livro' e 'um livro' é:",
+"opcoes": ["Tempo", "Quantidade", "Definição", "Lugar"],
+"respostaCorreta": "Definição",
+"dica": "Específico ou geral."
+},
+{
+"pergunta": "Qual frase apresenta erro de concordância?",
+"opcoes": ["O carro rápido", "A casa bonita", "Um menina feliz", "Os meninos brincam"],
+"respostaCorreta": "Um menina feliz",
+"dica": "Deveria ser 'Uma'."
+},
+{
+"pergunta": "Artigos definidos são usados quando:",
+"opcoes": ["Algo é desconhecido", "Algo é específico", "Algo é futuro", "Algo é plural"],
+"respostaCorreta": "Algo é específico",
+"dica": "Já conhecido."
+},
+{
+"pergunta": "Artigos indefinidos são usados quando:",
+"opcoes": ["Algo é específico", "Algo é geral", "Algo é passado", "Algo é único"],
+"respostaCorreta": "Algo é geral",
+"dica": "Não definido."
+},
+{
+"pergunta": "Qual alternativa contém apenas artigos?",
+"opcoes": ["O, a, os, as", "Um, correr, casa", "Livro, mesa, casa", "Bonito, alto, feliz"],
+"respostaCorreta": "O, a, os, as",
+"dica": "Todos são artigos."
+},
+{
+"pergunta": "O artigo deve concordar com:",
+"opcoes": ["Verbo", "Substantivo", "Adjetivo", "Advérbio"],
+"respostaCorreta": "Substantivo",
+"dica": "Mesmo gênero e número."
+},
+{
+"pergunta": "Qual alternativa apresenta uso correto?",
+"opcoes": ["O casa", "A livro", "Os meninos", "Um meninas"],
+"respostaCorreta": "Os meninos",
+"dica": "Concordância correta."
+},
+{
+"pergunta": "O uso correto dos artigos contribui para:",
+"opcoes": ["Confusão", "Clareza", "Erro", "Redução"],
+"respostaCorreta": "Clareza",
+"dica": "Ajuda a entender."
+},
+{
+"pergunta": "Os artigos fazem parte da:",
+"opcoes": ["Pontuação", "Classe de palavras", "Aritmética", "Geometria"],
+"respostaCorreta": "Classe de palavras",
+"dica": "Grupo gramatical."
+}
+]
+},
+{
+"id": "5",
+"capitulo": "Os Substitutos Amigos: O Pronome",
+"nivel": "basico",
+"dicas": "Os pronomes substituem nomes para evitar repetição.",
+"perguntas": [
+{
+"pergunta": "O que é um pronome?",
+"opcoes": ["Uma ação", "Um nome", "Uma palavra que substitui o nome", "Um número"],
+"respostaCorreta": "Uma palavra que substitui o nome",
+"dica": "Evita repetir palavras."
+},
+{
+"pergunta": "Qual é um pronome?",
+"opcoes": ["Mesa", "Ele", "Correr", "Livro"],
+"respostaCorreta": "Ele",
+"dica": "Substitui um nome."
+},
+{
+"pergunta": "Qual pronome usamos para falar de nós mesmos?",
+"opcoes": ["Ele", "Nós", "Eles", "Ela"],
+"respostaCorreta": "Nós",
+"dica": "Inclui quem fala."
+},
+{
+"pergunta": "Qual pronome usamos para falar de outra pessoa?",
+"opcoes": ["Eu", "Nós", "Ele", "Tu"],
+"respostaCorreta": "Ele",
+"dica": "3ª pessoa."
+},
+{
+"pergunta": "Qual pronome usamos para falar com alguém?",
+"opcoes": ["Eu", "Tu", "Eles", "Nós"],
+"respostaCorreta": "Tu",
+"dica": "2ª pessoa."
+},
+{
+"pergunta": "Qual substitui 'Maria'?",
+"opcoes": ["Ele", "Ela", "Nós", "Eu"],
+"respostaCorreta": "Ela",
+"dica": "Feminino."
+},
+{
+"pergunta": "Qual substitui 'João'?",
+"opcoes": ["Ela", "Ele", "Nós", "Tu"],
+"respostaCorreta": "Ele",
+"dica": "Masculino."
+},
+{
+"pergunta": "Os pronomes servem para:",
+"opcoes": ["Nomear", "Descrever", "Substituir nomes", "Contar"],
+"respostaCorreta": "Substituir nomes",
+"dica": "Evita repetição."
+},
+{
+"pergunta": "Qual é um pronome?",
+"opcoes": ["Casa", "Livro", "Eu", "Mesa"],
+"respostaCorreta": "Eu",
+"dica": "Pessoa que fala."
+},
+{
+"pergunta": "Qual pronome indica várias pessoas?",
+"opcoes": ["Eu", "Ele", "Nós", "Ela"],
+"respostaCorreta": "Nós",
+"dica": "Mais de uma pessoa."
+}
+]
+},
+{
+"id": "5",
+"capitulo": "Os Substitutos Amigos: O Pronome",
+"nivel": "medio",
+"dicas": "Os pronomes indicam as pessoas do discurso: quem fala, com quem se fala e de quem se fala.",
+"perguntas": [
+{
+"pergunta": "A 1ª pessoa do discurso é:",
+"opcoes": ["Quem ouve", "Quem fala", "De quem se fala", "Ninguém"],
+"respostaCorreta": "Quem fala",
+"dica": "Ex: eu, nós."
+},
+{
+"pergunta": "A 2ª pessoa do discurso é:",
+"opcoes": ["Quem fala", "Quem ouve", "De quem se fala", "Todos"],
+"respostaCorreta": "Quem ouve",
+"dica": "Ex: tu, você."
+},
+{
+"pergunta": "A 3ª pessoa do discurso é:",
+"opcoes": ["Quem fala", "Quem ouve", "De quem se fala", "Ninguém"],
+"respostaCorreta": "De quem se fala",
+"dica": "Ex: ele, ela."
+},
+{
+"pergunta": "Na frase 'Maria estuda. Ela é inteligente.', 'ela' substitui:",
+"opcoes": ["Estuda", "Maria", "Inteligente", "Frase"],
+"respostaCorreta": "Maria",
+"dica": "Evita repetição."
+},
+{
+"pergunta": "Qual grupo tem apenas pronomes?",
+"opcoes": ["Eu, tu, ele", "Livro, mesa, casa", "Bonito, alto, feliz", "Correr, pular, brincar"],
+"respostaCorreta": "Eu, tu, ele",
+"dica": "Todos substituem nomes."
+},
+{
+"pergunta": "Qual pronome indica quem fala?",
+"opcoes": ["Ele", "Ela", "Eu", "Eles"],
+"respostaCorreta": "Eu",
+"dica": "1ª pessoa."
+},
+{
+"pergunta": "Qual pronome indica com quem se fala?",
+"opcoes": ["Ele", "Tu", "Eles", "Nós"],
+"respostaCorreta": "Tu",
+"dica": "2ª pessoa."
+},
+{
+"pergunta": "Qual pronome indica várias pessoas na 3ª pessoa?",
+"opcoes": ["Nós", "Eles", "Eu", "Tu"],
+"respostaCorreta": "Eles",
+"dica": "Grupo de pessoas."
+},
+{
+"pergunta": "O uso de pronomes melhora:",
+"opcoes": ["A repetição", "A clareza", "A confusão", "O erro"],
+"respostaCorreta": "A clareza",
+"dica": "Evita repetir nomes."
+},
+{
+"pergunta": "Qual pronome substitui 'os alunos'?",
+"opcoes": ["Ele", "Ela", "Eles", "Eu"],
+"respostaCorreta": "Eles",
+"dica": "Plural masculino."
+}
+]
+},
+{
+"id": "5",
+"capitulo": "Os Substitutos Amigos: O Pronome",
+"nivel": "avancado",
+"dicas": "Os pronomes organizam o discurso e evitam repetições desnecessárias.",
+"perguntas": [
+{
+"pergunta": "Qual é a função principal do pronome?",
+"opcoes": ["Indicar ação", "Substituir ou acompanhar o substantivo", "Descrever", "Ligar frases"],
+"respostaCorreta": "Substituir ou acompanhar o substantivo",
+"dica": "Evita repetição."
+},
+{
+"pergunta": "Na frase 'João chegou. Ele está feliz.', 'ele' evita:",
+"opcoes": ["Erro", "Ação", "Repetição", "Pontuação"],
+"respostaCorreta": "Repetição",
+"dica": "Substitui o nome."
+},
+{
+"pergunta": "Pronomes ajudam a manter:",
+"opcoes": ["Confusão", "Repetição", "Fluidez do texto", "Erro"],
+"respostaCorreta": "Fluidez do texto",
+"dica": "Deixa a leitura melhor."
+},
+{
+"pergunta": "Qual alternativa contém apenas pronomes?",
+"opcoes": ["Eu, tu, nós", "Livro, mesa, casa", "Bonito, alto, feliz", "Correr, pular, brincar"],
+"respostaCorreta": "Eu, tu, nós",
+"dica": "Todos substituem nomes."
+},
+{
+"pergunta": "A 1ª pessoa inclui:",
+"opcoes": ["Ele, ela", "Tu, você", "Eu, nós", "Eles, elas"],
+"respostaCorreta": "Eu, nós",
+"dica": "Quem fala."
+},
+{
+"pergunta": "A 3ª pessoa inclui:",
+"opcoes": ["Eu, nós", "Tu, você", "Ele, ela, eles, elas", "Nós, vocês"],
+"respostaCorreta": "Ele, ela, eles, elas",
+"dica": "De quem se fala."
+},
+{
+"pergunta": "O uso correto dos pronomes contribui para:",
+"opcoes": ["Confusão", "Clareza", "Erro", "Repetição"],
+"respostaCorreta": "Clareza",
+"dica": "Melhora compreensão."
+},
+{
+"pergunta": "Qual frase usa pronome corretamente?",
+"opcoes": ["Maria estuda. Maria é inteligente.", "Maria estuda. Ela é inteligente.", "Maria estuda. Ele é inteligente.", "Maria estuda. Nós é inteligente."],
+"respostaCorreta": "Maria estuda. Ela é inteligente.",
+"dica": "Substitui corretamente."
+},
+{
+"pergunta": "Os pronomes fazem parte da:",
+"opcoes": ["Pontuação", "Classe de palavras", "Matemática", "Geometria"],
+"respostaCorreta": "Classe de palavras",
+"dica": "Grupo gramatical."
+},
+{
+"pergunta": "Sem pronomes, o texto ficaria:",
+"opcoes": ["Mais claro", "Mais repetitivo", "Mais curto", "Mais correto"],
+"respostaCorreta": "Mais repetitivo",
+"dica": "Repetiria nomes."
+}
+]
+},
+{
+"id": "5.1",
+"capitulo": "O Universo dos Pronomes: Tratamento, Posse e Apontamento",
+"nivel": "basico",
+"dicas": "Os pronomes podem indicar posse, tratamento e posição.",
+"perguntas": [
+{
+"pergunta": "Qual pronome indica posse?",
+"opcoes": ["Eu", "Meu", "Ele", "Aqui"],
+"respostaCorreta": "Meu",
+"dica": "Mostra de quem é algo."
+},
+{
+"pergunta": "Qual pronome usamos para tratar alguém com respeito?",
+"opcoes": ["Tu", "Senhor", "Eu", "Nós"],
+"respostaCorreta": "Senhor",
+"dica": "Usado com pessoas mais velhas."
+},
+{
+"pergunta": "Qual pronome indica algo perto de quem fala?",
+"opcoes": ["Aquele", "Esse", "Este", "Ele"],
+"respostaCorreta": "Este",
+"dica": "Está perto de mim."
+},
+{
+"pergunta": "Qual pronome indica posse?",
+"opcoes": ["Teu", "Aqui", "Ele", "Ali"],
+"respostaCorreta": "Teu",
+"dica": "Mostra dono."
+},
+{
+"pergunta": "Qual pronome indica algo longe?",
+"opcoes": ["Este", "Esse", "Aquele", "Eu"],
+"respostaCorreta": "Aquele",
+"dica": "Está distante."
+},
+{
+"pergunta": "Qual pronome usamos com amigos?",
+"opcoes": ["Senhor", "Você", "Vossa Majestade", "Vossa Alteza"],
+"respostaCorreta": "Você",
+"dica": "Forma comum."
+},
+{
+"pergunta": "Qual pronome indica posse?",
+"opcoes": ["Minha", "Aqui", "Ele", "Ontem"],
+"respostaCorreta": "Minha",
+"dica": "Pertence a alguém."
+},
+{
+"pergunta": "Qual indica algo perto de quem ouve?",
+"opcoes": ["Este", "Esse", "Aquele", "Eu"],
+"respostaCorreta": "Esse",
+"dica": "Está com você."
+},
+{
+"pergunta": "Qual pronome é de tratamento?",
+"opcoes": ["Meu", "Senhora", "Este", "Teu"],
+"respostaCorreta": "Senhora",
+"dica": "Forma respeitosa."
+},
+{
+"pergunta": "Qual pronome indica posse?",
+"opcoes": ["Dele", "Aqui", "Ali", "Ontem"],
+"respostaCorreta": "Dele",
+"dica": "Mostra a quem pertence."
+}
+]
+},
+{
+"id": "5.1",
+"capitulo": "O Universo dos Pronomes: Tratamento, Posse e Apontamento",
+"nivel": "medio",
+"dicas": "Os pronomes organizam relações de posse, respeito e localização.",
+"perguntas": [
+{
+"pergunta": "Pronomes possessivos indicam:",
+"opcoes": ["Tempo", "Lugar", "Posse", "Ação"],
+"respostaCorreta": "Posse",
+"dica": "Mostram dono."
+},
+{
+"pergunta": "Qual é pronome possessivo?",
+"opcoes": ["Meu", "Aqui", "Ele", "Ontem"],
+"respostaCorreta": "Meu",
+"dica": "Indica posse."
+},
+{
+"pergunta": "Pronomes de tratamento servem para:",
+"opcoes": ["Indicar lugar", "Mostrar respeito", "Indicar tempo", "Descrever"],
+"respostaCorreta": "Mostrar respeito",
+"dica": "Forma educada."
+},
+{
+"pergunta": "Qual é pronome de tratamento?",
+"opcoes": ["Você", "Meu", "Este", "Ali"],
+"respostaCorreta": "Você",
+"dica": "Usado no dia a dia."
+},
+{
+"pergunta": "Pronomes demonstrativos indicam:",
+"opcoes": ["Posse", "Tempo", "Posição", "Ação"],
+"respostaCorreta": "Posição",
+"dica": "Mostram onde está."
+},
+{
+"pergunta": "Qual indica algo perto de quem fala?",
+"opcoes": ["Aquele", "Esse", "Este", "Ele"],
+"respostaCorreta": "Este",
+"dica": "Está comigo."
+},
+{
+"pergunta": "Qual indica algo perto de quem ouve?",
+"opcoes": ["Este", "Esse", "Aquele", "Nós"],
+"respostaCorreta": "Esse",
+"dica": "Está com você."
+},
+{
+"pergunta": "Qual indica algo longe de ambos?",
+"opcoes": ["Este", "Esse", "Aquele", "Eu"],
+"respostaCorreta": "Aquele",
+"dica": "Está distante."
+},
+{
+"pergunta": "Qual frase mostra posse?",
+"opcoes": ["Meu livro é novo", "O livro está aqui", "Ele corre rápido", "Ontem choveu"],
+"respostaCorreta": "Meu livro é novo",
+"dica": "Indica dono."
+},
+{
+"pergunta": "O uso correto dos pronomes evita:",
+"opcoes": ["Clareza", "Organização", "Confusão", "Sentido"],
+"respostaCorreta": "Confusão",
+"dica": "Melhora entendimento."
+}
+]
+},
+{
+"id": "5.1",
+"capitulo": "O Universo dos Pronomes: Tratamento, Posse e Apontamento",
+"nivel": "avancado",
+"dicas": "Os pronomes organizam relações sociais, espaciais e de propriedade no discurso.",
+"perguntas": [
+{
+"pergunta": "Pronomes possessivos estabelecem relação de:",
+"opcoes": ["Tempo", "Posse", "Lugar", "Ação"],
+"respostaCorreta": "Posse",
+"dica": "Mostram a quem pertence."
+},
+{
+"pergunta": "Pronomes de tratamento refletem:",
+"opcoes": ["Ação", "Respeito social", "Tempo", "Quantidade"],
+"respostaCorreta": "Respeito social",
+"dica": "Forma de se dirigir."
+},
+{
+"pergunta": "Pronomes demonstrativos indicam:",
+"opcoes": ["Ação", "Tempo", "Posição no espaço", "Quantidade"],
+"respostaCorreta": "Posição no espaço",
+"dica": "Localização."
+},
+{
+"pergunta": "Qual frase apresenta pronome possessivo?",
+"opcoes": ["Este livro é interessante", "Meu livro é interessante", "Aquele livro é interessante", "O livro é interessante"],
+"respostaCorreta": "Meu livro é interessante",
+"dica": "Indica dono."
+},
+{
+"pergunta": "Qual frase apresenta pronome demonstrativo?",
+"opcoes": ["Meu livro", "Este livro", "Seu livro", "Livro bonito"],
+"respostaCorreta": "Este livro",
+"dica": "Aponta posição."
+},
+{
+"pergunta": "O uso correto dos pronomes contribui para:",
+"opcoes": ["Confusão", "Clareza e precisão", "Erro", "Redução"],
+"respostaCorreta": "Clareza e precisão",
+"dica": "Organiza ideias."
+},
+{
+"pergunta": "Qual alternativa contém apenas pronomes possessivos?",
+"opcoes": ["Meu, teu, seu", "Este, esse, aquele", "Eu, tu, ele", "Aqui, ali, lá"],
+"respostaCorreta": "Meu, teu, seu",
+"dica": "Todos indicam posse."
+},
+{
+"pergunta": "Qual alternativa contém apenas pronomes demonstrativos?",
+"opcoes": ["Meu, teu, seu", "Este, esse, aquele", "Eu, tu, ele", "Aqui, ali, lá"],
+"respostaCorreta": "Este, esse, aquele",
+"dica": "Indicam posição."
+},
+{
+"pergunta": "A escolha do pronome adequado evita:",
+"opcoes": ["Clareza", "Organização", "Ambiguidade", "Sentido"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Evita confusão."
+},
+{
+"pergunta": "Os pronomes ajudam a estruturar:",
+"opcoes": ["Somente frases simples", "Relações no discurso", "Apenas ações", "Somente pontuação"],
+"respostaCorreta": "Relações no discurso",
+"dica": "Organizam comunicação."
+}
+]
+},
+{
+"id": "6",
+"capitulo": "A Cola das Palavras: A Preposição",
+"nivel": "basico",
+"dicas": "A preposição liga palavras e mostra relações entre elas.",
+"perguntas": [
+{
+"pergunta": "O que é uma preposição?",
+"opcoes": ["Uma ação", "Uma palavra que liga termos", "Um nome", "Um número"],
+"respostaCorreta": "Uma palavra que liga termos",
+"dica": "Funciona como uma ligação."
+},
+{
+"pergunta": "Qual é uma preposição?",
+"opcoes": ["Correr", "De", "Mesa", "Bonito"],
+"respostaCorreta": "De",
+"dica": "Liga palavras."
+},
+{
+"pergunta": "Na expressão 'copo de água', a preposição é:",
+"opcoes": ["Copo", "Água", "De", "Nenhuma"],
+"respostaCorreta": "De",
+"dica": "Liga as palavras."
+},
+{
+"pergunta": "Qual preposição indica companhia?",
+"opcoes": ["De", "Para", "Com", "Em"],
+"respostaCorreta": "Com",
+"dica": "Ex: com amigos."
+},
+{
+"pergunta": "Qual preposição indica lugar?",
+"opcoes": ["De", "Em", "Para", "Com"],
+"respostaCorreta": "Em",
+"dica": "Ex: em casa."
+},
+{
+"pergunta": "Qual preposição indica destino?",
+"opcoes": ["Para", "Com", "De", "Em"],
+"respostaCorreta": "Para",
+"dica": "Ex: para escola."
+},
+{
+"pergunta": "Qual palavra é preposição?",
+"opcoes": ["Livro", "Casa", "Com", "Correr"],
+"respostaCorreta": "Com",
+"dica": "Liga palavras."
+},
+{
+"pergunta": "A preposição serve para:",
+"opcoes": ["Nomear", "Descrever", "Ligar palavras", "Contar"],
+"respostaCorreta": "Ligar palavras",
+"dica": "Une termos."
+},
+{
+"pergunta": "Na frase 'Vou para escola', a preposição é:",
+"opcoes": ["Vou", "Escola", "Para", "Nenhuma"],
+"respostaCorreta": "Para",
+"dica": "Indica destino."
+},
+{
+"pergunta": "Qual é uma preposição?",
+"opcoes": ["Bonito", "De", "Correr", "Livro"],
+"respostaCorreta": "De",
+"dica": "Palavra de ligação."
+}
+]
+},
+{
+"id": "6",
+"capitulo": "A Cola das Palavras: A Preposição",
+"nivel": "medio",
+"dicas": "As preposições criam relações como lugar, tempo, causa e companhia.",
+"perguntas": [
+{
+"pergunta": "A preposição 'com' indica:",
+"opcoes": ["Lugar", "Tempo", "Companhia", "Causa"],
+"respostaCorreta": "Companhia",
+"dica": "Ex: com amigos."
+},
+{
+"pergunta": "A preposição 'em' indica:",
+"opcoes": ["Tempo", "Lugar", "Causa", "Quantidade"],
+"respostaCorreta": "Lugar",
+"dica": "Ex: em casa."
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["Copo água", "Copo de água", "Copo água de", "Água copo de"],
+"respostaCorreta": "Copo de água",
+"dica": "Precisa da ligação."
+},
+{
+"pergunta": "Qual é uma preposição?",
+"opcoes": ["Livro", "De", "Bonito", "Correr"],
+"respostaCorreta": "De",
+"dica": "Liga palavras."
+},
+{
+"pergunta": "Preposições são palavras:",
+"opcoes": ["Variáveis", "Invariáveis", "Flexíveis", "Mutáveis"],
+"respostaCorreta": "Invariáveis",
+"dica": "Não mudam."
+},
+{
+"pergunta": "Na frase 'Saí com meus amigos', a preposição é:",
+"opcoes": ["Saí", "Amigos", "Com", "Meus"],
+"respostaCorreta": "Com",
+"dica": "Indica companhia."
+},
+{
+"pergunta": "Qual preposição indica origem?",
+"opcoes": ["De", "Com", "Para", "Em"],
+"respostaCorreta": "De",
+"dica": "Ex: vindo de casa."
+},
+{
+"pergunta": "Sem preposição, a frase fica:",
+"opcoes": ["Mais clara", "Mais confusa", "Mais longa", "Mais bonita"],
+"respostaCorreta": "Mais confusa",
+"dica": "Falta ligação."
+},
+{
+"pergunta": "Qual alternativa tem apenas preposições?",
+"opcoes": ["De, em, com", "Livro, mesa, casa", "Bonito, alto, feliz", "Correr, pular, brincar"],
+"respostaCorreta": "De, em, com",
+"dica": "Todas ligam palavras."
+},
+{
+"pergunta": "A função da preposição é:",
+"opcoes": ["Nomear", "Ligar termos", "Descrever", "Contar"],
+"respostaCorreta": "Ligar termos",
+"dica": "Une palavras."
+}
+]
+},
+{
+"id": "6",
+"capitulo": "A Cola das Palavras: A Preposição",
+"nivel": "avancado",
+"dicas": "As preposições estabelecem relações lógicas e semânticas entre palavras.",
+"perguntas": [
+{
+"pergunta": "Qual é a função principal da preposição?",
+"opcoes": ["Indicar ação", "Ligar termos e criar relações", "Descrever", "Nomear"],
+"respostaCorreta": "Ligar termos e criar relações",
+"dica": "Conecta palavras."
+},
+{
+"pergunta": "Preposições são classificadas como:",
+"opcoes": ["Variáveis", "Invariáveis", "Flexíveis", "Mutáveis"],
+"respostaCorreta": "Invariáveis",
+"dica": "Não mudam."
+},
+{
+"pergunta": "Na frase 'O livro está em cima da mesa', a preposição indica:",
+"opcoes": ["Tempo", "Lugar", "Causa", "Quantidade"],
+"respostaCorreta": "Lugar",
+"dica": "Localização."
+},
+{
+"pergunta": "Qual alternativa contém apenas preposições?",
+"opcoes": ["De, para, com", "Livro, mesa, casa", "Bonito, alto, feliz", "Correr, pular, brincar"],
+"respostaCorreta": "De, para, com",
+"dica": "Todas ligam termos."
+},
+{
+"pergunta": "O uso correto das preposições contribui para:",
+"opcoes": ["Confusão", "Clareza e sentido", "Erro", "Redução"],
+"respostaCorreta": "Clareza e sentido",
+"dica": "Organiza a frase."
+},
+{
+"pergunta": "Qual frase apresenta uso correto de preposição?",
+"opcoes": ["Copo água", "Copo de água", "Água copo", "Copo água de"],
+"respostaCorreta": "Copo de água",
+"dica": "Ligação correta."
+},
+{
+"pergunta": "As preposições ajudam a expressar:",
+"opcoes": ["Somente ação", "Relações como lugar e tempo", "Apenas cor", "Somente número"],
+"respostaCorreta": "Relações como lugar e tempo",
+"dica": "Criam sentido."
+},
+{
+"pergunta": "Sem preposições, a linguagem seria:",
+"opcoes": ["Mais clara", "Mais confusa", "Mais rica", "Mais curta"],
+"respostaCorreta": "Mais confusa",
+"dica": "Faltaria ligação."
+},
+{
+"pergunta": "A escolha correta da preposição evita:",
+"opcoes": ["Clareza", "Organização", "Ambiguidade", "Sentido"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Evita duplo sentido."
+},
+{
+"pergunta": "As preposições são essenciais para:",
+"opcoes": ["Eliminar palavras", "Conectar ideias", "Reduzir frases", "Alterar verbos"],
+"respostaCorreta": "Conectar ideias",
+"dica": "Ligam partes da frase."
+}
+]
+},
+{
+"id": "7",
+"capitulo": "Os Detalhes da Ação: O Advérbio",
+"nivel": "basico",
+"dicas": "O advérbio mostra como, quando ou onde algo acontece.",
+"perguntas": [
+{
+"pergunta": "O que é um advérbio?",
+"opcoes": ["Um nome", "Uma ação", "Uma palavra que modifica o verbo", "Um número"],
+"respostaCorreta": "Uma palavra que modifica o verbo",
+"dica": "Dá mais detalhes à ação."
+},
+{
+"pergunta": "Qual palavra é um advérbio?",
+"opcoes": ["Mesa", "Correr", "Aqui", "Livro"],
+"respostaCorreta": "Aqui",
+"dica": "Indica lugar."
+},
+{
+"pergunta": "Qual advérbio indica lugar?",
+"opcoes": ["Hoje", "Aqui", "Bem", "Muito"],
+"respostaCorreta": "Aqui",
+"dica": "Mostra onde."
+},
+{
+"pergunta": "Qual advérbio indica tempo?",
+"opcoes": ["Ontem", "Aqui", "Bem", "Muito"],
+"respostaCorreta": "Ontem",
+"dica": "Mostra quando."
+},
+{
+"pergunta": "Qual advérbio indica modo?",
+"opcoes": ["Aqui", "Hoje", "Bem", "Muito"],
+"respostaCorreta": "Bem",
+"dica": "Mostra como."
+},
+{
+"pergunta": "Na frase 'Eu corro rápido', o advérbio é:",
+"opcoes": ["Eu", "Corro", "Rápido", "Nenhum"],
+"respostaCorreta": "Rápido",
+"dica": "Descreve como corre."
+},
+{
+"pergunta": "Qual advérbio indica intensidade?",
+"opcoes": ["Muito", "Aqui", "Ontem", "Bem"],
+"respostaCorreta": "Muito",
+"dica": "Mostra quantidade."
+},
+{
+"pergunta": "O advérbio serve para:",
+"opcoes": ["Nomear", "Descrever ação", "Contar", "Ligar palavras"],
+"respostaCorreta": "Descrever ação",
+"dica": "Dá detalhes."
+},
+{
+"pergunta": "Qual palavra é advérbio?",
+"opcoes": ["Livro", "Casa", "Hoje", "Mesa"],
+"respostaCorreta": "Hoje",
+"dica": "Indica tempo."
+},
+{
+"pergunta": "Qual advérbio indica lugar?",
+"opcoes": ["Ali", "Ontem", "Bem", "Muito"],
+"respostaCorreta": "Ali",
+"dica": "Mostra posição."
+}
+]
+},
+{
+"id": "7",
+"capitulo": "Os Detalhes da Ação: O Advérbio",
+"nivel": "medio",
+"dicas": "Os advérbios indicam circunstâncias como tempo, lugar, modo e intensidade.",
+"perguntas": [
+{
+"pergunta": "Advérbios respondem a perguntas como:",
+"opcoes": ["Quem?", "Quando?", "Qual?", "Quantos?"],
+"respostaCorreta": "Quando?",
+"dica": "Indica tempo."
+},
+{
+"pergunta": "Na frase 'Estudei ontem', o advérbio é:",
+"opcoes": ["Estudei", "Ontem", "Eu", "Nenhum"],
+"respostaCorreta": "Ontem",
+"dica": "Indica tempo."
+},
+{
+"pergunta": "Qual advérbio indica modo?",
+"opcoes": ["Devagar", "Ontem", "Aqui", "Muito"],
+"respostaCorreta": "Devagar",
+"dica": "Mostra como."
+},
+{
+"pergunta": "Qual advérbio indica lugar?",
+"opcoes": ["Aqui", "Ontem", "Bem", "Muito"],
+"respostaCorreta": "Aqui",
+"dica": "Mostra onde."
+},
+{
+"pergunta": "Qual advérbio indica intensidade?",
+"opcoes": ["Muito", "Aqui", "Ontem", "Devagar"],
+"respostaCorreta": "Muito",
+"dica": "Mostra quantidade."
+},
+{
+"pergunta": "Os advérbios são palavras:",
+"opcoes": ["Variáveis", "Invariáveis", "Flexíveis", "Mutáveis"],
+"respostaCorreta": "Invariáveis",
+"dica": "Não mudam."
+},
+{
+"pergunta": "Qual frase contém advérbio?",
+"opcoes": ["O livro", "Ele corre bem", "Mesa grande", "Casa bonita"],
+"respostaCorreta": "Ele corre bem",
+"dica": "Bem descreve a ação."
+},
+{
+"pergunta": "Advérbios modificam:",
+"opcoes": ["Substantivos", "Verbos", "Artigos", "Preposições"],
+"respostaCorreta": "Verbos",
+"dica": "Dão detalhes à ação."
+},
+{
+"pergunta": "Qual palavra é advérbio?",
+"opcoes": ["Correr", "Bonito", "Aqui", "Livro"],
+"respostaCorreta": "Aqui",
+"dica": "Indica lugar."
+},
+{
+"pergunta": "O uso de advérbios melhora:",
+"opcoes": ["Confusão", "Clareza", "Erro", "Repetição"],
+"respostaCorreta": "Clareza",
+"dica": "Dá mais detalhes."
+}
+]
+},
+{
+"id": "7",
+"capitulo": "Os Detalhes da Ação: O Advérbio",
+"nivel": "avancado",
+"dicas": "Os advérbios enriquecem a frase ao indicar circunstâncias da ação.",
+"perguntas": [
+{
+"pergunta": "Qual é a função principal do advérbio?",
+"opcoes": ["Nomear", "Modificar verbos e indicar circunstâncias", "Ligar palavras", "Contar"],
+"respostaCorreta": "Modificar verbos e indicar circunstâncias",
+"dica": "Dá detalhes à ação."
+},
+{
+"pergunta": "Advérbios podem modificar também:",
+"opcoes": ["Apenas verbos", "Adjetivos e advérbios", "Somente substantivos", "Artigos"],
+"respostaCorreta": "Adjetivos e advérbios",
+"dica": "Ampliam sentido."
+},
+{
+"pergunta": "Na frase 'Ele fala muito bem', quantos advérbios existem?",
+"opcoes": ["1", "2", "3", "0"],
+"respostaCorreta": "2",
+"dica": "Muito e bem."
+},
+{
+"pergunta": "Advérbios são classificados como:",
+"opcoes": ["Variáveis", "Invariáveis", "Flexíveis", "Mutáveis"],
+"respostaCorreta": "Invariáveis",
+"dica": "Não mudam."
+},
+{
+"pergunta": "Qual frase apresenta advérbio de tempo?",
+"opcoes": ["Ele corre bem", "Ele corre aqui", "Ele corre hoje", "Ele corre muito"],
+"respostaCorreta": "Ele corre hoje",
+"dica": "Indica quando."
+},
+{
+"pergunta": "Qual frase apresenta advérbio de lugar?",
+"opcoes": ["Ele corre bem", "Ele corre aqui", "Ele corre hoje", "Ele corre muito"],
+"respostaCorreta": "Ele corre aqui",
+"dica": "Indica onde."
+},
+{
+"pergunta": "Qual frase apresenta advérbio de modo?",
+"opcoes": ["Ele corre bem", "Ele corre aqui", "Ele corre hoje", "Ele corre muito"],
+"respostaCorreta": "Ele corre bem",
+"dica": "Indica como."
+},
+{
+"pergunta": "Qual frase apresenta advérbio de intensidade?",
+"opcoes": ["Ele corre bem", "Ele corre aqui", "Ele corre hoje", "Ele corre muito"],
+"respostaCorreta": "Ele corre muito",
+"dica": "Indica quanto."
+},
+{
+"pergunta": "O uso correto dos advérbios contribui para:",
+"opcoes": ["Confusão", "Clareza e precisão", "Erro", "Redução"],
+"respostaCorreta": "Clareza e precisão",
+"dica": "Melhora entendimento."
+},
+{
+"pergunta": "Sem advérbios, a linguagem seria:",
+"opcoes": ["Mais rica", "Mais detalhada", "Menos detalhada", "Mais longa"],
+"respostaCorreta": "Menos detalhada",
+"dica": "Faltam informações."
+}
+]
+},
+{
+"id": "8",
+"capitulo": "O Grito da Alma: A Interjeição",
+"nivel": "basico",
+"dicas": "A interjeição expressa emoções como alegria, surpresa ou dor.",
+"perguntas": [
+{
+"pergunta": "O que é uma interjeição?",
+"opcoes": ["Uma ação", "Uma emoção", "Um nome", "Um número"],
+"respostaCorreta": "Uma emoção",
+"dica": "Mostra sentimentos."
+},
+{
+"pergunta": "Qual é uma interjeição?",
+"opcoes": ["Livro", "Ah!", "Correr", "Mesa"],
+"respostaCorreta": "Ah!",
+"dica": "Expressa emoção."
+},
+{
+"pergunta": "Qual interjeição indica dor?",
+"opcoes": ["Oba!", "Ai!", "Olá!", "Bravo!"],
+"respostaCorreta": "Ai!",
+"dica": "Usada quando algo dói."
+},
+{
+"pergunta": "Qual interjeição indica alegria?",
+"opcoes": ["Ai!", "Oba!", "Oh!", "Eita!"],
+"respostaCorreta": "Oba!",
+"dica": "Mostra felicidade."
+},
+{
+"pergunta": "Qual interjeição usamos para chamar alguém?",
+"opcoes": ["Ei!", "Ai!", "Oba!", "Nossa!"],
+"respostaCorreta": "Ei!",
+"dica": "Para chamar atenção."
+},
+{
+"pergunta": "Qual interjeição indica surpresa?",
+"opcoes": ["Nossa!", "Ai!", "Oba!", "Ei!"],
+"respostaCorreta": "Nossa!",
+"dica": "Algo inesperado."
+},
+{
+"pergunta": "Interjeições servem para:",
+"opcoes": ["Nomear", "Expressar sentimentos", "Contar", "Ligar palavras"],
+"respostaCorreta": "Expressar sentimentos",
+"dica": "Mostram emoções."
+},
+{
+"pergunta": "Qual palavra é interjeição?",
+"opcoes": ["Casa", "Livro", "Uau!", "Mesa"],
+"respostaCorreta": "Uau!",
+"dica": "Expressa surpresa."
+},
+{
+"pergunta": "Qual interjeição indica espanto?",
+"opcoes": ["Uau!", "Ai!", "Ei!", "Olá!"],
+"respostaCorreta": "Uau!",
+"dica": "Mostra surpresa."
+},
+{
+"pergunta": "Qual interjeição indica cumprimento?",
+"opcoes": ["Olá!", "Ai!", "Oba!", "Nossa!"],
+"respostaCorreta": "Olá!",
+"dica": "Usada ao cumprimentar."
+}
+]
+},
+{
+"id": "8",
+"capitulo": "O Grito da Alma: A Interjeição",
+"nivel": "medio",
+"dicas": "As interjeições expressam diferentes emoções e reações no discurso.",
+"perguntas": [
+{
+"pergunta": "Interjeições indicam:",
+"opcoes": ["Ação", "Tempo", "Emoção", "Lugar"],
+"respostaCorreta": "Emoção",
+"dica": "Mostram sentimentos."
+},
+{
+"pergunta": "Qual interjeição indica dor?",
+"opcoes": ["Oba!", "Ai!", "Uau!", "Olá!"],
+"respostaCorreta": "Ai!",
+"dica": "Expressa dor."
+},
+{
+"pergunta": "Qual interjeição indica alegria?",
+"opcoes": ["Nossa!", "Oba!", "Ai!", "Ei!"],
+"respostaCorreta": "Oba!",
+"dica": "Mostra felicidade."
+},
+{
+"pergunta": "Qual interjeição indica surpresa?",
+"opcoes": ["Uau!", "Ai!", "Oba!", "Olá!"],
+"respostaCorreta": "Uau!",
+"dica": "Algo inesperado."
+},
+{
+"pergunta": "Qual frase contém interjeição?",
+"opcoes": ["Ele corre rápido", "Oba! Ganhei o jogo", "A casa é bonita", "O livro é novo"],
+"respostaCorreta": "Oba! Ganhei o jogo",
+"dica": "Expressa emoção."
+},
+{
+"pergunta": "Interjeições geralmente vêm acompanhadas de:",
+"opcoes": ["Ponto final", "Vírgula", "Ponto de exclamação", "Dois pontos"],
+"respostaCorreta": "Ponto de exclamação",
+"dica": "Mostra emoção."
+},
+{
+"pergunta": "Qual palavra é interjeição?",
+"opcoes": ["Livro", "Mesa", "Nossa!", "Casa"],
+"respostaCorreta": "Nossa!",
+"dica": "Expressa surpresa."
+},
+{
+"pergunta": "Interjeições são palavras:",
+"opcoes": ["Variáveis", "Invariáveis", "Flexíveis", "Mutáveis"],
+"respostaCorreta": "Invariáveis",
+"dica": "Não mudam."
+},
+{
+"pergunta": "Qual interjeição indica chamada?",
+"opcoes": ["Ei!", "Ai!", "Oba!", "Uau!"],
+"respostaCorreta": "Ei!",
+"dica": "Para chamar atenção."
+},
+{
+"pergunta": "O uso de interjeições torna o texto:",
+"opcoes": ["Mais frio", "Mais expressivo", "Mais curto", "Mais difícil"],
+"respostaCorreta": "Mais expressivo",
+"dica": "Mostra emoção."
+}
+]
+},
+{
+"id": "8",
+"capitulo": "O Grito da Alma: A Interjeição",
+"nivel": "avancado",
+"dicas": "As interjeições enriquecem a comunicação ao transmitir emoções diretamente.",
+"perguntas": [
+{
+"pergunta": "Qual é a função principal da interjeição?",
+"opcoes": ["Indicar ação", "Expressar emoção", "Nomear", "Ligar palavras"],
+"respostaCorreta": "Expressar emoção",
+"dica": "Mostra sentimentos."
+},
+{
+"pergunta": "Interjeições são classificadas como:",
+"opcoes": ["Variáveis", "Invariáveis", "Flexíveis", "Mutáveis"],
+"respostaCorreta": "Invariáveis",
+"dica": "Não mudam."
+},
+{
+"pergunta": "Qual frase expressa surpresa?",
+"opcoes": ["Ele corre rápido", "Uau! Isso é incrível", "A casa é bonita", "O livro caiu"],
+"respostaCorreta": "Uau! Isso é incrível",
+"dica": "Interjeição de surpresa."
+},
+{
+"pergunta": "Qual interjeição indica dor?",
+"opcoes": ["Oba!", "Ai!", "Nossa!", "Olá!"],
+"respostaCorreta": "Ai!",
+"dica": "Expressa dor."
+},
+{
+"pergunta": "O uso de interjeições contribui para:",
+"opcoes": ["Confusão", "Expressividade", "Erro", "Redução"],
+"respostaCorreta": "Expressividade",
+"dica": "Mostra emoções."
+},
+{
+"pergunta": "Qual alternativa contém apenas interjeições?",
+"opcoes": ["Ai!, Uau!, Oba!", "Livro, mesa, casa", "Correr, pular, brincar", "Bonito, alto, feliz"],
+"respostaCorreta": "Ai!, Uau!, Oba!",
+"dica": "Todas expressam emoção."
+},
+{
+"pergunta": "A interjeição pode substituir:",
+"opcoes": ["Um verbo", "Uma frase inteira de emoção", "Um substantivo", "Um número"],
+"respostaCorreta": "Uma frase inteira de emoção",
+"dica": "Resume sentimento."
+},
+{
+"pergunta": "Qual frase contém interjeição de alegria?",
+"opcoes": ["Oba! Vamos viajar", "Ai! Que dor", "Nossa! Que susto", "Ei! Espere"],
+"respostaCorreta": "Oba! Vamos viajar",
+"dica": "Expressa felicidade."
+},
+{
+"pergunta": "Interjeições são comuns em:",
+"opcoes": ["Textos técnicos", "Conversas e diálogos", "Fórmulas matemáticas", "Cálculos"],
+"respostaCorreta": "Conversas e diálogos",
+"dica": "Uso informal."
+},
+{
+"pergunta": "Sem interjeições, a linguagem fica:",
+"opcoes": ["Mais expressiva", "Mais emocional", "Menos expressiva", "Mais clara"],
+"respostaCorreta": "Menos expressiva",
+"dica": "Faltam emoções."
+}
+]
+},
+{
+"id": "9",
+"capitulo": "Pontes de Ideias: A Conjunção",
+"nivel": "basico",
+"dicas": "A conjunção liga palavras ou frases.",
+"perguntas": [
+{
+"pergunta": "O que é uma conjunção?",
+"opcoes": ["Uma ação", "Uma palavra que liga ideias", "Um nome", "Um número"],
+"respostaCorreta": "Uma palavra que liga ideias",
+"dica": "Serve para unir."
+},
+{
+"pergunta": "Qual é uma conjunção?",
+"opcoes": ["Mesa", "E", "Correr", "Livro"],
+"respostaCorreta": "E",
+"dica": "Liga palavras."
+},
+{
+"pergunta": "Na frase 'Eu estudo e brinco', a conjunção é:",
+"opcoes": ["Eu", "Estudo", "E", "Brinco"],
+"respostaCorreta": "E",
+"dica": "Liga as ações."
+},
+{
+"pergunta": "Qual conjunção indica adição?",
+"opcoes": ["Mas", "E", "Ou", "Porque"],
+"respostaCorreta": "E",
+"dica": "Soma ideias."
+},
+{
+"pergunta": "Qual conjunção indica escolha?",
+"opcoes": ["E", "Mas", "Ou", "Porque"],
+"respostaCorreta": "Ou",
+"dica": "Uma ou outra opção."
+},
+{
+"pergunta": "Qual conjunção indica oposição?",
+"opcoes": ["E", "Mas", "Ou", "Porque"],
+"respostaCorreta": "Mas",
+"dica": "Ideias contrárias."
+},
+{
+"pergunta": "Qual conjunção indica causa?",
+"opcoes": ["Porque", "E", "Ou", "Mas"],
+"respostaCorreta": "Porque",
+"dica": "Explica motivo."
+},
+{
+"pergunta": "A conjunção serve para:",
+"opcoes": ["Nomear", "Descrever", "Ligar ideias", "Contar"],
+"respostaCorreta": "Ligar ideias",
+"dica": "Une partes."
+},
+{
+"pergunta": "Qual palavra é conjunção?",
+"opcoes": ["Casa", "Livro", "Mas", "Mesa"],
+"respostaCorreta": "Mas",
+"dica": "Liga ideias."
+},
+{
+"pergunta": "Qual conjunção indica explicação?",
+"opcoes": ["Porque", "E", "Ou", "Mas"],
+"respostaCorreta": "Porque",
+"dica": "Dá motivo."
+}
+]
+},
+{
+"id": "9",
+"capitulo": "Pontes de Ideias: A Conjunção",
+"nivel": "medio",
+"dicas": "As conjunções conectam ideias e mostram relações entre frases.",
+"perguntas": [
+{
+"pergunta": "Conjunções coordenativas ligam:",
+"opcoes": ["Ideias dependentes", "Ideias independentes", "Nomes", "Ações"],
+"respostaCorreta": "Ideias independentes",
+"dica": "Frases completas."
+},
+{
+"pergunta": "Conjunções subordinativas ligam:",
+"opcoes": ["Ideias independentes", "Ideias dependentes", "Somente nomes", "Somente verbos"],
+"respostaCorreta": "Ideias dependentes",
+"dica": "Uma depende da outra."
+},
+{
+"pergunta": "Na frase 'Estudo porque quero aprender', a conjunção é:",
+"opcoes": ["Estudo", "Porque", "Quero", "Aprender"],
+"respostaCorreta": "Porque",
+"dica": "Indica causa."
+},
+{
+"pergunta": "Qual conjunção indica oposição?",
+"opcoes": ["E", "Mas", "Ou", "Porque"],
+"respostaCorreta": "Mas",
+"dica": "Ideias contrárias."
+},
+{
+"pergunta": "Qual conjunção indica alternativa?",
+"opcoes": ["E", "Mas", "Ou", "Porque"],
+"respostaCorreta": "Ou",
+"dica": "Escolha."
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["Estudo mas aprendo", "Estudo e aprendo", "Estudo ou aprendo sempre", "Estudo porque"],
+"respostaCorreta": "Estudo e aprendo",
+"dica": "Ideias completas."
+},
+{
+"pergunta": "Conjunções ajudam a:",
+"opcoes": ["Separar ideias", "Ligar ideias", "Apagar ideias", "Contar ideias"],
+"respostaCorreta": "Ligar ideias",
+"dica": "Unem frases."
+},
+{
+"pergunta": "Qual palavra é conjunção?",
+"opcoes": ["Livro", "Mesa", "Ou", "Casa"],
+"respostaCorreta": "Ou",
+"dica": "Liga ideias."
+},
+{
+"pergunta": "O uso de conjunções melhora:",
+"opcoes": ["Confusão", "Clareza", "Erro", "Repetição"],
+"respostaCorreta": "Clareza",
+"dica": "Organiza ideias."
+},
+{
+"pergunta": "Qual conjunção indica causa?",
+"opcoes": ["Porque", "E", "Mas", "Ou"],
+"respostaCorreta": "Porque",
+"dica": "Explica motivo."
+}
+]
+},
+{
+"id": "9",
+"capitulo": "Pontes de Ideias: A Conjunção",
+"nivel": "avancado",
+"dicas": "As conjunções estruturam relações lógicas entre ideias no discurso.",
+"perguntas": [
+{
+"pergunta": "Qual é a função principal da conjunção?",
+"opcoes": ["Nomear", "Descrever", "Ligar ideias", "Contar"],
+"respostaCorreta": "Ligar ideias",
+"dica": "Conecta frases."
+},
+{
+"pergunta": "Conjunções coordenativas estabelecem relação de:",
+"opcoes": ["Dependência", "Independência", "Tempo", "Lugar"],
+"respostaCorreta": "Independência",
+"dica": "Frases completas."
+},
+{
+"pergunta": "Conjunções subordinativas estabelecem:",
+"opcoes": ["Independência", "Dependência", "Igualdade", "Separação"],
+"respostaCorreta": "Dependência",
+"dica": "Uma depende da outra."
+},
+{
+"pergunta": "Na frase 'Fiquei em casa porque choveu', a conjunção expressa:",
+"opcoes": ["Oposição", "Causa", "Adição", "Alternativa"],
+"respostaCorreta": "Causa",
+"dica": "Explica motivo."
+},
+{
+"pergunta": "Qual conjunção indica oposição?",
+"opcoes": ["E", "Mas", "Ou", "Porque"],
+"respostaCorreta": "Mas",
+"dica": "Contraste."
+},
+{
+"pergunta": "Qual conjunção indica adição?",
+"opcoes": ["E", "Mas", "Ou", "Porque"],
+"respostaCorreta": "E",
+"dica": "Soma ideias."
+},
+{
+"pergunta": "Qual conjunção indica alternativa?",
+"opcoes": ["E", "Mas", "Ou", "Porque"],
+"respostaCorreta": "Ou",
+"dica": "Escolha."
+},
+{
+"pergunta": "O uso correto das conjunções contribui para:",
+"opcoes": ["Confusão", "Clareza e coerência", "Erro", "Redução"],
+"respostaCorreta": "Clareza e coerência",
+"dica": "Organiza o texto."
+},
+{
+"pergunta": "Sem conjunções, o texto fica:",
+"opcoes": ["Mais claro", "Mais confuso", "Mais rico", "Mais longo"],
+"respostaCorreta": "Mais confuso",
+"dica": "Falta ligação."
+},
+{
+"pergunta": "As conjunções são essenciais para:",
+"opcoes": ["Separar ideias", "Conectar ideias", "Eliminar palavras", "Alterar verbos"],
+"respostaCorreta": "Conectar ideias",
+"dica": "Unem frases."
+}
+]
+},
+{
+"id": "9.1",
+"capitulo": "A União faz a Força: As Locuções",
+"nivel": "basico",
+"dicas": "Locuções são grupos de palavras que funcionam como uma só.",
+"perguntas": [
+{
+"pergunta": "O que é uma locução?",
+"opcoes": ["Uma palavra", "Um grupo de palavras com um sentido", "Uma ação", "Um número"],
+"respostaCorreta": "Um grupo de palavras com um sentido",
+"dica": "Várias palavras com função de uma."
+},
+{
+"pergunta": "Qual é uma locução?",
+"opcoes": ["Livro", "De repente", "Correr", "Mesa"],
+"respostaCorreta": "De repente",
+"dica": "Grupo de palavras."
+},
+{
+"pergunta": "Qual locução indica tempo?",
+"opcoes": ["De manhã", "Com carinho", "De ferro", "À mão"],
+"respostaCorreta": "De manhã",
+"dica": "Mostra quando."
+},
+{
+"pergunta": "Qual locução indica modo?",
+"opcoes": ["De manhã", "Com cuidado", "De ferro", "À noite"],
+"respostaCorreta": "Com cuidado",
+"dica": "Mostra como."
+},
+{
+"pergunta": "Qual locução indica lugar?",
+"opcoes": ["Em casa", "De manhã", "Com amor", "De repente"],
+"respostaCorreta": "Em casa",
+"dica": "Mostra onde."
+},
+{
+"pergunta": "Qual é uma locução adjetiva?",
+"opcoes": ["De mãe", "Corre", "Livro", "Mesa"],
+"respostaCorreta": "De mãe",
+"dica": "Substitui um adjetivo."
+},
+{
+"pergunta": "Locuções servem para:",
+"opcoes": ["Separar palavras", "Unir ideias", "Substituir funções", "Contar"],
+"respostaCorreta": "Substituir funções",
+"dica": "Funcionam como uma classe."
+},
+{
+"pergunta": "Qual expressão é locução?",
+"opcoes": ["Casa", "De repente", "Livro", "Mesa"],
+"respostaCorreta": "De repente",
+"dica": "Grupo com sentido."
+},
+{
+"pergunta": "Qual locução indica tempo?",
+"opcoes": ["À noite", "Com amor", "De ferro", "Em casa"],
+"respostaCorreta": "À noite",
+"dica": "Quando acontece."
+},
+{
+"pergunta": "Locuções são:",
+"opcoes": ["Uma palavra", "Várias palavras com um sentido", "Um verbo", "Um número"],
+"respostaCorreta": "Várias palavras com um sentido",
+"dica": "Funcionam juntas."
+}
+]
+},
+{
+"id": "9.1",
+"capitulo": "A União faz a Força: As Locuções",
+"nivel": "medio",
+"dicas": "Locuções podem funcionar como advérbios, adjetivos e outras classes.",
+"perguntas": [
+{
+"pergunta": "Locução adverbial indica:",
+"opcoes": ["Nome", "Ação", "Circunstância", "Número"],
+"respostaCorreta": "Circunstância",
+"dica": "Tempo, modo, lugar."
+},
+{
+"pergunta": "Qual é locução adverbial?",
+"opcoes": ["De repente", "Livro", "Mesa", "Correr"],
+"respostaCorreta": "De repente",
+"dica": "Indica modo."
+},
+{
+"pergunta": "Locução adjetiva equivale a:",
+"opcoes": ["Verbo", "Substantivo", "Adjetivo", "Advérbio"],
+"respostaCorreta": "Adjetivo",
+"dica": "Ex: de mãe = maternal."
+},
+{
+"pergunta": "Qual é locução adjetiva?",
+"opcoes": ["De ouro", "Corre", "Mesa", "Livro"],
+"respostaCorreta": "De ouro",
+"dica": "Qualidade."
+},
+{
+"pergunta": "Locuções são formadas por:",
+"opcoes": ["Uma palavra", "Duas ou mais palavras", "Somente verbos", "Somente nomes"],
+"respostaCorreta": "Duas ou mais palavras",
+"dica": "Grupo de palavras."
+},
+{
+"pergunta": "Qual locução indica lugar?",
+"opcoes": ["Em casa", "De manhã", "Com amor", "De repente"],
+"respostaCorreta": "Em casa",
+"dica": "Mostra onde."
+},
+{
+"pergunta": "Qual locução indica tempo?",
+"opcoes": ["À tarde", "Com cuidado", "De ferro", "Em casa"],
+"respostaCorreta": "À tarde",
+"dica": "Mostra quando."
+},
+{
+"pergunta": "Locuções ajudam a:",
+"opcoes": ["Confundir frases", "Enriquecer a linguagem", "Eliminar palavras", "Reduzir ideias"],
+"respostaCorreta": "Enriquecer a linguagem",
+"dica": "Dão mais sentido."
+},
+{
+"pergunta": "Qual alternativa tem locução?",
+"opcoes": ["De repente", "Livro", "Mesa", "Correr"],
+"respostaCorreta": "De repente",
+"dica": "Grupo de palavras."
+},
+{
+"pergunta": "Locuções funcionam como:",
+"opcoes": ["Uma única palavra", "Várias frases", "Somente verbos", "Somente nomes"],
+"respostaCorreta": "Uma única palavra",
+"dica": "Mesmo sentido."
+}
+]
+},
+{
+"id": "9.1",
+"capitulo": "A União faz a Força: As Locuções",
+"nivel": "avancado",
+"dicas": "Locuções ampliam a expressividade e precisão da linguagem.",
+"perguntas": [
+{
+"pergunta": "Qual é a função das locuções?",
+"opcoes": ["Separar palavras", "Substituir classes gramaticais", "Eliminar frases", "Reduzir linguagem"],
+"respostaCorreta": "Substituir classes gramaticais",
+"dica": "Funcionam como uma classe."
+},
+{
+"pergunta": "Locução adverbial expressa:",
+"opcoes": ["Nome", "Ação", "Circunstância", "Número"],
+"respostaCorreta": "Circunstância",
+"dica": "Tempo, lugar, modo."
+},
+{
+"pergunta": "Locução adjetiva corresponde a:",
+"opcoes": ["Verbo", "Adjetivo", "Advérbio", "Preposição"],
+"respostaCorreta": "Adjetivo",
+"dica": "Ex: de mãe."
+},
+{
+"pergunta": "Qual alternativa contém locução adverbial?",
+"opcoes": ["De repente", "Livro", "Mesa", "Correr"],
+"respostaCorreta": "De repente",
+"dica": "Modo."
+},
+{
+"pergunta": "Qual alternativa contém locução adjetiva?",
+"opcoes": ["De ouro", "Corre", "Mesa", "Livro"],
+"respostaCorreta": "De ouro",
+"dica": "Qualidade."
+},
+{
+"pergunta": "Locuções são compostas por:",
+"opcoes": ["Uma palavra", "Duas ou mais palavras", "Somente verbos", "Somente adjetivos"],
+"respostaCorreta": "Duas ou mais palavras",
+"dica": "Grupo."
+},
+{
+"pergunta": "O uso de locuções contribui para:",
+"opcoes": ["Confusão", "Clareza e riqueza", "Erro", "Redução"],
+"respostaCorreta": "Clareza e riqueza",
+"dica": "Melhora expressão."
+},
+{
+"pergunta": "Sem locuções, a linguagem seria:",
+"opcoes": ["Mais rica", "Mais detalhada", "Menos expressiva", "Mais longa"],
+"respostaCorreta": "Menos expressiva",
+"dica": "Falta variedade."
+},
+{
+"pergunta": "Locuções ajudam a estruturar:",
+"opcoes": ["Somente frases simples", "Relações e significados", "Apenas ações", "Somente pontuação"],
+"respostaCorreta": "Relações e significados",
+"dica": "Organizam ideias."
+},
+{
+"pergunta": "A escolha correta de locuções evita:",
+"opcoes": ["Clareza", "Organização", "Ambiguidade", "Sentido"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Evita confusão."
+}
+]
+},
+{
+"id": "9.2",
+"capitulo": "A Fábrica de Palavras: Prefixos e Sufixos",
+"nivel": "basico",
+"dicas": "Prefixos vêm antes da palavra e sufixos vêm depois.",
+"perguntas": [
+{
+"pergunta": "O que é um prefixo?",
+"opcoes": ["Vem depois da palavra", "Vem antes da palavra", "É um verbo", "É um número"],
+"respostaCorreta": "Vem antes da palavra",
+"dica": "Fica no início."
+},
+{
+"pergunta": "O que é um sufixo?",
+"opcoes": ["Vem antes", "Vem depois", "É um verbo", "É um nome"],
+"respostaCorreta": "Vem depois",
+"dica": "Fica no final."
+},
+{
+"pergunta": "Qual palavra tem prefixo?",
+"opcoes": ["Feliz", "Infeliz", "Mesa", "Livro"],
+"respostaCorreta": "Infeliz",
+"dica": "Tem 'in-' antes."
+},
+{
+"pergunta": "Qual palavra tem sufixo?",
+"opcoes": ["Casa", "Casinha", "Livro", "Mesa"],
+"respostaCorreta": "Casinha",
+"dica": "Tem '-inha' no final."
+},
+{
+"pergunta": "O prefixo 'in-' indica:",
+"opcoes": ["Grande", "Negação", "Lugar", "Tempo"],
+"respostaCorreta": "Negação",
+"dica": "Ex: infeliz."
+},
+{
+"pergunta": "Qual é o sufixo em 'livrinho'?",
+"opcoes": ["livr", "-inho", "li", "ro"],
+"respostaCorreta": "-inho",
+"dica": "Está no final."
+},
+{
+"pergunta": "Prefixos e sufixos servem para:",
+"opcoes": ["Separar palavras", "Criar novas palavras", "Apagar palavras", "Contar"],
+"respostaCorreta": "Criar novas palavras",
+"dica": "Formam palavras novas."
+},
+{
+"pergunta": "Qual palavra tem prefixo?",
+"opcoes": ["Rever", "Mesa", "Casa", "Livro"],
+"respostaCorreta": "Rever",
+"dica": "Tem 're-' antes."
+},
+{
+"pergunta": "Qual palavra tem sufixo?",
+"opcoes": ["Flor", "Florzinha", "Livro", "Mesa"],
+"respostaCorreta": "Florzinha",
+"dica": "Tem '-zinha'."
+},
+{
+"pergunta": "Prefixos ficam:",
+"opcoes": ["No meio", "No início", "No fim", "Fora da palavra"],
+"respostaCorreta": "No início",
+"dica": "Antes da palavra."
+}
+]
+},
+{
+"id": "9.2",
+"capitulo": "A Fábrica de Palavras: Prefixos e Sufixos",
+"nivel": "medio",
+"dicas": "Prefixos e sufixos modificam o significado das palavras.",
+"perguntas": [
+{
+"pergunta": "O prefixo 're-' indica:",
+"opcoes": ["Negação", "Repetição", "Lugar", "Tempo"],
+"respostaCorreta": "Repetição",
+"dica": "Ex: refazer."
+},
+{
+"pergunta": "O prefixo 'des-' indica:",
+"opcoes": ["Afirmação", "Negação", "Lugar", "Tempo"],
+"respostaCorreta": "Negação",
+"dica": "Ex: desfazer."
+},
+{
+"pergunta": "Qual palavra tem prefixo?",
+"opcoes": ["Fazer", "Refazer", "Mesa", "Livro"],
+"respostaCorreta": "Refazer",
+"dica": "Tem 're-'."
+},
+{
+"pergunta": "Qual palavra tem sufixo?",
+"opcoes": ["Casa", "Caseiro", "Livro", "Mesa"],
+"respostaCorreta": "Caseiro",
+"dica": "Tem '-eiro'."
+},
+{
+"pergunta": "O sufixo '-inho' indica:",
+"opcoes": ["Grande", "Pequeno", "Lugar", "Tempo"],
+"respostaCorreta": "Pequeno",
+"dica": "Diminutivo."
+},
+{
+"pergunta": "O sufixo '-ão' indica:",
+"opcoes": ["Pequeno", "Grande", "Lugar", "Tempo"],
+"respostaCorreta": "Grande",
+"dica": "Aumentativo."
+},
+{
+"pergunta": "Prefixos e sufixos ajudam a:",
+"opcoes": ["Eliminar palavras", "Modificar significado", "Contar palavras", "Separar frases"],
+"respostaCorreta": "Modificar significado",
+"dica": "Mudam o sentido."
+},
+{
+"pergunta": "Qual palavra tem prefixo de negação?",
+"opcoes": ["Feliz", "Infeliz", "Casa", "Livro"],
+"respostaCorreta": "Infeliz",
+"dica": "Tem 'in-'."
+},
+{
+"pergunta": "Qual palavra tem sufixo?",
+"opcoes": ["Flor", "Florista", "Livro", "Mesa"],
+"respostaCorreta": "Florista",
+"dica": "Tem '-ista'."
+},
+{
+"pergunta": "A formação de palavras com prefixos e sufixos chama-se:",
+"opcoes": ["Flexão", "Derivação", "Conjugação", "Pontuação"],
+"respostaCorreta": "Derivação",
+"dica": "Criação de palavras."
+}
+]
+},
+{
+"id": "9.2",
+"capitulo": "A Fábrica de Palavras: Prefixos e Sufixos",
+"nivel": "avancado",
+"dicas": "Prefixos e sufixos são essenciais na formação e expansão do vocabulário.",
+"perguntas": [
+{
+"pergunta": "Prefixos são elementos que:",
+"opcoes": ["Vêm depois", "Vêm antes da raiz", "Substituem palavras", "Ligam frases"],
+"respostaCorreta": "Vêm antes da raiz",
+"dica": "Ficam no início."
+},
+{
+"pergunta": "Sufixos são elementos que:",
+"opcoes": ["Vêm antes", "Vêm depois da raiz", "Ligam frases", "Indicam ação"],
+"respostaCorreta": "Vêm depois da raiz",
+"dica": "Ficam no final."
+},
+{
+"pergunta": "Qual palavra apresenta prefixo de negação?",
+"opcoes": ["Feliz", "Infeliz", "Caseiro", "Livraria"],
+"respostaCorreta": "Infeliz",
+"dica": "Tem 'in-'."
+},
+{
+"pergunta": "Qual palavra apresenta sufixo?",
+"opcoes": ["Casa", "Caseiro", "Livro", "Mesa"],
+"respostaCorreta": "Caseiro",
+"dica": "Tem '-eiro'."
+},
+{
+"pergunta": "O processo de formação com prefixos e sufixos é chamado de:",
+"opcoes": ["Flexão", "Derivação", "Conjugação", "Coordenação"],
+"respostaCorreta": "Derivação",
+"dica": "Cria novas palavras."
+},
+{
+"pergunta": "Prefixos podem alterar:",
+"opcoes": ["A forma apenas", "O significado da palavra", "A pontuação", "O tempo verbal"],
+"respostaCorreta": "O significado da palavra",
+"dica": "Mudam o sentido."
+},
+{
+"pergunta": "Sufixos podem indicar:",
+"opcoes": ["Tempo", "Lugar", "Grau e profissão", "Apenas ação"],
+"respostaCorreta": "Grau e profissão",
+"dica": "Ex: -inho, -ista."
+},
+{
+"pergunta": "Qual alternativa contém palavra derivada por prefixo?",
+"opcoes": ["Feliz", "Infeliz", "Casa", "Livro"],
+"respostaCorreta": "Infeliz",
+"dica": "Tem prefixo."
+},
+{
+"pergunta": "Qual alternativa contém palavra derivada por sufixo?",
+"opcoes": ["Flor", "Florista", "Mesa", "Livro"],
+"respostaCorreta": "Florista",
+"dica": "Tem sufixo."
+},
+{
+"pergunta": "O uso de prefixos e sufixos contribui para:",
+"opcoes": ["Redução da linguagem", "Ampliação do vocabulário", "Confusão", "Erro"],
+"respostaCorreta": "Ampliação do vocabulário",
+"dica": "Cria novas palavras."
+}
+]
+},
+{
+"id": "10",
+"capitulo": "Um ou Muitos: O Número das Palavras",
+"nivel": "basico",
+"dicas": "As palavras podem estar no singular (um) ou plural (mais de um).",
+"perguntas": [
+{
+"pergunta": "O que é singular?",
+"opcoes": ["Mais de um", "Ação", "Apenas um", "Lugar"],
+"respostaCorreta": "Apenas um",
+"dica": "Refere-se a uma coisa só."
+},
+{
+"pergunta": "O que é plural?",
+"opcoes": ["Um", "Mais de um", "Uma ação", "Um lugar"],
+"respostaCorreta": "Mais de um",
+"dica": "Refere-se a várias coisas."
+},
+{
+"pergunta": "Qual está no singular?",
+"opcoes": ["Livros", "Casas", "Livro", "Meninos"],
+"respostaCorreta": "Livro",
+"dica": "Apenas um."
+},
+{
+"pergunta": "Qual está no plural?",
+"opcoes": ["Casa", "Livro", "Caderno", "Casas"],
+"respostaCorreta": "Casas",
+"dica": "Mais de uma."
+},
+{
+"pergunta": "Qual é o plural de 'gato'?",
+"opcoes": ["Gatos", "Gato", "Gata", "Gatinho"],
+"respostaCorreta": "Gatos",
+"dica": "Adiciona -s."
+},
+{
+"pergunta": "Qual é o plural de 'flor'?",
+"opcoes": ["Flor", "Flores", "Flors", "Floros"],
+"respostaCorreta": "Flores",
+"dica": "Muda no final."
+},
+{
+"pergunta": "Qual é singular de 'livros'?",
+"opcoes": ["Livro", "Livra", "Livros", "Livre"],
+"respostaCorreta": "Livro",
+"dica": "Um só."
+},
+{
+"pergunta": "Qual palavra indica mais de um?",
+"opcoes": ["Mesa", "Livro", "Mesas", "Casa"],
+"respostaCorreta": "Mesas",
+"dica": "Plural."
+},
+{
+"pergunta": "Qual palavra indica apenas um?",
+"opcoes": ["Casas", "Livros", "Casa", "Meninos"],
+"respostaCorreta": "Casa",
+"dica": "Singular."
+},
+{
+"pergunta": "O plural geralmente termina em:",
+"opcoes": ["-s", "-ar", "-er", "-ir"],
+"respostaCorreta": "-s",
+"dica": "Regra comum."
+}
+]
+},
+{
+"id": "10",
+"capitulo": "Um ou Muitos: O Número das Palavras",
+"nivel": "medio",
+"dicas": "As palavras variam em número para indicar quantidade.",
+"perguntas": [
+{
+"pergunta": "Plural indica:",
+"opcoes": ["Uma coisa", "Mais de uma", "Ação", "Lugar"],
+"respostaCorreta": "Mais de uma",
+"dica": "Várias coisas."
+},
+{
+"pergunta": "Singular indica:",
+"opcoes": ["Muitas coisas", "Uma coisa", "Lugar", "Tempo"],
+"respostaCorreta": "Uma coisa",
+"dica": "Apenas uma."
+},
+{
+"pergunta": "Qual é o plural de 'animal'?",
+"opcoes": ["Animales", "Animais", "Animal", "Animãos"],
+"respostaCorreta": "Animais",
+"dica": "Termina em -is."
+},
+{
+"pergunta": "Qual é o plural de 'papel'?",
+"opcoes": ["Papéis", "Papeis", "Papels", "Papel"],
+"respostaCorreta": "Papéis",
+"dica": "Mudança no final."
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["Os menino brinca", "Os meninos brincam", "O meninos brinca", "Os menino brincam"],
+"respostaCorreta": "Os meninos brincam",
+"dica": "Concordância."
+},
+{
+"pergunta": "Qual palavra está no plural?",
+"opcoes": ["Flor", "Casa", "Flores", "Livro"],
+"respostaCorreta": "Flores",
+"dica": "Mais de uma."
+},
+{
+"pergunta": "Qual palavra está no singular?",
+"opcoes": ["Livros", "Mesas", "Livro", "Meninos"],
+"respostaCorreta": "Livro",
+"dica": "Uma só."
+},
+{
+"pergunta": "A concordância de número acontece entre:",
+"opcoes": ["Verbo e advérbio", "Substantivo e verbo", "Preposição e artigo", "Advérbio e verbo"],
+"respostaCorreta": "Substantivo e verbo",
+"dica": "Devem combinar."
+},
+{
+"pergunta": "Qual alternativa está correta?",
+"opcoes": ["As casa bonita", "As casas bonitas", "A casas bonita", "As casa bonitas"],
+"respostaCorreta": "As casas bonitas",
+"dica": "Plural correto."
+},
+{
+"pergunta": "O número das palavras ajuda a indicar:",
+"opcoes": ["Tempo", "Quantidade", "Lugar", "Ação"],
+"respostaCorreta": "Quantidade",
+"dica": "Um ou vários."
+}
+]
+},
+{
+"id": "10",
+"capitulo": "Um ou Muitos: O Número das Palavras",
+"nivel": "avancado",
+"dicas": "O número das palavras influencia a concordância e o sentido da frase.",
+"perguntas": [
+{
+"pergunta": "Qual é a função do número nas palavras?",
+"opcoes": ["Indicar tempo", "Indicar quantidade", "Indicar ação", "Indicar lugar"],
+"respostaCorreta": "Indicar quantidade",
+"dica": "Um ou mais."
+},
+{
+"pergunta": "Qual é o plural de 'mão'?",
+"opcoes": ["Mãos", "Mões", "Mãoses", "Mão"],
+"respostaCorreta": "Mãos",
+"dica": "Forma irregular."
+},
+{
+"pergunta": "Qual frase apresenta concordância correta?",
+"opcoes": ["Os menino corre", "Os meninos correm", "O meninos corre", "Os menino correm"],
+"respostaCorreta": "Os meninos correm",
+"dica": "Tudo no plural."
+},
+{
+"pergunta": "O plural de palavras terminadas em -l geralmente é:",
+"opcoes": ["-s", "-is", "-es", "-ns"],
+"respostaCorreta": "-is",
+"dica": "Ex: animal → animais."
+},
+{
+"pergunta": "A concordância de número exige que:",
+"opcoes": ["Palavras sejam diferentes", "Palavras combinem", "Palavras mudem sentido", "Palavras desapareçam"],
+"respostaCorreta": "Palavras combinem",
+"dica": "Plural com plural."
+},
+{
+"pergunta": "Qual alternativa apresenta plural correto?",
+"opcoes": ["Papeis", "Papéis", "Papels", "Papel"],
+"respostaCorreta": "Papéis",
+"dica": "Forma correta."
+},
+{
+"pergunta": "Sem concordância de número, a frase fica:",
+"opcoes": ["Mais clara", "Mais confusa", "Mais bonita", "Mais longa"],
+"respostaCorreta": "Mais confusa",
+"dica": "Erro gramatical."
+},
+{
+"pergunta": "O número influencia:",
+"opcoes": ["Pontuação", "Concordância", "Cor", "Som"],
+"respostaCorreta": "Concordância",
+"dica": "Combinação correta."
+},
+{
+"pergunta": "Qual alternativa contém erro?",
+"opcoes": ["As flores são bonitas", "Os livros são novos", "O meninos brincam", "As casas são grandes"],
+"respostaCorreta": "O meninos brincam",
+"dica": "Erro de número."
+},
+{
+"pergunta": "O uso correto do número contribui para:",
+"opcoes": ["Confusão", "Clareza", "Erro", "Redução"],
+"respostaCorreta": "Clareza",
+"dica": "Facilita entendimento."
+}
+]
+},
+{
+"id": "10.1",
+"capitulo": "A Ordem dos Números: O Numeral",
+"nivel": "basico",
+"dicas": "Os numerais indicam quantidade, ordem ou posição.",
+"perguntas": [
+{
+"pergunta": "O que é um numeral?",
+"opcoes": ["Uma ação", "Uma palavra que indica número", "Um nome", "Uma cor"],
+"respostaCorreta": "Uma palavra que indica número",
+"dica": "Mostra quantidade ou ordem."
+},
+{
+"pergunta": "Qual é um numeral?",
+"opcoes": ["Livro", "Dois", "Correr", "Mesa"],
+"respostaCorreta": "Dois",
+"dica": "Indica quantidade."
+},
+{
+"pergunta": "Qual numeral indica quantidade?",
+"opcoes": ["Primeiro", "Dois", "Dobro", "Metade"],
+"respostaCorreta": "Dois",
+"dica": "Conta objetos."
+},
+{
+"pergunta": "Qual numeral indica ordem?",
+"opcoes": ["Dois", "Três", "Primeiro", "Metade"],
+"respostaCorreta": "Primeiro",
+"dica": "Mostra posição."
+},
+{
+"pergunta": "Qual numeral indica metade?",
+"opcoes": ["Dois", "Primeiro", "Metade", "Triplo"],
+"respostaCorreta": "Metade",
+"dica": "Parte de algo."
+},
+{
+"pergunta": "Qual numeral indica dobro?",
+"opcoes": ["Metade", "Dobro", "Primeiro", "Dois"],
+"respostaCorreta": "Dobro",
+"dica": "Duas vezes mais."
+},
+{
+"pergunta": "Numerais servem para:",
+"opcoes": ["Nomear", "Indicar número", "Descrever", "Ligar palavras"],
+"respostaCorreta": "Indicar número",
+"dica": "Mostram quantidade ou ordem."
+},
+{
+"pergunta": "Qual palavra é numeral?",
+"opcoes": ["Casa", "Três", "Correr", "Livro"],
+"respostaCorreta": "Três",
+"dica": "Indica quantidade."
+},
+{
+"pergunta": "Qual numeral indica posição?",
+"opcoes": ["Quatro", "Segundo", "Dobro", "Metade"],
+"respostaCorreta": "Segundo",
+"dica": "Ordem."
+},
+{
+"pergunta": "Qual numeral indica quantidade?",
+"opcoes": ["Terceiro", "Cinco", "Metade", "Dobro"],
+"respostaCorreta": "Cinco",
+"dica": "Conta objetos."
+}
+]
+},
+{
+"id": "10.1",
+"capitulo": "A Ordem dos Números: O Numeral",
+"nivel": "medio",
+"dicas": "Os numerais podem ser cardinais, ordinais, multiplicativos e fracionários.",
+"perguntas": [
+{
+"pergunta": "Numerais cardinais indicam:",
+"opcoes": ["Ordem", "Quantidade", "Divisão", "Multiplicação"],
+"respostaCorreta": "Quantidade",
+"dica": "Ex: um, dois."
+},
+{
+"pergunta": "Numerais ordinais indicam:",
+"opcoes": ["Quantidade", "Ordem", "Divisão", "Multiplicação"],
+"respostaCorreta": "Ordem",
+"dica": "Ex: primeiro."
+},
+{
+"pergunta": "Numerais fracionários indicam:",
+"opcoes": ["Quantidade inteira", "Ordem", "Parte de um todo", "Multiplicação"],
+"respostaCorreta": "Parte de um todo",
+"dica": "Ex: metade."
+},
+{
+"pergunta": "Numerais multiplicativos indicam:",
+"opcoes": ["Ordem", "Quantidade", "Multiplicação", "Divisão"],
+"respostaCorreta": "Multiplicação",
+"dica": "Ex: dobro."
+},
+{
+"pergunta": "Qual é numeral ordinal?",
+"opcoes": ["Dois", "Três", "Primeiro", "Metade"],
+"respostaCorreta": "Primeiro",
+"dica": "Indica posição."
+},
+{
+"pergunta": "Qual é numeral cardinal?",
+"opcoes": ["Primeiro", "Segundo", "Três", "Metade"],
+"respostaCorreta": "Três",
+"dica": "Indica quantidade."
+},
+{
+"pergunta": "Qual é numeral fracionário?",
+"opcoes": ["Dois", "Primeiro", "Metade", "Triplo"],
+"respostaCorreta": "Metade",
+"dica": "Parte de algo."
+},
+{
+"pergunta": "Qual é numeral multiplicativo?",
+"opcoes": ["Dobro", "Dois", "Primeiro", "Metade"],
+"respostaCorreta": "Dobro",
+"dica": "Multiplica."
+},
+{
+"pergunta": "Os numerais ajudam a indicar:",
+"opcoes": ["Tempo", "Quantidade e ordem", "Lugar", "Ação"],
+"respostaCorreta": "Quantidade e ordem",
+"dica": "Mostram números."
+},
+{
+"pergunta": "Qual alternativa tem apenas numerais?",
+"opcoes": ["Um, dois, três", "Livro, mesa, casa", "Bonito, alto, feliz", "Correr, pular, brincar"],
+"respostaCorreta": "Um, dois, três",
+"dica": "Todos indicam números."
+}
+]
+},
+{
+"id": "10.1",
+"capitulo": "A Ordem dos Números: O Numeral",
+"nivel": "avancado",
+"dicas": "Os numerais organizam informações quantitativas e sequenciais.",
+"perguntas": [
+{
+"pergunta": "Qual é a função principal do numeral?",
+"opcoes": ["Indicar ação", "Indicar quantidade e ordem", "Descrever", "Ligar palavras"],
+"respostaCorreta": "Indicar quantidade e ordem",
+"dica": "Mostra números."
+},
+{
+"pergunta": "Numerais cardinais expressam:",
+"opcoes": ["Ordem", "Quantidade", "Divisão", "Multiplicação"],
+"respostaCorreta": "Quantidade",
+"dica": "Ex: dois."
+},
+{
+"pergunta": "Numerais ordinais expressam:",
+"opcoes": ["Quantidade", "Ordem", "Parte", "Multiplicação"],
+"respostaCorreta": "Ordem",
+"dica": "Ex: primeiro."
+},
+{
+"pergunta": "Numerais fracionários expressam:",
+"opcoes": ["Quantidade total", "Ordem", "Parte de um todo", "Multiplicação"],
+"respostaCorreta": "Parte de um todo",
+"dica": "Ex: metade."
+},
+{
+"pergunta": "Numerais multiplicativos expressam:",
+"opcoes": ["Ordem", "Quantidade", "Multiplicação", "Divisão"],
+"respostaCorreta": "Multiplicação",
+"dica": "Ex: dobro."
+},
+{
+"pergunta": "Qual alternativa contém numeral ordinal?",
+"opcoes": ["Dois", "Três", "Segundo", "Metade"],
+"respostaCorreta": "Segundo",
+"dica": "Indica posição."
+},
+{
+"pergunta": "O uso correto dos numerais contribui para:",
+"opcoes": ["Confusão", "Clareza e precisão", "Erro", "Redução"],
+"respostaCorreta": "Clareza e precisão",
+"dica": "Organiza informações."
+},
+{
+"pergunta": "Sem numerais, a linguagem perde:",
+"opcoes": ["Emoção", "Precisão quantitativa", "Cor", "Som"],
+"respostaCorreta": "Precisão quantitativa",
+"dica": "Falta informação numérica."
+},
+{
+"pergunta": "Numerais ajudam a estruturar:",
+"opcoes": ["Somente frases simples", "Informações numéricas", "Apenas ações", "Somente pontuação"],
+"respostaCorreta": "Informações numéricas",
+"dica": "Organizam dados."
+},
+{
+"pergunta": "A escolha correta do numeral evita:",
+"opcoes": ["Clareza", "Organização", "Ambiguidade", "Sentido"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Evita confusão."
+}
+]
+},
+{
+"id": "11",
+"capitulo": "Palavras Espelhadas: Homônimos e Parônimos",
+"nivel": "basico",
+"dicas": "Algumas palavras são parecidas no som ou na escrita, mas têm significados diferentes.",
+"perguntas": [
+{
+"pergunta": "O que são homônimos?",
+"opcoes": ["Palavras iguais no som ou escrita", "Palavras diferentes sempre", "Palavras com mesma cor", "Palavras com ação"],
+"respostaCorreta": "Palavras iguais no som ou escrita",
+"dica": "Podem ter significados diferentes."
+},
+{
+"pergunta": "O que são parônimos?",
+"opcoes": ["Palavras iguais", "Palavras parecidas", "Palavras sem sentido", "Palavras de ação"],
+"respostaCorreta": "Palavras parecidas",
+"dica": "Parecem iguais, mas não são."
+},
+{
+"pergunta": "Qual exemplo de homônimo?",
+"opcoes": ["Manga (fruta) / manga (roupa)", "Casa / carro", "Livro / mesa", "Correr / andar"],
+"respostaCorreta": "Manga (fruta) / manga (roupa)",
+"dica": "Mesma palavra, sentidos diferentes."
+},
+{
+"pergunta": "Qual exemplo de parônimo?",
+"opcoes": ["Comprimento / cumprimento", "Casa / casa", "Livro / livro", "Mesa / mesa"],
+"respostaCorreta": "Comprimento / cumprimento",
+"dica": "Parecem iguais, mas significam coisas diferentes."
+},
+{
+"pergunta": "Homônimos podem ter:",
+"opcoes": ["Mesmo significado", "Significados diferentes", "Apenas um significado", "Nenhum significado"],
+"respostaCorreta": "Significados diferentes",
+"dica": "Mesmo som, sentidos distintos."
+},
+{
+"pergunta": "Parônimos são palavras:",
+"opcoes": ["Iguais", "Parecidas", "Idênticas", "Sem sentido"],
+"respostaCorreta": "Parecidas",
+"dica": "Mudam um pouco."
+},
+{
+"pergunta": "Qual par é homônimo?",
+"opcoes": ["Banco (assento) / banco (instituição)", "Bom / ruim", "Alto / baixo", "Claro / escuro"],
+"respostaCorreta": "Banco (assento) / banco (instituição)",
+"dica": "Mesma palavra."
+},
+{
+"pergunta": "Qual par é parônimo?",
+"opcoes": ["Descrição / discrição", "Casa / casa", "Livro / livro", "Mesa / mesa"],
+"respostaCorreta": "Descrição / discrição",
+"dica": "Parecidas na escrita."
+},
+{
+"pergunta": "Homônimos são palavras:",
+"opcoes": ["Sempre diferentes", "Iguais na forma", "Sempre longas", "Sempre curtas"],
+"respostaCorreta": "Iguais na forma",
+"dica": "Podem soar iguais."
+},
+{
+"pergunta": "Parônimos confundem porque:",
+"opcoes": ["São iguais", "São parecidos", "São fáceis", "São curtos"],
+"respostaCorreta": "São parecidos",
+"dica": "Mudam pouco."
+}
+]
+},
+{
+"id": "11",
+"capitulo": "Palavras Espelhadas: Homônimos e Parônimos",
+"nivel": "medio",
+"dicas": "Homônimos e parônimos exigem atenção para evitar erros de interpretação.",
+"perguntas": [
+{
+"pergunta": "Homônimos perfeitos têm:",
+"opcoes": ["Som e escrita iguais", "Som diferente", "Escrita diferente", "Significado igual"],
+"respostaCorreta": "Som e escrita iguais",
+"dica": "Ex: manga."
+},
+{
+"pergunta": "Parônimos diferem em:",
+"opcoes": ["Nada", "Som ou escrita", "Significado igual", "Uso idêntico"],
+"respostaCorreta": "Som ou escrita",
+"dica": "São semelhantes."
+},
+{
+"pergunta": "Qual par é homônimo?",
+"opcoes": ["Manga (fruta) / manga (roupa)", "Sessão / seção", "Descrição / discrição", "Censo / senso"],
+"respostaCorreta": "Manga (fruta) / manga (roupa)",
+"dica": "Mesma forma."
+},
+{
+"pergunta": "Qual par é parônimo?",
+"opcoes": ["Sessão / seção", "Casa / casa", "Livro / livro", "Mesa / mesa"],
+"respostaCorreta": "Sessão / seção",
+"dica": "Parecidas."
+},
+{
+"pergunta": "Homônimos podem causar:",
+"opcoes": ["Clareza", "Ambiguidade", "Ordem", "Tempo"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Mais de um sentido."
+},
+{
+"pergunta": "Parônimos podem causar:",
+"opcoes": ["Clareza", "Confusão", "Tempo", "Lugar"],
+"respostaCorreta": "Confusão",
+"dica": "Erro de uso."
+},
+{
+"pergunta": "Qual frase usa corretamente 'cumprimento'?",
+"opcoes": ["O comprimento da mesa", "O cumprimento foi educado", "O cumprimento é longo", "O comprimento foi simpático"],
+"respostaCorreta": "O cumprimento foi educado",
+"dica": "Cumprimentar."
+},
+{
+"pergunta": "Qual frase usa corretamente 'comprimento'?",
+"opcoes": ["O cumprimento da mesa", "O comprimento da mesa", "O cumprimento foi grande", "O comprimento cumprimentou"],
+"respostaCorreta": "O comprimento da mesa",
+"dica": "Medida."
+},
+{
+"pergunta": "O estudo dessas palavras ajuda a:",
+"opcoes": ["Confundir", "Evitar erros", "Eliminar palavras", "Reduzir texto"],
+"respostaCorreta": "Evitar erros",
+"dica": "Melhora uso correto."
+},
+{
+"pergunta": "Qual par exige atenção?",
+"opcoes": ["Casa / casa", "Livro / livro", "Censo / senso", "Mesa / mesa"],
+"respostaCorreta": "Censo / senso",
+"dica": "Parecidas."
+}
+]
+},
+{
+"id": "11",
+"capitulo": "Palavras Espelhadas: Homônimos e Parônimos",
+"nivel": "avancado",
+"dicas": "A distinção entre homônimos e parônimos é essencial para precisão semântica.",
+"perguntas": [
+{
+"pergunta": "Homônimos são palavras que:",
+"opcoes": ["Têm significados iguais", "Têm forma igual e sentidos diferentes", "São sempre diferentes", "Não têm sentido"],
+"respostaCorreta": "Têm forma igual e sentidos diferentes",
+"dica": "Mesma forma, sentidos distintos."
+},
+{
+"pergunta": "Parônimos são palavras que:",
+"opcoes": ["São idênticas", "São semelhantes na forma", "Têm mesmo significado", "São opostas"],
+"respostaCorreta": "São semelhantes na forma",
+"dica": "Parecidas."
+},
+{
+"pergunta": "Homônimos podem gerar:",
+"opcoes": ["Clareza", "Ambiguidade", "Ordem", "Tempo"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Duplo sentido."
+},
+{
+"pergunta": "Parônimos exigem:",
+"opcoes": ["Desatenção", "Atenção ao contexto", "Ignorar significado", "Simplificação"],
+"respostaCorreta": "Atenção ao contexto",
+"dica": "Evitar erro."
+},
+{
+"pergunta": "Qual alternativa contém homônimos?",
+"opcoes": ["Banco (assento/instituição)", "Censo / senso", "Descrição / discrição", "Sessão / seção"],
+"respostaCorreta": "Banco (assento/instituição)",
+"dica": "Mesma forma."
+},
+{
+"pergunta": "Qual alternativa contém parônimos?",
+"opcoes": ["Banco (assento/instituição)", "Casa / casa", "Sessão / seção", "Livro / livro"],
+"respostaCorreta": "Sessão / seção",
+"dica": "Parecidas."
+},
+{
+"pergunta": "O uso correto evita:",
+"opcoes": ["Clareza", "Ambiguidade", "Organização", "Sentido"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Evita confusão."
+},
+{
+"pergunta": "A distinção entre essas palavras melhora:",
+"opcoes": ["Erro", "Precisão linguística", "Confusão", "Redução"],
+"respostaCorreta": "Precisão linguística",
+"dica": "Uso correto."
+},
+{
+"pergunta": "Qual par apresenta erro comum?",
+"opcoes": ["Censo / senso", "Casa / casa", "Livro / livro", "Mesa / mesa"],
+"respostaCorreta": "Censo / senso",
+"dica": "Parecidas."
+},
+{
+"pergunta": "O estudo desses termos contribui para:",
+"opcoes": ["Confusão", "Clareza e precisão", "Erro", "Redução"],
+"respostaCorreta": "Clareza e precisão",
+"dica": "Melhora comunicação."
+}
+]
+},
+{
+"id": "12",
+"capitulo": "Construindo Sentidos: A Frase",
+"nivel": "basico",
+"dicas": "A frase é um conjunto de palavras que transmite uma ideia.",
+"perguntas": [
+{
+"pergunta": "O que é uma frase?",
+"opcoes": ["Uma palavra", "Um conjunto de palavras com sentido", "Um número", "Um som"],
+"respostaCorreta": "Um conjunto de palavras com sentido",
+"dica": "Tem uma ideia completa."
+},
+{
+"pergunta": "Qual é uma frase?",
+"opcoes": ["Mesa", "O gato dorme", "Livro", "Casa"],
+"respostaCorreta": "O gato dorme",
+"dica": "Tem sentido completo."
+},
+{
+"pergunta": "Uma frase precisa ter:",
+"opcoes": ["Número", "Sentido", "Cor", "Tamanho"],
+"respostaCorreta": "Sentido",
+"dica": "Precisa fazer sentido."
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["Corre menino o", "O menino corre", "Menino o corre", "Corre o menino o"],
+"respostaCorreta": "O menino corre",
+"dica": "Ordem correta."
+},
+{
+"pergunta": "Uma frase pode ser:",
+"opcoes": ["Sem sentido", "Com sentido", "Sem palavras", "Sem letras"],
+"respostaCorreta": "Com sentido",
+"dica": "Tem significado."
+},
+{
+"pergunta": "Qual é uma frase?",
+"opcoes": ["Bonito", "Corre rápido", "Mesa", "Livro"],
+"respostaCorreta": "Corre rápido",
+"dica": "Tem ideia."
+},
+{
+"pergunta": "Frases servem para:",
+"opcoes": ["Contar ideias", "Desenhar", "Somar", "Pintar"],
+"respostaCorreta": "Contar ideias",
+"dica": "Expressam algo."
+},
+{
+"pergunta": "Qual não é frase?",
+"opcoes": ["O sol brilha", "Chove hoje", "Livro", "Ele corre"],
+"respostaCorreta": "Livro",
+"dica": "Não tem ideia completa."
+},
+{
+"pergunta": "Frases podem terminar com:",
+"opcoes": ["Número", "Pontuação", "Cor", "Letra"],
+"respostaCorreta": "Pontuação",
+"dica": "Ex: ponto final."
+},
+{
+"pergunta": "Qual frase tem sentido?",
+"opcoes": ["Mesa corre rápido", "O cachorro late", "Livro bonito corre", "Casa pula alto"],
+"respostaCorreta": "O cachorro late",
+"dica": "Faz sentido."
+}
+]
+},
+{
+"id": "12",
+"capitulo": "Construindo Sentidos: A Frase",
+"nivel": "medio",
+"dicas": "A frase pode ser declarativa, interrogativa, exclamativa ou imperativa.",
+"perguntas": [
+{
+"pergunta": "Frase declarativa serve para:",
+"opcoes": ["Perguntar", "Afirmar", "Ordenar", "Exclamar"],
+"respostaCorreta": "Afirmar",
+"dica": "Dá informação."
+},
+{
+"pergunta": "Frase interrogativa serve para:",
+"opcoes": ["Afirmar", "Perguntar", "Ordenar", "Exclamar"],
+"respostaCorreta": "Perguntar",
+"dica": "Faz pergunta."
+},
+{
+"pergunta": "Frase exclamativa serve para:",
+"opcoes": ["Afirmar", "Perguntar", "Expressar emoção", "Ordenar"],
+"respostaCorreta": "Expressar emoção",
+"dica": "Mostra sentimento."
+},
+{
+"pergunta": "Frase imperativa serve para:",
+"opcoes": ["Perguntar", "Afirmar", "Dar ordem", "Expressar emoção"],
+"respostaCorreta": "Dar ordem",
+"dica": "Mandar fazer algo."
+},
+{
+"pergunta": "Qual frase é interrogativa?",
+"opcoes": ["Ele corre", "Ele corre?", "Ele corre!", "Corre ele"],
+"respostaCorreta": "Ele corre?",
+"dica": "Tem pergunta."
+},
+{
+"pergunta": "Qual frase é exclamativa?",
+"opcoes": ["Ele corre", "Ele corre?", "Ele corre!", "Corre ele"],
+"respostaCorreta": "Ele corre!",
+"dica": "Expressa emoção."
+},
+{
+"pergunta": "Qual frase é imperativa?",
+"opcoes": ["Ele corre", "Corre!", "Ele corre?", "Ele corre!"],
+"respostaCorreta": "Corre!",
+"dica": "Ordem."
+},
+{
+"pergunta": "Qual frase é declarativa?",
+"opcoes": ["Ele corre", "Corre!", "Ele corre?", "Ele corre!"],
+"respostaCorreta": "Ele corre",
+"dica": "Afirma algo."
+},
+{
+"pergunta": "As frases ajudam a:",
+"opcoes": ["Confundir", "Comunicar ideias", "Apagar palavras", "Somar números"],
+"respostaCorreta": "Comunicar ideias",
+"dica": "Transmitir mensagem."
+},
+{
+"pergunta": "A pontuação ajuda a indicar:",
+"opcoes": ["Cor", "Tipo de frase", "Número", "Tamanho"],
+"respostaCorreta": "Tipo de frase",
+"dica": "Ex: ?, !"
+}
+]
+},
+{
+"id": "12",
+"capitulo": "Construindo Sentidos: A Frase",
+"nivel": "avancado",
+"dicas": "A frase é a base da comunicação e pode assumir diferentes intenções comunicativas.",
+"perguntas": [
+{
+"pergunta": "Qual é a função da frase?",
+"opcoes": ["Indicar cor", "Comunicar uma ideia completa", "Mostrar número", "Ligar palavras"],
+"respostaCorreta": "Comunicar uma ideia completa",
+"dica": "Expressa sentido."
+},
+{
+"pergunta": "Frases podem ser classificadas conforme:",
+"opcoes": ["Cor", "Intenção comunicativa", "Tamanho", "Som"],
+"respostaCorreta": "Intenção comunicativa",
+"dica": "Ex: pergunta, ordem."
+},
+{
+"pergunta": "Qual frase expressa ordem?",
+"opcoes": ["Ele estuda", "Estude!", "Ele estuda?", "Ele estuda!"],
+"respostaCorreta": "Estude!",
+"dica": "Imperativa."
+},
+{
+"pergunta": "Qual frase expressa pergunta?",
+"opcoes": ["Ele estuda", "Estude!", "Ele estuda?", "Ele estuda!"],
+"respostaCorreta": "Ele estuda?",
+"dica": "Interrogativa."
+},
+{
+"pergunta": "Qual frase expressa emoção?",
+"opcoes": ["Ele estuda", "Estude!", "Ele estuda?", "Ele estuda!"],
+"respostaCorreta": "Ele estuda!",
+"dica": "Exclamativa."
+},
+{
+"pergunta": "Qual frase expressa afirmação?",
+"opcoes": ["Ele estuda", "Estude!", "Ele estuda?", "Ele estuda!"],
+"respostaCorreta": "Ele estuda",
+"dica": "Declarativa."
+},
+{
+"pergunta": "Uma frase sem sentido é:",
+"opcoes": ["Correta", "Incompreensível", "Clara", "Organizada"],
+"respostaCorreta": "Incompreensível",
+"dica": "Não comunica."
+},
+{
+"pergunta": "A pontuação contribui para:",
+"opcoes": ["Confusão", "Clareza", "Erro", "Redução"],
+"respostaCorreta": "Clareza",
+"dica": "Organiza o sentido."
+},
+{
+"pergunta": "Sem frases, a comunicação seria:",
+"opcoes": ["Clara", "Organizada", "Difícil", "Completa"],
+"respostaCorreta": "Difícil",
+"dica": "Falta estrutura."
+},
+{
+"pergunta": "A estrutura da frase influencia:",
+"opcoes": ["Somente o som", "O sentido da mensagem", "A cor", "O tamanho"],
+"respostaCorreta": "O sentido da mensagem",
+"dica": "Organiza ideias."
+}
+]
+},
+{
+"id": "13",
+"capitulo": "Organizando Ideias: O Período",
+"nivel": "basico",
+"dicas": "O período é formado por uma ou mais frases.",
+"perguntas": [
+{
+"pergunta": "O que é um período?",
+"opcoes": ["Uma palavra", "Um conjunto de frases", "Um número", "Um som"],
+"respostaCorreta": "Um conjunto de frases",
+"dica": "Pode ter uma ou mais frases."
+},
+{
+"pergunta": "Um período pode ter:",
+"opcoes": ["Nenhuma frase", "Uma ou mais frases", "Apenas palavras soltas", "Somente números"],
+"respostaCorreta": "Uma ou mais frases",
+"dica": "Pode ser simples ou composto."
+},
+{
+"pergunta": "Qual é um período?",
+"opcoes": ["Livro", "O menino corre.", "Mesa", "Casa"],
+"respostaCorreta": "O menino corre.",
+"dica": "Tem sentido completo."
+},
+{
+"pergunta": "Um período simples tem:",
+"opcoes": ["Várias frases", "Uma frase", "Nenhuma frase", "Somente palavras"],
+"respostaCorreta": "Uma frase",
+"dica": "Só uma oração."
+},
+{
+"pergunta": "Um período composto tem:",
+"opcoes": ["Uma frase", "Várias frases", "Nenhuma frase", "Somente palavras"],
+"respostaCorreta": "Várias frases",
+"dica": "Mais de uma oração."
+},
+{
+"pergunta": "Qual exemplo é período simples?",
+"opcoes": ["Ele corre.", "Ele corre e pula.", "Ele corre porque gosta.", "Ele corre e brinca."],
+"respostaCorreta": "Ele corre.",
+"dica": "Só uma ação."
+},
+{
+"pergunta": "Qual exemplo é período composto?",
+"opcoes": ["Ele dorme.", "Ele corre e pula.", "Ele estuda.", "Ele brinca."],
+"respostaCorreta": "Ele corre e pula.",
+"dica": "Mais de uma ação."
+},
+{
+"pergunta": "O período serve para:",
+"opcoes": ["Separar palavras", "Organizar ideias", "Contar números", "Desenhar"],
+"respostaCorreta": "Organizar ideias",
+"dica": "Ajuda a comunicar."
+},
+{
+"pergunta": "Qual não é período?",
+"opcoes": ["O sol brilha.", "Ele estuda.", "Livro", "Ela canta."],
+"respostaCorreta": "Livro",
+"dica": "Não tem estrutura completa."
+},
+{
+"pergunta": "O período termina com:",
+"opcoes": ["Número", "Pontuação", "Cor", "Letra"],
+"respostaCorreta": "Pontuação",
+"dica": "Ex: ponto final."
+}
+]
+},
+{
+"id": "13",
+"capitulo": "Organizando Ideias: O Período",
+"nivel": "medio",
+"dicas": "O período pode ser simples ou composto, dependendo do número de orações.",
+"perguntas": [
+{
+"pergunta": "Período simples possui:",
+"opcoes": ["Duas orações", "Uma oração", "Três orações", "Nenhuma oração"],
+"respostaCorreta": "Uma oração",
+"dica": "Apenas um verbo principal."
+},
+{
+"pergunta": "Período composto possui:",
+"opcoes": ["Uma oração", "Mais de uma oração", "Nenhuma oração", "Somente palavras"],
+"respostaCorreta": "Mais de uma oração",
+"dica": "Vários verbos."
+},
+{
+"pergunta": "Na frase 'Ele estuda e trabalha', temos:",
+"opcoes": ["Período simples", "Período composto", "Sem período", "Frase incompleta"],
+"respostaCorreta": "Período composto",
+"dica": "Duas ações."
+},
+{
+"pergunta": "Na frase 'Ele estuda', temos:",
+"opcoes": ["Período composto", "Período simples", "Sem período", "Frase incompleta"],
+"respostaCorreta": "Período simples",
+"dica": "Uma ação."
+},
+{
+"pergunta": "As orações em um período composto são ligadas por:",
+"opcoes": ["Números", "Conjunções", "Cores", "Artigos"],
+"respostaCorreta": "Conjunções",
+"dica": "Ex: e, mas."
+},
+{
+"pergunta": "Qual é um período composto?",
+"opcoes": ["Ele corre.", "Ele corre e pula.", "Ele dorme.", "Ele canta."],
+"respostaCorreta": "Ele corre e pula.",
+"dica": "Mais de uma oração."
+},
+{
+"pergunta": "O período ajuda a:",
+"opcoes": ["Confundir ideias", "Organizar ideias", "Apagar palavras", "Contar números"],
+"respostaCorreta": "Organizar ideias",
+"dica": "Melhora comunicação."
+},
+{
+"pergunta": "Qual alternativa é período simples?",
+"opcoes": ["Ele corre e pula", "Ele corre", "Ele corre porque gosta", "Ele corre mas cansa"],
+"respostaCorreta": "Ele corre",
+"dica": "Uma oração."
+},
+{
+"pergunta": "Qual alternativa é período composto?",
+"opcoes": ["Ele dorme", "Ele canta", "Ele canta e dança", "Ele estuda"],
+"respostaCorreta": "Ele canta e dança",
+"dica": "Duas ações."
+},
+{
+"pergunta": "O número de verbos indica:",
+"opcoes": ["Cor", "Tipo de período", "Tempo", "Lugar"],
+"respostaCorreta": "Tipo de período",
+"dica": "Mais verbos = composto."
+}
+]
+},
+{
+"id": "13",
+"capitulo": "Organizando Ideias: O Período",
+"nivel": "avancado",
+"dicas": "O período estrutura o discurso através da organização das orações.",
+"perguntas": [
+{
+"pergunta": "Qual é a definição de período?",
+"opcoes": ["Uma palavra isolada", "Uma unidade com uma ou mais orações", "Um número", "Uma letra"],
+"respostaCorreta": "Uma unidade com uma ou mais orações",
+"dica": "Base da estrutura textual."
+},
+{
+"pergunta": "Período simples contém:",
+"opcoes": ["Uma oração", "Duas orações", "Três orações", "Nenhuma oração"],
+"respostaCorreta": "Uma oração",
+"dica": "Um verbo principal."
+},
+{
+"pergunta": "Período composto contém:",
+"opcoes": ["Uma oração", "Mais de uma oração", "Nenhuma oração", "Somente substantivos"],
+"respostaCorreta": "Mais de uma oração",
+"dica": "Vários verbos."
+},
+{
+"pergunta": "Na frase 'Ele estuda porque quer aprender', temos:",
+"opcoes": ["Período simples", "Período composto", "Sem período", "Frase incompleta"],
+"respostaCorreta": "Período composto",
+"dica": "Duas orações."
+},
+{
+"pergunta": "As orações podem ser ligadas por:",
+"opcoes": ["Números", "Conjunções", "Cores", "Adjetivos"],
+"respostaCorreta": "Conjunções",
+"dica": "Ex: porque."
+},
+{
+"pergunta": "A análise do período permite entender:",
+"opcoes": ["Cor", "Estrutura sintática", "Som", "Tamanho"],
+"respostaCorreta": "Estrutura sintática",
+"dica": "Organização da frase."
+},
+{
+"pergunta": "Qual alternativa apresenta período simples?",
+"opcoes": ["Ele canta e dança", "Ele canta", "Ele canta porque gosta", "Ele canta mas cansa"],
+"respostaCorreta": "Ele canta",
+"dica": "Uma oração."
+},
+{
+"pergunta": "Qual alternativa apresenta período composto?",
+"opcoes": ["Ele dorme", "Ele corre", "Ele corre e pula", "Ele estuda"],
+"respostaCorreta": "Ele corre e pula",
+"dica": "Mais de uma oração."
+},
+{
+"pergunta": "O período é essencial para:",
+"opcoes": ["Confundir ideias", "Organizar o discurso", "Eliminar palavras", "Reduzir frases"],
+"respostaCorreta": "Organizar o discurso",
+"dica": "Estrutura comunicação."
+},
+{
+"pergunta": "Sem períodos, o texto ficaria:",
+"opcoes": ["Organizado", "Claro", "Confuso", "Preciso"],
+"respostaCorreta": "Confuso",
+"dica": "Falta estrutura."
+}
+]
+},
+{
+"id": "14",
+"capitulo": "Quem faz e o que se faz: Sujeito e Predicado",
+"nivel": "basico",
+"dicas": "O sujeito é quem faz a ação e o predicado é o que se diz sobre ele.",
+"perguntas": [
+{
+"pergunta": "O que é o sujeito?",
+"opcoes": ["A ação", "Quem faz a ação", "O lugar", "O tempo"],
+"respostaCorreta": "Quem faz a ação",
+"dica": "É o personagem da frase."
+},
+{
+"pergunta": "O que é o predicado?",
+"opcoes": ["Quem faz a ação", "O que se diz do sujeito", "O nome", "O número"],
+"respostaCorreta": "O que se diz do sujeito",
+"dica": "É a ação ou informação."
+},
+{
+"pergunta": "Na frase 'O menino corre', quem é o sujeito?",
+"opcoes": ["Corre", "Menino", "O", "Nenhum"],
+"respostaCorreta": "Menino",
+"dica": "Quem corre?"
+},
+{
+"pergunta": "Na frase 'O gato dorme', o predicado é:",
+"opcoes": ["O gato", "Dorme", "Gato", "Nenhum"],
+"respostaCorreta": "Dorme",
+"dica": "O que o gato faz?"
+},
+{
+"pergunta": "O sujeito responde à pergunta:",
+"opcoes": ["Quando?", "Onde?", "Quem?", "Como?"],
+"respostaCorreta": "Quem?",
+"dica": "Quem faz?"
+},
+{
+"pergunta": "O predicado responde à pergunta:",
+"opcoes": ["Quem?", "O quê faz?", "Onde?", "Quando?"],
+"respostaCorreta": "O quê faz?",
+"dica": "Ação do sujeito."
+},
+{
+"pergunta": "Na frase 'A menina canta', o sujeito é:",
+"opcoes": ["Canta", "Menina", "A", "Nenhum"],
+"respostaCorreta": "Menina",
+"dica": "Quem canta?"
+},
+{
+"pergunta": "Na frase 'O cachorro late', o predicado é:",
+"opcoes": ["O cachorro", "Late", "Cachorro", "Nenhum"],
+"respostaCorreta": "Late",
+"dica": "O que faz?"
+},
+{
+"pergunta": "Toda frase tem:",
+"opcoes": ["Cor", "Sujeito e predicado", "Número", "Lugar"],
+"respostaCorreta": "Sujeito e predicado",
+"dica": "Partes principais."
+},
+{
+"pergunta": "Qual é o sujeito em 'O sol brilha'?",
+"opcoes": ["Brilha", "Sol", "O", "Nenhum"],
+"respostaCorreta": "Sol",
+"dica": "Quem brilha?"
+}
+]
+},
+{
+"id": "14",
+"capitulo": "Quem faz e o que se faz: Sujeito e Predicado",
+"nivel": "medio",
+"dicas": "O sujeito pode ser simples ou composto, e o predicado traz a informação sobre ele.",
+"perguntas": [
+{
+"pergunta": "O sujeito simples possui:",
+"opcoes": ["Dois núcleos", "Um núcleo", "Nenhum núcleo", "Vários verbos"],
+"respostaCorreta": "Um núcleo",
+"dica": "Apenas um elemento principal."
+},
+{
+"pergunta": "O sujeito composto possui:",
+"opcoes": ["Um núcleo", "Dois ou mais núcleos", "Nenhum núcleo", "Um verbo"],
+"respostaCorreta": "Dois ou mais núcleos",
+"dica": "Mais de um elemento."
+},
+{
+"pergunta": "Na frase 'João e Maria estudam', o sujeito é:",
+"opcoes": ["Estudam", "João e Maria", "Maria", "João"],
+"respostaCorreta": "João e Maria",
+"dica": "Duas pessoas."
+},
+{
+"pergunta": "Na frase 'O menino brinca no parque', o predicado é:",
+"opcoes": ["O menino", "Brinca no parque", "Menino", "Parque"],
+"respostaCorreta": "Brinca no parque",
+"dica": "Tudo que se diz."
+},
+{
+"pergunta": "O núcleo do sujeito é:",
+"opcoes": ["Verbo", "Palavra principal", "Artigo", "Preposição"],
+"respostaCorreta": "Palavra principal",
+"dica": "Parte mais importante."
+},
+{
+"pergunta": "Qual frase tem sujeito composto?",
+"opcoes": ["O menino corre", "João e Maria estudam", "Ela canta", "Ele dorme"],
+"respostaCorreta": "João e Maria estudam",
+"dica": "Mais de um sujeito."
+},
+{
+"pergunta": "O predicado contém:",
+"opcoes": ["Apenas sujeito", "Verbo e complementos", "Somente artigo", "Número"],
+"respostaCorreta": "Verbo e complementos",
+"dica": "Ação + informação."
+},
+{
+"pergunta": "Na frase 'Os alunos estudam muito', o sujeito é:",
+"opcoes": ["Estudam", "Os alunos", "Muito", "Nenhum"],
+"respostaCorreta": "Os alunos",
+"dica": "Quem estuda?"
+},
+{
+"pergunta": "Na frase 'Os alunos estudam muito', o predicado é:",
+"opcoes": ["Os alunos", "Estudam muito", "Alunos", "Muito"],
+"respostaCorreta": "Estudam muito",
+"dica": "O que fazem?"
+},
+{
+"pergunta": "O estudo do sujeito e predicado ajuda a:",
+"opcoes": ["Confundir frases", "Entender a estrutura", "Eliminar palavras", "Reduzir texto"],
+"respostaCorreta": "Entender a estrutura",
+"dica": "Organiza frases."
+}
+]
+},
+{
+"id": "14",
+"capitulo": "Quem faz e o que se faz: Sujeito e Predicado",
+"nivel": "avancado",
+"dicas": "A análise de sujeito e predicado é essencial para compreender a estrutura sintática.",
+"perguntas": [
+{
+"pergunta": "O sujeito é definido como:",
+"opcoes": ["A ação", "O termo sobre o qual se declara algo", "O verbo", "O complemento"],
+"respostaCorreta": "O termo sobre o qual se declara algo",
+"dica": "Base da frase."
+},
+{
+"pergunta": "O predicado é definido como:",
+"opcoes": ["Quem faz", "O que se declara sobre o sujeito", "O nome", "O número"],
+"respostaCorreta": "O que se declara sobre o sujeito",
+"dica": "Informação principal."
+},
+{
+"pergunta": "O núcleo do sujeito é:",
+"opcoes": ["Verbo", "Elemento principal do sujeito", "Artigo", "Preposição"],
+"respostaCorreta": "Elemento principal do sujeito",
+"dica": "Parte central."
+},
+{
+"pergunta": "Na frase 'João e Maria chegaram cedo', o sujeito é:",
+"opcoes": ["Chegaram", "João e Maria", "Cedo", "Nenhum"],
+"respostaCorreta": "João e Maria",
+"dica": "Sujeito composto."
+},
+{
+"pergunta": "Na frase 'João e Maria chegaram cedo', o predicado é:",
+"opcoes": ["João e Maria", "Chegaram cedo", "Cedo", "Nenhum"],
+"respostaCorreta": "Chegaram cedo",
+"dica": "Ação + circunstância."
+},
+{
+"pergunta": "Sujeito composto possui:",
+"opcoes": ["Um núcleo", "Dois ou mais núcleos", "Nenhum núcleo", "Um verbo"],
+"respostaCorreta": "Dois ou mais núcleos",
+"dica": "Mais de um elemento."
+},
+{
+"pergunta": "O predicado pode conter:",
+"opcoes": ["Apenas sujeito", "Verbo e complementos", "Somente artigo", "Somente número"],
+"respostaCorreta": "Verbo e complementos",
+"dica": "Estrutura completa."
+},
+{
+"pergunta": "A análise sintática permite:",
+"opcoes": ["Confundir frases", "Entender a estrutura da frase", "Eliminar palavras", "Reduzir linguagem"],
+"respostaCorreta": "Entender a estrutura da frase",
+"dica": "Organização."
+},
+{
+"pergunta": "Sem sujeito e predicado, a frase fica:",
+"opcoes": ["Clara", "Completa", "Incompleta", "Organizada"],
+"respostaCorreta": "Incompleta",
+"dica": "Falta estrutura."
+},
+{
+"pergunta": "O estudo desses elementos contribui para:",
+"opcoes": ["Confusão", "Clareza e precisão", "Erro", "Redução"],
+"respostaCorreta": "Clareza e precisão",
+"dica": "Melhora comunicação."
+}
+]
+},
+{
+"id": "15",
+"capitulo": "Completando o Sentido: Complementos Verbais",
+"nivel": "basico",
+"dicas": "Alguns verbos precisam de mais palavras para completar o sentido.",
+"perguntas": [
+{
+"pergunta": "O que é complemento verbal?",
+"opcoes": ["Uma ação", "Uma palavra que completa o verbo", "Um nome", "Um número"],
+"respostaCorreta": "Uma palavra que completa o verbo",
+"dica": "Ajuda o verbo a ter sentido completo."
+},
+{
+"pergunta": "Na frase 'Eu comprei um livro', o complemento é:",
+"opcoes": ["Eu", "Comprei", "Um livro", "Nenhum"],
+"respostaCorreta": "Um livro",
+"dica": "Completa o verbo."
+},
+{
+"pergunta": "Qual frase precisa de complemento?",
+"opcoes": ["Eu durmo", "Eu tenho", "O sol brilha", "Ele corre"],
+"respostaCorreta": "Eu tenho",
+"dica": "Falta informação."
+},
+{
+"pergunta": "Na frase 'Ela gosta de música', o complemento é:",
+"opcoes": ["Ela", "Gosta", "De música", "Nenhum"],
+"respostaCorreta": "De música",
+"dica": "Completa o sentido."
+},
+{
+"pergunta": "O complemento responde a:",
+"opcoes": ["Quem?", "O quê?", "Onde?", "Quando?"],
+"respostaCorreta": "O quê?",
+"dica": "Completa o verbo."
+},
+{
+"pergunta": "Na frase 'Ele come maçã', o complemento é:",
+"opcoes": ["Ele", "Come", "Maçã", "Nenhum"],
+"respostaCorreta": "Maçã",
+"dica": "O que ele come?"
+},
+{
+"pergunta": "Os complementos servem para:",
+"opcoes": ["Separar palavras", "Completar sentido", "Contar números", "Desenhar"],
+"respostaCorreta": "Completar sentido",
+"dica": "Ajudam o verbo."
+},
+{
+"pergunta": "Qual frase está completa?",
+"opcoes": ["Eu tenho", "Eu tenho um livro", "Eu tenho de", "Eu tenho que"],
+"respostaCorreta": "Eu tenho um livro",
+"dica": "Tem complemento."
+},
+{
+"pergunta": "Na frase 'Ela vê o filme', o complemento é:",
+"opcoes": ["Ela", "Vê", "O filme", "Nenhum"],
+"respostaCorreta": "O filme",
+"dica": "O que ela vê?"
+},
+{
+"pergunta": "Sem complemento, a frase pode ficar:",
+"opcoes": ["Completa", "Sem sentido", "Mais bonita", "Mais longa"],
+"respostaCorreta": "Sem sentido",
+"dica": "Falta informação."
+}
+]
+},
+{
+"id": "15",
+"capitulo": "Completando o Sentido: Complementos Verbais",
+"nivel": "medio",
+"dicas": "Os complementos verbais podem ser diretos ou indiretos.",
+"perguntas": [
+{
+"pergunta": "Objeto direto completa o verbo:",
+"opcoes": ["Com preposição", "Sem preposição", "Com artigo", "Com advérbio"],
+"respostaCorreta": "Sem preposição",
+"dica": "Ex: comer maçã."
+},
+{
+"pergunta": "Objeto indireto completa o verbo:",
+"opcoes": ["Sem preposição", "Com preposição", "Sem verbo", "Com número"],
+"respostaCorreta": "Com preposição",
+"dica": "Ex: gostar de música."
+},
+{
+"pergunta": "Na frase 'Eu li o livro', o complemento é:",
+"opcoes": ["Eu", "Li", "O livro", "Nenhum"],
+"respostaCorreta": "O livro",
+"dica": "Objeto direto."
+},
+{
+"pergunta": "Na frase 'Ela gosta de chocolate', temos:",
+"opcoes": ["Objeto direto", "Objeto indireto", "Sem complemento", "Sujeito"],
+"respostaCorreta": "Objeto indireto",
+"dica": "Tem preposição."
+},
+{
+"pergunta": "Qual frase tem objeto direto?",
+"opcoes": ["Gosto de música", "Comprei um carro", "Vou para casa", "Penso em você"],
+"respostaCorreta": "Comprei um carro",
+"dica": "Sem preposição."
+},
+{
+"pergunta": "Qual frase tem objeto indireto?",
+"opcoes": ["Comi pão", "Gosto de música", "Li livro", "Comprei carro"],
+"respostaCorreta": "Gosto de música",
+"dica": "Com preposição."
+},
+{
+"pergunta": "Complementos ajudam a:",
+"opcoes": ["Confundir frases", "Completar sentido", "Eliminar palavras", "Reduzir texto"],
+"respostaCorreta": "Completar sentido",
+"dica": "Ajudam o verbo."
+},
+{
+"pergunta": "Na frase 'Ele assistiu ao filme', temos:",
+"opcoes": ["Objeto direto", "Objeto indireto", "Sem complemento", "Sujeito"],
+"respostaCorreta": "Objeto indireto",
+"dica": "Tem preposição."
+},
+{
+"pergunta": "O complemento responde a:",
+"opcoes": ["Quem?", "O quê?", "Quando?", "Onde?"],
+"respostaCorreta": "O quê?",
+"dica": "Completa o verbo."
+},
+{
+"pergunta": "O estudo dos complementos ajuda a:",
+"opcoes": ["Confundir", "Entender frases", "Eliminar palavras", "Reduzir linguagem"],
+"respostaCorreta": "Entender frases",
+"dica": "Melhora compreensão."
+}
+]
+},
+{
+"id": "15",
+"capitulo": "Completando o Sentido: Complementos Verbais",
+"nivel": "avancado",
+"dicas": "Os complementos verbais são essenciais para a estrutura e significado das orações.",
+"perguntas": [
+{
+"pergunta": "Complementos verbais são:",
+"opcoes": ["Elementos que ligam frases", "Termos que completam o sentido do verbo", "Palavras decorativas", "Elementos opcionais"],
+"respostaCorreta": "Termos que completam o sentido do verbo",
+"dica": "Dão sentido completo."
+},
+{
+"pergunta": "Objeto direto caracteriza-se por:",
+"opcoes": ["Uso de preposição", "Ausência de preposição", "Uso de advérbio", "Uso de artigo"],
+"respostaCorreta": "Ausência de preposição",
+"dica": "Ligação direta."
+},
+{
+"pergunta": "Objeto indireto caracteriza-se por:",
+"opcoes": ["Ausência de preposição", "Presença de preposição", "Uso de número", "Uso de verbo auxiliar"],
+"respostaCorreta": "Presença de preposição",
+"dica": "Ligação indireta."
+},
+{
+"pergunta": "Na frase 'Ele entregou o presente ao amigo', temos:",
+"opcoes": ["Apenas objeto direto", "Apenas objeto indireto", "Objeto direto e indireto", "Nenhum complemento"],
+"respostaCorreta": "Objeto direto e indireto",
+"dica": "Dois complementos."
+},
+{
+"pergunta": "Qual é o objeto direto na frase acima?",
+"opcoes": ["Ele", "O presente", "Ao amigo", "Nenhum"],
+"respostaCorreta": "O presente",
+"dica": "Sem preposição."
+},
+{
+"pergunta": "Qual é o objeto indireto na frase acima?",
+"opcoes": ["Ele", "O presente", "Ao amigo", "Nenhum"],
+"respostaCorreta": "Ao amigo",
+"dica": "Com preposição."
+},
+{
+"pergunta": "A análise dos complementos permite:",
+"opcoes": ["Confundir frases", "Compreender a estrutura sintática", "Eliminar palavras", "Reduzir texto"],
+"respostaCorreta": "Compreender a estrutura sintática",
+"dica": "Organiza frases."
+},
+{
+"pergunta": "Sem complementos, alguns verbos ficam:",
+"opcoes": ["Completos", "Incompletos", "Organizados", "Claramente definidos"],
+"respostaCorreta": "Incompletos",
+"dica": "Falta informação."
+},
+{
+"pergunta": "Os complementos contribuem para:",
+"opcoes": ["Confusão", "Clareza e precisão", "Erro", "Redução"],
+"respostaCorreta": "Clareza e precisão",
+"dica": "Melhora entendimento."
+},
+{
+"pergunta": "O uso correto dos complementos evita:",
+"opcoes": ["Clareza", "Organização", "Ambiguidade", "Sentido"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Evita confusão."
+}
+]
+},
+{
+"id": "16",
+"capitulo": "Dando Mais Informação: O Adjunto Adnominal",
+"nivel": "basico",
+"dicas": "O adjunto adnominal acompanha o substantivo e dá mais informação sobre ele.",
+"perguntas": [
+{
+"pergunta": "O que é adjunto adnominal?",
+"opcoes": ["Uma ação", "Uma palavra que acompanha o substantivo", "Um verbo", "Um número"],
+"respostaCorreta": "Uma palavra que acompanha o substantivo",
+"dica": "Dá mais informação ao nome."
+},
+{
+"pergunta": "Na frase 'O carro vermelho', qual é o adjunto adnominal?",
+"opcoes": ["Carro", "Vermelho", "O", "Nenhum"],
+"respostaCorreta": "Vermelho",
+"dica": "Descreve o carro."
+},
+{
+"pergunta": "Qual palavra acompanha o substantivo?",
+"opcoes": ["Verbo", "Adjunto adnominal", "Número", "Tempo"],
+"respostaCorreta": "Adjunto adnominal",
+"dica": "Dá detalhes."
+},
+{
+"pergunta": "Na frase 'A casa bonita', o adjunto adnominal é:",
+"opcoes": ["Casa", "Bonita", "A", "Nenhum"],
+"respostaCorreta": "Bonita",
+"dica": "Caracteriza a casa."
+},
+{
+"pergunta": "O adjunto adnominal serve para:",
+"opcoes": ["Indicar ação", "Dar informação ao substantivo", "Contar", "Ligar frases"],
+"respostaCorreta": "Dar informação ao substantivo",
+"dica": "Explica melhor."
+},
+{
+"pergunta": "Qual frase tem adjunto adnominal?",
+"opcoes": ["Ele corre", "O menino alto corre", "Corre rápido", "Ele dorme"],
+"respostaCorreta": "O menino alto corre",
+"dica": "Alto descreve o menino."
+},
+{
+"pergunta": "Na frase 'Os livros novos', o adjunto é:",
+"opcoes": ["Livros", "Novos", "Os", "Nenhum"],
+"respostaCorreta": "Novos",
+"dica": "Caracteriza livros."
+},
+{
+"pergunta": "O adjunto adnominal responde a:",
+"opcoes": ["Quem?", "Como é?", "Onde?", "Quando?"],
+"respostaCorreta": "Como é?",
+"dica": "Descreve."
+},
+{
+"pergunta": "Qual palavra é adjunto adnominal?",
+"opcoes": ["Corre", "Bonito", "Mesa", "Livro"],
+"respostaCorreta": "Bonito",
+"dica": "Descreve algo."
+},
+{
+"pergunta": "O adjunto adnominal está ligado a:",
+"opcoes": ["Verbo", "Substantivo", "Advérbio", "Número"],
+"respostaCorreta": "Substantivo",
+"dica": "Acompanha o nome."
+}
+]
+},
+{
+"id": "16",
+"capitulo": "Dando Mais Informação: O Adjunto Adnominal",
+"nivel": "medio",
+"dicas": "O adjunto adnominal pode ser formado por artigos, adjetivos, numerais e pronomes.",
+"perguntas": [
+{
+"pergunta": "O adjunto adnominal pode ser:",
+"opcoes": ["Apenas verbo", "Artigo, adjetivo, numeral ou pronome", "Somente advérbio", "Apenas número"],
+"respostaCorreta": "Artigo, adjetivo, numeral ou pronome",
+"dica": "Acompanha o substantivo."
+},
+{
+"pergunta": "Na frase 'Os dois livros antigos', quantos adjuntos há?",
+"opcoes": ["1", "2", "3", "0"],
+"respostaCorreta": "3",
+"dica": "Os, dois, antigos."
+},
+{
+"pergunta": "Qual palavra é adjunto adnominal?",
+"opcoes": ["Livro", "Antigo", "Corre", "Ontem"],
+"respostaCorreta": "Antigo",
+"dica": "Caracteriza o nome."
+},
+{
+"pergunta": "Na frase 'Minha casa grande', 'minha' é:",
+"opcoes": ["Verbo", "Adjunto adnominal", "Advérbio", "Preposição"],
+"respostaCorreta": "Adjunto adnominal",
+"dica": "Indica posse."
+},
+{
+"pergunta": "O adjunto adnominal concorda com:",
+"opcoes": ["Verbo", "Substantivo", "Advérbio", "Preposição"],
+"respostaCorreta": "Substantivo",
+"dica": "Mesmo gênero e número."
+},
+{
+"pergunta": "Qual frase tem adjunto adnominal?",
+"opcoes": ["Ele corre", "A bela flor", "Corre rápido", "Ele dorme"],
+"respostaCorreta": "A bela flor",
+"dica": "Bela descreve flor."
+},
+{
+"pergunta": "Na frase 'Os alunos estudiosos', o adjunto é:",
+"opcoes": ["Alunos", "Estudiosos", "Os", "Nenhum"],
+"respostaCorreta": "Estudiosos",
+"dica": "Caracteriza alunos."
+},
+{
+"pergunta": "Adjuntos ajudam a:",
+"opcoes": ["Confundir", "Detalhar", "Eliminar palavras", "Reduzir frases"],
+"respostaCorreta": "Detalhar",
+"dica": "Dão mais informação."
+},
+{
+"pergunta": "Qual alternativa tem apenas adjuntos?",
+"opcoes": ["Bonito, grande, dois", "Livro, mesa, casa", "Correr, pular, brincar", "Ontem, aqui, bem"],
+"respostaCorreta": "Bonito, grande, dois",
+"dica": "Acompanham nomes."
+},
+{
+"pergunta": "O adjunto adnominal melhora:",
+"opcoes": ["Confusão", "Clareza", "Erro", "Redução"],
+"respostaCorreta": "Clareza",
+"dica": "Dá detalhes."
+}
+]
+},
+{
+"id": "16",
+"capitulo": "Dando Mais Informação: O Adjunto Adnominal",
+"nivel": "avancado",
+"dicas": "O adjunto adnominal é um termo acessório que especifica ou caracteriza o substantivo.",
+"perguntas": [
+{
+"pergunta": "O adjunto adnominal é classificado como:",
+"opcoes": ["Termo essencial", "Termo acessório", "Termo principal", "Termo verbal"],
+"respostaCorreta": "Termo acessório",
+"dica": "Complementa o nome."
+},
+{
+"pergunta": "Ele acompanha principalmente:",
+"opcoes": ["Verbo", "Substantivo", "Advérbio", "Preposição"],
+"respostaCorreta": "Substantivo",
+"dica": "Relaciona-se ao nome."
+},
+{
+"pergunta": "Pode ser formado por:",
+"opcoes": ["Apenas verbo", "Artigos, adjetivos, numerais e pronomes", "Somente advérbios", "Somente números"],
+"respostaCorreta": "Artigos, adjetivos, numerais e pronomes",
+"dica": "Diversas classes."
+},
+{
+"pergunta": "Na frase 'Os três grandes livros', quantos adjuntos há?",
+"opcoes": ["1", "2", "3", "0"],
+"respostaCorreta": "3",
+"dica": "Os, três, grandes."
+},
+{
+"pergunta": "O adjunto adnominal concorda com:",
+"opcoes": ["Verbo", "Substantivo", "Advérbio", "Preposição"],
+"respostaCorreta": "Substantivo",
+"dica": "Gênero e número."
+},
+{
+"pergunta": "Sua função é:",
+"opcoes": ["Indicar ação", "Caracterizar o substantivo", "Ligar frases", "Contar números"],
+"respostaCorreta": "Caracterizar o substantivo",
+"dica": "Dá detalhes."
+},
+{
+"pergunta": "Qual alternativa apresenta adjunto adnominal?",
+"opcoes": ["Ele corre", "A casa bonita", "Corre rápido", "Ele dorme"],
+"respostaCorreta": "A casa bonita",
+"dica": "Bonita caracteriza."
+},
+{
+"pergunta": "A presença do adjunto contribui para:",
+"opcoes": ["Confusão", "Clareza e precisão", "Erro", "Redução"],
+"respostaCorreta": "Clareza e precisão",
+"dica": "Detalha o nome."
+},
+{
+"pergunta": "Sem adjunto adnominal, o substantivo fica:",
+"opcoes": ["Mais detalhado", "Menos específico", "Mais claro", "Mais longo"],
+"respostaCorreta": "Menos específico",
+"dica": "Falta informação."
+},
+{
+"pergunta": "O estudo desse termo ajuda a:",
+"opcoes": ["Confundir frases", "Entender a estrutura nominal", "Eliminar palavras", "Reduzir linguagem"],
+"respostaCorreta": "Entender a estrutura nominal",
+"dica": "Organiza ideias."
+}
+]
+},
+{
+"id": "17",
+"capitulo": "Ligando ao Verbo: O Adjunto Adverbial",
+"nivel": "basico",
+"dicas": "O adjunto adverbial dá informações sobre a ação do verbo.",
+"perguntas": [
+{
+"pergunta": "O que é adjunto adverbial?",
+"opcoes": ["Uma ação", "Uma palavra que dá informação ao verbo", "Um nome", "Um número"],
+"respostaCorreta": "Uma palavra que dá informação ao verbo",
+"dica": "Explica a ação."
+},
+{
+"pergunta": "Na frase 'Ele corre rápido', o adjunto adverbial é:",
+"opcoes": ["Ele", "Corre", "Rápido", "Nenhum"],
+"respostaCorreta": "Rápido",
+"dica": "Mostra como corre."
+},
+{
+"pergunta": "O adjunto adverbial indica:",
+"opcoes": ["Nome", "Ação", "Circunstância", "Número"],
+"respostaCorreta": "Circunstância",
+"dica": "Tempo, lugar ou modo."
+},
+{
+"pergunta": "Qual palavra indica tempo?",
+"opcoes": ["Aqui", "Ontem", "Bem", "Muito"],
+"respostaCorreta": "Ontem",
+"dica": "Mostra quando."
+},
+{
+"pergunta": "Qual palavra indica lugar?",
+"opcoes": ["Aqui", "Ontem", "Bem", "Muito"],
+"respostaCorreta": "Aqui",
+"dica": "Mostra onde."
+},
+{
+"pergunta": "Na frase 'Ela canta bem', o adjunto é:",
+"opcoes": ["Ela", "Canta", "Bem", "Nenhum"],
+"respostaCorreta": "Bem",
+"dica": "Mostra como."
+},
+{
+"pergunta": "O adjunto adverbial responde a:",
+"opcoes": ["Quem?", "Como?", "Qual?", "Quantos?"],
+"respostaCorreta": "Como?",
+"dica": "Dá detalhe."
+},
+{
+"pergunta": "Qual frase tem adjunto adverbial?",
+"opcoes": ["O menino", "Ele corre rápido", "Livro bonito", "Casa grande"],
+"respostaCorreta": "Ele corre rápido",
+"dica": "Rápido descreve a ação."
+},
+{
+"pergunta": "Qual palavra é adjunto adverbial?",
+"opcoes": ["Mesa", "Livro", "Aqui", "Casa"],
+"respostaCorreta": "Aqui",
+"dica": "Indica lugar."
+},
+{
+"pergunta": "O adjunto adverbial está ligado ao:",
+"opcoes": ["Substantivo", "Verbo", "Número", "Artigo"],
+"respostaCorreta": "Verbo",
+"dica": "Relaciona-se à ação."
+}
+]
+},
+{
+"id": "17",
+"capitulo": "Ligando ao Verbo: O Adjunto Adverbial",
+"nivel": "medio",
+"dicas": "O adjunto adverbial pode indicar tempo, lugar, modo, causa, intensidade e mais.",
+"perguntas": [
+{
+"pergunta": "O adjunto adverbial indica:",
+"opcoes": ["Nome", "Circunstância", "Número", "Artigo"],
+"respostaCorreta": "Circunstância",
+"dica": "Dá contexto à ação."
+},
+{
+"pergunta": "Na frase 'Ele chegou ontem', o adjunto é:",
+"opcoes": ["Ele", "Chegou", "Ontem", "Nenhum"],
+"respostaCorreta": "Ontem",
+"dica": "Indica tempo."
+},
+{
+"pergunta": "Na frase 'Ela mora aqui', o adjunto é:",
+"opcoes": ["Ela", "Mora", "Aqui", "Nenhum"],
+"respostaCorreta": "Aqui",
+"dica": "Indica lugar."
+},
+{
+"pergunta": "Na frase 'Ele fala bem', o adjunto é:",
+"opcoes": ["Ele", "Fala", "Bem", "Nenhum"],
+"respostaCorreta": "Bem",
+"dica": "Indica modo."
+},
+{
+"pergunta": "Qual frase tem adjunto de tempo?",
+"opcoes": ["Ele corre rápido", "Ele chegou ontem", "Ele mora aqui", "Ele fala bem"],
+"respostaCorreta": "Ele chegou ontem",
+"dica": "Indica quando."
+},
+{
+"pergunta": "Qual frase tem adjunto de lugar?",
+"opcoes": ["Ele corre rápido", "Ele chegou ontem", "Ele mora aqui", "Ele fala bem"],
+"respostaCorreta": "Ele mora aqui",
+"dica": "Indica onde."
+},
+{
+"pergunta": "Qual frase tem adjunto de modo?",
+"opcoes": ["Ele corre rápido", "Ele chegou ontem", "Ele mora aqui", "Ele fala bem"],
+"respostaCorreta": "Ele corre rápido",
+"dica": "Indica como."
+},
+{
+"pergunta": "O adjunto adverbial pode ser formado por:",
+"opcoes": ["Somente verbos", "Advérbios ou locuções", "Apenas substantivos", "Somente números"],
+"respostaCorreta": "Advérbios ou locuções",
+"dica": "Ex: de manhã."
+},
+{
+"pergunta": "O adjunto adverbial ajuda a:",
+"opcoes": ["Confundir frases", "Detalhar ações", "Eliminar palavras", "Reduzir texto"],
+"respostaCorreta": "Detalhar ações",
+"dica": "Dá mais informação."
+},
+{
+"pergunta": "O uso correto melhora:",
+"opcoes": ["Confusão", "Clareza", "Erro", "Redução"],
+"respostaCorreta": "Clareza",
+"dica": "Facilita entendimento."
+}
+]
+},
+{
+"id": "17",
+"capitulo": "Ligando ao Verbo: O Adjunto Adverbial",
+"nivel": "avancado",
+"dicas": "O adjunto adverbial é um termo acessório que indica circunstâncias da ação verbal.",
+"perguntas": [
+{
+"pergunta": "O adjunto adverbial é classificado como:",
+"opcoes": ["Termo essencial", "Termo acessório", "Termo principal", "Termo nominal"],
+"respostaCorreta": "Termo acessório",
+"dica": "Complementa a ação."
+},
+{
+"pergunta": "Sua função é:",
+"opcoes": ["Nomear", "Indicar circunstâncias da ação", "Ligar frases", "Contar números"],
+"respostaCorreta": "Indicar circunstâncias da ação",
+"dica": "Ex: tempo, lugar."
+},
+{
+"pergunta": "Na frase 'Ele chegou cedo ontem', quantos adjuntos há?",
+"opcoes": ["1", "2", "3", "0"],
+"respostaCorreta": "2",
+"dica": "Cedo e ontem."
+},
+{
+"pergunta": "O adjunto adverbial pode indicar:",
+"opcoes": ["Apenas tempo", "Apenas lugar", "Diversas circunstâncias", "Somente ação"],
+"respostaCorreta": "Diversas circunstâncias",
+"dica": "Tempo, modo, lugar etc."
+},
+{
+"pergunta": "Ele pode ser formado por:",
+"opcoes": ["Somente verbos", "Advérbios e locuções adverbiais", "Somente substantivos", "Apenas números"],
+"respostaCorreta": "Advérbios e locuções adverbiais",
+"dica": "Ex: de manhã."
+},
+{
+"pergunta": "Na frase 'Ela falou com calma', o adjunto é:",
+"opcoes": ["Ela", "Falou", "Com calma", "Nenhum"],
+"respostaCorreta": "Com calma",
+"dica": "Locução adverbial."
+},
+{
+"pergunta": "A presença do adjunto contribui para:",
+"opcoes": ["Confusão", "Clareza e precisão", "Erro", "Redução"],
+"respostaCorreta": "Clareza e precisão",
+"dica": "Detalha a ação."
+},
+{
+"pergunta": "Sem adjunto adverbial, a frase fica:",
+"opcoes": ["Mais detalhada", "Menos detalhada", "Mais clara", "Mais longa"],
+"respostaCorreta": "Menos detalhada",
+"dica": "Falta informação."
+},
+{
+"pergunta": "O estudo desse termo ajuda a:",
+"opcoes": ["Confundir frases", "Entender a estrutura verbal", "Eliminar palavras", "Reduzir linguagem"],
+"respostaCorreta": "Entender a estrutura verbal",
+"dica": "Organiza a ação."
+},
+{
+"pergunta": "O uso adequado evita:",
+"opcoes": ["Clareza", "Organização", "Ambiguidade", "Sentido"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Evita confusão."
+}
+]
+},
+{
+"id": "18",
+"capitulo": "Chamando Alguém: O Vocativo",
+"nivel": "basico",
+"dicas": "O vocativo é usado para chamar ou falar diretamente com alguém.",
+"perguntas": [
+{
+"pergunta": "O que é vocativo?",
+"opcoes": ["Uma ação", "Uma palavra usada para chamar alguém", "Um número", "Um verbo"],
+"respostaCorreta": "Uma palavra usada para chamar alguém",
+"dica": "Usamos para falar com alguém."
+},
+{
+"pergunta": "Na frase 'João, venha aqui!', o vocativo é:",
+"opcoes": ["Venha", "Aqui", "João", "Nenhum"],
+"respostaCorreta": "João",
+"dica": "É quem está sendo chamado."
+},
+{
+"pergunta": "O vocativo serve para:",
+"opcoes": ["Contar", "Chamar alguém", "Descrever", "Medir"],
+"respostaCorreta": "Chamar alguém",
+"dica": "Dirigir a fala."
+},
+{
+"pergunta": "Qual frase tem vocativo?",
+"opcoes": ["Ele corre", "Maria, escute", "O livro caiu", "Ela canta"],
+"respostaCorreta": "Maria, escute",
+"dica": "Maria está sendo chamada."
+},
+{
+"pergunta": "Na frase 'Amigos, vamos estudar', o vocativo é:",
+"opcoes": ["Vamos", "Estudar", "Amigos", "Nenhum"],
+"respostaCorreta": "Amigos",
+"dica": "Grupo chamado."
+},
+{
+"pergunta": "O vocativo aparece geralmente:",
+"opcoes": ["Sem pontuação", "Entre vírgulas", "No meio sem separação", "Com números"],
+"respostaCorreta": "Entre vírgulas",
+"dica": "Ex: João, venha!"
+},
+{
+"pergunta": "Qual palavra é vocativo?",
+"opcoes": ["Corre", "Menino", "João", "Ontem"],
+"respostaCorreta": "João",
+"dica": "Nome de alguém."
+},
+{
+"pergunta": "Na frase 'Professor, explique', o vocativo é:",
+"opcoes": ["Explique", "Professor", "Nenhum", "Ação"],
+"respostaCorreta": "Professor",
+"dica": "Quem está sendo chamado."
+},
+{
+"pergunta": "O vocativo pode ser:",
+"opcoes": ["Um verbo", "Um nome ou expressão", "Um número", "Um advérbio"],
+"respostaCorreta": "Um nome ou expressão",
+"dica": "Ex: amigo, mãe."
+},
+{
+"pergunta": "Sem vocativo, a frase perde:",
+"opcoes": ["Cor", "Direção da fala", "Número", "Tempo"],
+"respostaCorreta": "Direção da fala",
+"dica": "Não chama ninguém."
+}
+]
+},
+{
+"id": "18",
+"capitulo": "Chamando Alguém: O Vocativo",
+"nivel": "medio",
+"dicas": "O vocativo é um termo independente usado para interpelar alguém.",
+"perguntas": [
+{
+"pergunta": "O vocativo é um termo:",
+"opcoes": ["Essencial", "Independente", "Verbal", "Numérico"],
+"respostaCorreta": "Independente",
+"dica": "Não faz parte do sujeito ou predicado."
+},
+{
+"pergunta": "Na frase 'Ana, feche a porta', o vocativo é:",
+"opcoes": ["Feche", "Porta", "Ana", "Nenhum"],
+"respostaCorreta": "Ana",
+"dica": "É quem está sendo chamado."
+},
+{
+"pergunta": "O vocativo geralmente é separado por:",
+"opcoes": ["Ponto final", "Vírgula", "Dois pontos", "Aspas"],
+"respostaCorreta": "Vírgula",
+"dica": "Ex: João, venha!"
+},
+{
+"pergunta": "Qual frase contém vocativo?",
+"opcoes": ["Ele corre rápido", "Senhor, aguarde", "O livro caiu", "Ela canta bem"],
+"respostaCorreta": "Senhor, aguarde",
+"dica": "Senhor é chamado."
+},
+{
+"pergunta": "O vocativo não faz parte:",
+"opcoes": ["Do sujeito", "Do predicado", "Da frase", "Da comunicação"],
+"respostaCorreta": "Do sujeito",
+"dica": "É separado."
+},
+{
+"pergunta": "Na frase 'Crianças, prestem atenção', o vocativo é:",
+"opcoes": ["Prestem", "Atenção", "Crianças", "Nenhum"],
+"respostaCorreta": "Crianças",
+"dica": "Grupo chamado."
+},
+{
+"pergunta": "O vocativo pode aparecer:",
+"opcoes": ["Só no início", "Só no fim", "Em qualquer posição", "Nunca"],
+"respostaCorreta": "Em qualquer posição",
+"dica": "Início, meio ou fim."
+},
+{
+"pergunta": "Exemplo de vocativo no final:",
+"opcoes": ["Venha, João", "João venha", "Venha João", "João venha aqui"],
+"respostaCorreta": "Venha, João",
+"dica": "Depois da ação."
+},
+{
+"pergunta": "O uso do vocativo torna a frase:",
+"opcoes": ["Mais confusa", "Mais direta", "Mais longa", "Mais difícil"],
+"respostaCorreta": "Mais direta",
+"dica": "Fala com alguém."
+},
+{
+"pergunta": "O vocativo é comum em:",
+"opcoes": ["Fórmulas", "Conversas", "Cálculos", "Números"],
+"respostaCorreta": "Conversas",
+"dica": "Uso cotidiano."
+}
+]
+},
+{
+"id": "18",
+"capitulo": "Chamando Alguém: O Vocativo",
+"nivel": "avancado",
+"dicas": "O vocativo é um termo independente que estabelece interlocução no discurso.",
+"perguntas": [
+{
+"pergunta": "O vocativo é definido como:",
+"opcoes": ["Termo essencial", "Termo independente de chamamento", "Termo verbal", "Termo nominal"],
+"respostaCorreta": "Termo independente de chamamento",
+"dica": "Usado para interpelar."
+},
+{
+"pergunta": "Ele não pertence:",
+"opcoes": ["Ao sujeito nem ao predicado", "A nenhuma frase", "Aos verbos", "À pontuação"],
+"respostaCorreta": "Ao sujeito nem ao predicado",
+"dica": "É isolado."
+},
+{
+"pergunta": "Na frase 'Senhores, iniciem a reunião', o vocativo é:",
+"opcoes": ["Iniciem", "Reunião", "Senhores", "Nenhum"],
+"respostaCorreta": "Senhores",
+"dica": "Chamamento."
+},
+{
+"pergunta": "O vocativo é separado por:",
+"opcoes": ["Ponto", "Vírgula", "Travessão", "Aspas"],
+"respostaCorreta": "Vírgula",
+"dica": "Isolamento."
+},
+{
+"pergunta": "Sua função é:",
+"opcoes": ["Indicar ação", "Estabelecer interlocução", "Ligar frases", "Contar números"],
+"respostaCorreta": "Estabelecer interlocução",
+"dica": "Dirigir a fala."
+},
+{
+"pergunta": "Qual alternativa apresenta vocativo?",
+"opcoes": ["Ele corre", "Amigo, escute", "Corre rápido", "Ele dorme"],
+"respostaCorreta": "Amigo, escute",
+"dica": "Chamamento."
+},
+{
+"pergunta": "O vocativo pode ocorrer:",
+"opcoes": ["Apenas no início", "Apenas no fim", "Em diferentes posições", "Nunca"],
+"respostaCorreta": "Em diferentes posições",
+"dica": "Flexível."
+},
+{
+"pergunta": "A presença do vocativo contribui para:",
+"opcoes": ["Confusão", "Clareza comunicativa", "Erro", "Redução"],
+"respostaCorreta": "Clareza comunicativa",
+"dica": "Direciona a fala."
+},
+{
+"pergunta": "Sem vocativo, a comunicação pode ficar:",
+"opcoes": ["Mais clara", "Menos direta", "Mais organizada", "Mais precisa"],
+"respostaCorreta": "Menos direta",
+"dica": "Sem chamamento."
+},
+{
+"pergunta": "O uso adequado do vocativo evita:",
+"opcoes": ["Clareza", "Organização", "Ambiguidade", "Sentido"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Define o interlocutor."
+}
+]
+},
+{
+"id": "19",
+"capitulo": "Explicando Melhor: O Aposto",
+"nivel": "basico",
+"dicas": "O aposto explica ou acrescenta informação sobre um nome.",
+"perguntas": [
+{
+"pergunta": "O que é aposto?",
+"opcoes": ["Uma ação", "Uma explicação de um nome", "Um número", "Um verbo"],
+"respostaCorreta": "Uma explicação de um nome",
+"dica": "Dá mais informação."
+},
+{
+"pergunta": "Na frase 'Luanda, a capital de Angola, é linda', o aposto é:",
+"opcoes": ["Luanda", "É linda", "A capital de Angola", "Nenhum"],
+"respostaCorreta": "A capital de Angola",
+"dica": "Explica Luanda."
+},
+{
+"pergunta": "O aposto serve para:",
+"opcoes": ["Contar", "Explicar", "Desenhar", "Medir"],
+"respostaCorreta": "Explicar",
+"dica": "Dá detalhes."
+},
+{
+"pergunta": "Qual frase tem aposto?",
+"opcoes": ["Ele corre", "João, meu amigo, chegou", "Ela canta", "O livro caiu"],
+"respostaCorreta": "João, meu amigo, chegou",
+"dica": "Meu amigo explica João."
+},
+{
+"pergunta": "Na frase 'Maria, professora, ensina bem', o aposto é:",
+"opcoes": ["Maria", "Professora", "Ensina", "Bem"],
+"respostaCorreta": "Professora",
+"dica": "Explica Maria."
+},
+{
+"pergunta": "O aposto aparece geralmente entre:",
+"opcoes": ["Números", "Vírgulas", "Letras", "Cores"],
+"respostaCorreta": "Vírgulas",
+"dica": "Isola a explicação."
+},
+{
+"pergunta": "Qual palavra é aposto?",
+"opcoes": ["Corre", "Bonito", "Professor", "Ontem"],
+"respostaCorreta": "Professor",
+"dica": "Pode explicar alguém."
+},
+{
+"pergunta": "Na frase 'Pedro, o médico, chegou', o aposto é:",
+"opcoes": ["Pedro", "Chegou", "O médico", "Nenhum"],
+"respostaCorreta": "O médico",
+"dica": "Explica Pedro."
+},
+{
+"pergunta": "O aposto está ligado ao:",
+"opcoes": ["Verbo", "Substantivo", "Número", "Artigo"],
+"respostaCorreta": "Substantivo",
+"dica": "Explica o nome."
+},
+{
+"pergunta": "Sem aposto, a frase fica:",
+"opcoes": ["Mais detalhada", "Menos explicativa", "Mais longa", "Mais difícil"],
+"respostaCorreta": "Menos explicativa",
+"dica": "Falta detalhe."
+}
+]
+},
+{
+"id": "19",
+"capitulo": "Explicando Melhor: O Aposto",
+"nivel": "medio",
+"dicas": "O aposto é um termo que explica, resume ou especifica outro termo da frase.",
+"perguntas": [
+{
+"pergunta": "O aposto é um termo:",
+"opcoes": ["Verbal", "Explicativo", "Numérico", "Temporal"],
+"respostaCorreta": "Explicativo",
+"dica": "Explica outro termo."
+},
+{
+"pergunta": "Na frase 'Machado de Assis, grande escritor, nasceu no Brasil', o aposto é:",
+"opcoes": ["Machado de Assis", "Nasceu", "Grande escritor", "Brasil"],
+"respostaCorreta": "Grande escritor",
+"dica": "Explica o nome."
+},
+{
+"pergunta": "O aposto pode indicar:",
+"opcoes": ["Ação", "Explicação ou especificação", "Tempo", "Lugar"],
+"respostaCorreta": "Explicação ou especificação",
+"dica": "Detalha o termo."
+},
+{
+"pergunta": "Ele geralmente aparece entre:",
+"opcoes": ["Pontos", "Vírgulas", "Números", "Aspas"],
+"respostaCorreta": "Vírgulas",
+"dica": "Isolado."
+},
+{
+"pergunta": "Qual frase tem aposto?",
+"opcoes": ["Ele corre rápido", "Ana, minha irmã, chegou", "Ela canta bem", "O livro caiu"],
+"respostaCorreta": "Ana, minha irmã, chegou",
+"dica": "Explica Ana."
+},
+{
+"pergunta": "O aposto está ligado a:",
+"opcoes": ["Verbo", "Substantivo", "Advérbio", "Número"],
+"respostaCorreta": "Substantivo",
+"dica": "Relaciona-se ao nome."
+},
+{
+"pergunta": "Na frase 'O Brasil, país tropical, é bonito', o aposto é:",
+"opcoes": ["Brasil", "País tropical", "É bonito", "Nenhum"],
+"respostaCorreta": "País tropical",
+"dica": "Explica Brasil."
+},
+{
+"pergunta": "O uso do aposto torna o texto:",
+"opcoes": ["Mais pobre", "Mais explicativo", "Mais curto", "Mais difícil"],
+"respostaCorreta": "Mais explicativo",
+"dica": "Adiciona informação."
+},
+{
+"pergunta": "O aposto pode ser retirado sem:",
+"opcoes": ["Alterar totalmente o sentido", "Prejudicar a estrutura básica", "Eliminar o verbo", "Eliminar o sujeito"],
+"respostaCorreta": "Prejudicar a estrutura básica",
+"dica": "É acessório."
+},
+{
+"pergunta": "O aposto ajuda a:",
+"opcoes": ["Confundir", "Explicar melhor", "Eliminar palavras", "Reduzir frases"],
+"respostaCorreta": "Explicar melhor",
+"dica": "Dá detalhes."
+}
+]
+},
+{
+"id": "19",
+"capitulo": "Explicando Melhor: O Aposto",
+"nivel": "avancado",
+"dicas": "O aposto é um termo acessório que amplia ou esclarece o significado de outro termo.",
+"perguntas": [
+{
+"pergunta": "O aposto é classificado como:",
+"opcoes": ["Termo essencial", "Termo acessório", "Termo verbal", "Termo principal"],
+"respostaCorreta": "Termo acessório",
+"dica": "Pode ser retirado."
+},
+{
+"pergunta": "Sua função principal é:",
+"opcoes": ["Indicar ação", "Explicar ou especificar um termo", "Ligar frases", "Contar números"],
+"respostaCorreta": "Explicar ou especificar um termo",
+"dica": "Dá mais informação."
+},
+{
+"pergunta": "Na frase 'Lisboa, capital de Portugal, é antiga', o aposto é:",
+"opcoes": ["Lisboa", "É antiga", "Capital de Portugal", "Nenhum"],
+"respostaCorreta": "Capital de Portugal",
+"dica": "Explica Lisboa."
+},
+{
+"pergunta": "O aposto está ligado a:",
+"opcoes": ["Verbo", "Substantivo", "Advérbio", "Preposição"],
+"respostaCorreta": "Substantivo",
+"dica": "Relaciona-se ao nome."
+},
+{
+"pergunta": "Ele pode ser isolado por:",
+"opcoes": ["Números", "Vírgulas, travessões ou parênteses", "Apenas ponto final", "Somente aspas"],
+"respostaCorreta": "Vírgulas, travessões ou parênteses",
+"dica": "Isolamento."
+},
+{
+"pergunta": "O aposto pode ser retirado sem:",
+"opcoes": ["Alterar a estrutura essencial", "Eliminar o sujeito", "Eliminar o verbo", "Alterar a pontuação"],
+"respostaCorreta": "Alterar a estrutura essencial",
+"dica": "É acessório."
+},
+{
+"pergunta": "A presença do aposto contribui para:",
+"opcoes": ["Confusão", "Clareza e detalhamento", "Erro", "Redução"],
+"respostaCorreta": "Clareza e detalhamento",
+"dica": "Explica melhor."
+},
+{
+"pergunta": "Sem aposto, o texto fica:",
+"opcoes": ["Mais detalhado", "Menos detalhado", "Mais longo", "Mais complexo"],
+"respostaCorreta": "Menos detalhado",
+"dica": "Falta explicação."
+},
+{
+"pergunta": "O estudo do aposto ajuda a:",
+"opcoes": ["Confundir frases", "Entender a estrutura nominal", "Eliminar palavras", "Reduzir linguagem"],
+"respostaCorreta": "Entender a estrutura nominal",
+"dica": "Organiza ideias."
+},
+{
+"pergunta": "O uso adequado evita:",
+"opcoes": ["Clareza", "Organização", "Ambiguidade", "Sentido"],
+"respostaCorreta": "Ambiguidade",
+"dica": "Evita confusão."
+}
+]
+}
+]
+}

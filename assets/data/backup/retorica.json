@@ -1,0 +1,1069 @@
+{
+"disciplina": "retórica",
+"quizzes": [
+{
+"id": "0-basico",
+"capitulo": "Introdução – O que é Retórica?",
+"nivel": "basico",
+"dicas": "Pense em falar a verdade de um jeito bonito e fácil de entender.",
+"perguntas": [
+{
+"pergunta": "O que é Retórica?",
+"opcoes": [
+"A arte de comunicar a verdade com clareza",
+"Uma forma de enganar as pessoas",
+"Um jeito de falar mentiras bonitas",
+"Um jogo de palavras difíceis"
+],
+"respostaCorreta": "A arte de comunicar a verdade com clareza",
+"dica": "Retórica é falar a verdade de um jeito bonito e claro."
+},
+{
+"pergunta": "A Retórica faz parte de qual caminho de aprendizado?",
+"opcoes": [
+"Trivium",
+"Matemática",
+"Esporte",
+"Ciência dos Animais"
+],
+"respostaCorreta": "Trivium",
+"dica": "É um caminho com três partes."
+},
+{
+"pergunta": "Qual vem antes da Retórica?",
+"opcoes": [
+"Gramática e Lógica",
+"Desenho e Pintura",
+"Música e Dança",
+"Leitura e Recreio"
+],
+"respostaCorreta": "Gramática e Lógica",
+"dica": "São duas partes do Trivium que ajudam a aprender palavras e organizar o pensamento."
+},
+{
+"pergunta": "Retórica serve para enganar?",
+"opcoes": [
+"Não, serve para falar o que é verdadeiro e justo",
+"Sim, para convencer qualquer pessoa",
+"Sim, para ganhar sempre",
+"Não, serve só para brincar"
+],
+"respostaCorreta": "Não, serve para falar o que é verdadeiro e justo",
+"dica": "Retórica está ligada à verdade."
+},
+{
+"pergunta": "Por que usamos a Retórica?",
+"opcoes": [
+"Para usar as palavras para o bem",
+"Para parecer mais esperto",
+"Para falar difícil",
+"Para confundir os outros"
+],
+"respostaCorreta": "Para usar as palavras para o bem",
+"dica": "Ela ajuda a fazer o bem com as palavras."
+},
+{
+"pergunta": "Gramática ajuda a aprender o quê?",
+"opcoes": [
+"As palavras e como usá-las",
+"Como correr rápido",
+"Como desenhar melhor",
+"Como fazer contas difíceis"
+],
+"respostaCorreta": "As palavras e como usá-las",
+"dica": "É a parte que ensina sobre palavras."
+},
+{
+"pergunta": "Lógica ajuda a fazer o quê?",
+"opcoes": [
+"Organizar o pensamento",
+"Pintar quadros",
+"Cantar músicas",
+"Brincar no recreio"
+],
+"respostaCorreta": "Organizar o pensamento",
+"dica": "Ela evita confusão na mente."
+},
+{
+"pergunta": "Retórica é o ponto mais alto de quê?",
+"opcoes": [
+"Do caminho chamado Trivium",
+"De um campeonato",
+"De um prédio",
+"De um parque"
+],
+"respostaCorreta": "Do caminho chamado Trivium",
+"dica": "É o último passo de três partes."
+},
+{
+"pergunta": "Falar com clareza significa:",
+"opcoes": [
+"Falar de um jeito que todos entendam",
+"Falar muito rápido",
+"Falar muito baixo",
+"Falar palavras difíceis"
+],
+"respostaCorreta": "Falar de um jeito que todos entendam",
+"dica": "Clareza é ser fácil de entender."
+},
+{
+"pergunta": "A Retórica ajuda as pessoas a sentirem vontade de fazer o quê?",
+"opcoes": [
+"Fazer o bem",
+"Brigar",
+"Mentir",
+"Ignorar os outros"
+],
+"respostaCorreta": "Fazer o bem",
+"dica": "Ela inspira coisas boas."
+}
+]
+},
+{
+"id": "0-medio",
+"capitulo": "Introdução – O que é Retórica?",
+"nivel": "medio",
+"dicas": "Pense na relação entre Gramática, Lógica e Retórica e como elas trabalham juntas.",
+"perguntas": [
+{
+"pergunta": "Por que a Retórica é considerada o ponto mais alto do Trivium?",
+"opcoes": [
+"Porque usa palavras e pensamento organizado para comunicar a verdade",
+"Porque é a parte mais fácil",
+"Porque não precisa de lógica",
+"Porque serve apenas para decorar discursos"
+],
+"respostaCorreta": "Porque usa palavras e pensamento organizado para comunicar a verdade",
+"dica": "Ela depende das outras duas partes."
+},
+{
+"pergunta": "Se alguém fala bonito, mas mente, está usando a Retórica corretamente?",
+"opcoes": [
+"Não, porque Retórica exige verdade",
+"Sim, porque fala bonito",
+"Sim, se convencer as pessoas",
+"Não, porque precisa falar alto"
+],
+"respostaCorreta": "Não, porque Retórica exige verdade",
+"dica": "A verdade é essencial."
+},
+{
+"pergunta": "Como a Gramática ajuda a Retórica?",
+"opcoes": [
+"Ensina a usar palavras corretamente",
+"Ensina a ganhar discussões",
+"Ensina a falar mais alto",
+"Ensina a memorizar textos longos"
+],
+"respostaCorreta": "Ensina a usar palavras corretamente",
+"dica": "Sem palavras corretas, não há boa comunicação."
+},
+{
+"pergunta": "Qual é o papel da Lógica antes de falar?",
+"opcoes": [
+"Organizar as ideias para não confundir",
+"Decorar frases difíceis",
+"Falar rapidamente",
+"Ignorar opiniões diferentes"
+],
+"respostaCorreta": "Organizar as ideias para não confundir",
+"dica": "A lógica evita erros no pensamento."
+},
+{
+"pergunta": "Retórica é usada para qual finalidade principal?",
+"opcoes": [
+"Comunicar o que é verdadeiro e justo",
+"Manipular sentimentos",
+"Impressionar os outros",
+"Criar discussões"
+],
+"respostaCorreta": "Comunicar o que é verdadeiro e justo",
+"dica": "Ela busca o bem."
+},
+{
+"pergunta": "Uma pessoa que domina o Trivium consegue:",
+"opcoes": [
+"Pensar bem e comunicar melhor",
+"Falar sem pensar",
+"Ganhar qualquer debate com gritos",
+"Ignorar a verdade"
+],
+"respostaCorreta": "Pensar bem e comunicar melhor",
+"dica": "O Trivium une pensamento e fala."
+},
+{
+"pergunta": "Se alguém organiza bem as ideias mas usa palavras confusas, o que falta?",
+"opcoes": [
+"Boa Gramática",
+"Mais volume na voz",
+"Mais velocidade",
+"Mais emoção"
+],
+"respostaCorreta": "Boa Gramática",
+"dica": "Gramática ajuda no uso correto das palavras."
+},
+{
+"pergunta": "Qual é o objetivo moral da Retórica?",
+"opcoes": [
+"Levar as pessoas a fazer o bem",
+"Vencer qualquer discussão",
+"Falar mais que os outros",
+"Parecer superior"
+],
+"respostaCorreta": "Levar as pessoas a fazer o bem",
+"dica": "Ela está ligada à justiça."
+},
+{
+"pergunta": "Por que a Retórica não pode ser separada da verdade?",
+"opcoes": [
+"Porque sem verdade vira engano",
+"Porque fica mais longa",
+"Porque perde a beleza",
+"Porque fica difícil de decorar"
+],
+"respostaCorreta": "Porque sem verdade vira engano",
+"dica": "Mentira não faz parte da boa comunicação."
+},
+{
+"pergunta": "Quando alguém comunica com clareza e beleza, isso significa que:",
+"opcoes": [
+"Dominou bem a Retórica",
+"Está falando muito rápido",
+"Está inventando histórias",
+"Está apenas repetindo frases"
+],
+"respostaCorreta": "Dominou bem a Retórica",
+"dica": "Clareza e beleza são marcas da Retórica."
+}
+]
+},
+{
+"id": "0-avancado",
+"capitulo": "Introdução – O que é Retórica?",
+"nivel": "avancado",
+"dicas": "Analise a relação entre verdade, clareza e responsabilidade moral na comunicação.",
+"perguntas": [
+{
+"pergunta": "Por que a Retórica depende da Gramática e da Lógica?",
+"opcoes": [
+"Porque precisa de palavras corretas e pensamento organizado para comunicar bem",
+"Porque é a parte mais difícil",
+"Porque substitui as outras duas",
+"Porque funciona mesmo sem base"
+],
+"respostaCorreta": "Porque precisa de palavras corretas e pensamento organizado para comunicar bem",
+"dica": "Sem base sólida, o discurso falha."
+},
+{
+"pergunta": "Qual é a consequência de usar a Retórica sem compromisso com a verdade?",
+"opcoes": [
+"Transforma-se em manipulação ou engano",
+"Fica mais interessante",
+"Ganha mais aplausos",
+"Fica mais criativa"
+],
+"respostaCorreta": "Transforma-se em manipulação ou engano",
+"dica": "Sem verdade, a comunicação perde seu valor moral."
+},
+{
+"pergunta": "Como o Trivium forma um comunicador completo?",
+"opcoes": [
+"Ensina a conhecer palavras, pensar com lógica e comunicar com sabedoria",
+"Ensina apenas a memorizar discursos",
+"Ensina apenas a falar em público",
+"Ensina apenas a convencer pela emoção"
+],
+"respostaCorreta": "Ensina a conhecer palavras, pensar com lógica e comunicar com sabedoria",
+"dica": "São três etapas complementares."
+},
+{
+"pergunta": "Por que comunicar com clareza é uma responsabilidade moral?",
+"opcoes": [
+"Porque evita confusões e ajuda as pessoas a entenderem a verdade",
+"Porque torna o discurso mais longo",
+"Porque impressiona mais",
+"Porque elimina a necessidade de provas"
+],
+"respostaCorreta": "Porque evita confusões e ajuda as pessoas a entenderem a verdade",
+"dica": "Clareza está ligada ao respeito pelo ouvinte."
+},
+{
+"pergunta": "Se alguém domina a lógica mas não se preocupa com justiça, qual risco corre?",
+"opcoes": [
+"Usar o discurso para fins injustos",
+"Ficar sem palavras",
+"Esquecer a gramática",
+"Falar muito devagar"
+],
+"respostaCorreta": "Usar o discurso para fins injustos",
+"dica": "A técnica sem ética pode causar dano."
+},
+{
+"pergunta": "Qual é o papel da beleza na Retórica?",
+"opcoes": [
+"Tornar a verdade mais atraente e compreensível",
+"Substituir a lógica",
+"Esconder erros",
+"Confundir o público"
+],
+"respostaCorreta": "Tornar a verdade mais atraente e compreensível",
+"dica": "Beleza ajuda a apresentar o que é verdadeiro."
+},
+{
+"pergunta": "Por que a Retórica é chamada de arte?",
+"opcoes": [
+"Porque exige habilidade para unir verdade, clareza e expressão",
+"Porque é feita apenas de emoções",
+"Porque depende de improviso sem estudo",
+"Porque serve só para entretenimento"
+],
+"respostaCorreta": "Porque exige habilidade para unir verdade, clareza e expressão",
+"dica": "Arte envolve técnica e intenção."
+},
+{
+"pergunta": "Como a falta de organização mental afeta a Retórica?",
+"opcoes": [
+"Torna o discurso confuso e pouco convincente",
+"Deixa a fala mais emocionante",
+"Aumenta a criatividade",
+"Torna o discurso mais curto"
+],
+"respostaCorreta": "Torna o discurso confuso e pouco convincente",
+"dica": "Sem lógica, a mensagem se perde."
+},
+{
+"pergunta": "Qual é a finalidade última da Retórica segundo o capítulo?",
+"opcoes": [
+"Promover o bem através da verdade comunicada",
+"Vencer debates a qualquer custo",
+"Impressionar multidões",
+"Falar mais que os outros"
+],
+"respostaCorreta": "Promover o bem através da verdade comunicada",
+"dica": "Ela está ligada à justiça e ao bem."
+},
+{
+"pergunta": "Qual relação existe entre verdade e confiança no discurso?",
+"opcoes": [
+"A verdade constrói confiança duradoura",
+"A mentira gera respeito imediato",
+"A emoção substitui a verdade",
+"A clareza elimina a necessidade de honestidade"
+],
+"respostaCorreta": "A verdade constrói confiança duradoura",
+"dica": "Confiança nasce da honestidade."
+}
+]
+},
+{
+"id": "1-basico",
+"capitulo": "Capítulo 1 – Por que falar bem?",
+"nivel": "basico",
+"dicas": "Pense que as palavras podem fazer as pessoas felizes ou tristes.",
+"perguntas": [
+{
+"pergunta": "O que uma frase pode fazer no dia de alguém?",
+"opcoes": [
+"Alegrar ou entristecer",
+"Fazer chover",
+"Mudar a cor do céu",
+"Parar o tempo"
+],
+"respostaCorreta": "Alegrar ou entristecer",
+"dica": "Palavras afetam sentimentos."
+},
+{
+"pergunta": "Falar bem é uma:",
+"opcoes": [
+"Responsabilidade",
+"Brincadeira sem importância",
+"Competição",
+"Obrigação de gritar"
+],
+"respostaCorreta": "Responsabilidade",
+"dica": "Nossas palavras têm peso."
+},
+{
+"pergunta": "Com palavras podemos construir o quê?",
+"opcoes": [
+"Pontes de amizade",
+"Castelos mágicos",
+"Brinquedos invisíveis",
+"Montanhas gigantes"
+],
+"respostaCorreta": "Pontes de amizade",
+"dica": "Elas unem pessoas."
+},
+{
+"pergunta": "Ou podemos construir o quê?",
+"opcoes": [
+"Muros de separação",
+"Estradas douradas",
+"Parques de diversão",
+"Navios voadores"
+],
+"respostaCorreta": "Muros de separação",
+"dica": "Palavras ruins afastam pessoas."
+},
+{
+"pergunta": "Quem estuda Retórica escolhe:",
+"opcoes": [
+"Construir",
+"Destruir",
+"Ignorar",
+"Gritar"
+],
+"respostaCorreta": "Construir",
+"dica": "O objetivo é fazer o bem."
+},
+{
+"pergunta": "Falar com clareza ajuda:",
+"opcoes": [
+"Os amigos",
+"A confundir",
+"A brigar",
+"A mentir"
+],
+"respostaCorreta": "Os amigos",
+"dica": "Clareza facilita o entendimento."
+},
+{
+"pergunta": "Falar com bondade pode:",
+"opcoes": [
+"Acalmar quem está bravo",
+"Deixar todos nervosos",
+"Criar medo",
+"Gerar gritos"
+],
+"respostaCorreta": "Acalmar quem está bravo",
+"dica": "Bondade traz paz."
+},
+{
+"pergunta": "Falar com ordem ajuda a:",
+"opcoes": [
+"Organizar a bagunça",
+"Criar mais confusão",
+"Esconder a verdade",
+"Fazer barulho"
+],
+"respostaCorreta": "Organizar a bagunça",
+"dica": "Ordem traz entendimento."
+},
+{
+"pergunta": "Palavras são como:",
+"opcoes": [
+"Ferramentas",
+"Nuvens",
+"Sombras",
+"Pedras invisíveis"
+],
+"respostaCorreta": "Ferramentas",
+"dica": "Elas podem construir ou destruir."
+},
+{
+"pergunta": "Você quer ser um mestre que:",
+"opcoes": [
+"Constrói coisas boas",
+"Só faz barulho",
+"Ignora os outros",
+"Confunde todo mundo"
+],
+"respostaCorreta": "Constrói coisas boas",
+"dica": "Use palavras para o bem."
+}
+]
+},
+{
+"id": "1-medio",
+"capitulo": "Capítulo 1 – Por que falar bem?",
+"nivel": "medio",
+"dicas": "Reflita sobre o impacto das palavras nas relações.",
+"perguntas": [
+{
+"pergunta": "Por que falar bem é uma responsabilidade?",
+"opcoes": [
+"Porque palavras influenciam sentimentos e atitudes",
+"Porque é obrigatório falar muito",
+"Porque todos precisam vencer debates",
+"Porque falar alto resolve tudo"
+],
+"respostaCorreta": "Porque palavras influenciam sentimentos e atitudes",
+"dica": "Pense no efeito das palavras."
+},
+{
+"pergunta": "O que significa construir pontes com palavras?",
+"opcoes": [
+"Criar amizade e entendimento",
+"Ganhar discussões",
+"Falar mais que os outros",
+"Ignorar opiniões"
+],
+"respostaCorreta": "Criar amizade e entendimento",
+"dica": "Pontes unem pessoas."
+},
+{
+"pergunta": "Quando falamos com bondade durante um conflito, o que pode acontecer?",
+"opcoes": [
+"A situação pode se acalmar",
+"A briga aumenta",
+"Todos ficam confusos",
+"Nada muda"
+],
+"respostaCorreta": "A situação pode se acalmar",
+"dica": "Bondade reduz tensão."
+},
+{
+"pergunta": "Falar sem clareza pode causar:",
+"opcoes": [
+"Mal-entendidos",
+"Mais amizades",
+"Respeito automático",
+"Organização"
+],
+"respostaCorreta": "Mal-entendidos",
+"dica": "Sem clareza, há confusão."
+},
+{
+"pergunta": "Qual escolha faz quem estuda Retórica?",
+"opcoes": [
+"Usar palavras para construir",
+"Usar palavras para humilhar",
+"Usar palavras para confundir",
+"Usar palavras para se exibir"
+],
+"respostaCorreta": "Usar palavras para construir",
+"dica": "O objetivo é positivo."
+},
+{
+"pergunta": "Se alguém fala com ordem, isso ajuda a:",
+"opcoes": [
+"Organizar ideias para os outros entenderem",
+"Criar dúvidas",
+"Evitar qualquer conversa",
+"Encerrar debates rapidamente"
+],
+"respostaCorreta": "Organizar ideias para os outros entenderem",
+"dica": "Ordem facilita compreensão."
+},
+{
+"pergunta": "Comparar palavras a ferramentas significa que:",
+"opcoes": [
+"Podem ser usadas para o bem ou para o mal",
+"São pesadas",
+"São feitas de metal",
+"Quebram facilmente"
+],
+"respostaCorreta": "Podem ser usadas para o bem ou para o mal",
+"dica": "Ferramentas dependem de quem usa."
+},
+{
+"pergunta": "Qual é o efeito de palavras duras e desorganizadas?",
+"opcoes": [
+"Criar muros entre pessoas",
+"Criar união",
+"Trazer alegria",
+"Gerar confiança"
+],
+"respostaCorreta": "Criar muros entre pessoas",
+"dica": "Muros separam."
+},
+{
+"pergunta": "Falar bem exige principalmente:",
+"opcoes": [
+"Cuidado com o impacto das palavras",
+"Velocidade",
+"Volume alto",
+"Uso de palavras difíceis"
+],
+"respostaCorreta": "Cuidado com o impacto das palavras",
+"dica": "Responsabilidade é a chave."
+},
+{
+"pergunta": "Ser um 'mestre construtor' com palavras significa:",
+"opcoes": [
+"Promover amizade e entendimento",
+"Vencer sempre",
+"Falar mais alto",
+"Evitar ouvir os outros"
+],
+"respostaCorreta": "Promover amizade e entendimento",
+"dica": "Construir é unir."
+}
+]
+},
+{
+"id": "1-avancado",
+"capitulo": "Capítulo 1 – Por que falar bem?",
+"nivel": "avancado",
+"dicas": "Analise causa e efeito do uso das palavras nas relações humanas.",
+"perguntas": [
+{
+"pergunta": "Por que as palavras podem transformar relacionamentos?",
+"opcoes": [
+"Porque influenciam emoções e decisões",
+"Porque são sempre neutras",
+"Porque substituem ações",
+"Porque não têm consequências"
+],
+"respostaCorreta": "Porque influenciam emoções e decisões",
+"dica": "Palavras afetam comportamento."
+},
+{
+"pergunta": "Qual é a consequência de usar palavras agressivas em conflitos?",
+"opcoes": [
+"Aumentar a separação entre as pessoas",
+"Resolver imediatamente o problema",
+"Criar confiança",
+"Gerar respeito automático"
+],
+"respostaCorreta": "Aumentar a separação entre as pessoas",
+"dica": "Agressividade cria muros."
+},
+{
+"pergunta": "Como a clareza contribui para relações saudáveis?",
+"opcoes": [
+"Evita mal-entendidos e fortalece a amizade",
+"Impede qualquer discordância",
+"Substitui a necessidade de ouvir",
+"Garante vitória em debates"
+],
+"respostaCorreta": "Evita mal-entendidos e fortalece a amizade",
+"dica": "Entendimento gera confiança."
+},
+{
+"pergunta": "Por que falar bem envolve responsabilidade ética?",
+"opcoes": [
+"Porque pode impactar profundamente outras pessoas",
+"Porque garante popularidade",
+"Porque exige memorização",
+"Porque aumenta o volume da voz"
+],
+"respostaCorreta": "Porque pode impactar profundamente outras pessoas",
+"dica": "Palavras têm efeitos reais."
+},
+{
+"pergunta": "Qual é a relação entre ordem no discurso e resolução de conflitos?",
+"opcoes": [
+"Organização facilita compreensão e acordo",
+"Ordem impede qualquer emoção",
+"Desorganização convence mais",
+"Ordem elimina opiniões diferentes"
+],
+"respostaCorreta": "Organização facilita compreensão e acordo",
+"dica": "Clareza ajuda na solução."
+},
+{
+"pergunta": "O que diferencia um construtor de um destruidor com palavras?",
+"opcoes": [
+"A intenção de promover o bem",
+"O volume da voz",
+"A rapidez da fala",
+"O uso de frases longas"
+],
+"respostaCorreta": "A intenção de promover o bem",
+"dica": "Intenção direciona o uso."
+},
+{
+"pergunta": "Se alguém fala sem pensar nas consequências, qual risco corre?",
+"opcoes": [
+"Ferir sentimentos e criar conflitos",
+"Resolver todos os problemas",
+"Ganhar mais amigos",
+"Demonstrar sabedoria"
+],
+"respostaCorreta": "Ferir sentimentos e criar conflitos",
+"dica": "Falta de reflexão gera danos."
+},
+{
+"pergunta": "Por que a bondade é estratégica na comunicação?",
+"opcoes": [
+"Porque reduz resistência e abre diálogo",
+"Porque substitui argumentos",
+"Porque impede qualquer crítica",
+"Porque elimina divergências"
+],
+"respostaCorreta": "Porque reduz resistência e abre diálogo",
+"dica": "Gentileza facilita entendimento."
+},
+{
+"pergunta": "Qual é o efeito cumulativo de palavras construtivas ao longo do tempo?",
+"opcoes": [
+"Fortalecer confiança e amizade",
+"Criar indiferença",
+"Diminuir respeito",
+"Aumentar conflitos"
+],
+"respostaCorreta": "Fortalecer confiança e amizade",
+"dica": "Boas palavras geram bons frutos."
+},
+{
+"pergunta": "Por que falar bem exige mais do que apenas técnica?",
+"opcoes": [
+"Porque envolve intenção moral e cuidado com o outro",
+"Porque depende apenas de emoção",
+"Porque exige decorar textos",
+"Porque elimina a necessidade de escutar"
+],
+"respostaCorreta": "Porque envolve intenção moral e cuidado com o outro",
+"dica": "Comunicação é também ética."
+}
+]
+},
+{
+"id": "2-basico",
+"capitulo": "Capítulo 2 – Falar com Verdade",
+"nivel": "basico",
+"dicas": "Lembre-se: a verdade é como uma base forte que segura tudo.",
+"perguntas": [
+{
+"pergunta": "Na comunicação, a verdade é como:",
+"opcoes": [
+"A base de um prédio",
+"Uma janela colorida",
+"Um brinquedo novo",
+"Um enfeite bonito"
+],
+"respostaCorreta": "A base de um prédio",
+"dica": "Sem base forte, o prédio cai."
+},
+{
+"pergunta": "Um prédio fica de pé quando:",
+"opcoes": [
+"Tem uma base forte",
+"É muito alto",
+"É muito colorido",
+"Tem muitas janelas"
+],
+"respostaCorreta": "Tem uma base forte",
+"dica": "A base sustenta tudo."
+},
+{
+"pergunta": "Persuadir significa:",
+"opcoes": [
+"Convidar alguém a ver a verdade",
+"Contar uma mentira",
+"Gritar mais alto",
+"Inventar histórias"
+],
+"respostaCorreta": "Convidar alguém a ver a verdade",
+"dica": "Persuadir está ligado à verdade."
+},
+{
+"pergunta": "Enganar significa:",
+"opcoes": [
+"Contar uma mentira para conseguir algo",
+"Falar com clareza",
+"Dizer o que é justo",
+"Explicar com calma"
+],
+"respostaCorreta": "Contar uma mentira para conseguir algo",
+"dica": "Enganar envolve mentira."
+},
+{
+"pergunta": "Um bom orador é antes de tudo:",
+"opcoes": [
+"Honesto",
+"Barulhento",
+"Famoso",
+"Divertido"
+],
+"respostaCorreta": "Honesto",
+"dica": "A honestidade vem primeiro."
+},
+{
+"pergunta": "Devemos dizer:",
+"opcoes": [
+"O que realmente sabemos",
+"Qualquer coisa para parecer espertos",
+"Mentiras engraçadas",
+"Somente o que os outros querem ouvir"
+],
+"respostaCorreta": "O que realmente sabemos",
+"dica": "Fale apenas o que é verdadeiro."
+},
+{
+"pergunta": "Inventar coisas para parecer mais esperto é:",
+"opcoes": [
+"Errado",
+"Correto",
+"Divertido",
+"Necessário"
+],
+"respostaCorreta": "Errado",
+"dica": "Inventar é mentir."
+},
+{
+"pergunta": "A verdade gera:",
+"opcoes": [
+"Confiança",
+"Medo",
+"Confusão",
+"Barulho"
+],
+"respostaCorreta": "Confiança",
+"dica": "Quando confiamos, acreditamos."
+},
+{
+"pergunta": "Se alguém mente, as pessoas tendem a:",
+"opcoes": [
+"Parar de confiar",
+"Confiar mais",
+"Ficar felizes",
+"Aplaudir sempre"
+],
+"respostaCorreta": "Parar de confiar",
+"dica": "Mentiras quebram confiança."
+},
+{
+"pergunta": "Falar com verdade ajuda a:",
+"opcoes": [
+"Manter amizades",
+"Criar mentiras",
+"Confundir os outros",
+"Ganhar sempre"
+],
+"respostaCorreta": "Manter amizades",
+"dica": "Confiança mantém relações."
+}
+]
+},
+{
+"id": "2-medio",
+"capitulo": "Capítulo 2 – Falar com Verdade",
+"nivel": "medio",
+"dicas": "Pense na diferença entre persuadir e enganar.",
+"perguntas": [
+{
+"pergunta": "Qual é a principal diferença entre persuadir e enganar?",
+"opcoes": [
+"Persuadir usa a verdade; enganar usa mentira",
+"Persuadir é falar alto; enganar é falar baixo",
+"Persuadir é rápido; enganar é lento",
+"Persuadir é divertido; enganar é sério"
+],
+"respostaCorreta": "Persuadir usa a verdade; enganar usa mentira",
+"dica": "A verdade é o critério."
+},
+{
+"pergunta": "Por que a verdade é comparada ao fundamento de um prédio?",
+"opcoes": [
+"Porque sustenta toda a comunicação",
+"Porque é bonita",
+"Porque é difícil de ver",
+"Porque é decorativa"
+],
+"respostaCorreta": "Porque sustenta toda a comunicação",
+"dica": "Sem fundamento, tudo cai."
+},
+{
+"pergunta": "O que acontece quando alguém descobre que foi enganado?",
+"opcoes": [
+"Perde a confiança",
+"Fica mais atento ao orador",
+"Acredita mais",
+"Sente alegria"
+],
+"respostaCorreta": "Perde a confiança",
+"dica": "Mentira quebra confiança."
+},
+{
+"pergunta": "Um orador honesto deve:",
+"opcoes": [
+"Dizer apenas o que sabe ser verdadeiro",
+"Exagerar fatos",
+"Inventar dados",
+"Esconder sempre a verdade"
+],
+"respostaCorreta": "Dizer apenas o que sabe ser verdadeiro",
+"dica": "Honestidade é essencial."
+},
+{
+"pergunta": "Qual é o risco de inventar informações?",
+"opcoes": [
+"Perder credibilidade",
+"Ganhar respeito",
+"Convencer mais facilmente",
+"Ser considerado sábio"
+],
+"respostaCorreta": "Perder credibilidade",
+"dica": "Sem verdade, não há confiança."
+},
+{
+"pergunta": "A confiança nasce principalmente da:",
+"opcoes": [
+"Verdade",
+"Popularidade",
+"Velocidade",
+"Quantidade de palavras"
+],
+"respostaCorreta": "Verdade",
+"dica": "Confiança depende de honestidade."
+},
+{
+"pergunta": "Se alguém exagera para convencer, isso é:",
+"opcoes": [
+"Um tipo de engano",
+"Um bom argumento",
+"Uma prova lógica",
+"Uma forma de clareza"
+],
+"respostaCorreta": "Um tipo de engano",
+"dica": "Exagerar distorce a verdade."
+},
+{
+"pergunta": "Por que um bom orador evita mentiras?",
+"opcoes": [
+"Porque quer manter credibilidade",
+"Porque quer falar menos",
+"Porque tem medo",
+"Porque não sabe argumentar"
+],
+"respostaCorreta": "Porque quer manter credibilidade",
+"dica": "Credibilidade depende da verdade."
+},
+{
+"pergunta": "Qual é o efeito de uma base fraca na comunicação?",
+"opcoes": [
+"O discurso perde força",
+"O discurso fica mais bonito",
+"O discurso fica mais longo",
+"O discurso fica mais engraçado"
+],
+"respostaCorreta": "O discurso perde força",
+"dica": "Sem base, não se sustenta."
+},
+{
+"pergunta": "Falar com verdade demonstra:",
+"opcoes": [
+"Caráter",
+"Vaidade",
+"Indiferença",
+"Superioridade"
+],
+"respostaCorreta": "Caráter",
+"dica": "Honestidade revela quem você é."
+}
+]
+},
+{
+"id": "2-avancado",
+"capitulo": "Capítulo 2 – Falar com Verdade",
+"nivel": "avancado",
+"dicas": "Analise as consequências éticas da mentira na retórica.",
+"perguntas": [
+{
+"pergunta": "Por que a verdade é considerada o fundamento da comunicação ética?",
+"opcoes": [
+"Porque sustenta confiança e credibilidade",
+"Porque torna o discurso mais curto",
+"Porque elimina a emoção",
+"Porque garante aplausos"
+],
+"respostaCorreta": "Porque sustenta confiança e credibilidade",
+"dica": "Sem confiança, não há diálogo verdadeiro."
+},
+{
+"pergunta": "Qual é a consequência social da manipulação pela mentira?",
+"opcoes": [
+"Quebra de confiança e relações",
+"Fortalecimento da amizade",
+"Aumento de respeito",
+"Maior união"
+],
+"respostaCorreta": "Quebra de confiança e relações",
+"dica": "Mentiras afastam pessoas."
+},
+{
+"pergunta": "Por que persuadir exige honestidade intelectual?",
+"opcoes": [
+"Porque envolve apresentar a verdade descoberta",
+"Porque exige falar alto",
+"Porque substitui provas",
+"Porque depende apenas da emoção"
+],
+"respostaCorreta": "Porque envolve apresentar a verdade descoberta",
+"dica": "Persuasão verdadeira respeita fatos."
+},
+{
+"pergunta": "Como a mentira afeta o caráter do orador?",
+"opcoes": [
+"Compromete sua credibilidade moral",
+"Aumenta sua autoridade",
+"Torna-o mais convincente",
+"Dá mais poder"
+],
+"respostaCorreta": "Compromete sua credibilidade moral",
+"dica": "Caráter está ligado à honestidade."
+},
+{
+"pergunta": "Por que exagerar fatos é problemático?",
+"opcoes": [
+"Distorce a realidade e engana o público",
+"Fortalece argumentos",
+"Facilita compreensão",
+"Simplifica ideias"
+],
+"respostaCorreta": "Distorce a realidade e engana o público",
+"dica": "Exagero altera a verdade."
+},
+{
+"pergunta": "Qual é a relação entre verdade e confiança duradoura?",
+"opcoes": [
+"A confiança cresce quando há consistência na verdade",
+"A confiança nasce do medo",
+"A confiança depende do volume",
+"A confiança vem da popularidade"
+],
+"respostaCorreta": "A confiança cresce quando há consistência na verdade",
+"dica": "Confiança exige coerência."
+},
+{
+"pergunta": "Se a base de um discurso é falsa, qual é o resultado provável?",
+"opcoes": [
+"O argumento eventualmente desmorona",
+"O argumento se fortalece",
+"O argumento vira tradição",
+"O argumento se torna artístico"
+],
+"respostaCorreta": "O argumento eventualmente desmorona",
+"dica": "Base fraca não sustenta estrutura."
+},
+{
+"pergunta": "Qual é a diferença moral entre erro honesto e mentira intencional?",
+"opcoes": [
+"O erro pode ser corrigido; a mentira busca enganar",
+"Não há diferença",
+"A mentira é menos grave",
+"O erro é sempre pior"
+],
+"respostaCorreta": "O erro pode ser corrigido; a mentira busca enganar",
+"dica": "Intenção faz diferença."
+},
+{
+"pergunta": "Por que a retórica sem verdade deixa de ser virtuosa?",
+"opcoes": [
+"Porque perde seu propósito de promover o bem",
+"Porque fica menos emocionante",
+"Porque fica mais curta",
+"Porque elimina a lógica"
+],
+"respostaCorreta": "Porque perde seu propósito de promover o bem",
+"dica": "Virtude depende de verdade."
+},
+{
+"pergunta": "Qual atitude fortalece a credibilidade do orador ao longo do tempo?",
+"opcoes": [
+"Ser consistente na honestidade",
+"Exagerar resultados",
+"Falar apenas o que agrada",
+"Evitar qualquer crítica"
+],
+"respostaCorreta": "Ser consistente na honestidade",
+"dica": "Consistência constrói reputação."
+}
+]
+}
+
+
+]
+}

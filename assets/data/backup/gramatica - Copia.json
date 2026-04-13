@@ -1,0 +1,795 @@
+{
+  "disciplina": "Trivium - Gramática",
+  "quizzes": [
+    {
+      "id": "gramatica_quiz_1",
+      "capitulo": "Nível 1: Alfabeto, Vogais, Consoantes e Palavras Simples",
+      "perguntas": [
+        {
+          "pergunta": "Quantas letras tem o alfabeto da língua portuguesa?",
+          "opcoes": ["23", "24", "26", "30"],
+          "respostaCorreta": "26"
+        },
+        {
+          "pergunta": "Quais são as vogais do alfabeto?",
+          "opcoes": ["A, E, I, O, U", "B, C, D, F, G", "J, K, L, M, N", "X, Y, Z"],
+          "respostaCorreta": "A, E, I, O, U"
+        },
+        {
+          "pergunta": "As letras que não são vogais chamam-se:",
+          "opcoes": ["Consoantes", "Números", "Sílabas", "Frases"],
+          "respostaCorreta": "Consoantes"
+        },
+        {
+          "pergunta": "Qual destas palavras é formada por duas sílabas?",
+          "opcoes": ["Sol", "Lua", "Casa", "Flor"],
+          "respostaCorreta": "Casa"
+        },
+        {
+          "pergunta": "A palavra 'mamãe' tem quantas sílabas?",
+          "opcoes": ["1", "2", "3", "4"],
+          "respostaCorreta": "3"
+        },
+        {
+          "pergunta": "Qual destas palavras é um substantivo (nome de algo)?",
+          "opcoes": ["Correr", "Bonito", "Menino", "Ontem"],
+          "respostaCorreta": "Menino"
+        },
+        {
+          "pergunta": "Qual destas palavras tem apenas uma sílaba?",
+          "opcoes": ["Pai", "Cadeira", "Janela", "Escola"],
+          "respostaCorreta": "Pai"
+        },
+        {
+          "pergunta": "Se juntarmos C + A, formamos:",
+          "opcoes": ["CA", "CE", "CO", "CU"],
+          "respostaCorreta": "CA"
+        },
+        {
+          "pergunta": "A palavra 'sol' começa com qual consoante?",
+          "opcoes": ["S", "O", "L", "A"],
+          "respostaCorreta": "S"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "O alfabeto, as vogais e consoantes, sílabas e palavras simples",
+            "A escrever frases complexas",
+            "A usar figuras de linguagem",
+            "A conjugar verbos no passado"
+          ],
+          "respostaCorreta": "O alfabeto, as vogais e consoantes, sílabas e palavras simples"
+        }
+      ]
+    },
+	{
+      "id": "gramatica_quiz_2",
+      "capitulo": "Nível 2: Palavras, Frases Simples e Pontuação Básica",
+      "perguntas": [
+        {
+          "pergunta": "Qual destas opções é uma palavra?",
+          "opcoes": ["Casa", "123", "@@@", "!!!"],
+          "respostaCorreta": "Casa"
+        },
+        {
+          "pergunta": "Qual destas é uma frase simples?",
+          "opcoes": ["O sol brilha.", "Correr rápido", "Bonito demais", "Cachorro gato bola"],
+          "respostaCorreta": "O sol brilha."
+        },
+        {
+          "pergunta": "O que usamos no final de uma frase afirmativa?",
+          "opcoes": ["Ponto final", "Vírgula", "Exclamação", "Interrogação"],
+          "respostaCorreta": "Ponto final"
+        },
+        {
+          "pergunta": "Qual sinal usamos em perguntas?",
+          "opcoes": ["!", ".", "?", ","],
+          "respostaCorreta": "?"
+        },
+        {
+          "pergunta": "Qual sinal usamos para mostrar surpresa ou emoção forte?",
+          "opcoes": [".", ",", "?", "!"],
+          "respostaCorreta": "!"
+        },
+        {
+          "pergunta": "Qual destas frases está escrita corretamente?",
+          "opcoes": [
+            "o menino corre",
+            "O menino corre.",
+            "o menino corre?",
+            "O menino corre!"
+          ],
+          "respostaCorreta": "O menino corre."
+        },
+        {
+          "pergunta": "Se alguém pergunta 'Como estás?', que sinal aparece no fim?",
+          "opcoes": ["!", ".", "?", ","],
+          "respostaCorreta": "?"
+        },
+        {
+          "pergunta": "Se alguém diz 'Estou feliz!', que sinal aparece no fim?",
+          "opcoes": ["!", ".", "?", ","],
+          "respostaCorreta": "!"
+        },
+        {
+          "pergunta": "Qual destas frases mostra surpresa?",
+          "opcoes": [
+            "Hoje é segunda-feira.",
+            "Hoje é segunda-feira?",
+            "Hoje é segunda-feira!",
+            "Hoje é segunda-feira,"
+          ],
+          "respostaCorreta": "Hoje é segunda-feira!"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A formar palavras e frases simples e usar pontuação básica (., ?, !)",
+            "A conjugar verbos no passado",
+            "A escrever textos longos",
+            "A identificar metáforas"
+          ],
+          "respostaCorreta": "A formar palavras e frases simples e usar pontuação básica (., ?, !)"
+        }
+      ]
+    },
+	{
+      "id": "gramatica_quiz_3",
+      "capitulo": "Nível 3: Substantivo, Verbo e Adjetivo",
+      "perguntas": [
+        {
+          "pergunta": "O que é um substantivo?",
+          "opcoes": [
+            "É o nome de pessoas, lugares, objetos ou sentimentos",
+            "É uma ação",
+            "É uma qualidade",
+            "É um sinal de pontuação"
+          ],
+          "respostaCorreta": "É o nome de pessoas, lugares, objetos ou sentimentos"
+        },
+        {
+          "pergunta": "Qual destas palavras é um substantivo?",
+          "opcoes": ["Correr", "Bonito", "Cachorro", "Ontem"],
+          "respostaCorreta": "Cachorro"
+        },
+        {
+          "pergunta": "O que é um verbo?",
+          "opcoes": [
+            "Uma palavra que indica ação ou estado",
+            "O nome de algo",
+            "Uma qualidade de algo",
+            "Um sinal gráfico"
+          ],
+          "respostaCorreta": "Uma palavra que indica ação ou estado"
+        },
+        {
+          "pergunta": "Qual destas palavras é um verbo?",
+          "opcoes": ["Mesa", "Correr", "Feliz", "Rápido"],
+          "respostaCorreta": "Correr"
+        },
+        {
+          "pergunta": "O que é um adjetivo?",
+          "opcoes": [
+            "Uma palavra que indica qualidade ou característica",
+            "Um nome de lugar",
+            "Uma ação",
+            "Um número"
+          ],
+          "respostaCorreta": "Uma palavra que indica qualidade ou característica"
+        },
+        {
+          "pergunta": "Qual destas palavras é um adjetivo?",
+          "opcoes": ["Feliz", "Escola", "Correr", "Cachorro"],
+          "respostaCorreta": "Feliz"
+        },
+        {
+          "pergunta": "Na frase 'O menino corre rápido', qual é o verbo?",
+          "opcoes": ["Menino", "Corre", "Rápido", "O"],
+          "respostaCorreta": "Corre"
+        },
+        {
+          "pergunta": "Na frase 'A flor é bonita', qual é o substantivo?",
+          "opcoes": ["Flor", "Bonita", "É", "A"],
+          "respostaCorreta": "Flor"
+        },
+        {
+          "pergunta": "Na frase 'O carro vermelho chegou', qual é o adjetivo?",
+          "opcoes": ["Carro", "Vermelho", "Chegou", "O"],
+          "respostaCorreta": "Vermelho"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A identificar substantivos, verbos e adjetivos",
+            "A escrever orações subordinadas",
+            "A usar metáforas",
+            "A conjugar verbos no pretérito mais-que-perfeito"
+          ],
+          "respostaCorreta": "A identificar substantivos, verbos e adjetivos"
+        }
+      ]
+    },
+	{
+      "id": "gramatica_quiz_4",
+      "capitulo": "Nível 4: Singular, Plural, Masculino e Feminino",
+      "perguntas": [
+        {
+          "pergunta": "Qual é o plural de 'casa'?",
+          "opcoes": ["Casas", "Casos", "Casinhas", "Caser"],
+          "respostaCorreta": "Casas"
+        },
+        {
+          "pergunta": "Qual é o singular de 'livros'?",
+          "opcoes": ["Livro", "Livra", "Livrão", "Livo"],
+          "respostaCorreta": "Livro"
+        },
+        {
+          "pergunta": "Qual destas palavras está no masculino?",
+          "opcoes": ["Menino", "Menina", "Professora", "Flor"],
+          "respostaCorreta": "Menino"
+        },
+        {
+          "pergunta": "Qual destas palavras está no feminino?",
+          "opcoes": ["Pai", "Rei", "Mãe", "Menino"],
+          "respostaCorreta": "Mãe"
+        },
+        {
+          "pergunta": "Qual é o plural de 'carro'?",
+          "opcoes": ["Carros", "Carres", "Carrias", "Carreiros"],
+          "respostaCorreta": "Carros"
+        },
+        {
+          "pergunta": "Na frase 'As meninas brincam', qual é o verbo?",
+          "opcoes": ["As", "Meninas", "Brincam", "Todas"],
+          "respostaCorreta": "Brincam"
+        },
+        {
+          "pergunta": "Na frase 'O menino estuda', qual palavra indica masculino?",
+          "opcoes": ["O", "Menino", "Estuda", "Todas"],
+          "respostaCorreta": "Menino"
+        },
+        {
+          "pergunta": "Na frase 'As flores são bonitas', qual palavra está no plural?",
+          "opcoes": ["Flores", "São", "Bonitas", "Todas"],
+          "respostaCorreta": "Flores"
+        },
+        {
+          "pergunta": "Qual destas frases está correta?",
+          "opcoes": [
+            "O meninos corre.",
+            "Os menino corre.",
+            "Os meninos correm.",
+            "O meninas corre."
+          ],
+          "respostaCorreta": "Os meninos correm."
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A usar singular e plural, masculino e feminino, com frases curtas e concordância correta",
+            "A conjugar verbos compostos",
+            "A escrever metáforas",
+            "A criar textos literários complexos"
+          ],
+          "respostaCorreta": "A usar singular e plural, masculino e feminino, com frases curtas e concordância correta"
+        }
+      ]
+    },
+	{
+      "id": "gramatica_quiz_5",
+      "capitulo": "Nível 5: Advérbio, Pronome, Artigo e Numeral",
+      "perguntas": [
+        {
+          "pergunta": "O que é um advérbio?",
+          "opcoes": [
+            "Palavra que indica circunstância de tempo, modo, lugar ou intensidade",
+            "Palavra que indica ação",
+            "Palavra que nomeia algo",
+            "Palavra que expressa qualidade"
+          ],
+          "respostaCorreta": "Palavra que indica circunstância de tempo, modo, lugar ou intensidade"
+        },
+        {
+          "pergunta": "Qual destas palavras é um advérbio?",
+          "opcoes": ["Rápido", "Ontem", "Mesa", "Correr"],
+          "respostaCorreta": "Ontem"
+        },
+        {
+          "pergunta": "O que é um pronome?",
+          "opcoes": [
+            "Palavra que substitui ou acompanha o substantivo",
+            "Palavra que expressa qualidade",
+            "Palavra que indica uma ação",
+            "Palavra que mostra intensidade"
+          ],
+          "respostaCorreta": "Palavra que substitui ou acompanha o substantivo"
+        },
+        {
+          "pergunta": "Qual destas frases tem um pronome?",
+          "opcoes": [
+            "Ele correu para a escola.",
+            "Pedro correu para a escola.",
+            "O cachorro latiu.",
+            "A porta fechou."
+          ],
+          "respostaCorreta": "Ele correu para a escola."
+        },
+        {
+          "pergunta": "O que é um artigo?",
+          "opcoes": [
+            "Palavra que acompanha o substantivo para defini-lo",
+            "Palavra que indica ação",
+            "Palavra que expressa tempo",
+            "Palavra que substitui substantivos"
+          ],
+          "respostaCorreta": "Palavra que acompanha o substantivo para defini-lo"
+        },
+        {
+          "pergunta": "Qual destas frases tem um artigo?",
+          "opcoes": [
+            "O menino estuda.",
+            "Menino estuda.",
+            "Menino corre.",
+            "Menino brinca."
+          ],
+          "respostaCorreta": "O menino estuda."
+        },
+        {
+          "pergunta": "O que é um numeral?",
+          "opcoes": [
+            "Palavra que indica quantidade, ordem ou fração",
+            "Palavra que indica ação",
+            "Palavra que expressa qualidade",
+            "Palavra que substitui verbo"
+          ],
+          "respostaCorreta": "Palavra que indica quantidade, ordem ou fração"
+        },
+        {
+          "pergunta": "Qual destas frases tem um numeral?",
+          "opcoes": [
+            "Tenho dois irmãos.",
+            "Tenho amigos.",
+            "Tenho livros.",
+            "Tenho brinquedos."
+          ],
+          "respostaCorreta": "Tenho dois irmãos."
+        },
+        {
+          "pergunta": "Na frase 'Ela chegou cedo', qual palavra é o advérbio?",
+          "opcoes": ["Ela", "Chegou", "Cedo", "Nenhuma"],
+          "respostaCorreta": "Cedo"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A identificar advérbios, pronomes, artigos e numerais em frases",
+            "A usar figuras de linguagem",
+            "A escrever poemas",
+            "A conjugar verbos compostos"
+          ],
+          "respostaCorreta": "A identificar advérbios, pronomes, artigos e numerais em frases"
+        }
+      ]
+    },
+	{
+      "id": "gramatica_quiz_6",
+      "capitulo": "Nível 6: Concordância Básica e Tempos Verbais Simples",
+      "perguntas": [
+        {
+          "pergunta": "Na frase 'Os meninos correm', o verbo está no:",
+          "opcoes": ["Singular", "Plural", "Passado", "Futuro"],
+          "respostaCorreta": "Plural"
+        },
+        {
+          "pergunta": "Na frase 'O menino corre', o verbo está no:",
+          "opcoes": ["Singular", "Plural", "Passado", "Futuro"],
+          "respostaCorreta": "Singular"
+        },
+        {
+          "pergunta": "Qual é o tempo verbal da frase 'Eu estudo hoje'?",
+          "opcoes": ["Presente", "Passado", "Futuro", "Nenhum"],
+          "respostaCorreta": "Presente"
+        },
+        {
+          "pergunta": "Qual é o tempo verbal da frase 'Ontem eu estudei'?",
+          "opcoes": ["Presente", "Passado", "Futuro", "Infinitivo"],
+          "respostaCorreta": "Passado"
+        },
+        {
+          "pergunta": "Qual é o tempo verbal da frase 'Amanhã eu estudarei'?",
+          "opcoes": ["Presente", "Passado", "Futuro", "Gerúndio"],
+          "respostaCorreta": "Futuro"
+        },
+        {
+          "pergunta": "Na frase 'As meninas brincam', qual é o sujeito?",
+          "opcoes": ["As", "Meninas", "Brincam", "Todas as palavras"],
+          "respostaCorreta": "Meninas"
+        },
+        {
+          "pergunta": "Na frase 'O cachorro late', o verbo concorda com:",
+          "opcoes": ["O cachorro (singular)", "Os cachorros (plural)", "Nenhum", "O dono"],
+          "respostaCorreta": "O cachorro (singular)"
+        },
+        {
+          "pergunta": "Na frase 'Os cachorros latem', o verbo concorda com:",
+          "opcoes": ["O cachorro (singular)", "Os cachorros (plural)", "Nenhum", "A casa"],
+          "respostaCorreta": "Os cachorros (plural)"
+        },
+        {
+          "pergunta": "Qual destas frases está correta?",
+          "opcoes": [
+            "Nós estuda muito.",
+            "Eles estudam muito.",
+            "Vocês estuda muito.",
+            "O menino estudam muito."
+          ],
+          "respostaCorreta": "Eles estudam muito."
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A usar a concordância entre sujeito e verbo e os tempos verbais simples (presente, passado e futuro)",
+            "A identificar metáforas",
+            "A escrever poesias complexas",
+            "A criar textos literários longos"
+          ],
+          "respostaCorreta": "A usar a concordância entre sujeito e verbo e os tempos verbais simples (presente, passado e futuro)"
+        }
+      ]
+    },
+	{
+      "id": "gramatica_quiz_7",
+      "capitulo": "Nível 7: Frases Compostas - Coordenação e Subordinação Simples",
+      "perguntas": [
+        {
+          "pergunta": "O que é uma frase composta?",
+          "opcoes": [
+            "Uma frase com mais de uma oração",
+            "Uma frase com apenas um verbo",
+            "Uma frase sem sujeito",
+            "Uma frase muito curta"
+          ],
+          "respostaCorreta": "Uma frase com mais de uma oração"
+        },
+        {
+          "pergunta": "Na frase 'Estudei e descansei', o 'e' liga duas orações. Isso é um exemplo de:",
+          "opcoes": ["Coordenação", "Subordinação", "Adjetivação", "Pontuação"],
+          "respostaCorreta": "Coordenação"
+        },
+        {
+          "pergunta": "Na frase 'Eu fui porque precisava', o 'porque' liga as orações. Isso é um exemplo de:",
+          "opcoes": ["Coordenação", "Subordinação", "Pluralidade", "Exclamação"],
+          "respostaCorreta": "Subordinação"
+        },
+        {
+          "pergunta": "Qual destas frases é composta por coordenação?",
+          "opcoes": [
+            "Fui ao mercado e comprei frutas.",
+            "Fui ao mercado porque precisava.",
+            "Estudei quando cheguei em casa.",
+            "O menino corre."
+          ],
+          "respostaCorreta": "Fui ao mercado e comprei frutas."
+        },
+        {
+          "pergunta": "Qual destas frases é composta por subordinação?",
+          "opcoes": [
+            "Saí porque estava cansado.",
+            "Saí e fui dormir.",
+            "O menino correu e pulou.",
+            "A menina sorriu e cantou."
+          ],
+          "respostaCorreta": "Saí porque estava cansado."
+        },
+        {
+          "pergunta": "Qual é o elemento que une duas orações?",
+          "opcoes": ["Conjunção", "Substantivo", "Adjetivo", "Advérbio"],
+          "respostaCorreta": "Conjunção"
+        },
+        {
+          "pergunta": "Na frase 'Pedro estudou mas não passou', a conjunção 'mas' indica:",
+          "opcoes": ["Oposição", "Causa", "Adição", "Tempo"],
+          "respostaCorreta": "Oposição"
+        },
+        {
+          "pergunta": "Na frase 'Ele saiu quando escureceu', a conjunção 'quando' indica:",
+          "opcoes": ["Tempo", "Adição", "Oposição", "Conclusão"],
+          "respostaCorreta": "Tempo"
+        },
+        {
+          "pergunta": "Qual destas frases está correta?",
+          "opcoes": [
+            "Eu gosto de ler e gosto de escrever.",
+            "Eu gosto de ler porque gosto de escrever.",
+            "Eu gosto de ler quando gosto de escrever.",
+            "Eu gosto de ler se gosto de escrever."
+          ],
+          "respostaCorreta": "Eu gosto de ler e gosto de escrever."
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A diferença entre frases compostas por coordenação e por subordinação simples",
+            "A conjugar verbos irregulares",
+            "A usar figuras de linguagem",
+            "A escrever textos poéticos complexos"
+          ],
+          "respostaCorreta": "A diferença entre frases compostas por coordenação e por subordinação simples"
+        }
+      ]
+    },
+	{
+      "id": "gramatica_quiz_8",
+      "capitulo": "Nível 8: Concordância Complexa e Pronomes",
+      "perguntas": [
+        {
+          "pergunta": "O que é concordância nominal?",
+          "opcoes": [
+            "Quando o adjetivo concorda em gênero e número com o substantivo",
+            "Quando o verbo concorda com o sujeito",
+            "Quando os pronomes substituem substantivos",
+            "Quando usamos metáforas"
+          ],
+          "respostaCorreta": "Quando o adjetivo concorda em gênero e número com o substantivo"
+        },
+        {
+          "pergunta": "Qual frase está correta quanto à concordância nominal?",
+          "opcoes": [
+            "As menino bonito chegaram.",
+            "As meninas bonitas chegaram.",
+            "Os menina bonito chegaram.",
+            "A menina bonitos chegaram."
+          ],
+          "respostaCorreta": "As meninas bonitas chegaram."
+        },
+        {
+          "pergunta": "O que é concordância verbal?",
+          "opcoes": [
+            "Quando o verbo concorda em número e pessoa com o sujeito",
+            "Quando o adjetivo concorda com o substantivo",
+            "Quando o pronome acompanha o substantivo",
+            "Quando usamos conjunções"
+          ],
+          "respostaCorreta": "Quando o verbo concorda em número e pessoa com o sujeito"
+        },
+        {
+          "pergunta": "Qual frase está correta quanto à concordância verbal?",
+          "opcoes": [
+            "Os meninos estuda muito.",
+            "Os meninos estudam muito.",
+            "Os menino estudam muito.",
+            "Os menino estuda muito."
+          ],
+          "respostaCorreta": "Os meninos estudam muito."
+        },
+        {
+          "pergunta": "Qual destes é um pronome pessoal?",
+          "opcoes": ["Eu", "Casa", "Bonito", "Correr"],
+          "respostaCorreta": "Eu"
+        },
+        {
+          "pergunta": "Qual destes é um pronome possessivo?",
+          "opcoes": ["Meu", "Tu", "Ele", "Nós"],
+          "respostaCorreta": "Meu"
+        },
+        {
+          "pergunta": "Qual destes é um pronome demonstrativo?",
+          "opcoes": ["Este", "Eu", "Nós", "Eles"],
+          "respostaCorreta": "Este"
+        },
+        {
+          "pergunta": "Na frase 'Eu gosto do meu livro', qual é o pronome possessivo?",
+          "opcoes": ["Eu", "Meu", "Livro", "Do"],
+          "respostaCorreta": "Meu"
+        },
+        {
+          "pergunta": "Na frase 'Este carro é novo', qual é o pronome demonstrativo?",
+          "opcoes": ["Este", "Carro", "Novo", "É"],
+          "respostaCorreta": "Este"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A usar concordância nominal e verbal mais complexa e os pronomes pessoais, possessivos e demonstrativos",
+            "A escrever orações subordinadas adverbiais",
+            "A usar metáforas e comparações",
+            "A conjugar verbos no futuro do pretérito"
+          ],
+          "respostaCorreta": "A usar concordância nominal e verbal mais complexa e os pronomes pessoais, possessivos e demonstrativos"
+        }
+      ]
+    },
+	{
+      "id": "gramatica_quiz_9",
+      "capitulo": "Nível 9: Funções Sintáticas - Sujeito, Predicado e Objetos",
+      "perguntas": [
+        {
+          "pergunta": "O que é o sujeito em uma frase?",
+          "opcoes": [
+            "Quem pratica ou sofre a ação",
+            "A ação da frase",
+            "Um detalhe da frase",
+            "Uma conjunção"
+          ],
+          "respostaCorreta": "Quem pratica ou sofre a ação"
+        },
+        {
+          "pergunta": "O que é o predicado em uma frase?",
+          "opcoes": [
+            "Aquilo que se declara sobre o sujeito",
+            "O nome do sujeito",
+            "A pontuação da frase",
+            "Um adjetivo"
+          ],
+          "respostaCorreta": "Aquilo que se declara sobre o sujeito"
+        },
+        {
+          "pergunta": "Na frase 'O menino correu rápido', qual é o sujeito?",
+          "opcoes": ["O", "Menino", "Correu", "Rápido"],
+          "respostaCorreta": "Menino"
+        },
+        {
+          "pergunta": "Na frase 'O menino correu rápido', qual é o predicado?",
+          "opcoes": ["Menino", "O menino", "Correu rápido", "O"],
+          "respostaCorreta": "Correu rápido"
+        },
+        {
+          "pergunta": "O que é objeto direto?",
+          "opcoes": [
+            "Termo da oração que recebe a ação sem preposição",
+            "O sujeito da frase",
+            "Um advérbio de lugar",
+            "O predicado nominal"
+          ],
+          "respostaCorreta": "Termo da oração que recebe a ação sem preposição"
+        },
+        {
+          "pergunta": "O que é objeto indireto?",
+          "opcoes": [
+            "Termo da oração que recebe a ação com preposição",
+            "O sujeito da frase",
+            "Uma qualidade do sujeito",
+            "Um numeral"
+          ],
+          "respostaCorreta": "Termo da oração que recebe a ação com preposição"
+        },
+        {
+          "pergunta": "Na frase 'Maria comprou um livro', qual é o objeto direto?",
+          "opcoes": ["Maria", "Comprou", "Um livro", "Nenhum"],
+          "respostaCorreta": "Um livro"
+        },
+        {
+          "pergunta": "Na frase 'Ele gosta de música', qual é o objeto indireto?",
+          "opcoes": ["Ele", "Gosta", "De música", "Nenhum"],
+          "respostaCorreta": "De música"
+        },
+        {
+          "pergunta": "Qual destas frases tem sujeito oculto?",
+          "opcoes": [
+            "Fui ao mercado.",
+            "Pedro foi ao mercado.",
+            "A menina canta.",
+            "Os meninos estudam."
+          ],
+          "respostaCorreta": "Fui ao mercado."
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "As funções sintáticas básicas: sujeito, predicado, objeto direto e indireto",
+            "A usar figuras de linguagem",
+            "A escrever metáforas complexas",
+            "A conjugar verbos compostos"
+          ],
+          "respostaCorreta": "As funções sintáticas básicas: sujeito, predicado, objeto direto e indireto"
+        }
+      ]
+    },
+	{
+      "id": "gramatica_quiz_10",
+      "capitulo": "Nível 10: Orações Subordinadas e Figuras de Linguagem",
+      "perguntas": [
+        {
+          "pergunta": "O que é uma oração subordinada?",
+          "opcoes": [
+            "Uma oração que depende de outra para ter sentido completo",
+            "Uma oração independente",
+            "Uma frase sem verbo",
+            "Um tipo de pontuação"
+          ],
+          "respostaCorreta": "Uma oração que depende de outra para ter sentido completo"
+        },
+        {
+          "pergunta": "Na frase 'Quero que você estude', a oração 'que você estude' é:",
+          "opcoes": [
+            "Oração subordinada substantiva",
+            "Oração subordinada adjetiva",
+            "Oração subordinada adverbial",
+            "Oração coordenada"
+          ],
+          "respostaCorreta": "Oração subordinada substantiva"
+        },
+        {
+          "pergunta": "Na frase 'O livro que comprei é bom', a oração 'que comprei' é:",
+          "opcoes": [
+            "Oração subordinada adjetiva",
+            "Oração subordinada substantiva",
+            "Oração coordenada",
+            "Oração adverbial"
+          ],
+          "respostaCorreta": "Oração subordinada adjetiva"
+        },
+        {
+          "pergunta": "Na frase 'Saí porque estava cansado', a oração 'porque estava cansado' é:",
+          "opcoes": [
+            "Oração subordinada adverbial",
+            "Oração subordinada substantiva",
+            "Oração subordinada adjetiva",
+            "Oração coordenada"
+          ],
+          "respostaCorreta": "Oração subordinada adverbial"
+        },
+        {
+          "pergunta": "O que é uma metáfora?",
+          "opcoes": [
+            "Comparação implícita entre duas coisas",
+            "Exagero de uma ideia",
+            "Repetição de sons",
+            "Imitação de ruídos"
+          ],
+          "respostaCorreta": "Comparação implícita entre duas coisas"
+        },
+        {
+          "pergunta": "Qual destas frases tem uma hipérbole?",
+          "opcoes": [
+            "Estou morrendo de fome!",
+            "A lua é um queijo.",
+            "O vento cantava forte.",
+            "O menino é valente como um leão."
+          ],
+          "respostaCorreta": "Estou morrendo de fome!"
+        },
+        {
+          "pergunta": "Qual destas frases tem uma comparação?",
+          "opcoes": [
+            "O menino é valente como um leão.",
+            "A lua é de prata.",
+            "A sala estava vazia de vida.",
+            "A cidade nunca dorme."
+          ],
+          "respostaCorreta": "O menino é valente como um leão."
+        },
+        {
+          "pergunta": "Qual destas frases tem uma personificação?",
+          "opcoes": [
+            "O vento cantava forte.",
+            "Ele corre como um raio.",
+            "Estou morrendo de sono.",
+            "O livro é meu amigo."
+          ],
+          "respostaCorreta": "O vento cantava forte."
+        },
+        {
+          "pergunta": "Na frase 'Quero que você venha', a oração destacada é:",
+          "opcoes": [
+            "Subordinada substantiva",
+            "Subordinada adjetiva",
+            "Subordinada adverbial",
+            "Coordenada"
+          ],
+          "respostaCorreta": "Subordinada substantiva"
+        },
+        {
+          "pergunta": "O que aprendemos neste nível?",
+          "opcoes": [
+            "A identificar orações subordinadas (substantivas, adjetivas, adverbiais) e figuras de linguagem (metáfora, comparação, hipérbole, personificação)",
+            "A usar apenas substantivos e adjetivos",
+            "A escrever frases muito simples",
+            "A decorar o alfabeto"
+          ],
+          "respostaCorreta": "A identificar orações subordinadas (substantivas, adjetivas, adverbiais) e figuras de linguagem (metáfora, comparação, hipérbole, personificação)"
+        }
+      ]
+    }
+  ]
+}

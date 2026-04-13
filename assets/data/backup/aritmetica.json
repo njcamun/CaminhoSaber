@@ -1,0 +1,1031 @@
+{
+"disciplina": "aritmetica ",
+"quizzes": [
+{
+"id": "1-basico",
+"capitulo": "Capítulo 1 - O Que São os Números? O Número Puro e o Numeral",
+"nivel": "basico",
+"perguntas": [
+{
+"pergunta": "O que é um número?",
+"opcoes": ["Uma quantidade", "Um desenho no papel", "Um brinquedo", "Uma cor"],
+"respostaCorreta": "Uma quantidade"
+},
+{
+"pergunta": "O que é um numeral?",
+"opcoes": ["Um símbolo para escrever", "Uma fruta", "Um som", "Uma mão"],
+"respostaCorreta": "Um símbolo para escrever"
+},
+{
+"pergunta": "Qual destes é um numeral para a quantidade três?",
+"opcoes": ["3", "Laranja", "Mão", "Som"],
+"respostaCorreta": "3"
+},
+{
+"pergunta": "Se você tem cinco dedos, o número é…",
+"opcoes": ["A quantidade de dedos", "O desenho '5'", "A palavra 'dedo'", "A cor da mão"],
+"respostaCorreta": "A quantidade de dedos"
+},
+{
+"pergunta": "Qual destes também pode representar a quantidade quatro?",
+"opcoes": ["IV", "Azul", "Casa", "Rio"],
+"respostaCorreta": "IV"
+},
+{
+"pergunta": "Cada dedo na mão pode ser chamado de…",
+"opcoes": ["Uma unidade", "Um milhar", "Uma dúzia", "Um numeral romano"],
+"respostaCorreta": "Uma unidade"
+},
+{
+"pergunta": "Se você imagina quatro pássaros sem desenhar nada, você pensa no…",
+"opcoes": ["Número", "Numeral", "Relógio", "Mapa"],
+"respostaCorreta": "Número"
+},
+{
+"pergunta": "A Aritmética estuda principalmente…",
+"opcoes": ["O número puro", "A pintura", "Os planetas apenas", "A escrita de poemas"],
+"respostaCorreta": "O número puro"
+},
+{
+"pergunta": "Qual par está correto?",
+"opcoes": ["Número = quantidade; Numeral = símbolo", "Número = símbolo; Numeral = quantidade", "Número = cor; Numeral = som", "Número = fruta; Numeral = planta"],
+"respostaCorreta": "Número = quantidade; Numeral = símbolo"
+},
+{
+"pergunta": "O que aprendemos neste nível?",
+"opcoes": ["Número é quantidade e numeral é o símbolo", "Numeral é sempre uma fruta", "Número é só um desenho", "Aritmética é só música"],
+"respostaCorreta": "Número é quantidade e numeral é o símbolo"
+}
+]
+},
+{
+"id": "1-medio",
+"capitulo": "Capítulo 1 - O Que São os Números? O Número Puro e o Numeral",
+"nivel": "medio",
+"perguntas": [
+{
+"pergunta": "Qual frase explica melhor a diferença entre número e numeral?",
+"opcoes": ["Número é a ideia de quantidade; numeral é a escrita", "Número é a escrita; numeral é a ideia", "Número é sempre romano; numeral é sempre árabe", "Número é um objeto; numeral é uma pessoa"],
+"respostaCorreta": "Número é a ideia de quantidade; numeral é a escrita"
+},
+{
+"pergunta": "Se você vê 7 bolas, o '7' é…",
+"opcoes": ["Um numeral", "Um número puro", "Uma unidade de medida", "Uma operação"],
+"respostaCorreta": "Um numeral"
+},
+{
+"pergunta": "Se você troca '3' por 'III', o que muda?",
+"opcoes": ["Só a forma de representar", "A quantidade muda", "A ideia vira outra", "Deixa de ser número"],
+"respostaCorreta": "Só a forma de representar"
+},
+{
+"pergunta": "Em 'três laranjas', o número está ligado a…",
+"opcoes": ["À quantidade de laranjas", "Ao formato do algarismo", "À cor da casca", "Ao peso total"],
+"respostaCorreta": "À quantidade de laranjas"
+},
+{
+"pergunta": "Qual é um exemplo de unidade no texto do capítulo?",
+"opcoes": ["Cada dedo da mão", "O numeral '5'", "O traço da fração", "O símbolo de porcentagem"],
+"respostaCorreta": "Cada dedo da mão"
+},
+{
+"pergunta": "Por que a Aritmética é chamada de base das outras artes citadas?",
+"opcoes": ["Porque o número aparece nelas", "Porque não existe geometria", "Porque música não usa contagem", "Porque astronomia não mede nada"],
+"respostaCorreta": "Porque o número aparece nelas"
+},
+{
+"pergunta": "Qual opção representa a mesma quantidade que '4'?",
+"opcoes": ["IIII", "V", "IX", "X"],
+"respostaCorreta": "IIII"
+},
+{
+"pergunta": "Quando dizemos que o número existe antes do desenho, isso quer dizer que…",
+"opcoes": ["A quantidade é uma ideia, e o símbolo é só uma forma", "O símbolo é mais importante que a quantidade", "A quantidade depende da tinta", "O número só existe no papel"],
+"respostaCorreta": "A quantidade é uma ideia, e o símbolo é só uma forma"
+},
+{
+"pergunta": "Se você escreve 'cinco' em palavras, isso é…",
+"opcoes": ["Uma forma de numeral (representação)", "Um novo número", "Uma operação", "Um antecessor"],
+"respostaCorreta": "Uma forma de numeral (representação)"
+},
+{
+"pergunta": "Pergunta final (reflexiva): Por que pode ser útil ter diferentes numerais para a mesma quantidade?",
+"opcoes": ["Porque podemos registrar a mesma ideia de vários jeitos", "Porque a quantidade muda sozinha", "Porque a unidade desaparece", "Porque não precisamos de símbolos"],
+"respostaCorreta": "Porque podemos registrar a mesma ideia de vários jeitos"
+}
+]
+},
+{
+"id": "1-avancado",
+"capitulo": "Capítulo 1 - O Que São os Números? O Número Puro e o Numeral",
+"nivel": "avancado",
+"perguntas": [
+{
+"pergunta": "Qual é a relação correta entre 'número' e 'numeral' do ponto de vista conceitual?",
+"opcoes": ["O numeral representa o número", "O número representa o numeral", "Eles são sempre diferentes quantidades", "Numeral existe sem número"],
+"respostaCorreta": "O numeral representa o número"
+},
+{
+"pergunta": "Se duas pessoas usam '4' e 'IV', o que garante que elas falam da mesma coisa?",
+"opcoes": ["A quantidade (ideia) por trás do símbolo", "A cor do papel", "O tipo de caneta", "A ordem do alfabeto"],
+"respostaCorreta": "A quantidade (ideia) por trás do símbolo"
+},
+{
+"pergunta": "Qual afirmação mostra causa e efeito no capítulo?",
+"opcoes": ["Sem número puro, não há ordem para medir e organizar", "Sem numeral, não existe quantidade na natureza", "Sem símbolos, a realidade deixa de existir", "Sem música, não há geometria"],
+"respostaCorreta": "Sem número puro, não há ordem para medir e organizar"
+},
+{
+"pergunta": "No exemplo da mão, o que muda se você tiver 5 dedos e escrever 'V' em vez de '5'?",
+"opcoes": ["Muda a representação, não a quantidade", "Muda a quantidade", "Muda o número para seis", "Muda as unidades para dezenas"],
+"respostaCorreta": "Muda a representação, não a quantidade"
+},
+{
+"pergunta": "Qual opção melhor descreve 'unidade' no contexto do capítulo?",
+"opcoes": ["Elemento que compõe um conjunto contado", "Resultado de uma divisão", "Sinal de adição", "Casa do milhar"],
+"respostaCorreta": "Elemento que compõe um conjunto contado"
+},
+{
+"pergunta": "Se a Aritmética fundamenta outras áreas, isso sugere que…",
+"opcoes": ["Medições e relações dependem de quantidades", "As quantidades dependem de desenhos", "Só existe uma maneira de escrever números", "A ideia de quantidade é inútil"],
+"respostaCorreta": "Medições e relações dependem de quantidades"
+},
+{
+"pergunta": "Qual é o melhor exemplo de 'número sem numeral'?",
+"opcoes": ["Imaginar 4 pássaros sem escrever", "Ver o símbolo '4' no quadro", "Ler a palavra 'quatro'", "Escrever 'IV' no caderno"],
+"respostaCorreta": "Imaginar 4 pássaros sem escrever"
+},
+{
+"pergunta": "Se um numeral estiver mal escrito (ex.: '3' parecendo '8'), o que pode acontecer?",
+"opcoes": ["A representação falha e causa confusão sobre a quantidade", "A quantidade real muda automaticamente", "As unidades viram centenas", "O número deixa de existir na natureza"],
+"respostaCorreta": "A representação falha e causa confusão sobre a quantidade"
+},
+{
+"pergunta": "Qual conclusão é mais coerente com o capítulo?",
+"opcoes": ["O símbolo é uma convenção para comunicar a quantidade", "O símbolo cria a quantidade", "A quantidade depende do idioma", "A quantidade só existe na escola"],
+"respostaCorreta": "O símbolo é uma convenção para comunicar a quantidade"
+},
+{
+"pergunta": "Pergunta final (síntese): Como você explicaria para alguém, em uma frase, número e numeral usando um exemplo?",
+"opcoes": ["Número é a quantidade (ex.: 5 dedos) e numeral é como escrevemos (5 ou V)", "Número é o desenho (5) e numeral é a quantidade", "Número é a mão e numeral é o dedo", "Número é a cor e numeral é o som"],
+"respostaCorreta": "Número é a quantidade (ex.: 5 dedos) e numeral é como escrevemos (5 ou V)"
+}
+]
+},
+{
+"id": "2-basico",
+"capitulo": "Capítulo 2 - A Ordem da Contagem: Antecessor e Sucessor",
+"nivel": "basico",
+"perguntas": [
+{
+"pergunta": "Contar 1, 2, 3 é contar de forma…",
+"opcoes": ["Crescente", "Decrescente", "Parada", "Misturada"],
+"respostaCorreta": "Crescente"
+},
+{
+"pergunta": "Contar 5, 4, 3 é contar de forma…",
+"opcoes": ["Decrescente", "Crescente", "Sem ordem", "Em frações"],
+"respostaCorreta": "Decrescente"
+},
+{
+"pergunta": "O sucessor de 7 é…",
+"opcoes": ["8", "6", "9", "5"],
+"respostaCorreta": "8"
+},
+{
+"pergunta": "O antecessor de 7 é…",
+"opcoes": ["6", "8", "9", "5"],
+"respostaCorreta": "6"
+},
+{
+"pergunta": "Para achar o sucessor, nós…",
+"opcoes": ["Somamos 1", "Subtraímos 1", "Multiplicamos por 2", "Dividimos por 2"],
+"respostaCorreta": "Somamos 1"
+},
+{
+"pergunta": "Para achar o antecessor, nós…",
+"opcoes": ["Subtraímos 1", "Somamos 1", "Multiplicamos por 10", "Fazemos raiz"],
+"respostaCorreta": "Subtraímos 1"
+},
+{
+"pergunta": "Na sequência 6 → 7 → 8, o 7 está…",
+"opcoes": ["No meio", "No fim", "No começo", "Fora da fila"],
+"respostaCorreta": "No meio"
+},
+{
+"pergunta": "Qual é o número que começa a contagem dos naturais no capítulo?",
+"opcoes": ["1", "0", "2", "10"],
+"respostaCorreta": "1"
+},
+{
+"pergunta": "Qual frase está certa?",
+"opcoes": ["Antecessor vem antes; sucessor vem depois", "Antecessor vem depois; sucessor vem antes", "Sucessor é sempre 10", "Antecessor é sempre 0"],
+"respostaCorreta": "Antecessor vem antes; sucessor vem depois"
+},
+{
+"pergunta": "O que aprendemos neste nível?",
+"opcoes": ["Achar antecessor e sucessor e contar em ordem", "Somar é sempre 'vai um'", "Frações são pedaços", "Potência é dividir"],
+"respostaCorreta": "Achar antecessor e sucessor e contar em ordem"
+}
+]
+},
+{
+"id": "2-medio",
+"capitulo": "Capítulo 2 - A Ordem da Contagem: Antecessor e Sucessor",
+"nivel": "medio",
+"perguntas": [
+{
+"pergunta": "Qual sequência é crescente?",
+"opcoes": ["2, 3, 4, 5", "5, 4, 3, 2", "3, 1, 4, 2", "6, 6, 6, 6"],
+"respostaCorreta": "2, 3, 4, 5"
+},
+{
+"pergunta": "Qual sequência é decrescente?",
+"opcoes": ["9, 8, 7, 6", "1, 2, 3, 4", "2, 4, 6, 8", "1, 3, 2, 4"],
+"respostaCorreta": "9, 8, 7, 6"
+},
+{
+"pergunta": "Qual é o antecessor de 10?",
+"opcoes": ["9", "11", "8", "10"],
+"respostaCorreta": "9"
+},
+{
+"pergunta": "Qual é o sucessor de 19?",
+"opcoes": ["20", "18", "21", "10"],
+"respostaCorreta": "20"
+},
+{
+"pergunta": "Se um foguete faz contagem regressiva, ele usa contagem…",
+"opcoes": ["Decrescente", "Crescente", "Somente pares", "Somente ímpares"],
+"respostaCorreta": "Decrescente"
+},
+{
+"pergunta": "Se você está no 7 e dá um passo para frente na fila, você vai para…",
+"opcoes": ["8", "6", "9", "5"],
+"respostaCorreta": "8"
+},
+{
+"pergunta": "Se você está no 7 e dá um passo para trás na fila, você vai para…",
+"opcoes": ["6", "8", "5", "9"],
+"respostaCorreta": "6"
+},
+{
+"pergunta": "Qual número natural não tem antecessor, segundo o desafio do capítulo?",
+"opcoes": ["1", "2", "0", "10"],
+"respostaCorreta": "1"
+},
+{
+"pergunta": "Qual regra está correta?",
+"opcoes": ["Sucessor = n + 1", "Sucessor = n - 1", "Antecessor = n + 2", "Antecessor = n ÷ 2"],
+"respostaCorreta": "Sucessor = n + 1"
+},
+{
+"pergunta": "Pergunta final (reflexiva): Por que a ordem 6 → 7 → 8 não pode ser trocada sem mudar a contagem?",
+"opcoes": ["Porque cada número tem lugar fixo na sequência", "Porque 7 vira 9", "Porque a adição muda", "Porque os números desaparecem"],
+"respostaCorreta": "Porque cada número tem lugar fixo na sequência"
+}
+]
+},
+{
+"id": "2-avancado",
+"capitulo": "Capítulo 2 - A Ordem da Contagem: Antecessor e Sucessor",
+"nivel": "avancado",
+"perguntas": [
+{
+"pergunta": "Em termos de operação, antecessor e sucessor são definidos por…",
+"opcoes": ["Subtrair 1 e somar 1", "Somar 2 e subtrair 2", "Multiplicar por 10 e dividir por 10", "Elevar ao quadrado e tirar a raiz"],
+"respostaCorreta": "Subtrair 1 e somar 1"
+},
+{
+"pergunta": "Qual afirmação descreve causa e efeito na contagem?",
+"opcoes": ["Se somamos 1, avançamos exatamente um lugar", "Se somamos 1, voltamos dois lugares", "Se subtraímos 1, o número cresce", "Se contamos, a ordem vira aleatória"],
+"respostaCorreta": "Se somamos 1, avançamos exatamente um lugar"
+},
+{
+"pergunta": "Por que a sequência numérica é comparada a uma escada?",
+"opcoes": ["Porque cada passo muda o número em 1", "Porque só existem dezenas", "Porque não existe primeiro degrau", "Porque os números não têm vizinhos"],
+"respostaCorreta": "Porque cada passo muda o número em 1"
+},
+{
+"pergunta": "Se um número n tem sucessor s, qual relação é verdadeira?",
+"opcoes": ["s - n = 1", "s - n = 2", "s + n = 1", "s ÷ n = 0"],
+"respostaCorreta": "s - n = 1"
+},
+{
+"pergunta": "Qual relação é verdadeira para o antecessor a de n?",
+"opcoes": ["n - a = 1", "a - n = 1", "n + a = 1", "a ÷ n = 1"],
+"respostaCorreta": "n - a = 1"
+},
+{
+"pergunta": "O desafio pergunta pelo número natural sem antecessor. Qual análise explica isso?",
+"opcoes": ["Porque não há natural menor que 1 na contagem iniciada", "Porque 1 é múltiplo de 10", "Porque 1 é par", "Porque 1 é sempre sucessor de 0 no capítulo"],
+"respostaCorreta": "Porque não há natural menor que 1 na contagem iniciada"
+},
+{
+"pergunta": "Qual exemplo mostra contagem decrescente aplicada?",
+"opcoes": ["10, 9, 8 para lançamento", "1, 2, 3 para subir escada", "2, 4, 6 para pares", "1, 1, 2 para sequência"],
+"respostaCorreta": "10, 9, 8 para lançamento"
+},
+{
+"pergunta": "Se você inverter uma contagem regressiva, o que acontece com o sentido?",
+"opcoes": ["Vira contagem crescente", "Vira contagem de primos", "Vira multiplicação", "Vira divisão com resto"],
+"respostaCorreta": "Vira contagem crescente"
+},
+{
+"pergunta": "Qual conclusão está alinhada ao capítulo?",
+"opcoes": ["A ordem numérica é estável e cada número tem vizinhos", "A ordem muda conforme o dia", "Antecessor e sucessor dependem do símbolo", "A contagem só existe até 10"],
+"respostaCorreta": "A ordem numérica é estável e cada número tem vizinhos"
+},
+{
+"pergunta": "Pergunta final (síntese): Explique a ideia de antecessor e sucessor usando o número 7.",
+"opcoes": ["6 é antecessor e 8 é sucessor, pois são vizinhos de 7", "8 é antecessor e 6 é sucessor, pois 7 troca de lugar", "7 não tem vizinhos, pois é especial", "9 é antecessor e 5 é sucessor, pois pulamos números"],
+"respostaCorreta": "6 é antecessor e 8 é sucessor, pois são vizinhos de 7"
+}
+]
+},
+{
+"id": "3-basico",
+"capitulo": "Capítulo 3 - O Sistema Decimal: Da Unidade ao Milhar",
+"nivel": "basico",
+"perguntas": [
+{
+"pergunta": "No sistema decimal, contamos de…",
+"opcoes": ["Dez em dez", "Dois em dois", "Cinco em cinco", "Um em cem"],
+"respostaCorreta": "Dez em dez"
+},
+{
+"pergunta": "Uma dezena tem quantas unidades?",
+"opcoes": ["10", "2", "5", "100"],
+"respostaCorreta": "10"
+},
+{
+"pergunta": "Uma centena vale…",
+"opcoes": ["100 unidades", "10 unidades", "1000 unidades", "1 unidade"],
+"respostaCorreta": "100 unidades"
+},
+{
+"pergunta": "Um milhar vale…",
+"opcoes": ["1000 unidades", "100 unidades", "10 unidades", "1 unidade"],
+"respostaCorreta": "1000 unidades"
+},
+{
+"pergunta": "No número 352, o 2 está na casa das…",
+"opcoes": ["Unidades", "Dezenas", "Centenas", "Milhares"],
+"respostaCorreta": "Unidades"
+},
+{
+"pergunta": "No número 352, o 5 vale…",
+"opcoes": ["50", "5", "500", "52"],
+"respostaCorreta": "50"
+},
+{
+"pergunta": "No número 352, o 3 vale…",
+"opcoes": ["300", "30", "3", "3000"],
+"respostaCorreta": "300"
+},
+{
+"pergunta": "O que é valor posicional?",
+"opcoes": ["O lugar muda o valor do algarismo", "O número vira sempre maior", "Só existe nas unidades", "É uma operação de soma"],
+"respostaCorreta": "O lugar muda o valor do algarismo"
+},
+{
+"pergunta": "Decompor 352 é igual a…",
+"opcoes": ["300 + 50 + 2", "30 + 5 + 2", "300 + 5 + 20", "35 + 2 + 0"],
+"respostaCorreta": "300 + 50 + 2"
+},
+{
+"pergunta": "O que aprendemos neste nível?",
+"opcoes": ["Unidades, dezenas, centenas e milhares e seus valores", "Só números pares", "Somar frações", "Fazer raiz quadrada"],
+"respostaCorreta": "Unidades, dezenas, centenas e milhares e seus valores"
+}
+]
+},
+{
+"id": "3-medio",
+"capitulo": "Capítulo 3 - O Sistema Decimal: Da Unidade ao Milhar",
+"nivel": "medio",
+"perguntas": [
+{
+"pergunta": "Em 1.234, o algarismo 1 vale…",
+"opcoes": ["1000", "1", "100", "10"],
+"respostaCorreta": "1000"
+},
+{
+"pergunta": "Em 1.234, o algarismo 4 vale…",
+"opcoes": ["4", "40", "400", "4000"],
+"respostaCorreta": "4"
+},
+{
+"pergunta": "Qual decomposição está correta para 708?",
+"opcoes": ["700 + 0 + 8", "70 + 0 + 8", "700 + 80 + 0", "7000 + 8 + 0"],
+"respostaCorreta": "700 + 0 + 8"
+},
+{
+"pergunta": "Qual número tem 2 centenas, 3 dezenas e 9 unidades?",
+"opcoes": ["239", "293", "329", "923"],
+"respostaCorreta": "239"
+},
+{
+"pergunta": "Se você tem 12 dezenas de lápis, quantas unidades são?",
+"opcoes": ["120", "12", "102", "1002"],
+"respostaCorreta": "120"
+},
+{
+"pergunta": "Qual algarismo está na casa das dezenas em 546?",
+"opcoes": ["4", "5", "6", "0"],
+"respostaCorreta": "4"
+},
+{
+"pergunta": "Se trocarmos o 5 e o 2 em 352, o que mais muda?",
+"opcoes": ["O valor total muda porque as casas mudam", "Nada muda, pois é o mesmo número", "Só muda o nome das unidades", "Vira sempre 350"],
+"respostaCorreta": "O valor total muda porque as casas mudam"
+},
+{
+"pergunta": "Qual é o valor posicional do 6 em 6.045?",
+"opcoes": ["6000", "600", "60", "6"],
+"respostaCorreta": "6000"
+},
+{
+"pergunta": "Qual número é maior?",
+"opcoes": ["900", "90", "99", "109"],
+"respostaCorreta": "900"
+},
+{
+"pergunta": "Pergunta final (reflexiva): Por que o mesmo algarismo pode valer coisas diferentes?",
+"opcoes": ["Porque depende da casa (posição) onde está", "Porque depende da cor do algarismo", "Porque depende do tipo de papel", "Porque depende da ordem alfabética"],
+"respostaCorreta": "Porque depende da casa (posição) onde está"
+}
+]
+},
+{
+"id": "3-avancado",
+"capitulo": "Capítulo 3 - O Sistema Decimal: Da Unidade ao Milhar",
+"nivel": "avancado",
+"perguntas": [
+{
+"pergunta": "Qual ideia explica o sistema decimal com valor posicional?",
+"opcoes": ["Cada casa representa potências de 10", "Cada casa representa potências de 2", "Cada casa representa frações aleatórias", "Cada casa não muda nada"],
+"respostaCorreta": "Cada casa representa potências de 10"
+},
+{
+"pergunta": "Qual é a forma correta de interpretar 4.302?",
+"opcoes": ["4 milhares, 3 centenas, 0 dezenas e 2 unidades", "4 centenas, 3 milhares, 2 dezenas e 0 unidades", "43 dezenas e 2 unidades", "4 unidades e 302 milhares"],
+"respostaCorreta": "4 milhares, 3 centenas, 0 dezenas e 2 unidades"
+},
+{
+"pergunta": "Qual é a causa de 1 valer 1000 em 1.234?",
+"opcoes": ["Porque está na casa do milhar", "Porque é um número primo", "Porque está antes da vírgula", "Porque 1 sempre vale 1000"],
+"respostaCorreta": "Porque está na casa do milhar"
+},
+{
+"pergunta": "Se aumentarmos 352 em 1 centena, qual resultado obtemos?",
+"opcoes": ["452", "362", "353", "1352"],
+"respostaCorreta": "452"
+},
+{
+"pergunta": "Qual transformação mantém o número igual?",
+"opcoes": ["Decompor e somar os valores (ex.: 300 + 50 + 2)", "Trocar dezenas por unidades sem mudar nada", "Mover o 3 para a casa das dezenas", "Apagar um algarismo"],
+"respostaCorreta": "Decompor e somar os valores (ex.: 300 + 50 + 2)"
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": ["1.005 > 999", "1.005 < 999", "1.005 = 999", "1.005 não pode ser comparado"],
+"respostaCorreta": "1.005 > 999"
+},
+{
+"pergunta": "Qual análise sobre 120 unidades é correta?",
+"opcoes": ["120 unidades = 12 dezenas", "120 unidades = 120 dezenas", "120 unidades = 1 centena", "120 unidades = 2 unidades"],
+"respostaCorreta": "120 unidades = 12 dezenas"
+},
+{
+"pergunta": "Em 9.090, por que o segundo 0 é importante?",
+"opcoes": ["Ele mantém a posição das dezenas e unidades correta", "Ele transforma 9 em 90 automaticamente", "Ele troca centenas por milhares", "Ele não tem função nenhuma"],
+"respostaCorreta": "Ele mantém a posição das dezenas e unidades correta"
+},
+{
+"pergunta": "Qual conclusão resume valor posicional?",
+"opcoes": ["O valor de um algarismo depende do lugar", "O valor depende só do algarismo", "O lugar só importa em romanos", "O lugar só importa em frações"],
+"respostaCorreta": "O valor de um algarismo depende do lugar"
+},
+{
+"pergunta": "Pergunta final (síntese): Explique 352 como centenas, dezenas e unidades.",
+"opcoes": ["352 = 3 centenas, 5 dezenas e 2 unidades", "352 = 35 dezenas e 2 centenas", "352 = 3 unidades, 5 centenas e 2 dezenas", "352 = 3000 + 50 + 2"],
+"respostaCorreta": "352 = 3 centenas, 5 dezenas e 2 unidades"
+}
+]
+},
+{
+"id": "4-basico",
+"capitulo": "Capítulo 4 - Adição: Soma e Reagrupamento",
+"nivel": "basico",
+"perguntas": [
+{
+"pergunta": "A adição serve para…",
+"opcoes": ["Juntar quantidades", "Separar quantidades", "Dividir igualmente", "Encontrar raízes"],
+"respostaCorreta": "Juntar quantidades"
+},
+{
+"pergunta": "Qual é o sinal da adição?",
+"opcoes": ["+", "-", "×", "÷"],
+"respostaCorreta": "+"
+},
+{
+"pergunta": "3 + 5 é igual a…",
+"opcoes": ["8", "7", "9", "6"],
+"respostaCorreta": "8"
+},
+{
+"pergunta": "Na adição, podemos trocar a ordem e o resultado fica igual. Isso se chama…",
+"opcoes": ["Comutativa", "Empréstimo", "Resto", "Radical"],
+"respostaCorreta": "Comutativa"
+},
+{
+"pergunta": "Quando somamos e passa de 9 na coluna, acontece o…",
+"opcoes": ["Reagrupamento (vai um)", "Congelamento", "Resto", "Quadrado perfeito"],
+"respostaCorreta": "Reagrupamento (vai um)"
+},
+{
+"pergunta": "No exemplo 27 + 15, primeiro somamos as…",
+"opcoes": ["Unidades", "Dezenas", "Centenas", "Milhares"],
+"respostaCorreta": "Unidades"
+},
+{
+"pergunta": "7 + 5 dá 12. Na conta em coluna, fica o… nas unidades.",
+"opcoes": ["2", "1", "12", "0"],
+"respostaCorreta": "2"
+},
+{
+"pergunta": "Ainda em 27 + 15, o “vai um” é levado para as…",
+"opcoes": ["Dezenas", "Unidades", "Centenas", "Milhares"],
+"respostaCorreta": "Dezenas"
+},
+{
+"pergunta": "27 + 15 é igual a…",
+"opcoes": ["42", "32", "52", "40"],
+"respostaCorreta": "42"
+},
+{
+"pergunta": "O que aprendemos neste nível?",
+"opcoes": ["Somar e usar o 'vai um' quando passa de 9", "Dividir com resto", "Somar frações diferentes", "Encontrar números primos"],
+"respostaCorreta": "Somar e usar o 'vai um' quando passa de 9"
+}
+]
+},
+{
+"id": "4-medio",
+"capitulo": "Capítulo 4 - Adição: Soma e Reagrupamento",
+"nivel": "medio",
+"perguntas": [
+{
+"pergunta": "Qual propriedade afirma que 5 + 3 = 3 + 5?",
+"opcoes": ["Comutativa", "Distributiva", "Inverso", "Divisibilidade"],
+"respostaCorreta": "Comutativa"
+},
+{
+"pergunta": "Por que alinhamos em colunas na adição?",
+"opcoes": ["Para somar casas iguais (unidades com unidades)", "Para misturar casas diferentes", "Para esconder o resultado", "Para transformar soma em divisão"],
+"respostaCorreta": "Para somar casas iguais (unidades com unidades)"
+},
+{
+"pergunta": "Quando 8 + 7 = 15 em coluna, o que acontece?",
+"opcoes": ["Escrevemos 5 e levamos 1 dezena", "Escrevemos 15 na mesma casa", "Apagamos a conta", "Levamos 5 centenas"],
+"respostaCorreta": "Escrevemos 5 e levamos 1 dezena"
+},
+{
+"pergunta": "Qual soma precisa de reagrupamento nas unidades?",
+"opcoes": ["19 + 27", "12 + 23", "30 + 40", "11 + 11"],
+"respostaCorreta": "19 + 27"
+},
+{
+"pergunta": "No cálculo 46 + 38, a soma das unidades é…",
+"opcoes": ["14", "7", "12", "8"],
+"respostaCorreta": "14"
+},
+{
+"pergunta": "Em 46 + 38, após somar unidades (14), o que vai para a coluna das dezenas?",
+"opcoes": ["1", "4", "14", "0"],
+"respostaCorreta": "1"
+},
+{
+"pergunta": "Qual resultado está correto?",
+"opcoes": ["46 + 38 = 84", "46 + 38 = 74", "46 + 38 = 94", "46 + 38 = 814"],
+"respostaCorreta": "46 + 38 = 84"
+},
+{
+"pergunta": "Somar três números ímpares (ex.: 3 + 5 + 1) dá um resultado…",
+"opcoes": ["Ímpar", "Par", "Sempre zero", "Sempre múltiplo de 10"],
+"respostaCorreta": "Ímpar"
+},
+{
+"pergunta": "Qual explicação combina com o padrão de 3 ímpares?",
+"opcoes": ["Ímpar + ímpar = par, e par + ímpar = ímpar", "Ímpar + ímpar = ímpar sempre", "Par + par = ímpar", "Ímpar + par = par sempre"],
+"respostaCorreta": "Ímpar + ímpar = par, e par + ímpar = ímpar"
+},
+{
+"pergunta": "Pergunta final (reflexiva): Em que situações do dia a dia o 'vai um' aparece sem você perceber?",
+"opcoes": ["Ao somar dinheiro e passar de 9 centavos para 1 dezena", "Ao dividir por zero", "Ao tirar raiz de 9", "Ao achar números primos"],
+"respostaCorreta": "Ao somar dinheiro e passar de 9 centavos para 1 dezena"
+}
+]
+},
+{
+"id": "4-avancado",
+"capitulo": "Capítulo 4 - Adição: Soma e Reagrupamento",
+"nivel": "avancado",
+"perguntas": [
+{
+"pergunta": "O reagrupamento acontece porque o sistema decimal…",
+"opcoes": ["Troca 10 unidades por 1 dezena", "Troca 2 unidades por 1 dezena", "Troca 5 unidades por 1 centena", "Não usa base 10"],
+"respostaCorreta": "Troca 10 unidades por 1 dezena"
+},
+{
+"pergunta": "Qual afirmação mostra causa e efeito na soma em colunas?",
+"opcoes": ["Se a coluna passa de 9, levamos 1 para a próxima casa", "Se a coluna passa de 9, apagamos a coluna", "Se a coluna passa de 9, viramos multiplicação", "Se a coluna passa de 9, o número some"],
+"respostaCorreta": "Se a coluna passa de 9, levamos 1 para a próxima casa"
+},
+{
+"pergunta": "Por que não escrevemos '12' na casa das unidades ao somar 7 + 5?",
+"opcoes": ["Porque cada casa guarda apenas um algarismo, e reagrupamos", "Porque 12 não existe", "Porque 7 + 5 não pode ser somado", "Porque 12 é primo"],
+"respostaCorreta": "Porque cada casa guarda apenas um algarismo, e reagrupamos"
+},
+{
+"pergunta": "Qual opção demonstra comutatividade?",
+"opcoes": ["18 + 24 = 24 + 18", "18 + 24 = 18 - 24", "18 + 24 = 18 × 24", "18 + 24 = 18 ÷ 24"],
+"respostaCorreta": "18 + 24 = 24 + 18"
+},
+{
+"pergunta": "Ao somar 59 + 27, qual é a soma das unidades e o 'vai um'?",
+"opcoes": ["9 + 7 = 16, vai 1", "9 + 7 = 15, vai 2", "5 + 2 = 7, vai 1", "9 + 7 = 9, vai 0"],
+"respostaCorreta": "9 + 7 = 16, vai 1"
+},
+{
+"pergunta": "Qual é o resultado de 59 + 27?",
+"opcoes": ["86", "76", "96", "816"],
+"respostaCorreta": "86"
+},
+{
+"pergunta": "Qual análise sobre soma de três ímpares é correta?",
+"opcoes": ["Sempre dá ímpar, pois ímpar+ímpar=par e par+ímpar=ímpar", "Sempre dá par, pois ímpar+ímpar=ímpar", "Depende do último algarismo ser 0", "Sempre dá múltiplo de 3"],
+"respostaCorreta": "Sempre dá ímpar, pois ímpar+ímpar=par e par+ímpar=ímpar"
+},
+{
+"pergunta": "Se você soma 399 + 2, o que o reagrupamento em cadeia causa?",
+"opcoes": ["Vira 401 por levar nas unidades e dezenas", "Vira 501 por levar direto ao milhar", "Vira 3992 por juntar números", "Não muda nada"],
+"respostaCorreta": "Vira 401 por levar nas unidades e dezenas"
+},
+{
+"pergunta": "Qual conclusão resume o algoritmo da adição?",
+"opcoes": ["Somamos por casas e reagrupamos quando necessário", "Somamos sempre da esquerda para a direita sem casas", "Somamos e ignoramos o valor posicional", "Somamos apenas números ímpares"],
+"respostaCorreta": "Somamos por casas e reagrupamos quando necessário"
+},
+{
+"pergunta": "Pergunta final (síntese): Explique o 'vai um' usando o exemplo 27 + 15.",
+"opcoes": ["7+5=12, fica 2 e 1 dezena sobe; depois 1+2+1=4, total 42", "2+1=3, depois 7+5=10, total 310", "Somamos tudo de uma vez e dá 212", "7+5=11, sobe 2 e dá 52"],
+"respostaCorreta": "7+5=12, fica 2 e 1 dezena sobe; depois 1+2+1=4, total 42"
+}
+]
+},
+{
+"id": "5-basico",
+"capitulo": "Capítulo 5 - Subtração: Comparação e Empréstimo",
+"nivel": "basico",
+"perguntas": [
+{
+"pergunta": "Subtrair significa…",
+"opcoes": ["Tirar uma quantidade", "Juntar quantidades", "Multiplicar grupos", "Dividir igualmente"],
+"respostaCorreta": "Tirar uma quantidade"
+},
+{
+"pergunta": "Qual é o sinal da subtração?",
+"opcoes": ["-", "+", "×", "÷"],
+"respostaCorreta": "-"
+},
+{
+"pergunta": "10 - 5 é…",
+"opcoes": ["5", "15", "0", "2"],
+"respostaCorreta": "5"
+},
+{
+"pergunta": "Quando não dá para tirar 8 de 2, usamos o…",
+"opcoes": ["Empréstimo", "Vai um", "Resto", "Expoente"],
+"respostaCorreta": "Empréstimo"
+},
+{
+"pergunta": "No exemplo 32 - 18, o 2 vira 12 porque…",
+"opcoes": ["Pegou 1 dezena emprestada", "Somou 10 centenas", "Multiplicou por 2", "Dividiu por 0"],
+"respostaCorreta": "Pegou 1 dezena emprestada"
+},
+{
+"pergunta": "Depois do empréstimo em 32 - 18, o 3 dezenas vira…",
+"opcoes": ["2 dezenas", "4 dezenas", "1 dezena", "0 dezenas"],
+"respostaCorreta": "2 dezenas"
+},
+{
+"pergunta": "12 - 8 é…",
+"opcoes": ["4", "5", "3", "2"],
+"respostaCorreta": "4"
+},
+{
+"pergunta": "2 - 1 (nas dezenas do exemplo) é…",
+"opcoes": ["1", "3", "0", "2"],
+"respostaCorreta": "1"
+},
+{
+"pergunta": "32 - 18 é igual a…",
+"opcoes": ["14", "24", "12", "10"],
+"respostaCorreta": "14"
+},
+{
+"pergunta": "O que aprendemos neste nível?",
+"opcoes": ["Subtrair e usar empréstimo quando falta quantidade", "Somar com reagrupamento", "Fazer tabuada do 9", "Encontrar MMC"],
+"respostaCorreta": "Subtrair e usar empréstimo quando falta quantidade"
+}
+]
+},
+{
+"id": "5-medio",
+"capitulo": "Capítulo 5 - Subtração: Comparação e Empréstimo",
+"nivel": "medio",
+"perguntas": [
+{
+"pergunta": "A subtração também serve para…",
+"opcoes": ["Comparar quanto um tem a mais que o outro", "Criar quadrados perfeitos", "Trocar frações por decimais sempre", "Multiplicar por zero"],
+"respostaCorreta": "Comparar quanto um tem a mais que o outro"
+},
+{
+"pergunta": "Qual conta precisa de empréstimo nas unidades?",
+"opcoes": ["41 - 29", "50 - 10", "33 - 11", "20 - 2"],
+"respostaCorreta": "41 - 29"
+},
+{
+"pergunta": "Em 41 - 29, o 1 vira… após empréstimo",
+"opcoes": ["11", "21", "1", "9"],
+"respostaCorreta": "11"
+},
+{
+"pergunta": "Em 41 - 29, depois do empréstimo, a dezena 4 vira…",
+"opcoes": ["3", "5", "2", "4"],
+"respostaCorreta": "3"
+},
+{
+"pergunta": "Qual é o resultado de 41 - 29?",
+"opcoes": ["12", "22", "10", "20"],
+"respostaCorreta": "12"
+},
+{
+"pergunta": "Por que a subtração não é comutativa?",
+"opcoes": ["Porque 10 - 5 é diferente de 5 - 10", "Porque sempre dá o mesmo", "Porque não existe subtração", "Porque só funciona com pares"],
+"respostaCorreta": "Porque 10 - 5 é diferente de 5 - 10"
+},
+{
+"pergunta": "No mundo dos números naturais, 5 - 10 é…",
+"opcoes": ["Não possível (fica abaixo de 0)", "Sempre 5", "Sempre 0", "Igual a 10"],
+"respostaCorreta": "Não possível (fica abaixo de 0)"
+},
+{
+"pergunta": "Se uma muralha deve ter 50 m e já tem 32 m, falta…",
+"opcoes": ["18 m", "12 m", "82 m", "20 m"],
+"respostaCorreta": "18 m"
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["Empréstimo pega 1 dezena e vira 10 unidades", "Empréstimo pega 1 unidade e vira 10 dezenas", "Empréstimo apaga o número", "Empréstimo é o mesmo que resto"],
+"respostaCorreta": "Empréstimo pega 1 dezena e vira 10 unidades"
+},
+{
+"pergunta": "Pergunta final (reflexiva): Quando você usa subtração para saber 'quanto falta' na vida real?",
+"opcoes": ["Ao ver quanto falta de tempo ou de dinheiro", "Ao decorar tabuada", "Ao escrever numerais romanos", "Ao escolher um número primo"],
+"respostaCorreta": "Ao ver quanto falta de tempo ou de dinheiro"
+}
+]
+},
+{
+"id": "5-avancado",
+"capitulo": "Capítulo 5 - Subtração: Comparação e Empréstimo",
+"nivel": "avancado",
+"perguntas": [
+{
+"pergunta": "O empréstimo na subtração depende diretamente de qual ideia?",
+"opcoes": ["Valor posicional do sistema decimal", "Somente da ordem alfabética", "Da paridade dos números", "De números romanos"],
+"respostaCorreta": "Valor posicional do sistema decimal"
+},
+{
+"pergunta": "Qual afirmação mostra causa e efeito no empréstimo?",
+"opcoes": ["Se não posso tirar 8 de 2, transformo 1 dezena em 10 unidades", "Se não posso tirar 8 de 2, multiplico por 8", "Se não posso tirar 8 de 2, somo 8", "Se não posso tirar 8 de 2, apago o 8"],
+"respostaCorreta": "Se não posso tirar 8 de 2, transformo 1 dezena em 10 unidades"
+},
+{
+"pergunta": "No exemplo 32 - 18, qual sequência está correta?",
+"opcoes": ["32 vira 2 dezenas e 12 unidades; depois 12-8 e 2-1", "32 vira 12 dezenas e 2 unidades; depois 2-8 e 12-1", "32 vira 3 centenas e 2 dezenas; depois 32-18", "32 vira 14 e pronto"],
+"respostaCorreta": "32 vira 2 dezenas e 12 unidades; depois 12-8 e 2-1"
+},
+{
+"pergunta": "Qual análise explica por que a subtração não é comutativa?",
+"opcoes": ["Trocar a ordem muda o sentido de 'tirar de' e pode mudar o resultado", "Trocar a ordem sempre dá o mesmo número", "Trocar a ordem transforma em multiplicação", "Trocar a ordem só muda o símbolo"],
+"respostaCorreta": "Trocar a ordem muda o sentido de 'tirar de' e pode mudar o resultado"
+},
+{
+"pergunta": "Se você faz 10 - 5 e depois 5 - 10, o que isso sugere sobre a necessidade de ampliar o conjunto numérico?",
+"opcoes": ["Que para permitir resultados negativos precisamos de inteiros", "Que basta usar naturais sempre", "Que o resultado vira fração automaticamente", "Que não existe subtração"],
+"respostaCorreta": "Que para permitir resultados negativos precisamos de inteiros"
+},
+{
+"pergunta": "Qual conta exige empréstimo em mais de uma casa?",
+"opcoes": ["100 - 37", "52 - 10", "99 - 9", "80 - 20"],
+"respostaCorreta": "100 - 37"
+},
+{
+"pergunta": "Em 100 - 37, por que o processo é mais complexo?",
+"opcoes": ["Porque há zeros que precisam ser transformados antes de tirar", "Porque 100 é primo", "Porque 37 é par", "Porque não existe centenas"],
+"respostaCorreta": "Porque há zeros que precisam ser transformados antes de tirar"
+},
+{
+"pergunta": "Qual verificação rápida ajuda a checar uma subtração?",
+"opcoes": ["Somar o resultado com o subtraendo para voltar ao minuendo", "Multiplicar tudo por 0", "Tirar raiz do resultado", "Trocar por numeral romano"],
+"respostaCorreta": "Somar o resultado com o subtraendo para voltar ao minuendo"
+},
+{
+"pergunta": "Qual conclusão resume a subtração no capítulo?",
+"opcoes": ["É retirar/comparar e, se faltar em uma casa, emprestamos da casa maior", "É juntar e sempre levar 1", "É sempre dividir por 2", "É sempre multiplicar por 10"],
+"respostaCorreta": "É retirar/comparar e, se faltar em uma casa, emprestamos da casa maior"
+},
+{
+"pergunta": "Pergunta final (síntese): Explique por que 5 - 10 não funciona nos naturais e como o capítulo sugere pensar sobre isso.",
+"opcoes": ["Porque não dá para tirar mais do que temos sem ir abaixo do começo da contagem; a ordem importa", "Porque 10 é menor que 5", "Porque 5 é sempre sucessor de 10", "Porque a subtração é comutativa"],
+"respostaCorreta": "Porque não dá para tirar mais do que temos sem ir abaixo do começo da contagem; a ordem importa"
+}
+]
+},
+{
+"id": "6-basico",
+"capitulo": "Capítulo 6 - Multiplicação: Soma Repetida e Tabuada",
+"nivel": "basico",
+"perguntas": [
+{
+"pergunta": "Multiplicar é como…",
+"opcoes": ["Somar a mesma coisa várias vezes", "Tirar uma quantidade", "Dividir igualmente", "Fazer uma raiz"],
+"respostaCorreta": "Somar a mesma coisa várias vezes"
+},
+{
+"pergunta": "Qual é o sinal da multiplicação?",
+"opcoes": ["×", "+", "-", "÷"],
+"respostaCorreta": "×"
+},
+{
+"pergunta": "4 vezes 3 quer dizer…",
+"opcoes": ["3 + 3 + 3 + 3", "4 + 3", "4 - 3", "12 ÷ 3"],
+"respostaCorreta": "3 + 3 + 3 + 3"
+},
+{
+"pergunta": "Os números que se multiplicam se chamam…",
+"opcoes": ["Fatores", "Restos", "Radicais", "Dezenas"],
+"respostaCorreta": "Fatores"
+},
+{
+"pergunta": "O resultado da multiplicação se chama…",
+"opcoes": ["Produto", "Sucessor", "Antecessor", "Denominador"],
+"respostaCorreta": "Produto"
+},
+{
+"pergunta": "3 × 4 é igual a…",
+"opcoes": ["12", "7", "8", "34"],
+"respostaCorreta": "12"
+},
+{
+"pergunta": "4 × 3 é igual a 3 × 4. Isso é a propriedade…",
+"opcoes": ["Comutativa", "Empréstimo", "Resto", "Porcentagem"],
+"respostaCorreta": "Comutativa"
+},
+{
+"pergunta": "No exemplo 12 × 3, 3 × 2 é…",
+"opcoes": ["6", "5", "4", "9"],
+"respostaCorreta": "6"
+},
+{
+"pergunta": "12 × 3 é igual a…",
+"opcoes": ["36", "15", "33", "39"],
+"respostaCorreta": "36"
+},
+{
+"pergunta": "O que aprendemos neste nível?",
+"opcoes": ["Multiplicação é soma repetida e dá um produto", "Divisão sempre tem resto", "Frações são decimais", "Raiz quadrada é potência"],
+"respostaCorreta": "Multiplicação é soma repetida e dá um produto"
+}
+]
+},
+{
+"id": "6-medio",
+"capitulo": "Capítulo 6 - Multiplicação: Soma Repetida e Tabuada",
+"nivel": "medio",
+"perguntas": [
+{
+"pergunta": "Se você tem 4 sacos com 3 moedas, quantas moedas tem no total?",
+"opcoes": ["12", "7", "9", "16"],
+"respostaCorreta": "12"
+},
+{
+"pergunta": "Qual expressão representa 5 grupos de 2?",
+"opcoes": ["5 × 2", "5 + 2", "5 - 2", "5 ÷ 2"],
+"respostaCorreta": "5 × 2"
+},
+{
+"pergunta": "A tabuada é útil porque…",
+"opcoes": ["Ajuda a calcular mais rápido sem somar tudo", "Serve para trocar símbolos", "Só funciona com números primos", "É usada apenas em frações"],
+"respostaCorreta": "Ajuda a calcular mais rápido sem somar tudo"
+},
+{
+"pergunta": "Qual conta mostra comutatividade?",
+"opcoes": ["2 × 7 = 7 × 2", "2 × 7 = 2 + 7", "2 × 7 = 7 - 2", "2 × 7 = 27"],
+"respostaCorreta": "2 × 7 = 7 × 2"
+},
+{
+"pergunta": "Qual é o produto de 9 × 4?",
+"opcoes": ["36", "13", "94", "40"],
+"respostaCorreta": "36"
+},
+{
+"pergunta": "Multiplicar por 0 resulta em…",
+"opcoes": ["0", "1", "O mesmo número", "10"],
+"respostaCorreta": "0"
+},
+{
+"pergunta": "Multiplicar por 1 resulta em…",
+"opcoes": ["O mesmo número", "0", "O dobro", "Metade"],
+"respostaCorreta": "O mesmo número"
+},
+{
+"pergunta": "Qual resultado está correto?",
+"opcoes": ["6 × 5 = 30", "6 × 5 = 11", "6 × 5 = 56", "6 × 5 = 60"],
+"respostaCorreta": "6 × 5 = 30"
+},
+{
+"pergunta": "Qual frase está correta?",
+"opcoes": ["Fatores são os números; produto é o resultado", "Produto são os números; fatores é o resultado", "Fatores são sempre 0 e 1", "Produto é sempre maior que 100"],
+"respostaCorreta": "Fatores são os números; produto é o resultado"
+},
+{
+"pergunta": "Pergunta final (reflexiva): Por que 'ter zero grupos de algo' faz o resultado ser zero?",
+"opcoes": ["Porque não existe nada para somar", "Porque vira adição com vai um", "Porque a divisão vira exata", "Porque o número vira primo"],
+"respostaCorreta": "Porque não existe nada para somar"
+}
+]
+},
+{
+"id": "6-avancado",
+"capitulo": "Capítulo 6 - Multiplicação: Soma Repetida e Tabuada",
+"nivel": "avancado",
+"perguntas": [
+{
+"pergunta": "Qual interpretação mais precisa para a multiplicação no capítulo?",
+"opcoes": ["Uma forma eficiente de soma repetida (proporção)", "Uma subtração escondida", "Uma divisão com resto", "Uma potência sempre"],
+"respostaCorreta": "Uma forma eficiente de soma repetida (proporção)"
+},
+{
+"pergunta": "Qual afirmação expressa causa e efeito ao multiplicar por 0?",
+"opcoes": ["Se há 0 grupos, somamos 0 vezes e o total é 0", "Se há 0 grupos, o total vira 1", "Se há 0 grupos, o total dobra", "Se há 0 grupos, o total vira 10"],
+"respostaCorreta": "Se há 0 grupos, somamos 0 vezes e o total é 0"
+},
+{
+"pergunta": "E ao multiplicar por 1, qual explicação é correta?",
+"opcoes": ["Se há 1 grupo, temos exatamente a mesma quantidade", "Se há 1 grupo, temos metade", "Se há 1 grupo, temos zero", "Se há 1 grupo, temos sempre 10"],
+"respostaCorreta": "Se há 1 grupo, temos exatamente a mesma quantidade"
+},
+{
+"pergunta": "Qual exemplo mostra bem a ideia de fatores e produto?",
+"opcoes": ["3 e 4 são fatores e 12 é o produto", "12 é fator e 3 é produto", "3 é produto e 12 é fator", "4 é resto e 12 é quociente"],
+"respostaCorreta": "3 e 4 são fatores e 12 é o produto"
+},
+{
+"pergunta": "Se uma propriedade diz que 3 × 4 = 4 × 3, isso ajuda por quê?",
+"opcoes": ["Porque podemos usar o fato que sabemos da tabuada mais fácil", "Porque muda o resultado para maior", "Porque cria um resto", "Porque transforma em fração"],
+"respostaCorreta": "Porque podemos usar o fato que sabemos da tabuada mais fácil"
+},
+{
+"pergunta": "Qual cálculo usa a ideia de decomposição (12 × 3) mostrada no capítulo?",
+"opcoes": ["Multiplicar unidades e depois dezenas", "Somar dezenas e depois subtrair unidades", "Dividir por 10 e multiplicar por 2", "Somar tudo e ignorar casas"],
+"respostaCorreta": "Multiplicar unidades e depois dezenas"
+},
+{
+"pergunta": "Se você sabe que 7 × 3 = 21, o que também é verdade pela comutatividade?",
+"opcoes": ["3 × 7 = 21", "3 × 7 = 10", "3 × 7 = 24", "3 × 7 = 73"],
+"respostaCorreta": "3 × 7 = 21"
+},
+{
+"pergunta": "Qual análise está correta sobre crescimento por multiplicação?",
+"opcoes": ["Multiplicar por um número maior que 1 aumenta grupos rapidamente", "Multiplicar por 1 sempre diminui", "Multiplicar por 0 aumenta", "Multiplicar por 2 sempre dá ímpar"],
+"respostaCorreta": "Multiplicar por um número maior que 1 aumenta grupos rapidamente"
+},
+{
+"pergunta": "Qual conclusão resume o papel da tabuada no capítulo?",
+"opcoes": ["Memorizar padrões libera a mente para problemas maiores", "Memorizar tabuada substitui todas as operações", "Tabuada serve só para números primos", "Tabuada é apenas um tipo de numeral"],
+"respostaCorreta": "Memorizar padrões libera a mente para problemas maiores"
+},
+{
+"pergunta": "Pergunta final (síntese): Explique, com um exemplo, por que 4 × 3 e 3 × 4 dão o mesmo resultado.",
+"opcoes": ["Porque são os mesmos grupos, apenas trocando 'quantos grupos' e 'quantos em cada'", "Porque 4 e 3 são iguais", "Porque toda multiplicação dá 12", "Porque a divisão muda o produto"],
+"respostaCorreta": "Porque são os mesmos grupos, apenas trocando 'quantos grupos' e 'quantos em cada'"
+}
+]
+}
+]
+}

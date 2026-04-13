@@ -1,0 +1,777 @@
+{
+  "disciplina": "Catecismo Cristão",
+  "quizzes": [
+    {
+      "id": "westminster_quiz_1",
+      "capitulo": "Pergunta 1: Qual é o fim principal do homem?",
+      "perguntas": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, qual é o fim principal do homem?",
+          "opcoes": [
+            "Acumular riquezas e poder.",
+            "Viver uma vida confortável e sem problemas.",
+            "Glorificar a Deus e gozá-lo para sempre.",
+            "Buscar o conhecimento científico e tecnológico."
+          ],
+          "respostaCorreta": "Glorificar a Deus e gozá-lo para sempre."
+        },
+        {
+          "pergunta": "A Bíblia ensina que 'glorificar a Deus' significa apenas elogiá-Lo com palavras de adoração aos domingos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que 'Porque dele e por ele e para ele são todas as coisas. A ele seja a glória para sempre. Amém.'?",
+          "opcoes": [
+            "1 Coríntios 10:31",
+            "Salmos 86:9",
+            "Romanos 11:36",
+            "Isaías 43:7"
+          ],
+          "respostaCorreta": "Romanos 11:36"
+        },
+        {
+          "pergunta": "A parte 'gozá-lo para sempre' do fim principal do homem refere-se a uma obrigação árdua e sem alegria que os crentes devem cumprir.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que 'a vida eterna é esta: que te conheçam a ti, o único Deus verdadeiro, e a Jesus Cristo, a quem enviaste'?",
+          "opcoes": [
+            "Filipenses 4:4",
+            "Salmos 73:25",
+            "João 17:3",
+            "Apocalipse 21:3"
+          ],
+          "respostaCorreta": "João 17:3"
+        },
+        {
+          "pergunta": "Os dois aspectos do fim principal do homem (glorificar a Deus e gozá-lo para sempre) são completamente independentes um do outro.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "De acordo com Isaías 43:7, por que Deus criou aqueles que são chamados pelo Seu nome?",
+          "opcoes": [
+            "Para que fossem poderosos na terra.",
+            "Para que O glorificassem.",
+            "Para que O desafiassem.",
+            "Para que fossem independentes d'Ele."
+          ],
+          "respostaCorreta": "Para que O glorificassem."
+        }
+      ]
+    },
+    {
+      "id": "westminster_quiz_2",
+      "capitulo": "Pergunta 2: A Regra de Deus para nos Dirigir",
+      "perguntas": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, qual é a única regra que Deus nos deu para nos dirigir?",
+          "opcoes": [
+            "A tradição da igreja.",
+            "A razão humana.",
+            "A Palavra de Deus contida nas Escrituras.",
+            "A voz interior de cada indivíduo."
+          ],
+          "respostaCorreta": "A Palavra de Deus contida nas Escrituras."
+        },
+        {
+          "pergunta": "Para glorificar e gozar a Deus, a humanidade deve seguir as tradições religiosas e filosóficas, além da Bíblia.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual o significado da expressão 'contida nas Escrituras do Antigo e Novo Testamento' na resposta da Pergunta 2?",
+          "opcoes": [
+            "Que a Palavra de Deus se encontra dispersa em diversos livros, além da Bíblia.",
+            "Que a Bíblia (Antigo e Novo Testamento) é a forma completa e exclusiva da revelação escrita de Deus.",
+            "Que apenas o Antigo Testamento é a parte mais importante da Palavra de Deus.",
+            "Que a Palavra de Deus é uma mistura de escritos antigos e novas revelações."
+          ],
+          "respostaCorreta": "Que a Bíblia (Antigo e Novo Testamento) é a forma completa e exclusiva da revelação escrita de Deus."
+        },
+        {
+          "pergunta": "O versículo de 2 Timóteo 3:16 afirma que 'Toda a Escritura é divinamente inspirada, e proveitosa para ensinar, para redarguir, para corrigir, para instruir em justiça'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual doutrina é fortemente reforçada pela afirmação de que a Palavra de Deus é a 'única regra' e está 'contida nas Escrituras'?",
+          "opcoes": [
+            "Sola Fide (Somente a Fé)",
+            "Sola Gratia (Somente a Graça)",
+            "Sola Scriptura (Somente a Escritura)",
+            "Solus Christus (Somente Cristo)"
+          ],
+          "respostaCorreta": "Sola Scriptura (Somente a Escritura)"
+        },
+        {
+          "pergunta": "O Breve Catecismo de Westminster sugere que é aceitável adicionar ou remover palavras da profecia bíblica para adaptá-la aos tempos modernos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "O que a Palavra de Deus nos mostra, conforme a Pergunta 2 do Catecismo?",
+          "opcoes": [
+            "Apenas os rituais religiosos que devemos seguir.",
+            "Como podemos obter riquezas materiais.",
+            "Como podemos glorificar e gozar a Deus.",
+            "As opiniões pessoais dos profetas antigos."
+          ],
+          "respostaCorreta": "Como podemos glorificar e gozar a Deus."
+        }
+      ]
+    },
+    {
+      "id": "westminster_quiz_3",
+      "capitulo": "Pergunta 3: Que ensinam principalmente as Escrituras?",
+      "perguntas": [
+        {
+          "pergunta": "Qual das seguintes opções resume melhor o que as Escrituras ensinam principalmente, de acordo com o Breve Catecismo de Westminster?",
+          "opcoes": [
+            "Como construir templos e realizar rituais religiosos.",
+            "O que o homem deve crer acerca de Deus e que dever Deus requer do homem.",
+            "A história dos povos antigos e suas culturas.",
+            "Métodos para alcançar prosperidade material e sucesso pessoal."
+          ],
+          "respostaCorreta": "O que o homem deve crer acerca de Deus e que dever Deus requer do homem."
+        },
+        {
+          "pergunta": "Considerando o versículo de João 17:3, qual a importância do conhecimento de Deus e de Jesus Cristo?",
+          "opcoes": [
+            "É fundamental para a obtenção de riquezas.",
+            "É fundamental para a vida eterna.",
+            "É fundamental para a fama e o poder.",
+            "É fundamental para uma vida longa na terra."
+          ],
+          "respostaCorreta": "É fundamental para a vida eterna."
+        },
+        {
+          "pergunta": "As Escrituras ensinam principalmente o que o homem deve crer acerca de Deus e qual o dever que Deus requer do homem, e essas duas áreas são inseparáveis.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual dos versículos bíblicos abaixo enfatiza que a fé sem obras é morta em si mesma?",
+          "opcoes": [
+            "Romanos 10:14",
+            "Hebreus 11:6",
+            "Tiago 2:17",
+            "Miquéias 6:8"
+          ],
+          "respostaCorreta": "Tiago 2:17"
+        },
+        {
+          "pergunta": "A parte do ensino das Escrituras sobre 'o que o homem deve crer acerca de Deus' refere-se principalmente à ética e à prática cristã.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Miquéias 6:8 resume o que o Senhor pede do homem, incluindo a prática da justiça e o amor à benignidade. Qual outro aspecto fundamental é mencionado nesse versículo?",
+          "opcoes": [
+            "Construir grandes cidades.",
+            "Sacrificar muitos animais.",
+            "Andar humildemente com o teu Deus.",
+            "Acumular sabedoria humana."
+          ],
+          "respostaCorreta": "Andar humildemente com o teu Deus."
+        },
+        {
+          "pergunta": "O ensino das Escrituras sobre 'o que o homem deve crer acerca de Deus' e 'que dever Deus requer do homem' pode ser comparado a quais duas áreas, respectivamente?",
+          "opcoes": [
+            "História e Geografia.",
+            "Teologia e Ética.",
+            "Ciência e Arte.",
+            "Matemática e Música."
+          ],
+          "respostaCorreta": "Teologia e Ética."
+        }
+      ]
+    },
+    {
+      "id": "westminster_quiz_4",
+      "capitulo": "Pergunta 4: Que é Deus?",
+      "perguntas": [
+        {
+          "pergunta": "De acordo com a Pergunta 4 do Breve Catecismo, qual é a natureza essencial de Deus que O torna imaterial e invisível?",
+          "opcoes": [
+            "Deus é Fogo.",
+            "Deus é Espírito.",
+            "Deus é Luz.",
+            "Deus é Amor."
+          ],
+          "respostaCorreta": "Deus é Espírito."
+        },
+        {
+          "pergunta": "O atributo de Deus de ser 'infinito' significa que Ele tem limites em Seu ser e perfeições.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual dos seguintes atributos de Deus é considerado 'imutável' no Breve Catecismo?",
+          "opcoes": [
+            "Sua criação do universo.",
+            "Seu relacionamento com o homem.",
+            "Seu ser, sabedoria e poder.",
+            "Sua forma física, que nunca muda."
+          ],
+          "respostaCorreta": "Seu ser, sabedoria e poder."
+        },
+        {
+          "pergunta": "Deus é 'eterno' significa que Ele teve um começo, mas não terá um fim.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual dos versículos bíblicos citados para o atributo de 'Santidade' nos chama a ser santos porque Deus é santo?",
+          "opcoes": [
+            "João 4:24",
+            "Salmos 147:5",
+            "1 Pedro 1:15-16",
+            "Malaquias 3:6"
+          ],
+          "respostaCorreta": "1 Pedro 1:15-16"
+        },
+        {
+          "pergunta": "A 'bondade' de Deus, conforme o Catecismo, é ilustrada por Ele ser a própria Verdade e fiel em Suas promessas.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual atributo de Deus é evidenciado em Romanos 11:33, que fala da 'Ó profundidade das riquezas, tanto da sabedoria, como do conhecimento de Deus!'?",
+          "opcoes": [
+            "Poder",
+            "Justiça",
+            "Sabedoria",
+            "Bondade"
+          ],
+          "respostaCorreta": "Sabedoria"
+        }
+      ]
+    },
+    {
+      "id": "westminster_quiz_5",
+      "capitulo": "Pergunta 5: Há mais de um Deus?",
+      "perguntas": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, qual é a resposta para a pergunta 'Há mais de um Deus?'",
+          "opcoes": [
+            "Sim, há muitos deuses menores.",
+            "Não, há um só Deus.",
+            "Depende da cultura ou religião.",
+            "A Bíblia não especifica a quantidade de deuses."
+          ],
+          "respostaCorreta": "Não, há um só Deus."
+        },
+        {
+          "pergunta": "A doutrina de que há um só Deus é conhecida como politeísmo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico é central para a declaração de que 'O Senhor nosso Deus é o único Senhor' no Antigo Testamento?",
+          "opcoes": [
+            "João 17:3",
+            "Isaías 45:5",
+            "Deuteronômio 6:4",
+            "1 Coríntios 8:4"
+          ],
+          "respostaCorreta": "Deuteronômio 6:4"
+        },
+        {
+          "pergunta": "O Breve Catecismo descreve o único Deus como 'morto e inativo', em contraste com os ídolos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual o significado da expressão 'Deus vivo e verdadeiro' na resposta da Pergunta 5?",
+          "opcoes": [
+            "Que Ele é apenas um conceito filosófico.",
+            "Que Ele é um ser ativo, pessoal, que interage e cuja verdade é absoluta.",
+            "Que Ele é um deus local, adorado por um povo específico.",
+            "Que Ele é um espírito, mas não uma pessoa."
+          ],
+          "respostaCorreta": "Que Ele é um ser ativo, pessoal, que interage e cuja verdade é absoluta."
+        },
+        {
+          "pergunta": "De acordo com 1 Tessalonicenses 1:9, os crentes de Tessalônica se converteram dos ídolos para servir a 'muitos deuses poderosos'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "A doutrina de que há um só Deus é a base para qual aspecto da adoração cristã?",
+          "opcoes": [
+            "A pluralidade de rituais e cerimônias.",
+            "A devoção exclusiva a Ele.",
+            "A adoração de santos e anjos.",
+            "A adaptação da fé a diferentes culturas sem distinção."
+          ],
+          "respostaCorreta": "A devoção exclusiva a Ele."
+        }
+      ]
+    },
+    {
+      "id": "westminster_quiz_6",
+      "capitulo": "Pergunta 6: Quantas pessoas há na Divindade?",
+      "perguntas": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, quantas pessoas há na Divindade?",
+          "opcoes": [
+            "Uma pessoa.",
+            "Duas pessoas.",
+            "Três pessoas.",
+            "Inúmeras pessoas."
+          ],
+          "respostaCorreta": "Três pessoas."
+        },
+        {
+          "pergunta": "A doutrina da Trindade afirma que o Pai, o Filho e o Espírito Santo são três deuses distintos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico é frequentemente citado para mostrar a Trindade presente no mandamento do batismo?",
+          "opcoes": [
+            "João 10:30",
+            "Mateus 28:19",
+            "2 Coríntios 13:14",
+            "Deuteronômio 6:4"
+          ],
+          "respostaCorreta": "Mateus 28:19"
+        },
+        {
+          "pergunta": "O Breve Catecismo ensina que o Pai, o Filho e o Espírito Santo são iguais em substância, mas diferem em poder e glória.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual atributo do Filho (Jesus Cristo) é destacado em Filipenses 2:6, indicando Sua igualdade com Deus?",
+          "opcoes": [
+            "Ser um grande profeta.",
+            "Ser o mais sábio dos homens.",
+            "Ser em forma de Deus e não ter por usurpação ser igual a Deus.",
+            "Ser o criador de todos os anjos."
+          ],
+          "respostaCorreta": "Ser em forma de Deus e não ter por usurpação ser igual a Deus."
+        },
+        {
+          "pergunta": "Atos 5:3-4 mostra a divindade do Espírito Santo ao indicar que mentir ao Espírito Santo é mentir a Deus.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Apesar de haver três Pessoas na Divindade, a Bíblia continua a proclamar que há 'um só Deus', como visto em qual versículo fundamental?",
+          "opcoes": [
+            "João 14:16",
+            "Colossenses 2:9",
+            "Deuteronômio 6:4",
+            "2 Coríntios 13:14"
+          ],
+          "respostaCorreta": "Deuteronômio 6:4"
+        }
+      ]
+    },
+    {
+      "id": "westminster_quiz_7",
+      "capitulo": "Pergunta 7: Que são os decretos de Deus?",
+      "perguntas": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, o que são os decretos de Deus?",
+          "opcoes": [
+            "Decisões que Deus toma de tempos em tempos em resposta a eventos no mundo.",
+            "Seu eterno propósito segundo o conselho da sua vontade.",
+            "As leis naturais que governam o universo, criadas pelos cientistas.",
+            "Sugestões divinas para a humanidade seguir, mas que podem ser alteradas."
+          ],
+          "respostaCorreta": "Seu eterno propósito segundo o conselho da sua vontade."
+        },
+        {
+          "pergunta": "Os decretos de Deus são temporais e foram estabelecidos apenas após a criação do mundo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual o alcance da preordenação de Deus, segundo o Catecismo e Daniel 4:35?",
+          "opcoes": [
+            "Apenas os eventos que afetam a igreja.",
+            "Somente as grandes decisões dos líderes mundiais.",
+            "Tudo o que acontece (todas as suas criaturas e todas as suas ações).",
+            "Apenas as coisas que são moralmente boas."
+          ],
+          "respostaCorreta": "Tudo o que acontece (todas as suas criaturas e todas as suas ações)."
+        },
+        {
+          "pergunta": "A doutrina dos decretos de Deus implica que a responsabilidade humana é anulada, pois tudo já está preordenado.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual é o propósito final pelo qual Deus preordenou tudo o que acontece, conforme o Catecismo e Romanos 11:36?",
+          "opcoes": [
+            "Para a felicidade eterna do homem.",
+            "Para testar a fé da humanidade.",
+            "Para sua própria glória.",
+            "Para estabelecer um reino terreno perfeito."
+          ],
+          "respostaCorreta": "Para sua própria glória."
+        },
+        {
+          "pergunta": "Isaías 46:10 demonstra o poder de Deus ao afirmar que Ele anuncia o fim desde o princípio e que Sua vontade será firme.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Os decretos de Deus são fruto do 'conselho da sua vontade'. O que isso implica sobre a origem desses decretos?",
+          "opcoes": [
+            "Que são resultado de um debate entre várias divindades.",
+            "Que são baseados nas escolhas e desejos humanos.",
+            "Que procedem unicamente de Sua própria sabedoria e livre arbítrio.",
+            "Que são respostas divinas a eventos imprevistos."
+          ],
+          "respostaCorreta": "Que procedem unicamente de Sua própria sabedoria e livre arbítrio."
+        }
+      ]
+    },
+    {
+      "id": "westminster_quiz_8",
+      "capitulo": "Pergunta 8: Como Deus executa os seus decretos?",
+      "perguntas": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, quais são as duas obras principais pelas quais Deus executa os seus decretos?",
+          "opcoes": [
+            "Milagres e intervenções diretas.",
+            "A oração e o louvor do homem.",
+            "A criação e a providência.",
+            "A pregação da Palavra e os sacramentos."
+          ],
+          "respostaCorreta": "A criação e a providência."
+        },
+        {
+          "pergunta": "A obra da criação refere-se ao cuidado contínuo de Deus em sustentar e governar todas as coisas após tê-las trazido à existência.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que até os cabelos da nossa cabeça estão contados, ilustrando o governo detalhado da providência de Deus?",
+          "opcoes": [
+            "Salmos 103:19",
+            "Gênesis 1:1",
+            "Mateus 10:29-30",
+            "Romanos 1:20"
+          ],
+          "respostaCorreta": "Mateus 10:29-30"
+        },
+        {
+          "pergunta": "Salmos 33:6 declara que 'Pela palavra do Senhor foram feitos os céus', o que apoia a ideia da criação de Deus pela Sua palavra e poder.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Verdadeiro"
+        },
+        {
+          "pergunta": "A providência de Deus garante que:",
+          "opcoes": [
+            "As coisas acontecem por acaso, e Deus as corrige depois.",
+            "Apenas os eventos grandes e importantes são controlados por Deus.",
+            "Deus continua a sustentar e governar todas as suas criaturas e todas as suas ações.",
+            "Os homens têm total autonomia e Deus não interfere."
+          ],
+          "respostaCorreta": "Deus continua a sustentar e governar todas as suas criaturas e todas as suas ações."
+        },
+        {
+          "pergunta": "A execução dos decretos de Deus é uma demonstração exclusiva de Seu poder, sem envolver Sua sabedoria ou fidelidade.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que 'Nele vivemos, e nos movemos, e existimos', reforçando a dependência contínua da criação em Deus?",
+          "opcoes": [
+            "Salmos 33:11",
+            "Atos 17:28",
+            "Isaías 46:11",
+            "Efésios 1:11"
+          ],
+          "respostaCorreta": "Atos 17:28"
+        }
+      ]
+    },
+    {
+      "id": "westminster_quiz_9",
+      "capitulo": "Pergunta 9: Qual é a obra da criação?",
+      "perguntas": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, a obra da criação é de Deus fazer todas as coisas:",
+          "opcoes": [
+            "Usando materiais pré-existentes.",
+            "Do nada, pela palavra do seu poder.",
+            "Com a ajuda de Seus anjos.",
+            "Através de um longo processo de evolução natural."
+          ],
+          "respostaCorreta": "Do nada, pela palavra do seu poder."
+        },
+        {
+          "pergunta": "Hebreus 11:3 ensina que os mundos foram criados a partir de algo que é visível e aparente.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Em quantos dias Deus completou a obra da criação, conforme o Breve Catecismo e Êxodo 20:11?",
+          "opcoes": [
+            "Sete dias, incluindo o descanso.",
+            "Seis dias.",
+            "Milhões de anos.",
+            "Um período indefinido de tempo."
+          ],
+          "respostaCorreta": "Seis dias."
+        },
+        {
+          "pergunta": "A frase 'E disse Deus: Haja...' em Gênesis 1 demonstra o poder da vontade de Deus, mas não de Sua palavra.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual foi a avaliação de Deus sobre a obra da criação ao final do sexto dia, conforme Gênesis 1:31?",
+          "opcoes": [
+            "Boa, mas com algumas imperfeições.",
+            "Aceitável, mas com potencial para melhorias.",
+            "Muito boa.",
+            "Incompleta e necessitando de mais tempo."
+          ],
+          "respostaCorreta": "Muito boa."
+        },
+        {
+          "pergunta": "A bondade original da criação implica que o mal e o pecado já existiam desde o início no mundo criado por Deus.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "O que Salmos 33:6 ('Pela palavra do Senhor foram feitos os céus...') enfatiza sobre o processo da criação?",
+          "opcoes": [
+            "A cooperação de diversas divindades.",
+            "A intervenção física direta de Deus com Suas mãos.",
+            "O poder e a autoridade da Sua palavra.",
+            "A necessidade de longos períodos de tempo para a formação."
+          ],
+          "respostaCorreta": "O poder e a autoridade da Sua palavra."
+        }
+      ]
+    },
+    {
+      "id": "westminster_quiz_10",
+      "capitulo": "Pergunta 10: Como Deus criou o homem?",
+      "perguntas": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, em qual distinção Deus criou o homem?",
+          "opcoes": [
+            "Alto e baixo.",
+            "Rico e pobre.",
+            "Macho e fêmea.",
+            "Inteligente e menos inteligente."
+          ],
+          "respostaCorreta": "Macho e fêmea."
+        },
+        {
+          "pergunta": "A 'imagem de Deus' no homem, segundo o Catecismo e as Escrituras, refere-se principalmente à semelhança física com o Criador.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Quais são os três atributos pelos quais a imagem de Deus no homem se manifesta, conforme a resposta da Pergunta 10?",
+          "opcoes": [
+            "Força, beleza e inteligência.",
+            "Conhecimento, justiça e santidade.",
+            "Riqueza, poder e fama.",
+            "Amor, paciência e bondade apenas."
+          ],
+          "respostaCorreta": "Conhecimento, justiça e santidade."
+        },
+        {
+          "pergunta": "O domínio que o homem recebeu sobre as criaturas (Gênesis 1:28) significa que ele pode abusar da criação como quiser, sem responsabilidade.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que Deus criou o homem 'macho e fêmea' e 'à sua imagem'?",
+          "opcoes": [
+            "Salmos 8:6",
+            "Gênesis 1:27",
+            "Colossenses 3:10",
+            "Gênesis 9:6"
+          ],
+          "respostaCorreta": "Gênesis 1:27"
+        },
+        {
+          "pergunta": "O estado original do homem criado por Deus era de imperfeição e inclinação ao pecado, que se aprimorou com o tempo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Salmos 8:6-8 corrobora a ideia de que o homem recebeu o quê sobre as obras das mãos de Deus?",
+          "opcoes": [
+            "Apenas o dever de admirá-las.",
+            "O dever de temê-las.",
+            "Domínio sobre elas.",
+            "O privilégio de ser igual a elas."
+          ],
+          "respostaCorreta": "Domínio sobre elas."
+        }
+      ]
+    },
+    {
+      "id": "westminster_quiz_11",
+      "capitulo": "Pergunta 11: Quais são as obras da providência de Deus?",
+      "perguntas": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, quais são as obras da providência de Deus?",
+          "opcoes": [
+            "A sua mui santa, sábia e poderosa maneira de preservar e governar todas as suas criaturas e todas as suas ações.",
+            "A sua intervenção ocasional em milagres e prodígios.",
+            "A sua criação original do universo, mas sem envolvimento contínuo.",
+            "A sua permissão para que as coisas aconteçam sem controle direto."
+          ],
+          "respostaCorreta": "A sua mui santa, sábia e poderosa maneira de preservar e governar todas as suas criaturas e todas as suas ações."
+        },
+        {
+          "pergunta": "Quando o Catecismo descreve a providência de Deus como 'mui santa', isso se refere ao Seu poder ilimitado em governar todas as coisas.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico é citado para ilustrar o cuidado detalhado de Deus, afirmando que até os passarinhos e os cabelos da cabeça estão sob Sua vontade?",
+          "opcoes": [
+            "Salmos 103:19",
+            "Neemias 9:6",
+            "Mateus 10:29-30",
+            "Romanos 8:28"
+          ],
+          "respostaCorreta": "Mateus 10:29-30"
+        },
+        {
+          "pergunta": "A obra da providência de Deus se limita a preservar as Suas criaturas, sem interferir em suas ações.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "O que Salmos 104:24 ('Ó Senhor, quão variadas são as tuas obras! Todas as coisas fizeste com sabedoria;') ressalta sobre a maneira da providência de Deus?",
+          "opcoes": [
+            "Sua santidade.",
+            "Seu poder.",
+            "Sua sabedoria.",
+            "Sua bondade."
+          ],
+          "respostaCorreta": "Sua sabedoria."
+        },
+        {
+          "pergunta": "Romanos 8:28 sugere que todas as coisas contribuem para o bem daqueles que amam a Deus porque os eventos são aleatórios e eles os aproveitam.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "respostaCorreta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que Deus 'sustenta todas as coisas pela palavra do seu poder', enfatizando o aspecto 'poderosa' da providência?",
+          "opcoes": [
+            "Salmos 145:17",
+            "Neemias 9:6",
+            "Hebreus 1:3",
+            "Provérbios 16:33"
+          ],
+          "respostaCorreta": "Hebreus 1:3"
+        }
+      ]
+    }
+  ]
+}

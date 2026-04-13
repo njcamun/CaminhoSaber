@@ -1,0 +1,2974 @@
+{
+  "quizzes": {
+    "Língua Portuguesa": {
+      "Capítulo 1 - Fonética e Fonologia": [
+        {
+          "pergunta": "Qual a principal diferença entre Fonética e Fonologia?",
+          "opcoes": [
+            "Fonética estuda a gramática, Fonologia estuda a ortografia.",
+            "Fonética estuda a produção física dos sons da fala; Fonologia estuda a função distintiva dos fonemas no sistema da língua.",
+            "Fonética estuda a escrita; Fonologia estuda a leitura.",
+            "Ambas estudam sinônimos e antônimos."
+          ],
+          "resposta_correta": "Fonética estuda a produção física dos sons da fala; Fonologia estuda a função distintiva dos fonemas no sistema da língua."
+        },
+        {
+          "pergunta": "Em Língua Portuguesa, o número de letras em uma palavra é sempre igual ao número de fonemas.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na palavra 'CHAPÉU', quantos fonemas e quantas letras há, respectivamente?",
+          "opcoes": [
+            "6 letras, 6 fonemas",
+            "6 letras, 5 fonemas",
+            "5 letras, 5 fonemas",
+            "5 letras, 4 fonemas"
+          ],
+          "resposta_correta": "6 letras, 5 fonemas"
+        },
+        {
+          "pergunta": "Em Língua Portuguesa, toda sílaba deve conter, obrigatoriamente, pelo menos uma vogal.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual das palavras abaixo apresenta um ditongo crescente?",
+          "opcoes": [
+            "SAÚDE",
+            "PAI",
+            "ÁGUA",
+            "DOEU"
+          ],
+          "resposta_correta": "ÁGUA"
+        },
+        {
+          "pergunta": "Os dígrafos 'RR' e 'SS' devem ser separados na divisão silábica (Ex: car-ro, pas-sar).",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Na palavra 'EXATO', o 'X' representa qual fonema?",
+          "opcoes": [
+            "/ʃ/ (som de 'ch')",
+            "/s/",
+            "/ks/",
+            "/z/"
+          ],
+          "resposta_correta": "/z/"
+        }
+      ],
+      "Capítulo 2 - Morfologia: Estrutura e Formação das Palavras": [
+        {
+          "pergunta": "Qual é o morfema que contém o significado básico da palavra e é a parte invariável que se repete em palavras da mesma família?",
+          "opcoes": [
+            "Prefixo",
+            "Sufixo",
+            "Desinência",
+            "Radical"
+          ],
+          "resposta_correta": "Radical"
+        },
+        {
+          "pergunta": "A vogal temática tem como principal função indicar o gênero (masculino/feminino) das palavras.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na palavra 'INFELIZMENTE', quais elementos mórficos podem ser identificados, na ordem de leitura?",
+          "opcoes": [
+            "Radical + Sufixo + Sufixo",
+            "Prefixo + Radical + Desinência",
+            "Prefixo + Radical + Sufixo",
+            "Radical + Prefixo + Sufixo"
+          ],
+          "resposta_correta": "Prefixo + Radical + Sufixo"
+        },
+        {
+          "pergunta": "No processo de formação de palavras por justaposição, os radicais se unem com perda de fonemas.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "A palavra 'EMPOBRECER' é formada pelo processo de:",
+          "opcoes": [
+            "Derivação Sufixal",
+            "Composição por Aglutinação",
+            "Derivação Parassintética",
+            "Derivação Regressiva"
+          ],
+          "resposta_correta": "Derivação Parassintética"
+        },
+        {
+          "pergunta": "Na derivação imprópria (ou conversão), a palavra muda de classe gramatical, mas mantém sua forma original.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual das alternativas abaixo apresenta um exemplo de composição por aglutinação?",
+          "opcoes": [
+            "Beija-flor",
+            "Couve-flor",
+            "Pé de moleque",
+            "Planalto"
+          ],
+          "resposta_correta": "Planalto"
+        }
+      ],
+      "Capítulo 3 - Sintaxe: A Organização das Frases e Orações": [
+        {
+          "pergunta": "Qual das alternativas abaixo apresenta uma Frase Nominal?",
+          "opcoes": [
+            "Amanhã choverá.",
+            "Que belo dia!",
+            "Os pássaros cantam.",
+            "Ele comprou um livro."
+          ],
+          "resposta_correta": "Que belo dia!"
+        },
+        {
+          "pergunta": "O predicado de uma oração é tudo aquilo que se declara sobre o sujeito.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Na oração 'Necessita-se de bons profissionais.', o sujeito é classificado como:",
+          "opcoes": [
+            "Sujeito Simples",
+            "Sujeito Composto",
+            "Oração sem Sujeito",
+            "Sujeito Indeterminado"
+          ],
+          "resposta_correta": "Sujeito Indeterminado"
+        },
+        {
+          "pergunta": "No predicado nominal, o núcleo é sempre um verbo de ação.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Ele comprou um livro novo.', o termo 'um livro novo' exerce a função sintática de:",
+          "opcoes": [
+            "Objeto Indireto",
+            "Complemento Nominal",
+            "Objeto Direto",
+            "Adjunto Adnominal"
+          ],
+          "resposta_correta": "Objeto Direto"
+        },
+        {
+          "pergunta": "Em 'João, o melhor aluno, passou de ano.', o termo 'o melhor aluno' é um vocativo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na oração 'Eles chegaram atrasados.', o predicado é classificado como:",
+          "opcoes": [
+            "Predicado Verbal",
+            "Predicado Nominal",
+            "Predicado Verbo-Nominal",
+            "Oração sem sujeito"
+          ],
+          "resposta_correta": "Predicado Verbo-Nominal"
+        }
+      ],
+      "Capítulo 4: Classes de Palavras (Classes Gramaticais)": [
+        {
+          "pergunta": "Qual das seguintes classes de palavras é considerada invariável, ou seja, não sofre flexão em gênero, número, tempo, etc.?",
+          "opcoes": [
+            "Substantivo",
+            "Verbo",
+            "Advérbio",
+            "Adjetivo"
+          ],
+          "resposta_correta": "Advérbio"
+        },
+        {
+          "pergunta": "O artigo sempre precede o substantivo e pode ser classificado como definido ou indefinido.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Na frase 'Ela está MUITO feliz com a notícia.', a palavra em destaque ('MUITO') é um(a):",
+          "opcoes": [
+            "Adjetivo",
+            "Pronome",
+            "Advérbio de intensidade",
+            "Numeral"
+          ],
+          "resposta_correta": "Advérbio de intensidade"
+        },
+        {
+          "pergunta": "Verbos indicam apenas ações; eles nunca expressam estados ou fenômenos da natureza.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual das seguintes palavras é um Substantivo Abstrato?",
+          "opcoes": [
+            "Cadeira",
+            "Amor",
+            "Árvore",
+            "Computador"
+          ],
+          "resposta_correta": "Amor"
+        },
+        {
+          "pergunta": "Um pronome pessoal do caso reto (ex: eu, tu, ele) tem como principal função substituir o nome de quem fala, com quem se fala ou de quem se fala, funcionando como sujeito da oração.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Na frase 'Ele estuda MUITO E trabalha.', a palavra em destaque ('E') é um(a):",
+          "opcoes": [
+            "Preposição",
+            "Advérbio",
+            "Conjunção coordenativa",
+            "Interjeição"
+          ],
+          "resposta_correta": "Conjunção coordenativa"
+        }
+      ],
+      "Capítulo 5 - Substantivo: O Nome das Coisas": [
+        {
+          "pergunta": "Qual das alternativas apresenta um substantivo PRÓPRIO?",
+          "opcoes": [
+            "cachorro",
+            "rio",
+            "Brasil",
+            "mesa"
+          ],
+          "resposta_correta": "Brasil"
+        },
+        {
+          "pergunta": "A palavra 'amor' é um substantivo concreto, pois podemos senti-lo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "A palavra 'guarda-chuva' é classificada como um substantivo:",
+          "opcoes": [
+            "Simples",
+            "Primitivo",
+            "Composto",
+            "Abstrato"
+          ],
+          "resposta_correta": "Composto"
+        },
+        {
+          "pergunta": "Substantivos epicenos se referem a pessoas e sua distinção de gênero é feita pelo artigo (Ex: o dentista / a dentista).",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "O plural correto do substantivo composto 'flor-do-campo' é:",
+          "opcoes": [
+            "flores-do-campo",
+            "flor-dos-campos",
+            "flores-dos-campos",
+            "flor-do-campo (invariável)"
+          ],
+          "resposta_correta": "flores-do-campo"
+        },
+        {
+          "pergunta": "O grau aumentativo e diminutivo de um substantivo pode ser formado apenas pela adição de sufixos (grau sintético), sem o uso de adjetivos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual das alternativas apresenta um substantivo COLETIVO?",
+          "opcoes": [
+            "bando",
+            "passarinho",
+            "pássaro",
+            "voo"
+          ],
+          "resposta_correta": "bando"
+        }
+      ],
+      "Capítulo 6 - Adjetivo: A Cor das Palavras": [
+        {
+          "pergunta": "Qual das alternativas contém um adjetivo composto?",
+          "opcoes": [
+            "Inteligente",
+            "Brasileiro",
+            "Verde-escuro",
+            "Veloz"
+          ],
+          "resposta_correta": "Verde-escuro"
+        },
+        {
+          "pergunta": "A locução adjetiva 'de mãe' (em 'amor de mãe') tem o mesmo valor de um adjetivo primitivo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Ele é O MENOS preocupado da equipe.', o adjetivo está no grau:",
+          "opcoes": [
+            "Comparativo de inferioridade",
+            "Superlativo absoluto analítico",
+            "Superlativo relativo de inferioridade",
+            "Superlativo relativo de superioridade"
+          ],
+          "resposta_correta": "Superlativo relativo de inferioridade"
+        },
+        {
+          "pergunta": "O adjetivo 'feliz' é biforme, ou seja, possui uma forma para o masculino e outra para o feminino (feliz / feliza).",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Assinale a alternativa em que a flexão de número do adjetivo composto está CORRETA:",
+          "opcoes": [
+            "Olhos azul-claros.",
+            "Carros verde-escuros.",
+            "Blusas rosa-claras.",
+            "Saias verde-esmeraldas."
+          ],
+          "resposta_correta": "Olhos azul-claros."
+        },
+        {
+          "pergunta": "O adjetivo 'pior' é uma forma de grau comparativo de superioridade irregular de 'mau'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual das opções representa um adjetivo pátrio (gentílico)?",
+          "opcoes": [
+            "Curioso",
+            "Carioca",
+            "Complicado",
+            "Comprido"
+          ],
+          "resposta_correta": "Carioca"
+        }
+      ],
+      "Capítulo 7 - Artigo: O Companheiro do Substantivo": [
+        {
+          "pergunta": "Em qual das frases o artigo 'o' está sendo usado para substantivar outra classe de palavra?",
+          "opcoes": [
+            "O carro é novo.",
+            "O azul é a minha cor favorita.",
+            "Ele comprou o livro que queria.",
+            "O menino brinca no quintal."
+          ],
+          "resposta_correta": "O azul é a minha cor favorita."
+        },
+        {
+          "pergunta": "Artigos indefinidos (um, uma, uns, umas) são usados para indicar um ser específico e conhecido.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual alternativa apresenta a contração correta da preposição 'em' com o artigo 'a' no plural?",
+          "opcoes": [
+            "pelas",
+            "das",
+            "nas",
+            "às"
+          ],
+          "resposta_correta": "nas"
+        },
+        {
+          "pergunta": "O uso do artigo antes de nomes próprios de pessoas é sempre obrigatório na Língua Portuguesa formal.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Ele tem UMA coragem!', o artigo em destaque ('UMA') expressa:",
+          "opcoes": [
+            "Indeterminação.",
+            "Especificidade.",
+            "Ênfase ou admiração.",
+            "Quantidade exata."
+          ],
+          "resposta_correta": "Ênfase ou admiração."
+        },
+        {
+          "pergunta": "A contração da preposição 'a' com o artigo 'a' (resultando em 'à') ocorre quando o 'a' é meramente um artigo feminino.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual das alternativas abaixo NÃO se encaixa em uma situação de uso proibido do artigo?",
+          "opcoes": [
+            "Vossa Excelência o Presidente.",
+            "Comprei os livros.",
+            "Ele é o cujo carro quebrou.",
+            "Chegaram os alunos."
+          ],
+          "resposta_correta": "Comprei os livros."
+        }
+      ],
+      "Capítulo 8 - Numeral: A Precisão da Quantidade": [
+        {
+          "pergunta": "Qual das seguintes frases utiliza um numeral CARDINAL?",
+          "opcoes": [
+            "Ele mora no segundo andar.",
+            "Li a metade do livro.",
+            "Comprei dois livros.",
+            "Recebemos o triplo de pontos."
+          ],
+          "resposta_correta": "Comprei dois livros."
+        },
+        {
+          "pergunta": "Numerais ordinais como 'primeiro' e 'décimo' flexionam em gênero e número.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual o numeral adequado para a leitura de 'Papa João XXIII'?",
+          "opcoes": [
+            "Vigésimo terceiro.",
+            "Vinte e três.",
+            "Vigésimo terceiro ou vinte e três (ambos corretos).",
+            "Vinte e três avos."
+          ],
+          "resposta_correta": "Vinte e três."
+        },
+        {
+          "pergunta": "O numeral 'ambos' é uma forma de numeral coletivo e é sempre invariável.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Ele comeu DOIS TERÇOS da torta.', o numeral em destaque é classificado como:",
+          "opcoes": [
+            "Cardinal",
+            "Ordinal",
+            "Multiplicativo",
+            "Fracionário"
+          ],
+          "resposta_correta": "Fracionário"
+        },
+        {
+          "pergunta": "Os numerais multiplicativos como 'dobro' e 'triplo' são sempre invariáveis, sem exceção.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Para a designação de capítulos de um livro (ex: Capítulo X), qual tipo de numeral deve ser usado para números até o 9º, e qual para números a partir do 10º?",
+          "opcoes": [
+            "Cardinal até o 9º, ordinal a partir do 10º.",
+            "Ordinal até o 9º, cardinal a partir do 10º.",
+            "Sempre ordinal.",
+            "Sempre cardinal."
+          ],
+          "resposta_correta": "Ordinal até o 9º, cardinal a partir do 10º."
+        }
+      ],
+      "Capítulo 9 - Pronome: O Substituto e o Acompanhante do Nome": [
+        {
+          "pergunta": "Na frase 'Ele deu-ME o livro.', a palavra 'ME' é classificada como:",
+          "opcoes": [
+            "Pronome pessoal do caso reto",
+            "Pronome possessivo",
+            "Pronome pessoal oblíquo átono",
+            "Pronome demonstrativo"
+          ],
+          "resposta_correta": "Pronome pessoal oblíquo átono"
+        },
+        {
+          "pergunta": "Na Língua Portuguesa do Brasil, a próclise (pronome antes do verbo) é a colocação pronominal mais comum e muitas vezes obrigatória.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual das frases a seguir apresenta um pronome demonstrativo com função de situar algo no tempo presente?",
+          "opcoes": [
+            "Aquele dia foi inesquecível.",
+            "Eu me lembro desse tempo passado.",
+            "Esta semana está agitada.",
+            "Isso que você disse foi importante."
+          ],
+          "resposta_correta": "Esta semana está agitada."
+        },
+        {
+          "pergunta": "O pronome relativo 'onde' pode ser usado livremente para se referir a qualquer antecedente, mesmo que não seja um lugar.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'As crianças, CUJOS pais viajaram, ficaram com os avós.', o pronome em destaque é classificado como:",
+          "opcoes": [
+            "Pronome pessoal",
+            "Pronome interrogativo",
+            "Pronome relativo",
+            "Pronome indefinido"
+          ],
+          "resposta_correta": "Pronome relativo"
+        },
+        {
+          "pergunta": "Na frase 'Vi ela na rua.', a colocação pronominal está correta de acordo com a norma culta.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual a diferença de função entre os pronomes oblíquos átonos 'O/A' (e seus plurais) e 'LHE/LHES'?",
+          "opcoes": [
+            "'O/A' indicam posse, 'LHE/LHES' indicam quantidade.",
+            "'O/A' são objetos diretos, 'LHE/LHES' são objetos indiretos.",
+            "'O/A' são sujeitos, 'LHE/LHES' são complementos nominais.",
+            "Não há diferença de função; são intercambiáveis."
+          ],
+          "resposta_correta": "'O/A' são objetos diretos, 'LHE/LHES' são objetos indiretos."
+        }
+      ],
+      "Capítulo 10 - Verbo: O Coração da Oração": [
+        {
+          "pergunta": "Na frase 'O bebê dormiu tranquilamente.', o verbo 'dormiu' é classificado, quanto à predicação, como:",
+          "opcoes": [
+            "Transitivo Direto",
+            "Transitivo Indireto",
+            "Intransitivo",
+            "De Ligação"
+          ],
+          "resposta_correta": "Intransitivo"
+        },
+        {
+          "pergunta": "Verbos anômalos são aqueles que não possuem todas as flexões, ou seja, têm conjugação incompleta.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Em qual das alternativas o verbo está flexionado no MODO SUBJUNTIVO?",
+          "opcoes": [
+            "Eu estudo todos os dias.",
+            "Estude para o exame!",
+            "Se ele estudasse, passaria de ano.",
+            "Nós estudamos a lição."
+          ],
+          "resposta_correta": "Se ele estudasse, passaria de ano."
+        },
+        {
+          "pergunta": "No futuro do pretérito, o verbo indica uma ação futura em relação a um momento passado ou uma incerteza.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual das frases está na VOZ PASSIVA ANALÍTICA?",
+          "opcoes": [
+            "O aluno leu o livro.",
+            "O livro foi lido pelo aluno.",
+            "Leu-se o livro.",
+            "O aluno se preparou."
+          ],
+          "resposta_correta": "O livro foi lido pelo aluno."
+        },
+        {
+          "pergunta": "O gerúndio é uma forma nominal do verbo que termina em '-ndo' e pode ter valor de advérbio ou adjetivo, indicando uma ação em andamento.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Na frase 'Ele entregou o presente À MÃE.', o verbo 'entregou' é classificado, quanto à predicação, como:",
+          "opcoes": [
+            "Transitivo Direto",
+            "Transitivo Indireto",
+            "Transitivo Direto e Indireto",
+            "De Ligação"
+          ],
+          "resposta_correta": "Transitivo Direto e Indireto"
+        }
+      ],
+      "Capítulo 11 - Advérbio: Detalhando a Ação": [
+        {
+          "pergunta": "Qual das alternativas contém um advérbio de MODO?",
+          "opcoes": [
+            "Ontem",
+            "Longe",
+            "Rapidamente",
+            "Muito"
+          ],
+          "resposta_correta": "Rapidamente"
+        },
+        {
+          "pergunta": "A locução adverbial 'em breve' é classificada como locução adverbial de lugar.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Ele fala BEM demais.', o advérbio 'BEM' está no grau:",
+          "opcoes": [
+            "Comparativo de inferioridade",
+            "Superlativo absoluto sintético",
+            "Superlativo absoluto analítico",
+            "Comparativo de superioridade"
+          ],
+          "resposta_correta": "Superlativo absoluto analítico"
+        },
+        {
+          "pergunta": "Advérbios são palavras invariáveis, ou seja, não sofrem flexão em gênero, número ou grau.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual das opções abaixo apresenta um advérbio de AFIRMAÇÃO?",
+          "opcoes": [
+            "Talvez",
+            "Não",
+            "Certamente",
+            "Nunca"
+          ],
+          "resposta_correta": "Certamente"
+        },
+        {
+          "pergunta": "Os advérbios modificam apenas verbos, não podendo modificar adjetivos ou outros advérbios.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Ela está MUITO cansada.', a palavra 'MUITO' é um advérbio de:",
+          "opcoes": [
+            "Tempo",
+            "Modo",
+            "Intensidade",
+            "Lugar"
+          ],
+          "resposta_correta": "Intensidade"
+        }
+      ],
+      "Capítulo 12 - Preposição: As Pontes entre as Palavras": [
+        {
+          "pergunta": "Qual das alternativas contém uma preposição essencial?",
+          "opcoes": [
+            "Conforme",
+            "Durante",
+            "Contra",
+            "Segundo"
+          ],
+          "resposta_correta": "Contra"
+        },
+        {
+          "pergunta": "Na frase 'Ele viajou PARA Paris.', a preposição 'para' expressa uma relação de tempo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "A união da preposição 'DE' com o artigo 'OS' resulta na contração:",
+          "opcoes": [
+            "nos",
+            "pelos",
+            "dos",
+            "aos"
+          ],
+          "resposta_correta": "dos"
+        },
+        {
+          "pergunta": "A preposição é uma palavra variável, que se flexiona em gênero e número para concordar com os termos que liga.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Cortou o pão COM a faca.', a preposição 'com' estabelece uma relação de:",
+          "opcoes": [
+            "Causa",
+            "Companhia",
+            "Instrumento",
+            "Modo"
+          ],
+          "resposta_correta": "Instrumento"
+        },
+        {
+          "pergunta": "A expressão 'à noite' é um exemplo de locução adverbial que contém uma preposição.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Em qual situação 'segundo' funciona como preposição acidental?",
+          "opcoes": [
+            "Ele foi o segundo a chegar.",
+            "Segundo a lei, todos são iguais.",
+            "Marquei um segundo encontro.",
+            "Ele seguiu o segundo carro."
+          ],
+          "resposta_correta": "Segundo a lei, todos são iguais."
+        }
+      ],
+      "Capítulo 13 - Conjunção: Os Conectores de Orações": [
+        {
+          "pergunta": "Na frase 'Ele estudou muito, MAS não passou.', a conjunção em destaque é classificada como:",
+          "opcoes": [
+            "Aditiva",
+            "Alternativa",
+            "Adversativa",
+            "Conclusiva"
+          ],
+          "resposta_correta": "Adversativa"
+        },
+        {
+          "pergunta": "Conjunções coordenativas ligam orações que são sintaticamente dependentes uma da outra.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual das alternativas contém uma conjunção subordinativa TEMPORAL?",
+          "opcoes": [
+            "Embora",
+            "Porque",
+            "Quando",
+            "Se"
+          ],
+          "resposta_correta": "Quando"
+        },
+        {
+          "pergunta": "A locução conjuntiva 'a fim de que' expressa uma ideia de causa.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'É necessário QUE ele venha.', a conjunção em destaque é classificada como:",
+          "opcoes": [
+            "Coordenativa explicativa",
+            "Subordinativa integrante",
+            "Subordinativa causal",
+            "Coordenativa conclusiva"
+          ],
+          "resposta_correta": "Subordinativa integrante"
+        },
+        {
+          "pergunta": "Geralmente, a vírgula é utilizada para separar orações coordenadas, exceto quando ligadas pela conjunção aditiva 'e' com sujeitos iguais.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual das frases utiliza uma conjunção subordinativa que expressa condição?",
+          "opcoes": [
+            "Ele estudou tanto, QUE passou no exame.",
+            "EMBORA estivesse doente, foi trabalhar.",
+            "SE chover, não irei à praia.",
+            "Visto QUE chovia, fiquei em casa."
+          ],
+          "resposta_correta": "SE chover, não irei à praia."
+        }
+      ],
+      "Capítulo 14 - Interjeição: A Expressão Instantânea de Sentimentos": [
+        {
+          "pergunta": "Qual das seguintes frases contém uma interjeição?",
+          "opcoes": [
+            "Ele canta bem.",
+            "Que dia lindo!",
+            "Oba! Conseguimos!",
+            "A casa é grande."
+          ],
+          "resposta_correta": "Oba! Conseguimos!"
+        },
+        {
+          "pergunta": "A interjeição é uma palavra variável que se flexiona para concordar com o sujeito da oração.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Ai de mim!', a expressão em destaque é classificada como:",
+          "opcoes": [
+            "Interjeição de dor",
+            "Locução interjetiva",
+            "Advérbio de intensidade",
+            "Conjunção exclamativa"
+          ],
+          "resposta_correta": "Locução interjetiva"
+        },
+        {
+          "pergunta": "O sentido de uma interjeição é sempre o mesmo, independentemente da entonação ou do contexto.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual interjeição é comumente usada para expressar surpresa ou espanto?",
+          "opcoes": [
+            "Psiu!",
+            "Oba!",
+            "Uau!",
+            "Adeus!"
+          ],
+          "resposta_correta": "Uau!"
+        },
+        {
+          "pergunta": "Após uma interjeição que expressa uma emoção forte, geralmente usamos um ponto de exclamação (!).",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "A interjeição 'Psiu!' é classificada como interjeição de:",
+          "opcoes": [
+            "Alegria",
+            "Advertência",
+            "Silêncio",
+            "Dor"
+          ],
+          "resposta_correta": "Silêncio"
+        }
+      ],
+      "Capítulo 15 - Sintaxe de Período Composto: Conectando Ideias Complexas": [
+        {
+          "pergunta": "Na frase 'Ele chegou e saiu rapidamente.', as orações são coordenadas:",
+          "opcoes": [
+            "Adversativas",
+            "Alternativas",
+            "Aditivas",
+            "Conclusivas"
+          ],
+          "resposta_correta": "Aditivas"
+        },
+        {
+          "pergunta": "Orações subordinadas são sintaticamente independentes da oração principal.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'É necessário QUE VOCÊ VENHA.', a oração em destaque é classificada como oração subordinada substantiva:",
+          "opcoes": [
+            "Objetiva Direta",
+            "Objetiva Indireta",
+            "Subjetiva",
+            "Completiva Nominal"
+          ],
+          "resposta_correta": "Subjetiva"
+        },
+        {
+          "pergunta": "Orações subordinadas adjetivas restritivas são sempre separadas por vírgulas.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Embora chovesse, fomos ao parque.', a oração 'Embora chovesse' é classificada como oração subordinada adverbial:",
+          "opcoes": [
+            "Temporal",
+            "Causal",
+            "Concessiva",
+            "Condicional"
+          ],
+          "resposta_correta": "Concessiva"
+        },
+        {
+          "pergunta": "Um período composto por coordenação contém apenas uma oração, que é o período simples.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o tipo de oração subordinada adverbial que expressa uma finalidade ou objetivo?",
+          "opcoes": [
+            "Proporcional",
+            "Final",
+            "Conformativa",
+            "Consecutiva"
+          ],
+          "resposta_correta": "Final"
+        }
+      ],
+      "Capítulo 16 - Pontuação: Os Sinais que Dão Sentido ao Texto": [
+        {
+          "pergunta": "Em qual das frases a vírgula está usada corretamente para isolar um adjunto adverbial deslocado de longa extensão?",
+          "opcoes": [
+            "Ele, cedo, saiu.",
+            "Em casa eu estudei.",
+            "Durante a longa e exaustiva viagem, todos dormiram.",
+            "Ele comprou, pão."
+          ],
+          "resposta_correta": "Durante a longa e exaustiva viagem, todos dormiram."
+        },
+        {
+          "pergunta": "O ponto e vírgula (;) é usado para indicar uma pausa menor que a vírgula e maior que o ponto final.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o sinal de pontuação correto para introduzir uma enumeração ou uma citação direta?",
+          "opcoes": [
+            "Ponto final (.)",
+            "Vírgula (,)",
+            "Dois-pontos (:)",
+            "Ponto e vírgula (;)"
+          ],
+          "resposta_correta": "Dois-pontos (:)"
+        },
+        {
+          "pergunta": "As aspas (\" \") são utilizadas para destacar palavras estrangeiras, gírias ou para indicar ironia em um texto.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Na frase 'Maria, venha cá!', a vírgula é utilizada para isolar um(a):",
+          "opcoes": [
+            "Aposto",
+            "Vocativo",
+            "Sujeito",
+            "Objeto direto"
+          ],
+          "resposta_correta": "Vocativo"
+        },
+        {
+          "pergunta": "Orações subordinadas adjetivas explicativas não devem ser separadas por vírgulas.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual sinal de pontuação é usado para indicar uma interrupção, uma hesitação ou a omissão de parte de um texto?",
+          "opcoes": [
+            "Ponto de exclamação (!)",
+            "Travessão (—)",
+            "Reticências (...)",
+            "Parênteses ( )"
+          ],
+          "resposta_correta": "Reticências (...)"
+        }
+      ],
+      "Capítulo 17 - Semântica: Os Significados das Palavras": [
+        {
+          "pergunta": "Qual o tipo de relação semântica entre as palavras 'alto' e 'baixo'?",
+          "opcoes": [
+            "Sinonímia",
+            "Homonímia",
+            "Antonímia",
+            "Polissemia"
+          ],
+          "resposta_correta": "Antonímia"
+        },
+        {
+          "pergunta": "A palavra 'banco' (assento e instituição financeira) é um exemplo de paronímia.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Ele tem um CORAÇÃO de ouro.', a palavra 'coração' está sendo usada em sentido:",
+          "opcoes": [
+            "Denotativo",
+            "Literal",
+            "Figurado",
+            "Universal"
+          ],
+          "resposta_correta": "Figurado"
+        },
+        {
+          "pergunta": "Homonímia ocorre quando palavras têm a mesma grafia, mas pronúncias e significados diferentes (Ex: 'colher' (verbo) e 'colher' (substantivo)).",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual das alternativas apresenta um par de palavras que são HIPÔNIMOS de 'animal'?",
+          "opcoes": [
+            "Cachorro, gato",
+            "Vertebrados, invertebrados",
+            "Ser vivo, planta",
+            "Jaula, coleira"
+          ],
+          "resposta_correta": "Cachorro, gato"
+        },
+        {
+          "pergunta": "Pleonasmo é a repetição desnecessária de uma ideia já expressa, o que é considerado um vício de linguagem.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Na frase 'Vi o acidente da janela.', qual tipo de ambiguidade pode ocorrer?",
+          "opcoes": [
+            "Cacofonia",
+            "Ambiguidade de regência",
+            "Ambiguidade de sentido por má colocação de termo",
+            "Estrangeirismo"
+          ],
+          "resposta_correta": "Ambiguidade de sentido por má colocação de termo"
+        }
+      ],
+      "Capítulo 18 - Estilística e Figuras de Linguagem: A Arte de Usar as Palavras": [
+        {
+          "pergunta": "Qual figura de linguagem é caracterizada pela comparação implícita, sem uso de conectivo (como 'como', 'tal qual')?",
+          "opcoes": [
+            "Comparação",
+            "Metonímia",
+            "Metáfora",
+            "Catacrese"
+          ],
+          "resposta_correta": "Metáfora"
+        },
+        {
+          "pergunta": "A frase 'Estou morrendo de fome.' é um exemplo de eufemismo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual figura de linguagem ocorre quando se atribui características humanas a seres inanimados ou irracionais?",
+          "opcoes": [
+            "Sinestesia",
+            "Antítese",
+            "Prosopopeia / Personificação",
+            "Paradoxo"
+          ],
+          "resposta_correta": "Prosopopeia / Personificação"
+        },
+        {
+          "pergunta": "A Silepse é uma figura de pensamento que consiste na quebra da estrutura sintática da frase, deixando um termo solto.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Na frase 'Ele comprou cinco pães e bebeu uma Coca-Cola.', a figura de linguagem presente na palavra 'Coca-Cola' no lugar do refrigerante é:",
+          "opcoes": [
+            "Comparação",
+            "Metáfora",
+            "Metonímia",
+            "Sinestesia"
+          ],
+          "resposta_correta": "Metonímia"
+        },
+        {
+          "pergunta": "A figura de linguagem que consiste em uma sequência de ideias em ordem crescente ou decrescente de intensidade é chamada de Ironia.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual a figura de construção que se caracteriza pela repetição intencional de conjunções coordenativas?",
+          "opcoes": [
+            "Assíndeto",
+            "Anáfora",
+            "Polissíndeto",
+            "Inversão"
+          ],
+          "resposta_correta": "Polissíndeto"
+        }
+      ]
+    },
+    "Música": {
+      "Capítulo 1 - O Que É Música? Os Seus Primeiros Sons!": [
+        {
+          "pergunta": "A Música é a arte de combinar o quê?",
+          "opcoes": [
+            "Cores e formas",
+            "Números e letras",
+            "Sons e silêncios",
+            "Histórias e desenhos"
+          ],
+          "resposta_correta": "Sons e silêncios"
+        },
+        {
+          "pergunta": "Na música, os silêncios (pausas) não são importantes; só os sons é que contam.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o pilar da música que é a sequência de sons que cantamos ou que um instrumento toca, que a nossa mente consegue 'lembrar'?",
+          "opcoes": [
+            "Harmonia",
+            "Ritmo",
+            "Melodia",
+            "Barulho"
+          ],
+          "resposta_correta": "Melodia"
+        },
+        {
+          "pergunta": "O Ritmo é a organização dos sons e silêncios no tempo, o que nos faz querer bater o pé ou dançar.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Quando vários sons são tocados AO MESMO TEMPO, criando 'acordes', a que pilar da música nos referimos?",
+          "opcoes": [
+            "Melodia",
+            "Ritmo",
+            "Harmonia",
+            "Letra"
+          ],
+          "resposta_correta": "Harmonia"
+        },
+        {
+          "pergunta": "A Música é uma linguagem universal que só é entendida por pessoas que falam a mesma língua.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual destes NÃO é um propósito da Música?",
+          "opcoes": [
+            "Expressar emoções",
+            "Fazer barulho sem sentido",
+            "Contar histórias",
+            "Ajudar a dançar"
+          ],
+          "resposta_correta": "Fazer barulho sem sentido"
+        },
+        {
+          "pergunta": "Os sons na música podem variar em altura (grave ou agudo), mas não em duração (curto ou longo).",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Quando uma banda tem um baterista, qual o pilar da música que ele mais ajuda a criar?",
+          "opcoes": [
+            "Melodia",
+            "Harmonia",
+            "Ritmo",
+            "Silêncio"
+          ],
+          "resposta_correta": "Ritmo"
+        },
+        {
+          "pergunta": "Qual das opções abaixo é a melhor descrição para a 'Melodia'?",
+          "opcoes": [
+            "Uma mistura de sons aleatórios.",
+            "Uma única nota musical bem longa.",
+            "Uma sequência de sons que formam uma 'canção' ou 'linha' reconhecível.",
+            "Vários sons tocados juntos ao mesmo tempo."
+          ],
+          "resposta_correta": "Uma sequência de sons que formam uma 'canção' ou 'linha' reconhecível."
+        }
+      ]
+    },
+    "Geometria": {
+      "Capítulo 1 - Os Elementos Fundamentais: Ponto, Reta e Plano": [
+        {
+          "pergunta": "Qual é o elemento mais básico da Geometria, que indica apenas uma posição e não tem tamanho?",
+          "opcoes": [
+            "Reta",
+            "Plano",
+            "Ponto",
+            "Círculo"
+          ],
+          "resposta_correta": "Ponto"
+        },
+        {
+          "pergunta": "Uma reta é uma linha que faz curvas e tem um começo e um fim.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual a melhor forma de representar um Ponto na Geometria?",
+          "opcoes": [
+            "Com uma letra minúscula (ex: a)",
+            "Com um número (ex: 5)",
+            "Com uma letra maiúscula (ex: A)",
+            "Com um desenho colorido"
+          ],
+          "resposta_correta": "Com uma letra maiúscula (ex: A)"
+        },
+        {
+          "pergunta": "Um plano é uma superfície que tem espessura e pode ser dobrado.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual objeto do dia a dia melhor representa a ideia de um PLANO?",
+          "opcoes": [
+            "Uma bola de futebol",
+            "Um fio de linha esticado para sempre",
+            "A superfície lisa de uma mesa",
+            "A ponta de um lápis"
+          ],
+          "resposta_correta": "A superfície lisa de uma mesa"
+        },
+        {
+          "pergunta": "Uma linha reta desenhada num caderno é uma reta de verdade na Geometria.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Se tivermos dois pontos numa linha e essa linha continuar para sempre em apenas um sentido a partir de um dos pontos, chamamos a isso:",
+          "opcoes": [
+            "Reta",
+            "Segmento de reta",
+            "Semirreta",
+            "Curva"
+          ],
+          "resposta_correta": "Semirreta"
+        },
+        {
+          "pergunta": "Na Geometria, um ponto é uma marca grande e visível para que possamos localizá-lo facilmente.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Quando um ponto está numa reta, ele faz parte dessa reta. Se uma reta passa por dois pontos, podemos dar o nome da reta usando esses dois pontos. Qual é a representação correta de uma reta que passa pelos pontos A e B?",
+          "opcoes": [
+            "A.B",
+            "AB",
+            "reta AB (com uma seta dupla sobre AB)",
+            "[AB]"
+          ],
+          "resposta_correta": "reta AB (com uma seta dupla sobre AB)"
+        },
+        {
+          "pergunta": "Uma linha que tem um ponto de início e um ponto de fim, como um pedaço de corda esticada, é chamada de:",
+          "opcoes": [
+            "Reta",
+            "Plano",
+            "Semirreta",
+            "Segmento de reta"
+          ],
+          "resposta_correta": "Segmento de reta"
+        }
+      ]
+    },
+    "Matemática": {
+      "Capítulo 1 - Nosso Sistema Decimal: Contando e Entendendo Nossos Primeiros Números!": [
+        {
+          "pergunta": "Se contarmos as maçãs: uma, duas, três. Quantas maçãs contamos?",
+          "opcoes": [
+            "2",
+            "3",
+            "4",
+            "1"
+          ],
+          "resposta_correta": "3"
+        },
+        {
+          "pergunta": "Para escrever os números, usamos 10 símbolos diferentes, chamados algarismos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual número vem DEPOIS do 15 (quinze) na sequência?",
+          "opcoes": [
+            "14",
+            "16",
+            "20",
+            "10"
+          ],
+          "resposta_correta": "16"
+        },
+        {
+          "pergunta": "No número 7, o algarismo '7' está na casinha da Dezena.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "No número 42, o algarismo '4' representa quantas dezenas?",
+          "opcoes": [
+            "4 unidades",
+            "2 dezenas",
+            "4 dezenas",
+            "400 unidades"
+          ],
+          "resposta_correta": "4 dezenas"
+        },
+        {
+          "pergunta": "O número 'vinte e oito' escreve-se 82.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual destes números é o MAIOR: 35, 53, 30, 29?",
+          "opcoes": [
+            "35",
+            "53",
+            "30",
+            "29"
+          ],
+          "resposta_correta": "53"
+        },
+        {
+          "pergunta": "No número 71, o algarismo '1' tem um valor diferente do algarismo '1' no número 17.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Se ordenarmos os números 48, 25, 60 do MENOR para o MAIOR, qual seria a ordem correta?",
+          "opcoes": [
+            "60, 48, 25",
+            "48, 25, 60",
+            "25, 48, 60",
+            "60, 25, 48"
+          ],
+          "resposta_correta": "25, 48, 60"
+        },
+        {
+          "pergunta": "Se eu tiver 3 grupos de 10 bolachas, e mais 4 bolachas soltas, qual é o número total de bolachas?",
+          "opcoes": [
+            "30",
+            "34",
+            "43",
+            "14"
+          ],
+          "resposta_correta": "34"
+        }
+      ],
+      "Capítulo 2 - Sistema de Numeração Romano: Contando como os Antigos Romanos!": [
+        {
+          "pergunta": "Qual é o valor do símbolo romano 'V'?",
+          "opcoes": [
+            "1",
+            "5",
+            "10",
+            "50"
+          ],
+          "resposta_correta": "5"
+        },
+        {
+          "pergunta": "O símbolo romano 'I' pode ser repetido até 4 vezes seguidas (Ex: IIII para 4).",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual número romano representa o valor 7?",
+          "opcoes": [
+            "IIIII",
+            "VII",
+            "IVII",
+            "VI I"
+          ],
+          "resposta_correta": "VII"
+        },
+        {
+          "pergunta": "O símbolo romano 'L' vale 100.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o valor do número romano 'XL'?",
+          "opcoes": [
+            "60",
+            "40",
+            "1050",
+            "5010"
+          ],
+          "resposta_correta": "40"
+        },
+        {
+          "pergunta": "O símbolo 'D' vale 50 e o símbolo 'C' vale 500.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "O ano do descobrimento do Brasil foi em 1500. Como se escreve 1500 em números romanos?",
+          "opcoes": [
+            "MD",
+            "DCM",
+            "VM",
+            "MMD"
+          ],
+          "resposta_correta": "MD"
+        },
+        {
+          "pergunta": "Em números romanos, o símbolo 'V' pode ser repetido, como em 'VV' para 10.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual é o valor do número romano 'CM'?",
+          "opcoes": [
+            "1100",
+            "900",
+            "100000",
+            "50000"
+          ],
+          "resposta_correta": "900"
+        },
+        {
+          "pergunta": "Como se escreve o número 2024 em números romanos?",
+          "opcoes": [
+            "MMXXIV",
+            "MMXXIIII",
+            "MMXCIV",
+            "MMXXIL"
+          ],
+          "resposta_correta": "MMXXIV"
+        }
+      ],
+      "Capítulo 3 - Adição com Números Naturais: Vamos Juntar Tudo!": [
+        {
+          "pergunta": "Se tens 3 bolachas e o teu amigo te dá mais 2 bolachas, quantas bolachas tens no total?",
+          "opcoes": [
+            "4",
+            "5",
+            "6",
+            "1"
+          ],
+          "resposta_correta": "5"
+        },
+        {
+          "pergunta": "Na adição, os números que juntamos chamam-se 'soma'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual é o resultado de 15 + 3?",
+          "opcoes": [
+            "17",
+            "18",
+            "12",
+            "20"
+          ],
+          "resposta_correta": "18"
+        },
+        {
+          "pergunta": "Para somar 23 + 14, devemos alinhar o 4 de 14 debaixo do 3 de 23, na casinha das Unidades.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Quanto é 27 + 5? (Lembre-se do 'vai um'!)",
+          "opcoes": [
+            "30",
+            "32",
+            "22",
+            "35"
+          ],
+          "resposta_correta": "32"
+        },
+        {
+          "pergunta": "Na conta 45 + 16, a soma das unidades (5+6) dá 11. O '1' da dezena desse 11 deve ser esquecido.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Numa caixa, há 32 lápis azuis e 19 lápis vermelhos. Quantos lápis há no total na caixa?",
+          "opcoes": [
+            "41 lápis",
+            "50 lápis",
+            "51 lápis",
+            "49 lápis"
+          ],
+          "resposta_correta": "51 lápis"
+        },
+        {
+          "pergunta": "A soma de 100 + 50 + 20 é 170.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Uma padaria vendeu 135 pães de manhã e 87 pães à tarde. Quantos pães foram vendidos ao todo?",
+          "opcoes": [
+            "212 pães",
+            "222 pães",
+            "192 pães",
+            "122 pães"
+          ],
+          "resposta_correta": "222 pães"
+        },
+        {
+          "pergunta": "Qual o total de: 5 + 8 + 3 + 7?",
+          "opcoes": [
+            "21",
+            "23",
+            "25",
+            "20"
+          ],
+          "resposta_correta": "23"
+        }
+      ],
+      "Capítulo 4 - Subtração com Números Naturais: Vamos Tirar e Encontrar a Diferença!": [
+        {
+          "pergunta": "Quanto é 7 - 3?",
+          "opcoes": [
+            "3",
+            "4",
+            "5",
+            "10"
+          ],
+          "resposta_correta": "4"
+        },
+        {
+          "pergunta": "O resultado de uma subtração chama-se 'minuendo'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual é o resultado de 18 - 6?",
+          "opcoes": [
+            "10",
+            "12",
+            "13",
+            "24"
+          ],
+          "resposta_correta": "12"
+        },
+        {
+          "pergunta": "Para subtrair 45 - 20, devemos alinhar o 0 de 20 debaixo do 5 de 45, na casinha das Unidades.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Quanto é 31 - 4? (Lembre-se do 'pedir emprestado'!)",
+          "opcoes": [
+            "26",
+            "27",
+            "35",
+            "28"
+          ],
+          "resposta_correta": "27"
+        },
+        {
+          "pergunta": "Na subtração '50 - 7', o '0' das Unidades não precisa de 'pedir emprestado' à Dezena porque '0' é um número.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Uma cesta tinha 60 laranjas. Foram usadas 23 laranjas para fazer sumo. Quantas laranjas sobraram na cesta?",
+          "opcoes": [
+            "37 laranjas",
+            "47 laranjas",
+            "83 laranjas",
+            "40 laranjas"
+          ],
+          "resposta_correta": "37 laranjas"
+        },
+        {
+          "pergunta": "O 'resto' é sempre o número que tiramos do minuendo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Um livro tem 150 páginas. Já leste 45 páginas. Quantas páginas faltam ler?",
+          "opcoes": [
+            "95 páginas",
+            "105 páginas",
+            "195 páginas",
+            "115 páginas"
+          ],
+          "resposta_correta": "105 páginas"
+        },
+        {
+          "pergunta": "Qual é a diferença entre 200 e 80?",
+          "opcoes": [
+            "100",
+            "120",
+            "180",
+            "280"
+          ],
+          "resposta_correta": "120"
+        }
+      ],
+      "Capítulo 5 - Multiplicação com Números Naturais: Somando Rápido!": [
+        {
+          "pergunta": "Quanto é 2 + 2 + 2 escrito como uma multiplicação?",
+          "opcoes": [
+            "2 x 2",
+            "3 x 2",
+            "2 + 3",
+            "2 x 4"
+          ],
+          "resposta_correta": "3 x 2"
+        },
+        {
+          "pergunta": "O resultado de uma multiplicação chama-se 'fator'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o resultado de 5 x 2?",
+          "opcoes": [
+            "7",
+            "10",
+            "12",
+            "3"
+          ],
+          "resposta_correta": "10"
+        },
+        {
+          "pergunta": "Qualquer número multiplicado por 0 (zero) é sempre 1 (um).",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Uma caixa tem 4 lápis. Se comprares 3 caixas iguais, quantos lápis tens no total?",
+          "opcoes": [
+            "7 lápis",
+            "12 lápis",
+            "9 lápis",
+            "10 lápis"
+          ],
+          "resposta_correta": "12 lápis"
+        },
+        {
+          "pergunta": "A propriedade comutativa da multiplicação diz que podemos mudar a ordem dos fatores e o produto (resultado) não se altera.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Quanto é 7 x 1?",
+          "opcoes": [
+            "1",
+            "0",
+            "7",
+            "17"
+          ],
+          "resposta_correta": "7"
+        },
+        {
+          "pergunta": "Para multiplicar 8 por 100, basta adicionar dois zeros ao 8, resultando em 800.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Se um bilhete de cinema custa 5€, quanto gastarás para comprar bilhetes para 4 amigos (incluindo você)?",
+          "opcoes": [
+            "20€",
+            "25€",
+            "9€",
+            "15€"
+          ],
+          "resposta_correta": "25€"
+        },
+        {
+          "pergunta": "Qual das opções é o produto da multiplicação de 6 x 3?",
+          "opcoes": [
+            "9",
+            "12",
+            "15",
+            "18"
+          ],
+          "resposta_correta": "18"
+        },
+        {
+          "pergunta": "Qual das opções é o produto da multiplicação de 6 x 3?",
+          "opcoes": [
+            "9",
+            "12",
+            "15",
+            "18"
+          ],
+          "resposta_correta": "18"
+        }
+      ],
+      "Capítulo 6 - Divisão com Números Naturais: Vamos Repartir em Partes Iguais!": [
+        {
+          "pergunta": "Tens 6 bolachas para dividir igualmente entre 2 amigos. Quantas bolachas cada amigo recebe?",
+          "opcoes": [
+            "2",
+            "3",
+            "4",
+            "6"
+          ],
+          "resposta_correta": "3"
+        },
+        {
+          "pergunta": "O sinal de 'x' (vezes) é usado para a operação de divisão.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o nome do número que vai ser dividido (o maior) numa divisão?",
+          "opcoes": [
+            "Divisor",
+            "Quociente",
+            "Dividendo",
+            "Resto"
+          ],
+          "resposta_correta": "Dividendo"
+        },
+        {
+          "pergunta": "Se o resto de uma divisão é 0 (zero), dizemos que a divisão é não exata.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Quanto é 15 ÷ 3?",
+          "opcoes": [
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "resposta_correta": "5"
+        },
+        {
+          "pergunta": "Para verificar se uma divisão está certa, podemos multiplicar o quociente pelo divisor e somar o resto. O resultado deve ser o dividendo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Numa sala, há 20 alunos. Se forem formados grupos de 4 alunos, quantos grupos serão formados?",
+          "opcoes": [
+            "4 grupos",
+            "5 grupos",
+            "6 grupos",
+            "24 grupos"
+          ],
+          "resposta_correta": "5 grupos"
+        },
+        {
+          "pergunta": "O 'resto' de uma divisão pode ser maior que o 'divisor'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual é o quociente e o resto da divisão 17 ÷ 3?",
+          "opcoes": [
+            "Quociente 5, Resto 2",
+            "Quociente 5, Resto 0",
+            "Quociente 6, Resto 1",
+            "Quociente 4, Resto 5"
+          ],
+          "resposta_correta": "Quociente 5, Resto 2"
+        },
+        {
+          "pergunta": "Tens 40 moedas e queres guardá-las em saquinhos, colocando 6 moedas em cada saquinho. Quantos saquinhos cheios conseguirás fazer e quantas moedas sobram?",
+          "opcoes": [
+            "6 saquinhos cheios e sobram 4 moedas.",
+            "5 saquinhos cheios e sobram 10 moedas.",
+            "7 saquinhos cheios e sobram 2 moedas.",
+            "40 saquinhos cheios e sobram 0 moedas."
+          ],
+          "resposta_correta": "6 saquinhos cheios e sobram 4 moedas."
+        }
+      ],
+      "Capítulo 7 - Números Maiores e as Suas Casinhas Especiais: Os Milhares!": [
+        {
+          "pergunta": "No número 543, qual o algarismo que está na casinha da Unidade?",
+          "opcoes": [
+            "5",
+            "4",
+            "3",
+            "0"
+          ],
+          "resposta_correta": "3"
+        },
+        {
+          "pergunta": "O número 'trezentos e quinze' escreve-se 351.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o valor do algarismo '7' no número 78?",
+          "opcoes": [
+            "7 unidades",
+            "70 unidades (7 dezenas)",
+            "700 unidades (7 centenas)",
+            "8 unidades"
+          ],
+          "resposta_correta": "70 unidades (7 dezenas)"
+        },
+        {
+          "pergunta": "O número 1.000 (um mil) tem 3 algarismos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual é a 'casinha' (ordem) que vem depois da Centena?",
+          "opcoes": [
+            "Dezena de Milhar",
+            "Unidade de Milhar",
+            "Dezena",
+            "Unidade de Milhão"
+          ],
+          "resposta_correta": "Unidade de Milhar"
+        },
+        {
+          "pergunta": "O número 'dez mil' escreve-se 1000.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual número é 'vinte e cinco mil setecentos e um'?",
+          "opcoes": [
+            "25.710",
+            "25.701",
+            "257.001",
+            "2.571"
+          ],
+          "resposta_correta": "25.701"
+        },
+        {
+          "pergunta": "Na decomposição do número 1.542, o algarismo '5' representa 500 unidades.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual o MENOR número entre: 1.500, 980, 1.050, 999?",
+          "opcoes": [
+            "1.500",
+            "980",
+            "1.050",
+            "999"
+          ],
+          "resposta_correta": "980"
+        },
+        {
+          "pergunta": "Qual a leitura correta do número 345.678?",
+          "opcoes": [
+            "Trezentos e quarenta e cinco mil e seiscentos e setenta e oito.",
+            "Três mil quatrocentos e cinquenta e seis e setenta e oito.",
+            "Trinta e quatro mil quinhentos e sessenta e sete e oito.",
+            "Trezentos e quarenta e cinco milhões seiscentos e setenta e oito."
+          ],
+          "resposta_correta": "Trezentos e quarenta e cinco mil e seiscentos e setenta e oito."
+        }
+      ],
+      "Capítulo 8 - Introdução às Frações: Os Pedaços da Matemática!": [
+        {
+          "pergunta": "Se um chocolate está dividido em 2 partes iguais e comes 1 parte, que fração representa a parte que comeste?",
+          "opcoes": [
+            "2/1",
+            "1/2",
+            "1+2",
+            "2-1"
+          ],
+          "resposta_correta": "1/2"
+        },
+        {
+          "pergunta": "Numa fração como 3/4, o número de baixo (4) é o 'numerador'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Como se lê a fração 1/3?",
+          "opcoes": [
+            "Um dois",
+            "Um quarto",
+            "Um terço",
+            "Um quinto"
+          ],
+          "resposta_correta": "Um terço"
+        },
+        {
+          "pergunta": "Se tens uma maçã e cortas em 4 partes desiguais (não iguais), cada pedaço pode ser chamado de fração (ex: 1/4).",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o significado do número de cima (numerador) numa fração?",
+          "opcoes": [
+            "O número total de partes iguais do todo.",
+            "Quantas partes estamos a usar ou a considerar.",
+            "O tamanho do objeto inteiro.",
+            "A cor da fração."
+          ],
+          "resposta_correta": "Quantas partes estamos a usar ou a considerar."
+        },
+        {
+          "pergunta": "A fração 5/5 representa um número inteiro.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Uma pizza foi dividida em 6 fatias iguais. Se comes 2 fatias, que fração representa a parte que comeste?",
+          "opcoes": [
+            "6/2",
+            "2/6",
+            "1/3",
+            "4/6"
+          ],
+          "resposta_correta": "2/6"
+        },
+        {
+          "pergunta": "Se leres a fração 3/4, deves dizer 'três quartos'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Tens um tabuleiro com 10 bolachas. Se 5 bolachas são de chocolate, que fração representa as bolachas de chocolate?",
+          "opcoes": [
+            "10/5",
+            "1/2",
+            "5/10",
+            "2/10"
+          ],
+          "resposta_correta": "1/2"
+        },
+        {
+          "pergunta": "Qual fração representa a parte colorida desta imagem? (Imaginem uma barra dividida em 5 partes iguais, com 3 delas coloridas).",
+          "opcoes": [
+            "5/3",
+            "2/5",
+            "3/5",
+            "1/5"
+          ],
+          "resposta_correta": "3/5"
+        }
+      ],
+      "Capítulo 9 - Introdução aos Números Decimais: Os Números com Vírgula!": [
+        {
+          "pergunta": "Qual dos números abaixo é um número decimal?",
+          "opcoes": [
+            "5",
+            "10",
+            "3,2",
+            "100"
+          ],
+          "resposta_correta": "3,2"
+        },
+        {
+          "pergunta": "A fração 1/2 (um meio) pode ser escrita como o número decimal 0,5.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "No número decimal 5,7, qual algarismo representa a parte inteira?",
+          "opcoes": [
+            "7",
+            "5",
+            "A vírgula",
+            "Não tem parte inteira"
+          ],
+          "resposta_correta": "5"
+        },
+        {
+          "pergunta": "Na leitura de 0,25, o '2' está na casinha dos 'centésimos'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Como se lê o número decimal 1,03?",
+          "opcoes": [
+            "Um vírgula três",
+            "Um inteiro e três décimos",
+            "Um inteiro e três centésimos",
+            "Zero vírgula cento e três"
+          ],
+          "resposta_correta": "Um inteiro e três centésimos"
+        },
+        {
+          "pergunta": "O número decimal 0,8 é maior que o número 0,5.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Se tens 2,50€ (dois euros e cinquenta cêntimos), qual é a parte decimal desse valor?",
+          "opcoes": [
+            "2",
+            "50",
+            "2,50",
+            "€"
+          ],
+          "resposta_correta": "50"
+        },
+        {
+          "pergunta": "Para comparar 1,23 e 1,3, o 1,23 é o maior porque tem mais algarismos depois da vírgula.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual a leitura correta de 0,07?",
+          "opcoes": [
+            "Zero vírgula sete",
+            "Sete décimos",
+            "Sete centésimos",
+            "Sete milésimos"
+          ],
+          "resposta_correta": "Sete centésimos"
+        },
+        {
+          "pergunta": "Qual destes números é o MENOR: 0,9; 1,0; 0,95; 1,05?",
+          "opcoes": [
+            "0,9",
+            "1,0",
+            "0,95",
+            "1,05"
+          ],
+          "resposta_correta": "0,9"
+        }
+      ]
+    },
+    "Catecismo Cristão": {
+      "Pergunta 1: Qual é o fim principal do homem?": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, qual é o fim principal do homem?",
+          "opcoes": [
+            "Acumular riquezas e poder.",
+            "Viver uma vida confortável e sem problemas.",
+            "Glorificar a Deus e gozá-lo para sempre.",
+            "Buscar o conhecimento científico e tecnológico."
+          ],
+          "resposta_correta": "Glorificar a Deus e gozá-lo para sempre."
+        },
+        {
+          "pergunta": "A Bíblia ensina que 'glorificar a Deus' significa apenas elogiá-Lo com palavras de adoração aos domingos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que 'Porque dele e por ele e para ele são todas as coisas. A ele seja a glória para sempre. Amém.'?",
+          "opcoes": [
+            "1 Coríntios 10:31",
+            "Salmos 86:9",
+            "Romanos 11:36",
+            "Isaías 43:7"
+          ],
+          "resposta_correta": "Romanos 11:36"
+        },
+        {
+          "pergunta": "A parte 'gozá-lo para sempre' do fim principal do homem refere-se a uma obrigação árdua e sem alegria que os crentes devem cumprir.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que 'a vida eterna é esta: que te conheçam a ti, o único Deus verdadeiro, e a Jesus Cristo, a quem enviaste'?",
+          "opcoes": [
+            "Filipenses 4:4",
+            "Salmos 73:25",
+            "João 17:3",
+            "Apocalipse 21:3"
+          ],
+          "resposta_correta": "João 17:3"
+        },
+        {
+          "pergunta": "Os dois aspectos do fim principal do homem (glorificar a Deus e gozá-lo para sempre) são completamente independentes um do outro.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "De acordo com Isaías 43:7, por que Deus criou aqueles que são chamados pelo Seu nome?",
+          "opcoes": [
+            "Para que fossem poderosos na terra.",
+            "Para que O glorificassem.",
+            "Para que O desafiassem.",
+            "Para que fossem independentes d'Ele."
+          ],
+          "resposta_correta": "Para que O glorificassem."
+        }
+      ],
+      "Pergunta 2: A Regra de Deus para nos Dirigir": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, qual é a única regra que Deus nos deu para nos dirigir?",
+          "opcoes": [
+            "A tradição da igreja.",
+            "A razão humana.",
+            "A Palavra de Deus contida nas Escrituras.",
+            "A voz interior de cada indivíduo."
+          ],
+          "resposta_correta": "A Palavra de Deus contida nas Escrituras."
+        },
+        {
+          "pergunta": "Para glorificar e gozar a Deus, a humanidade deve seguir as tradições religiosas e filosóficas, além da Bíblia.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o significado da expressão 'contida nas Escrituras do Antigo e Novo Testamento' na resposta da Pergunta 2?",
+          "opcoes": [
+            "Que a Palavra de Deus se encontra dispersa em diversos livros, além da Bíblia.",
+            "Que a Bíblia (Antigo e Novo Testamento) é a forma completa e exclusiva da revelação escrita de Deus.",
+            "Que apenas o Antigo Testamento é a parte mais importante da Palavra de Deus.",
+            "Que a Palavra de Deus é uma mistura de escritos antigos e novas revelações."
+          ],
+          "resposta_correta": "Que a Bíblia (Antigo e Novo Testamento) é a forma completa e exclusiva da revelação escrita de Deus."
+        },
+        {
+          "pergunta": "O versículo de 2 Timóteo 3:16 afirma que 'Toda a Escritura é divinamente inspirada, e proveitosa para ensinar, para redarguir, para corrigir, para instruir em justiça'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual doutrina é fortemente reforçada pela afirmação de que a Palavra de Deus é a 'única regra' e está 'contida nas Escrituras'?",
+          "opcoes": [
+            "Sola Fide (Somente a Fé)",
+            "Sola Gratia (Somente a Graça)",
+            "Sola Scriptura (Somente a Escritura)",
+            "Solus Christus (Somente Cristo)"
+          ],
+          "resposta_correta": "Sola Scriptura (Somente a Escritura)"
+        },
+        {
+          "pergunta": "O Breve Catecismo de Westminster sugere que é aceitável adicionar ou remover palavras da profecia bíblica para adaptá-la aos tempos modernos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "O que a Palavra de Deus nos mostra, conforme a Pergunta 2 do Catecismo?",
+          "opcoes": [
+            "Apenas os rituais religiosos que devemos seguir.",
+            "Como podemos obter riquezas materiais.",
+            "Como podemos glorificar e gozar a Deus.",
+            "As opiniões pessoais dos profetas antigos."
+          ],
+          "resposta_correta": "Como podemos glorificar e gozar a Deus."
+        }
+      ],
+      "Pergunta 3: Que ensinam principalmente as Escrituras?": [
+        {
+          "pergunta": "Qual das seguintes opções resume melhor o que as Escrituras ensinam principalmente, de acordo com o Breve Catecismo de Westminster?",
+          "opcoes": [
+            "Como construir templos e realizar rituais religiosos.",
+            "O que o homem deve crer acerca de Deus e que dever Deus requer do homem.",
+            "A história dos povos antigos e suas culturas.",
+            "Métodos para alcançar prosperidade material e sucesso pessoal."
+          ],
+          "resposta_correta": "O que o homem deve crer acerca de Deus e que dever Deus requer do homem."
+        },
+        {
+          "pergunta": "Considerando o versículo de João 17:3, qual a importância do conhecimento de Deus e de Jesus Cristo?",
+          "opcoes": [
+            "É fundamental para a obtenção de riquezas.",
+            "É fundamental para a vida eterna.",
+            "É fundamental para a fama e o poder.",
+            "É fundamental para uma vida longa na terra."
+          ],
+          "resposta_correta": "É fundamental para a vida eterna."
+        },
+        {
+          "pergunta": "As Escrituras ensinam principalmente o que o homem deve crer acerca de Deus e qual o dever que Deus requer do homem, e essas duas áreas são inseparáveis.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Qual dos versículos bíblicos abaixo enfatiza que a fé sem obras é morta em si mesma?",
+          "opcoes": [
+            "Romanos 10:14",
+            "Hebreus 11:6",
+            "Tiago 2:17",
+            "Miquéias 6:8"
+          ],
+          "resposta_correta": "Tiago 2:17"
+        },
+        {
+          "pergunta": "A parte do ensino das Escrituras sobre 'o que o homem deve crer acerca de Deus' refere-se principalmente à ética e à prática cristã.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Miquéias 6:8 resume o que o Senhor pede do homem, incluindo a prática da justiça e o amor à benignidade. Qual outro aspecto fundamental é mencionado nesse versículo?",
+          "opcoes": [
+            "Construir grandes cidades.",
+            "Sacrificar muitos animais.",
+            "Andar humildemente com o teu Deus.",
+            "Acumular sabedoria humana."
+          ],
+          "resposta_correta": "Andar humildemente com o teu Deus."
+        },
+        {
+          "pergunta": "O ensino das Escrituras sobre 'o que o homem deve crer acerca de Deus' e 'que dever Deus requer do homem' pode ser comparado a quais duas áreas, respectivamente?",
+          "opcoes": [
+            "História e Geografia.",
+            "Teologia e Ética.",
+            "Ciência e Arte.",
+            "Matemática e Música."
+          ],
+          "resposta_correta": "Teologia e Ética."
+        }
+      ],
+      "Pergunta 4: Que é Deus?": [
+        {
+          "pergunta": "De acordo com a Pergunta 4 do Breve Catecismo, qual é a natureza essencial de Deus que O torna imaterial e invisível?",
+          "opcoes": [
+            "Deus é Fogo.",
+            "Deus é Espírito.",
+            "Deus é Luz.",
+            "Deus é Amor."
+          ],
+          "resposta_correta": "Deus é Espírito."
+        },
+        {
+          "pergunta": "O atributo de Deus de ser 'infinito' significa que Ele tem limites em Seu ser e perfeições.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual dos seguintes atributos de Deus é considerado 'imutável' no Breve Catecismo?",
+          "opcoes": [
+            "Sua criação do universo.",
+            "Seu relacionamento com o homem.",
+            "Seu ser, sabedoria e poder.",
+            "Sua forma física, que nunca muda."
+          ],
+          "resposta_correta": "Seu ser, sabedoria e poder."
+        },
+        {
+          "pergunta": "Deus é 'eterno' significa que Ele teve um começo, mas não terá um fim.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual dos versículos bíblicos citados para o atributo de 'Santidade' nos chama a ser santos porque Deus é santo?",
+          "opcoes": [
+            "João 4:24",
+            "Salmos 147:5",
+            "1 Pedro 1:15-16",
+            "Malaquias 3:6"
+          ],
+          "resposta_correta": "1 Pedro 1:15-16"
+        },
+        {
+          "pergunta": "A 'bondade' de Deus, conforme o Catecismo, é ilustrada por Ele ser a própria Verdade e fiel em Suas promessas.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual atributo de Deus é evidenciado em Romanos 11:33, que fala da 'Ó profundidade das riquezas, tanto da sabedoria, como do conhecimento de Deus!'?",
+          "opcoes": [
+            "Poder",
+            "Justiça",
+            "Sabedoria",
+            "Bondade"
+          ],
+          "resposta_correta": "Sabedoria"
+        }
+      ],
+      "Pergunta 5: Há mais de um Deus?": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, qual é a resposta para a pergunta 'Há mais de um Deus?'",
+          "opcoes": [
+            "Sim, há muitos deuses menores.",
+            "Não, há um só Deus.",
+            "Depende da cultura ou religião.",
+            "A Bíblia não especifica a quantidade de deuses."
+          ],
+          "resposta_correta": "Não, há um só Deus."
+        },
+        {
+          "pergunta": "A doutrina de que há um só Deus é conhecida como politeísmo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico é central para a declaração de que 'O Senhor nosso Deus é o único Senhor' no Antigo Testamento?",
+          "opcoes": [
+            "João 17:3",
+            "Isaías 45:5",
+            "Deuteronômio 6:4",
+            "1 Coríntios 8:4"
+          ],
+          "resposta_correta": "Deuteronômio 6:4"
+        },
+        {
+          "pergunta": "O Breve Catecismo descreve o único Deus como 'morto e inativo', em contraste com os ídolos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o significado da expressão 'Deus vivo e verdadeiro' na resposta da Pergunta 5?",
+          "opcoes": [
+            "Que Ele é apenas um conceito filosófico.",
+            "Que Ele é um ser ativo, pessoal, que interage e cuja verdade é absoluta.",
+            "Que Ele é um deus local, adorado por um povo específico.",
+            "Que Ele é um espírito, mas não uma pessoa."
+          ],
+          "resposta_correta": "Que Ele é um ser ativo, pessoal, que interage e cuja verdade é absoluta."
+        },
+        {
+          "pergunta": "De acordo com 1 Tessalonicenses 1:9, os crentes de Tessalônica se converteram dos ídolos para servir a 'muitos deuses poderosos'.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "A doutrina de que há um só Deus é a base para qual aspecto da adoração cristã?",
+          "opcoes": [
+            "A pluralidade de rituais e cerimônias.",
+            "A devoção exclusiva a Ele.",
+            "A adoração de santos e anjos.",
+            "A adaptação da fé a diferentes culturas sem distinção."
+          ],
+          "resposta_correta": "A devoção exclusiva a Ele."
+        }
+      ],
+      "Pergunta 6: Quantas pessoas há na Divindade?": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, quantas pessoas há na Divindade?",
+          "opcoes": [
+            "Uma pessoa.",
+            "Duas pessoas.",
+            "Três pessoas.",
+            "Inúmeras pessoas."
+          ],
+          "resposta_correta": "Três pessoas."
+        },
+        {
+          "pergunta": "A doutrina da Trindade afirma que o Pai, o Filho e o Espírito Santo são três deuses distintos.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico é frequentemente citado para mostrar a Trindade presente no mandamento do batismo?",
+          "opcoes": [
+            "João 10:30",
+            "Mateus 28:19",
+            "2 Coríntios 13:14",
+            "Deuteronômio 6:4"
+          ],
+          "resposta_correta": "Mateus 28:19"
+        },
+        {
+          "pergunta": "O Breve Catecismo ensina que o Pai, o Filho e o Espírito Santo são iguais em substância, mas diferem em poder e glória.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual atributo do Filho (Jesus Cristo) é destacado em Filipenses 2:6, indicando Sua igualdade com Deus?",
+          "opcoes": [
+            "Ser um grande profeta.",
+            "Ser o mais sábio dos homens.",
+            "Ser em forma de Deus e não ter por usurpação ser igual a Deus.",
+            "Ser o criador de todos os anjos."
+          ],
+          "resposta_correta": "Ser em forma de Deus e não ter por usurpação ser igual a Deus."
+        },
+        {
+          "pergunta": "Atos 5:3-4 mostra a divindade do Espírito Santo ao indicar que mentir ao Espírito Santo é mentir a Deus.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Apesar de haver três Pessoas na Divindade, a Bíblia continua a proclamar que há 'um só Deus', como visto em qual versículo fundamental?",
+          "opcoes": [
+            "João 14:16",
+            "Colossenses 2:9",
+            "Deuteronômio 6:4",
+            "2 Coríntios 13:14"
+          ],
+          "resposta_correta": "Deuteronômio 6:4"
+        }
+      ],
+      "Pergunta 7: Que são os decretos de Deus?": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, o que são os decretos de Deus?",
+          "opcoes": [
+            "Decisões que Deus toma de tempos em tempos em resposta a eventos no mundo.",
+            "Seu eterno propósito segundo o conselho da sua vontade.",
+            "As leis naturais que governam o universo, criadas pelos cientistas.",
+            "Sugestões divinas para a humanidade seguir, mas que podem ser alteradas."
+          ],
+          "resposta_correta": "Seu eterno propósito segundo o conselho da sua vontade."
+        },
+        {
+          "pergunta": "Os decretos de Deus são temporais e foram estabelecidos apenas após a criação do mundo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual o alcance da preordenação de Deus, segundo o Catecismo e Daniel 4:35?",
+          "opcoes": [
+            "Apenas os eventos que afetam a igreja.",
+            "Somente as grandes decisões dos líderes mundiais.",
+            "Tudo o que acontece (todas as suas criaturas e todas as suas ações).",
+            "Apenas as coisas que são moralmente boas."
+          ],
+          "resposta_correta": "Tudo o que acontece (todas as suas criaturas e todas as suas ações)."
+        },
+        {
+          "pergunta": "A doutrina dos decretos de Deus implica que a responsabilidade humana é anulada, pois tudo já está preordenado.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual é o propósito final pelo qual Deus preordenou tudo o que acontece, conforme o Catecismo e Romanos 11:36?",
+          "opcoes": [
+            "Para a felicidade eterna do homem.",
+            "Para testar a fé da humanidade.",
+            "Para sua própria glória.",
+            "Para estabelecer um reino terreno perfeito."
+          ],
+          "resposta_correta": "Para sua própria glória."
+        },
+        {
+          "pergunta": "Isaías 46:10 demonstra o poder de Deus ao afirmar que Ele anuncia o fim desde o princípio e que Sua vontade será firme.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "Os decretos de Deus são fruto do 'conselho da sua vontade'. O que isso implica sobre a origem desses decretos?",
+          "opcoes": [
+            "Que são resultado de um debate entre várias divindades.",
+            "Que são baseados nas escolhas e desejos humanos.",
+            "Que procedem unicamente de Sua própria sabedoria e livre arbítrio.",
+            "Que são respostas divinas a eventos imprevistos."
+          ],
+          "resposta_correta": "Que procedem unicamente de Sua própria sabedoria e livre arbítrio."
+        }
+      ],
+      "Pergunta 8: Como Deus executa os seus decretos?": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, quais são as duas obras principais pelas quais Deus executa os seus decretos?",
+          "opcoes": [
+            "Milagres e intervenções diretas.",
+            "A oração e o louvor do homem.",
+            "A criação e a providência.",
+            "A pregação da Palavra e os sacramentos."
+          ],
+          "resposta_correta": "A criação e a providência."
+        },
+        {
+          "pergunta": "A obra da criação refere-se ao cuidado contínuo de Deus em sustentar e governar todas as coisas após tê-las trazido à existência.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que até os cabelos da nossa cabeça estão contados, ilustrando o governo detalhado da providência de Deus?",
+          "opcoes": [
+            "Salmos 103:19",
+            "Gênesis 1:1",
+            "Mateus 10:29-30",
+            "Romanos 1:20"
+          ],
+          "resposta_correta": "Mateus 10:29-30"
+        },
+        {
+          "pergunta": "Salmos 33:6 declara que 'Pela palavra do Senhor foram feitos os céus', o que apoia a ideia da criação de Deus pela Sua palavra e poder.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Verdadeiro"
+        },
+        {
+          "pergunta": "A providência de Deus garante que:",
+          "opcoes": [
+            "As coisas acontecem por acaso, e Deus as corrige depois.",
+            "Apenas os eventos grandes e importantes são controlados por Deus.",
+            "Deus continua a sustentar e governar todas as suas criaturas e todas as suas ações.",
+            "Os homens têm total autonomia e Deus não interfere."
+          ],
+          "resposta_correta": "Deus continua a sustentar e governar todas as suas criaturas e todas as suas ações."
+        },
+        {
+          "pergunta": "A execução dos decretos de Deus é uma demonstração exclusiva de Seu poder, sem envolver Sua sabedoria ou fidelidade.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que 'Nele vivemos, e nos movemos, e existimos', reforçando a dependência contínua da criação em Deus?",
+          "opcoes": [
+            "Salmos 33:11",
+            "Atos 17:28",
+            "Isaías 46:11",
+            "Efésios 1:11"
+          ],
+          "resposta_correta": "Atos 17:28"
+        }
+      ],
+      "Pergunta 9: Qual é a obra da criação?": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, a obra da criação é de Deus fazer todas as coisas:",
+          "opcoes": [
+            "Usando materiais pré-existentes.",
+            "Do nada, pela palavra do seu poder.",
+            "Com a ajuda de Seus anjos.",
+            "Através de um longo processo de evolução natural."
+          ],
+          "resposta_correta": "Do nada, pela palavra do seu poder."
+        },
+        {
+          "pergunta": "Hebreus 11:3 ensina que os mundos foram criados a partir de algo que é visível e aparente.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Em quantos dias Deus completou a obra da criação, conforme o Breve Catecismo e Êxodo 20:11?",
+          "opcoes": [
+            "Sete dias, incluindo o descanso.",
+            "Seis dias.",
+            "Milhões de anos.",
+            "Um período indefinido de tempo."
+          ],
+          "resposta_correta": "Seis dias."
+        },
+        {
+          "pergunta": "A frase 'E disse Deus: Haja...' em Gênesis 1 demonstra o poder da vontade de Deus, mas não de Sua palavra.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual foi a avaliação de Deus sobre a obra da criação ao final do sexto dia, conforme Gênesis 1:31?",
+          "opcoes": [
+            "Boa, mas com algumas imperfeições.",
+            "Aceitável, mas com potencial para melhorias.",
+            "Muito boa.",
+            "Incompleta e necessitando de mais tempo."
+          ],
+          "resposta_correta": "Muito boa."
+        },
+        {
+          "pergunta": "A bondade original da criação implica que o mal e o pecado já existiam desde o início no mundo criado por Deus.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "O que Salmos 33:6 ('Pela palavra do Senhor foram feitos os céus...') enfatiza sobre o processo da criação?",
+          "opcoes": [
+            "A cooperação de diversas divindades.",
+            "A intervenção física direta de Deus com Suas mãos.",
+            "O poder e a autoridade da Sua palavra.",
+            "A necessidade de longos períodos de tempo para a formação."
+          ],
+          "resposta_correta": "O poder e a autoridade da Sua palavra."
+        }
+      ],
+      "Pergunta 10: Como Deus criou o homem?": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, em qual distinção Deus criou o homem?",
+          "opcoes": [
+            "Alto e baixo.",
+            "Rico e pobre.",
+            "Macho e fêmea.",
+            "Inteligente e menos inteligente."
+          ],
+          "resposta_correta": "Macho e fêmea."
+        },
+        {
+          "pergunta": "A 'imagem de Deus' no homem, segundo o Catecismo e as Escrituras, refere-se principalmente à semelhança física com o Criador.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Quais são os três atributos pelos quais a imagem de Deus no homem se manifesta, conforme a resposta da Pergunta 10?",
+          "opcoes": [
+            "Força, beleza e inteligência.",
+            "Conhecimento, justiça e santidade.",
+            "Riqueza, poder e fama.",
+            "Amor, paciência e bondade apenas."
+          ],
+          "resposta_correta": "Conhecimento, justiça e santidade."
+        },
+        {
+          "pergunta": "O domínio que o homem recebeu sobre as criaturas (Gênesis 1:28) significa que ele pode abusar da criação como quiser, sem responsabilidade.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que Deus criou o homem 'macho e fêmea' e 'à sua imagem'?",
+          "opcoes": [
+            "Salmos 8:6",
+            "Gênesis 1:27",
+            "Colossenses 3:10",
+            "Gênesis 9:6"
+          ],
+          "resposta_correta": "Gênesis 1:27"
+        },
+        {
+          "pergunta": "O estado original do homem criado por Deus era de imperfeição e inclinação ao pecado, que se aprimorou com o tempo.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Salmos 8:6-8 corrobora a ideia de que o homem recebeu o quê sobre as obras das mãos de Deus?",
+          "opcoes": [
+            "Apenas o dever de admirá-las.",
+            "O dever de temê-las.",
+            "Domínio sobre elas.",
+            "O privilégio de ser igual a elas."
+          ],
+          "resposta_correta": "Domínio sobre elas."
+        }
+      ],
+      "Pergunta 11: Quais são as obras da providência de Deus?": [
+        {
+          "pergunta": "De acordo com o Breve Catecismo de Westminster, quais são as obras da providência de Deus?",
+          "opcoes": [
+            "A sua mui santa, sábia e poderosa maneira de preservar e governar todas as suas criaturas e todas as suas ações.",
+            "A sua intervenção ocasional em milagres e prodígios.",
+            "A sua criação original do universo, mas sem envolvimento contínuo.",
+            "A sua permissão para que as coisas aconteçam sem controle direto."
+          ],
+          "resposta_correta": "A sua mui santa, sábia e poderosa maneira de preservar e governar todas as suas criaturas e todas as suas ações."
+        },
+        {
+          "pergunta": "Quando o Catecismo descreve a providência de Deus como 'mui santa', isso se refere ao Seu poder ilimitado em governar todas as coisas.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico é citado para ilustrar o cuidado detalhado de Deus, afirmando que até os passarinhos e os cabelos da cabeça estão sob Sua vontade?",
+          "opcoes": [
+            "Salmos 103:19",
+            "Neemias 9:6",
+            "Mateus 10:29-30",
+            "Romanos 8:28"
+          ],
+          "resposta_correta": "Mateus 10:29-30"
+        },
+        {
+          "pergunta": "A obra da providência de Deus se limita a preservar as Suas criaturas, sem interferir em suas ações.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "O que Salmos 104:24 ('Ó Senhor, quão variadas são as tuas obras! Todas as coisas fizeste com sabedoria;') ressalta sobre a maneira da providência de Deus?",
+          "opcoes": [
+            "Sua santidade.",
+            "Seu poder.",
+            "Sua sabedoria.",
+            "Sua bondade."
+          ],
+          "resposta_correta": "Sua sabedoria."
+        },
+        {
+          "pergunta": "Romanos 8:28 sugere que todas as coisas contribuem para o bem daqueles que amam a Deus porque os eventos são aleatórios e eles os aproveitam.",
+          "opcoes": [
+            "Verdadeiro",
+            "Falso"
+          ],
+          "resposta_correta": "Falso"
+        },
+        {
+          "pergunta": "Qual versículo bíblico afirma que Deus 'sustenta todas as coisas pela palavra do seu poder', enfatizando o aspecto 'poderosa' da providência?",
+          "opcoes": [
+            "Salmos 145:17",
+            "Neemias 9:6",
+            "Hebreus 1:3",
+            "Provérbios 16:33"
+          ],
+          "resposta_correta": "Hebreus 1:3"
+        }
+      ]
+    }
+  }
+}

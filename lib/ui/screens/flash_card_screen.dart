@@ -1,0 +1,345 @@
+// lib/ui/screens/flash_card_screen.dart
+
+import 'dart:math';
+import 'package:flutter/material.dart';
+import 'package:caminho_do_saber/models/disciplina_model.dart';
+import 'package:caminho_do_saber/ui/widgets/background_container.dart';
+import 'package:audioplayers/audioplayers.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
+
+class FlashCardScreen extends StatefulWidget {
+  final String titulo;
+  final List<FlashCard> flashCards;
+
+  const FlashCardScreen({
+    super.key,
+    required this.titulo,
+    required this.flashCards,
+  });
+
+  @override
+  State<FlashCardScreen> createState() => _FlashCardScreenState();
+}
+
+class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+  late Animation<double> _flipAnimation;
+  late Animation<double> _scaleAnimation;
+  int _cardAtualIndex = 0;
+  final AudioPlayer _audioPlayer = AudioPlayer();
+  bool _audioHabilitado = true;
+
+  // Variáveis para controle de Swipe
+  double _dragStartX = 0.0;
+  bool _isFlipped = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadAudioSettings();
+    _controller = AnimationController(
+      duration: const Duration(milliseconds: 600),
+      vsync: this,
+    );
+
+    _flipAnimation = Tween<double>(begin: 0, end: pi).animate(CurvedAnimation(
+      parent: _controller,
+      curve: Curves.easeInOutCubic,
+    ));
+
+    _scaleAnimation = TweenSequence<double>([
+      TweenSequenceItem(tween: Tween(begin: 1.0, end: 0.90), weight: 50),
+      TweenSequenceItem(tween: Tween(begin: 0.90, end: 1.0), weight: 50),
+    ]).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOutCubic));
+
+    _controller.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        _isFlipped = true;
+      } else if (status == AnimationStatus.dismissed) {
+        _isFlipped = false;
+      }
+    });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    _audioPlayer.dispose();
+    super.dispose();
+  }
+
+  Future<void> _loadAudioSettings() async {
+    final prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _audioHabilitado = prefs.getBool('audioHabilitado') ?? true;
+    });
+  }
+
+  void _playSound(String fileName) async {
+    if (_audioHabilitado) {
+      await _audioPlayer.stop();
+      await _audioPlayer.play(AssetSource('sounds/$fileName'));
+    }
+  }
+
+  void _virarCard() {
+    if (_controller.isAnimating) return;
+    
+    if (_controller.status == AnimationStatus.completed) {
+      _controller.reverse();
+    } else {
+      _playSound('hint.mp3');
+      _controller.forward();
+    }
+  }
+
+  void _proximoCard() {
+    if (_cardAtualIndex < widget.flashCards.length - 1) {
+      setState(() {
+        _cardAtualIndex++;
+        _controller.reset();
+        _isFlipped = false;
+      });
+      _playSound('jogo.mp3');
+    }
+  }
+
+  void _cardAnterior() {
+    if (_cardAtualIndex > 0) {
+      setState(() {
+        _cardAtualIndex--;
+        _controller.reset();
+        _isFlipped = false;
+      });
+      _playSound('jogo.mp3');
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (widget.flashCards.isEmpty) {
+      return Scaffold(
+        appBar: AppBar(
+          title: Text(widget.titulo),
+          backgroundColor: Colors.blue,
+        ),
+        body: const BackgroundContainer(child: Center(child: Text('Sem cartões.'))),
+      );
+    }
+
+    final cardAtual = widget.flashCards[_cardAtualIndex];
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.titulo, style: const TextStyle(fontWeight: FontWeight.bold)),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
+        elevation: 0,
+      ),
+      body: BackgroundContainer(
+        child: Column(
+          children: [
+            const SizedBox(height: 20),
+            // Barra de Progresso Superior
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 40),
+              child: Column(
+                children: [
+                  LinearProgressIndicator(
+                    value: (_cardAtualIndex + 1) / widget.flashCards.length,
+                    backgroundColor: Colors.white24,
+                    valueColor: const AlwaysStoppedAnimation<Color>(Colors.orangeAccent),
+                    borderRadius: BorderRadius.circular(10),
+                    minHeight: 8,
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    '${_cardAtualIndex + 1} de ${widget.flashCards.length}',
+                    style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+            
+            Expanded(
+              child: GestureDetector(
+                onHorizontalDragStart: (details) => _dragStartX = details.globalPosition.dx,
+                onHorizontalDragEnd: (details) {
+                  double dragEndX = details.primaryVelocity ?? 0;
+                  if (dragEndX < -500) {
+                    _proximoCard();
+                  } else if (dragEndX > 500) {
+                    _cardAnterior();
+                  }
+                },
+                onTap: _virarCard,
+                child: Center(
+                  child: AnimatedBuilder(
+                    animation: _controller,
+                    builder: (context, child) {
+                      final isFront = _flipAnimation.value <= pi / 2;
+                      final transform = Matrix4.identity()
+                        ..setEntry(3, 2, 0.0012) // Perspectiva levemente maior
+                        ..rotateY(_flipAnimation.value);
+
+                      return Transform(
+                        transform: transform,
+                        alignment: Alignment.center,
+                        child: ScaleTransition(
+                          scale: _scaleAnimation,
+                          child: isFront
+                              ? _buildCollectorCard(cardAtual.pergunta, isFront: true)
+                              : Transform(
+                                  transform: Matrix4.identity()..rotateY(pi),
+                                  alignment: Alignment.center,
+                                  child: _buildCollectorCard(cardAtual.resposta, isFront: false),
+                                ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ),
+            ),
+
+            const Text(
+              'Desliza para os lados ou toca para virar',
+              style: TextStyle(color: Colors.white70, fontStyle: FontStyle.italic),
+            ),
+            
+            const SizedBox(height: 40),
+
+            // Navegação inferior com ScalePress
+            Padding(
+              padding: const EdgeInsets.only(bottom: 60),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ScalePressWrapper(
+                    onTap: _cardAtualIndex > 0 ? _cardAnterior : () {},
+                    child: _buildNavButton(Icons.skip_previous_rounded, _cardAtualIndex > 0),
+                  ),
+                  const SizedBox(width: 40),
+                  ScalePressWrapper(
+                    onTap: _cardAtualIndex < widget.flashCards.length - 1 ? _proximoCard : () {},
+                    child: _buildNavButton(Icons.skip_next_rounded, _cardAtualIndex < widget.flashCards.length - 1),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildNavButton(IconData icon, bool enabled) {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: enabled ? Colors.white : Colors.white10,
+        shape: BoxShape.circle,
+        boxShadow: enabled ? [const BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))] : [],
+      ),
+      child: Icon(icon, color: enabled ? Colors.blue.shade900 : Colors.white24, size: 32),
+    );
+  }
+
+  Widget _buildCollectorCard(String texto, {required bool isFront}) {
+    return Container(
+      width: 310,
+      height: 450,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(25),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.3),
+            blurRadius: 20,
+            offset: const Offset(0, 10),
+          ),
+        ],
+        border: Border.all(
+          color: isFront ? Colors.blue.shade300 : Colors.orange.shade300,
+          width: 8,
+        ),
+      ),
+      child: Stack(
+        children: [
+          // Padrão de fundo do cartão
+          Positioned.fill(
+            child: Opacity(
+              opacity: 0.05,
+              child: CustomPaint(painter: GridPainter(color: isFront ? Colors.blue : Colors.orange)),
+            ),
+          ),
+          
+          // Conteúdo
+          Padding(
+            padding: const EdgeInsets.all(25),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(isFront ? Icons.help_outline_rounded : Icons.auto_awesome_rounded, 
+                      color: isFront ? Colors.blue : Colors.orange, size: 24),
+                    Text(
+                      isFront ? 'PERGUNTA' : 'RESPOSTA',
+                      style: TextStyle(
+                        fontSize: 12, 
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 2,
+                        color: isFront ? Colors.blue : Colors.orange
+                      ),
+                    ),
+                    Icon(Icons.school_rounded, color: Colors.grey.shade300, size: 24),
+                  ],
+                ),
+                const Spacer(),
+                Text(
+                  texto,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey.shade900,
+                    height: 1.2,
+                  ),
+                ),
+                const Spacer(),
+                if (!isFront)
+                  const Icon(Icons.check_circle_rounded, color: Colors.green, size: 40),
+                if (isFront)
+                  Icon(Icons.visibility_off_rounded, color: Colors.blue.shade50, size: 40),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class GridPainter extends CustomPainter {
+  final Color color;
+  GridPainter({required this.color});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    var paint = Paint()
+      ..color = color
+      ..strokeWidth = 1;
+
+    for (var i = 0; i < size.width; i += 20) {
+      canvas.drawLine(Offset(i.toDouble(), 0), Offset(i.toDouble(), size.height), paint);
+    }
+    for (var i = 0; i < size.height; i += 20) {
+      canvas.drawLine(Offset(0, i.toDouble()), Offset(size.width, i.toDouble()), paint);
+    }
+  }
+
+  @override
+  bool shouldRepaint(CustomPainter oldDelegate) => false;
+}

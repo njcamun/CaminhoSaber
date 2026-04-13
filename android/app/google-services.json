@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "335055432152",
+    "project_id": "caminhodosaber-93787",
+    "storage_bucket": "caminhodosaber-93787.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335055432152:android:75621103797e3bc547aaad",
+        "android_client_info": {
+          "package_name": "com.nelson.caminho_do_saber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335055432152-tn7toqri74dos8rdt3d5q362vejbevu7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nelson.caminho_do_saber",
+            "certificate_hash": "b917c8760283d077a05ae74124ed78fe1fd78116"
+          }
+        },
+        {
+          "client_id": "335055432152-28ir19u5e4shmr7dmlhkua98kbrfkpo0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4y_0klMIFnuAkRHYEFD7-rEZSEtmIaVY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335055432152-28ir19u5e4shmr7dmlhkua98kbrfkpo0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

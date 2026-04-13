@@ -1,0 +1,305 @@
+// lib/ui/screens/niveis_screen.dart
+
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'dart:convert';
+import 'dart:math';
+import 'package:caminho_do_saber/models/disciplina_model.dart';
+import 'package:caminho_do_saber/services/progresso_service.dart';
+import 'package:caminho_do_saber/ui/widgets/background_container.dart';
+import 'package:caminho_do_saber/ui/screens/quiz_screen.dart';
+import 'package:caminho_do_saber/models/quiz_model.dart';
+import 'package:flutter/foundation.dart';
+import 'package:provider/provider.dart';
+import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
+import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
+import 'package:caminho_do_saber/ui/widgets/staggered_item.dart';
+
+class NiveisScreen extends StatefulWidget {
+  final Disciplina disciplina;
+  final List<Disciplina> todasDisciplinas;
+
+  const NiveisScreen({
+    super.key,
+    required this.disciplina,
+    required this.todasDisciplinas,
+  });
+
+  @override
+  State<NiveisScreen> createState() => _NiveisScreenState();
+}
+
+class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMixin {
+  late final ProgressoService _progressoService;
+  Map<String, int> _progressoCapitulos = {};
+  List<Capitulo> _capitulos = [];
+  Map<String, List<PerguntaQuiz>> _quizzes = {};
+  Map<String, List<FlashCard>> _flashCardsPorQuiz = {};
+  bool _isLoading = true;
+
+  // Controle de Shake para níveis bloqueados
+  final Map<int, AnimationController> _shakeControllers = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _progressoService = Provider.of<ProgressoService>(context, listen: false);
+    _loadData();
+  }
+
+  @override
+  void dispose() {
+    for (var controller in _shakeControllers.values) {
+      controller.dispose();
+    }
+    super.dispose();
+  }
+
+  Future<void> _loadData() async {
+    await _loadQuizzes();
+    await _loadProgresso();
+    setState(() {
+      _isLoading = false;
+    });
+  }
+
+  void _triggerShake(int index) {
+    if (!_shakeControllers.containsKey(index)) {
+      _shakeControllers[index] = AnimationController(
+        vsync: this,
+        duration: const Duration(milliseconds: 400),
+      );
+    }
+    _shakeControllers[index]!.forward(from: 0.0);
+    HapticFeedback.vibrate();
+  }
+
+  Future<void> _loadQuizzes() async {
+    try {
+      final String assetPath = 'assets/data/${widget.disciplina.id}.json';
+      final String jsonString = await rootBundle.loadString(assetPath);
+      final jsonMap = jsonDecode(jsonString) as Map<String, dynamic>;
+
+      final List<dynamic>? quizzesJson = jsonMap['quizzes'];
+      if (quizzesJson != null) {
+        final List<Capitulo> loadedCapitulos = [];
+        final Map<String, List<PerguntaQuiz>> loadedQuizzes = {};
+        final Map<String, List<FlashCard>> generatedFlashCards = {};
+
+        for (var quiz in quizzesJson) {
+          final quizId = quiz['id'] as String;
+          final List<dynamic> perguntasJson = quiz['perguntas'];
+          final List<PerguntaQuiz> perguntas = perguntasJson.map((perguntaJson) => PerguntaQuiz.fromJson(perguntaJson)).toList();
+
+          final List<FlashCard> flashCardsDoQuiz = perguntas.map((pergunta) => FlashCard(
+            pergunta: pergunta.pergunta,
+            resposta: pergunta.respostaCorreta,
+          )).toList();
+
+          loadedCapitulos.add(Capitulo.fromJson(quiz));
+          loadedQuizzes[quizId] = perguntas;
+          generatedFlashCards[quizId] = flashCardsDoQuiz;
+        }
+
+        setState(() {
+          _quizzes = loadedQuizzes;
+          _capitulos = loadedCapitulos;
+          _flashCardsPorQuiz = generatedFlashCards;
+        });
+      }
+    } catch (e) {
+      if (kDebugMode) {
+        print('Erro ao carregar dados da disciplina: $e');
+      }
+    }
+  }
+
+  Future<void> _loadProgresso() async {
+    final progresso = await _progressoService.getProgresso(widget.disciplina.id);
+    if(mounted) {
+      setState(() {
+        _progressoCapitulos = progresso;
+      });
+    }
+  }
+
+  int _getEstrelas(int pontuacao, int totalPontosPossiveis) {
+    if (totalPontosPossiveis <= 0) return 0;
+    final percentagem = (pontuacao / totalPontosPossiveis) * 100;
+    if (percentagem >= 100) return 5;
+    if (percentagem >= 90) return 4;
+    if (percentagem >= 80) return 3;
+    if (percentagem >= 70) return 2;
+    if (percentagem >= 60) return 1;
+    return 0;
+  }
+
+  bool _isNivelDesbloqueado(int capituloIndex, int pontuacaoAnterior, int totalPontosAnterior) {
+    if (capituloIndex == 0) return true;
+    if (totalPontosAnterior == 0) return false;
+    final percentagem = (pontuacaoAnterior / totalPontosAnterior) * 100;
+    return percentagem >= 80;
+  }
+
+  Widget _buildNivelCard(BuildContext context, int index) {
+    final capitulo = _capitulos[index];
+    final quizPerguntas = _quizzes[capitulo.quizId] ?? [];
+    final totalPontosPossiveis = quizPerguntas.length * 5;
+
+    final progressoKey = '${widget.disciplina.id}_capitulo_${index + 1}';
+    final pontuacao = _progressoCapitulos[progressoKey] ?? 0;
+    final estrelas = _getEstrelas(pontuacao, totalPontosPossiveis);
+
+    final pontuacaoAnterior = index > 0
+        ? _progressoCapitulos['${widget.disciplina.id}_capitulo_$index'] ?? 0
+        : 0;
+
+    final totalPontosAnterior = index > 0
+        ? (_quizzes[_capitulos[index - 1].quizId]?.length ?? 0) * 5
+        : 0;
+
+    final isUnlocked = _isNivelDesbloqueado(index, pontuacaoAnterior, totalPontosAnterior);
+
+    if (!_shakeControllers.containsKey(index)) {
+      _shakeControllers[index] = AnimationController(vsync: this, duration: const Duration(milliseconds: 400));
+    }
+
+    return StaggeredFadeItem(
+      index: index,
+      child: AnimatedBuilder(
+        animation: _shakeControllers[index]!,
+        builder: (context, child) {
+          final double offset = sin(_shakeControllers[index]!.value * pi * 4) * 8;
+          return Transform.translate(
+            offset: Offset(isUnlocked ? 0 : offset, 0),
+            child: child,
+          );
+        },
+        child: ScalePressWrapper(
+          onTap: isUnlocked && quizPerguntas.isNotEmpty
+              ? () async {
+            await Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => QuizScreen(
+                  perguntas: quizPerguntas,
+                  disciplinaId: widget.disciplina.id,
+                  capituloIndex: index + 1,
+                  flashCards: _flashCardsPorQuiz[capitulo.quizId] ?? [],
+                ),
+              ),
+            );
+            await _loadData();
+          }
+              : () {
+            _triggerShake(index);
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(isUnlocked ? 'Nenhuma pergunta disponível.' : 'Nível bloqueado! Completa o anterior com 80%+.'),
+                duration: const Duration(milliseconds: 800),
+              ),
+            );
+          },
+          child: Card(
+            elevation: isUnlocked ? 8 : 2,
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15.0),
+                gradient: LinearGradient(
+                  colors: isUnlocked
+                      ? [Colors.blue.shade300, Colors.blue.shade900]
+                      : [Colors.grey.shade400, Colors.grey.shade700],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+              ),
+              child: Stack(
+                children: [
+                  Align(
+                    alignment: Alignment.center,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('${index + 1}', style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: isUnlocked ? Colors.white : Colors.grey.shade800)),
+                        const SizedBox(height: 5),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 4),
+                          child: Text(capitulo.capitulo, textAlign: TextAlign.center, style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: isUnlocked ? Colors.white : Colors.grey.shade800), maxLines: 2, overflow: TextOverflow.ellipsis),
+                        ),
+                        if (isUnlocked)
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: List.generate(5, (starIndex) => Icon(starIndex < estrelas ? Icons.star : Icons.star_border, color: Colors.amber, size: 14)),
+                          ),
+                      ],
+                    ),
+                  ),
+                  if (!isUnlocked)
+                    const Positioned.fill(child: Icon(Icons.lock_rounded, color: Colors.white54, size: 40)),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        title: Text(widget.disciplina.nome, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24, color: Colors.white)),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white), onPressed: () => Navigator.pop(context)),
+      ),
+      body: BackgroundContainer(
+        baseColor: widget.disciplina.categoria.toUpperCase() == 'CIÊNCIAS' ? Colors.green : Colors.blue,
+        child: _isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : Column(
+                children: [
+                  Stack(
+                    children: [
+                      Hero(
+                        tag: 'disciplina_bg_${widget.disciplina.id}',
+                        child: SizedBox(height: 220, width: double.infinity, child: SafeAssetImage(path: widget.disciplina.animacao, fit: BoxFit.cover)),
+                      ),
+                      Container(
+                        height: 220,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [Colors.black.withValues(alpha: 0.5), Colors.transparent, Colors.blue.withValues(alpha: 0.8)],
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 20, left: 20, right: 20,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(widget.disciplina.nome, style: const TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold)),
+                            Text(widget.disciplina.descricao, style: const TextStyle(color: Colors.white70, fontSize: 14), maxLines: 2, overflow: TextOverflow.ellipsis),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Expanded(
+                    child: GridView.builder(
+                      padding: const EdgeInsets.all(16),
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, childAspectRatio: 0.9, crossAxisSpacing: 12, mainAxisSpacing: 12),
+                      itemCount: _capitulos.length,
+                      itemBuilder: (context, index) => _buildNivelCard(context, index),
+                    ),
+                  ),
+                ],
+              ),
+      ),
+    );
+  }
+}

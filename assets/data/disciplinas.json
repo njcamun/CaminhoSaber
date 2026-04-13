@@ -1,0 +1,121 @@
+[
+  {
+    "id": "gramatica",
+    "nome": "Gramática",
+    "categoria": "TRIVIUM",
+    "descricao": "A arte de inventar e combinar letras.",
+    "animacao": "assets/images/gramatica.png"
+  },
+  {
+    "id": "logica",
+    "nome": "Lógica",
+    "categoria": "TRIVIUM",
+    "descricao": "A arte do raciocínio e da argumentação.",
+    "animacao": "assets/images/logica.png"
+  },
+  {
+    "id": "retorica",
+    "nome": "Retórica",
+    "categoria": "TRIVIUM",
+    "descricao": "A arte de persuadir e comunicar de forma eficaz.",
+    "animacao": "assets/images/retorica.png"
+  },
+  {
+    "id": "aritmetica",
+    "nome": "Aritmética",
+    "categoria": "QUADRIVIUM",
+    "descricao": "A ciência dos números.",
+    "animacao": "assets/images/aritmetica.png"
+  },
+  {
+    "id": "geometria",
+    "nome": "Geometria",
+    "categoria": "QUADRIVIUM",
+    "descricao": "A ciência das grandezas.",
+    "animacao": "assets/images/geometria.png"
+  },
+  {
+    "id": "musica",
+    "nome": "Música",
+    "categoria": "QUADRIVIUM",
+    "descricao": "A arte de combinar sons.",
+    "animacao": "assets/images/musica.png"
+  },
+  {
+    "id": "astronomia",
+    "nome": "Astronomia",
+    "categoria": "QUADRIVIUM",
+    "descricao": "A ciência do movimento dos astros.",
+    "animacao": "assets/images/astronomia.png"
+  },
+  {
+    "id": "10_mandamentos",
+    "nome": "10 Mandamentos",
+    "categoria": "CATECISMO",
+    "descricao": "Os princípios divinos para a vida.",
+    "animacao": "assets/images/10_mandamentos.png"
+  },
+  {
+    "id": "westminster",
+    "nome": "Breve Catecismo de Westminster",
+    "categoria": "CATECISMO",
+    "descricao": "O resumo da fé cristã reformada.",
+    "animacao": "assets/images/westminster.png"
+  },
+  {
+    "id": "biblia",
+    "nome": "Bíblia",
+    "categoria": "CATECISMO",
+    "descricao": "As escrituras sagradas.",
+    "animacao": "assets/images/biblia.png"
+  },
+  {
+    "id": "historia_mwangole",
+    "nome": "História",
+    "categoria": "MWANGOLE",
+    "descricao": "O estudo do passado.",
+    "animacao": "assets/images/historia.png"
+  },
+  {
+    "id": "geografia_mwangole",
+    "nome": "Geografia",
+    "categoria": "MWANGOLE",
+    "descricao": "O estudo da Terra e de seus habitantes.",
+    "animacao": "assets/images/geografia.png"
+  },
+  {
+    "id": "linguas_nacionais",
+    "nome": "Línguas Nacionais",
+    "categoria": "MWANGOLE",
+    "descricao": "Estudo das línguas faladas em Angola.",
+    "animacao": "assets/images/linguas_nacionais.png"
+  },
+  {
+    "id": "historia_mundo",
+    "nome": "História",
+    "categoria": "CONHECIMENTOS GERAIS",
+    "descricao": "Estudo do passado e eventos globais.",
+    "animacao": "assets/images/historia_mundo.png"
+  },
+  {
+    "id": "geografia_mundo",
+    "nome": "Geografia",
+    "categoria": "CONHECIMENTOS GERAIS",
+    "descricao": "Estudo dos fenômenos da Terra.",
+    "animacao": "assets/images/geografia_mundo.png"
+  },
+  {
+    "id": "ciencias",
+    "nome": "Ciências",
+    "categoria": "CONHECIMENTOS GERAIS",
+    "descricao": "Fundamentos das ciências naturais.",
+    "animacao": "assets/images/ciencias.png"
+  },
+  {
+    "id": "ingles",
+    "nome": "Inglês",
+    "categoria": "CONHECIMENTOS GERAIS",
+    "descricao": "Aprenda a língua inglesa.",
+    "animacao": "assets/images/ingles.png"
+  }
+]

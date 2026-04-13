@@ -1,0 +1,4697 @@
+{
+"disciplina": "lógica",
+"quizzes": [
+{
+"id": "1-basico",
+"capitulo": "Capítulo 1 - O Que É Pensar?",
+"nivel": "basico",
+"dicas": "Imaginar é como sonhar acordado, pensar é entender de verdade.",
+"perguntas": [
+{
+"pergunta": "O que é imaginar?",
+"opcoes": ["Ver um filme na cabeça", "Resolver um problema", "Fazer contas", "Estudar um livro"],
+"respostaCorreta": "Ver um filme na cabeça",
+"dica": "Pense em algo que só existe na sua mente."
+},
+{
+"pergunta": "O que é pensar?",
+"opcoes": ["Organizar ideias para entender", "Sonhar acordado", "Brincar", "Cantar"],
+"respostaCorreta": "Organizar ideias para entender",
+"dica": "Pensar ajuda a descobrir a verdade."
+},
+{
+"pergunta": "Quando você imagina um dragão azul, você está:",
+"opcoes": ["Pensando", "Imaginando", "Dormindo", "Estudando"],
+"respostaCorreta": "Imaginando",
+"dica": "Dragões não existem de verdade."
+},
+{
+"pergunta": "Pensar precisa de:",
+"opcoes": ["Atenção", "Sono", "Silêncio total", "Música alta"],
+"respostaCorreta": "Atenção",
+"dica": "Pensar exige esforço."
+},
+{
+"pergunta": "Pensar ajuda a descobrir:",
+"opcoes": ["A verdade", "Histórias falsas", "Jogos", "Brinquedos"],
+"respostaCorreta": "A verdade",
+"dica": "Pensar é buscar o que é real."
+},
+{
+"pergunta": "Imaginar é igual a pensar?",
+"opcoes": ["Sim", "Não", "Às vezes sempre", "Nunca acontece"],
+"respostaCorreta": "Não",
+"dica": "Eles são diferentes."
+},
+{
+"pergunta": "Pensar antes de falar é importante porque:",
+"opcoes": ["Evita erros", "Faz falar mais rápido", "Faz barulho", "Não serve para nada"],
+"respostaCorreta": "Evita erros",
+"dica": "Pensar ajuda a escolher melhor as palavras."
+},
+{
+"pergunta": "Ver um sorvete na cabeça é:",
+"opcoes": ["Imaginar", "Pensar", "Comer", "Tocar"],
+"respostaCorreta": "Imaginar",
+"dica": "Você não está comendo de verdade."
+},
+{
+"pergunta": "Descobrir por que o sorvete derrete é:",
+"opcoes": ["Pensar", "Imaginar", "Brincar", "Correr"],
+"respostaCorreta": "Pensar",
+"dica": "Você está tentando entender algo real."
+},
+{
+"pergunta": "Pensar é como:",
+"opcoes": ["Montar um quebra-cabeça", "Assistir TV", "Dormir", "Correr"],
+"respostaCorreta": "Montar um quebra-cabeça",
+"dica": "Você junta ideias para entender."
+}
+]
+},
+{
+"id": "1-medio",
+"capitulo": "Capítulo 1 - O Que É Pensar?",
+"nivel": "medio",
+"dicas": "Pensar envolve analisar e entender, não apenas imaginar.",
+"perguntas": [
+{
+"pergunta": "Qual é a principal diferença entre imaginar e pensar?",
+"opcoes": ["Imaginar é real e pensar não", "Pensar busca a verdade", "Imaginar exige esforço", "Pensar é brincar"],
+"respostaCorreta": "Pensar busca a verdade",
+"dica": "Uma das opções envolve entender a realidade."
+},
+{
+"pergunta": "Por que pensar exige atenção?",
+"opcoes": ["Porque é difícil entender", "Porque é divertido", "Porque é rápido", "Porque é automático"],
+"respostaCorreta": "Porque é difícil entender",
+"dica": "Pensar precisa de esforço mental."
+},
+{
+"pergunta": "Imaginar algo impossível, como um dragão, é útil para:",
+"opcoes": ["Criatividade", "Descobrir leis da natureza", "Resolver contas", "Estudar ciência"],
+"respostaCorreta": "Criatividade",
+"dica": "Imaginar ajuda a criar ideias."
+},
+{
+"pergunta": "Pensar antes de agir ajuda a:",
+"opcoes": ["Evitar erros", "Ficar mais lento sempre", "Não fazer nada", "Imaginar mais"],
+"respostaCorreta": "Evitar erros",
+"dica": "Pensar melhora decisões."
+},
+{
+"pergunta": "Qual situação mostra pensamento?",
+"opcoes": ["Entender por que algo acontece", "Sonhar acordado", "Imaginar histórias", "Desenhar um monstro"],
+"respostaCorreta": "Entender por que algo acontece",
+"dica": "Pensar busca explicações."
+},
+{
+"pergunta": "Imaginar não precisa de:",
+"opcoes": ["Realidade", "Criatividade", "Ideias", "Imagens"],
+"respostaCorreta": "Realidade",
+"dica": "Pode ser algo que não existe."
+},
+{
+"pergunta": "Pensar é importante porque:",
+"opcoes": ["Ajuda a entender o mundo", "Cria histórias falsas", "Substitui brincar", "Evita estudar"],
+"respostaCorreta": "Ajuda a entender o mundo",
+"dica": "Pensar nos aproxima da verdade."
+},
+{
+"pergunta": "Qual exemplo é imaginar?",
+"opcoes": ["Voar como um super-herói", "Resolver um problema", "Estudar matemática", "Aprender ciência"],
+"respostaCorreta": "Voar como um super-herói",
+"dica": "Isso não é real."
+},
+{
+"pergunta": "Qual exemplo é pensar?",
+"opcoes": ["Descobrir por que chove", "Imaginar um castelo", "Inventar um monstro", "Sonhar acordado"],
+"respostaCorreta": "Descobrir por que chove",
+"dica": "Você está buscando explicação."
+},
+{
+"pergunta": "Pensar pode ser comparado a:",
+"opcoes": ["Resolver um quebra-cabeça", "Dormir", "Cantar", "Correr"],
+"respostaCorreta": "Resolver um quebra-cabeça",
+"dica": "Você organiza ideias."
+}
+]
+},
+{
+"id": "1-avancado",
+"capitulo": "Capítulo 1 - O Que É Pensar?",
+"nivel": "avancado",
+"dicas": "Pensar envolve análise, causa e busca da verdade.",
+"perguntas": [
+{
+"pergunta": "Por que imaginar não garante conhecimento verdadeiro?",
+"opcoes": ["Porque não se baseia na realidade", "Porque exige esforço", "Porque é sempre errado", "Porque é científico"],
+"respostaCorreta": "Porque não se baseia na realidade",
+"dica": "Pense na diferença entre fantasia e realidade."
+},
+{
+"pergunta": "Qual é a consequência de não pensar antes de falar?",
+"opcoes": ["Cometer erros", "Aprender mais rápido", "Ficar em silêncio", "Imaginar melhor"],
+"respostaCorreta": "Cometer erros",
+"dica": "Falta de reflexão causa problemas."
+},
+{
+"pergunta": "Pensar ajuda a descobrir a verdade porque:",
+"opcoes": ["Organiza ideias com lógica", "Cria histórias", "Evita esforço", "Ignora fatos"],
+"respostaCorreta": "Organiza ideias com lógica",
+"dica": "Pensar envolve organização."
+},
+{
+"pergunta": "Se alguém apenas imagina soluções sem analisar, o que pode acontecer?",
+"opcoes": ["Erros nas conclusões", "Mais acertos", "Mais diversão", "Menos ideias"],
+"respostaCorreta": "Erros nas conclusões",
+"dica": "Sem análise, não há certeza."
+},
+{
+"pergunta": "Qual relação existe entre pensar e verdade?",
+"opcoes": ["Pensar busca a verdade", "Pensar evita a verdade", "Pensar ignora fatos", "Pensar cria mentiras"],
+"respostaCorreta": "Pensar busca a verdade",
+"dica": "Pensar tem objetivo."
+},
+{
+"pergunta": "Por que pensar exige esforço?",
+"opcoes": ["Porque envolve análise", "Porque é automático", "Porque é fácil", "Porque é rápido"],
+"respostaCorreta": "Porque envolve análise",
+"dica": "Pensar não acontece sozinho."
+},
+{
+"pergunta": "Qual é o papel da atenção no pensamento?",
+"opcoes": ["Permitir compreensão", "Evitar imaginação", "Criar sonhos", "Acelerar fala"],
+"respostaCorreta": "Permitir compreensão",
+"dica": "Sem atenção, não há entendimento."
+},
+{
+"pergunta": "Se uma pessoa confunde imaginar com pensar, qual é o risco?",
+"opcoes": ["Acreditar em coisas irreais", "Aprender mais", "Pensar melhor", "Ser mais lógico"],
+"respostaCorreta": "Acreditar em coisas irreais",
+"dica": "Misturar fantasia com realidade é perigoso."
+},
+{
+"pergunta": "Pensar pode ser comparado a montar um quebra-cabeça porque:",
+"opcoes": ["Exige organização de partes", "É rápido e fácil", "Não precisa de lógica", "Não tem objetivo"],
+"respostaCorreta": "Exige organização de partes",
+"dica": "Você junta peças para entender."
+},
+{
+"pergunta": "Qual é a causa de um pensamento correto?",
+"opcoes": ["Atenção e análise", "Imaginação livre", "Pressa", "Falta de foco"],
+"respostaCorreta": "Atenção e análise",
+"dica": "Pensar bem exige cuidado."
+}
+]
+},
+{
+"id": "2-basico",
+"capitulo": "Capítulo 2 - Ordem e Classificação",
+"nivel": "basico",
+"dicas": "Classificar é separar coisas parecidas.",
+"perguntas": [
+{
+"pergunta": "O que é classificar?",
+"opcoes": ["Separar coisas", "Misturar tudo", "Quebrar objetos", "Esconder coisas"],
+"respostaCorreta": "Separar coisas",
+"dica": "Organizar em grupos."
+},
+{
+"pergunta": "Separar por cor significa:",
+"opcoes": ["Juntar cores iguais", "Misturar cores", "Ignorar cores", "Apagar cores"],
+"respostaCorreta": "Juntar cores iguais",
+"dica": "Cores parecidas ficam juntas."
+},
+{
+"pergunta": "Uma maçã pertence a qual grupo?",
+"opcoes": ["Frutas", "Brinquedos", "Roupas", "Ferramentas"],
+"respostaCorreta": "Frutas",
+"dica": "É algo que comemos."
+},
+{
+"pergunta": "Classificar ajuda a:",
+"opcoes": ["Encontrar coisas", "Perder objetos", "Confundir ideias", "Quebrar coisas"],
+"respostaCorreta": "Encontrar coisas",
+"dica": "Organização facilita."
+},
+{
+"pergunta": "Separar por tamanho significa:",
+"opcoes": ["Juntar grandes e pequenos", "Misturar tudo", "Ignorar tamanho", "Quebrar objetos"],
+"respostaCorreta": "Juntar grandes e pequenos",
+"dica": "Observe o tamanho."
+},
+{
+"pergunta": "Uma caneta pertence ao grupo:",
+"opcoes": ["Escrever", "Comer", "Vestir", "Dormir"],
+"respostaCorreta": "Escrever",
+"dica": "Serve para escrever."
+},
+{
+"pergunta": "Classificar ideias ajuda a:",
+"opcoes": ["Pensar melhor", "Pensar pior", "Não pensar", "Dormir"],
+"respostaCorreta": "Pensar melhor",
+"dica": "Organizar ajuda o cérebro."
+},
+{
+"pergunta": "Separar roupas e comida é um exemplo de:",
+"opcoes": ["Classificação", "Brincadeira", "Erro", "Desordem"],
+"respostaCorreta": "Classificação",
+"dica": "São grupos diferentes."
+},
+{
+"pergunta": "Um quarto bagunçado dificulta:",
+"opcoes": ["Encontrar coisas", "Dormir", "Brincar", "Cantar"],
+"respostaCorreta": "Encontrar coisas",
+"dica": "Bagunça atrapalha."
+},
+{
+"pergunta": "Organizar é o contrário de:",
+"opcoes": ["Bagunçar", "Arrumar", "Separar", "Classificar"],
+"respostaCorreta": "Bagunçar",
+"dica": "É o oposto."
+}
+]
+},
+{
+"id": "2-medio",
+"capitulo": "Capítulo 2 - Ordem e Classificação",
+"nivel": "medio",
+"dicas": "Classificar usa características e funções.",
+"perguntas": [
+{
+"pergunta": "Por que classificamos objetos?",
+"opcoes": ["Para entender melhor", "Para confundir", "Para esconder", "Para quebrar"],
+"respostaCorreta": "Para entender melhor",
+"dica": "Ajuda a pensar."
+},
+{
+"pergunta": "Qual é um critério de classificação?",
+"opcoes": ["Cor", "Som", "Barulho", "Cheiro sempre"],
+"respostaCorreta": "Cor",
+"dica": "Característica visível."
+},
+{
+"pergunta": "Classificar por função significa:",
+"opcoes": ["Separar pelo uso", "Separar pela cor", "Misturar tudo", "Ignorar função"],
+"respostaCorreta": "Separar pelo uso",
+"dica": "Para que serve."
+},
+{
+"pergunta": "Uma colher pertence ao grupo:",
+"opcoes": ["Comer", "Vestir", "Brincar", "Dormir"],
+"respostaCorreta": "Comer",
+"dica": "Serve para alimentação."
+},
+{
+"pergunta": "Sequência lógica ajuda a:",
+"opcoes": ["Organizar ideias", "Confundir", "Esquecer", "Misturar"],
+"respostaCorreta": "Organizar ideias",
+"dica": "Ordem importa."
+},
+{
+"pergunta": "Um pinguim voa?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "Ele é ave, mas não voa."
+},
+{
+"pergunta": "Classificar por pertencimento significa:",
+"opcoes": ["Agrupar por tipo", "Misturar tudo", "Separar por cor", "Ignorar grupos"],
+"respostaCorreta": "Agrupar por tipo",
+"dica": "Grupo ao qual pertence."
+},
+{
+"pergunta": "Organização mental ajuda a:",
+"opcoes": ["Evitar confusão", "Criar erros", "Esquecer tudo", "Misturar ideias"],
+"respostaCorreta": "Evitar confusão",
+"dica": "Ordem traz clareza."
+},
+{
+"pergunta": "Separar frutas e roupas é:",
+"opcoes": ["Classificação correta", "Erro", "Bagunça", "Brincadeira"],
+"respostaCorreta": "Classificação correta",
+"dica": "São categorias diferentes."
+},
+{
+"pergunta": "Classificar ajuda o cérebro a:",
+"opcoes": ["Não se perder", "Confundir", "Dormir", "Parar"],
+"respostaCorreta": "Não se perder",
+"dica": "Organização mental."
+}
+]
+},
+{
+"id": "2-avancado",
+"capitulo": "Capítulo 2 - Ordem e Classificação",
+"nivel": "avancado",
+"dicas": "Classificar envolve análise de critérios.",
+"perguntas": [
+{
+"pergunta": "Por que a classificação é essencial para o pensamento lógico?",
+"opcoes": ["Organiza informações", "Confunde ideias", "Ignora diferenças", "Mistura tudo"],
+"respostaCorreta": "Organiza informações",
+"dica": "Sem organização não há lógica."
+},
+{
+"pergunta": "Qual é o efeito de não classificar corretamente?",
+"opcoes": ["Confusão mental", "Clareza total", "Mais rapidez", "Mais acertos"],
+"respostaCorreta": "Confusão mental",
+"dica": "Misturar tudo gera erro."
+},
+{
+"pergunta": "Classificar por função analisa:",
+"opcoes": ["Utilidade", "Cor", "Forma", "Peso"],
+"respostaCorreta": "Utilidade",
+"dica": "Para que serve."
+},
+{
+"pergunta": "Um erro comum na classificação é:",
+"opcoes": ["Misturar categorias", "Separar corretamente", "Organizar ideias", "Agrupar bem"],
+"respostaCorreta": "Misturar categorias",
+"dica": "Grupos errados causam erro."
+},
+{
+"pergunta": "Por que o pinguim não entra em 'animais que voam'?",
+"opcoes": ["Não voa", "É peixe", "Não é animal", "É invisível"],
+"respostaCorreta": "Não voa",
+"dica": "Observe a função."
+},
+{
+"pergunta": "A sequência lógica depende de:",
+"opcoes": ["Organização", "Aleatoriedade", "Confusão", "Pressa"],
+"respostaCorreta": "Organização",
+"dica": "Ordem é essencial."
+},
+{
+"pergunta": "Classificar melhora o pensamento porque:",
+"opcoes": ["Cria estrutura", "Elimina ideias", "Confunde dados", "Ignora diferenças"],
+"respostaCorreta": "Cria estrutura",
+"dica": "Estrutura ajuda compreensão."
+},
+{
+"pergunta": "Misturar objetos de grupos diferentes causa:",
+"opcoes": ["Erro lógico", "Mais clareza", "Organização", "Precisão"],
+"respostaCorreta": "Erro lógico",
+"dica": "Categorias devem ser corretas."
+},
+{
+"pergunta": "Critérios de classificação devem ser:",
+"opcoes": ["Claros", "Aleatórios", "Confusos", "Inúteis"],
+"respostaCorreta": "Claros",
+"dica": "Critério bem definido."
+},
+{
+"pergunta": "Qual é a causa de uma boa classificação?",
+"opcoes": ["Análise correta", "Pressa", "Falta de atenção", "Confusão"],
+"respostaCorreta": "Análise correta",
+"dica": "Pensar bem antes de agrupar."
+}
+]
+},
+{
+"id": "3-basico",
+"capitulo": "Capítulo 3 - Comparação",
+"nivel": "basico",
+"dicas": "Comparar é ver o que é igual e diferente.",
+"perguntas": [
+{
+"pergunta": "O que é comparar?",
+"opcoes": ["Ver diferenças e semelhanças", "Misturar tudo", "Quebrar coisas", "Esconder objetos"],
+"respostaCorreta": "Ver diferenças e semelhanças",
+"dica": "Olhar o que é igual e diferente."
+},
+{
+"pergunta": "Duas laranjas são iguais em:",
+"opcoes": ["Espécie", "Cor sempre", "Tamanho sempre", "Peso sempre"],
+"respostaCorreta": "Espécie",
+"dica": "Ambas são laranjas."
+},
+{
+"pergunta": "Antes da árvore vem:",
+"opcoes": ["A semente", "O fruto", "A folha", "O galho"],
+"respostaCorreta": "A semente",
+"dica": "Tudo começa pequeno."
+},
+{
+"pergunta": "A roda é parte de:",
+"opcoes": ["Carro", "Casa", "Livro", "Mesa"],
+"respostaCorreta": "Carro",
+"dica": "Ela pertence a algo maior."
+},
+{
+"pergunta": "Comparar ajuda a:",
+"opcoes": ["Entender melhor", "Confundir", "Esquecer", "Misturar"],
+"respostaCorreta": "Entender melhor",
+"dica": "Ajuda a conhecer."
+},
+{
+"pergunta": "Uma pétala é:",
+"opcoes": ["Parte da flor", "Flor inteira", "Semente", "Raiz"],
+"respostaCorreta": "Parte da flor",
+"dica": "É apenas um pedaço."
+},
+{
+"pergunta": "Parte e todo significa:",
+"opcoes": ["Uma coisa dentro de outra", "Tudo separado", "Nada junto", "Misturar tudo"],
+"respostaCorreta": "Uma coisa dentro de outra",
+"dica": "Um pedaço e o conjunto."
+},
+{
+"pergunta": "Comparar tamanhos significa:",
+"opcoes": ["Ver maior e menor", "Misturar objetos", "Ignorar diferenças", "Quebrar coisas"],
+"respostaCorreta": "Ver maior e menor",
+"dica": "Observe o tamanho."
+},
+{
+"pergunta": "Antes e depois mostra:",
+"opcoes": ["Ordem do tempo", "Cor", "Forma", "Peso"],
+"respostaCorreta": "Ordem do tempo",
+"dica": "O que vem primeiro."
+},
+{
+"pergunta": "Comparar ajuda a não:",
+"opcoes": ["Confundir coisas", "Aprender", "Ver diferenças", "Entender"],
+"respostaCorreta": "Confundir coisas",
+"dica": "Evita erros."
+}
+]
+},
+{
+"id": "3-medio",
+"capitulo": "Capítulo 3 - Comparação",
+"nivel": "medio",
+"dicas": "Comparar envolve analisar relações.",
+"perguntas": [
+{
+"pergunta": "Por que comparar é importante?",
+"opcoes": ["Ajuda a entender relações", "Confunde ideias", "Mistura tudo", "Ignora diferenças"],
+"respostaCorreta": "Ajuda a entender relações",
+"dica": "Comparar revela diferenças."
+},
+{
+"pergunta": "Duas frutas podem ser iguais em:",
+"opcoes": ["Espécie", "Tamanho sempre", "Cor sempre", "Peso sempre"],
+"respostaCorreta": "Espécie",
+"dica": "Podem variar em outros aspectos."
+},
+{
+"pergunta": "Antes e depois é um tipo de:",
+"opcoes": ["Relação de tempo", "Cor", "Forma", "Peso"],
+"respostaCorreta": "Relação de tempo",
+"dica": "Envolve sequência."
+},
+{
+"pergunta": "Parte e todo ajuda a:",
+"opcoes": ["Entender estrutura", "Misturar ideias", "Ignorar partes", "Confundir objetos"],
+"respostaCorreta": "Entender estrutura",
+"dica": "Mostra como algo é formado."
+},
+{
+"pergunta": "Uma roda comparada ao carro é:",
+"opcoes": ["Parte", "Todo", "Igual", "Sem relação"],
+"respostaCorreta": "Parte",
+"dica": "É apenas um componente."
+},
+{
+"pergunta": "Comparar tamanhos ajuda a:",
+"opcoes": ["Identificar diferenças", "Misturar objetos", "Ignorar detalhes", "Confundir"],
+"respostaCorreta": "Identificar diferenças",
+"dica": "Observe maior e menor."
+},
+{
+"pergunta": "Uma pétala é menor que a flor porque:",
+"opcoes": ["É parte", "É maior", "É igual", "Não pertence"],
+"respostaCorreta": "É parte",
+"dica": "Parte é menor que o todo."
+},
+{
+"pergunta": "Comparar evita:",
+"opcoes": ["Confusão", "Aprendizado", "Entendimento", "Organização"],
+"respostaCorreta": "Confusão",
+"dica": "Ajuda a clareza."
+},
+{
+"pergunta": "Igual e diferente são:",
+"opcoes": ["Formas de comparação", "Tipos de erro", "Tipos de objetos", "Tipos de cores"],
+"respostaCorreta": "Formas de comparação",
+"dica": "São critérios."
+},
+{
+"pergunta": "Comparar é útil para:",
+"opcoes": ["Analisar", "Ignorar", "Misturar", "Esquecer"],
+"respostaCorreta": "Analisar",
+"dica": "Ajuda a pensar."
+}
+]
+},
+{
+"id": "3-avancado",
+"capitulo": "Capítulo 3 - Comparação",
+"nivel": "avancado",
+"dicas": "Comparar envolve análise de relações lógicas.",
+"perguntas": [
+{
+"pergunta": "Por que comparar é essencial para o conhecimento?",
+"opcoes": ["Permite identificar relações", "Confunde ideias", "Elimina diferenças", "Mistura tudo"],
+"respostaCorreta": "Permite identificar relações",
+"dica": "Sem comparação não há análise."
+},
+{
+"pergunta": "Qual é o efeito de não comparar corretamente?",
+"opcoes": ["Confusão", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Confusão",
+"dica": "Sem comparação há erro."
+},
+{
+"pergunta": "A relação parte-todo mostra:",
+"opcoes": ["Estrutura", "Cor", "Peso", "Som"],
+"respostaCorreta": "Estrutura",
+"dica": "Como algo é formado."
+},
+{
+"pergunta": "Comparar antes e depois analisa:",
+"opcoes": ["Tempo", "Forma", "Cor", "Tamanho"],
+"respostaCorreta": "Tempo",
+"dica": "Sequência temporal."
+},
+{
+"pergunta": "Se confundirmos parte com todo, o que ocorre?",
+"opcoes": ["Erro lógico", "Acerto", "Organização", "Clareza"],
+"respostaCorreta": "Erro lógico",
+"dica": "Misturar conceitos gera erro."
+},
+{
+"pergunta": "Comparar corretamente exige:",
+"opcoes": ["Atenção", "Pressa", "Desorganização", "Ignorar detalhes"],
+"respostaCorreta": "Atenção",
+"dica": "Observe bem."
+},
+{
+"pergunta": "Qual é a causa de uma boa comparação?",
+"opcoes": ["Análise cuidadosa", "Pressa", "Confusão", "Falta de foco"],
+"respostaCorreta": "Análise cuidadosa",
+"dica": "Comparar exige pensar."
+},
+{
+"pergunta": "Comparar evita erros porque:",
+"opcoes": ["Distingue diferenças", "Mistura ideias", "Ignora detalhes", "Confunde tudo"],
+"respostaCorreta": "Distingue diferenças",
+"dica": "Ver diferenças evita confusão."
+},
+{
+"pergunta": "Uma pétala em relação à flor é:",
+"opcoes": ["Parte menor", "Todo maior", "Igual", "Sem relação"],
+"respostaCorreta": "Parte menor",
+"dica": "Parte é menor que o todo."
+},
+{
+"pergunta": "Comparar ajuda no raciocínio porque:",
+"opcoes": ["Organiza relações", "Ignora fatos", "Confunde ideias", "Elimina análise"],
+"respostaCorreta": "Organiza relações",
+"dica": "Ajuda a entender conexões."
+}
+]
+},
+{
+"id": "4-basico",
+"capitulo": "Capítulo 4 - Causa e Efeito",
+"nivel": "basico",
+"dicas": "Causa é o motivo, efeito é o que acontece.",
+"perguntas": [
+{
+"pergunta": "O que é causa?",
+"opcoes": ["O motivo de algo acontecer", "O resultado final", "Uma coincidência", "Um erro"],
+"respostaCorreta": "O motivo de algo acontecer",
+"dica": "É o que faz algo acontecer."
+},
+{
+"pergunta": "O que é efeito?",
+"opcoes": ["O resultado de algo", "O começo de algo", "Uma ideia", "Uma dúvida"],
+"respostaCorreta": "O resultado de algo",
+"dica": "Vem depois da causa."
+},
+{
+"pergunta": "Se eu soltar uma bola, o que acontece?",
+"opcoes": ["Ela cai", "Ela voa", "Ela desaparece", "Ela para no ar"],
+"respostaCorreta": "Ela cai",
+"dica": "Pense na gravidade."
+},
+{
+"pergunta": "Regar uma planta faz ela:",
+"opcoes": ["Crescer", "Sumir", "Quebrar", "Dormir"],
+"respostaCorreta": "Crescer",
+"dica": "Água ajuda a planta."
+},
+{
+"pergunta": "Causa vem:",
+"opcoes": ["Antes do efeito", "Depois do efeito", "Ao mesmo tempo sempre", "Nunca"],
+"respostaCorreta": "Antes do efeito",
+"dica": "Primeiro acontece a causa."
+},
+{
+"pergunta": "Efeito vem:",
+"opcoes": ["Depois da causa", "Antes da causa", "Sem causa", "Nunca"],
+"respostaCorreta": "Depois da causa",
+"dica": "É o resultado."
+},
+{
+"pergunta": "Se estudar, você:",
+"opcoes": ["Aprende", "Esquece", "Dorme", "Corre"],
+"respostaCorreta": "Aprende",
+"dica": "Estudar traz conhecimento."
+},
+{
+"pergunta": "Gato passar na rua causa chuva?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "Isso é coincidência."
+},
+{
+"pergunta": "Causa e efeito ajudam a:",
+"opcoes": ["Entender o mundo", "Confundir tudo", "Ignorar fatos", "Misturar ideias"],
+"respostaCorreta": "Entender o mundo",
+"dica": "Ajuda a explicar coisas."
+},
+{
+"pergunta": "Se... então é usado para:",
+"opcoes": ["Mostrar causa e efeito", "Fazer perguntas", "Contar histórias", "Cantar"],
+"respostaCorreta": "Mostrar causa e efeito",
+"dica": "Liga ação e resultado."
+}
+]
+},
+{
+"id": "4-medio",
+"capitulo": "Capítulo 4 - Causa e Efeito",
+"nivel": "medio",
+"dicas": "Causa produz efeito, mas nem tudo junto é causa.",
+"perguntas": [
+{
+"pergunta": "Qual é a relação entre causa e efeito?",
+"opcoes": ["A causa produz o efeito", "O efeito cria a causa", "São iguais", "Não se relacionam"],
+"respostaCorreta": "A causa produz o efeito",
+"dica": "Um leva ao outro."
+},
+{
+"pergunta": "Se estudar bastante, o efeito é:",
+"opcoes": ["Aprender", "Esquecer", "Dormir", "Errar sempre"],
+"respostaCorreta": "Aprender",
+"dica": "Esforço traz resultado."
+},
+{
+"pergunta": "Coincidência significa:",
+"opcoes": ["Acontecer junto sem relação", "Causa certa", "Efeito garantido", "Regra lógica"],
+"respostaCorreta": "Acontecer junto sem relação",
+"dica": "Nem tudo tem ligação."
+},
+{
+"pergunta": "Soltar uma bola e ela cair mostra:",
+"opcoes": ["Causa e efeito", "Coincidência", "Erro", "Imaginação"],
+"respostaCorreta": "Causa e efeito",
+"dica": "Existe uma razão."
+},
+{
+"pergunta": "Se não houver causa, há efeito?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "Tudo tem motivo."
+},
+{
+"pergunta": "Confundir coincidência com causa pode gerar:",
+"opcoes": ["Erro", "Acerto", "Clareza", "Organização"],
+"respostaCorreta": "Erro",
+"dica": "Nem tudo que acontece junto tem relação."
+},
+{
+"pergunta": "Se regar plantas diariamente, o efeito provável é:",
+"opcoes": ["Crescimento", "Desaparecimento", "Quebra", "Mudança de cor sempre"],
+"respostaCorreta": "Crescimento",
+"dica": "Água ajuda a viver."
+},
+{
+"pergunta": "A regra 'se... então' serve para:",
+"opcoes": ["Prever resultados", "Fazer perguntas", "Contar histórias", "Ignorar fatos"],
+"respostaCorreta": "Prever resultados",
+"dica": "Ajuda a antecipar."
+},
+{
+"pergunta": "Qual exemplo é coincidência?",
+"opcoes": ["Gato passa e chove", "Estudar e aprender", "Soltar bola e cair", "Regar planta e crescer"],
+"respostaCorreta": "Gato passa e chove",
+"dica": "Não há ligação."
+},
+{
+"pergunta": "Causa vem antes porque:",
+"opcoes": ["Inicia o processo", "É o resultado", "É igual ao efeito", "Não importa"],
+"respostaCorreta": "Inicia o processo",
+"dica": "Tudo começa nela."
+}
+]
+},
+{
+"id": "4-avancado",
+"capitulo": "Capítulo 4 - Causa e Efeito",
+"nivel": "avancado",
+"dicas": "Analise causa real e evite confundir com coincidência.",
+"perguntas": [
+{
+"pergunta": "Por que é importante distinguir causa de coincidência?",
+"opcoes": ["Evitar erros de raciocínio", "Confundir ideias", "Ignorar fatos", "Misturar tudo"],
+"respostaCorreta": "Evitar erros de raciocínio",
+"dica": "Nem tudo que ocorre junto tem relação."
+},
+{
+"pergunta": "Qual é o efeito de identificar uma causa correta?",
+"opcoes": ["Compreensão da realidade", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Compreensão da realidade",
+"dica": "Ajuda a entender o mundo."
+},
+{
+"pergunta": "Se alguém acredita em coincidências como causas, o que ocorre?",
+"opcoes": ["Erro lógico", "Acerto total", "Mais clareza", "Mais precisão"],
+"respostaCorreta": "Erro lógico",
+"dica": "Confunde relações."
+},
+{
+"pergunta": "A estrutura 'se... então' representa:",
+"opcoes": ["Relação causal", "Coincidência", "Opinião", "Dúvida"],
+"respostaCorreta": "Relação causal",
+"dica": "Liga causa e efeito."
+},
+{
+"pergunta": "Qual é a causa do crescimento da planta?",
+"opcoes": ["Regar", "Chuva aleatória", "Cor da planta", "Tamanho"],
+"respostaCorreta": "Regar",
+"dica": "Água é essencial."
+},
+{
+"pergunta": "O efeito de estudar com atenção é:",
+"opcoes": ["Aprender", "Esquecer", "Confundir", "Ignorar"],
+"respostaCorreta": "Aprender",
+"dica": "Esforço gera resultado."
+},
+{
+"pergunta": "Por que causa vem antes do efeito?",
+"opcoes": ["Inicia o evento", "É resultado", "É consequência", "É coincidência"],
+"respostaCorreta": "Inicia o evento",
+"dica": "Tudo começa na causa."
+},
+{
+"pergunta": "Confundir causa com efeito gera:",
+"opcoes": ["Erro de interpretação", "Clareza", "Organização", "Precisão"],
+"respostaCorreta": "Erro de interpretação",
+"dica": "Troca de ordem causa problemas."
+},
+{
+"pergunta": "Qual é a consequência de um raciocínio baseado em causa correta?",
+"opcoes": ["Previsão confiável", "Erro", "Confusão", "Dúvida"],
+"respostaCorreta": "Previsão confiável",
+"dica": "Ajuda a prever resultados."
+},
+{
+"pergunta": "Qual é a causa de um pensamento correto sobre eventos?",
+"opcoes": ["Análise lógica", "Coincidência", "Pressa", "Ignorar fatos"],
+"respostaCorreta": "Análise lógica",
+"dica": "Pensar bem evita erros."
+}
+]
+},
+{
+"id": "5-basico",
+"capitulo": "Capítulo 5 - Verdade e Falsidade",
+"nivel": "basico",
+"dicas": "Verdade é quando algo combina com a realidade.",
+"perguntas": [
+{
+"pergunta": "O que é verdade?",
+"opcoes": ["Quando algo é real", "Quando algo é inventado", "Quando é mentira", "Quando é dúvida"],
+"respostaCorreta": "Quando algo é real",
+"dica": "É quando combina com o mundo real."
+},
+{
+"pergunta": "O que é erro?",
+"opcoes": ["Engano sem querer", "Mentira de propósito", "Verdade absoluta", "Certeza"],
+"respostaCorreta": "Engano sem querer",
+"dica": "Você não quis errar."
+},
+{
+"pergunta": "O que é mentira?",
+"opcoes": ["Dizer algo falso de propósito", "Dizer a verdade", "Ficar em silêncio", "Não saber"],
+"respostaCorreta": "Dizer algo falso de propósito",
+"dica": "Há intenção de enganar."
+},
+{
+"pergunta": "Se eu digo 'está sol' e está sol, isso é:",
+"opcoes": ["Verdade", "Erro", "Mentira", "Dúvida"],
+"respostaCorreta": "Verdade",
+"dica": "Combina com a realidade."
+},
+{
+"pergunta": "Se eu me engano sobre o dia da semana, isso é:",
+"opcoes": ["Erro", "Mentira", "Verdade", "Certeza"],
+"respostaCorreta": "Erro",
+"dica": "Foi sem querer."
+},
+{
+"pergunta": "Mentira acontece quando:",
+"opcoes": ["Sabemos a verdade e dizemos o contrário", "Não sabemos algo", "Aprendemos algo", "Pensamos bem"],
+"respostaCorreta": "Sabemos a verdade e dizemos o contrário",
+"dica": "Há intenção."
+},
+{
+"pergunta": "A lógica busca:",
+"opcoes": ["A verdade", "A mentira", "O erro", "A dúvida"],
+"respostaCorreta": "A verdade",
+"dica": "É o objetivo final."
+},
+{
+"pergunta": "Falar a verdade é importante porque:",
+"opcoes": ["Cria confiança", "Confunde pessoas", "Engana outros", "Não importa"],
+"respostaCorreta": "Cria confiança",
+"dica": "Ajuda nas amizades."
+},
+{
+"pergunta": "Erro é diferente de mentira porque:",
+"opcoes": ["Não é de propósito", "É igual", "É pior", "Não existe"],
+"respostaCorreta": "Não é de propósito",
+"dica": "Não há intenção."
+},
+{
+"pergunta": "Buscar a verdade ajuda a:",
+"opcoes": ["Ser mais sábio", "Confundir", "Mentir", "Esquecer"],
+"respostaCorreta": "Ser mais sábio",
+"dica": "Aprender é importante."
+}
+]
+},
+{
+"id": "5-medio",
+"capitulo": "Capítulo 5 - Verdade e Falsidade",
+"nivel": "medio",
+"dicas": "Verdade corresponde à realidade, erro é sem intenção, mentira é intencional.",
+"perguntas": [
+{
+"pergunta": "Qual é a diferença entre erro e mentira?",
+"opcoes": ["Erro é sem intenção, mentira é intencional", "São iguais", "Erro é pior", "Mentira é sem querer"],
+"respostaCorreta": "Erro é sem intenção, mentira é intencional",
+"dica": "Pense na intenção."
+},
+{
+"pergunta": "Por que a verdade é importante?",
+"opcoes": ["Constrói confiança", "Confunde pessoas", "Cria erros", "Não tem valor"],
+"respostaCorreta": "Constrói confiança",
+"dica": "Relacionamentos dependem disso."
+},
+{
+"pergunta": "Se alguém diz algo falso sem saber, isso é:",
+"opcoes": ["Erro", "Mentira", "Verdade", "Certeza"],
+"respostaCorreta": "Erro",
+"dica": "Não foi intencional."
+},
+{
+"pergunta": "Se alguém sabe a verdade e mente, isso é:",
+"opcoes": ["Mentira", "Erro", "Verdade", "Dúvida"],
+"respostaCorreta": "Mentira",
+"dica": "Há intenção de enganar."
+},
+{
+"pergunta": "A lógica busca:",
+"opcoes": ["Correspondência com a realidade", "Imaginação", "Confusão", "Opiniões"],
+"respostaCorreta": "Correspondência com a realidade",
+"dica": "O que é real."
+},
+{
+"pergunta": "Dizer a verdade ajuda a:",
+"opcoes": ["Criar confiança", "Gerar dúvidas", "Enganar", "Confundir"],
+"respostaCorreta": "Criar confiança",
+"dica": "Importante nas relações."
+},
+{
+"pergunta": "Erro pode acontecer por:",
+"opcoes": ["Falta de informação", "Intenção de enganar", "Planejamento", "Certeza"],
+"respostaCorreta": "Falta de informação",
+"dica": "Não sabia corretamente."
+},
+{
+"pergunta": "Mentira prejudica:",
+"opcoes": ["Confiança", "Aprendizado", "Verdade", "Organização"],
+"respostaCorreta": "Confiança",
+"dica": "As pessoas deixam de acreditar."
+},
+{
+"pergunta": "Buscar a verdade exige:",
+"opcoes": ["Esforço", "Desinteresse", "Mentira", "Confusão"],
+"respostaCorreta": "Esforço",
+"dica": "Precisa de dedicação."
+},
+{
+"pergunta": "Qual opção representa verdade?",
+"opcoes": ["Frase que corresponde à realidade", "Frase inventada", "Frase falsa", "Frase confusa"],
+"respostaCorreta": "Frase que corresponde à realidade",
+"dica": "Combina com o real."
+}
+]
+},
+{
+"id": "5-avancado",
+"capitulo": "Capítulo 5 - Verdade e Falsidade",
+"nivel": "avancado",
+"dicas": "Analise intenção, realidade e consequências.",
+"perguntas": [
+{
+"pergunta": "Por que a verdade é fundamental para a lógica?",
+"opcoes": ["Porque corresponde à realidade", "Porque cria histórias", "Porque confunde", "Porque é opcional"],
+"respostaCorreta": "Porque corresponde à realidade",
+"dica": "A lógica busca o real."
+},
+{
+"pergunta": "Qual é a consequência da mentira nas relações?",
+"opcoes": ["Perda de confiança", "Mais amizade", "Mais clareza", "Mais organização"],
+"respostaCorreta": "Perda de confiança",
+"dica": "As pessoas deixam de acreditar."
+},
+{
+"pergunta": "Erro ocorre quando:",
+"opcoes": ["Há engano sem intenção", "Há intenção de enganar", "Há verdade", "Há certeza"],
+"respostaCorreta": "Há engano sem intenção",
+"dica": "Não foi proposital."
+},
+{
+"pergunta": "Mentira envolve:",
+"opcoes": ["Intenção de enganar", "Falta de conhecimento", "Dúvida", "Confusão"],
+"respostaCorreta": "Intenção de enganar",
+"dica": "É proposital."
+},
+{
+"pergunta": "Qual é o efeito de valorizar a verdade?",
+"opcoes": ["Sabedoria", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Sabedoria",
+"dica": "A verdade leva ao conhecimento."
+},
+{
+"pergunta": "Confundir erro com mentira pode causar:",
+"opcoes": ["Julgamento injusto", "Clareza", "Organização", "Precisão"],
+"respostaCorreta": "Julgamento injusto",
+"dica": "A intenção é diferente."
+},
+{
+"pergunta": "A busca pela verdade exige:",
+"opcoes": ["Análise e honestidade", "Mentira", "Pressa", "Ignorar fatos"],
+"respostaCorreta": "Análise e honestidade",
+"dica": "Pensar bem e ser sincero."
+},
+{
+"pergunta": "Qual é a causa de uma mentira?",
+"opcoes": ["Intenção de enganar", "Falta de atenção", "Erro", "Dúvida"],
+"respostaCorreta": "Intenção de enganar",
+"dica": "É proposital."
+},
+{
+"pergunta": "Por que o erro não é considerado mentira?",
+"opcoes": ["Não há intenção", "É igual", "É pior", "É sempre verdade"],
+"respostaCorreta": "Não há intenção",
+"dica": "A intenção faz diferença."
+},
+{
+"pergunta": "Qual é a base da confiança entre amigos?",
+"opcoes": ["Verdade", "Mentira", "Erro", "Dúvida"],
+"respostaCorreta": "Verdade",
+"dica": "Ser honesto é essencial."
+}
+]
+},
+{
+"id": "6-basico",
+"capitulo": "Capítulo 6 - Conceitos",
+"nivel": "basico",
+"dicas": "Conceito é a ideia que temos de algo.",
+"perguntas": [
+{
+"pergunta": "O que é um conceito?",
+"opcoes": ["Uma ideia na mente", "Um objeto físico", "Um som", "Uma cor"],
+"respostaCorreta": "Uma ideia na mente",
+"dica": "É algo que pensamos."
+},
+{
+"pergunta": "Quando falamos 'cadeira', pensamos em:",
+"opcoes": ["Uma ideia de cadeira", "Uma música", "Um cheiro", "Uma cor"],
+"respostaCorreta": "Uma ideia de cadeira",
+"dica": "É o significado na mente."
+},
+{
+"pergunta": "O que é definição?",
+"opcoes": ["Explicar o que algo é", "Esconder algo", "Misturar ideias", "Ignorar coisas"],
+"respostaCorreta": "Explicar o que algo é",
+"dica": "Ajuda a entender melhor."
+},
+{
+"pergunta": "Um conceito ajuda a:",
+"opcoes": ["Entender coisas", "Confundir", "Esquecer", "Misturar"],
+"respostaCorreta": "Entender coisas",
+"dica": "Ajuda a pensar."
+},
+{
+"pergunta": "Gênero significa:",
+"opcoes": ["Grupo geral", "Parte pequena", "Erro", "Mentira"],
+"respostaCorreta": "Grupo geral",
+"dica": "É algo mais amplo."
+},
+{
+"pergunta": "Diferença significa:",
+"opcoes": ["O que torna algo especial", "O grupo geral", "Erro", "Dúvida"],
+"respostaCorreta": "O que torna algo especial",
+"dica": "O que distingue."
+},
+{
+"pergunta": "O ser humano é um:",
+"opcoes": ["Animal racional", "Planta", "Objeto", "Máquina"],
+"respostaCorreta": "Animal racional",
+"dica": "Tem pensamento."
+},
+{
+"pergunta": "Definir algo ajuda a:",
+"opcoes": ["Evitar confusão", "Criar erro", "Misturar ideias", "Ignorar"],
+"respostaCorreta": "Evitar confusão",
+"dica": "Fica mais claro."
+},
+{
+"pergunta": "Um conceito existe:",
+"opcoes": ["Na mente", "Na mão", "No chão", "No ar físico"],
+"respostaCorreta": "Na mente",
+"dica": "É uma ideia."
+},
+{
+"pergunta": "Dizer que algo tem rodas é suficiente para definir bicicleta?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "Outras coisas também têm rodas."
+}
+]
+},
+{
+"id": "6-medio",
+"capitulo": "Capítulo 6 - Conceitos",
+"nivel": "medio",
+"dicas": "Conceitos são definidos por gênero e diferença.",
+"perguntas": [
+{
+"pergunta": "O que é um conceito na lógica?",
+"opcoes": ["Uma ideia geral", "Um objeto físico", "Uma cor", "Um som"],
+"respostaCorreta": "Uma ideia geral",
+"dica": "Está na mente."
+},
+{
+"pergunta": "Definir algo ajuda a:",
+"opcoes": ["Explicar claramente", "Confundir", "Misturar ideias", "Ignorar"],
+"respostaCorreta": "Explicar claramente",
+"dica": "Evita dúvidas."
+},
+{
+"pergunta": "Gênero em uma definição é:",
+"opcoes": ["Grupo mais amplo", "Parte específica", "Erro", "Detalhe pequeno"],
+"respostaCorreta": "Grupo mais amplo",
+"dica": "Categoria geral."
+},
+{
+"pergunta": "Diferença em uma definição é:",
+"opcoes": ["O que distingue", "O grupo geral", "Erro", "Dúvida"],
+"respostaCorreta": "O que distingue",
+"dica": "O que torna único."
+},
+{
+"pergunta": "Por que 'tem rodas' não define bicicleta?",
+"opcoes": ["É muito geral", "É muito específico", "É falso", "É correto"],
+"respostaCorreta": "É muito geral",
+"dica": "Outros objetos também têm rodas."
+},
+{
+"pergunta": "Uma boa definição deve:",
+"opcoes": ["Ser clara", "Ser confusa", "Misturar ideias", "Ignorar detalhes"],
+"respostaCorreta": "Ser clara",
+"dica": "Facilita entendimento."
+},
+{
+"pergunta": "O ser humano é definido como:",
+"opcoes": ["Animal racional", "Objeto", "Planta", "Máquina"],
+"respostaCorreta": "Animal racional",
+"dica": "Tem razão."
+},
+{
+"pergunta": "Conceitos ajudam a:",
+"opcoes": ["Organizar o pensamento", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Organizar o pensamento",
+"dica": "Estrutura mental."
+},
+{
+"pergunta": "Uma definição incompleta causa:",
+"opcoes": ["Confusão", "Clareza", "Organização", "Precisão"],
+"respostaCorreta": "Confusão",
+"dica": "Falta informação."
+},
+{
+"pergunta": "Conceitos são importantes porque:",
+"opcoes": ["Permitem entender ideias", "Confundem", "Ignoram realidade", "Misturam tudo"],
+"respostaCorreta": "Permitem entender ideias",
+"dica": "Base do pensamento."
+}
+]
+},
+{
+"id": "6-avancado",
+"capitulo": "Capítulo 6 - Conceitos",
+"nivel": "avancado",
+"dicas": "Conceitos estruturam o pensamento lógico.",
+"perguntas": [
+{
+"pergunta": "Por que conceitos são fundamentais na lógica?",
+"opcoes": ["Organizam o pensamento", "Confundem ideias", "Eliminam análise", "Ignoram realidade"],
+"respostaCorreta": "Organizam o pensamento",
+"dica": "Sem conceitos não há clareza."
+},
+{
+"pergunta": "Qual é o efeito de uma definição ruim?",
+"opcoes": ["Confusão", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Confusão",
+"dica": "Não explica corretamente."
+},
+{
+"pergunta": "Gênero representa:",
+"opcoes": ["Categoria ampla", "Detalhe específico", "Erro", "Exceção"],
+"respostaCorreta": "Categoria ampla",
+"dica": "Grupo maior."
+},
+{
+"pergunta": "Diferença representa:",
+"opcoes": ["Característica específica", "Grupo geral", "Erro", "Dúvida"],
+"respostaCorreta": "Característica específica",
+"dica": "Distingue dos outros."
+},
+{
+"pergunta": "Por que definições precisam ser precisas?",
+"opcoes": ["Evitar ambiguidades", "Criar confusão", "Misturar ideias", "Ignorar detalhes"],
+"respostaCorreta": "Evitar ambiguidades",
+"dica": "Evita duplo sentido."
+},
+{
+"pergunta": "Uma definição muito geral causa:",
+"opcoes": ["Falta de precisão", "Clareza total", "Organização", "Exatidão"],
+"respostaCorreta": "Falta de precisão",
+"dica": "Inclui coisas demais."
+},
+{
+"pergunta": "Uma definição muito restrita causa:",
+"opcoes": ["Exclusão indevida", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Exclusão indevida",
+"dica": "Deixa coisas de fora."
+},
+{
+"pergunta": "Conceitos permitem:",
+"opcoes": ["Comunicação clara", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Comunicação clara",
+"dica": "Todos entendem melhor."
+},
+{
+"pergunta": "Qual é a causa de um bom conceito?",
+"opcoes": ["Definição clara", "Confusão", "Erro", "Pressa"],
+"respostaCorreta": "Definição clara",
+"dica": "Explicação correta."
+},
+{
+"pergunta": "Sem conceitos claros, o pensamento se torna:",
+"opcoes": ["Confuso", "Organizado", "Preciso", "Claro"],
+"respostaCorreta": "Confuso",
+"dica": "Falta estrutura."
+}
+]
+},
+{
+"id": "7-basico",
+"capitulo": "Capítulo 7 - Termos",
+"nivel": "basico",
+"dicas": "Termos são palavras que usamos para falar das coisas.",
+"perguntas": [
+{
+"pergunta": "O que são termos?",
+"opcoes": ["Palavras que usamos", "Objetos físicos", "Cores", "Sons"],
+"respostaCorreta": "Palavras que usamos",
+"dica": "Usamos para falar."
+},
+{
+"pergunta": "‘Cão’ é um termo:",
+"opcoes": ["Simples", "Composto", "Abstrato", "Errado"],
+"respostaCorreta": "Simples",
+"dica": "Tem uma palavra só."
+},
+{
+"pergunta": "‘Cão de guarda’ é um termo:",
+"opcoes": ["Composto", "Simples", "Abstrato", "Concreto"],
+"respostaCorreta": "Composto",
+"dica": "Tem mais de uma palavra."
+},
+{
+"pergunta": "‘Pedra’ é um termo:",
+"opcoes": ["Concreto", "Abstrato", "Composto", "Errado"],
+"respostaCorreta": "Concreto",
+"dica": "Podemos tocar."
+},
+{
+"pergunta": "‘Justiça’ é um termo:",
+"opcoes": ["Abstrato", "Concreto", "Simples", "Objeto"],
+"respostaCorreta": "Abstrato",
+"dica": "Não podemos tocar."
+},
+{
+"pergunta": "Termos ajudam a:",
+"opcoes": ["Comunicar ideias", "Confundir", "Esquecer", "Misturar"],
+"respostaCorreta": "Comunicar ideias",
+"dica": "Servem para falar."
+},
+{
+"pergunta": "Um termo concreto pode ser:",
+"opcoes": ["Livro", "Amizade", "Justiça", "Bondade"],
+"respostaCorreta": "Livro",
+"dica": "Podemos ver ou tocar."
+},
+{
+"pergunta": "Um termo abstrato é:",
+"opcoes": ["Amor", "Mesa", "Pedra", "Cadeira"],
+"respostaCorreta": "Amor",
+"dica": "É uma ideia."
+},
+{
+"pergunta": "Misturar termos pode causar:",
+"opcoes": ["Confusão", "Clareza", "Organização", "Aprendizado"],
+"respostaCorreta": "Confusão",
+"dica": "Fica difícil entender."
+},
+{
+"pergunta": "Termos são importantes porque:",
+"opcoes": ["Ajudam a falar", "Confundem", "Não servem", "São inúteis"],
+"respostaCorreta": "Ajudam a falar",
+"dica": "Usamos para comunicar."
+}
+]
+},
+{
+"id": "7-medio",
+"capitulo": "Capítulo 7 - Termos",
+"nivel": "medio",
+"dicas": "Termos podem ser simples, compostos, concretos ou abstratos.",
+"perguntas": [
+{
+"pergunta": "Qual é a diferença entre termo simples e composto?",
+"opcoes": ["Número de palavras", "Significado", "Cor", "Forma"],
+"respostaCorreta": "Número de palavras",
+"dica": "Um ou mais termos."
+},
+{
+"pergunta": "Termo concreto significa:",
+"opcoes": ["Pode ser percebido", "É imaginário", "É abstrato", "Não existe"],
+"respostaCorreta": "Pode ser percebido",
+"dica": "Podemos ver ou tocar."
+},
+{
+"pergunta": "Termo abstrato significa:",
+"opcoes": ["Ideia sem forma física", "Objeto físico", "Cor", "Som"],
+"respostaCorreta": "Ideia sem forma física",
+"dica": "Não podemos tocar."
+},
+{
+"pergunta": "‘Casa grande’ é um termo:",
+"opcoes": ["Composto", "Simples", "Abstrato", "Erro"],
+"respostaCorreta": "Composto",
+"dica": "Tem duas palavras."
+},
+{
+"pergunta": "Misturar termos concretos e abstratos sem cuidado causa:",
+"opcoes": ["Confusão", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Confusão",
+"dica": "Fica difícil entender."
+},
+{
+"pergunta": "‘Bondade’ é um termo:",
+"opcoes": ["Abstrato", "Concreto", "Simples físico", "Objeto"],
+"respostaCorreta": "Abstrato",
+"dica": "É uma ideia."
+},
+{
+"pergunta": "‘Mesa’ é um termo:",
+"opcoes": ["Concreto", "Abstrato", "Erro", "Imaginário"],
+"respostaCorreta": "Concreto",
+"dica": "Podemos tocar."
+},
+{
+"pergunta": "Termos são usados para:",
+"opcoes": ["Expressar conceitos", "Confundir ideias", "Ignorar", "Misturar"],
+"respostaCorreta": "Expressar conceitos",
+"dica": "Ligam linguagem e pensamento."
+},
+{
+"pergunta": "Termos compostos têm:",
+"opcoes": ["Mais de uma palavra", "Uma palavra", "Nenhuma palavra", "Somente ideias"],
+"respostaCorreta": "Mais de uma palavra",
+"dica": "Observe a quantidade."
+},
+{
+"pergunta": "A precisão dos termos ajuda a:",
+"opcoes": ["Evitar confusão", "Criar erro", "Misturar ideias", "Ignorar fatos"],
+"respostaCorreta": "Evitar confusão",
+"dica": "Fica mais claro."
+}
+]
+},
+{
+"id": "7-avancado",
+"capitulo": "Capítulo 7 - Termos",
+"nivel": "avancado",
+"dicas": "Termos estruturam a linguagem e o pensamento lógico.",
+"perguntas": [
+{
+"pergunta": "Por que termos são essenciais na lógica?",
+"opcoes": ["Permitem comunicação precisa", "Confundem ideias", "Eliminam análise", "Ignoram conceitos"],
+"respostaCorreta": "Permitem comunicação precisa",
+"dica": "Sem termos claros não há entendimento."
+},
+{
+"pergunta": "Qual é o efeito de usar termos imprecisos?",
+"opcoes": ["Confusão", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Confusão",
+"dica": "Falta de precisão gera erro."
+},
+{
+"pergunta": "Termos concretos representam:",
+"opcoes": ["Objetos perceptíveis", "Ideias abstratas", "Erros", "Dúvidas"],
+"respostaCorreta": "Objetos perceptíveis",
+"dica": "Podemos ver ou tocar."
+},
+{
+"pergunta": "Termos abstratos representam:",
+"opcoes": ["Ideias", "Objetos físicos", "Cores", "Sons"],
+"respostaCorreta": "Ideias",
+"dica": "Não têm forma física."
+},
+{
+"pergunta": "Misturar termos sem clareza causa:",
+"opcoes": ["Erro lógico", "Precisão", "Clareza", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "Confunde o significado."
+},
+{
+"pergunta": "Qual é a diferença fundamental entre concreto e abstrato?",
+"opcoes": ["Percepção física", "Número de palavras", "Som", "Cor"],
+"respostaCorreta": "Percepção física",
+"dica": "Pode ou não ser tocado."
+},
+{
+"pergunta": "Termos compostos aumentam:",
+"opcoes": ["Especificidade", "Confusão sempre", "Erro", "Ignorância"],
+"respostaCorreta": "Especificidade",
+"dica": "Detalham mais."
+},
+{
+"pergunta": "Qual é a causa de uma comunicação clara?",
+"opcoes": ["Uso preciso de termos", "Confusão", "Erro", "Pressa"],
+"respostaCorreta": "Uso preciso de termos",
+"dica": "Escolher bem as palavras."
+},
+{
+"pergunta": "Termos são a ligação entre:",
+"opcoes": ["Linguagem e pensamento", "Som e cor", "Objeto e erro", "Forma e tamanho"],
+"respostaCorreta": "Linguagem e pensamento",
+"dica": "Permitem expressar ideias."
+},
+{
+"pergunta": "Sem termos claros, o raciocínio se torna:",
+"opcoes": ["Confuso", "Preciso", "Organizado", "Claro"],
+"respostaCorreta": "Confuso",
+"dica": "Falta definição."
+}
+]
+},
+{
+"id": "8-basico",
+"capitulo": "Capítulo 8 - Definições Corretas",
+"nivel": "basico",
+"dicas": "Definir é explicar bem o que algo é.",
+"perguntas": [
+{
+"pergunta": "O que é definir?",
+"opcoes": ["Explicar o que algo é", "Esconder algo", "Misturar ideias", "Ignorar coisas"],
+"respostaCorreta": "Explicar o que algo é",
+"dica": "É dar significado claro."
+},
+{
+"pergunta": "Uma boa definição deve ser:",
+"opcoes": ["Clara", "Confusa", "Longa sempre", "Difícil"],
+"respostaCorreta": "Clara",
+"dica": "Fácil de entender."
+},
+{
+"pergunta": "Definir 'café' como 'bebida com gosto de café' é:",
+"opcoes": ["Errado", "Correto", "Perfeito", "Completo"],
+"respostaCorreta": "Errado",
+"dica": "Não explica nada novo."
+},
+{
+"pergunta": "Uma definição não deve:",
+"opcoes": ["Ser circular", "Ser clara", "Ajudar", "Explicar"],
+"respostaCorreta": "Ser circular",
+"dica": "Não pode repetir a mesma ideia."
+},
+{
+"pergunta": "Definir sapato como 'algo de calçar' é:",
+"opcoes": ["Muito amplo", "Muito correto", "Muito específico", "Perfeito"],
+"respostaCorreta": "Muito amplo",
+"dica": "Inclui outras coisas."
+},
+{
+"pergunta": "Uma definição muito restrita é:",
+"opcoes": ["Muito específica", "Muito ampla", "Perfeita", "Correta sempre"],
+"respostaCorreta": "Muito específica",
+"dica": "Limita demais."
+},
+{
+"pergunta": "Uma boa definição ajuda a:",
+"opcoes": ["Entender melhor", "Confundir", "Misturar ideias", "Ignorar"],
+"respostaCorreta": "Entender melhor",
+"dica": "Torna claro."
+},
+{
+"pergunta": "Definições servem para:",
+"opcoes": ["Explicar ideias", "Esconder coisas", "Confundir", "Misturar"],
+"respostaCorreta": "Explicar ideias",
+"dica": "Ajudam a entender."
+},
+{
+"pergunta": "Uma definição deve ser como:",
+"opcoes": ["Uma chave certa", "Uma porta aberta", "Um erro", "Uma dúvida"],
+"respostaCorreta": "Uma chave certa",
+"dica": "Serve para algo específico."
+},
+{
+"pergunta": "Definir corretamente evita:",
+"opcoes": ["Confusão", "Clareza", "Aprendizado", "Entendimento"],
+"respostaCorreta": "Confusão",
+"dica": "Ajuda a compreender."
+}
+]
+},
+{
+"id": "8-medio",
+"capitulo": "Capítulo 8 - Definições Corretas",
+"nivel": "medio",
+"dicas": "Definições devem ser claras, nem amplas nem restritas.",
+"perguntas": [
+{
+"pergunta": "O que é uma definição circular?",
+"opcoes": ["Explicar usando a mesma palavra", "Explicar claramente", "Dar exemplo", "Fazer comparação"],
+"respostaCorreta": "Explicar usando a mesma palavra",
+"dica": "Não acrescenta informação."
+},
+{
+"pergunta": "Uma definição muito ampla causa:",
+"opcoes": ["Falta de precisão", "Clareza total", "Perfeição", "Organização"],
+"respostaCorreta": "Falta de precisão",
+"dica": "Inclui coisas demais."
+},
+{
+"pergunta": "Uma definição muito restrita causa:",
+"opcoes": ["Exclusão de casos", "Clareza total", "Precisão perfeita", "Organização"],
+"respostaCorreta": "Exclusão de casos",
+"dica": "Deixa coisas de fora."
+},
+{
+"pergunta": "Por que definições devem ser claras?",
+"opcoes": ["Para evitar confusão", "Para confundir", "Para esconder", "Para complicar"],
+"respostaCorreta": "Para evitar confusão",
+"dica": "Facilita entendimento."
+},
+{
+"pergunta": "Definir corretamente ajuda a:",
+"opcoes": ["Comunicar melhor", "Confundir", "Misturar ideias", "Ignorar"],
+"respostaCorreta": "Comunicar melhor",
+"dica": "As pessoas entendem."
+},
+{
+"pergunta": "Uma boa definição deve:",
+"opcoes": ["Ser precisa", "Ser confusa", "Ser longa sempre", "Ser vaga"],
+"respostaCorreta": "Ser precisa",
+"dica": "Nem demais nem de menos."
+},
+{
+"pergunta": "Qual erro ocorre ao definir algo de forma circular?",
+"opcoes": ["Não explicar nada", "Explicar bem", "Ser claro", "Ser correto"],
+"respostaCorreta": "Não explicar nada",
+"dica": "Repete a mesma ideia."
+},
+{
+"pergunta": "Definir 'sapato' muito específico causa:",
+"opcoes": ["Exclusão", "Inclusão geral", "Clareza total", "Precisão ideal"],
+"respostaCorreta": "Exclusão",
+"dica": "Deixa exemplos de fora."
+},
+{
+"pergunta": "Uma boa definição funciona como:",
+"opcoes": ["Uma chave correta", "Uma porta aberta", "Um erro", "Uma dúvida"],
+"respostaCorreta": "Uma chave correta",
+"dica": "Serve para algo específico."
+},
+{
+"pergunta": "Definições ajudam a lógica porque:",
+"opcoes": ["Tornam ideias claras", "Confundem", "Ignoram", "Misturam"],
+"respostaCorreta": "Tornam ideias claras",
+"dica": "Clareza é essencial."
+}
+]
+},
+{
+"id": "8-avancado",
+"capitulo": "Capítulo 8 - Definições Corretas",
+"nivel": "avancado",
+"dicas": "Definições corretas evitam erros e ambiguidades.",
+"perguntas": [
+{
+"pergunta": "Por que definições são fundamentais na lógica?",
+"opcoes": ["Evitam ambiguidades", "Criam confusão", "Misturam ideias", "Ignoram conceitos"],
+"respostaCorreta": "Evitam ambiguidades",
+"dica": "Clareza é essencial."
+},
+{
+"pergunta": "Qual é o efeito de uma definição circular?",
+"opcoes": ["Falta de explicação", "Clareza total", "Precisão", "Organização"],
+"respostaCorreta": "Falta de explicação",
+"dica": "Não acrescenta informação."
+},
+{
+"pergunta": "Uma definição ampla demais causa:",
+"opcoes": ["Imprecisão", "Clareza", "Exatidão", "Organização"],
+"respostaCorreta": "Imprecisão",
+"dica": "Inclui coisas indevidas."
+},
+{
+"pergunta": "Uma definição restrita demais causa:",
+"opcoes": ["Exclusão indevida", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Exclusão indevida",
+"dica": "Deixa exemplos de fora."
+},
+{
+"pergunta": "Por que definições precisam ser equilibradas?",
+"opcoes": ["Para serem precisas", "Para confundir", "Para simplificar demais", "Para ignorar detalhes"],
+"respostaCorreta": "Para serem precisas",
+"dica": "Nem demais nem de menos."
+},
+{
+"pergunta": "Qual é a consequência de definições imprecisas?",
+"opcoes": ["Erro lógico", "Clareza", "Organização", "Precisão"],
+"respostaCorreta": "Erro lógico",
+"dica": "Confunde o entendimento."
+},
+{
+"pergunta": "Definições corretas ajudam a:",
+"opcoes": ["Comunicação clara", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Comunicação clara",
+"dica": "Facilitam entendimento."
+},
+{
+"pergunta": "Uma definição deve ser comparada a:",
+"opcoes": ["Uma chave exata", "Uma porta aberta", "Um erro", "Uma dúvida"],
+"respostaCorreta": "Uma chave exata",
+"dica": "Serve para algo específico."
+},
+{
+"pergunta": "Qual é a causa de uma boa definição?",
+"opcoes": ["Precisão e clareza", "Confusão", "Erro", "Pressa"],
+"respostaCorreta": "Precisão e clareza",
+"dica": "Pensar bem antes de definir."
+},
+{
+"pergunta": "Sem boas definições, o pensamento se torna:",
+"opcoes": ["Confuso", "Claro", "Organizado", "Preciso"],
+"respostaCorreta": "Confuso",
+"dica": "Falta entendimento."
+}
+]
+},
+{
+"id": "9-basico",
+"capitulo": "Capítulo 9 - Proposição",
+"nivel": "basico",
+"dicas": "Proposição é uma frase que pode ser verdadeira ou falsa.",
+"perguntas": [
+{
+"pergunta": "O que é uma proposição?",
+"opcoes": ["Uma frase que pode ser verdadeira ou falsa", "Uma pergunta", "Uma ordem", "Um desenho"],
+"respostaCorreta": "Uma frase que pode ser verdadeira ou falsa",
+"dica": "Pode ser julgada como certa ou errada."
+},
+{
+"pergunta": "‘O gato é peludo’ é:",
+"opcoes": ["Proposição", "Pergunta", "Ordem", "Erro"],
+"respostaCorreta": "Proposição",
+"dica": "Pode ser verdadeira ou falsa."
+},
+{
+"pergunta": "Uma pergunta é proposição?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "Não afirma nem nega."
+},
+{
+"pergunta": "Uma ordem é proposição?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "Não pode ser verdadeira ou falsa."
+},
+{
+"pergunta": "O sujeito é:",
+"opcoes": ["De quem se fala", "O que se diz", "A ação", "O erro"],
+"respostaCorreta": "De quem se fala",
+"dica": "Quem aparece na frase."
+},
+{
+"pergunta": "O verbo é:",
+"opcoes": ["O que liga ideias", "Quem fala", "O objeto", "A cor"],
+"respostaCorreta": "O que liga ideias",
+"dica": "Conecta as partes."
+},
+{
+"pergunta": "O predicado é:",
+"opcoes": ["O que se diz sobre o sujeito", "Quem fala", "A pergunta", "A ordem"],
+"respostaCorreta": "O que se diz sobre o sujeito",
+"dica": "Informação sobre o sujeito."
+},
+{
+"pergunta": "‘Feche a porta!’ é:",
+"opcoes": ["Ordem", "Proposição", "Pergunta", "Erro"],
+"respostaCorreta": "Ordem",
+"dica": "Não pode ser verdadeira ou falsa."
+},
+{
+"pergunta": "‘Que horas são?’ é:",
+"opcoes": ["Pergunta", "Proposição", "Ordem", "Afirmação"],
+"respostaCorreta": "Pergunta",
+"dica": "Não afirma nada."
+},
+{
+"pergunta": "Uma proposição sempre pode ser:",
+"opcoes": ["Verdadeira ou falsa", "Somente verdadeira", "Somente falsa", "Nenhuma"],
+"respostaCorreta": "Verdadeira ou falsa",
+"dica": "Tem dois valores."
+}
+]
+},
+{
+"id": "9-medio",
+"capitulo": "Capítulo 9 - Proposição",
+"nivel": "medio",
+"dicas": "Proposições afirmam algo e têm estrutura.",
+"perguntas": [
+{
+"pergunta": "Qual frase é uma proposição?",
+"opcoes": ["O céu é azul", "Feche a porta", "Que horas são?", "Corra rápido"],
+"respostaCorreta": "O céu é azul",
+"dica": "Pode ser verdadeira ou falsa."
+},
+{
+"pergunta": "Qual é a estrutura básica de uma proposição?",
+"opcoes": ["Sujeito, verbo e predicado", "Pergunta e resposta", "Cor e forma", "Som e imagem"],
+"respostaCorreta": "Sujeito, verbo e predicado",
+"dica": "Tem três partes."
+},
+{
+"pergunta": "O sujeito indica:",
+"opcoes": ["Quem é falado", "A ação", "O resultado", "O erro"],
+"respostaCorreta": "Quem é falado",
+"dica": "Sobre quem falamos."
+},
+{
+"pergunta": "O predicado indica:",
+"opcoes": ["O que se diz", "Quem fala", "A pergunta", "O erro"],
+"respostaCorreta": "O que se diz",
+"dica": "Informação sobre o sujeito."
+},
+{
+"pergunta": "Por que perguntas não são proposições?",
+"opcoes": ["Não têm valor de verdade", "São falsas", "São verdadeiras", "São erradas"],
+"respostaCorreta": "Não têm valor de verdade",
+"dica": "Não afirmam nada."
+},
+{
+"pergunta": "‘Todo sorvete é de brócolis’ é:",
+"opcoes": ["Proposição falsa", "Proposição verdadeira", "Pergunta", "Ordem"],
+"respostaCorreta": "Proposição falsa",
+"dica": "Pode ser julgada."
+},
+{
+"pergunta": "Uma proposição deve:",
+"opcoes": ["Afirmar ou negar algo", "Perguntar", "Mandar", "Confundir"],
+"respostaCorreta": "Afirmar ou negar algo",
+"dica": "Tem valor lógico."
+},
+{
+"pergunta": "Ordens não são proposições porque:",
+"opcoes": ["Não podem ser verdadeiras ou falsas", "São falsas", "São verdadeiras", "São confusas"],
+"respostaCorreta": "Não podem ser verdadeiras ou falsas",
+"dica": "Não têm valor lógico."
+},
+{
+"pergunta": "Verbo em uma proposição serve para:",
+"opcoes": ["Ligar sujeito e predicado", "Criar pergunta", "Fazer ordem", "Ignorar ideias"],
+"respostaCorreta": "Ligar sujeito e predicado",
+"dica": "Conecta partes."
+},
+{
+"pergunta": "Uma proposição é útil porque:",
+"opcoes": ["Permite avaliar verdade", "Confunde", "Mistura ideias", "Ignora lógica"],
+"respostaCorreta": "Permite avaliar verdade",
+"dica": "Pode ser analisada."
+}
+]
+},
+{
+"id": "9-avancado",
+"capitulo": "Capítulo 9 - Proposição",
+"nivel": "avancado",
+"dicas": "Proposições permitem análise lógica de verdade.",
+"perguntas": [
+{
+"pergunta": "Por que proposições são essenciais na lógica?",
+"opcoes": ["Permitem avaliar verdade ou falsidade", "Confundem ideias", "Eliminam análise", "Ignoram realidade"],
+"respostaCorreta": "Permitem avaliar verdade ou falsidade",
+"dica": "Base da lógica."
+},
+{
+"pergunta": "Qual é o efeito de usar frases sem valor de verdade?",
+"opcoes": ["Não podem ser analisadas logicamente", "São sempre verdadeiras", "São sempre falsas", "São melhores"],
+"respostaCorreta": "Não podem ser analisadas logicamente",
+"dica": "Sem valor lógico."
+},
+{
+"pergunta": "A estrutura sujeito-verbo-predicado permite:",
+"opcoes": ["Clareza lógica", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Clareza lógica",
+"dica": "Organiza a frase."
+},
+{
+"pergunta": "Perguntas não são proposições porque:",
+"opcoes": ["Não afirmam nem negam", "São falsas", "São verdadeiras", "São completas"],
+"respostaCorreta": "Não afirmam nem negam",
+"dica": "Não têm valor lógico."
+},
+{
+"pergunta": "Ordens não são proposições porque:",
+"opcoes": ["Não possuem valor de verdade", "São falsas", "São verdadeiras", "São completas"],
+"respostaCorreta": "Não possuem valor de verdade",
+"dica": "Não podem ser julgadas."
+},
+{
+"pergunta": "Uma proposição falsa ainda é:",
+"opcoes": ["Proposição válida para análise", "Erro", "Pergunta", "Ordem"],
+"respostaCorreta": "Proposição válida para análise",
+"dica": "Ainda pode ser avaliada."
+},
+{
+"pergunta": "Qual é a causa de uma boa proposição?",
+"opcoes": ["Estrutura clara", "Confusão", "Erro", "Pressa"],
+"respostaCorreta": "Estrutura clara",
+"dica": "Organização importa."
+},
+{
+"pergunta": "Sem proposições, a lógica não pode:",
+"opcoes": ["Avaliar verdade", "Organizar ideias", "Pensar", "Comparar"],
+"respostaCorreta": "Avaliar verdade",
+"dica": "Falta base."
+},
+{
+"pergunta": "Proposições permitem:",
+"opcoes": ["Análise racional", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Análise racional",
+"dica": "São base do raciocínio."
+},
+{
+"pergunta": "Qual é a consequência de uma proposição mal estruturada?",
+"opcoes": ["Confusão lógica", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Confusão lógica",
+"dica": "Dificulta entendimento."
+}
+]
+},
+{
+"id": "10-basico",
+"capitulo": "Capítulo 10 - Tipos de Proposições",
+"nivel": "basico",
+"dicas": "As proposições podem falar de todos, nenhum ou alguns.",
+"perguntas": [
+{
+"pergunta": "O que significa 'Todo A é B'?",
+"opcoes": ["Todos do grupo", "Nenhum do grupo", "Alguns apenas", "Nenhum exemplo"],
+"respostaCorreta": "Todos do grupo",
+"dica": "Fala de todos."
+},
+{
+"pergunta": "O que significa 'Nenhum A é B'?",
+"opcoes": ["Nenhum do grupo", "Todos do grupo", "Alguns apenas", "Metade"],
+"respostaCorreta": "Nenhum do grupo",
+"dica": "Ninguém pertence."
+},
+{
+"pergunta": "O que significa 'Algum A é B'?",
+"opcoes": ["Parte do grupo", "Todos", "Nenhum", "Sempre todos"],
+"respostaCorreta": "Parte do grupo",
+"dica": "Só alguns."
+},
+{
+"pergunta": "‘Todo cachorro late’ fala de:",
+"opcoes": ["Todos os cachorros", "Alguns cachorros", "Nenhum cachorro", "Um cachorro"],
+"respostaCorreta": "Todos os cachorros",
+"dica": "A palavra 'todo' indica isso."
+},
+{
+"pergunta": "‘Nenhum peixe voa’ significa:",
+"opcoes": ["Nenhum peixe voa", "Todos voam", "Alguns voam", "Metade voa"],
+"respostaCorreta": "Nenhum peixe voa",
+"dica": "É negativo para todos."
+},
+{
+"pergunta": "‘Algum gato é preto’ significa:",
+"opcoes": ["Alguns gatos são pretos", "Todos são pretos", "Nenhum é preto", "Todos são iguais"],
+"respostaCorreta": "Alguns gatos são pretos",
+"dica": "Só uma parte."
+},
+{
+"pergunta": "‘Algum A não é B’ significa:",
+"opcoes": ["Parte não pertence", "Todos pertencem", "Nenhum pertence", "Todos são iguais"],
+"respostaCorreta": "Parte não pertence",
+"dica": "Nem todos fazem parte."
+},
+{
+"pergunta": "Quantos tipos principais existem?",
+"opcoes": ["Quatro", "Dois", "Três", "Cinco"],
+"respostaCorreta": "Quatro",
+"dica": "São quatro formas."
+},
+{
+"pergunta": "‘Alguns alunos gostam de lógica’ fala de:",
+"opcoes": ["Parte dos alunos", "Todos os alunos", "Nenhum aluno", "Um aluno só"],
+"respostaCorreta": "Parte dos alunos",
+"dica": "Não são todos."
+},
+{
+"pergunta": "Essas frases ajudam a:",
+"opcoes": ["Organizar ideias", "Confundir", "Misturar", "Ignorar"],
+"respostaCorreta": "Organizar ideias",
+"dica": "Dão clareza."
+}
+]
+},
+{
+"id": "10-medio",
+"capitulo": "Capítulo 10 - Tipos de Proposições",
+"nivel": "medio",
+"dicas": "As proposições variam por quantidade e qualidade.",
+"perguntas": [
+{
+"pergunta": "‘Todo A é B’ é:",
+"opcoes": ["Universal afirmativa", "Universal negativa", "Particular afirmativa", "Particular negativa"],
+"respostaCorreta": "Universal afirmativa",
+"dica": "Fala de todos e afirma."
+},
+{
+"pergunta": "‘Nenhum A é B’ é:",
+"opcoes": ["Universal negativa", "Universal afirmativa", "Particular afirmativa", "Particular negativa"],
+"respostaCorreta": "Universal negativa",
+"dica": "Fala de todos e nega."
+},
+{
+"pergunta": "‘Algum A é B’ é:",
+"opcoes": ["Particular afirmativa", "Universal afirmativa", "Universal negativa", "Particular negativa"],
+"respostaCorreta": "Particular afirmativa",
+"dica": "Fala de parte e afirma."
+},
+{
+"pergunta": "‘Algum A não é B’ é:",
+"opcoes": ["Particular negativa", "Universal afirmativa", "Universal negativa", "Particular afirmativa"],
+"respostaCorreta": "Particular negativa",
+"dica": "Fala de parte e nega."
+},
+{
+"pergunta": "Qual fala de todos?",
+"opcoes": ["Universal", "Particular", "Nenhuma", "Metade"],
+"respostaCorreta": "Universal",
+"dica": "Refere-se ao grupo inteiro."
+},
+{
+"pergunta": "Qual fala de parte?",
+"opcoes": ["Particular", "Universal", "Nenhuma", "Todos"],
+"respostaCorreta": "Particular",
+"dica": "Não inclui todos."
+},
+{
+"pergunta": "Qual é afirmativa?",
+"opcoes": ["Diz que algo é", "Diz que não é", "Pergunta", "Ordem"],
+"respostaCorreta": "Diz que algo é",
+"dica": "Afirma algo."
+},
+{
+"pergunta": "Qual é negativa?",
+"opcoes": ["Diz que algo não é", "Diz que é", "Pergunta", "Ordem"],
+"respostaCorreta": "Diz que algo não é",
+"dica": "Nega algo."
+},
+{
+"pergunta": "‘Alguns alunos estudam’ é:",
+"opcoes": ["Particular afirmativa", "Universal afirmativa", "Universal negativa", "Particular negativa"],
+"respostaCorreta": "Particular afirmativa",
+"dica": "Parte do grupo afirma."
+},
+{
+"pergunta": "Essas categorias ajudam a:",
+"opcoes": ["Organizar raciocínio", "Confundir", "Misturar ideias", "Ignorar lógica"],
+"respostaCorreta": "Organizar raciocínio",
+"dica": "Dão estrutura."
+}
+]
+},
+{
+"id": "10-avancado",
+"capitulo": "Capítulo 10 - Tipos de Proposições",
+"nivel": "avancado",
+"dicas": "Analise quantidade (todo/algum) e qualidade (afirma/nega).",
+"perguntas": [
+{
+"pergunta": "Por que classificar proposições é importante?",
+"opcoes": ["Organiza o raciocínio lógico", "Confunde ideias", "Elimina análise", "Ignora lógica"],
+"respostaCorreta": "Organiza o raciocínio lógico",
+"dica": "Ajuda a entender estrutura."
+},
+{
+"pergunta": "Qual é a diferença entre universal e particular?",
+"opcoes": ["Quantidade de elementos", "Qualidade", "Forma", "Erro"],
+"respostaCorreta": "Quantidade de elementos",
+"dica": "Todos ou alguns."
+},
+{
+"pergunta": "Qual é a diferença entre afirmativa e negativa?",
+"opcoes": ["Afirma ou nega", "Quantidade", "Forma", "Tempo"],
+"respostaCorreta": "Afirma ou nega",
+"dica": "Diz que é ou não é."
+},
+{
+"pergunta": "‘Todo A é B’ implica:",
+"opcoes": ["Nenhum A não é B", "Algum A não é B", "Nenhum A é B", "Algum A é B"],
+"respostaCorreta": "Nenhum A não é B",
+"dica": "Não há exceção."
+},
+{
+"pergunta": "‘Nenhum A é B’ implica:",
+"opcoes": ["Todo A não é B", "Algum A é B", "Todo A é B", "Algum A não é B"],
+"respostaCorreta": "Todo A não é B",
+"dica": "Negação total."
+},
+{
+"pergunta": "Qual é o efeito de confundir universal com particular?",
+"opcoes": ["Erro lógico", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "Muda o significado."
+},
+{
+"pergunta": "Qual é a causa de uma boa análise de proposições?",
+"opcoes": ["Identificar quantidade e qualidade", "Ignorar termos", "Confundir ideias", "Pressa"],
+"respostaCorreta": "Identificar quantidade e qualidade",
+"dica": "Observe estrutura."
+},
+{
+"pergunta": "‘Algum A é B’ não garante que:",
+"opcoes": ["Todos A são B", "Alguns são B", "Parte é B", "Existe A"],
+"respostaCorreta": "Todos A são B",
+"dica": "Não fala de todos."
+},
+{
+"pergunta": "Qual é a consequência de interpretar mal uma proposição?",
+"opcoes": ["Conclusões erradas", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Conclusões erradas",
+"dica": "Leva a erro."
+},
+{
+"pergunta": "As quatro formas ajudam a:",
+"opcoes": ["Estruturar pensamento lógico", "Confundir ideias", "Ignorar lógica", "Misturar conceitos"],
+"respostaCorreta": "Estruturar pensamento lógico",
+"dica": "Dão base ao raciocínio."
+}
+]
+},
+{
+"id": "11-basico",
+"capitulo": "Capítulo 11 - Relações entre Ideias",
+"nivel": "basico",
+"dicas": "As ideias podem estar juntas, separadas ou misturadas.",
+"perguntas": [
+{
+"pergunta": "O que é inclusão?",
+"opcoes": ["Uma ideia dentro da outra", "Ideias separadas", "Ideias opostas", "Ideias iguais"],
+"respostaCorreta": "Uma ideia dentro da outra",
+"dica": "Uma está dentro da outra."
+},
+{
+"pergunta": "‘Maçã’ está dentro de:",
+"opcoes": ["Fruta", "Carro", "Casa", "Livro"],
+"respostaCorreta": "Fruta",
+"dica": "É um tipo de fruta."
+},
+{
+"pergunta": "O que é exclusão?",
+"opcoes": ["Ideias que não se encontram", "Ideias iguais", "Ideias misturadas", "Ideias dentro"],
+"respostaCorreta": "Ideias que não se encontram",
+"dica": "Nunca se tocam."
+},
+{
+"pergunta": "‘Fogo’ e ‘gelo’ são:",
+"opcoes": ["Exclusão", "Inclusão", "Interseção", "Igualdade"],
+"respostaCorreta": "Exclusão",
+"dica": "São opostos."
+},
+{
+"pergunta": "O que é interseção?",
+"opcoes": ["Ideias com algo em comum", "Ideias separadas", "Ideias opostas", "Ideias iguais"],
+"respostaCorreta": "Ideias com algo em comum",
+"dica": "Compartilham algo."
+},
+{
+"pergunta": "Estudantes e atletas podem ser:",
+"opcoes": ["Interseção", "Exclusão", "Separação total", "Erro"],
+"respostaCorreta": "Interseção",
+"dica": "Alguns são ambos."
+},
+{
+"pergunta": "Inclusão significa:",
+"opcoes": ["Um grupo dentro de outro", "Separação total", "Mistura confusa", "Erro"],
+"respostaCorreta": "Um grupo dentro de outro",
+"dica": "Um está dentro."
+},
+{
+"pergunta": "Exclusão significa:",
+"opcoes": ["Nada em comum", "Tudo igual", "Tudo junto", "Parte igual"],
+"respostaCorreta": "Nada em comum",
+"dica": "Não se cruzam."
+},
+{
+"pergunta": "Interseção significa:",
+"opcoes": ["Parte em comum", "Nada em comum", "Tudo igual", "Erro"],
+"respostaCorreta": "Parte em comum",
+"dica": "Compartilham algo."
+},
+{
+"pergunta": "Essas relações ajudam a:",
+"opcoes": ["Entender ideias", "Confundir", "Misturar", "Ignorar"],
+"respostaCorreta": "Entender ideias",
+"dica": "Organizam o pensamento."
+}
+]
+},
+{
+"id": "11-medio",
+"capitulo": "Capítulo 11 - Relações entre Ideias",
+"nivel": "medio",
+"dicas": "As ideias podem se incluir, excluir ou se cruzar.",
+"perguntas": [
+{
+"pergunta": "Inclusão significa:",
+"opcoes": ["Um conceito dentro de outro", "Separação total", "Mistura confusa", "Erro"],
+"respostaCorreta": "Um conceito dentro de outro",
+"dica": "Um grupo está contido em outro."
+},
+{
+"pergunta": "Exclusão significa:",
+"opcoes": ["Sem relação entre ideias", "Ideias iguais", "Ideias misturadas", "Parte comum"],
+"respostaCorreta": "Sem relação entre ideias",
+"dica": "Não têm ligação."
+},
+{
+"pergunta": "Interseção significa:",
+"opcoes": ["Parte compartilhada", "Separação total", "Igualdade", "Erro"],
+"respostaCorreta": "Parte compartilhada",
+"dica": "Há algo em comum."
+},
+{
+"pergunta": "Qual exemplo mostra inclusão?",
+"opcoes": ["Maçã e fruta", "Fogo e gelo", "Carro e avião", "Livro e pedra"],
+"respostaCorreta": "Maçã e fruta",
+"dica": "Um pertence ao outro."
+},
+{
+"pergunta": "Qual exemplo mostra exclusão?",
+"opcoes": ["Fogo e gelo", "Aluno e estudante", "Maçã e fruta", "Professor e pessoa"],
+"respostaCorreta": "Fogo e gelo",
+"dica": "Não se encontram."
+},
+{
+"pergunta": "Qual exemplo mostra interseção?",
+"opcoes": ["Estudantes e atletas", "Fogo e gelo", "Pedra e livro", "Casa e carro"],
+"respostaCorreta": "Estudantes e atletas",
+"dica": "Alguns pertencem aos dois."
+},
+{
+"pergunta": "O quadrado lógico ajuda a:",
+"opcoes": ["Entender relações entre proposições", "Confundir ideias", "Misturar conceitos", "Ignorar lógica"],
+"respostaCorreta": "Entender relações entre proposições",
+"dica": "Mostra relações."
+},
+{
+"pergunta": "Se uma ideia está dentro de outra, temos:",
+"opcoes": ["Inclusão", "Exclusão", "Interseção", "Erro"],
+"respostaCorreta": "Inclusão",
+"dica": "Uma está contida."
+},
+{
+"pergunta": "Se duas ideias não têm nada em comum:",
+"opcoes": ["Exclusão", "Inclusão", "Interseção", "Igualdade"],
+"respostaCorreta": "Exclusão",
+"dica": "Não se cruzam."
+},
+{
+"pergunta": "Se duas ideias compartilham algo:",
+"opcoes": ["Interseção", "Exclusão", "Inclusão", "Erro"],
+"respostaCorreta": "Interseção",
+"dica": "Parte em comum."
+}
+]
+},
+{
+"id": "11-avancado",
+"capitulo": "Capítulo 11 - Relações entre Ideias",
+"nivel": "avancado",
+"dicas": "Analise como as ideias se relacionam logicamente.",
+"perguntas": [
+{
+"pergunta": "Por que entender relações entre ideias é importante?",
+"opcoes": ["Evita erros de raciocínio", "Confunde ideias", "Ignora lógica", "Mistura conceitos"],
+"respostaCorreta": "Evita erros de raciocínio",
+"dica": "Ajuda a pensar corretamente."
+},
+{
+"pergunta": "Inclusão implica que:",
+"opcoes": ["Um conjunto está contido em outro", "Não há relação", "Há oposição total", "São iguais"],
+"respostaCorreta": "Um conjunto está contido em outro",
+"dica": "Um pertence ao outro."
+},
+{
+"pergunta": "Exclusão implica que:",
+"opcoes": ["Não há elementos em comum", "Há interseção", "Há inclusão", "São iguais"],
+"respostaCorreta": "Não há elementos em comum",
+"dica": "Não se cruzam."
+},
+{
+"pergunta": "Interseção implica que:",
+"opcoes": ["Há elementos em comum", "Não há relação", "Um contém o outro totalmente", "São opostos"],
+"respostaCorreta": "Há elementos em comum",
+"dica": "Compartilham algo."
+},
+{
+"pergunta": "Qual é o efeito de confundir inclusão com interseção?",
+"opcoes": ["Erro lógico", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "Muda o significado."
+},
+{
+"pergunta": "O quadrado lógico mostra que proposições podem:",
+"opcoes": ["Se contradizer ou concordar", "Ser sempre iguais", "Não ter relação", "Ser confusas"],
+"respostaCorreta": "Se contradizer ou concordar",
+"dica": "Mostra relações lógicas."
+},
+{
+"pergunta": "Se 'Todo A é B' é verdadeiro, então:",
+"opcoes": ["Algum A não é B é falso", "Todo A não é B é verdadeiro", "Nenhum A é B é verdadeiro", "Algum A é B é falso"],
+"respostaCorreta": "Algum A não é B é falso",
+"dica": "Não pode haver exceção."
+},
+{
+"pergunta": "Qual é a causa de uma boa análise de relações?",
+"opcoes": ["Identificar corretamente os conjuntos", "Confundir conceitos", "Ignorar detalhes", "Pressa"],
+"respostaCorreta": "Identificar corretamente os conjuntos",
+"dica": "Analisar com atenção."
+},
+{
+"pergunta": "Confundir exclusão com interseção gera:",
+"opcoes": ["Erro de interpretação", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro de interpretação",
+"dica": "Significados diferentes."
+},
+{
+"pergunta": "Relações entre ideias ajudam a:",
+"opcoes": ["Estruturar o pensamento", "Confundir", "Misturar", "Ignorar lógica"],
+"respostaCorreta": "Estruturar o pensamento",
+"dica": "Organizam o raciocínio."
+}
+]
+},
+{
+"id": "12-basico",
+"capitulo": "Capítulo 12 - Argumento",
+"nivel": "basico",
+"dicas": "Argumento é dar razões para provar algo.",
+"perguntas": [
+{
+"pergunta": "O que é argumentar?",
+"opcoes": ["Dar razões", "Brigar", "Gritar", "Ignorar"],
+"respostaCorreta": "Dar razões",
+"dica": "É explicar por quê."
+},
+{
+"pergunta": "Um argumento serve para:",
+"opcoes": ["Provar algo", "Confundir", "Brincar", "Esquecer"],
+"respostaCorreta": "Provar algo",
+"dica": "Mostrar que é verdade."
+},
+{
+"pergunta": "Premissas são:",
+"opcoes": ["As razões", "A conclusão", "Perguntas", "Erros"],
+"respostaCorreta": "As razões",
+"dica": "São as pistas."
+},
+{
+"pergunta": "Conclusão é:",
+"opcoes": ["O resultado final", "A pergunta", "O erro", "A dúvida"],
+"respostaCorreta": "O resultado final",
+"dica": "É o que queremos provar."
+},
+{
+"pergunta": "Opinião é:",
+"opcoes": ["Algo sem prova", "Argumento completo", "Regra lógica", "Conclusão"],
+"respostaCorreta": "Algo sem prova",
+"dica": "É só o que alguém acha."
+},
+{
+"pergunta": "Um argumento é como:",
+"opcoes": ["Uma mesa", "Uma bola", "Um livro", "Um som"],
+"respostaCorreta": "Uma mesa",
+"dica": "Precisa de apoio."
+},
+{
+"pergunta": "Se as premissas são fracas, o argumento:",
+"opcoes": ["Cai", "Fica forte", "Melhora", "Cresce"],
+"respostaCorreta": "Cai",
+"dica": "Não se sustenta."
+},
+{
+"pergunta": "Argumentar não é:",
+"opcoes": ["Brigar", "Explicar", "Provar", "Pensar"],
+"respostaCorreta": "Brigar",
+"dica": "É raciocinar."
+},
+{
+"pergunta": "Premissas ajudam a:",
+"opcoes": ["Sustentar a conclusão", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Sustentar a conclusão",
+"dica": "Dão apoio."
+},
+{
+"pergunta": "Conclusão vem:",
+"opcoes": ["Depois das premissas", "Antes das premissas", "Sem premissas", "Nunca"],
+"respostaCorreta": "Depois das premissas",
+"dica": "É o resultado."
+}
+]
+},
+{
+"id": "12-medio",
+"capitulo": "Capítulo 12 - Argumento",
+"nivel": "medio",
+"dicas": "Argumentos têm premissas e conclusão.",
+"perguntas": [
+{
+"pergunta": "Qual é a diferença entre opinião e argumento?",
+"opcoes": ["Argumento tem razões", "São iguais", "Opinião é melhor", "Argumento é confuso"],
+"respostaCorreta": "Argumento tem razões",
+"dica": "Um explica, o outro não."
+},
+{
+"pergunta": "Premissas são importantes porque:",
+"opcoes": ["Sustentam a conclusão", "Confundem", "Ignoram", "Misturam"],
+"respostaCorreta": "Sustentam a conclusão",
+"dica": "Dão base."
+},
+{
+"pergunta": "Conclusão é:",
+"opcoes": ["O que se quer provar", "A dúvida", "O erro", "A pergunta"],
+"respostaCorreta": "O que se quer provar",
+"dica": "É o objetivo."
+},
+{
+"pergunta": "Se as premissas são falsas, o argumento pode ser:",
+"opcoes": ["Fraco", "Forte", "Perfeito", "Correto sempre"],
+"respostaCorreta": "Fraco",
+"dica": "Base ruim."
+},
+{
+"pergunta": "Argumentar envolve:",
+"opcoes": ["Raciocinar", "Brigar", "Ignorar", "Confundir"],
+"respostaCorreta": "Raciocinar",
+"dica": "Pensar logicamente."
+},
+{
+"pergunta": "Um argumento bem feito tem:",
+"opcoes": ["Premissas claras", "Confusão", "Erro", "Mistura"],
+"respostaCorreta": "Premissas claras",
+"dica": "Base sólida."
+},
+{
+"pergunta": "Qual vem primeiro?",
+"opcoes": ["Premissas", "Conclusão", "Resposta", "Erro"],
+"respostaCorreta": "Premissas",
+"dica": "São a base."
+},
+{
+"pergunta": "Argumento ajuda a:",
+"opcoes": ["Convencer com razão", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Convencer com razão",
+"dica": "Baseado em lógica."
+},
+{
+"pergunta": "Uma conclusão sem premissas é:",
+"opcoes": ["Fraca", "Forte", "Perfeita", "Clara"],
+"respostaCorreta": "Fraca",
+"dica": "Sem base."
+},
+{
+"pergunta": "Um bom argumento deve ser:",
+"opcoes": ["Coerente", "Confuso", "Errado", "Aleatório"],
+"respostaCorreta": "Coerente",
+"dica": "Faz sentido."
+}
+]
+},
+{
+"id": "12-avancado",
+"capitulo": "Capítulo 12 - Argumento",
+"nivel": "avancado",
+"dicas": "Argumentos estruturam o raciocínio lógico.",
+"perguntas": [
+{
+"pergunta": "Por que argumentos são importantes na lógica?",
+"opcoes": ["Permitem justificar conclusões", "Confundem ideias", "Ignoram fatos", "Misturam conceitos"],
+"respostaCorreta": "Permitem justificar conclusões",
+"dica": "Dão razões."
+},
+{
+"pergunta": "Qual é o efeito de premissas fracas?",
+"opcoes": ["Conclusão fraca", "Conclusão forte", "Clareza", "Precisão"],
+"respostaCorreta": "Conclusão fraca",
+"dica": "Base ruim afeta resultado."
+},
+{
+"pergunta": "Premissas são:",
+"opcoes": ["Fundamento do argumento", "Resultado final", "Erro", "Dúvida"],
+"respostaCorreta": "Fundamento do argumento",
+"dica": "Base lógica."
+},
+{
+"pergunta": "Conclusão depende de:",
+"opcoes": ["Premissas", "Opiniões", "Dúvidas", "Erros"],
+"respostaCorreta": "Premissas",
+"dica": "Sem base não há conclusão."
+},
+{
+"pergunta": "Qual é a causa de um argumento forte?",
+"opcoes": ["Premissas verdadeiras e coerentes", "Confusão", "Erro", "Pressa"],
+"respostaCorreta": "Premissas verdadeiras e coerentes",
+"dica": "Base sólida."
+},
+{
+"pergunta": "Argumentar corretamente exige:",
+"opcoes": ["Raciocínio lógico", "Briga", "Ignorar fatos", "Confusão"],
+"respostaCorreta": "Raciocínio lógico",
+"dica": "Pensar bem."
+},
+{
+"pergunta": "Qual é a consequência de uma conclusão sem suporte?",
+"opcoes": ["Falta de credibilidade", "Confiança", "Clareza", "Precisão"],
+"respostaCorreta": "Falta de credibilidade",
+"dica": "Não convence."
+},
+{
+"pergunta": "Argumentos diferem de opiniões porque:",
+"opcoes": ["Têm justificativas", "São iguais", "São mais confusos", "Não têm base"],
+"respostaCorreta": "Têm justificativas",
+"dica": "Explicam razões."
+},
+{
+"pergunta": "Um argumento coerente é aquele que:",
+"opcoes": ["Faz sentido lógico", "Confunde", "Ignora fatos", "Mistura ideias"],
+"respostaCorreta": "Faz sentido lógico",
+"dica": "Tem estrutura correta."
+},
+{
+"pergunta": "Sem argumentos, o pensamento se torna:",
+"opcoes": ["Frágil", "Forte", "Preciso", "Claro"],
+"respostaCorreta": "Frágil",
+"dica": "Falta justificativa."
+}
+]
+},
+{
+"id": "13-basico",
+"capitulo": "Capítulo 13 - Silogismo",
+"nivel": "basico",
+"dicas": "Silogismo é um tipo de argumento com três partes.",
+"perguntas": [
+{
+"pergunta": "O que é um silogismo?",
+"opcoes": ["Um argumento com três partes", "Uma pergunta", "Uma ordem", "Uma história"],
+"respostaCorreta": "Um argumento com três partes",
+"dica": "Tem começo, meio e fim."
+},
+{
+"pergunta": "Quantas partes tem um silogismo?",
+"opcoes": ["Três", "Duas", "Quatro", "Cinco"],
+"respostaCorreta": "Três",
+"dica": "Conte as partes."
+},
+{
+"pergunta": "A premissa maior é:",
+"opcoes": ["Uma regra geral", "Um exemplo", "Uma dúvida", "Um erro"],
+"respostaCorreta": "Uma regra geral",
+"dica": "Fala de todos."
+},
+{
+"pergunta": "A premissa menor é:",
+"opcoes": ["Um caso específico", "Uma regra geral", "Uma dúvida", "Um erro"],
+"respostaCorreta": "Um caso específico",
+"dica": "Fala de alguém ou algo."
+},
+{
+"pergunta": "A conclusão é:",
+"opcoes": ["O resultado final", "A pergunta", "O erro", "A dúvida"],
+"respostaCorreta": "O resultado final",
+"dica": "É o que descobrimos."
+},
+{
+"pergunta": "Se 'Todo metal brilha' e 'O ouro é metal', então:",
+"opcoes": ["O ouro brilha", "O ouro não brilha", "O ouro é madeira", "Nada acontece"],
+"respostaCorreta": "O ouro brilha",
+"dica": "Junte as ideias."
+},
+{
+"pergunta": "Silogismo ajuda a:",
+"opcoes": ["Pensar corretamente", "Confundir", "Misturar ideias", "Ignorar"],
+"respostaCorreta": "Pensar corretamente",
+"dica": "Organiza o raciocínio."
+},
+{
+"pergunta": "Se as premissas são verdadeiras:",
+"opcoes": ["A conclusão é verdadeira", "A conclusão é falsa", "Não sabemos", "É dúvida"],
+"respostaCorreta": "A conclusão é verdadeira",
+"dica": "Segue a lógica."
+},
+{
+"pergunta": "Premissa maior vem:",
+"opcoes": ["Primeiro", "Depois", "No fim", "Nunca"],
+"respostaCorreta": "Primeiro",
+"dica": "É a regra geral."
+},
+{
+"pergunta": "Silogismo é como:",
+"opcoes": ["Uma máquina de pensar", "Um brinquedo", "Um jogo", "Um erro"],
+"respostaCorreta": "Uma máquina de pensar",
+"dica": "Ajuda a raciocinar."
+}
+]
+},
+{
+"id": "13-medio",
+"capitulo": "Capítulo 13 - Silogismo",
+"nivel": "medio",
+"dicas": "Silogismo combina regra geral com caso específico.",
+"perguntas": [
+{
+"pergunta": "Qual é a estrutura do silogismo?",
+"opcoes": ["Premissa maior, menor e conclusão", "Pergunta e resposta", "Erro e dúvida", "Ideia e opinião"],
+"respostaCorreta": "Premissa maior, menor e conclusão",
+"dica": "São três partes."
+},
+{
+"pergunta": "Premissa maior representa:",
+"opcoes": ["Regra geral", "Caso específico", "Erro", "Dúvida"],
+"respostaCorreta": "Regra geral",
+"dica": "Aplica-se a todos."
+},
+{
+"pergunta": "Premissa menor representa:",
+"opcoes": ["Caso específico", "Regra geral", "Erro", "Dúvida"],
+"respostaCorreta": "Caso específico",
+"dica": "Aplica-se a um caso."
+},
+{
+"pergunta": "A conclusão resulta de:",
+"opcoes": ["Combinação das premissas", "Uma opinião", "Uma dúvida", "Um erro"],
+"respostaCorreta": "Combinação das premissas",
+"dica": "Une as ideias."
+},
+{
+"pergunta": "Se as premissas são verdadeiras e bem organizadas:",
+"opcoes": ["A conclusão deve ser verdadeira", "Pode ser falsa", "Não importa", "É dúvida"],
+"respostaCorreta": "A conclusão deve ser verdadeira",
+"dica": "Segue a lógica."
+},
+{
+"pergunta": "Silogismo é importante porque:",
+"opcoes": ["Garante raciocínio lógico", "Confunde ideias", "Mistura conceitos", "Ignora lógica"],
+"respostaCorreta": "Garante raciocínio lógico",
+"dica": "Organiza pensamento."
+},
+{
+"pergunta": "Qual exemplo é um silogismo?",
+"opcoes": ["Todo homem é mortal; João é homem; João é mortal", "João gosta de bolo", "Feche a porta", "Que horas são?"],
+"respostaCorreta": "Todo homem é mortal; João é homem; João é mortal",
+"dica": "Tem três partes."
+},
+{
+"pergunta": "Se a premissa maior estiver errada:",
+"opcoes": ["A conclusão pode estar errada", "A conclusão sempre certa", "Nada muda", "Não importa"],
+"respostaCorreta": "A conclusão pode estar errada",
+"dica": "Base ruim afeta resultado."
+},
+{
+"pergunta": "Silogismo combina:",
+"opcoes": ["Geral e particular", "Cor e forma", "Som e imagem", "Erro e dúvida"],
+"respostaCorreta": "Geral e particular",
+"dica": "Regra e caso."
+},
+{
+"pergunta": "A lógica do silogismo é:",
+"opcoes": ["Dedutiva", "Aleatória", "Confusa", "Inútil"],
+"respostaCorreta": "Dedutiva",
+"dica": "Parte do geral."
+}
+]
+},
+{
+"id": "13-avancado",
+"capitulo": "Capítulo 13 - Silogismo",
+"nivel": "avancado",
+"dicas": "Silogismo é um raciocínio dedutivo estruturado.",
+"perguntas": [
+{
+"pergunta": "Por que o silogismo é considerado dedutivo?",
+"opcoes": ["Parte do geral para o particular", "Parte do particular para o geral", "É aleatório", "É opinativo"],
+"respostaCorreta": "Parte do geral para o particular",
+"dica": "Vai do universal ao específico."
+},
+{
+"pergunta": "Qual é a função da premissa maior?",
+"opcoes": ["Estabelecer regra geral", "Dar exemplo", "Criar dúvida", "Gerar erro"],
+"respostaCorreta": "Estabelecer regra geral",
+"dica": "Base do argumento."
+},
+{
+"pergunta": "Qual é a função da premissa menor?",
+"opcoes": ["Aplicar ao caso específico", "Criar regra geral", "Confundir", "Ignorar"],
+"respostaCorreta": "Aplicar ao caso específico",
+"dica": "Liga ao caso."
+},
+{
+"pergunta": "A conclusão depende de:",
+"opcoes": ["Coerência das premissas", "Opinião", "Dúvida", "Erro"],
+"respostaCorreta": "Coerência das premissas",
+"dica": "Base lógica correta."
+},
+{
+"pergunta": "Se as premissas são verdadeiras e a forma é correta:",
+"opcoes": ["A conclusão é necessariamente verdadeira", "Pode ser falsa", "É dúvida", "Não importa"],
+"respostaCorreta": "A conclusão é necessariamente verdadeira",
+"dica": "É lógica pura."
+},
+{
+"pergunta": "Qual é o efeito de uma premissa falsa?",
+"opcoes": ["Compromete a conclusão", "Garante verdade", "Não afeta", "Melhora argumento"],
+"respostaCorreta": "Compromete a conclusão",
+"dica": "Base errada gera erro."
+},
+{
+"pergunta": "Silogismo permite:",
+"opcoes": ["Raciocínio estruturado", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Raciocínio estruturado",
+"dica": "Organiza ideias."
+},
+{
+"pergunta": "Qual é a causa de um silogismo válido?",
+"opcoes": ["Estrutura correta", "Confusão", "Erro", "Pressa"],
+"respostaCorreta": "Estrutura correta",
+"dica": "Forma importa."
+},
+{
+"pergunta": "Se a estrutura está correta mas as premissas são falsas:",
+"opcoes": ["A conclusão pode ser falsa", "Sempre verdadeira", "Sempre correta", "Não existe"],
+"respostaCorreta": "A conclusão pode ser falsa",
+"dica": "Forma ≠ conteúdo."
+},
+{
+"pergunta": "O silogismo foi desenvolvido por:",
+"opcoes": ["Aristóteles", "Newton", "Einstein", "Platão"],
+"respostaCorreta": "Aristóteles",
+"dica": "Filósofo antigo."
+}
+]
+},
+{
+"id": "14-basico",
+"capitulo": "Capítulo 14 - Validade e Verdade",
+"nivel": "basico",
+"dicas": "Validade é a forma correta, verdade é o que é real.",
+"perguntas": [
+{
+"pergunta": "O que é verdade?",
+"opcoes": ["Algo que corresponde à realidade", "Algo inventado", "Uma dúvida", "Um erro"],
+"respostaCorreta": "Algo que corresponde à realidade",
+"dica": "Combina com o mundo real."
+},
+{
+"pergunta": "O que é validade?",
+"opcoes": ["Forma correta do pensamento", "Algo falso", "Uma opinião", "Um erro"],
+"respostaCorreta": "Forma correta do pensamento",
+"dica": "É como o raciocínio está montado."
+},
+{
+"pergunta": "Um argumento pode ser válido e falso?",
+"opcoes": ["Sim", "Não", "Nunca", "Sempre"],
+"respostaCorreta": "Sim",
+"dica": "Forma certa, conteúdo errado."
+},
+{
+"pergunta": "‘Todos os cachorros voam’ é:",
+"opcoes": ["Falso", "Verdadeiro", "Dúvida", "Ordem"],
+"respostaCorreta": "Falso",
+"dica": "Não acontece na realidade."
+},
+{
+"pergunta": "Validade está relacionada com:",
+"opcoes": ["Forma", "Realidade", "Cor", "Som"],
+"respostaCorreta": "Forma",
+"dica": "Como está organizado."
+},
+{
+"pergunta": "Verdade está relacionada com:",
+"opcoes": ["Realidade", "Forma", "Som", "Cor"],
+"respostaCorreta": "Realidade",
+"dica": "O que existe."
+},
+{
+"pergunta": "Um argumento perfeito precisa ser:",
+"opcoes": ["Válido e verdadeiro", "Só válido", "Só verdadeiro", "Nenhum"],
+"respostaCorreta": "Válido e verdadeiro",
+"dica": "Forma e conteúdo corretos."
+},
+{
+"pergunta": "Se a forma está correta, mas o conteúdo é falso:",
+"opcoes": ["Ainda é válido", "É verdadeiro", "É perfeito", "Não existe"],
+"respostaCorreta": "Ainda é válido",
+"dica": "Validade não depende do conteúdo."
+},
+{
+"pergunta": "Validade é como:",
+"opcoes": ["Estrada correta", "Destino", "Erro", "Dúvida"],
+"respostaCorreta": "Estrada correta",
+"dica": "Caminho do pensamento."
+},
+{
+"pergunta": "Verdade é como:",
+"opcoes": ["Destino correto", "Caminho", "Erro", "Dúvida"],
+"respostaCorreta": "Destino correto",
+"dica": "Onde queremos chegar."
+}
+]
+},
+{
+"id": "14-medio",
+"capitulo": "Capítulo 14 - Validade e Verdade",
+"nivel": "medio",
+"dicas": "Validade é estrutura, verdade é conteúdo.",
+"perguntas": [
+{
+"pergunta": "Qual é a diferença entre validade e verdade?",
+"opcoes": ["Validade é forma, verdade é realidade", "São iguais", "Validade é realidade", "Verdade é forma"],
+"respostaCorreta": "Validade é forma, verdade é realidade",
+"dica": "Forma vs conteúdo."
+},
+{
+"pergunta": "Um argumento válido significa:",
+"opcoes": ["Está bem estruturado", "É verdadeiro", "É falso", "É opinião"],
+"respostaCorreta": "Está bem estruturado",
+"dica": "Forma correta."
+},
+{
+"pergunta": "Um argumento verdadeiro significa:",
+"opcoes": ["Corresponde à realidade", "Está bem estruturado", "É opinião", "É dúvida"],
+"respostaCorreta": "Corresponde à realidade",
+"dica": "Conteúdo real."
+},
+{
+"pergunta": "Um argumento pode ser verdadeiro mas inválido?",
+"opcoes": ["Sim", "Não", "Nunca", "Sempre"],
+"respostaCorreta": "Sim",
+"dica": "Pode ter conteúdo certo, mas forma errada."
+},
+{
+"pergunta": "Se as premissas são falsas, o argumento pode ser:",
+"opcoes": ["Válido mas falso", "Sempre verdadeiro", "Perfeito", "Nunca válido"],
+"respostaCorreta": "Válido mas falso",
+"dica": "Forma correta não garante verdade."
+},
+{
+"pergunta": "Validade depende de:",
+"opcoes": ["Estrutura lógica", "Realidade", "Opinião", "Emoção"],
+"respostaCorreta": "Estrutura lógica",
+"dica": "Como está montado."
+},
+{
+"pergunta": "Verdade depende de:",
+"opcoes": ["Realidade", "Forma", "Estrutura", "Ordem"],
+"respostaCorreta": "Realidade",
+"dica": "O que é real."
+},
+{
+"pergunta": "Um bom argumento precisa de:",
+"opcoes": ["Forma correta e conteúdo verdadeiro", "Só forma", "Só conteúdo", "Nenhum"],
+"respostaCorreta": "Forma correta e conteúdo verdadeiro",
+"dica": "Ambos são importantes."
+},
+{
+"pergunta": "Confundir validade com verdade causa:",
+"opcoes": ["Erro lógico", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "São coisas diferentes."
+},
+{
+"pergunta": "Validade garante:",
+"opcoes": ["Coerência", "Verdade absoluta", "Erro", "Confusão"],
+"respostaCorreta": "Coerência",
+"dica": "Liga as ideias corretamente."
+}
+]
+},
+{
+"id": "14-avancado",
+"capitulo": "Capítulo 14 - Validade e Verdade",
+"nivel": "avancado",
+"dicas": "Analise forma (validade) e conteúdo (verdade).",
+"perguntas": [
+{
+"pergunta": "Por que validade e verdade são diferentes?",
+"opcoes": ["Uma trata da forma e outra do conteúdo", "São iguais", "Ambas tratam da forma", "Ambas tratam da realidade"],
+"respostaCorreta": "Uma trata da forma e outra do conteúdo",
+"dica": "Distinção fundamental."
+},
+{
+"pergunta": "Qual é o efeito de um argumento válido com premissas falsas?",
+"opcoes": ["Conclusão pode ser falsa", "Sempre verdadeira", "Sempre correta", "Sem sentido"],
+"respostaCorreta": "Conclusão pode ser falsa",
+"dica": "Forma não garante verdade."
+},
+{
+"pergunta": "Validade garante:",
+"opcoes": ["Correção da estrutura lógica", "Verdade do conteúdo", "Realidade dos fatos", "Certeza absoluta"],
+"respostaCorreta": "Correção da estrutura lógica",
+"dica": "Forma correta."
+},
+{
+"pergunta": "Verdade garante:",
+"opcoes": ["Correspondência com a realidade", "Estrutura lógica", "Forma correta", "Organização"],
+"respostaCorreta": "Correspondência com a realidade",
+"dica": "Conteúdo real."
+},
+{
+"pergunta": "Um argumento perfeito exige:",
+"opcoes": ["Validade e verdade", "Só validade", "Só verdade", "Nenhum"],
+"respostaCorreta": "Validade e verdade",
+"dica": "Forma e conteúdo."
+},
+{
+"pergunta": "Qual é a consequência de ignorar a validade?",
+"opcoes": ["Raciocínio incoerente", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Raciocínio incoerente",
+"dica": "Forma importa."
+},
+{
+"pergunta": "Qual é a consequência de ignorar a verdade?",
+"opcoes": ["Conclusões falsas", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Conclusões falsas",
+"dica": "Conteúdo importa."
+},
+{
+"pergunta": "Qual é a causa de um argumento confiável?",
+"opcoes": ["Forma correta e conteúdo verdadeiro", "Confusão", "Erro", "Pressa"],
+"respostaCorreta": "Forma correta e conteúdo verdadeiro",
+"dica": "Ambos são necessários."
+},
+{
+"pergunta": "Confundir validade com verdade leva a:",
+"opcoes": ["Erro de análise", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro de análise",
+"dica": "São conceitos distintos."
+},
+{
+"pergunta": "Validade sem verdade resulta em:",
+"opcoes": ["Argumento bem formado mas falso", "Argumento perfeito", "Verdade absoluta", "Erro inexistente"],
+"respostaCorreta": "Argumento bem formado mas falso",
+"dica": "Forma correta, conteúdo errado."
+}
+]
+},
+{
+"id": "15-basico",
+"capitulo": "Capítulo 15 - Indução e Dedução",
+"nivel": "basico",
+"dicas": "Dedução vai do geral para o específico, indução do específico para o geral.",
+"perguntas": [
+{
+"pergunta": "O que é dedução?",
+"opcoes": ["Do geral para o particular", "Do particular para o geral", "Misturar ideias", "Ignorar fatos"],
+"respostaCorreta": "Do geral para o particular",
+"dica": "Parte de uma regra geral."
+},
+{
+"pergunta": "O que é indução?",
+"opcoes": ["Do particular para o geral", "Do geral para o particular", "Sempre verdadeiro", "Erro lógico"],
+"respostaCorreta": "Do particular para o geral",
+"dica": "Parte de exemplos."
+},
+{
+"pergunta": "Dedução usa:",
+"opcoes": ["Regra geral", "Casos isolados", "Opiniões", "Dúvidas"],
+"respostaCorreta": "Regra geral",
+"dica": "Começa com algo geral."
+},
+{
+"pergunta": "Indução usa:",
+"opcoes": ["Observações", "Regras fixas", "Leis certas", "Nada"],
+"respostaCorreta": "Observações",
+"dica": "Baseia-se em exemplos."
+},
+{
+"pergunta": "Dedução dá:",
+"opcoes": ["Certeza", "Dúvida", "Erro", "Opinião"],
+"respostaCorreta": "Certeza",
+"dica": "Não falha se estiver correta."
+},
+{
+"pergunta": "Indução dá:",
+"opcoes": ["Probabilidade", "Certeza absoluta", "Erro sempre", "Nada"],
+"respostaCorreta": "Probabilidade",
+"dica": "Pode falhar."
+},
+{
+"pergunta": "Ver muitos cisnes brancos e pensar que todos são brancos é:",
+"opcoes": ["Indução", "Dedução", "Erro", "Certeza"],
+"respostaCorreta": "Indução",
+"dica": "Baseado em exemplos."
+},
+{
+"pergunta": "Usar uma regra geral para um caso específico é:",
+"opcoes": ["Dedução", "Indução", "Erro", "Dúvida"],
+"respostaCorreta": "Dedução",
+"dica": "Vai do geral ao particular."
+},
+{
+"pergunta": "Dedução é como:",
+"opcoes": ["Seguir uma regra", "Adivinhar", "Imaginar", "Misturar"],
+"respostaCorreta": "Seguir uma regra",
+"dica": "Aplica uma lei."
+},
+{
+"pergunta": "Indução é como:",
+"opcoes": ["Observar exemplos", "Seguir regras", "Ignorar fatos", "Misturar ideias"],
+"respostaCorreta": "Observar exemplos",
+"dica": "Baseado em observação."
+}
+]
+},
+{
+"id": "15-medio",
+"capitulo": "Capítulo 15 - Indução e Dedução",
+"nivel": "medio",
+"dicas": "Dedução garante certeza, indução trabalha com chances.",
+"perguntas": [
+{
+"pergunta": "Qual é a principal diferença entre indução e dedução?",
+"opcoes": ["Direção do raciocínio", "Número de palavras", "Forma da frase", "Tempo"],
+"respostaCorreta": "Direção do raciocínio",
+"dica": "Geral vs particular."
+},
+{
+"pergunta": "Dedução parte de:",
+"opcoes": ["Regra geral", "Casos específicos", "Opiniões", "Dúvidas"],
+"respostaCorreta": "Regra geral",
+"dica": "Base universal."
+},
+{
+"pergunta": "Indução parte de:",
+"opcoes": ["Casos específicos", "Regras gerais", "Leis fixas", "Teorias"],
+"respostaCorreta": "Casos específicos",
+"dica": "Observação."
+},
+{
+"pergunta": "Dedução garante:",
+"opcoes": ["Certeza lógica", "Probabilidade", "Erro", "Dúvida"],
+"respostaCorreta": "Certeza lógica",
+"dica": "Se correta, não falha."
+},
+{
+"pergunta": "Indução pode falhar porque:",
+"opcoes": ["Baseia-se em poucos casos", "É sempre certa", "É dedutiva", "É lógica pura"],
+"respostaCorreta": "Baseia-se em poucos casos",
+"dica": "Nem sempre cobre tudo."
+},
+{
+"pergunta": "Qual exemplo é dedução?",
+"opcoes": ["Todos os homens são mortais; João é homem; João é mortal", "Vi um pássaro branco; todos são brancos", "Acho que vai chover", "Talvez funcione"],
+"respostaCorreta": "Todos os homens são mortais; João é homem; João é mortal",
+"dica": "Parte de regra geral."
+},
+{
+"pergunta": "Qual exemplo é indução?",
+"opcoes": ["Ver vários casos e criar regra", "Aplicar regra geral", "Resolver equação", "Seguir lei fixa"],
+"respostaCorreta": "Ver vários casos e criar regra",
+"dica": "Baseado em observação."
+},
+{
+"pergunta": "Indução leva a:",
+"opcoes": ["Generalização", "Certeza absoluta", "Erro sempre", "Regra fixa"],
+"respostaCorreta": "Generalização",
+"dica": "Cria regra a partir de exemplos."
+},
+{
+"pergunta": "Dedução é usada quando:",
+"opcoes": ["Já temos regra geral", "Temos poucos exemplos", "Não sabemos nada", "Estamos imaginando"],
+"respostaCorreta": "Já temos regra geral",
+"dica": "Aplica uma lei."
+},
+{
+"pergunta": "Confundir indução com dedução pode causar:",
+"opcoes": ["Erro lógico", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "São processos diferentes."
+}
+]
+},
+{
+"id": "15-avancado",
+"capitulo": "Capítulo 15 - Indução e Dedução",
+"nivel": "avancado",
+"dicas": "Dedução é certa se válida, indução é provável.",
+"perguntas": [
+{
+"pergunta": "Por que a dedução é considerada segura?",
+"opcoes": ["Garante conclusão a partir de premissas verdadeiras", "Baseia-se em exemplos", "É incerta", "É aleatória"],
+"respostaCorreta": "Garante conclusão a partir de premissas verdadeiras",
+"dica": "Segue lógica necessária."
+},
+{
+"pergunta": "Por que a indução não garante certeza?",
+"opcoes": ["Baseia-se em observações limitadas", "É lógica perfeita", "Sempre está correta", "Não usa dados"],
+"respostaCorreta": "Baseia-se em observações limitadas",
+"dica": "Pode haver exceções."
+},
+{
+"pergunta": "Qual é o efeito de uma generalização apressada?",
+"opcoes": ["Erro lógico", "Certeza", "Precisão", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "Poucos exemplos."
+},
+{
+"pergunta": "Dedução depende de:",
+"opcoes": ["Premissas verdadeiras e forma válida", "Observação", "Probabilidade", "Opinião"],
+"respostaCorreta": "Premissas verdadeiras e forma válida",
+"dica": "Base sólida."
+},
+{
+"pergunta": "Indução é usada principalmente em:",
+"opcoes": ["Descoberta de padrões", "Aplicação de leis fixas", "Matemática pura", "Regras absolutas"],
+"respostaCorreta": "Descoberta de padrões",
+"dica": "Observa casos."
+},
+{
+"pergunta": "Qual é a consequência de confiar totalmente na indução?",
+"opcoes": ["Risco de erro", "Certeza absoluta", "Precisão total", "Organização perfeita"],
+"respostaCorreta": "Risco de erro",
+"dica": "Pode falhar."
+},
+{
+"pergunta": "Dedução vai do:",
+"opcoes": ["Universal ao particular", "Particular ao universal", "Erro ao acerto", "Dúvida à certeza"],
+"respostaCorreta": "Universal ao particular",
+"dica": "Regra para caso."
+},
+{
+"pergunta": "Indução vai do:",
+"opcoes": ["Particular ao universal", "Universal ao particular", "Erro à verdade", "Dúvida ao erro"],
+"respostaCorreta": "Particular ao universal",
+"dica": "Casos para regra."
+},
+{
+"pergunta": "Qual é a causa de um raciocínio dedutivo correto?",
+"opcoes": ["Estrutura válida e premissas verdadeiras", "Observação limitada", "Confusão", "Pressa"],
+"respostaCorreta": "Estrutura válida e premissas verdadeiras",
+"dica": "Base lógica sólida."
+},
+{
+"pergunta": "Qual é a principal limitação da indução?",
+"opcoes": ["Pode ser refutada por novos casos", "É sempre correta", "Não usa dados", "É perfeita"],
+"respostaCorreta": "Pode ser refutada por novos casos",
+"dica": "Um contraexemplo muda tudo."
+}
+]
+},
+{
+"id": "16-basico",
+"capitulo": "Capítulo 16 - Lei da Identidade",
+"nivel": "basico",
+"dicas": "A lei da identidade diz que algo é ele mesmo.",
+"perguntas": [
+{
+"pergunta": "O que diz a Lei da Identidade?",
+"opcoes": ["A é A", "A não é A", "Tudo muda", "Nada existe"],
+"respostaCorreta": "A é A",
+"dica": "Cada coisa é ela mesma."
+},
+{
+"pergunta": "Uma maçã é:",
+"opcoes": ["Uma maçã", "Uma laranja", "Um carro", "Nada"],
+"respostaCorreta": "Uma maçã",
+"dica": "Ela é o que é."
+},
+{
+"pergunta": "A Lei da Identidade ajuda a:",
+"opcoes": ["Evitar confusão", "Confundir", "Misturar ideias", "Ignorar"],
+"respostaCorreta": "Evitar confusão",
+"dica": "Mantém clareza."
+},
+{
+"pergunta": "Se mudamos o significado de uma palavra no meio da conversa:",
+"opcoes": ["Criamos confusão", "Ajudamos", "Melhoramos", "Nada muda"],
+"respostaCorreta": "Criamos confusão",
+"dica": "Perde o sentido."
+},
+{
+"pergunta": "‘Banco’ pode causar confusão porque:",
+"opcoes": ["Tem mais de um significado", "Tem só um significado", "Não existe", "É simples"],
+"respostaCorreta": "Tem mais de um significado",
+"dica": "Pode mudar de sentido."
+},
+{
+"pergunta": "Cada coisa deve ser:",
+"opcoes": ["Fiel a si mesma", "Mudada sempre", "Confusa", "Misturada"],
+"respostaCorreta": "Fiel a si mesma",
+"dica": "Não muda de significado."
+},
+{
+"pergunta": "A Lei da Identidade evita:",
+"opcoes": ["Erros", "Aprendizado", "Clareza", "Organização"],
+"respostaCorreta": "Erros",
+"dica": "Ajuda a pensar bem."
+},
+{
+"pergunta": "Se uma palavra muda de sentido, o pensamento fica:",
+"opcoes": ["Confuso", "Claro", "Organizado", "Correto"],
+"respostaCorreta": "Confuso",
+"dica": "Perde a lógica."
+},
+{
+"pergunta": "A Lei da Identidade é:",
+"opcoes": ["Uma regra da lógica", "Um jogo", "Uma história", "Uma dúvida"],
+"respostaCorreta": "Uma regra da lógica",
+"dica": "É uma lei."
+},
+{
+"pergunta": "A expressão ‘A é A’ significa:",
+"opcoes": ["Algo é ele mesmo", "Algo muda sempre", "Nada é igual", "Tudo é diferente"],
+"respostaCorreta": "Algo é ele mesmo",
+"dica": "Identidade."
+}
+]
+},
+{
+"id": "16-medio",
+"capitulo": "Capítulo 16 - Lei da Identidade",
+"nivel": "medio",
+"dicas": "A Lei da Identidade garante consistência no significado.",
+"perguntas": [
+{
+"pergunta": "O que significa ‘A é A’?",
+"opcoes": ["Cada coisa é ela mesma", "Tudo muda", "Nada é igual", "Tudo é confuso"],
+"respostaCorreta": "Cada coisa é ela mesma",
+"dica": "Mantém identidade."
+},
+{
+"pergunta": "Por que a Lei da Identidade é importante?",
+"opcoes": ["Evita ambiguidade", "Cria confusão", "Mistura ideias", "Ignora lógica"],
+"respostaCorreta": "Evita ambiguidade",
+"dica": "Mantém clareza."
+},
+{
+"pergunta": "Mudar o significado de uma palavra durante um argumento causa:",
+"opcoes": ["Erro lógico", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "Quebra a lógica."
+},
+{
+"pergunta": "A Lei da Identidade exige:",
+"opcoes": ["Consistência", "Mudança constante", "Confusão", "Ignorância"],
+"respostaCorreta": "Consistência",
+"dica": "Mesmo significado sempre."
+},
+{
+"pergunta": "Qual exemplo quebra a Lei da Identidade?",
+"opcoes": ["Usar ‘banco’ com dois sentidos diferentes", "Definir claramente", "Explicar bem", "Usar termos corretos"],
+"respostaCorreta": "Usar ‘banco’ com dois sentidos diferentes",
+"dica": "Muda o sentido."
+},
+{
+"pergunta": "A Lei da Identidade ajuda no:",
+"opcoes": ["Raciocínio claro", "Confusão", "Erro", "Mistura"],
+"respostaCorreta": "Raciocínio claro",
+"dica": "Evita ambiguidades."
+},
+{
+"pergunta": "Uma ideia deve manter:",
+"opcoes": ["Seu significado", "Mudança constante", "Confusão", "Erro"],
+"respostaCorreta": "Seu significado",
+"dica": "Consistência."
+},
+{
+"pergunta": "Sem a Lei da Identidade, o pensamento seria:",
+"opcoes": ["Confuso", "Claro", "Organizado", "Preciso"],
+"respostaCorreta": "Confuso",
+"dica": "Falta estabilidade."
+},
+{
+"pergunta": "A Lei da Identidade é base para:",
+"opcoes": ["Outras leis da lógica", "Jogos", "Histórias", "Brincadeiras"],
+"respostaCorreta": "Outras leis da lógica",
+"dica": "Fundamental."
+},
+{
+"pergunta": "Consistência no significado evita:",
+"opcoes": ["Erros", "Aprendizado", "Clareza", "Organização"],
+"respostaCorreta": "Erros",
+"dica": "Mantém lógica."
+}
+]
+},
+{
+"id": "16-avancado",
+"capitulo": "Capítulo 16 - Lei da Identidade",
+"nivel": "avancado",
+"dicas": "A Lei da Identidade garante estabilidade semântica.",
+"perguntas": [
+{
+"pergunta": "Por que a Lei da Identidade é fundamental na lógica?",
+"opcoes": ["Garante consistência de significado", "Confunde ideias", "Ignora conceitos", "Mistura termos"],
+"respostaCorreta": "Garante consistência de significado",
+"dica": "Sem consistência não há lógica."
+},
+{
+"pergunta": "Qual é o efeito de violar a Lei da Identidade?",
+"opcoes": ["Erro lógico", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "Muda o sentido."
+},
+{
+"pergunta": "A expressão ‘A é A’ implica:",
+"opcoes": ["Identidade constante", "Mudança contínua", "Confusão", "Erro"],
+"respostaCorreta": "Identidade constante",
+"dica": "Mesmo significado."
+},
+{
+"pergunta": "Trocar o significado de um termo durante um argumento resulta em:",
+"opcoes": ["Falácia", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Falácia",
+"dica": "Erro de lógica."
+},
+{
+"pergunta": "A Lei da Identidade está relacionada com:",
+"opcoes": ["Semântica", "Tempo", "Cor", "Som"],
+"respostaCorreta": "Semântica",
+"dica": "Significado."
+},
+{
+"pergunta": "Qual é a causa de um raciocínio inconsistente?",
+"opcoes": ["Mudança de significado", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Mudança de significado",
+"dica": "Quebra a identidade."
+},
+{
+"pergunta": "A consistência semântica permite:",
+"opcoes": ["Raciocínio válido", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Raciocínio válido",
+"dica": "Base lógica."
+},
+{
+"pergunta": "Sem a Lei da Identidade, os termos seriam:",
+"opcoes": ["Ambíguos", "Claros", "Precisos", "Estáveis"],
+"respostaCorreta": "Ambíguos",
+"dica": "Mudariam de sentido."
+},
+{
+"pergunta": "A Lei da Identidade é base para evitar:",
+"opcoes": ["Equívocos", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Equívocos",
+"dica": "Evita erros."
+},
+{
+"pergunta": "Qual é a consequência de manter identidade dos termos?",
+"opcoes": ["Clareza lógica", "Confusão", "Erro", "Ambiguidade"],
+"respostaCorreta": "Clareza lógica",
+"dica": "Mantém consistência."
+}
+]
+},
+{
+"id": "17-basico",
+"capitulo": "Capítulo 17 - Lei da Não Contradição",
+"nivel": "basico",
+"dicas": "Algo não pode ser e não ser ao mesmo tempo.",
+"perguntas": [
+{
+"pergunta": "O que diz a Lei da Não Contradição?",
+"opcoes": ["Algo não pode ser e não ser ao mesmo tempo", "Tudo pode ser tudo", "Nada existe", "Tudo muda sempre"],
+"respostaCorreta": "Algo não pode ser e não ser ao mesmo tempo",
+"dica": "Não pode ter duas verdades opostas."
+},
+{
+"pergunta": "Você pode estar totalmente seco e molhado ao mesmo tempo?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "São opostos."
+},
+{
+"pergunta": "Se algo é verdadeiro, ele pode ser falso ao mesmo tempo?",
+"opcoes": ["Não", "Sim", "Sempre", "Depende"],
+"respostaCorreta": "Não",
+"dica": "Não pode contradizer."
+},
+{
+"pergunta": "A Lei da Não Contradição ajuda a:",
+"opcoes": ["Evitar erros", "Confundir", "Misturar ideias", "Ignorar"],
+"respostaCorreta": "Evitar erros",
+"dica": "Mantém lógica correta."
+},
+{
+"pergunta": "‘Estou mentindo agora’ cria:",
+"opcoes": ["Confusão", "Clareza", "Verdade", "Ordem"],
+"respostaCorreta": "Confusão",
+"dica": "É contraditório."
+},
+{
+"pergunta": "Duas ideias opostas podem ser verdadeiras ao mesmo tempo?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "Uma deve ser falsa."
+},
+{
+"pergunta": "Se há contradição:",
+"opcoes": ["Algo está errado", "Tudo está certo", "Nada importa", "Tudo é verdade"],
+"respostaCorreta": "Algo está errado",
+"dica": "Há erro lógico."
+},
+{
+"pergunta": "A Lei da Não Contradição é:",
+"opcoes": ["Uma regra da lógica", "Uma brincadeira", "Uma história", "Uma dúvida"],
+"respostaCorreta": "Uma regra da lógica",
+"dica": "É fundamental."
+},
+{
+"pergunta": "Contradição acontece quando:",
+"opcoes": ["Duas ideias opostas são ditas", "Tudo é igual", "Nada muda", "Tudo é claro"],
+"respostaCorreta": "Duas ideias opostas são ditas",
+"dica": "São opostos."
+},
+{
+"pergunta": "Essa lei ajuda a manter:",
+"opcoes": ["Coerência", "Confusão", "Erro", "Mistura"],
+"respostaCorreta": "Coerência",
+"dica": "Tudo faz sentido."
+}
+]
+},
+{
+"id": "17-medio",
+"capitulo": "Capítulo 17 - Lei da Não Contradição",
+"nivel": "medio",
+"dicas": "Uma coisa não pode ser e não ser ao mesmo tempo e no mesmo sentido.",
+"perguntas": [
+{
+"pergunta": "O que é uma contradição?",
+"opcoes": ["Duas afirmações opostas", "Duas ideias iguais", "Uma dúvida", "Uma pergunta"],
+"respostaCorreta": "Duas afirmações opostas",
+"dica": "Uma nega a outra."
+},
+{
+"pergunta": "Por que a contradição é um problema?",
+"opcoes": ["Quebra a lógica", "Cria clareza", "Ajuda a entender", "Organiza ideias"],
+"respostaCorreta": "Quebra a lógica",
+"dica": "Não faz sentido."
+},
+{
+"pergunta": "Se duas frases se contradizem:",
+"opcoes": ["Pelo menos uma é falsa", "Ambas são verdadeiras", "Ambas são certas", "Nada importa"],
+"respostaCorreta": "Pelo menos uma é falsa",
+"dica": "Não podem ser ambas verdadeiras."
+},
+{
+"pergunta": "A Lei da Não Contradição garante:",
+"opcoes": ["Coerência lógica", "Confusão", "Erro", "Mistura"],
+"respostaCorreta": "Coerência lógica",
+"dica": "Mantém consistência."
+},
+{
+"pergunta": "Qual exemplo é uma contradição?",
+"opcoes": ["Estou feliz e não estou feliz ao mesmo tempo", "Estou feliz", "Está chovendo", "Hoje é terça"],
+"respostaCorreta": "Estou feliz e não estou feliz ao mesmo tempo",
+"dica": "São opostos."
+},
+{
+"pergunta": "A lei aplica-se:",
+"opcoes": ["Ao mesmo tempo e sentido", "A qualquer momento diferente", "A qualquer lugar", "Nunca"],
+"respostaCorreta": "Ao mesmo tempo e sentido",
+"dica": "Importante condição."
+},
+{
+"pergunta": "Sem essa lei, o pensamento seria:",
+"opcoes": ["Confuso", "Claro", "Preciso", "Organizado"],
+"respostaCorreta": "Confuso",
+"dica": "Tudo poderia ser tudo."
+},
+{
+"pergunta": "A contradição deve ser:",
+"opcoes": ["Evitada", "Aceita", "Ignorada", "Usada sempre"],
+"respostaCorreta": "Evitada",
+"dica": "Prejudica a lógica."
+},
+{
+"pergunta": "Essa lei é importante para:",
+"opcoes": ["Pensar corretamente", "Confundir", "Misturar", "Ignorar"],
+"respostaCorreta": "Pensar corretamente",
+"dica": "Base da lógica."
+},
+{
+"pergunta": "A contradição leva a:",
+"opcoes": ["Erro lógico", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "Não faz sentido."
+}
+]
+},
+{
+"id": "17-avancado",
+"capitulo": "Capítulo 17 - Lei da Não Contradição",
+"nivel": "avancado",
+"dicas": "A mesma coisa não pode ser e não ser sob o mesmo aspecto.",
+"perguntas": [
+{
+"pergunta": "Por que a Lei da Não Contradição é fundamental?",
+"opcoes": ["Garante coerência lógica", "Confunde ideias", "Ignora lógica", "Mistura conceitos"],
+"respostaCorreta": "Garante coerência lógica",
+"dica": "Sem ela não há lógica."
+},
+{
+"pergunta": "Uma contradição ocorre quando:",
+"opcoes": ["Afirmação e negação coexistem", "Há apenas uma afirmação", "Há dúvida", "Há erro simples"],
+"respostaCorreta": "Afirmação e negação coexistem",
+"dica": "Uma nega a outra."
+},
+{
+"pergunta": "Qual é o efeito de aceitar contradições?",
+"opcoes": ["Colapso do raciocínio lógico", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Colapso do raciocínio lógico",
+"dica": "Nada faz sentido."
+},
+{
+"pergunta": "A lei exige que:",
+"opcoes": ["Uma afirmação não contradiga outra", "Tudo seja aceito", "Tudo seja relativo", "Nada seja fixo"],
+"respostaCorreta": "Uma afirmação não contradiga outra",
+"dica": "Consistência."
+},
+{
+"pergunta": "Se duas proposições se contradizem:",
+"opcoes": ["Não podem ser ambas verdadeiras", "Ambas são verdadeiras", "Ambas são falsas", "Nada importa"],
+"respostaCorreta": "Não podem ser ambas verdadeiras",
+"dica": "Uma deve ser falsa."
+},
+{
+"pergunta": "Qual é a causa de um erro por contradição?",
+"opcoes": ["Afirmações incompatíveis", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Afirmações incompatíveis",
+"dica": "Não podem coexistir."
+},
+{
+"pergunta": "A Lei da Não Contradição está ligada à:",
+"opcoes": ["Consistência", "Mudança", "Aleatoriedade", "Confusão"],
+"respostaCorreta": "Consistência",
+"dica": "Mantém ordem lógica."
+},
+{
+"pergunta": "Negar essa lei leva a:",
+"opcoes": ["Pensamento incoerente", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Pensamento incoerente",
+"dica": "Nada faz sentido."
+},
+{
+"pergunta": "Qual é a consequência de uma contradição em um argumento?",
+"opcoes": ["Invalida o raciocínio", "Fortalece", "Melhora", "Organiza"],
+"respostaCorreta": "Invalida o raciocínio",
+"dica": "Torna-o incorreto."
+},
+{
+"pergunta": "A Lei da Não Contradição é essencial para:",
+"opcoes": ["Raciocínio válido", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Raciocínio válido",
+"dica": "Base da lógica."
+}
+]
+},
+{
+"id": "18-basico",
+"capitulo": "Capítulo 18 - Lei do Terceiro Excluído",
+"nivel": "basico",
+"dicas": "Uma coisa é verdadeira ou falsa, não existe meio termo.",
+"perguntas": [
+{
+"pergunta": "O que diz a Lei do Terceiro Excluído?",
+"opcoes": ["Algo é verdadeiro ou falso", "Tudo é relativo", "Nada é certo", "Tudo muda"],
+"respostaCorreta": "Algo é verdadeiro ou falso",
+"dica": "Não existe meio termo."
+},
+{
+"pergunta": "Uma porta está fechada ou:",
+"opcoes": ["Não está fechada", "Está aberta e fechada", "Não existe", "Está invisível"],
+"respostaCorreta": "Não está fechada",
+"dica": "Só há duas opções."
+},
+{
+"pergunta": "Uma frase pode ser:",
+"opcoes": ["Verdadeira ou falsa", "Meio verdadeira", "Sempre dúvida", "Nada"],
+"respostaCorreta": "Verdadeira ou falsa",
+"dica": "Tem dois valores."
+},
+{
+"pergunta": "Existe uma terceira opção entre verdadeiro e falso?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "É excluída."
+},
+{
+"pergunta": "Essa lei ajuda a:",
+"opcoes": ["Decidir claramente", "Confundir", "Misturar ideias", "Ignorar"],
+"respostaCorreta": "Decidir claramente",
+"dica": "Define duas opções."
+},
+{
+"pergunta": "‘Amanhã vai chover’ será:",
+"opcoes": ["Verdadeiro ou falso", "Meio verdadeiro", "Sempre dúvida", "Nada"],
+"respostaCorreta": "Verdadeiro ou falso",
+"dica": "Quando acontecer, saberemos."
+},
+{
+"pergunta": "Essa lei exclui:",
+"opcoes": ["Terceira opção", "Primeira opção", "Segunda opção", "Todas"],
+"respostaCorreta": "Terceira opção",
+"dica": "Só há duas."
+},
+{
+"pergunta": "A Lei do Terceiro Excluído é:",
+"opcoes": ["Regra da lógica", "Jogo", "História", "Dúvida"],
+"respostaCorreta": "Regra da lógica",
+"dica": "É fundamental."
+},
+{
+"pergunta": "Uma afirmação não pode ser:",
+"opcoes": ["Nem verdadeira nem falsa", "Verdadeira", "Falsa", "Clara"],
+"respostaCorreta": "Nem verdadeira nem falsa",
+"dica": "Tem que ser uma das duas."
+},
+{
+"pergunta": "Essa lei ajuda a evitar:",
+"opcoes": ["Indecisão", "Clareza", "Organização", "Precisão"],
+"respostaCorreta": "Indecisão",
+"dica": "Define escolha."
+}
+]
+},
+{
+"id": "18-medio",
+"capitulo": "Capítulo 18 - Lei do Terceiro Excluído",
+"nivel": "medio",
+"dicas": "Não existe terceira possibilidade entre verdadeiro e falso.",
+"perguntas": [
+{
+"pergunta": "O que significa 'terceiro excluído'?",
+"opcoes": ["Não existe terceira opção", "Há três opções", "Tudo é relativo", "Nada é certo"],
+"respostaCorreta": "Não existe terceira opção",
+"dica": "Só duas possibilidades."
+},
+{
+"pergunta": "Uma proposição deve ser:",
+"opcoes": ["Verdadeira ou falsa", "Meio verdadeira", "Indefinida", "Ambígua"],
+"respostaCorreta": "Verdadeira ou falsa",
+"dica": "Não há meio termo."
+},
+{
+"pergunta": "Por que não há terceira opção?",
+"opcoes": ["Porque a lógica exige definição", "Porque tudo é relativo", "Porque é confuso", "Porque não importa"],
+"respostaCorreta": "Porque a lógica exige definição",
+"dica": "Precisa ser claro."
+},
+{
+"pergunta": "A Lei do Terceiro Excluído ajuda a:",
+"opcoes": ["Tomar decisões claras", "Confundir", "Misturar ideias", "Ignorar lógica"],
+"respostaCorreta": "Tomar decisões claras",
+"dica": "Define verdade ou falsidade."
+},
+{
+"pergunta": "Qual exemplo segue essa lei?",
+"opcoes": ["A porta está aberta ou não está aberta", "A porta está meio aberta", "A porta não existe", "A porta muda sempre"],
+"respostaCorreta": "A porta está aberta ou não está aberta",
+"dica": "Duas opções claras."
+},
+{
+"pergunta": "Uma proposição ambígua viola:",
+"opcoes": ["Clareza lógica", "Ordem", "Forma", "Estrutura"],
+"respostaCorreta": "Clareza lógica",
+"dica": "Não define bem."
+},
+{
+"pergunta": "Sem essa lei, haveria:",
+"opcoes": ["Indefinição", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Indefinição",
+"dica": "Nada seria certo."
+},
+{
+"pergunta": "A lei se aplica a:",
+"opcoes": ["Proposições", "Objetos físicos", "Cores", "Sons"],
+"respostaCorreta": "Proposições",
+"dica": "Frases lógicas."
+},
+{
+"pergunta": "Negar essa lei leva a:",
+"opcoes": ["Confusão lógica", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Confusão lógica",
+"dica": "Nada fica definido."
+},
+{
+"pergunta": "Essa lei complementa:",
+"opcoes": ["Outras leis da lógica", "Jogos", "Histórias", "Brincadeiras"],
+"respostaCorreta": "Outras leis da lógica",
+"dica": "Faz parte do sistema lógico."
+}
+]
+},
+{
+"id": "18-avancado",
+"capitulo": "Capítulo 18 - Lei do Terceiro Excluído",
+"nivel": "avancado",
+"dicas": "Toda proposição é verdadeira ou falsa, sem terceira opção.",
+"perguntas": [
+{
+"pergunta": "Por que a Lei do Terceiro Excluído é essencial?",
+"opcoes": ["Garante definição de verdade", "Confunde ideias", "Ignora lógica", "Mistura conceitos"],
+"respostaCorreta": "Garante definição de verdade",
+"dica": "Sem ela não há decisão."
+},
+{
+"pergunta": "Uma proposição P deve ser:",
+"opcoes": ["Verdadeira ou falsa", "Meio verdadeira", "Indefinida", "Ambígua"],
+"respostaCorreta": "Verdadeira ou falsa",
+"dica": "Sem terceira opção."
+},
+{
+"pergunta": "Qual é o efeito de negar essa lei?",
+"opcoes": ["Indefinição lógica", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Indefinição lógica",
+"dica": "Nada pode ser decidido."
+},
+{
+"pergunta": "Essa lei implica que:",
+"opcoes": ["Não há estado intermediário", "Há múltiplos estados", "Tudo é relativo", "Nada é fixo"],
+"respostaCorreta": "Não há estado intermediário",
+"dica": "Só duas opções."
+},
+{
+"pergunta": "Qual é a consequência de aceitar uma terceira opção?",
+"opcoes": ["Quebra da lógica clássica", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Quebra da lógica clássica",
+"dica": "Contraria a lei."
+},
+{
+"pergunta": "A lei se aplica principalmente a:",
+"opcoes": ["Proposições lógicas", "Objetos físicos", "Cores", "Sons"],
+"respostaCorreta": "Proposições lógicas",
+"dica": "Frases analisáveis."
+},
+{
+"pergunta": "Qual é a relação com a verdade?",
+"opcoes": ["Define valor lógico", "Ignora realidade", "Confunde ideias", "Mistura conceitos"],
+"respostaCorreta": "Define valor lógico",
+"dica": "V ou F."
+},
+{
+"pergunta": "A Lei do Terceiro Excluído complementa:",
+"opcoes": ["Lei da Não Contradição", "Lei da Gravidade", "Leis físicas", "Regras sociais"],
+"respostaCorreta": "Lei da Não Contradição",
+"dica": "Trabalham juntas."
+},
+{
+"pergunta": "Qual é a causa de um raciocínio indefinido?",
+"opcoes": ["Negação dessa lei", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Negação dessa lei",
+"dica": "Sem decisão lógica."
+},
+{
+"pergunta": "Sem essa lei, o pensamento seria:",
+"opcoes": ["Ambíguo", "Claro", "Preciso", "Organizado"],
+"respostaCorreta": "Ambíguo",
+"dica": "Sem definição."
+}
+]
+},
+{
+"id": "19-basico",
+"capitulo": "Capítulo 19 - Falácias",
+"nivel": "basico",
+"dicas": "Falácia é um erro de pensamento que parece certo.",
+"perguntas": [
+{
+"pergunta": "O que é uma falácia?",
+"opcoes": ["Um erro de pensamento", "Uma verdade", "Uma regra", "Uma certeza"],
+"respostaCorreta": "Um erro de pensamento",
+"dica": "Parece correto, mas não é."
+},
+{
+"pergunta": "Uma falácia pode parecer:",
+"opcoes": ["Correta", "Errada sempre", "Invisível", "Impossível"],
+"respostaCorreta": "Correta",
+"dica": "Engana facilmente."
+},
+{
+"pergunta": "Se alguém grita para ganhar discussão, isso é:",
+"opcoes": ["Falácia", "Argumento correto", "Prova", "Conclusão"],
+"respostaCorreta": "Falácia",
+"dica": "Não usa razão."
+},
+{
+"pergunta": "Falácias ajudam a:",
+"opcoes": ["Confundir", "Esclarecer", "Ensinar", "Organizar"],
+"respostaCorreta": "Confundir",
+"dica": "Criam erro."
+},
+{
+"pergunta": "Argumento com erro é:",
+"opcoes": ["Falácia", "Verdade", "Regra", "Lei"],
+"respostaCorreta": "Falácia",
+"dica": "Tem falha."
+},
+{
+"pergunta": "Falácias devem ser:",
+"opcoes": ["Evitadas", "Usadas sempre", "Ignoradas", "Aceitas"],
+"respostaCorreta": "Evitadas",
+"dica": "Prejudicam o pensamento."
+},
+{
+"pergunta": "Uma falácia pode enganar:",
+"opcoes": ["As pessoas", "Ninguém", "Somente máquinas", "Animais"],
+"respostaCorreta": "As pessoas",
+"dica": "Parece convincente."
+},
+{
+"pergunta": "Falácia não é:",
+"opcoes": ["Argumento correto", "Erro", "Confusão", "Engano"],
+"respostaCorreta": "Argumento correto",
+"dica": "Não é válido."
+},
+{
+"pergunta": "Reconhecer falácias ajuda a:",
+"opcoes": ["Pensar melhor", "Confundir", "Errar", "Ignorar"],
+"respostaCorreta": "Pensar melhor",
+"dica": "Evita enganos."
+},
+{
+"pergunta": "Falácias aparecem em:",
+"opcoes": ["Discussões", "Somente livros", "Nunca", "Apenas jogos"],
+"respostaCorreta": "Discussões",
+"dica": "No dia a dia."
+}
+]
+},
+{
+"id": "19-medio",
+"capitulo": "Capítulo 19 - Falácias",
+"nivel": "medio",
+"dicas": "Falácias são erros que parecem argumentos válidos.",
+"perguntas": [
+{
+"pergunta": "O que caracteriza uma falácia?",
+"opcoes": ["Erro que parece correto", "Verdade absoluta", "Regra lógica", "Conclusão certa"],
+"respostaCorreta": "Erro que parece correto",
+"dica": "Engana pela aparência."
+},
+{
+"pergunta": "Por que falácias são perigosas?",
+"opcoes": ["Enganam as pessoas", "São sempre claras", "Ajudam sempre", "Não têm efeito"],
+"respostaCorreta": "Enganam as pessoas",
+"dica": "Parecem verdade."
+},
+{
+"pergunta": "Atacar a pessoa em vez da ideia é:",
+"opcoes": ["Falácia", "Argumento válido", "Prova", "Conclusão"],
+"respostaCorreta": "Falácia",
+"dica": "Não responde ao argumento."
+},
+{
+"pergunta": "Usar emoção em vez de razão pode ser:",
+"opcoes": ["Falácia", "Prova lógica", "Regra", "Conclusão"],
+"respostaCorreta": "Falácia",
+"dica": "Falta lógica."
+},
+{
+"pergunta": "Falácias prejudicam:",
+"opcoes": ["Raciocínio", "Clareza", "Aprendizado", "Organização"],
+"respostaCorreta": "Raciocínio",
+"dica": "Criam erro."
+},
+{
+"pergunta": "Um bom argumento deve:",
+"opcoes": ["Evitar falácias", "Usar falácias", "Ignorar lógica", "Confundir"],
+"respostaCorreta": "Evitar falácias",
+"dica": "Ser lógico."
+},
+{
+"pergunta": "Falácias podem aparecer em:",
+"opcoes": ["Debates", "Somente livros", "Nunca", "Apenas ciência"],
+"respostaCorreta": "Debates",
+"dica": "Em conversas."
+},
+{
+"pergunta": "Reconhecer falácias ajuda a:",
+"opcoes": ["Evitar enganos", "Criar erros", "Confundir", "Ignorar"],
+"respostaCorreta": "Evitar enganos",
+"dica": "Pensar melhor."
+},
+{
+"pergunta": "Qual é o efeito de aceitar falácias?",
+"opcoes": ["Erro lógico", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "Conclusões erradas."
+},
+{
+"pergunta": "Falácias são:",
+"opcoes": ["Argumentos inválidos", "Argumentos perfeitos", "Verdades absolutas", "Leis"],
+"respostaCorreta": "Argumentos inválidos",
+"dica": "Não seguem lógica."
+}
+]
+},
+{
+"id": "19-avancado",
+"capitulo": "Capítulo 19 - Falácias",
+"nivel": "avancado",
+"dicas": "Falácias são erros estruturais ou de conteúdo no raciocínio.",
+"perguntas": [
+{
+"pergunta": "Por que falácias são difíceis de identificar?",
+"opcoes": ["Parecem argumentos válidos", "São sempre claras", "São simples", "Não existem"],
+"respostaCorreta": "Parecem argumentos válidos",
+"dica": "Enganam facilmente."
+},
+{
+"pergunta": "Qual é o efeito de uma falácia em um argumento?",
+"opcoes": ["Invalida o raciocínio", "Fortalece", "Melhora", "Organiza"],
+"respostaCorreta": "Invalida o raciocínio",
+"dica": "Torna-o incorreto."
+},
+{
+"pergunta": "Atacar a pessoa (ad hominem) é:",
+"opcoes": ["Falácia", "Prova lógica", "Conclusão válida", "Regra"],
+"respostaCorreta": "Falácia",
+"dica": "Foge do argumento."
+},
+{
+"pergunta": "Apelo à emoção em vez de lógica é:",
+"opcoes": ["Falácia", "Argumento válido", "Prova científica", "Regra lógica"],
+"respostaCorreta": "Falácia",
+"dica": "Não usa razão."
+},
+{
+"pergunta": "Qual é a causa principal de falácias?",
+"opcoes": ["Erro de raciocínio", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro de raciocínio",
+"dica": "Falha lógica."
+},
+{
+"pergunta": "Reconhecer falácias permite:",
+"opcoes": ["Pensamento crítico", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Pensamento crítico",
+"dica": "Melhora análise."
+},
+{
+"pergunta": "Uma falácia pode ser:",
+"opcoes": ["Formal ou informal", "Somente formal", "Somente informal", "Nenhuma"],
+"respostaCorreta": "Formal ou informal",
+"dica": "Tipos diferentes."
+},
+{
+"pergunta": "Aceitar falácias leva a:",
+"opcoes": ["Conclusões erradas", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Conclusões erradas",
+"dica": "Base incorreta."
+},
+{
+"pergunta": "Qual é a consequência de usar falácias em debates?",
+"opcoes": ["Perda de credibilidade", "Ganho de lógica", "Clareza", "Precisão"],
+"respostaCorreta": "Perda de credibilidade",
+"dica": "Não convence corretamente."
+},
+{
+"pergunta": "Evitar falácias resulta em:",
+"opcoes": ["Raciocínio sólido", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Raciocínio sólido",
+"dica": "Base lógica forte."
+}
+]
+},
+{
+"id": "20-basico",
+"capitulo": "Capítulo 20 - Pensamento Crítico",
+"nivel": "basico",
+"dicas": "Pensar criticamente é pensar com cuidado e atenção.",
+"perguntas": [
+{
+"pergunta": "O que é pensamento crítico?",
+"opcoes": ["Pensar com atenção", "Pensar rápido", "Não pensar", "Copiar ideias"],
+"respostaCorreta": "Pensar com atenção",
+"dica": "Analisar bem antes de decidir."
+},
+{
+"pergunta": "Pensar criticamente ajuda a:",
+"opcoes": ["Tomar boas decisões", "Errar mais", "Confundir", "Ignorar"],
+"respostaCorreta": "Tomar boas decisões",
+"dica": "Ajuda a escolher melhor."
+},
+{
+"pergunta": "Devemos acreditar em tudo que ouvimos?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes sem pensar"],
+"respostaCorreta": "Não",
+"dica": "É preciso verificar."
+},
+{
+"pergunta": "Pensamento crítico envolve:",
+"opcoes": ["Fazer perguntas", "Aceitar tudo", "Ignorar", "Copiar"],
+"respostaCorreta": "Fazer perguntas",
+"dica": "Questionar é importante."
+},
+{
+"pergunta": "Antes de decidir, devemos:",
+"opcoes": ["Pensar bem", "Agir rápido", "Ignorar", "Confundir"],
+"respostaCorreta": "Pensar bem",
+"dica": "Analisar primeiro."
+},
+{
+"pergunta": "Pensamento crítico evita:",
+"opcoes": ["Erros", "Aprendizado", "Clareza", "Organização"],
+"respostaCorreta": "Erros",
+"dica": "Ajuda a acertar."
+},
+{
+"pergunta": "Uma pessoa crítica:",
+"opcoes": ["Analisa ideias", "Aceita tudo", "Nunca pensa", "Confunde"],
+"respostaCorreta": "Analisa ideias",
+"dica": "Pensa antes."
+},
+{
+"pergunta": "Perguntar 'por quê?' ajuda a:",
+"opcoes": ["Entender melhor", "Confundir", "Ignorar", "Errar"],
+"respostaCorreta": "Entender melhor",
+"dica": "Busca explicação."
+},
+{
+"pergunta": "Pensar criticamente é:",
+"opcoes": ["Usar a mente", "Não pensar", "Copiar", "Ignorar"],
+"respostaCorreta": "Usar a mente",
+"dica": "Refletir."
+},
+{
+"pergunta": "Isso ajuda a:",
+"opcoes": ["Aprender melhor", "Confundir", "Misturar", "Ignorar"],
+"respostaCorreta": "Aprender melhor",
+"dica": "Compreender bem."
+}
+]
+},
+{
+"id": "20-medio",
+"capitulo": "Capítulo 20 - Pensamento Crítico",
+"nivel": "medio",
+"dicas": "Pensamento crítico envolve análise e avaliação.",
+"perguntas": [
+{
+"pergunta": "Pensamento crítico significa:",
+"opcoes": ["Analisar e avaliar informações", "Aceitar tudo", "Ignorar fatos", "Copiar ideias"],
+"respostaCorreta": "Analisar e avaliar informações",
+"dica": "Pensar com cuidado."
+},
+{
+"pergunta": "Por que é importante questionar informações?",
+"opcoes": ["Para verificar se são verdadeiras", "Para confundir", "Para ignorar", "Não é importante"],
+"respostaCorreta": "Para verificar se são verdadeiras",
+"dica": "Nem tudo é correto."
+},
+{
+"pergunta": "Pensamento crítico ajuda a:",
+"opcoes": ["Evitar falácias", "Criar erros", "Confundir", "Ignorar lógica"],
+"respostaCorreta": "Evitar falácias",
+"dica": "Identifica erros."
+},
+{
+"pergunta": "Uma pessoa crítica deve:",
+"opcoes": ["Avaliar evidências", "Aceitar tudo", "Ignorar fatos", "Confundir"],
+"respostaCorreta": "Avaliar evidências",
+"dica": "Verificar provas."
+},
+{
+"pergunta": "Pensamento crítico envolve:",
+"opcoes": ["Raciocínio lógico", "Emoção apenas", "Ignorar dados", "Confusão"],
+"respostaCorreta": "Raciocínio lógico",
+"dica": "Usar lógica."
+},
+{
+"pergunta": "Qual é o efeito de não pensar criticamente?",
+"opcoes": ["Ser enganado", "Ter clareza", "Precisão", "Organização"],
+"respostaCorreta": "Ser enganado",
+"dica": "Aceita tudo."
+},
+{
+"pergunta": "Pensamento crítico exige:",
+"opcoes": ["Atenção e análise", "Pressa", "Ignorar", "Confusão"],
+"respostaCorreta": "Atenção e análise",
+"dica": "Pensar com cuidado."
+},
+{
+"pergunta": "Uma boa decisão depende de:",
+"opcoes": ["Análise correta", "Confusão", "Erro", "Ignorar dados"],
+"respostaCorreta": "Análise correta",
+"dica": "Pensar antes."
+},
+{
+"pergunta": "Pensamento crítico ajuda a:",
+"opcoes": ["Resolver problemas", "Criar problemas", "Confundir", "Ignorar"],
+"respostaCorreta": "Resolver problemas",
+"dica": "Analisa soluções."
+},
+{
+"pergunta": "Questionar ideias permite:",
+"opcoes": ["Melhor compreensão", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Melhor compreensão",
+"dica": "Entender profundamente."
+}
+]
+},
+{
+"id": "20-avancado",
+"capitulo": "Capítulo 20 - Pensamento Crítico",
+"nivel": "avancado",
+"dicas": "Pensamento crítico envolve análise, avaliação e julgamento.",
+"perguntas": [
+{
+"pergunta": "Por que o pensamento crítico é essencial?",
+"opcoes": ["Permite avaliar a verdade", "Confunde ideias", "Ignora lógica", "Mistura conceitos"],
+"respostaCorreta": "Permite avaliar a verdade",
+"dica": "Ajuda a decidir corretamente."
+},
+{
+"pergunta": "Qual é o efeito de analisar evidências?",
+"opcoes": ["Melhor julgamento", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Melhor julgamento",
+"dica": "Base sólida."
+},
+{
+"pergunta": "Pensamento crítico evita:",
+"opcoes": ["Falácias e erros", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Falácias e erros",
+"dica": "Identifica falhas."
+},
+{
+"pergunta": "Uma pessoa crítica deve:",
+"opcoes": ["Questionar e analisar", "Aceitar tudo", "Ignorar fatos", "Confundir"],
+"respostaCorreta": "Questionar e analisar",
+"dica": "Pensar profundamente."
+},
+{
+"pergunta": "Qual é a consequência de não analisar informações?",
+"opcoes": ["Decisões erradas", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Decisões erradas",
+"dica": "Falta análise."
+},
+{
+"pergunta": "Pensamento crítico exige:",
+"opcoes": ["Raciocínio lógico e evidências", "Emoção apenas", "Ignorar dados", "Confusão"],
+"respostaCorreta": "Raciocínio lógico e evidências",
+"dica": "Base racional."
+},
+{
+"pergunta": "Qual é a causa de um bom julgamento?",
+"opcoes": ["Análise cuidadosa", "Pressa", "Erro", "Ignorar dados"],
+"respostaCorreta": "Análise cuidadosa",
+"dica": "Pensar antes."
+},
+{
+"pergunta": "Pensamento crítico permite:",
+"opcoes": ["Tomar decisões fundamentadas", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Tomar decisões fundamentadas",
+"dica": "Base em evidências."
+},
+{
+"pergunta": "Qual é o risco de aceitar tudo sem questionar?",
+"opcoes": ["Ser enganado", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Ser enganado",
+"dica": "Falta análise."
+},
+{
+"pergunta": "Pensamento crítico é base para:",
+"opcoes": ["Conhecimento sólido", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Conhecimento sólido",
+"dica": "Aprender corretamente."
+}
+]
+},
+{
+"id": "21-basico",
+"capitulo": "Capítulo 21 - Revisão Geral",
+"nivel": "basico",
+"dicas": "A lógica ajuda a pensar bem e evitar erros.",
+"perguntas": [
+{
+"pergunta": "O que a lógica ajuda a fazer?",
+"opcoes": ["Pensar corretamente", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Pensar corretamente",
+"dica": "Ajuda a organizar ideias."
+},
+{
+"pergunta": "Verdade significa:",
+"opcoes": ["Combinar com a realidade", "Ser inventado", "Ser dúvida", "Ser erro"],
+"respostaCorreta": "Combinar com a realidade",
+"dica": "É o que é real."
+},
+{
+"pergunta": "Um conceito é:",
+"opcoes": ["Uma ideia", "Um objeto", "Um som", "Uma cor"],
+"respostaCorreta": "Uma ideia",
+"dica": "Está na mente."
+},
+{
+"pergunta": "Um argumento serve para:",
+"opcoes": ["Dar razões", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Dar razões",
+"dica": "Explicar algo."
+},
+{
+"pergunta": "Uma proposição é:",
+"opcoes": ["Verdadeira ou falsa", "Pergunta", "Ordem", "Som"],
+"respostaCorreta": "Verdadeira ou falsa",
+"dica": "Pode ser avaliada."
+},
+{
+"pergunta": "Falácia é:",
+"opcoes": ["Erro de pensamento", "Verdade", "Regra", "Lei"],
+"respostaCorreta": "Erro de pensamento",
+"dica": "Parece certa, mas não é."
+},
+{
+"pergunta": "Pensamento crítico ajuda a:",
+"opcoes": ["Evitar erros", "Criar erros", "Confundir", "Ignorar"],
+"respostaCorreta": "Evitar erros",
+"dica": "Pensar melhor."
+},
+{
+"pergunta": "Dedução vai:",
+"opcoes": ["Do geral ao particular", "Do particular ao geral", "Mistura tudo", "Ignora"],
+"respostaCorreta": "Do geral ao particular",
+"dica": "Regra para caso."
+},
+{
+"pergunta": "Indução vai:",
+"opcoes": ["Do particular ao geral", "Do geral ao particular", "Mistura tudo", "Ignora"],
+"respostaCorreta": "Do particular ao geral",
+"dica": "Casos para regra."
+},
+{
+"pergunta": "A lógica ajuda a:",
+"opcoes": ["Entender melhor", "Confundir", "Misturar", "Ignorar"],
+"respostaCorreta": "Entender melhor",
+"dica": "Organiza o pensamento."
+}
+]
+},
+{
+"id": "21-medio",
+"capitulo": "Capítulo 21 - Revisão Geral",
+"nivel": "medio",
+"dicas": "A lógica reúne conceitos, argumentos e análise.",
+"perguntas": [
+{
+"pergunta": "Qual é o objetivo da lógica?",
+"opcoes": ["Pensar corretamente", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Pensar corretamente",
+"dica": "Evitar erros."
+},
+{
+"pergunta": "Um argumento válido é:",
+"opcoes": ["Bem estruturado", "Sempre verdadeiro", "Confuso", "Erro"],
+"respostaCorreta": "Bem estruturado",
+"dica": "Forma correta."
+},
+{
+"pergunta": "Uma proposição deve ser:",
+"opcoes": ["Verdadeira ou falsa", "Pergunta", "Ordem", "Som"],
+"respostaCorreta": "Verdadeira ou falsa",
+"dica": "Tem valor lógico."
+},
+{
+"pergunta": "Falácias são:",
+"opcoes": ["Erros de raciocínio", "Verdades", "Leis", "Regras"],
+"respostaCorreta": "Erros de raciocínio",
+"dica": "Parecem corretas."
+},
+{
+"pergunta": "Pensamento crítico envolve:",
+"opcoes": ["Análise", "Ignorar", "Confundir", "Misturar"],
+"respostaCorreta": "Análise",
+"dica": "Pensar com cuidado."
+},
+{
+"pergunta": "Dedução garante:",
+"opcoes": ["Certeza lógica", "Probabilidade", "Erro", "Dúvida"],
+"respostaCorreta": "Certeza lógica",
+"dica": "Se correta, não falha."
+},
+{
+"pergunta": "Indução gera:",
+"opcoes": ["Probabilidade", "Certeza absoluta", "Erro sempre", "Nada"],
+"respostaCorreta": "Probabilidade",
+"dica": "Pode falhar."
+},
+{
+"pergunta": "Validade refere-se a:",
+"opcoes": ["Estrutura", "Realidade", "Opinião", "Emoção"],
+"respostaCorreta": "Estrutura",
+"dica": "Forma lógica."
+},
+{
+"pergunta": "Verdade refere-se a:",
+"opcoes": ["Realidade", "Forma", "Estrutura", "Ordem"],
+"respostaCorreta": "Realidade",
+"dica": "O que é real."
+},
+{
+"pergunta": "A lógica ajuda a:",
+"opcoes": ["Evitar erros", "Criar erros", "Confundir", "Ignorar"],
+"respostaCorreta": "Evitar erros",
+"dica": "Pensar melhor."
+}
+]
+},
+{
+"id": "21-avancado",
+"capitulo": "Capítulo 21 - Revisão Geral",
+"nivel": "avancado",
+"dicas": "A lógica integra análise, validade, verdade e raciocínio.",
+"perguntas": [
+{
+"pergunta": "Por que a lógica é essencial?",
+"opcoes": ["Permite raciocínio correto", "Confunde ideias", "Ignora fatos", "Mistura conceitos"],
+"respostaCorreta": "Permite raciocínio correto",
+"dica": "Base do pensamento."
+},
+{
+"pergunta": "Qual é a relação entre validade e verdade?",
+"opcoes": ["Forma e conteúdo", "São iguais", "Ambas forma", "Ambas realidade"],
+"respostaCorreta": "Forma e conteúdo",
+"dica": "Estrutura vs realidade."
+},
+{
+"pergunta": "Qual é o efeito de falácias?",
+"opcoes": ["Erro lógico", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erro lógico",
+"dica": "Enganam."
+},
+{
+"pergunta": "Pensamento crítico permite:",
+"opcoes": ["Avaliar argumentos", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Avaliar argumentos",
+"dica": "Analisar bem."
+},
+{
+"pergunta": "Dedução depende de:",
+"opcoes": ["Premissas verdadeiras e forma válida", "Observação", "Opinião", "Erro"],
+"respostaCorreta": "Premissas verdadeiras e forma válida",
+"dica": "Base sólida."
+},
+{
+"pergunta": "Indução depende de:",
+"opcoes": ["Observação de casos", "Leis fixas", "Certeza absoluta", "Erro"],
+"respostaCorreta": "Observação de casos",
+"dica": "Generalização."
+},
+{
+"pergunta": "Uma proposição é essencial porque:",
+"opcoes": ["Permite avaliar verdade", "Confunde", "Ignora", "Mistura"],
+"respostaCorreta": "Permite avaliar verdade",
+"dica": "Base da lógica."
+},
+{
+"pergunta": "Argumentos válidos garantem:",
+"opcoes": ["Coerência lógica", "Verdade absoluta", "Erro", "Confusão"],
+"respostaCorreta": "Coerência lógica",
+"dica": "Forma correta."
+},
+{
+"pergunta": "Qual é a consequência de ignorar a lógica?",
+"opcoes": ["Erros de raciocínio", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erros de raciocínio",
+"dica": "Falta estrutura."
+},
+{
+"pergunta": "A lógica integra:",
+"opcoes": ["Análise e raciocínio", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Análise e raciocínio",
+"dica": "Tudo junto."
+}
+]
+},
+{
+"id": "22-basico",
+"capitulo": "Capítulo 22 - Aplicação da Lógica no Dia a Dia",
+"nivel": "basico",
+"dicas": "A lógica ajuda nas decisões do dia a dia.",
+"perguntas": [
+{
+"pergunta": "Para que usamos a lógica no dia a dia?",
+"opcoes": ["Tomar decisões", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Tomar decisões",
+"dica": "Ajuda a escolher melhor."
+},
+{
+"pergunta": "Pensar antes de agir é:",
+"opcoes": ["Usar lógica", "Errar", "Ignorar", "Confundir"],
+"respostaCorreta": "Usar lógica",
+"dica": "Refletir ajuda."
+},
+{
+"pergunta": "Se algo parece estranho, devemos:",
+"opcoes": ["Questionar", "Aceitar", "Ignorar", "Esquecer"],
+"respostaCorreta": "Questionar",
+"dica": "Perguntar ajuda a entender."
+},
+{
+"pergunta": "A lógica ajuda a evitar:",
+"opcoes": ["Erros", "Aprendizado", "Clareza", "Organização"],
+"respostaCorreta": "Erros",
+"dica": "Pensar bem evita falhas."
+},
+{
+"pergunta": "Escolher entre duas opções exige:",
+"opcoes": ["Pensar", "Ignorar", "Confundir", "Misturar"],
+"respostaCorreta": "Pensar",
+"dica": "Analisar antes."
+},
+{
+"pergunta": "Se alguém diz algo estranho, devemos:",
+"opcoes": ["Verificar", "Acreditar sempre", "Ignorar", "Confundir"],
+"respostaCorreta": "Verificar",
+"dica": "Nem tudo é verdade."
+},
+{
+"pergunta": "A lógica ajuda a:",
+"opcoes": ["Resolver problemas", "Criar problemas", "Confundir", "Ignorar"],
+"respostaCorreta": "Resolver problemas",
+"dica": "Pensar ajuda."
+},
+{
+"pergunta": "Tomar decisões rápidas sem pensar pode causar:",
+"opcoes": ["Erros", "Acertos sempre", "Clareza", "Organização"],
+"respostaCorreta": "Erros",
+"dica": "Falta análise."
+},
+{
+"pergunta": "Usar a lógica é:",
+"opcoes": ["Pensar com cuidado", "Não pensar", "Copiar", "Ignorar"],
+"respostaCorreta": "Pensar com cuidado",
+"dica": "Refletir antes."
+},
+{
+"pergunta": "A lógica está presente:",
+"opcoes": ["No dia a dia", "Somente na escola", "Nunca", "Apenas em jogos"],
+"respostaCorreta": "No dia a dia",
+"dica": "Usamos sempre."
+}
+]
+},
+{
+"id": "22-medio",
+"capitulo": "Capítulo 22 - Aplicação da Lógica no Dia a Dia",
+"nivel": "medio",
+"dicas": "A lógica ajuda a analisar situações reais.",
+"perguntas": [
+{
+"pergunta": "Por que a lógica é importante no dia a dia?",
+"opcoes": ["Ajuda a tomar decisões corretas", "Confunde", "Ignora fatos", "Mistura ideias"],
+"respostaCorreta": "Ajuda a tomar decisões corretas",
+"dica": "Evita erros."
+},
+{
+"pergunta": "Analisar informações antes de decidir é:",
+"opcoes": ["Pensamento lógico", "Erro", "Ignorar", "Confusão"],
+"respostaCorreta": "Pensamento lógico",
+"dica": "Pensar antes."
+},
+{
+"pergunta": "Verificar uma informação significa:",
+"opcoes": ["Confirmar se é verdadeira", "Aceitar sempre", "Ignorar", "Confundir"],
+"respostaCorreta": "Confirmar se é verdadeira",
+"dica": "Nem tudo é certo."
+},
+{
+"pergunta": "A lógica ajuda a resolver:",
+"opcoes": ["Problemas", "Confusão", "Erros", "Ignorância"],
+"respostaCorreta": "Problemas",
+"dica": "Ajuda a pensar."
+},
+{
+"pergunta": "Tomar decisões sem pensar pode levar a:",
+"opcoes": ["Erros", "Acertos sempre", "Clareza", "Precisão"],
+"respostaCorreta": "Erros",
+"dica": "Falta análise."
+},
+{
+"pergunta": "Pensamento crítico no dia a dia ajuda a:",
+"opcoes": ["Evitar enganos", "Criar erros", "Confundir", "Ignorar"],
+"respostaCorreta": "Evitar enganos",
+"dica": "Analisa melhor."
+},
+{
+"pergunta": "A lógica permite:",
+"opcoes": ["Avaliar situações", "Ignorar fatos", "Confundir", "Misturar"],
+"respostaCorreta": "Avaliar situações",
+"dica": "Analisar bem."
+},
+{
+"pergunta": "Resolver um problema exige:",
+"opcoes": ["Raciocínio", "Ignorar", "Confundir", "Misturar"],
+"respostaCorreta": "Raciocínio",
+"dica": "Pensar ajuda."
+},
+{
+"pergunta": "Qual é o efeito de usar lógica?",
+"opcoes": ["Melhores decisões", "Mais erros", "Confusão", "Ignorância"],
+"respostaCorreta": "Melhores decisões",
+"dica": "Pensar bem ajuda."
+},
+{
+"pergunta": "A lógica no cotidiano ajuda a:",
+"opcoes": ["Organizar o pensamento", "Confundir", "Misturar", "Ignorar"],
+"respostaCorreta": "Organizar o pensamento",
+"dica": "Clareza mental."
+}
+]
+},
+{
+"id": "22-avancado",
+"capitulo": "Capítulo 22 - Aplicação da Lógica no Dia a Dia",
+"nivel": "avancado",
+"dicas": "A lógica aplicada melhora decisões e evita erros.",
+"perguntas": [
+{
+"pergunta": "Por que aplicar lógica no cotidiano é essencial?",
+"opcoes": ["Melhora decisões e evita erros", "Confunde ideias", "Ignora fatos", "Mistura conceitos"],
+"respostaCorreta": "Melhora decisões e evita erros",
+"dica": "Ajuda a pensar corretamente."
+},
+{
+"pergunta": "Qual é o efeito de analisar antes de agir?",
+"opcoes": ["Decisões mais acertadas", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Decisões mais acertadas",
+"dica": "Pensar antes ajuda."
+},
+{
+"pergunta": "Aplicar lógica significa:",
+"opcoes": ["Usar raciocínio em situações reais", "Ignorar fatos", "Confundir ideias", "Misturar conceitos"],
+"respostaCorreta": "Usar raciocínio em situações reais",
+"dica": "Pensar na prática."
+},
+{
+"pergunta": "Qual é a consequência de decisões impulsivas?",
+"opcoes": ["Erros frequentes", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erros frequentes",
+"dica": "Sem análise."
+},
+{
+"pergunta": "Verificar informações evita:",
+"opcoes": ["Enganos", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Enganos",
+"dica": "Nem tudo é verdade."
+},
+{
+"pergunta": "A lógica aplicada permite:",
+"opcoes": ["Resolução eficiente de problemas", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Resolução eficiente de problemas",
+"dica": "Pensar ajuda a resolver."
+},
+{
+"pergunta": "Qual é a causa de boas decisões?",
+"opcoes": ["Análise lógica", "Pressa", "Erro", "Ignorar dados"],
+"respostaCorreta": "Análise lógica",
+"dica": "Pensar bem."
+},
+{
+"pergunta": "Pensamento crítico no cotidiano leva a:",
+"opcoes": ["Escolhas fundamentadas", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Escolhas fundamentadas",
+"dica": "Base em evidências."
+},
+{
+"pergunta": "Qual é o risco de não usar lógica?",
+"opcoes": ["Ser enganado", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Ser enganado",
+"dica": "Falta análise."
+},
+{
+"pergunta": "Aplicar lógica resulta em:",
+"opcoes": ["Vida mais organizada e racional", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Vida mais organizada e racional",
+"dica": "Melhor compreensão."
+}
+]
+},
+{
+"id": "23-basico",
+"capitulo": "Capítulo 23 - Resolução de Problemas",
+"nivel": "basico",
+"dicas": "Resolver problemas é pensar para encontrar soluções.",
+"perguntas": [
+{
+"pergunta": "O que é resolver um problema?",
+"opcoes": ["Encontrar uma solução", "Ignorar", "Confundir", "Misturar"],
+"respostaCorreta": "Encontrar uma solução",
+"dica": "É buscar uma resposta."
+},
+{
+"pergunta": "Antes de resolver um problema, devemos:",
+"opcoes": ["Entender o problema", "Ignorar", "Agir rápido", "Confundir"],
+"respostaCorreta": "Entender o problema",
+"dica": "Primeiro compreender."
+},
+{
+"pergunta": "Pensar ajuda a:",
+"opcoes": ["Resolver problemas", "Criar problemas", "Confundir", "Ignorar"],
+"respostaCorreta": "Resolver problemas",
+"dica": "Usar a mente."
+},
+{
+"pergunta": "Um problema pode ter:",
+"opcoes": ["Solução", "Nenhuma resposta", "Sempre erro", "Sempre dúvida"],
+"respostaCorreta": "Solução",
+"dica": "Podemos encontrar respostas."
+},
+{
+"pergunta": "Se não sabemos algo, devemos:",
+"opcoes": ["Procurar resposta", "Ignorar", "Desistir", "Confundir"],
+"respostaCorreta": "Procurar resposta",
+"dica": "Buscar ajuda."
+},
+{
+"pergunta": "Resolver problemas exige:",
+"opcoes": ["Pensar", "Ignorar", "Confundir", "Misturar"],
+"respostaCorreta": "Pensar",
+"dica": "Usar lógica."
+},
+{
+"pergunta": "Dividir um problema em partes ajuda a:",
+"opcoes": ["Entender melhor", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Entender melhor",
+"dica": "Fica mais fácil."
+},
+{
+"pergunta": "Errar faz parte de:",
+"opcoes": ["Aprender", "Ignorar", "Confundir", "Parar"],
+"respostaCorreta": "Aprender",
+"dica": "Aprendemos com erros."
+},
+{
+"pergunta": "Pensar com calma ajuda a:",
+"opcoes": ["Resolver melhor", "Confundir", "Errar mais", "Ignorar"],
+"respostaCorreta": "Resolver melhor",
+"dica": "Evita erros."
+},
+{
+"pergunta": "Resolver problemas está presente:",
+"opcoes": ["No dia a dia", "Nunca", "Só na escola", "Só em jogos"],
+"respostaCorreta": "No dia a dia",
+"dica": "Usamos sempre."
+}
+]
+},
+{
+"id": "23-medio",
+"capitulo": "Capítulo 23 - Resolução de Problemas",
+"nivel": "medio",
+"dicas": "Resolver problemas exige análise e estratégia.",
+"perguntas": [
+{
+"pergunta": "Qual é o primeiro passo para resolver um problema?",
+"opcoes": ["Compreender o problema", "Resolver rápido", "Ignorar", "Confundir"],
+"respostaCorreta": "Compreender o problema",
+"dica": "Entender antes de agir."
+},
+{
+"pergunta": "Dividir um problema em partes ajuda a:",
+"opcoes": ["Facilitar a solução", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Facilitar a solução",
+"dica": "Fica mais simples."
+},
+{
+"pergunta": "Testar soluções significa:",
+"opcoes": ["Verificar se funcionam", "Ignorar", "Confundir", "Desistir"],
+"respostaCorreta": "Verificar se funcionam",
+"dica": "Experimentar."
+},
+{
+"pergunta": "Pensamento lógico ajuda a:",
+"opcoes": ["Resolver problemas", "Criar erros", "Confundir", "Ignorar"],
+"respostaCorreta": "Resolver problemas",
+"dica": "Organiza ideias."
+},
+{
+"pergunta": "Se uma solução não funciona:",
+"opcoes": ["Tentar outra", "Desistir", "Ignorar", "Confundir"],
+"respostaCorreta": "Tentar outra",
+"dica": "Continuar tentando."
+},
+{
+"pergunta": "Resolver problemas exige:",
+"opcoes": ["Análise", "Pressa", "Ignorar", "Confusão"],
+"respostaCorreta": "Análise",
+"dica": "Pensar bem."
+},
+{
+"pergunta": "Um bom solucionador de problemas:",
+"opcoes": ["Pensa antes de agir", "Age sem pensar", "Ignora", "Confunde"],
+"respostaCorreta": "Pensa antes de agir",
+"dica": "Planeja."
+},
+{
+"pergunta": "Qual é o efeito de analisar bem?",
+"opcoes": ["Melhores soluções", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Melhores soluções",
+"dica": "Mais acerto."
+},
+{
+"pergunta": "Resolver problemas no dia a dia ajuda a:",
+"opcoes": ["Tomar decisões", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Tomar decisões",
+"dica": "Escolher melhor."
+},
+{
+"pergunta": "Persistência é importante porque:",
+"opcoes": ["Ajuda a encontrar solução", "Confunde", "Ignora", "Mistura"],
+"respostaCorreta": "Ajuda a encontrar solução",
+"dica": "Não desistir."
+}
+]
+},
+{
+"id": "23-avancado",
+"capitulo": "Capítulo 23 - Resolução de Problemas",
+"nivel": "avancado",
+"dicas": "Resolver problemas envolve análise, estratégia e avaliação.",
+"perguntas": [
+{
+"pergunta": "Por que compreender o problema é essencial?",
+"opcoes": ["Evita soluções erradas", "Confunde ideias", "Ignora lógica", "Mistura conceitos"],
+"respostaCorreta": "Evita soluções erradas",
+"dica": "Sem entender, não resolve."
+},
+{
+"pergunta": "Qual é o efeito de dividir um problema?",
+"opcoes": ["Facilita análise", "Confunde", "Ignora", "Mistura"],
+"respostaCorreta": "Facilita análise",
+"dica": "Partes menores ajudam."
+},
+{
+"pergunta": "Testar hipóteses permite:",
+"opcoes": ["Avaliar soluções", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Avaliar soluções",
+"dica": "Verificar resultados."
+},
+{
+"pergunta": "Qual é a consequência de agir sem pensar?",
+"opcoes": ["Erros frequentes", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Erros frequentes",
+"dica": "Falta análise."
+},
+{
+"pergunta": "Resolver problemas exige:",
+"opcoes": ["Estratégia e lógica", "Pressa", "Ignorar dados", "Confusão"],
+"respostaCorreta": "Estratégia e lógica",
+"dica": "Planejar e pensar."
+},
+{
+"pergunta": "Qual é a causa de uma boa solução?",
+"opcoes": ["Análise cuidadosa", "Confusão", "Erro", "Pressa"],
+"respostaCorreta": "Análise cuidadosa",
+"dica": "Pensar bem."
+},
+{
+"pergunta": "Persistência leva a:",
+"opcoes": ["Solução final", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Solução final",
+"dica": "Continuar tentando."
+},
+{
+"pergunta": "Pensamento crítico ajuda a:",
+"opcoes": ["Avaliar alternativas", "Confundir", "Ignorar", "Misturar"],
+"respostaCorreta": "Avaliar alternativas",
+"dica": "Comparar opções."
+},
+{
+"pergunta": "Qual é o risco de não avaliar soluções?",
+"opcoes": ["Escolhas erradas", "Clareza", "Precisão", "Organização"],
+"respostaCorreta": "Escolhas erradas",
+"dica": "Falta verificação."
+},
+{
+"pergunta": "Resolver problemas corretamente resulta em:",
+"opcoes": ["Decisões eficazes", "Confusão", "Erro", "Ignorância"],
+"respostaCorreta": "Decisões eficazes",
+"dica": "Melhor resultado."
+}
+]
+}
+]
+}

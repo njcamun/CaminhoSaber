@@ -1,0 +1,2201 @@
+{
+    "disciplina": "Língua Portuguesa",
+    "quizzes": [
+        {
+            "capitulo": "Capítulo 1 - Fonética e Fonologia",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Fonética estuda a gramática, Fonologia estuda a ortografia."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Fonética estuda a produção física dos sons da fala; Fonologia estuda a função distintiva dos fonemas no sistema da língua."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Fonética estuda a escrita; Fonologia estuda a leitura."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Ambas estudam sinônimos e antônimos."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. A diferença está na abordagem: uma foca na produção física e a outra na função significativa do som.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual a principal diferença entre Fonética e Fonologia?",
+                    "feedback_correct": "Correto! A Fonética lida com o fone (som concreto), e a Fonologia com o fonema (som com valor distintivo)."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Pense em palavras como 'chave' (5 letras, 4 fonemas) ou 'táxi' (4 letras, 5 fonemas).",
+                    "type": "true_false",
+                    "question_text": "Em Língua Portuguesa, o número de letras em uma palavra é sempre igual ao número de fonemas.",
+                    "feedback_correct": "Isso mesmo! Palavras com dígrafos ('ch', 'nh', 'lh') ou letras que não representam fonemas ('h' inicial) têm número de letras diferente do número de fonemas."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "6 letras, 6 fonemas"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "6 letras, 5 fonemas"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "5 letras, 5 fonemas"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "5 letras, 4 fonemas"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Lembre-se que o dígrafo 'CH' representa um único fonema, e cada som vocalístico conta como um fonema.",
+                    "type": "multiple_choice",
+                    "question_text": "Na palavra 'CHAPÉU', quantos fonemas e quantas letras há, respectivamente?",
+                    "feedback_correct": "Correto! A palavra 'CHAPÉU' tem 6 letras (C-H-A-P-É-U), mas o dígrafo 'CH' representa um único fonema (/ʃ/), e o 'ÉU' é um ditongo (dois fonemas). Assim, temos 5 fonemas: /ʃ/, /a/, /p/, /ɛ/, /w/."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Pense nos fonemas que são essenciais para a formação de uma sílaba.",
+                    "type": "true_false",
+                    "question_text": "Em Língua Portuguesa, toda sílaba deve conter, obrigatoriamente, pelo menos uma vogal.",
+                    "feedback_correct": "Isso mesmo! A vogal é o núcleo da sílaba. Sem ela, não há sílaba."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "SAÚDE"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "PAI"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "ÁGUA"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "DOEU"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Lembre-se que um ditongo crescente é formado por uma semivogal seguida de uma vogal na mesma sílaba.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das palavras abaixo apresenta um ditongo crescente?",
+                    "feedback_correct": "Correto! Em 'ÁGUA' (Á-GUA), o 'u' (semivogal) vem antes do 'a' (vogal), formando um ditongo crescente."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Revise as regras de separação silábica para dígrafos.",
+                    "type": "true_false",
+                    "question_text": "Os dígrafos 'RR' e 'SS' devem ser separados na divisão silábica (Ex: car-ro, pas-sar).",
+                    "feedback_correct": "Isso mesmo! Regra fundamental da divisão silábica: 'RR' e 'SS' sempre se separam."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "/ʃ/ (som de 'ch')"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "/s/"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "/ks/"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "/z/"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. O 'X' pode ter diferentes sons dependendo da palavra; neste caso, ele não soa como 'ch', 's' ou 'ks'.",
+                    "type": "multiple_choice",
+                    "question_text": "Na palavra 'EXATO', o 'X' representa qual fonema?",
+                    "feedback_correct": "Correto! O 'X' em 'EXATO' tem som de /z/."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 2 - Morfologia: Estrutura e Formação das Palavras",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Prefixo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Sufixo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Desinência"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Radical"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. O morfema que carrega o significado central da palavra é o radical.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual é o morfema que contém o significado básico da palavra e é a parte invariável que se repete em palavras da mesma família?",
+                    "feedback_correct": "Correto! O radical é a base significativa da palavra."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a função específica da vogal temática na estrutura da palavra.",
+                    "type": "true_false",
+                    "question_text": "A vogal temática tem como principal função indicar o gênero (masculino/feminino) das palavras.",
+                    "feedback_correct": "Isso mesmo! A função principal da vogal temática é ligar o radical às desinências, preparando-o para a flexão. As desinências nominais indicam gênero."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Radical + Sufixo + Sufixo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Prefixo + Radical + Desinência"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Prefixo + Radical + Sufixo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Radical + Prefixo + Sufixo"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise cada parte da palavra para identificar se é um prefixo, radical ou sufixo.",
+                    "type": "multiple_choice",
+                    "question_text": "Na palavra 'INFELIZMENTE', quais elementos mórficos podem ser identificados, na ordem de leitura?",
+                    "feedback_correct": "Correto! 'IN-' (prefixo), 'FELIZ' (radical) e '-MENTE' (sufixo)."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Revise a diferença entre justaposição e aglutinação na composição de palavras.",
+                    "type": "true_false",
+                    "question_text": "No processo de formação de palavras por justaposição, os radicais se unem com perda de fonemas.",
+                    "feedback_correct": "Isso mesmo! Na justaposição, não há perda de fonemas (Ex: guarda-chuva). A perda ocorre na aglutinação (Ex: planalto)."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Derivação Sufixal"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Composição por Aglutinação"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Derivação Parassintética"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Derivação Regressiva"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na necessidade de adicionar prefixo e sufixo ao mesmo tempo para formar a palavra.",
+                    "type": "multiple_choice",
+                    "question_text": "A palavra 'EMPOBRECER' é formada pelo processo de:",
+                    "feedback_correct": "Correto! 'EMPOBRECER' exige a adição simultânea do prefixo 'em-' e do sufixo '-ecer' ao radical 'pobre', caracterizando a derivação parassintética."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. A derivação imprópria é definida pela mudança de classe sem alteração na forma da palavra.",
+                    "type": "true_false",
+                    "question_text": "Na derivação imprópria (ou conversão), a palavra muda de classe gramatical, mas mantém sua forma original.",
+                    "feedback_correct": "Isso mesmo! O exemplo 'o jantar' (substantivo) vindo de 'jantar' (verbo) ilustra bem a derivação imprópria."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Beija-flor"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Couve-flor"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Pé de moleque"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Planalto"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. A composição por aglutinação envolve a fusão dos elementos com perda ou alteração fonética.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das alternativas abaixo apresenta um exemplo de composição por aglutinação?",
+                    "feedback_correct": "Correto! 'Planalto' resulta da união de 'plano' + 'alto', com perda do 'o' final de 'plano', o que caracteriza a aglutinação."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 3 - Sintaxe: A Organização das Frases e Orações",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Amanhã choverá."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Que belo dia!"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Os pássaros cantam."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Ele comprou um livro."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Lembre-se que uma frase nominal se caracteriza pela ausência de verbo.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das alternativas abaixo apresenta uma Frase Nominal?",
+                    "feedback_correct": "Correto! Uma frase nominal é um enunciado com sentido completo, mas sem verbo."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Reveja o conceito de predicado e sua relação com o sujeito na oração.",
+                    "type": "true_false",
+                    "question_text": "O predicado de uma oração é tudo aquilo que se declara sobre o sujeito.",
+                    "feedback_correct": "Isso mesmo! O predicado é o que se diz do sujeito, e o verbo é seu elemento principal."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Sujeito Simples"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Sujeito Composto"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Oração sem Sujeito"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Sujeito Indeterminado"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise a construção do verbo 'necessitar' com o pronome 'se' nesse contexto para classificar o sujeito.",
+                    "type": "multiple_choice",
+                    "question_text": "Na oração 'Necessita-se de bons profissionais.', o sujeito é classificado como:",
+                    "feedback_correct": "Correto! O verbo na 3ª pessoa do singular, acompanhado do 'se' (índice de indeterminação do sujeito), indica que o sujeito é indeterminado."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja os tipos de predicado e o papel do verbo em cada um.",
+                    "type": "true_false",
+                    "question_text": "No predicado nominal, o núcleo é sempre um verbo de ação.",
+                    "feedback_correct": "Isso mesmo! No predicado nominal, o núcleo é um nome (substantivo ou adjetivo), e o verbo é de ligação (indica estado)."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Objeto Indireto"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Complemento Nominal"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Objeto Direto"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Adjunto Adnominal"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise o verbo e sua relação com o termo para identificar a função sintática.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele comprou um livro novo.', o termo 'um livro novo' exerce a função sintática de:",
+                    "feedback_correct": "Correto! O verbo 'comprar' é transitivo direto, e 'um livro novo' completa seu sentido sem o auxílio de preposição."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja a função do aposto e do vocativo na oração.",
+                    "type": "true_false",
+                    "question_text": "Em 'João, o melhor aluno, passou de ano.', o termo 'o melhor aluno' é um vocativo.",
+                    "feedback_correct": "Isso mesmo! 'O melhor aluno' é um aposto, pois explica e especifica 'João'. O vocativo seria usado para chamar a pessoa (ex: 'João, venha aqui!')."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Predicado Verbal"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Predicado Nominal"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Predicado Verbo-Nominal"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Oração sem sujeito"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise se há um verbo de ação e/ou um nome (qualidade/estado) como núcleo(s) do predicado.",
+                    "type": "multiple_choice",
+                    "question_text": "Na oração 'Eles chegaram atrasados.', o predicado é classificado como:",
+                    "feedback_correct": "Correto! Há um verbo de ação ('chegaram') e uma característica do sujeito ('atrasados'), caracterizando um predicado verbo-nominal."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 4: Classes de Palavras (Classes Gramaticais)",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Substantivo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Verbo"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Advérbio"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Adjetivo"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Lembre-se que as classes invariáveis não se adaptam (não flexionam) em gênero, número, pessoa ou tempo.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das seguintes classes de palavras é considerada invariável, ou seja, não sofre flexão em gênero, número, tempo, etc.?",
+                    "feedback_correct": "Correto! O advérbio é uma classe de palavra invariável, modificando verbos, adjetivos ou outros advérbios."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Reveja a função e a classificação do artigo.",
+                    "type": "true_false",
+                    "question_text": "O artigo sempre precede o substantivo e pode ser classificado como definido ou indefinido.",
+                    "feedback_correct": "Isso mesmo! O artigo tem essa função de determinar ou indeterminar o substantivo, vindo antes dele."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Adjetivo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Pronome"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Advérbio de intensidade"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Numeral"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise a função que a palavra 'MUITO' desempenha na frase: ela está caracterizando o substantivo ou modificando a intensidade de algo?",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ela está MUITO feliz com a notícia.', a palavra em destaque ('MUITO') é um(a):",
+                    "feedback_correct": "Correto! 'MUITO' está modificando o adjetivo 'feliz', indicando intensidade, sendo, portanto, um advérbio."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Lembre-se da amplitude de significados que um verbo pode expressar.",
+                    "type": "true_false",
+                    "question_text": "Verbos indicam apenas ações; eles nunca expressam estados ou fenômenos da natureza.",
+                    "feedback_correct": "Isso mesmo! Verbos podem indicar ações ('correr'), estados ('ser feliz') ou fenômenos da natureza ('chover')."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Cadeira"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Amor"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Árvore"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Computador"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense naquilo que você pode tocar ou ver (concreto) e naquilo que depende de um ser para existir (abstrato).",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das seguintes palavras é um Substantivo Abstrato?",
+                    "feedback_correct": "Correto! Substantivos abstratos nomeiam qualidades, sentimentos, ações ou estados, que não existem independentemente de um ser."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Reveja a função dos pronomes pessoais do caso reto na frase.",
+                    "type": "true_false",
+                    "question_text": "Um pronome pessoal do caso reto (ex: eu, tu, ele) tem como principal função substituir o nome de quem fala, com quem se fala ou de quem se fala, funcionando como sujeito da oração.",
+                    "feedback_correct": "Isso mesmo! Os pronomes pessoais do caso reto atuam como sujeitos e referem-se às pessoas do discurso."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Preposição"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Advérbio"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Conjunção coordenativa"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Interjeição"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na função da palavra 'e' ao ligar duas ações ou ideias independentes na frase.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele estuda MUITO E trabalha.', a palavra em destaque ('E') é um(a):",
+                    "feedback_correct": "Correto! A conjunção 'e' liga orações (ou termos de mesma função) com ideia de adição, sendo coordenativa aditiva."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 5 - Substantivo: O Nome das Coisas",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "cachorro"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "rio"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Brasil"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "mesa"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Substantivos próprios nomeiam seres em particular e são sempre capitalizados.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das alternativas apresenta um substantivo PRÓPRIO?",
+                    "feedback_correct": "Correto! 'Brasil' é um substantivo próprio, pois nomeia um país específico e é escrito com inicial maiúscula."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja a diferença entre substantivos concretos e abstratos.",
+                    "type": "true_false",
+                    "question_text": "A palavra 'amor' é um substantivo concreto, pois podemos senti-lo.",
+                    "feedback_correct": "Isso mesmo! 'Amor' é um substantivo abstrato, pois nomeia um sentimento, cuja existência depende de um ser (alguém que sente)."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Simples"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Primitivo"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Composto"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Abstrato"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na quantidade de elementos que formam a palavra para classificá-la como simples ou composta.",
+                    "type": "multiple_choice",
+                    "question_text": "A palavra 'guarda-chuva' é classificada como um substantivo:",
+                    "feedback_correct": "Correto! 'Guarda-chuva' é formado por dois radicais ('guarda' + 'chuva'), sendo, portanto, um substantivo composto."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja as classificações especiais de substantivos uniformes quanto ao gênero.",
+                    "type": "true_false",
+                    "question_text": "Substantivos epicenos se referem a pessoas e sua distinção de gênero é feita pelo artigo (Ex: o dentista / a dentista).",
+                    "feedback_correct": "Isso mesmo! A descrição corresponde aos substantivos 'comuns de dois gêneros'. Epicenos se referem a animais e usam 'macho' ou 'fêmea' (Ex: a cobra macho/fêmea)."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": true,
+                            "text": "flores-do-campo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "flor-dos-campos"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "flores-dos-campos"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "flor-do-campo (invariável)"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. A formação do plural de substantivos compostos com preposição segue uma regra específica.",
+                    "type": "multiple_choice",
+                    "question_text": "O plural correto do substantivo composto 'flor-do-campo' é:",
+                    "feedback_correct": "Correto! Em substantivos compostos ligados por preposição, apenas o primeiro elemento vai para o plural."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja as duas formas de expressar o grau de um substantivo.",
+                    "type": "true_false",
+                    "question_text": "O grau aumentativo e diminutivo de um substantivo pode ser formado apenas pela adição de sufixos (grau sintético), sem o uso de adjetivos.",
+                    "feedback_correct": "Isso mesmo! Há também o grau analítico, que usa adjetivos para indicar tamanho (Ex: 'casa grande', 'casa pequena')."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": true,
+                            "text": "bando"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "passarinho"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "pássaro"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "voo"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Substantivos coletivos nomeiam um conjunto de seres da mesma espécie.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das alternativas apresenta um substantivo COLETIVO?",
+                    "feedback_correct": "Correto! 'Bando' é um substantivo coletivo que se refere a um grupo de aves ou pessoas."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 6 - Adjetivo: A Cor das Palavras",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Inteligente"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Brasileiro"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Verde-escuro"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Veloz"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Adjetivos compostos são formados pela união de dois ou mais elementos.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das alternativas contém um adjetivo composto?",
+                    "feedback_correct": "Correto! 'Verde-escuro' é formado por dois radicais, caracterizando um adjetivo composto."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja a relação entre locuções adjetivas e adjetivos derivados.",
+                    "type": "true_false",
+                    "question_text": "A locução adjetiva 'de mãe' (em 'amor de mãe') tem o mesmo valor de um adjetivo primitivo.",
+                    "feedback_correct": "Isso mesmo! A locução adjetiva 'de mãe' tem o mesmo valor do adjetivo *derivado* 'materno'."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Comparativo de inferioridade"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Superlativo absoluto analítico"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Superlativo relativo de inferioridade"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Superlativo relativo de superioridade"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise se a comparação é de um ser com um grupo e qual é a intensidade (maior ou menor).",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele é O MENOS preocupado da equipe.', o adjetivo está no grau:",
+                    "feedback_correct": "Correto! 'O menos' indica uma comparação do ser com um grupo em grau mínimo, caracterizando o superlativo relativo de inferioridade."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a diferença entre adjetivos uniformes e biformes.",
+                    "type": "true_false",
+                    "question_text": "O adjetivo 'feliz' é biforme, ou seja, possui uma forma para o masculino e outra para o feminino (feliz / feliza).",
+                    "feedback_correct": "Isso mesmo! 'Feliz' é um adjetivo uniforme, pois tem a mesma forma para ambos os gêneros ('o menino feliz', 'a menina feliz')."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": true,
+                            "text": "Olhos azul-claros."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Carros verde-escuros."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Blusas rosa-claras."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Saias verde-esmeraldas."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Reveja as regras de plural de adjetivos compostos, especialmente os de cores.",
+                    "type": "multiple_choice",
+                    "question_text": "Assinale a alternativa em que a flexão de número do adjetivo composto está CORRETA:",
+                    "feedback_correct": "Correto! Em adjetivos compostos de cores, o segundo elemento flexiona apenas se for um adjetivo (como 'claro'). 'Azul-claro' segue essa regra, e pluraliza 'claros'."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Reveja as formas irregulares dos graus comparativos de adjetivos como 'mau'.",
+                    "type": "true_false",
+                    "question_text": "O adjetivo 'pior' é uma forma de grau comparativo de superioridade irregular de 'mau'.",
+                    "feedback_correct": "Isso mesmo! 'Pior' é a forma comparativa irregular de superioridade de 'mau' (mau &rarr; pior)."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Curioso"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Carioca"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Complicado"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Comprido"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Adjetivos pátrios indicam nacionalidade ou local de origem.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das opções representa um adjetivo pátrio (gentílico)?",
+                    "feedback_correct": "Correto! 'Carioca' indica origem da cidade do Rio de Janeiro, sendo um adjetivo pátrio."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 7 - Artigo: O Companheiro do Substantivo",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "O carro é novo."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "O azul é a minha cor favorita."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Ele comprou o livro que queria."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "O menino brinca no quintal."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. A substantivação ocorre quando uma palavra de outra classe (adjetivo, verbo, etc.) é transformada em substantivo pelo uso de um artigo.",
+                    "type": "multiple_choice",
+                    "question_text": "Em qual das frases o artigo 'o' está sendo usado para substantivar outra classe de palavra?",
+                    "feedback_correct": "Correto! Em 'O azul', o adjetivo 'azul' passa a funcionar como substantivo devido ao artigo 'o'."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja a função principal dos artigos definidos e indefinidos.",
+                    "type": "true_false",
+                    "question_text": "Artigos indefinidos (um, uma, uns, umas) são usados para indicar um ser específico e conhecido.",
+                    "feedback_correct": "Isso mesmo! Artigos indefinidos servem para indeterminar o substantivo, referindo-se a um ser de forma vaga ou genérica. Artigos definidos fazem o oposto."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "pelas"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "das"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "nas"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "às"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na preposição 'em' e como ela se une com o artigo 'a' no plural.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual alternativa apresenta a contração correta da preposição 'em' com o artigo 'a' no plural?",
+                    "feedback_correct": "Correto! 'Em' + 'as' resulta em 'nas'."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre as regras de uso obrigatório vs. facultativo do artigo.",
+                    "type": "true_false",
+                    "question_text": "O uso do artigo antes de nomes próprios de pessoas é sempre obrigatório na Língua Portuguesa formal.",
+                    "feedback_correct": "Isso mesmo! O uso do artigo antes de nomes próprios é facultativo, embora comum e possa indicar familiaridade ('A Maria')."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Indeterminação."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Especificidade."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Ênfase ou admiração."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Quantidade exata."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense nos usos expressivos ou estilísticos dos artigos indefinidos.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele tem UMA coragem!', o artigo em destaque ('UMA') expressa:",
+                    "feedback_correct": "Correto! Neste contexto, o artigo indefinido é usado para realçar a qualidade, dando ênfase."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. A crase é um fenômeno de fusão que envolve a preposição 'a' e o artigo 'a' (ou outros 'a's), não apenas a presença do artigo feminino.",
+                    "type": "true_false",
+                    "question_text": "A contração da preposição 'a' com o artigo 'a' (resultando em 'à') ocorre quando o 'a' é meramente um artigo feminino.",
+                    "feedback_correct": "Isso mesmo! A contração com crase ('à') ocorre quando a preposição 'a' se une a um artigo feminino 'a' ou a um pronome/numeral que começa com 'a', indicando fusão de sons, não apenas o artigo feminino."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Vossa Excelência o Presidente."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Comprei os livros."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Ele é o cujo carro quebrou."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Chegaram os alunos."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Reveja as regras de uso proibido do artigo, especialmente com pronomes de tratamento e relativos.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das alternativas abaixo NÃO se encaixa em uma situação de uso proibido do artigo?",
+                    "feedback_correct": "Correto! 'Comprei os livros' é um uso perfeitamente normal e correto do artigo definido para especificar os livros. Os outros exemplos mostram usos proibidos (com pronomes de tratamento ou 'cujo')."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 8 - Numeral: A Precisão da Quantidade",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Ele mora no segundo andar."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Li a metade do livro."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Comprei dois livros."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Recebemos o triplo de pontos."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Numerais cardinais expressam quantidade exata.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das seguintes frases utiliza um numeral CARDINAL?",
+                    "feedback_correct": "Correto! 'Dois' indica uma quantidade exata."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Relembre como os numerais ordinais se adaptam ao substantivo que modificam.",
+                    "type": "true_false",
+                    "question_text": "Numerais ordinais como 'primeiro' e 'décimo' flexionam em gênero e número.",
+                    "feedback_correct": "Isso mesmo! Ex: primeira (feminino singular), décimos (masculino plural)."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Vigésimo terceiro."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Vinte e três."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Vigésimo terceiro ou vinte e três (ambos corretos)."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Vinte e três avos."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Reveja a regra de uso de numerais cardinais e ordinais para designações como as de papas.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual o numeral adequado para a leitura de 'Papa João XXIII'?",
+                    "feedback_correct": "Correto! Para papas, reis e imperadores, usa-se ordinal até o 10º (X); a partir do 11º (XI) usam-se cardinais."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. 'Ambos' flexiona em gênero, e numerais coletivos são substantivos.",
+                    "type": "true_false",
+                    "question_text": "O numeral 'ambos' é uma forma de numeral coletivo e é sempre invariável.",
+                    "feedback_correct": "Isso mesmo! 'Ambos' é um pronome com valor de numeral, e ele flexiona em gênero ('ambas'). Numerais coletivos (dúzia, centena) funcionam como substantivos."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Cardinal"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Ordinal"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Multiplicativo"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Fracionário"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na relação que o numeral estabelece com a totalidade.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele comeu DOIS TERÇOS da torta.', o numeral em destaque é classificado como:",
+                    "feedback_correct": "Correto! 'Dois terços' indica uma parte de um todo, caracterizando um numeral fracionário."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Há casos em que numerais multiplicativos podem flexionar.",
+                    "type": "true_false",
+                    "question_text": "Os numerais multiplicativos como 'dobro' e 'triplo' são sempre invariáveis, sem exceção.",
+                    "feedback_correct": "Isso mesmo! Embora geralmente invariáveis, podem flexionar quando funcionam como adjetivos, como em 'dose *dupla*'."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Cardinal até o 9º, ordinal a partir do 10º."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Ordinal até o 9º, cardinal a partir do 10º."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Sempre ordinal."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Sempre cardinal."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Reveja a regra específica para o uso de numerais em capítulos, páginas e volumes.",
+                    "type": "multiple_choice",
+                    "question_text": "Para a designação de capítulos de um livro (ex: Capítulo X), qual tipo de numeral deve ser usado para números até o 9º, e qual para números a partir do 10º?",
+                    "feedback_correct": "Correto! É 'Capítulo Primeiro' (ou Capítulo I) até o 9º; e 'Capítulo Dez' (ou Capítulo X) a partir do 10º."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 9 - Pronome: O Substituto e o Acompanhante do Nome",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Pronome pessoal do caso reto"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Pronome possessivo"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Pronome pessoal oblíquo átono"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Pronome demonstrativo"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na função e na forma da palavra 'me' em relação ao verbo e ao sujeito.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele deu-ME o livro.', a palavra 'ME' é classificada como:",
+                    "feedback_correct": "Correto! 'Me' é um pronome pessoal oblíquo átono, funcionando como complemento verbal."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Relembre as regras de atração que tornam a próclise tão frequente e, por vezes, obrigatória.",
+                    "type": "true_false",
+                    "question_text": "Na Língua Portuguesa do Brasil, a próclise (pronome antes do verbo) é a colocação pronominal mais comum e muitas vezes obrigatória.",
+                    "feedback_correct": "Isso mesmo! Palavras como advérbios e pronomes negativos atraem o pronome para antes do verbo, tornando a próclise a forma preferencial no português coloquial brasileiro."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Aquele dia foi inesquecível."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Eu me lembro desse tempo passado."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Esta semana está agitada."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Isso que você disse foi importante."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pronomes demonstrativos têm usos específicos para situar algo no tempo; 'este/esta' é para o presente.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das frases a seguir apresenta um pronome demonstrativo com função de situar algo no tempo presente?",
+                    "feedback_correct": "Correto! 'Esta' (junto com 'este', 'isto') refere-se ao tempo presente."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a regra de uso específica para o pronome relativo 'onde'.",
+                    "type": "true_false",
+                    "question_text": "O pronome relativo 'onde' pode ser usado livremente para se referir a qualquer antecedente, mesmo que não seja um lugar.",
+                    "feedback_correct": "Isso mesmo! O uso de 'onde' é restrito a antecedentes que indicam lugar. Para outros casos, deve-se usar 'em que', 'no qual', 'na qual', etc."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Pronome pessoal"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Pronome interrogativo"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Pronome relativo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Pronome indefinido"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na função do pronome 'cujos' ao ligar as duas partes da frase e estabelecer uma relação de posse.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'As crianças, CUJOS pais viajaram, ficaram com os avós.', o pronome em destaque é classificado como:",
+                    "feedback_correct": "Correto! 'Cujos' é um pronome relativo que estabelece uma relação de posse e liga as orações."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre as regras de uso e colocação dos pronomes pessoais oblíquos átonos como 'o'/'a' e as construções com pronomes do caso reto.",
+                    "type": "true_false",
+                    "question_text": "Na frase 'Vi ela na rua.', a colocação pronominal está correta de acordo com a norma culta.",
+                    "feedback_correct": "Isso mesmo! Pronomes pessoais do caso reto ('ela') não devem ser usados como complemento verbal direto. O correto seria 'Vi-a na rua.' ou 'Eu a vi na rua.'."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "'O/A' indicam posse, 'LHE/LHES' indicam quantidade."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "'O/A' são objetos diretos, 'LHE/LHES' são objetos indiretos."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "'O/A' são sujeitos, 'LHE/LHES' são complementos nominais."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Não há diferença de função; são intercambiáveis."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Reveja as funções sintáticas que esses pronomes oblíquos átonos podem desempenhar.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual a diferença de função entre os pronomes oblíquos átonos 'O/A' (e seus plurais) e 'LHE/LHES'?",
+                    "feedback_correct": "Correto! Essa é a distinção principal: 'o/a' para objetos diretos e 'lhe/lhes' para objetos indiretos (com a preposição 'a' implícita)."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 10 - Verbo: O Coração da Oração",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Transitivo Direto"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Transitivo Indireto"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Intransitivo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "De Ligação"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense se o verbo precisa de um complemento para ter sentido completo ou se ele expressa uma ação completa em si mesma.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'O bebê dormiu tranquilamente.', o verbo 'dormiu' é classificado, quanto à predicação, como:",
+                    "feedback_correct": "Correto! O verbo 'dormir' tem sentido completo por si só, não exigindo complemento, sendo intransitivo."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a diferença entre verbos anômalos e defectivos.",
+                    "type": "true_false",
+                    "question_text": "Verbos anômalos são aqueles que não possuem todas as flexões, ou seja, têm conjugação incompleta.",
+                    "feedback_correct": "Isso mesmo! Verbos com conjugação incompleta são chamados 'defectivos'. Verbos anômalos são irregulares que sofrem grandes alterações no radical (como 'ser' e 'ir')."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Eu estudo todos os dias."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Estude para o exame!"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Se ele estudasse, passaria de ano."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Nós estudamos a lição."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na atitude do falante em relação à ação verbal: certeza, ordem ou possibilidade/dúvida.",
+                    "type": "multiple_choice",
+                    "question_text": "Em qual das alternativas o verbo está flexionado no MODO SUBJUNTIVO?",
+                    "feedback_correct": "Correto! 'Estudasse' expressa uma hipótese ou condição, característico do modo subjuntivo."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Relembre as nuances do tempo verbal 'futuro do pretérito'.",
+                    "type": "true_false",
+                    "question_text": "No futuro do pretérito, o verbo indica uma ação futura em relação a um momento passado ou uma incerteza.",
+                    "feedback_correct": "Isso mesmo! Ex: 'Eu *estudaria* se tivesse tempo.' Indica uma ação que ocorreria no futuro a partir de um ponto no passado, ou uma condição hipotética."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "O aluno leu o livro."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "O livro foi lido pelo aluno."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Leu-se o livro."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "O aluno se preparou."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Reveja as formas de construção da voz passiva, especialmente a analítica.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das frases está na VOZ PASSIVA ANALÍTICA?",
+                    "feedback_correct": "Correto! A voz passiva analítica é formada por um verbo auxiliar (ser, estar) + o particípio do verbo principal + agente da passiva (opcional)."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Relembre as características e usos do gerúndio como forma nominal do verbo.",
+                    "type": "true_false",
+                    "question_text": "O gerúndio é uma forma nominal do verbo que termina em '-ndo' e pode ter valor de advérbio ou adjetivo, indicando uma ação em andamento.",
+                    "feedback_correct": "Isso mesmo! Ex: 'Ele está *estudando*.' ('estudando' é gerúndio)."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Transitivo Direto"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Transitivo Indireto"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Transitivo Direto e Indireto"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "De Ligação"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise os complementos que o verbo 'entregou' exige para ter sentido completo e quem recebe a ação.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele entregou o presente À MÃE.', o verbo 'entregou' é classificado, quanto à predicação, como:",
+                    "feedback_correct": "Correto! O verbo 'entregar' pede um objeto direto ('o presente') e um objeto indireto ('à mãe'), sendo, portanto, transitivo direto e indireto."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 11 - Advérbio: Detalhando a Ação",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Ontem"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Longe"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Rapidamente"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Muito"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense qual palavra descreve 'como' uma ação acontece.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das alternativas contém um advérbio de MODO?",
+                    "feedback_correct": "Correto! 'Rapidamente' indica a maneira como algo é feito, característico dos advérbios de modo."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre que as locuções adverbiais também expressam diferentes circunstâncias.",
+                    "type": "true_false",
+                    "question_text": "A locução adverbial 'em breve' é classificada como locução adverbial de lugar.",
+                    "feedback_correct": "Isso mesmo! 'Em breve' indica tempo futuro, sendo uma locução adverbial de tempo."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Comparativo de inferioridade"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Superlativo absoluto sintético"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Superlativo absoluto analítico"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Comparativo de superioridade"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise como a intensidade do advérbio 'bem' é aumentada na frase.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele fala BEM demais.', o advérbio 'BEM' está no grau:",
+                    "feedback_correct": "Correto! 'Bem demais' (ou 'muito bem') expressa a intensidade máxima de forma analítica."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a característica de 'invariável' dos advérbios e a exceção do grau.",
+                    "type": "true_false",
+                    "question_text": "Advérbios são palavras invariáveis, ou seja, não sofrem flexão em gênero, número ou grau.",
+                    "feedback_correct": "Isso mesmo! Advérbios são invariáveis, mas podem variar em grau (comparativo e superlativo), como 'mais rápido' ou 'rapidissimamente'."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Talvez"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Não"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Certamente"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Nunca"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na circunstância que cada palavra expressa: dúvida, negação ou certeza.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das opções abaixo apresenta um advérbio de AFIRMAÇÃO?",
+                    "feedback_correct": "Correto! 'Certamente' expressa uma convicção ou afirmação."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre o que os advérbios podem modificar na frase.",
+                    "type": "true_false",
+                    "question_text": "Os advérbios modificam apenas verbos, não podendo modificar adjetivos ou outros advérbios.",
+                    "feedback_correct": "Isso mesmo! Advérbios modificam verbos (ex: 'fala *alto*'), adjetivos (ex: 'muito *feliz*') e outros advérbios (ex: 'muito *rapidamente*')."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Tempo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Modo"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Intensidade"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Lugar"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na função da palavra 'muito' ao lado de um adjetivo.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ela está MUITO cansada.', a palavra 'MUITO' é um advérbio de:",
+                    "feedback_correct": "Correto! 'Muito' intensifica o sentido do adjetivo 'cansada'."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 12 - Preposição: As Pontes entre as Palavras",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Conforme"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Durante"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Contra"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Segundo"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Relembre a diferença entre preposições essenciais (sempre preposições) e acidentais (de outras classes gramaticais).",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das alternativas contém uma preposição essencial?",
+                    "feedback_correct": "Correto! 'Contra' é uma preposição que sempre funciona como tal, sendo essencial."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Analise o sentido que a preposição 'para' confere ao contexto da viagem.",
+                    "type": "true_false",
+                    "question_text": "Na frase 'Ele viajou PARA Paris.', a preposição 'para' expressa uma relação de tempo.",
+                    "feedback_correct": "Isso mesmo! A preposição 'para' em 'PARA Paris' expressa uma relação de lugar (destino), não de tempo."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "nos"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "pelos"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "dos"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "aos"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Reveja as regras básicas de contração de preposições com artigos.",
+                    "type": "multiple_choice",
+                    "question_text": "A união da preposição 'DE' com o artigo 'OS' resulta na contração:",
+                    "feedback_correct": "Correto! 'De' + 'os' = 'dos'."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a característica fundamental da preposição quanto à sua flexão.",
+                    "type": "true_false",
+                    "question_text": "A preposição é uma palavra variável, que se flexiona em gênero e número para concordar com os termos que liga.",
+                    "feedback_correct": "Isso mesmo! A preposição é uma palavra INVARIÁVEL. Ela não se flexiona, mas os termos que a seguem podem se flexionar."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Causa"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Companhia"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Instrumento"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Modo"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise o sentido que a preposição 'com' confere ao contexto da ação de cortar.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Cortou o pão COM a faca.', a preposição 'com' estabelece uma relação de:",
+                    "feedback_correct": "Correto! 'Com a faca' indica o objeto usado para realizar a ação, sendo uma relação de instrumento."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Reveja a formação e os exemplos de locuções adverbiais que incluem preposições.",
+                    "type": "true_false",
+                    "question_text": "A expressão 'à noite' é um exemplo de locução adverbial que contém uma preposição.",
+                    "feedback_correct": "Isso mesmo! 'À noite' é uma locução adverbial de tempo, formada pela preposição 'a' (com crase) e o substantivo 'noite'."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Ele foi o segundo a chegar."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Segundo a lei, todos são iguais."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Marquei um segundo encontro."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Ele seguiu o segundo carro."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense em 'segundo' sendo usado com o sentido de 'conforme' ou 'de acordo com', em vez de indicar ordem.",
+                    "type": "multiple_choice",
+                    "question_text": "Em qual situação 'segundo' funciona como preposição acidental?",
+                    "feedback_correct": "Correto! Em 'Segundo a lei', 'segundo' introduz uma conformidade, funcionando como preposição, mas originalmente é um numeral."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 13 - Conjunção: Os Conectores de Orações",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Aditiva"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Alternativa"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Adversativa"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Conclusiva"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na relação de sentido que 'mas' estabelece entre as duas orações.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele estudou muito, MAS não passou.', a conjunção em destaque é classificada como:",
+                    "feedback_correct": "Correto! 'Mas' expressa uma ideia de oposição ou contraste, sendo uma conjunção coordenativa adversativa."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a principal diferença entre orações coordenadas e subordinadas.",
+                    "type": "true_false",
+                    "question_text": "Conjunções coordenativas ligam orações que são sintaticamente dependentes uma da outra.",
+                    "feedback_correct": "Isso mesmo! Conjunções coordenativas ligam orações *independentes*. São as subordinativas que ligam orações dependentes."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Embora"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Porque"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Quando"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Se"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense qual conjunção subordinada expressa a ideia de tempo.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das alternativas contém uma conjunção subordinativa TEMPORAL?",
+                    "feedback_correct": "Correto! 'Quando' indica uma circunstância de tempo."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja o sentido que 'a fim de que' expressa na frase.",
+                    "type": "true_false",
+                    "question_text": "A locução conjuntiva 'a fim de que' expressa uma ideia de causa.",
+                    "feedback_correct": "Isso mesmo! 'A fim de que' expressa finalidade (Ex: 'Estudei *a fim de que* passasse.')."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Coordenativa explicativa"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Subordinativa integrante"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Subordinativa causal"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Coordenativa conclusiva"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise a função da oração introduzida por 'que' em relação à oração principal.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'É necessário QUE ele venha.', a conjunção em destaque é classificada como:",
+                    "feedback_correct": "Correto! A conjunção 'que' introduz uma oração subordinada substantiva (que funciona como sujeito), sendo, portanto, integrante."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Reveja a regra de pontuação com a conjunção coordenativa 'e'.",
+                    "type": "true_false",
+                    "question_text": "Geralmente, a vírgula é utilizada para separar orações coordenadas, exceto quando ligadas pela conjunção aditiva 'e' com sujeitos iguais.",
+                    "feedback_correct": "Isso mesmo! Essa é uma regra importante de pontuação com conjunções coordenadas aditivas."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Ele estudou tanto, QUE passou no exame."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "EMBORA estivesse doente, foi trabalhar."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "SE chover, não irei à praia."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Visto QUE chovia, fiquei em casa."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense qual conjunção subordinativa estabelece uma relação de 'se... então...'.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das frases utiliza uma conjunção subordinativa que expressa condição?",
+                    "feedback_correct": "Correto! 'Se' introduz uma condição para a realização da ação da oração principal."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 14 - Interjeição: A Expressão Instantânea de Sentimentos",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Ele canta bem."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Que dia lindo!"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Oba! Conseguimos!"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "A casa é grande."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Interjeições expressam emoções ou sentimentos de forma súbita.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das seguintes frases contém uma interjeição?",
+                    "feedback_correct": "Correto! 'Oba!' expressa alegria de forma instantânea, sendo uma interjeição."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre as características fundamentais da interjeição.",
+                    "type": "true_false",
+                    "question_text": "A interjeição é uma palavra variável que se flexiona para concordar com o sujeito da oração.",
+                    "feedback_correct": "Isso mesmo! A interjeição é uma palavra INVARIÁVEL e não se liga sintaticamente a outros termos da oração."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Interjeição de dor"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Locução interjetiva"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Advérbio de intensidade"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Conjunção exclamativa"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na formação da expressão e em sua função expressiva.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ai de mim!', a expressão em destaque é classificada como:",
+                    "feedback_correct": "Correto! 'Ai de mim!' é uma expressão com mais de uma palavra que funciona como interjeição, sendo uma locução interjetiva."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a importância da entonação e do contexto para a interpretação das interjeições.",
+                    "type": "true_false",
+                    "question_text": "O sentido de uma interjeição é sempre o mesmo, independentemente da entonação ou do contexto.",
+                    "feedback_correct": "Isso mesmo! O sentido da interjeição é altamente dependente da entonação, do gesto e do contexto da comunicação (Ex: 'Ah!' pode ser de dor, alegria, surpresa)."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Psiu!"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Oba!"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Uau!"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Adeus!"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na interjeição que as pessoas usam quando estão muito surpresas ou impressionadas.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual interjeição é comumente usada para expressar surpresa ou espanto?",
+                    "feedback_correct": "Correto! 'Uau!' é uma interjeição que expressa forte admiração ou espanto."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Reveja a pontuação adequada para as interjeições.",
+                    "type": "true_false",
+                    "question_text": "Após uma interjeição que expressa uma emoção forte, geralmente usamos um ponto de exclamação (!).",
+                    "feedback_correct": "Isso mesmo! O ponto de exclamação é a pontuação padrão para interjeições que expressam emoção intensa."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Alegria"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Advertência"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Silêncio"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Dor"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na intenção por trás do som 'Psiu!'.",
+                    "type": "multiple_choice",
+                    "question_text": "A interjeição 'Psiu!' é classificada como interjeição de:",
+                    "feedback_correct": "Correto! 'Psiu!' é usada para pedir silêncio ou chamar a atenção discretamente."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 15 - Sintaxe de Período Composto: Conectando Ideias Complexas",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Adversativas"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Alternativas"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Aditivas"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Conclusivas"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na relação de sentido que a conjunção 'e' estabelece entre as orações.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele chegou e saiu rapidamente.', as orações são coordenadas:",
+                    "feedback_correct": "Correto! A conjunção 'e' une orações que expressam ideias de adição."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a principal característica das orações subordinadas.",
+                    "type": "true_false",
+                    "question_text": "Orações subordinadas são sintaticamente independentes da oração principal.",
+                    "feedback_correct": "Isso mesmo! Orações subordinadas são sintaticamente *dependentes* da oração principal, completando ou modificando seu sentido."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Objetiva Direta"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Objetiva Indireta"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Subjetiva"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Completiva Nominal"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Analise a função sintática da oração subordinada em relação à oração principal.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'É necessário QUE VOCÊ VENHA.', a oração em destaque é classificada como oração subordinada substantiva:",
+                    "feedback_correct": "Correto! A oração 'que você venha' funciona como sujeito do verbo 'é necessário'."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja a regra de pontuação para orações subordinadas adjetivas.",
+                    "type": "true_false",
+                    "question_text": "Orações subordinadas adjetivas restritivas são sempre separadas por vírgulas.",
+                    "feedback_correct": "Isso mesmo! Orações subordinadas adjetivas *explicativas* são separadas por vírgulas. As *restritivas* (que restringem o sentido do antecedente) NÃO são isoladas por vírgulas."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Temporal"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Causal"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Concessiva"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Condicional"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na relação de sentido que a conjunção 'embora' estabelece.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Embora chovesse, fomos ao parque.', a oração 'Embora chovesse' é classificada como oração subordinada adverbial:",
+                    "feedback_correct": "Correto! 'Embora' introduz uma ideia de concessão (um fato contrário ao esperado)."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a definição de período composto em contraste com período simples.",
+                    "type": "true_false",
+                    "question_text": "Um período composto por coordenação contém apenas uma oração, que é o período simples.",
+                    "feedback_correct": "Isso mesmo! Um período composto por coordenação possui duas ou mais orações coordenadas. Um período simples possui apenas uma oração."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Proporcional"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Final"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Conformativa"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Consecutiva"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense qual tipo de oração adverbial responde à pergunta 'com que finalidade?'.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual o tipo de oração subordinada adverbial que expressa uma finalidade ou objetivo?",
+                    "feedback_correct": "Correto! Orações finais indicam o objetivo ou a finalidade da ação principal (Ex: 'para que', 'a fim de que')."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 16 - Pontuação: Os Sinais que Dão Sentido ao Texto",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Ele, cedo, saiu."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Em casa eu estudei."
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Durante a longa e exaustiva viagem, todos dormiram."
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Ele comprou, pão."
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. A vírgula é obrigatória para adjuntos adverbiais deslocados de longa extensão.",
+                    "type": "multiple_choice",
+                    "question_text": "Em qual das frases a vírgula está usada corretamente para isolar um adjunto adverbial deslocado de longa extensão?",
+                    "feedback_correct": "Correto! Adjuntos adverbiais longos (com 3 ou mais palavras) devem ser separados por vírgula quando deslocados para o início da frase."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a hierarquia das pausas indicadas pela vírgula, ponto e vírgula e ponto final.",
+                    "type": "true_false",
+                    "question_text": "O ponto e vírgula (;) é usado para indicar uma pausa menor que a vírgula e maior que o ponto final.",
+                    "feedback_correct": "Isso mesmo! O ponto e vírgula indica uma pausa maior que a vírgula e menor que o ponto final. A afirmação inverteu a relação."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Ponto final (.)"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Vírgula (,)"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Dois-pontos (:)"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Ponto e vírgula (;)"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense no sinal que prepara o leitor para o que será apresentado a seguir.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual o sinal de pontuação correto para introduzir uma enumeração ou uma citação direta?",
+                    "feedback_correct": "Correto! Os dois-pontos são usados para anunciar algo que virá, como uma lista ou uma fala direta."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Reveja os diversos usos das aspas além das citações diretas.",
+                    "type": "true_false",
+                    "question_text": "As aspas (\" \") são utilizadas para destacar palavras estrangeiras, gírias ou para indicar ironia em um texto.",
+                    "feedback_correct": "Absolutamente! Esse é um uso comum das aspas para dar um destaque especial a certos termos."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Aposto"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Vocativo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Sujeito"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Objeto direto"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na função da palavra 'Maria' como uma forma de chamar a atenção na frase.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Maria, venha cá!', a vírgula é utilizada para isolar um(a):",
+                    "feedback_correct": "Correto! 'Maria' é um vocativo, um termo usado para chamar ou interpelar o interlocutor, e deve ser isolado por vírgula."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja a diferença fundamental de pontuação entre as orações adjetivas explicativas e restritivas.",
+                    "type": "true_false",
+                    "question_text": "Orações subordinadas adjetivas explicativas não devem ser separadas por vírgulas.",
+                    "feedback_correct": "Isso mesmo! As orações subordinadas adjetivas *explicativas* são isoladas por vírgulas, enquanto as *restritivas* não."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Ponto de exclamação (!)"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Travessão (—)"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Reticências (...)"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Parênteses ( )"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense no sinal que cria uma 'pausa suspensa' na leitura.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual sinal de pontuação é usado para indicar uma interrupção, uma hesitação ou a omissão de parte de um texto?",
+                    "feedback_correct": "Correto! As reticências são o sinal indicado para essas situações de interrupção ou omissão."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 17 - Semântica: Os Significados das Palavras",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Sinonímia"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Homonímia"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Antonímia"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Polissemia"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na relação de sentido entre palavras que expressam ideias contrárias.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual o tipo de relação semântica entre as palavras 'alto' e 'baixo'?",
+                    "feedback_correct": "Correto! Antonímia é a relação entre palavras com significados opostos."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a diferença entre polissemia e paronímia.",
+                    "type": "true_false",
+                    "question_text": "A palavra 'banco' (assento e instituição financeira) é um exemplo de paronímia.",
+                    "feedback_correct": "Isso mesmo! 'Banco' é um exemplo de polissemia, pois é a mesma palavra com múltiplos significados. Paronímia são palavras semelhantes na grafia/pronúncia, mas diferentes no sentido (Ex: 'eminente'/'iminente')."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Denotativo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Literal"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Figurado"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Universal"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense se a palavra está sendo usada em seu sentido dicionarizado ou em um sentido mais expressivo/subjetivo.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele tem um CORAÇÃO de ouro.', a palavra 'coração' está sendo usada em sentido:",
+                    "feedback_correct": "Correto! 'Coração de ouro' é uma expressão figurada que se refere a uma pessoa bondosa, não ao órgão físico."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Reveja os tipos de homonímia (perfeita, homógrafa, homófona).",
+                    "type": "true_false",
+                    "question_text": "Homonímia ocorre quando palavras têm a mesma grafia, mas pronúncias e significados diferentes (Ex: 'colher' (verbo) e 'colher' (substantivo)).",
+                    "feedback_correct": "Isso mesmo! Este é um exemplo de homógrafos, um tipo de homonímia."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": true,
+                            "text": "Cachorro, gato"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Vertebrados, invertebrados"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Ser vivo, planta"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Jaula, coleira"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Hipônimos são palavras com significado mais específico que se encaixam em uma categoria maior.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual das alternativas apresenta um par de palavras que são HIPÔNIMOS de 'animal'?",
+                    "feedback_correct": "Correto! 'Cachorro' e 'gato' são termos mais específicos que se encaixam na categoria mais abrangente de 'animal' (hiperônimo)."
+                },
+                {
+                    "correct_answer": true,
+                    "feedback_incorrect": "Errado. Relembre o que é pleonasmo e por que ele é considerado um vício de linguagem.",
+                    "type": "true_false",
+                    "question_text": "Pleonasmo é a repetição desnecessária de uma ideia já expressa, o que é considerado um vício de linguagem.",
+                    "feedback_correct": "Isso mesmo! Exemplos clássicos são 'subir para cima' ou 'entrar para dentro'."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Cacofonia"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Ambiguidade de regência"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Ambiguidade de sentido por má colocação de termo"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Estrangeirismo"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense em quem ou o que a expressão 'da janela' está modificando na frase.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Vi o acidente da janela.', qual tipo de ambiguidade pode ocorrer?",
+                    "feedback_correct": "Correto! Não se sabe se 'da janela' se refere a 'vi' (eu vi *através* da janela) ou 'acidente' (o acidente *da* janela)."
+                }
+            ]
+        },
+        {
+            "capitulo": "Capítulo 18 - Estilística e Figuras de Linguagem: A Arte de Usar as Palavras",
+            "questoes": [
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Comparação"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Metonímia"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Metáfora"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Catacrese"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na figura de linguagem que estabelece uma comparação sem o uso de conectivos explícitos.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual figura de linguagem é caracterizada pela comparação implícita, sem uso de conectivo (como 'como', 'tal qual')?",
+                    "feedback_correct": "Correto! A metáfora é uma comparação subentendida (Ex: 'Seus olhos são faróis.')."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja a diferença entre hipérbole (exagero) e eufemismo (suavização).",
+                    "type": "true_false",
+                    "question_text": "A frase 'Estou morrendo de fome.' é um exemplo de eufemismo.",
+                    "feedback_correct": "Isso mesmo! 'Estou morrendo de fome' é uma hipérbole (exagero intencional). Eufemismo seria uma suavização."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Sinestesia"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Antítese"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Prosopopeia / Personificação"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Paradoxo"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na figura que 'humaniza' o que não é humano.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual figura de linguagem ocorre quando se atribui características humanas a seres inanimados ou irracionais?",
+                    "feedback_correct": "Correto! Prosopopeia ou personificação é o ato de dar vida ou características humanas a objetos ou animais."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Reveja a diferença entre Silepse e Anacoluto.",
+                    "type": "true_false",
+                    "question_text": "A Silepse é uma figura de pensamento que consiste na quebra da estrutura sintática da frase, deixando um termo solto.",
+                    "feedback_correct": "Isso mesmo! A descrição corresponde ao Anacoluto. Silepse é a concordância com a ideia, não com a forma gramatical (Ex: 'A maioria *fizeram*')."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Comparação"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Metáfora"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Metonímia"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Sinestesia"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na figura que substitui um termo por outro com o qual tem uma relação de proximidade lógica.",
+                    "type": "multiple_choice",
+                    "question_text": "Na frase 'Ele comprou cinco pães e bebeu uma Coca-Cola.', a figura de linguagem presente na palavra 'Coca-Cola' no lugar do refrigerante é:",
+                    "feedback_correct": "Correto! 'Coca-Cola' (marca) está sendo usada pelo produto (refrigerante), o que é um tipo de metonímia."
+                },
+                {
+                    "correct_answer": false,
+                    "feedback_incorrect": "Errado. Relembre a figura que organiza ideias em uma progressão de intensidade.",
+                    "type": "true_false",
+                    "question_text": "A figura de linguagem que consiste em uma sequência de ideias em ordem crescente ou decrescente de intensidade é chamada de Ironia.",
+                    "feedback_correct": "Isso mesmo! Essa figura é a Gradação. Ironia é dizer o contrário do que se pensa."
+                },
+                {
+                    "options": [
+                        {
+                            "is_correct": false,
+                            "text": "Assíndeto"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Anáfora"
+                        },
+                        {
+                            "is_correct": true,
+                            "text": "Polissíndeto"
+                        },
+                        {
+                            "is_correct": false,
+                            "text": "Inversão"
+                        }
+                    ],
+                    "feedback_incorrect": "Incorreto. Pense na figura que 'adiciona' conjunções repetidamente.",
+                    "type": "multiple_choice",
+                    "question_text": "Qual a figura de construção que se caracteriza pela repetição intencional de conjunções coordenativas?",
+                    "feedback_correct": "Correto! O polissíndeto usa a repetição de conjunções para criar um efeito de acumulação ou lentidão."
+                }
+            ]
+        }
+    ]
+}
