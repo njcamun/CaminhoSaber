@@ -238,6 +238,7 @@ class ProgressoService with ChangeNotifier {
   Future<void> restoreFromCloud() async {
     final user = _auth.currentUser;
     if (user == null || user.isAnonymous) return;
+    debugPrint('[ProgressoService] Starting restoreFromCloud for UID: ${user.uid}');
 
     try {
       final profilesSnapshot = await _firestore
@@ -245,6 +246,7 @@ class ProgressoService with ChangeNotifier {
           .doc(user.uid)
           .collection('profiles')
           .get();
+      debugPrint('[ProgressoService] Found ${profilesSnapshot.docs.length} profiles in Firestore');
 
       await _db.transaction(() async {
         for (var profileDoc in profilesSnapshot.docs) {
@@ -296,8 +298,9 @@ class ProgressoService with ChangeNotifier {
       });
       
       await _loadProgresso();
+      debugPrint('[ProgressoService] restoreFromCloud completed successfully');
     } catch (e) {
-      debugPrint('Erro ao restaurar progresso da cloud: $e');
+      debugPrint('[ProgressoService] Erro ao restaurar progresso da cloud: $e');
     }
   }
 

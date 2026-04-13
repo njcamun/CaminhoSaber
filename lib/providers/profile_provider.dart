@@ -109,17 +109,20 @@ class ProfileProvider with ChangeNotifier {
     
     _isLoading = true;
     notifyListeners();
+    debugPrint('[ProfileProvider] _loadProfilesForUser called for UID: ${firebaseUser.uid}');
 
     try {
       if (!firebaseUser.isAnonymous) {
         _pendingRestore = true;
         try {
+          debugPrint('[ProfileProvider] Attempting to load profiles from Firestore for ${firebaseUser.uid}');
           final querySnapshot = await _firestore
               .collection('users')
               .doc(firebaseUser.uid)
               .collection('profiles')
               .get();
 
+          debugPrint('[ProfileProvider] Firestore profiles found: ${querySnapshot.docs.length}');
           if (querySnapshot.docs.isNotEmpty) {
             await _db.transaction(() async {
               for (var doc in querySnapshot.docs) {
@@ -148,16 +151,18 @@ class ProfileProvider with ChangeNotifier {
             // O restauro do progresso é agora gerido pelo _tryRestore
           }
         } catch (e) {
-          debugPrint('Erro Cloud Sync Perfis: $e');
+          debugPrint('[ProfileProvider] Erro Cloud Sync Perfis: $e');
         }
       }
 
       final query = _db.select(_db.profiles)..where((t) => t.parentUid.equals(firebaseUser.uid));
       _allProfiles = await query.get();
+      debugPrint('[ProfileProvider] Local DB profiles loaded: ${_allProfiles.length}');
 
       if (_allProfiles.isEmpty) {
         String defaultName = firebaseUser.displayName ?? 
                             (firebaseUser.email != null ? firebaseUser.email!.split('@').first : 'Utilizador');
+        debugPrint('[ProfileProvider] Creating default profile for: $defaultName');
         
         await _db.into(_db.profiles).insert(ProfilesCompanion.insert(
           uid: firebaseUser.uid,
@@ -168,6 +173,7 @@ class ProfileProvider with ChangeNotifier {
         ));
         
         _allProfiles = await query.get();
+        debugPrint('[ProfileProvider] Default profile created. Profiles now: ${_allProfiles.length}');
       }
 
       if (_activeProfile != null) {
@@ -182,6 +188,7 @@ class ProfileProvider with ChangeNotifier {
       _isLoading = false;
       _isRestoring = false;
       notifyListeners();
+      debugPrint('[ProfileProvider] _loadProfilesForUser finished. Active profile: ${_activeProfile?.nome}');
       _tryRestore();
     }
   }
