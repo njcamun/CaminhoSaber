@@ -1,6 +1,7 @@
 // lib/providers/profile_provider.dart
 
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:drift/drift.dart' hide Column;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -86,10 +87,17 @@ class ProfileProvider with ChangeNotifier {
   String _validateAvatarPath(String? path) {
     if (path == null || path.isEmpty) return 'assets/avatars/default.png';
     if (path.startsWith('assets/')) return path;
-    
-    final file = File(path);
-    if (file.existsSync()) {
-      return path;
+
+    // Web does not support dart:io file checks.
+    if (kIsWeb) return 'assets/avatars/default.png';
+
+    try {
+      final file = File(path);
+      if (file.existsSync()) {
+        return path;
+      }
+    } catch (_) {
+      return 'assets/avatars/default.png';
     }
     
     return 'assets/avatars/default.png';
