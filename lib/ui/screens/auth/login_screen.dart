@@ -1,6 +1,7 @@
 // lib/ui/screens/auth/login_screen.dart
 
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:caminho_do_saber/ui/widgets/auth_form_card.dart';
 import 'package:caminho_do_saber/ui/widgets/custom_text_field.dart';
 import 'package:caminho_do_saber/ui/widgets/custom_gradient_button.dart';
@@ -61,8 +62,11 @@ class _LoginScreenState extends State<LoginScreen> {
         MaterialPageRoute(builder: (context) => const HomeScreen()),
       );
     } else {
+      // On web redirect fallback, sign-in continues after page reload.
+      if (kIsWeb && _authService.lastAuthError == null) return;
+
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Erro no login com Google.')),
+        SnackBar(content: Text('Erro no login com Google: ${_authService.lastAuthError ?? 'tente novamente'}')),
       );
     }
   }

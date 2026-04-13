@@ -7,8 +7,10 @@ import 'package:google_sign_in/google_sign_in.dart';
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final GoogleSignIn _googleSignIn = GoogleSignIn();
+  String? _lastAuthError;
 
   User? get currentUser => _auth.currentUser;
+  String? get lastAuthError => _lastAuthError;
 
   Stream<User?> get authStateChanges => _auth.authStateChanges();
 
@@ -34,6 +36,7 @@ class AuthService {
   }
 
   Future<UserCredential?> signInWithGoogle() async {
+    _lastAuthError = null;
     try {
       if (kIsWeb) {
         final googleProvider = GoogleAuthProvider()
@@ -51,8 +54,27 @@ class AuthService {
         idToken: googleAuth.idToken,
       );
       return await _auth.signInWithCredential(credential);
+    } on FirebaseAuthException catch (e) {
+      // On web, browsers may block popups. Redirect is a safe fallback.
+      if (kIsWeb && (e.code == 'popup-blocked' || e.code == 'popup-closed-by-user' || e.code == 'cancelled-popup-request')) {
+        try {
+          final googleProvider = GoogleAuthProvider()
+            ..setCustomParameters({'prompt': 'select_account'});
+          await _auth.signInWithRedirect(googleProvider);
+          return null;
+        } on FirebaseAuthException catch (redirectError) {
+          _lastAuthError = '${redirectError.code}: ${redirectError.message ?? 'Erro no login Google.'}';
+          debugPrint('Erro no redirect Google: $_lastAuthError');
+          return null;
+        }
+      }
+
+      _lastAuthError = '${e.code}: ${e.message ?? 'Erro no login Google.'}';
+      debugPrint('Erro no login com Google: $_lastAuthError');
+      return null;
     } catch (e) {
-      debugPrint('Erro no login com Google: $e');
+      _lastAuthError = e.toString();
+      debugPrint('Erro no login com Google: $_lastAuthError');
       return null;
     }
   }
