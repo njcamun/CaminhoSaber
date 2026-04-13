@@ -36,6 +36,11 @@ jobs:
       - name: Build web
         run: flutter build web --release --base-href /CaminhoSaber/
 
+      - name: Prepare Pages artifact
+        run: |
+          cp build/web/index.html build/web/404.html
+          touch build/web/.nojekyll
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
