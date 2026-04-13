@@ -1,1 +1,40 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"caminhodosaber-93787","appId":"1:335055432152:android:75621103797e3bc547aaad","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"caminhodosaber-93787","configurations":{"android":"1:335055432152:android:75621103797e3bc547aaad","ios":"1:335055432152:ios:b2427e3ea729497247aaad","macos":"1:335055432152:ios:b2427e3ea729497247aaad","web":"1:335055432152:web:c1db6a01f7bbeeac47aaad","windows":"1:335055432152:web:bc9b515b0a76436547aaad"}}}}}}
+{
+	"flutter": {
+		"platforms": {
+			"android": {
+				"default": {
+					"projectId": "caminhodosaber-93787",
+					"appId": "1:335055432152:android:75621103797e3bc547aaad",
+					"fileOutput": "android/app/google-services.json"
+				}
+			},
+			"dart": {
+				"lib/firebase_options.dart": {
+					"projectId": "caminhodosaber-93787",
+					"configurations": {
+						"android": "1:335055432152:android:75621103797e3bc547aaad",
+						"ios": "1:335055432152:ios:b2427e3ea729497247aaad",
+						"macos": "1:335055432152:ios:b2427e3ea729497247aaad",
+						"web": "1:335055432152:web:c1db6a01f7bbeeac47aaad",
+						"windows": "1:335055432152:web:bc9b515b0a76436547aaad"
+					}
+				}
+			}
+		}
+	},
+	"hosting": {
+		"site": "caminhosaber",
+		"public": "build/web",
+		"ignore": [
+			"firebase.json",
+			"**/.*",
+			"**/node_modules/**"
+		],
+		"rewrites": [
+			{
+				"source": "**",
+				"destination": "/index.html"
+			}
+		]
+	}
+}
