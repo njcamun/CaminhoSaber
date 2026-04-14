@@ -161,7 +161,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
-                      if (sucesso)
+                      if (sucesso && !kIsWeb)
                         Positioned.fill(
                           child: Lottie.asset(
                             'assets/animations/festejo.json',

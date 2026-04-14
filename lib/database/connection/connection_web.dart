@@ -1,8 +1,8 @@
 import 'package:drift/drift.dart';
 import 'package:drift/web.dart';
+import 'package:flutter/foundation.dart';
 
 QueryExecutor createConnection() {
-  // Na Web, usamos o modo mais simples possível que não requer sql.js externo
-  // Se falhar, ele usa armazenamento em memória que é imune a erros de ficheiros em falta
+  debugPrint('[Drift] Web Connection V3: Initializing volatile storage (Memory Only)');
   return WebDatabase.withStorage(DriftWebStorage.volatile());
 }

@@ -535,6 +535,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                     child: Stack(
                       alignment: Alignment.center,
                       children: [
+                        if (_feedbackController.isAnimating && !kIsWeb)
                           IgnorePointer(
                             child: Lottie.asset(
                               'assets/animations/festejo.json', 

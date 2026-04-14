@@ -169,12 +169,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: <Widget>[
                     GestureDetector(
                       onTap: _signInWithGoogle,
-                      child: Lottie.asset(
-                        'assets/animations/google.json',
-                        height: 100, 
-                        fit: BoxFit.contain,
-                        errorBuilder: (context, error, stackTrace) => Image.asset('assets/icons/google_icon.png', height: 50),
-                      ),
+                      child: !kIsWeb 
+                        ? Lottie.asset(
+                            'assets/animations/google.json',
+                            height: 100, 
+                            fit: BoxFit.contain,
+                            errorBuilder: (context, error, stackTrace) => Image.asset('assets/icons/google_icon.png', height: 50),
+                          )
+                        : Image.asset('assets/icons/google_icon.png', height: 50),
                     ),
                   ],
                 ),
