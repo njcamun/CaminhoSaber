@@ -45,6 +45,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   List<String> _opcoesAtuaisBaralhadas = [];
   String? _opcaoSelecionada; 
   bool _estaProcessando = false; 
+  bool _isGameOver = false;
 
   bool _tempoAdicionalUsado = false;
   bool _ajuda5050Usada = false;
@@ -122,19 +123,25 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
 
   void _startTimer() {
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      if (_isGameOver) {
+        timer.cancel();
+        return;
+      }
+
       if (_tempoRestante > 0) {
         if(mounted) {
           setState(() {
-          _tempoRestante--;
-          if (_tempoRestante <= 10) {
-            _pulseController.repeat(reverse: true);
-          } else {
-            _pulseController.stop();
-          }
-        });
+            _tempoRestante--;
+            if (_tempoRestante <= 10 && _tempoRestante > 0) {
+              _pulseController.repeat(reverse: true);
+            } else {
+              _pulseController.stop();
+            }
+          });
         }
-      } else {
-        _timer?.cancel();
+      }
+      
+      if (_tempoRestante <= 0 && !_isGameOver) {
         _finishGame("TEMPO ESGOTADO!");
       }
     });
@@ -160,7 +167,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   }
 
   void _verificarResposta(String resposta, Offset tapPosition) async {
-    if (_estaProcessando) return;
+    if (_estaProcessando || _isGameOver) return;
     
     setState(() {
       _estaProcessando = true;
@@ -238,11 +245,13 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     }
 
     await Future.delayed(const Duration(milliseconds: 1200));
-    _nextQuestion();
+    if (!_isGameOver) {
+      _nextQuestion();
+    }
   }
 
   void _nextQuestion() {
-    if (!mounted) return;
+    if (!mounted || _isGameOver) return;
     setState(() {
       _perguntaAtualIndex++;
       if (_perguntaAtualIndex >= _listaPerguntas.length) {
@@ -253,7 +262,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   }
 
   void _use5050() {
-    if (_ajuda5050Usada || _estaProcessando) return;
+    if (_ajuda5050Usada || _estaProcessando || _isGameOver) return;
     final pergunta = _listaPerguntas[_perguntaAtualIndex];
     final incorrectas = _opcoesAtuaisBaralhadas.where((o) => o != pergunta.respostaCorreta).toList();
     incorrectas.shuffle();
@@ -265,7 +274,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   }
 
   void _useHint() {
-    if (_ajudaDicaUsada || _estaProcessando) return;
+    if (_ajudaDicaUsada || _estaProcessando || _isGameOver) return;
     final pergunta = _listaPerguntas[_perguntaAtualIndex];
     setState(() => _ajudaDicaUsada = true);
     
@@ -290,21 +299,39 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   }
 
   void _useSkip() {
-    if (_puloUsado || _estaProcessando) return;
+    if (_puloUsado || _estaProcessando || _isGameOver) return;
     setState(() => _puloUsado = true);
     _showCentralFeedback("PULASTE!", Icons.skip_next_rounded, Colors.grey);
     _nextQuestion();
   }
 
   Future<void> _finishGame(String titulo) async {
+    if (_isGameOver) return;
+    setState(() {
+      _isGameOver = true;
+      _estaProcessando = true;
+    });
+    
     _timer?.cancel();
+    _pulseController.stop();
     try {
       await _audioPlayer.stop();
     } catch (_) {}
     
     final progressoService = Provider.of<ProgressoService>(context, listen: false);
-    await progressoService.addArcadePoints(_pontos);
-    bool isNewRecord = await progressoService.updateArcadeRecord(widget.disciplinaId, _pontos);
+    
+    try {
+      await progressoService.addArcadePoints(_pontos);
+    } catch (e) {
+      debugPrint('Erro salvar arcade: $e');
+    }
+    
+    bool isNewRecord = false;
+    try {
+      isNewRecord = await progressoService.updateArcadeRecord(widget.disciplinaId, _pontos);
+    } catch (e) {
+      debugPrint('Erro update recorde arcade: $e');
+    }
 
     if (!mounted) return;
     showDialog(
@@ -551,7 +578,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         _buildHelpIcon(Icons.add_alarm_rounded, '+30s', _tempoAdicionalUsado, () {
-                          if (!_tempoAdicionalUsado) {
+                          if (!_tempoAdicionalUsado && !_estaProcessando && !_isGameOver) {
                             setState(() { _tempoRestante += 30; _tempoAdicionalUsado = true; });
                             _showCentralFeedback("+30 SEGUNDOS!", Icons.add_alarm_rounded, Colors.cyan);
                           }
