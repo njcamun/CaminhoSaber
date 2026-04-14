@@ -39,6 +39,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   int _perguntaAtualIndex = 0;
   bool _respostaSelecionada = false;
   String? _respostaSelecionadaTexto;
+  int _sessionId = 0;
 
   final AudioPlayer _audioPlayer = AudioPlayer();
   bool _isMusicPlaying = false;
@@ -68,6 +69,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
+    _sessionId++;
     _playQuizMusic();
     _perguntasBaralhadas = List.from(widget.perguntas)..shuffle();
     _prepararPerguntaAtual();
@@ -106,9 +108,14 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   void _iniciarTemporizadorPergunta() {
     _segundosRestantes = _tempoMaximoPergunta;
     _timer?.cancel();
+    final currentSession = _sessionId;
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
+      if (currentSession != _sessionId || !mounted || _quizFinalizado) {
+        timer.cancel();
+        return;
+      }
       if (_segundosRestantes > 0) {
-        if(mounted) setState(() => _segundosRestantes--);
+        setState(() => _segundosRestantes--);
       } else {
         _timer?.cancel();
         _verificarResposta('', Offset.zero);
@@ -122,9 +129,14 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   }
 
   void _iniciarTemporizadorGlobal() {
+    final currentSession = _sessionId;
     _timerGlobal = Timer.periodic(const Duration(seconds: 1), (timer) {
+      if (currentSession != _sessionId || !mounted || _quizFinalizado) {
+        timer.cancel();
+        return;
+      }
       if (_segundosRestantesGlobal > 0) {
-        if(mounted) setState(() => _segundosRestantesGlobal--);
+        setState(() => _segundosRestantesGlobal--);
       } else {
         _timerGlobal?.cancel();
         _mostrarResultadoFinal();
@@ -252,7 +264,13 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
         _respostaSelecionadaTexto = resposta;
       });
     }
-    Future.delayed(const Duration(milliseconds: 1200), () => _passarParaProximaPergunta());
+    
+    final currentSession = _sessionId;
+    Future.delayed(const Duration(milliseconds: 1200), () {
+      if (mounted && currentSession == _sessionId && !_quizFinalizado) {
+        _passarParaProximaPergunta();
+      }
+    });
   }
 
   bool _quizFinalizado = false;
@@ -260,6 +278,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   Future<void> _mostrarResultadoFinal() async {
     if (_quizFinalizado) return;
     _quizFinalizado = true;
+    _sessionId++; // Invalida callbacks pendentes
 
     try {
       await _audioPlayer.stop();

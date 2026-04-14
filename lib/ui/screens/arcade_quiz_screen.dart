@@ -46,6 +46,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   String? _opcaoSelecionada; 
   bool _estaProcessando = false; 
   bool _isGameOver = false;
+  int _sessionId = 0;
 
   bool _tempoAdicionalUsado = false;
   bool _ajuda5050Usada = false;
@@ -70,6 +71,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   @override
   void initState() {
     super.initState();
+    _sessionId++;
     _loadSettings();
     _startTimer();
     _playMusic();
@@ -122,26 +124,25 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   }
 
   void _startTimer() {
+    final currentSession = _sessionId;
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      if (_isGameOver) {
+      if (_isGameOver || currentSession != _sessionId || !mounted) {
         timer.cancel();
         return;
       }
 
       if (_tempoRestante > 0) {
-        if(mounted) {
-          setState(() {
-            _tempoRestante--;
-            if (_tempoRestante <= 10 && _tempoRestante > 0) {
-              _pulseController.repeat(reverse: true);
-            } else {
-              _pulseController.stop();
-            }
-          });
-        }
+        setState(() {
+          _tempoRestante--;
+          if (_tempoRestante <= 10 && _tempoRestante > 0) {
+            _pulseController.repeat(reverse: true);
+          } else {
+            _pulseController.stop();
+          }
+        });
       }
       
-      if (_tempoRestante <= 0 && !_isGameOver) {
+      if (_tempoRestante <= 0) {
         _finishGame("TEMPO ESGOTADO!");
       }
     });
@@ -244,8 +245,9 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
       }
     }
 
+    final currentSession = _sessionId;
     await Future.delayed(const Duration(milliseconds: 1200));
-    if (!_isGameOver) {
+    if (!_isGameOver && mounted && currentSession == _sessionId) {
       _nextQuestion();
     }
   }
@@ -310,6 +312,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     setState(() {
       _isGameOver = true;
       _estaProcessando = true;
+      _sessionId++; // Invalida qualquer callback pendente
     });
     
     _timer?.cancel();

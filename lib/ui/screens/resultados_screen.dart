@@ -52,6 +52,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
   bool _showPenalidadeTempo = false;
   bool _showBonusTempo = false;
   bool _showTotalFinal = false;
+  bool _isDisposed = false;
   
   final AudioPlayer _audioPlayer = AudioPlayer();
   bool _audioHabilitado = true;
@@ -65,6 +66,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
 
   @override
   void dispose() {
+    _isDisposed = true;
     _audioPlayer.dispose();
     super.dispose();
   }
@@ -93,47 +95,41 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
   void _iniciarAnimacao() async {
     // Sequência de revelação dos pontos um a um com efeito sonoro
     await Future.delayed(const Duration(milliseconds: 600));
-    if (mounted) {
-      setState(() => _showPontosBase = true);
-      _playSound('hint.mp3');
-    }
+    if (!mounted || _isDisposed) return;
+    setState(() => _showPontosBase = true);
+    _playSound('hint.mp3');
     
     await Future.delayed(const Duration(milliseconds: 400));
-    if (mounted) {
-      setState(() => _showBonusTempo = true);
-      _playSound('hint.mp3');
-    }
+    if (!mounted || _isDisposed) return;
+    setState(() => _showBonusTempo = true);
+    _playSound('hint.mp3');
     
     await Future.delayed(const Duration(milliseconds: 400));
-    if (mounted) {
-      setState(() => _showPenalidadeAjudas = true);
-      _playSound('hint.mp3');
-    }
+    if (!mounted || _isDisposed) return;
+    setState(() => _showPenalidadeAjudas = true);
+    _playSound('hint.mp3');
     
     await Future.delayed(const Duration(milliseconds: 400));
-    if (mounted) {
-      setState(() => _showPenalidadeTempo = true);
-      _playSound('hint.mp3');
-    }
+    if (!mounted || _isDisposed) return;
+    setState(() => _showPenalidadeTempo = true);
+    _playSound('hint.mp3');
     
     await Future.delayed(const Duration(milliseconds: 600));
-    if (mounted) {
-      setState(() => _showTotalFinal = true);
-      _playSound('hint.mp3');
-      
-      // Mostrar animação de conquista se ganhou pontos (XP)
-      if (widget.pontuacaoFinal > 0) {
-        Future.delayed(const Duration(milliseconds: 800), () {
-          if (mounted) {
-            AchievementOverlay.show(
-              context, 
-              title: 'Pontos Ganhos!', 
-              message: 'Concluíste o desafio e ganhaste ${widget.pontuacaoFinal} XP!', 
-              icon: Icons.trending_up_rounded, 
-              color: Colors.orangeAccent
-            );
-          }
-        });
+    if (!mounted || _isDisposed) return;
+    setState(() => _showTotalFinal = true);
+    _playSound('hint.mp3');
+    
+    // Mostrar animação de conquista se ganhou pontos (XP)
+    if (widget.pontuacaoFinal > 0) {
+      await Future.delayed(const Duration(milliseconds: 800));
+      if (mounted && !_isDisposed) {
+        AchievementOverlay.show(
+          context, 
+          title: 'Pontos Ganhos!', 
+          message: 'Concluíste o desafio e ganhaste ${widget.pontuacaoFinal} XP!', 
+          icon: Icons.trending_up_rounded, 
+          color: Colors.orangeAccent
+        );
       }
     }
   }
