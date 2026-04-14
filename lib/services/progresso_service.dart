@@ -46,112 +46,113 @@ class ProgressoService with ChangeNotifier {
     return (currentStars + 1000).toDouble();
   }
 
-  ProgressoService(this._db, ProfileProvider? profileProvider) {
-    if (profileProvider != null) {
-      updateProvider(profileProvider);
-    }
-  }
+  ProgressoService(this._db, ProfileProvider? profileProvider);
 
   bool _isInitLoading = false;
 
   void updateProvider(ProfileProvider newProvider) {
+    if (_profileProvider == newProvider) return;
     _profileProvider?.removeListener(_onProfileChanged);
     _profileProvider = newProvider;
     _profileProvider?.addListener(_onProfileChanged);
-    _loadProgresso();
   }
 
   void _onProfileChanged() {
     _loadProgresso();
   }
 
+  void loadProgressoExternally() => _loadProgresso();
+
   Future<void> _loadProgresso() async {
     if (_isInitLoading) return;
     
-    if (_profileProvider?.activeProfile == null) {
-      _progressoPorCapitulo.clear();
-      _totalXP = 0;
-      _totalDiamantes = 0;
-      _currentStreak = 0;
-      Future.microtask(() => notifyListeners());
-      return;
-    }
-
-    _isInitLoading = true;
-    final activeProfileUid = _profileProvider!.activeProfile!.uid;
-
-    List<ProgressoCapitulo> todosProgressos = [];
     try {
-      final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfileUid));
-      todosProgressos = await query.get();
-    } catch (dbError) {
-      debugPrint('[ProgressoService] _loadProgresso local DB failed: $dbError');
-      _isInitLoading = false;
-      _applyCloudFallbackForActiveProfile();
-      return;
+      if (_profileProvider?.activeProfile == null) {
+        _progressoPorCapitulo.clear();
+        _totalXP = 0;
+        _totalDiamantes = 0;
+        _currentStreak = 0;
+        Future.microtask(() => notifyListeners());
+        return;
+      }
+
+      _isInitLoading = true;
+      final activeProfileUid = _profileProvider!.activeProfile!.uid;
+
+      List<ProgressoCapitulo> todosProgressos = [];
+      try {
+        final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfileUid));
+        todosProgressos = await query.get();
+      } catch (dbError) {
+        debugPrint('[ProgressoService] _loadProgresso local DB failed: $dbError');
+        _isInitLoading = false;
+        _applyCloudFallbackForActiveProfile();
+        return;
+      }
+
+      // On web, DB can be unavailable or empty. If we already restored from Firestore,
+      // apply the cached cloud data directly to keep UI synced.
+      if (todosProgressos.isEmpty && _cloudProgressCache.containsKey(activeProfileUid)) {
+        _isInitLoading = false;
+        _applyCloudFallbackForActiveProfile();
+        return;
+      }
+
+      _progressoPorCapitulo.clear();
+      int xpSoma = 0;
+      int diamantesSoma = 0;
+
+      for (var progresso in todosProgressos) {
+        final tipo = progresso.tipo ?? 'quiz';
+        
+        if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge') {
+           // Acumula o XP bruto de todas as atividades
+           xpSoma += progresso.pontuacao;
+           
+           if (tipo == 'leitura' || tipo == 'quiz') {
+             _progressoPorCapitulo[progresso.capituloId] = progresso.pontuacao;
+           }
+        }
+        
+        if (tipo == 'achievement' || tipo == 'payment') {
+          diamantesSoma += progresso.pontuacao;
+        }
+      }
+
+      _totalXP = xpSoma;
+
+      // Regra: 250 XP = 1 Estrela
+      // Regra: 50 Estrelas = 1 Diamante
+      int totalEstrelasGerais = (_totalXP / 250).floor();
+      int diamantesPorEstrelas = (totalEstrelasGerais / 50).floor();
+      
+      _totalDiamantes = diamantesPorEstrelas + diamantesSoma;
+      
+      await _updateAndLoadStreak();
+
+      final activeProfile = _profileProvider!.activeProfile!;
+      if (activeProfile.totalPontos != totalPontos || 
+          activeProfile.totalDiamantes != _totalDiamantes || 
+          activeProfile.currentStreak != _currentStreak) {
+        
+        await (_db.update(_db.profiles)..where((t) => t.uid.equals(activeProfile.uid))).write(
+          ProfilesCompanion(
+            totalPontos: Value(totalPontos),
+            totalDiamantes: Value(_totalDiamantes),
+            currentStreak: Value(_currentStreak),
+          ),
+        );
+        
+        // Notifica o ProfileProvider para recarregar o perfil ativo do Drift
+        await _profileProvider?.refreshActiveProfile();
+      }
+      
+      notifyListeners();
+    } catch (e, stack) {
+      debugPrint('[ProgressoService] FATAL ERROR in _loadProgresso: $e\n$stack');
     } finally {
       _isInitLoading = false;
     }
-
-    // On web, DB can be unavailable or empty. If we already restored from Firestore,
-    // apply the cached cloud data directly to keep UI synced.
-    if (todosProgressos.isEmpty && _cloudProgressCache.containsKey(activeProfileUid)) {
-      _applyCloudFallbackForActiveProfile();
-      return;
-    }
-
-    _progressoPorCapitulo.clear();
-    int xpSoma = 0;
-    int diamantesSoma = 0;
-
-    for (var progresso in todosProgressos) {
-      final tipo = progresso.tipo ?? 'quiz';
-      
-      if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge') {
-         // Acumula o XP bruto de todas as atividades
-         xpSoma += progresso.pontuacao;
-         
-         if (tipo == 'leitura' || tipo == 'quiz') {
-           _progressoPorCapitulo[progresso.capituloId] = progresso.pontuacao;
-         }
-      }
-      
-      if (tipo == 'achievement' || tipo == 'payment') {
-        diamantesSoma += progresso.pontuacao;
-      }
-    }
-
-    _totalXP = xpSoma;
-
-    // Regra: 250 XP = 1 Estrela
-    // Regra: 50 Estrelas = 1 Diamante
-    int totalEstrelasGerais = (_totalXP / 250).floor();
-    int diamantesPorEstrelas = (totalEstrelasGerais / 50).floor();
-    
-    _totalDiamantes = diamantesPorEstrelas + diamantesSoma;
-    
-    await _updateAndLoadStreak();
-
-    final activeProfile = _profileProvider!.activeProfile!;
-    if (activeProfile.totalPontos != totalPontos || 
-        activeProfile.totalDiamantes != _totalDiamantes || 
-        activeProfile.currentStreak != _currentStreak) {
-      
-      await (_db.update(_db.profiles)..where((t) => t.uid.equals(activeProfile.uid))).write(
-        ProfilesCompanion(
-          totalPontos: Value(totalPontos),
-          totalDiamantes: Value(_totalDiamantes),
-          currentStreak: Value(_currentStreak),
-        ),
-      );
-      
-      // Notifica o ProfileProvider para recarregar o perfil ativo do Drift
-      await _profileProvider?.refreshActiveProfile();
-    }
-    
-    Future.microtask(() => notifyListeners());
-    // Removido syncWithCloud daqui para evitar loop de atualização.
-    // O syncWithCloud deve ser chamado apenas após alterações locais.
   }
 
   void _applyCloudFallbackForActiveProfile() {

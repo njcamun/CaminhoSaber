@@ -21,57 +21,83 @@ final GlobalKey<ScaffoldMessengerState> globalMessengerKey = GlobalKey<ScaffoldM
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  
+  try {
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+  } catch (e) {
+    debugPrint('Firebase initialization error: $e');
+  }
 
   // Capturador Global de Erros para facilitar o debug em Web
   FlutterError.onError = (FlutterErrorDetails details) {
     FlutterError.presentError(details);
-    _showErrorOverlay(details.exceptionAsString());
+    _showErrorOverlay('Flutter Error: ${details.exceptionAsString()}');
   };
 
-  // Garantir apenas orientação vertical
-  await SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]);
+  PlatformDispatcher.instance.onError = (error, stack) {
+    debugPrint('Global Error: $error\n$stack');
+    _showErrorOverlay('Global Error: $error');
+    return true;
+  };
 
+  /* try {
+    await SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+  } catch (e) {
+    debugPrint('Orientation error: $e');
+  } */
+
+  debugPrint('Initializing Drift...');
   final driftDb = AppDatabase();
+  debugPrint('Drift DB instance created.');
 
   runApp(
     MultiProvider(
       providers: [
-        Provider(create: (_) => AuthService()),
+        Provider(create: (_) { debugPrint('Creating AuthService...'); return AuthService(); }),
         Provider.value(value: driftDb),
-        ChangeNotifierProvider(create: (_) => ThemeProvider()),
-        ChangeNotifierProvider(create: (_) => ProfileProvider(driftDb)),
+        ChangeNotifierProvider(create: (_) { debugPrint('Creating ThemeProvider...'); return ThemeProvider(); }),
+        ChangeNotifierProvider(create: (_) { debugPrint('Creating ProfileProvider...'); return ProfileProvider(driftDb); }),
         Provider(create: (_) => DisciplinaService()),
         Provider(create: (_) => RankingService()),
         ChangeNotifierProvider(create: (_) => DictionaryService()),
         ChangeNotifierProvider(create: (_) => PomodoroProvider()),
         ChangeNotifierProxyProvider<ProfileProvider, ProgressoService>(
-          create: (context) => ProgressoService(driftDb, context.read<ProfileProvider>()),
+          create: (context) => ProgressoService(driftDb, null),
           update: (context, profile, previous) {
-            final service = previous ?? ProgressoService(driftDb, profile);
+            final service = previous ?? ProgressoService(driftDb, null);
             service.updateProvider(profile);
             
-            // Side effect seguro agendado para após a fase de construção
-            Future.microtask(() {
-              profile.setProgressoService(service);
-            });
-
+            if (profile.activeProfile != null && !profile.isLoading) {
+              Future.microtask(() {
+                if (profile.pendingRestore) {
+                  profile.markRestoreDone();
+                  service.restoreFromCloud();
+                } else {
+                  service.loadProgressoExternally();
+                }
+              });
+            }
             return service;
           },
         ),
         ChangeNotifierProxyProvider<ProfileProvider, FlashcardService>(
-          create: (context) => FlashcardService(driftDb, context.read<ProfileProvider>()),
-          update: (context, profile, previous) => previous!..updateProvider(profile),
+          create: (context) => FlashcardService(driftDb, null),
+          update: (context, profile, previous) {
+             final service = previous ?? FlashcardService(driftDb, null);
+             service.updateProvider(profile);
+             return service;
+          },
         ),
       ],
       child: const MyApp(),
     ),
   );
+  debugPrint('runApp executed.');
 }
 
 class MyApp extends StatelessWidget {
