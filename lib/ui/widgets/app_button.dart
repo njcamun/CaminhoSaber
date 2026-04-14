@@ -63,7 +63,9 @@ class _AppButtonState extends State<AppButton> with SingleTickerProviderStateMix
 
   void _triggerSuccessEffect() {
     HapticFeedback.mediumImpact();
-    _controller.forward().then((_) => _controller.reverse());
+    _controller.forward().then((_) {
+      if (mounted) _controller.reverse();
+    }).catchError((_) {});
   }
 
   @override

@@ -39,7 +39,11 @@ class _PixelExplosionState extends State<PixelExplosion> with SingleTickerProvid
       ));
     }
 
-    _controller.forward().then((_) => widget.onComplete());
+    _controller.forward().then((_) {
+      if (mounted) widget.onComplete();
+    }).catchError((_) {
+      // Ignorar TickerCanceled
+    });
   }
 
   @override
@@ -100,7 +104,9 @@ void showPixelExplosion(BuildContext context, Offset position, Color color) {
     builder: (context) => PixelExplosion(
       position: position,
       color: color,
-      onComplete: () => entry.remove(),
+      onComplete: () {
+        if (entry.mounted) entry.remove();
+      },
     ),
   );
   overlay.insert(entry);

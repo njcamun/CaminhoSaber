@@ -53,7 +53,9 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
       TweenSequenceItem(tween: Tween(begin: _randomRotation, end: _randomRotation + (6 * pi)).chain(CurveTween(curve: Curves.easeInOutBack)), weight: 30),
     ]).animate(_controller);
 
-    _controller.forward().then((_) => _navigateToNext());
+    _controller.forward().then((_) {
+      if (mounted) _navigateToNext();
+    }).catchError((_) {});
   }
 
   void _navigateToNext() {

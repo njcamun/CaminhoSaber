@@ -39,7 +39,11 @@ class _XPFlyerState extends State<XPFlyer> with SingleTickerProviderStateMixin {
       CurvedAnimation(parent: _controller, curve: Curves.elasticOut),
     );
 
-    _controller.forward().then((_) => widget.onComplete());
+    _controller.forward().then((_) {
+      if (mounted) widget.onComplete();
+    }).catchError((_) {
+      // Ignorar TickerCanceled
+    });
   }
 
   @override
@@ -103,7 +107,9 @@ void showXPFlyer(BuildContext context, Offset position) {
   entry = OverlayEntry(
     builder: (context) => XPFlyer(
       startPos: position,
-      onComplete: () => entry.remove(),
+      onComplete: () {
+        if (entry.mounted) entry.remove();
+      },
     ),
   );
   overlay.insert(entry);

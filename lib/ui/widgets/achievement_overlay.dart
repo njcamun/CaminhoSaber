@@ -29,7 +29,9 @@ class AchievementOverlay extends StatelessWidget {
         color: color,
         isDiamond: isDiamond,
         onDismiss: () {
-          overlayEntry?.remove();
+          if (overlayEntry?.mounted ?? false) {
+            overlayEntry?.remove();
+          }
         },
       ),
     );
@@ -80,7 +82,11 @@ class _AchievementWidgetState extends State<_AchievementWidget> with SingleTicke
     
     Future.delayed(const Duration(seconds: 3), () {
       if (mounted) {
-        _controller.reverse().then((_) => widget.onDismiss());
+        _controller.reverse().then((_) {
+          if (mounted) widget.onDismiss();
+        }).catchError((_) {
+          // Ignora erro de TickerCanceled
+        });
       }
     });
   }
