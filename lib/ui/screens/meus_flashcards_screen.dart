@@ -4,14 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
 import 'package:provider/provider.dart';
-import 'package:uuid/uuid.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
 import 'package:caminho_do_saber/database/database.dart';
 import 'package:caminho_do_saber/services/flashcard_service.dart';
 import 'package:caminho_do_saber/ui/screens/flash_card_screen.dart';
 import 'package:caminho_do_saber/providers/profile_provider.dart';
 import 'package:caminho_do_saber/models/disciplina_model.dart' as model;
-import 'package:drift/drift.dart' show Value;
 
 class MeusFlashcardsScreen extends StatefulWidget {
   const MeusFlashcardsScreen({super.key});
@@ -234,7 +232,7 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         DropdownButtonFormField<String>(
-                          value: selectedCategoria,
+                          initialValue: selectedCategoria,
                           decoration: InputDecoration(
                             labelText: 'Disciplina',
                             border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),

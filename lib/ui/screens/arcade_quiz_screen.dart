@@ -97,7 +97,6 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   @override
   void dispose() {
     _timer?.cancel();
-    _audioPlayer.stop();
     _audioPlayer.dispose();
     _feedbackController.dispose();
     _pulseController.dispose();
@@ -299,7 +298,9 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
 
   Future<void> _finishGame(String titulo) async {
     _timer?.cancel();
-    _audioPlayer.stop();
+    try {
+      await _audioPlayer.stop();
+    } catch (_) {}
     
     final progressoService = Provider.of<ProgressoService>(context, listen: false);
     await progressoService.addArcadePoints(_pontos);
@@ -346,8 +347,15 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
 
   void _playSound(String file) async {
     if (_audioHabilitado) {
-      final player = AudioPlayer();
-      await player.play(AssetSource('sounds/$file'));
+      try {
+        final player = AudioPlayer();
+        await player.play(AssetSource('sounds/$file'));
+        player.onPlayerComplete.listen((_) {
+          player.dispose();
+        });
+      } catch (e) {
+        // Ignorar falhas de áudio na Web para não travar
+      }
     }
   }
 

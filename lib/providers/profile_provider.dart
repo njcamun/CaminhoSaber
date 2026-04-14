@@ -1,6 +1,5 @@
 // lib/providers/profile_provider.dart
 
-import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:drift/drift.dart' hide Column;
 import 'package:firebase_auth/firebase_auth.dart';
@@ -123,66 +122,163 @@ class ProfileProvider with ChangeNotifier {
               .get();
 
           debugPrint('[ProfileProvider] Firestore profiles found: ${querySnapshot.docs.length}');
-          if (querySnapshot.docs.isNotEmpty) {
-            await _db.transaction(() async {
-              for (var doc in querySnapshot.docs) {
-                final data = doc.data();
-                final pUid = doc.id;
+          if (kIsWeb) {
+            _allProfiles = querySnapshot.docs.map((doc) {
+              final data = doc.data();
+              return Profile(
+                id: -1,
+                uid: doc.id,
+                parentUid: firebaseUser.uid,
+                nome: (data['nome'] as String?) ?? 'Perfil',
+                avatarAssetPath: _validateAvatarPath(data['avatarAssetPath'] as String?),
+                isMainProfile: (data['isMainProfile'] as bool?) ?? (doc.id == firebaseUser.uid),
+                totalPontos: (data['totalPontos'] as num?)?.toInt() ?? 0,
+                totalDiamantes: (data['totalDiamantes'] as num?)?.toInt() ?? 0,
+                currentStreak: (data['currentStreak'] as num?)?.toInt() ?? 0,
+              );
+            }).toList();
 
-                final companion = ProfilesCompanion.insert(
-                  uid: pUid,
+            if (_allProfiles.isEmpty) {
+              final defaultName = firebaseUser.displayName ??
+                  (firebaseUser.email != null ? firebaseUser.email!.split('@').first : 'Utilizador');
+              _allProfiles = [
+                Profile(
+                  id: -1,
+                  uid: firebaseUser.uid,
                   parentUid: firebaseUser.uid,
-                  nome: data['nome'] ?? 'Perfil',
-                  avatarAssetPath: _validateAvatarPath(data['avatarAssetPath']),
-                  isMainProfile: data['isMainProfile'] ?? (pUid == firebaseUser.uid),
-                  totalPontos: Value(data['totalPontos'] ?? 0),
-                  totalDiamantes: Value(data['totalDiamantes'] ?? 0),
-                  currentStreak: Value(data['currentStreak'] ?? 0),
-                );
+                  nome: defaultName,
+                  avatarAssetPath: 'assets/avatars/default.png',
+                  isMainProfile: true,
+                  totalPontos: 0,
+                  totalDiamantes: 0,
+                  currentStreak: 0,
+                )
+              ];
+            }
 
-                final existing = await (_db.select(_db.profiles)..where((t) => t.uid.equals(pUid))).getSingleOrNull();
-                if (existing != null) {
-                  await (_db.update(_db.profiles)..where((t) => t.uid.equals(pUid))).write(companion);
-                } else {
-                  await _db.into(_db.profiles).insert(companion);
+            _activeProfile = _allProfiles.firstWhere(
+              (p) => p.isMainProfile,
+              orElse: () => _allProfiles.first,
+            );
+
+            _isLoading = false;
+            _isRestoring = false;
+            notifyListeners();
+            _tryRestore();
+            return;
+          }
+
+          if (querySnapshot.docs.isNotEmpty) {
+            try {
+              // Try to persist to local database
+              await _db.transaction(() async {
+                for (var doc in querySnapshot.docs) {
+                  final data = doc.data();
+                  final pUid = doc.id;
+
+                  final companion = ProfilesCompanion.insert(
+                    uid: pUid,
+                    parentUid: firebaseUser.uid,
+                    nome: data['nome'] ?? 'Perfil',
+                    avatarAssetPath: _validateAvatarPath(data['avatarAssetPath'] as String?),
+                    isMainProfile: (data['isMainProfile'] as bool?) ?? (pUid == firebaseUser.uid),
+                    totalPontos: Value(data['totalPontos'] ?? 0),
+                    totalDiamantes: Value(data['totalDiamantes'] ?? 0),
+                    currentStreak: Value(data['currentStreak'] ?? 0),
+                  );
+
+                  final existing = await (_db.select(_db.profiles)..where((t) => t.uid.equals(pUid))).getSingleOrNull();
+                  if (existing != null) {
+                    await (_db.update(_db.profiles)..where((t) => t.uid.equals(pUid))).write(companion);
+                  } else {
+                    await _db.into(_db.profiles).insert(companion);
+                  }
                 }
+              });
+              debugPrint('[ProfileProvider] Profiles persisted to local DB');
+            } catch (dbError) {
+              debugPrint('[ProfileProvider] Local DB persistence failed: $dbError, loading from Firestore only');
+              // On web or if DB fails, load profiles from Firestore directly into memory
+              _allProfiles = querySnapshot.docs.map((doc) {
+                final data = doc.data();
+                return Profile(
+                  id: -1,
+                  uid: doc.id,
+                  parentUid: firebaseUser.uid,
+                  nome: (data['nome'] as String?) ?? 'Perfil',
+                  avatarAssetPath: _validateAvatarPath(data['avatarAssetPath'] as String?),
+                  isMainProfile: (data['isMainProfile'] as bool?) ?? (doc.id == firebaseUser.uid),
+                  totalPontos: (data['totalPontos'] as num?)?.toInt() ?? 0,
+                  totalDiamantes: (data['totalDiamantes'] as num?)?.toInt() ?? 0,
+                  currentStreak: (data['currentStreak'] as num?)?.toInt() ?? 0,
+                );
+              }).toList();
+              debugPrint('[ProfileProvider] Loaded ${_allProfiles.length} profiles from Firestore into memory');
+              if (_activeProfile == null && _allProfiles.isNotEmpty) {
+                _activeProfile = _allProfiles.firstWhere((p) => p.isMainProfile, orElse: () => _allProfiles.first);
               }
-            });
-            // O restauro do progresso é agora gerido pelo _tryRestore
+              _isLoading = false;
+              _isRestoring = false;
+              notifyListeners();
+              _tryRestore();
+              return;
+            }
           }
         } catch (e) {
           debugPrint('[ProfileProvider] Erro Cloud Sync Perfis: $e');
         }
       }
 
-      final query = _db.select(_db.profiles)..where((t) => t.parentUid.equals(firebaseUser.uid));
-      _allProfiles = await query.get();
-      debugPrint('[ProfileProvider] Local DB profiles loaded: ${_allProfiles.length}');
+      try {
+        final query = _db.select(_db.profiles)..where((t) => t.parentUid.equals(firebaseUser.uid));
+        _allProfiles = await query.get();
+        debugPrint('[ProfileProvider] Local DB profiles loaded: ${_allProfiles.length}');
+      } catch (dbError) {
+        debugPrint('[ProfileProvider] Failed to load from local DB: $dbError');
+        _allProfiles = [];
+      }
 
       if (_allProfiles.isEmpty) {
         String defaultName = firebaseUser.displayName ?? 
                             (firebaseUser.email != null ? firebaseUser.email!.split('@').first : 'Utilizador');
         debugPrint('[ProfileProvider] Creating default profile for: $defaultName');
         
-        await _db.into(_db.profiles).insert(ProfilesCompanion.insert(
-          uid: firebaseUser.uid,
-          parentUid: firebaseUser.uid,
-          nome: defaultName,
-          avatarAssetPath: 'assets/avatars/default.png',
-          isMainProfile: true,
-        ));
-        
-        _allProfiles = await query.get();
-        debugPrint('[ProfileProvider] Default profile created. Profiles now: ${_allProfiles.length}');
+        try {
+          await _db.into(_db.profiles).insert(ProfilesCompanion.insert(
+            uid: firebaseUser.uid,
+            parentUid: firebaseUser.uid,
+            nome: defaultName,
+            avatarAssetPath: 'assets/avatars/default.png',
+            isMainProfile: true,
+          ));
+          
+          final query = _db.select(_db.profiles)..where((t) => t.parentUid.equals(firebaseUser.uid));
+          _allProfiles = await query.get();
+          debugPrint('[ProfileProvider] Default profile created. Profiles now: ${_allProfiles.length}');
+        } catch (dbError) {
+          debugPrint('[ProfileProvider] Could not create profile in DB: $dbError');
+          // Create profile in-memory if DB fails
+          _allProfiles = [Profile(
+            id: -1,
+            uid: firebaseUser.uid,
+            parentUid: firebaseUser.uid,
+            nome: defaultName,
+            avatarAssetPath: 'assets/avatars/default.png',
+            isMainProfile: true,
+            totalPontos: 0,
+            totalDiamantes: 0,
+            currentStreak: 0,
+          )];
+        }
       }
 
       if (_activeProfile != null) {
         _activeProfile = _allProfiles.cast<Profile?>().firstWhere(
           (p) => p?.uid == _activeProfile!.uid,
-          orElse: () => _allProfiles.firstWhere((p) => p.isMainProfile),
+          orElse: () => _allProfiles.firstWhere((p) => p.isMainProfile, orElse: () => _allProfiles.first),
         );
       } else {
-        _activeProfile = _allProfiles.firstWhere((p) => p.isMainProfile);
+        _activeProfile = _allProfiles.firstWhere((p) => p.isMainProfile, orElse: () => _allProfiles.first);
       }
     } finally {
       _isLoading = false;

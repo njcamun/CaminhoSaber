@@ -78,8 +78,10 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
 
   void _playSound(String fileName) async {
     if (_audioHabilitado) {
-      await _audioPlayer.stop();
-      await _audioPlayer.play(AssetSource('sounds/$fileName'));
+      try {
+        await _audioPlayer.stop();
+        await _audioPlayer.play(AssetSource('sounds/$fileName'));
+      } catch (_) {}
     }
   }
 

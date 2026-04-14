@@ -56,11 +56,20 @@ class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMix
   }
 
   Future<void> _loadData() async {
-    await _loadQuizzes();
-    await _loadProgresso();
-    setState(() {
-      _isLoading = false;
-    });
+    try {
+      await _loadQuizzes();
+      await _loadProgresso();
+    } catch (e) {
+      if (kDebugMode) {
+        print('Erro ao carregar níveis: $e');
+      }
+    } finally {
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+      }
+    }
   }
 
   void _triggerShake(int index) {
@@ -115,11 +124,22 @@ class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMix
   }
 
   Future<void> _loadProgresso() async {
-    final progresso = await _progressoService.getProgresso(widget.disciplina.id);
-    if(mounted) {
-      setState(() {
-        _progressoCapitulos = progresso;
-      });
+    try {
+      final progresso = await _progressoService.getProgresso(widget.disciplina.id);
+      if (mounted) {
+        setState(() {
+          _progressoCapitulos = progresso;
+        });
+      }
+    } catch (e) {
+      if (kDebugMode) {
+        print('Erro ao carregar progresso dos níveis: $e');
+      }
+      if (mounted) {
+        setState(() {
+          _progressoCapitulos = {};
+        });
+      }
     }
   }
 

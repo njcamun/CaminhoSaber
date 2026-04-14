@@ -1,6 +1,5 @@
 // lib/ui/screens/splash_screen.dart
 
-import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:caminho_do_saber/services/auth_service.dart';

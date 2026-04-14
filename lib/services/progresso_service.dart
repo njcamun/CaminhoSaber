@@ -19,6 +19,8 @@ class ProgressoService with ChangeNotifier {
   int _totalDiamantes = 0;
   int _currentStreak = 0;
   final Map<String, int> _progressoPorCapitulo = {};
+  final Map<String, List<Map<String, dynamic>>> _cloudProgressCache = {};
+  final Map<String, Map<String, dynamic>> _cloudProfileCache = {};
 
   int get totalXP => _totalXP;
   int get totalStarsTotal => (_totalXP / 250).floor();
@@ -73,8 +75,22 @@ class ProgressoService with ChangeNotifier {
 
     final activeProfileUid = _profileProvider!.activeProfile!.uid;
 
-    final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfileUid));
-    final todosProgressos = await query.get();
+    List<ProgressoCapitulo> todosProgressos = [];
+    try {
+      final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfileUid));
+      todosProgressos = await query.get();
+    } catch (dbError) {
+      debugPrint('[ProgressoService] _loadProgresso local DB failed: $dbError');
+      _applyCloudFallbackForActiveProfile();
+      return;
+    }
+
+    // On web, DB can be unavailable or empty. If we already restored from Firestore,
+    // apply the cached cloud data directly to keep UI synced.
+    if (todosProgressos.isEmpty && _cloudProgressCache.containsKey(activeProfileUid)) {
+      _applyCloudFallbackForActiveProfile();
+      return;
+    }
 
     _progressoPorCapitulo.clear();
     int xpSoma = 0;
@@ -130,6 +146,44 @@ class ProgressoService with ChangeNotifier {
     // O syncWithCloud deve ser chamado apenas após alterações locais.
   }
 
+  void _applyCloudFallbackForActiveProfile() {
+    final activeProfile = _profileProvider?.activeProfile;
+    if (activeProfile == null) return;
+
+    final profileUid = activeProfile.uid;
+    final cloudEntries = _cloudProgressCache[profileUid] ?? const [];
+    final cloudProfile = _cloudProfileCache[profileUid] ?? const {};
+
+    _progressoPorCapitulo.clear();
+    int xpSoma = 0;
+    int diamantesSoma = 0;
+
+    for (final entry in cloudEntries) {
+      final tipo = (entry['tipo'] ?? 'quiz').toString();
+      final capituloId = (entry['capituloId'] ?? '').toString();
+      final pontuacao = (entry['pontuacao'] as num?)?.toInt() ?? 0;
+
+      if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge') {
+        xpSoma += pontuacao;
+        if ((tipo == 'leitura' || tipo == 'quiz') && capituloId.isNotEmpty) {
+          _progressoPorCapitulo[capituloId] = pontuacao;
+        }
+      }
+
+      if (tipo == 'achievement' || tipo == 'payment') {
+        diamantesSoma += pontuacao;
+      }
+    }
+
+    _totalXP = (cloudProfile['totalXP'] as num?)?.toInt() ?? xpSoma;
+    final totalEstrelasGerais = (_totalXP / 250).floor();
+    final diamantesPorEstrelas = (totalEstrelasGerais / 50).floor();
+    _totalDiamantes = (cloudProfile['totalDiamantes'] as num?)?.toInt() ?? (diamantesPorEstrelas + diamantesSoma);
+    _currentStreak = (cloudProfile['currentStreak'] as num?)?.toInt() ?? 0;
+
+    Future.microtask(() => notifyListeners());
+  }
+
   Future<void> _updateAndLoadStreak() async {
     if (_profileProvider?.activeProfile == null) return;
     final uid = _profileProvider!.activeProfile!.uid;
@@ -166,72 +220,81 @@ class ProgressoService with ChangeNotifier {
     if (_profileProvider?.activeProfile == null) return;
     final activeProfileUid = _profileProvider!.activeProfile!.uid;
     
-    final progressoExistente = await (_db.select(_db.progressoCapitulos)
-      ..where((t) => t.profileUid.equals(activeProfileUid) & t.capituloId.equals(capituloId)))
-      .getSingleOrNull();
+    try {
+      await Future<void>(() async {
+        final progressoExistente = await (_db.select(_db.progressoCapitulos)
+          ..where((t) => t.profileUid.equals(activeProfileUid) & t.capituloId.equals(capituloId)))
+          .getSingleOrNull();
 
-    if (tipo == 'payment' || progressoExistente == null || (tipo != 'payment' && novaPontuacao > progressoExistente.pontuacao)) {
-      await _db.transaction(() async {
-        if (tipo == 'payment') {
-          await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
-            capituloId: '${capituloId}_${DateTime.now().millisecondsSinceEpoch}',
-            pontuacao: novaPontuacao,
-            dataConclusao: DateTime.now(),
-            profileUid: activeProfileUid,
-            tipo: Value(tipo),
-          ));
-        } else if (progressoExistente == null) {
-          await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
-            capituloId: capituloId,
-            pontuacao: novaPontuacao,
-            dataConclusao: DateTime.now(),
-            profileUid: activeProfileUid,
-            tipo: Value(tipo),
-          ));
-        } else {
-          await (_db.update(_db.progressoCapitulos)
-            ..where((t) => t.id.equals(progressoExistente.id)))
-            .write(ProgressoCapitulosCompanion(
-              pontuacao: Value(novaPontuacao),
-              dataConclusao: Value(DateTime.now()),
-            ));
-        }
-        
-        if (tipo == 'quiz' || tipo == 'leitura') {
-          final stats = await (_db.select(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).getSingleOrNull();
-          final today = DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day);
-          
-          if (stats != null) {
-            final lastDate = DateTime(stats.lastActivityDate.year, stats.lastActivityDate.month, stats.lastActivityDate.day);
-            if (today.difference(lastDate).inDays == 1) {
-              int newStreak = stats.currentStreak + 1;
-              int newHighest = max(newStreak, stats.highestStreak);
-              await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
-                UserStatsTableCompanion(
-                  currentStreak: Value(newStreak),
-                  lastActivityDate: Value(today),
-                  highestStreak: Value(newHighest),
-                ),
-              );
-            } else if (today.difference(lastDate).inDays > 1 || stats.currentStreak == 0) {
-              await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
-                UserStatsTableCompanion(
-                  currentStreak: const Value(1),
-                  lastActivityDate: Value(today),
-                ),
-              );
+        if (tipo == 'payment' || progressoExistente == null || (tipo != 'payment' && novaPontuacao > progressoExistente.pontuacao)) {
+          await _db.transaction(() async {
+            if (tipo == 'payment') {
+              await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                capituloId: '${capituloId}_${DateTime.now().millisecondsSinceEpoch}',
+                pontuacao: novaPontuacao,
+                dataConclusao: DateTime.now(),
+                profileUid: activeProfileUid,
+                tipo: Value(tipo),
+              ));
+            } else if (progressoExistente == null) {
+              await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                capituloId: capituloId,
+                pontuacao: novaPontuacao,
+                dataConclusao: DateTime.now(),
+                profileUid: activeProfileUid,
+                tipo: Value(tipo),
+              ));
+            } else {
+              await (_db.update(_db.progressoCapitulos)
+                ..where((t) => t.id.equals(progressoExistente.id)))
+                .write(ProgressoCapitulosCompanion(
+                  pontuacao: Value(novaPontuacao),
+                  dataConclusao: Value(DateTime.now()),
+                ));
             }
-          } else {
-            await _db.into(_db.userStatsTable).insert(UserStatsTableCompanion.insert(
-              profileUid: activeProfileUid,
-              currentStreak: const Value(1),
-              lastActivityDate: today,
-            ));
-          }
+            
+            if (tipo == 'quiz' || tipo == 'leitura') {
+              final stats = await (_db.select(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).getSingleOrNull();
+              final today = DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day);
+              
+              if (stats != null) {
+                final lastDate = DateTime(stats.lastActivityDate.year, stats.lastActivityDate.month, stats.lastActivityDate.day);
+                if (today.difference(lastDate).inDays == 1) {
+                  int newStreak = stats.currentStreak + 1;
+                  int newHighest = max(newStreak, stats.highestStreak);
+                  await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
+                    UserStatsTableCompanion(
+                      currentStreak: Value(newStreak),
+                      lastActivityDate: Value(today),
+                      highestStreak: Value(newHighest),
+                    ),
+                  );
+                } else if (today.difference(lastDate).inDays > 1 || stats.currentStreak == 0) {
+                  await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
+                    UserStatsTableCompanion(
+                      currentStreak: const Value(1),
+                      lastActivityDate: Value(today),
+                    ),
+                  );
+                }
+              } else {
+                await _db.into(_db.userStatsTable).insert(UserStatsTableCompanion.insert(
+                  profileUid: activeProfileUid,
+                  currentStreak: const Value(1),
+                  lastActivityDate: today,
+                ));
+              }
+            }
+          });
+          await _loadProgresso();
+          await syncWithCloud(); // Sincroniza logo após salvar localmente
         }
-      });
-      await _loadProgresso();
-      await syncWithCloud(); // Sincroniza logo após salvar localmente
+      }).timeout(const Duration(seconds: 4));
+    } catch (e) {
+      debugPrint('[ProgressoService] Error saving progresso: $e');
+      _progressoPorCapitulo[capituloId] = max(_progressoPorCapitulo[capituloId] ?? 0, novaPontuacao);
+      _totalXP += novaPontuacao;
+      notifyListeners();
     }
   }
 
@@ -248,54 +311,95 @@ class ProgressoService with ChangeNotifier {
           .get();
       debugPrint('[ProgressoService] Found ${profilesSnapshot.docs.length} profiles in Firestore');
 
-      await _db.transaction(() async {
-        for (var profileDoc in profilesSnapshot.docs) {
-          final profileUid = profileDoc.id;
-          
-          final profileData = profileDoc.data();
-          if (profileData.containsKey('currentStreak')) {
-            final existingStats = await (_db.select(_db.userStatsTable)..where((t) => t.profileUid.equals(profileUid))).getSingleOrNull();
-            if (existingStats == null) {
-              await _db.into(_db.userStatsTable).insert(UserStatsTableCompanion.insert(
-                profileUid: profileUid, 
-                lastActivityDate: DateTime.now(),
-                currentStreak: Value(profileData['currentStreak'] ?? 0),
-                highestStreak: Value(profileData['highestStreak'] ?? 0),
-              ));
-            }
-          }
+      final Map<String, List<Map<String, dynamic>>> fetchedProgress = {};
+      final Map<String, Map<String, dynamic>> fetchedProfiles = {};
 
-          final progressoSnapshot = await profileDoc.reference.collection('progresso').get();
-          for (var progDoc in progressoSnapshot.docs) {
-            final data = progDoc.data();
-            final capituloId = progDoc.id;
+      for (var profileDoc in profilesSnapshot.docs) {
+        final profileUid = profileDoc.id;
+        final profileData = profileDoc.data();
+        fetchedProfiles[profileUid] = profileData;
+
+        final progressoSnapshot = await profileDoc.reference.collection('progresso').get();
+        fetchedProgress[profileUid] = progressoSnapshot.docs.map((progDoc) {
+          final data = progDoc.data();
+          final capituloId = (data['capituloId'] ?? progDoc.id).toString();
+          return {
+            'capituloId': capituloId,
+            'pontuacao': (data['pontuacao'] as num?)?.toInt() ?? 0,
+            'tipo': (data['tipo'] ?? 'quiz').toString(),
+            'dataConclusao': data['dataConclusao'],
+          };
+        }).toList();
+      }
+
+      _cloudProgressCache
+        ..clear()
+        ..addAll(fetchedProgress);
+      _cloudProfileCache
+        ..clear()
+        ..addAll(fetchedProfiles);
+
+      if (kIsWeb) {
+        _applyCloudFallbackForActiveProfile();
+        debugPrint('[ProgressoService] restoreFromCloud completed (web cloud-only mode)');
+        return;
+      }
+
+      try {
+        await _db.transaction(() async {
+          for (var profileDoc in profilesSnapshot.docs) {
+            final profileUid = profileDoc.id;
             
-            final existing = await (_db.select(_db.progressoCapitulos)
-                ..where((t) => t.profileUid.equals(profileUid) & t.capituloId.equals(capituloId)))
-                .getSingleOrNull();
+            final profileData = profileDoc.data();
+            if (profileData.containsKey('currentStreak')) {
+              final existingStats = await (_db.select(_db.userStatsTable)..where((t) => t.profileUid.equals(profileUid))).getSingleOrNull();
+              if (existingStats == null) {
+                await _db.into(_db.userStatsTable).insert(UserStatsTableCompanion.insert(
+                  profileUid: profileUid, 
+                  lastActivityDate: DateTime.now(),
+                  currentStreak: Value(profileData['currentStreak'] ?? 0),
+                  highestStreak: Value(profileData['highestStreak'] ?? 0),
+                ));
+              }
+            }
 
-            final cloudPontuacao = data['pontuacao'] ?? 0;
+            final progressoSnapshot = await profileDoc.reference.collection('progresso').get();
+            for (var progDoc in progressoSnapshot.docs) {
+              final data = progDoc.data();
+              final capituloId = (data['capituloId'] ?? progDoc.id).toString();
+              
+              final existing = await (_db.select(_db.progressoCapitulos)
+                  ..where((t) => t.profileUid.equals(profileUid) & t.capituloId.equals(capituloId)))
+                  .getSingleOrNull();
 
-            if (existing == null) {
-              await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
-                capituloId: capituloId,
-                profileUid: profileUid,
-                pontuacao: cloudPontuacao,
-                tipo: Value(data['tipo'] ?? 'quiz'),
-                dataConclusao: (data['dataConclusao'] as Timestamp?)?.toDate() ?? DateTime.now(),
-              ));
-            } else if (existing.pontuacao < cloudPontuacao) {
-              await (_db.update(_db.progressoCapitulos)..where((t) => t.id.equals(existing.id))).write(
-                ProgressoCapitulosCompanion(
-                  pontuacao: Value(cloudPontuacao),
+              final cloudPontuacao = data['pontuacao'] ?? 0;
+
+              if (existing == null) {
+                await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                  capituloId: capituloId,
+                  profileUid: profileUid,
+                  pontuacao: cloudPontuacao,
                   tipo: Value(data['tipo'] ?? 'quiz'),
-                  dataConclusao: Value((data['dataConclusao'] as Timestamp?)?.toDate() ?? DateTime.now()),
-                ),
-              );
+                  dataConclusao: (data['dataConclusao'] as Timestamp?)?.toDate() ?? DateTime.now(),
+                ));
+              } else if (existing.pontuacao < cloudPontuacao) {
+                await (_db.update(_db.progressoCapitulos)..where((t) => t.id.equals(existing.id))).write(
+                  ProgressoCapitulosCompanion(
+                    pontuacao: Value(cloudPontuacao),
+                    tipo: Value(data['tipo'] ?? 'quiz'),
+                    dataConclusao: Value((data['dataConclusao'] as Timestamp?)?.toDate() ?? DateTime.now()),
+                  ),
+                );
+              }
             }
           }
-        }
-      });
+        });
+        debugPrint('[ProgressoService] Progress persisted to local DB');
+      } catch (dbError) {
+        debugPrint('[ProgressoService] Local DB persistence failed: $dbError, using Firestore data only');
+        _applyCloudFallbackForActiveProfile();
+        return;
+      }
       
       await _loadProgresso();
       debugPrint('[ProgressoService] restoreFromCloud completed successfully');
@@ -309,6 +413,42 @@ class ProgressoService with ChangeNotifier {
     final activeProfile = _profileProvider?.activeProfile;
     if (user == null || activeProfile == null || user.isAnonymous) return;
     try {
+      if (kIsWeb) {
+        final batch = _firestore.batch();
+        final progressRef = _firestore
+            .collection('users')
+            .doc(user.uid)
+            .collection('profiles')
+            .doc(activeProfile.uid)
+            .collection('progresso');
+
+        for (final entry in _progressoPorCapitulo.entries) {
+          final docRef = progressRef.doc(entry.key);
+          batch.set(docRef, {
+            'pontuacao': entry.value,
+            'dataConclusao': FieldValue.serverTimestamp(),
+            'capituloId': entry.key,
+            'tipo': 'quiz',
+          }, SetOptions(merge: true));
+        }
+
+        final profileRef = _firestore.collection('users').doc(user.uid).collection('profiles').doc(activeProfile.uid);
+        batch.set(profileRef, {
+          'totalXP': _totalXP,
+          'totalPontos': totalPontos,
+          'totalDiamantes': _totalDiamantes,
+          'currentStreak': _currentStreak,
+          'nome': activeProfile.nome,
+          'lastSync': FieldValue.serverTimestamp(),
+          'avatarAssetPath': activeProfile.avatarAssetPath,
+          'isMainProfile': activeProfile.isMainProfile,
+        }, SetOptions(merge: true));
+
+        // Adiciona Timeout de 5 segundos no Web para evitar "congelamento" (UI Thread Blocked)
+        await batch.commit().timeout(const Duration(seconds: 5));
+        return;
+      }
+
       final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfile.uid));
       final localProgressos = await query.get();
 
@@ -332,7 +472,7 @@ class ProgressoService with ChangeNotifier {
         'lastSync': FieldValue.serverTimestamp(),
         'avatarAssetPath': activeProfile.avatarAssetPath
       }, SetOptions(merge: true));
-      await batch.commit();
+      await batch.commit().timeout(const Duration(seconds: 5));
       
       await _rankingService.updateProfileRanking(activeProfile, totalStarsTotal);
     } catch (e) {
@@ -362,17 +502,29 @@ class ProgressoService with ChangeNotifier {
 
   Future<Map<String, int>> getProgresso(String disciplinaId) async {
     if (_profileProvider?.activeProfile == null) return {};
+    if (kIsWeb) {
+      return Map<String, int>.fromEntries(
+        _progressoPorCapitulo.entries.where((e) => e.key.startsWith(disciplinaId)),
+      );
+    }
+
     final activeProfileUid = _profileProvider!.activeProfile!.uid;
 
-    final query = _db.select(_db.progressoCapitulos)
-      ..where((t) => t.profileUid.equals(activeProfileUid) & t.capituloId.like('$disciplinaId%'));
-    final progressos = await query.get();
+    try {
+      final query = _db.select(_db.progressoCapitulos)
+        ..where((t) => t.profileUid.equals(activeProfileUid) & t.capituloId.like('$disciplinaId%'));
+      final progressos = await query.get();
 
-    final Map<String, int> progressoMap = {};
-    for (var p in progressos) {
-      progressoMap[p.capituloId] = p.pontuacao;
+      final Map<String, int> progressoMap = {};
+      for (var p in progressos) {
+        progressoMap[p.capituloId] = p.pontuacao;
+      }
+      return progressoMap;
+    } catch (_) {
+      return Map<String, int>.fromEntries(
+        _progressoPorCapitulo.entries.where((e) => e.key.startsWith(disciplinaId)),
+      );
     }
-    return progressoMap;
   }
 
   int countSpecialAchievements(String type) {

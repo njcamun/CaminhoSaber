@@ -79,10 +79,9 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
-    _audioPlayer.stop();
-    _audioPlayer.dispose();
     _timer?.cancel();
     _timerGlobal?.cancel();
+    _audioPlayer.dispose();
     super.dispose();
   }
 
@@ -257,7 +256,10 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   }
 
   Future<void> _mostrarResultadoFinal() async {
-    _audioPlayer.stop();
+    try {
+      await _audioPlayer.stop();
+    } catch (_) {}
+
     _isMusicPlaying = false;
     _timer?.cancel();
     _timerGlobal?.cancel();

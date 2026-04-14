@@ -111,8 +111,9 @@ class _CapitulosScreenState extends State<CapitulosScreen> {
     
     // Mapeia score para estrelas (escala 1-3)
     int stars = 0;
-    if (score >= 15) stars = 3;
-    else if (score >= 10) stars = 2;
+    if (score >= 15) {
+      stars = 3;
+    } else if (score >= 10) stars = 2;
     else if (score >= 5) stars = 1;
 
     if(isCompleted) {

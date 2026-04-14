@@ -53,16 +53,16 @@ class DictionaryService with ChangeNotifier {
 
   Future<DictionaryWord?> _fetchRandomOnlineWord() async {
     final List<String> sementes = [
-      "Efêmero", "Resiliência", "Altruísmo", "Eloquência", "Inerente", 
-      "Paradigma", "Sintonia", "Legado", "Ínclito", "Peculiar",
-      "Perspicácia", "Plenitude", "Serenidade", "Vicissitude", "Abnegação"
+      "resilience", "altruism", "eloquence", "inherent",
+      "paradigm", "legacy", "peculiar", "perspicacity",
+      "serenity", "abnegation", "ubiquity", "enthusiasm"
     ];
     
     final semente = sementes[Random().nextInt(sementes.length)];
     
     try {
       final response = await http.get(
-        Uri.parse('https://api.dictionaryapi.dev/api/v2/entries/en/$semente')
+        Uri.https('api.dictionaryapi.dev', '/api/v2/entries/en/$semente')
       );
 
       if (response.statusCode == 200) {

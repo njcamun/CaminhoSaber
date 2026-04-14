@@ -80,8 +80,13 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
 
   void _playSound(String fileName) async {
     if (_audioHabilitado) {
-      await _audioPlayer.stop();
-      await _audioPlayer.play(AssetSource('sounds/$fileName'));
+      try {
+        final player = AudioPlayer();
+        await player.play(AssetSource('sounds/$fileName'));
+        player.onPlayerComplete.listen((_) {
+          player.dispose();
+        });
+      } catch (_) {}
     }
   }
 
