@@ -255,7 +255,12 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     Future.delayed(const Duration(milliseconds: 1200), () => _passarParaProximaPergunta());
   }
 
+  bool _quizFinalizado = false;
+
   Future<void> _mostrarResultadoFinal() async {
+    if (_quizFinalizado) return;
+    _quizFinalizado = true;
+
     try {
       await _audioPlayer.stop();
     } catch (_) {}
@@ -289,7 +294,12 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     final progressoService = Provider.of<ProgressoService>(context, listen: false);
     final String capituloId = '${widget.disciplinaId}_capitulo_${widget.capituloIndex}';
     
-    await progressoService.saveProgresso(capituloId, pontuacaoFinal);
+    try {
+      // Grava o progresso mas com limite de tempo (timeout) para evitar travamento na web
+      await progressoService.saveProgresso(capituloId, pontuacaoFinal).timeout(const Duration(seconds: 4));
+    } catch (e) {
+      debugPrint('Erro não crítico ao guardar o progresso final do quiz: $e');
+    }
 
     if (!mounted) return;
     Navigator.of(context).pushReplacement(

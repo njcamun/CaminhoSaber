@@ -321,16 +321,16 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     final progressoService = Provider.of<ProgressoService>(context, listen: false);
     
     try {
-      await progressoService.addArcadePoints(_pontos);
+      await progressoService.addArcadePoints(_pontos).timeout(const Duration(seconds: 4));
     } catch (e) {
-      debugPrint('Erro salvar arcade: $e');
+      debugPrint('Erro não crítico salvar arcade: $e');
     }
     
     bool isNewRecord = false;
     try {
-      isNewRecord = await progressoService.updateArcadeRecord(widget.disciplinaId, _pontos);
+      isNewRecord = await progressoService.updateArcadeRecord(widget.disciplinaId, _pontos).timeout(const Duration(seconds: 4));
     } catch (e) {
-      debugPrint('Erro update recorde arcade: $e');
+      debugPrint('Erro não crítico update recorde arcade: $e');
     }
 
     if (!mounted) return;
