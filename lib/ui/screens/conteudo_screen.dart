@@ -83,23 +83,28 @@ class _ConteudoScreenState extends State<ConteudoScreen> {
                           padding: EdgeInsets.symmetric(vertical: 16.0),
                           child: Divider(thickness: 1.5),
                         ),
-                        Html(
-                          data: widget.conteudo,
-                          style: {
-                            "body": Style(
-                              fontSize: FontSize(16.0),
-                              lineHeight: const LineHeight(1.5),
-                              color: Colors.black87,
-                              margin: Margins.zero,
-                              padding: HtmlPaddings.zero,
-                            ),
-                            "p": Style(margin: Margins.only(bottom: 12)),
-                            "strong": Style(color: Colors.blue.shade900, fontWeight: FontWeight.bold),
-                            "h1": Style(fontSize: FontSize(22.0), fontWeight: FontWeight.bold, margin: Margins.only(top: 10, bottom: 10)),
-                            "h2": Style(fontSize: FontSize(20.0), fontWeight: FontWeight.bold, margin: Margins.only(top: 8, bottom: 8)),
-                            "li": Style(margin: Margins.only(bottom: 6)),
-                          },
-                        ),
+                        kIsWeb 
+                        ? SelectableText(
+                            widget.conteudo.replaceAll(RegExp(r'<[^>]*>'), ''),
+                            style: const TextStyle(fontSize: 16, height: 1.5, color: Colors.black87),
+                          )
+                        : Html(
+                            data: widget.conteudo,
+                            style: {
+                              "body": Style(
+                                fontSize: FontSize(16.0),
+                                lineHeight: const LineHeight(1.5),
+                                color: Colors.black87,
+                                margin: Margins.zero,
+                                padding: HtmlPaddings.zero,
+                              ),
+                              "p": Style(margin: Margins.only(bottom: 12)),
+                              "strong": Style(color: Colors.blue.shade900, fontWeight: FontWeight.bold),
+                              "h1": Style(fontSize: FontSize(22.0), fontWeight: FontWeight.bold, margin: Margins.only(top: 10, bottom: 10)),
+                              "h2": Style(fontSize: FontSize(20.0), fontWeight: FontWeight.bold, margin: Margins.only(top: 8, bottom: 8)),
+                              "li": Style(margin: Margins.only(bottom: 6)),
+                            },
+                          ),
                       ],
                     ),
                   ),

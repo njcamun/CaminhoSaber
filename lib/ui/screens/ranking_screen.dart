@@ -255,7 +255,7 @@ class RankingScreen extends StatelessWidget {
           
           // Efeito de partículas/brilho À FRENTE do cartão APENAS para o Top 1 (Líder)
           // Colocado de forma menor e alinhado ao badge do líder
-          if (rank == 1)
+          if (rank == 1 && !kIsWeb)
             Positioned(
               left: 5,
               top: 5,

@@ -33,14 +33,16 @@ class StreakFire extends StatelessWidget {
             SizedBox(
               width: 50,
               height: 50,
-              child: Lottie.asset(
-                'assets/animations/fire.json',
-                animate: isActive,
-                repeat: true,
-                errorBuilder: (context, error, stackTrace) {
-                  return const Icon(Icons.local_fire_department_rounded, color: Colors.orange, size: 30);
-                },
-              ),
+              child: kIsWeb 
+                ? Icon(Icons.local_fire_department_rounded, color: isActive ? Colors.orange : Colors.grey, size: 35)
+                : Lottie.asset(
+                    'assets/animations/fire.json',
+                    animate: isActive,
+                    repeat: true,
+                    errorBuilder: (context, error, stackTrace) {
+                      return const Icon(Icons.local_fire_department_rounded, color: Colors.orange, size: 30);
+                    },
+                  ),
             ),
             Positioned(
               bottom: 2,

@@ -345,12 +345,15 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Lottie.asset(
-              isNewRecord ? 'assets/animations/sucesso.json' : 'assets/animations/GameOver.json', 
-              width: 180, 
-              repeat: isNewRecord,
-              errorBuilder: (context, error, stackTrace) => Icon(isNewRecord ? Icons.emoji_events : Icons.gamepad, size: 80, color: Colors.grey),
-            ),
+            if (!kIsWeb)
+              Lottie.asset(
+                isNewRecord ? 'assets/animations/sucesso.json' : 'assets/animations/GameOver.json', 
+                width: 180, 
+                repeat: isNewRecord,
+                errorBuilder: (context, error, stackTrace) => Icon(isNewRecord ? Icons.emoji_events : Icons.gamepad, size: 80, color: Colors.grey),
+              )
+            else
+              Icon(isNewRecord ? Icons.emoji_events : Icons.gamepad, size: 80, color: isNewRecord ? Colors.green : Colors.red),
             const SizedBox(height: 10),
             Text(isNewRecord ? "NOVO RECORDE!" : titulo, 
                 style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: isNewRecord ? Colors.green : Colors.red)),

@@ -173,13 +173,16 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
                         padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
                         child: Column(
                           children: [
-                            Lottie.asset(
-                              sucesso ? 'assets/animations/sucesso.json' : 'assets/animations/falha.json',
-                              width: 140,
-                              height: 140,
-                              repeat: true,
-                              errorBuilder: (context, error, stackTrace) => Icon(sucesso ? Icons.check_circle : Icons.error, size: 100, color: sucesso ? Colors.green : Colors.orange),
-                            ),
+                            if (!kIsWeb)
+                              Lottie.asset(
+                                sucesso ? 'assets/animations/sucesso.json' : 'assets/animations/falha.json',
+                                width: 140,
+                                height: 140,
+                                repeat: true,
+                                errorBuilder: (context, error, stackTrace) => Icon(sucesso ? Icons.check_circle : Icons.error, size: 100, color: sucesso ? Colors.green : Colors.orange),
+                              )
+                            else
+                              Icon(sucesso ? Icons.check_circle : Icons.error, size: 100, color: sucesso ? Colors.green : Colors.orange),
                             const SizedBox(height: 10),
                             Text(
                               sucesso ? 'PARABÉNS!' : 'QUASE LÁ!',
