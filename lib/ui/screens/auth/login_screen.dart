@@ -173,6 +173,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         'assets/animations/google.json',
                         height: 100, 
                         fit: BoxFit.contain,
+                        errorBuilder: (context, error, stackTrace) => Image.asset('assets/icons/google_icon.png', height: 50),
                       ),
                     ),
                   ],

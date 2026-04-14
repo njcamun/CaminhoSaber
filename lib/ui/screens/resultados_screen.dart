@@ -170,6 +170,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
                           child: Lottie.asset(
                             'assets/animations/festejo.json',
                             fit: BoxFit.cover,
+                            errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
                           ),
                         ),
                       Padding(
@@ -181,6 +182,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
                               width: 140,
                               height: 140,
                               repeat: true,
+                              errorBuilder: (context, error, stackTrace) => Icon(sucesso ? Icons.check_circle : Icons.error, size: 100, color: sucesso ? Colors.green : Colors.orange),
                             ),
                             const SizedBox(height: 10),
                             Text(

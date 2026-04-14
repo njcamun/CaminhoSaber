@@ -55,19 +55,21 @@ class ProgressoService with ChangeNotifier {
     _profileProvider?.removeListener(_onProfileChanged);
     _profileProvider = newProvider;
     _profileProvider?.addListener(_onProfileChanged);
+    
+    // Use a microtask to avoid calling notifyListeners during the ProxyProvider update phase
+    scheduleMicrotask(() => _loadProgresso());
   }
 
   void _onProfileChanged() {
     _loadProgresso();
   }
 
-  void loadProgressoExternally() => _loadProgresso();
-
   Future<void> _loadProgresso() async {
     if (_isInitLoading) return;
     
     try {
-      if (_profileProvider?.activeProfile == null) {
+      final profile = _profileProvider;
+      if (profile == null || profile.activeProfile == null) {
         _progressoPorCapitulo.clear();
         _totalXP = 0;
         _totalDiamantes = 0;
@@ -76,8 +78,14 @@ class ProgressoService with ChangeNotifier {
         return;
       }
 
+      if (profile.pendingRestore && !profile.isLoading) {
+        profile.markRestoreDone();
+        // Restore in background to avoid blocking
+        unawaited(restoreFromCloud());
+      }
+
       _isInitLoading = true;
-      final activeProfileUid = _profileProvider!.activeProfile!.uid;
+      final activeProfileUid = profile.activeProfile!.uid;
 
       List<ProgressoCapitulo> todosProgressos = [];
       try {
@@ -142,12 +150,9 @@ class ProgressoService with ChangeNotifier {
             currentStreak: Value(_currentStreak),
           ),
         );
-        
-        // Notifica o ProfileProvider para recarregar o perfil ativo do Drift
-        await _profileProvider?.refreshActiveProfile();
       }
       
-      notifyListeners();
+      scheduleMicrotask(() => notifyListeners());
     } catch (e, stack) {
       debugPrint('[ProgressoService] FATAL ERROR in _loadProgresso: $e\n$stack');
     } finally {

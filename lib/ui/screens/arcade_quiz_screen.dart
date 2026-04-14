@@ -345,7 +345,8 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
             Lottie.asset(
               isNewRecord ? 'assets/animations/sucesso.json' : 'assets/animations/GameOver.json', 
               width: 180, 
-              repeat: isNewRecord
+              repeat: isNewRecord,
+              errorBuilder: (context, error, stackTrace) => Icon(isNewRecord ? Icons.emoji_events : Icons.gamepad, size: 80, color: Colors.grey),
             ),
             const SizedBox(height: 10),
             Text(isNewRecord ? "NOVO RECORDE!" : titulo, 
@@ -528,9 +529,13 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                     child: Stack(
                       alignment: Alignment.center,
                       children: [
-                        if (_feedbackController.isAnimating)
                           IgnorePointer(
-                            child: Lottie.asset('assets/animations/festejo.json', height: 100, repeat: false),
+                            child: Lottie.asset(
+                              'assets/animations/festejo.json', 
+                              height: 100, 
+                              repeat: false,
+                              errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
+                            ),
                           ),
                         ScaleTransition(
                           scale: _feedbackAnimation,

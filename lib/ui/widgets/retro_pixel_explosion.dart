@@ -98,16 +98,22 @@ class PixelParticle {
 }
 
 void showPixelExplosion(BuildContext context, Offset position, Color color) {
-  final overlay = Overlay.of(context);
-  late OverlayEntry entry;
-  entry = OverlayEntry(
-    builder: (context) => PixelExplosion(
-      position: position,
-      color: color,
-      onComplete: () {
-        if (entry.mounted) entry.remove();
-      },
-    ),
-  );
-  overlay.insert(entry);
+  try {
+    final overlay = Overlay.maybeOf(context);
+    if (overlay == null) return;
+    
+    late OverlayEntry entry;
+    entry = OverlayEntry(
+      builder: (context) => PixelExplosion(
+        position: position,
+        color: color,
+        onComplete: () {
+          if (entry.mounted) entry.remove();
+        },
+      ),
+    );
+    overlay.insert(entry);
+  } catch (e) {
+    debugPrint('Error showing pixel explosion: $e');
+  }
 }

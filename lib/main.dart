@@ -71,17 +71,6 @@ void main() async {
           update: (context, profile, previous) {
             final service = previous ?? ProgressoService(driftDb, null);
             service.updateProvider(profile);
-            
-            if (profile.activeProfile != null && !profile.isLoading) {
-              Future.microtask(() {
-                if (profile.pendingRestore) {
-                  profile.markRestoreDone();
-                  service.restoreFromCloud();
-                } else {
-                  service.loadProgressoExternally();
-                }
-              });
-            }
             return service;
           },
         ),

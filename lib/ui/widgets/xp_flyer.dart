@@ -102,15 +102,21 @@ class _XPFlyerState extends State<XPFlyer> with SingleTickerProviderStateMixin {
 }
 
 void showXPFlyer(BuildContext context, Offset position) {
-  final overlay = Overlay.of(context);
-  late OverlayEntry entry;
-  entry = OverlayEntry(
-    builder: (context) => XPFlyer(
-      startPos: position,
-      onComplete: () {
-        if (entry.mounted) entry.remove();
-      },
-    ),
-  );
-  overlay.insert(entry);
+  try {
+    final overlay = Overlay.maybeOf(context);
+    if (overlay == null) return;
+    
+    late OverlayEntry entry;
+    entry = OverlayEntry(
+      builder: (context) => XPFlyer(
+        startPos: position,
+        onComplete: () {
+          if (entry.mounted) entry.remove();
+        },
+      ),
+    );
+    overlay.insert(entry);
+  } catch (e) {
+    debugPrint('Error showing XP flyer: $e');
+  }
 }

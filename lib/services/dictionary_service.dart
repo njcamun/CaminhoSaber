@@ -22,9 +22,14 @@ class DictionaryService with ChangeNotifier {
   }
 
   Future<void> _initTts() async {
-    await _tts.setLanguage("pt-PT");
-    await _tts.setPitch(1.0);
-    await _tts.setSpeechRate(0.5);
+    if (kIsWeb) return; // Desativa TTS no Web temporariamente para isolar crash
+    try {
+      await _tts.setLanguage("pt-PT");
+      await _tts.setPitch(1.0);
+      await _tts.setSpeechRate(0.5);
+    } catch (e) {
+      debugPrint('TTS Init error: $e');
+    }
   }
 
   Future<void> loadDictionary({bool force = false}) async {

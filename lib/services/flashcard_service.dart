@@ -14,7 +14,9 @@ class FlashcardService with ChangeNotifier {
   FlashcardService(this._db, ProfileProvider? profileProvider);
 
   void updateProvider(ProfileProvider newProvider) {
+    if (_profileProvider == newProvider) return;
     _profileProvider = newProvider;
+    scheduleMicrotask(() => notifyListeners());
   }
 
   Future<List<UserFlashcard>> loadFlashcardsForProfile(String profileUid) async {
