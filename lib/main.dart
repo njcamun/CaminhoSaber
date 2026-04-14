@@ -17,11 +17,19 @@ import 'firebase_options.dart';
 
 import 'package:caminho_do_saber/database/database.dart';
 
+final GlobalKey<ScaffoldMessengerState> globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  // Capturador Global de Erros para facilitar o debug em Web
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.presentError(details);
+    _showErrorOverlay(details.exceptionAsString());
+  };
 
   // Garantir apenas orientação vertical
   await SystemChrome.setPreferredOrientations([
@@ -73,6 +81,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Caminho do Saber',
           debugShowCheckedModeBanner: false,
+          scaffoldMessengerKey: globalMessengerKey,
           theme: themeProvider.themeData,
           home: user != null ? const HomeScreen() : const LoginScreen(),
           builder: (context, child) {
@@ -90,6 +99,19 @@ class MyApp extends StatelessWidget {
           },
         );
       },
+    );
+  }
+}
+
+void _showErrorOverlay(String error) {
+  if (globalMessengerKey.currentState != null) {
+    globalMessengerKey.currentState!.showSnackBar(
+      SnackBar(
+        content: Text('ERRO CAPTURADO:\n$error', style: const TextStyle(fontSize: 12)),
+        backgroundColor: Colors.red.shade900,
+        duration: const Duration(seconds: 10),
+        action: SnackBarAction(label: 'OK', textColor: Colors.white, onPressed: () {}),
+      ),
     );
   }
 }
