@@ -53,8 +53,14 @@ void main() async {
         ChangeNotifierProxyProvider<ProfileProvider, ProgressoService>(
           create: (context) => ProgressoService(driftDb, context.read<ProfileProvider>()),
           update: (context, profile, previous) {
-            final service = previous!..updateProvider(profile);
-            profile.setProgressoService(service); // Vincula o serviço ao provider de perfil
+            final service = previous ?? ProgressoService(driftDb, profile);
+            service.updateProvider(profile);
+            
+            // Side effect seguro agendado para após a fase de construção
+            Future.microtask(() {
+              profile.setProgressoService(service);
+            });
+
             return service;
           },
         ),

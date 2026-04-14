@@ -52,6 +52,8 @@ class ProgressoService with ChangeNotifier {
     }
   }
 
+  bool _isInitLoading = false;
+
   void updateProvider(ProfileProvider newProvider) {
     _profileProvider?.removeListener(_onProfileChanged);
     _profileProvider = newProvider;
@@ -64,6 +66,8 @@ class ProgressoService with ChangeNotifier {
   }
 
   Future<void> _loadProgresso() async {
+    if (_isInitLoading) return;
+    
     if (_profileProvider?.activeProfile == null) {
       _progressoPorCapitulo.clear();
       _totalXP = 0;
@@ -73,6 +77,7 @@ class ProgressoService with ChangeNotifier {
       return;
     }
 
+    _isInitLoading = true;
     final activeProfileUid = _profileProvider!.activeProfile!.uid;
 
     List<ProgressoCapitulo> todosProgressos = [];
@@ -81,8 +86,11 @@ class ProgressoService with ChangeNotifier {
       todosProgressos = await query.get();
     } catch (dbError) {
       debugPrint('[ProgressoService] _loadProgresso local DB failed: $dbError');
+      _isInitLoading = false;
       _applyCloudFallbackForActiveProfile();
       return;
+    } finally {
+      _isInitLoading = false;
     }
 
     // On web, DB can be unavailable or empty. If we already restored from Firestore,

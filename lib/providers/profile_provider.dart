@@ -34,6 +34,7 @@ class ProfileProvider with ChangeNotifier {
   }
 
   void setProgressoService(ProgressoService progressoService) {
+    if (_progressoService == progressoService) return;
     _progressoService = progressoService;
     _tryRestore();
   }

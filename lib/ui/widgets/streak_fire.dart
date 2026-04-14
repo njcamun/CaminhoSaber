@@ -34,7 +34,7 @@ class StreakFire extends StatelessWidget {
               width: 50,
               height: 50,
               child: Lottie.asset(
-                'assets/animations/streak_fire.json',
+                'assets/animations/fire.json',
                 animate: isActive,
                 repeat: true,
                 errorBuilder: (context, error, stackTrace) {

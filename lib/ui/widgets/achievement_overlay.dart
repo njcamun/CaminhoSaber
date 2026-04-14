@@ -122,7 +122,7 @@ class _AchievementWidgetState extends State<_AchievementWidget> with SingleTicke
                     alignment: Alignment.center,
                     children: [
                       Lottie.asset(
-                        widget.isDiamond ? 'assets/animations/diamante_brilho.json' : 'assets/animations/estrela_brilho.json',
+                        widget.isDiamond ? 'assets/animations/Diamond.json' : 'assets/animations/Trophy.json',
                         width: 150,
                         height: 150,
                         repeat: true,
