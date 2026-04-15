@@ -28,16 +28,12 @@ class ProfileProvider with ChangeNotifier {
   Profile? get activeProfile => _activeProfile;
   List<Profile> get allProfiles => _allProfiles;
   bool get isLoading => _isLoading;
-  bool get pendingRestore => _pendingRestore;
-
-  void markRestoreDone() => _pendingRestore = false;
 
   ProfileProvider(this._db) {
     _authSubscription = _authService.authStateChanges.listen(_onAuthStateChanged);
   }
 
   void setProgressoService(ProgressoService progressoService) {
-    if (_progressoService == progressoService) return;
     _progressoService = progressoService;
     _tryRestore();
   }
@@ -128,33 +124,18 @@ class ProfileProvider with ChangeNotifier {
           debugPrint('[ProfileProvider] Firestore profiles found: ${querySnapshot.docs.length}');
           if (kIsWeb) {
             _allProfiles = querySnapshot.docs.map((doc) {
-              try {
-                final data = doc.data();
-                return Profile(
-                  id: -1,
-                  uid: doc.id,
-                  parentUid: firebaseUser.uid,
-                  nome: (data['nome'] as String?) ?? 'Perfil',
-                  avatarAssetPath: _validateAvatarPath(data['avatarAssetPath'] as String?),
-                  isMainProfile: (data['isMainProfile'] as bool?) ?? (doc.id == firebaseUser.uid),
-                  totalPontos: (data['totalPontos'] as num?)?.toInt() ?? 0,
-                  totalDiamantes: (data['totalDiamantes'] as num?)?.toInt() ?? 0,
-                  currentStreak: (data['currentStreak'] as num?)?.toInt() ?? 0,
-                );
-              } catch (e) {
-                debugPrint('Error parsing profile ${doc.id}: $e');
-                return Profile(
-                  id: -1,
-                  uid: doc.id,
-                  parentUid: firebaseUser.uid,
-                  nome: 'Erro Perfil',
-                  avatarAssetPath: 'assets/avatars/default.png',
-                  isMainProfile: false,
-                  totalPontos: 0,
-                  totalDiamantes: 0,
-                  currentStreak: 0,
-                );
-              }
+              final data = doc.data();
+              return Profile(
+                id: -1,
+                uid: doc.id,
+                parentUid: firebaseUser.uid,
+                nome: (data['nome'] as String?) ?? 'Perfil',
+                avatarAssetPath: _validateAvatarPath(data['avatarAssetPath'] as String?),
+                isMainProfile: (data['isMainProfile'] as bool?) ?? (doc.id == firebaseUser.uid),
+                totalPontos: (data['totalPontos'] as num?)?.toInt() ?? 0,
+                totalDiamantes: (data['totalDiamantes'] as num?)?.toInt() ?? 0,
+                currentStreak: (data['currentStreak'] as num?)?.toInt() ?? 0,
+              );
             }).toList();
 
             if (_allProfiles.isEmpty) {

@@ -39,7 +39,6 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   int _perguntaAtualIndex = 0;
   bool _respostaSelecionada = false;
   String? _respostaSelecionadaTexto;
-  int _sessionId = 0;
 
   final AudioPlayer _audioPlayer = AudioPlayer();
   bool _isMusicPlaying = false;
@@ -69,7 +68,6 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
-    _sessionId++;
     _playQuizMusic();
     _perguntasBaralhadas = List.from(widget.perguntas)..shuffle();
     _prepararPerguntaAtual();
@@ -278,7 +276,6 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   Future<void> _mostrarResultadoFinal() async {
     if (_quizFinalizado) return;
     _quizFinalizado = true;
-    _sessionId++; // Invalida callbacks pendentes
 
     try {
       await _audioPlayer.stop();
@@ -313,31 +310,34 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     final progressoService = Provider.of<ProgressoService>(context, listen: false);
     final String capituloId = '${widget.disciplinaId}_capitulo_${widget.capituloIndex}';
     
-    try {
-      // Grava o progresso mas com limite de tempo (timeout) para evitar travamento na web
-      await progressoService.saveProgresso(capituloId, pontuacaoFinal).timeout(const Duration(seconds: 4));
-    } catch (e) {
-      debugPrint('Erro não crítico ao guardar o progresso final do quiz: $e');
+    // NAVEGAÇÃO IMEDIATA (Não bloqueante)
+    // Passamos todos os dados necessários para o ecrã de resultados.
+    if (mounted) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (context) => ResultadosScreen(
+            pontuacaoFinal: pontuacaoFinal,
+            totalPontosPossiveis: totalPontosPossiveis,
+            estrelas: estrelas,
+            respostasUtilizador: _respostasUtilizador,
+            desbloqueadoProximoNivel: desbloqueado,
+            disciplinaId: widget.disciplinaId,
+            capituloIndex: widget.capituloIndex,
+            flashCards: widget.flashCards,
+            penalidadeAjudas: _penalidadeAjudas,
+            penalidadeTempo: _penalidadeTempo,
+            pontosBase: _pontosBase,
+            bonusTempo: _bonusTempo,
+          ),
+        ),
+      );
     }
 
-    if (!mounted) return;
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (context) => ResultadosScreen(
-          pontuacaoFinal: pontuacaoFinal,
-          totalPontosPossiveis: totalPontosPossiveis,
-          estrelas: estrelas,
-          respostasUtilizador: _respostasUtilizador,
-          desbloqueadoProximoNivel: desbloqueado,
-          disciplinaId: widget.disciplinaId,
-          capituloIndex: widget.capituloIndex,
-          flashCards: widget.flashCards,
-          penalidadeAjudas: _penalidadeAjudas,
-          penalidadeTempo: _penalidadeTempo,
-          pontosBase: _pontosBase,
-          bonusTempo: _bonusTempo,
-        ),
-      ),
+    // EFEITO COLATERAL (Background): Grava o progresso sem travar a UI.
+    unawaited(
+      progressoService.saveProgresso(capituloId, pontuacaoFinal)
+        .timeout(const Duration(seconds: 8))
+        .catchError((e) => debugPrint('Sync background error: $e'))
     );
   }
 

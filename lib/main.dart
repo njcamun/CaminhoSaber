@@ -14,94 +14,58 @@ import 'package:caminho_do_saber/ui/screens/home_screen.dart';
 import 'package:caminho_do_saber/ui/screens/auth/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-import 'dart:async';
-import 'dart:ui';
 
 import 'package:caminho_do_saber/database/database.dart';
 
 final GlobalKey<ScaffoldMessengerState> globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
 
 void main() async {
-  runZonedGuarded(() async {
-    WidgetsFlutterBinding.ensureInitialized();
-    
-    try {
-      await Firebase.initializeApp(
-        options: DefaultFirebaseOptions.currentPlatform,
-      );
-    } catch (e) {
-      debugPrint('Firebase initialization error: $e');
-    }
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
-    // Capturador Global de Erros para facilitar o debug em Web
-    FlutterError.onError = (FlutterErrorDetails details) {
-      FlutterError.presentError(details);
-      _showErrorOverlay('Flutter Error: ${details.exceptionAsString()}');
-    };
+  // Capturador Global de Erros para facilitar o debug em Web
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.presentError(details);
+    _showErrorOverlay(details.exceptionAsString());
+  };
 
-    PlatformDispatcher.instance.onError = (error, stack) {
-      debugPrint('Global Error: $error\n$stack');
-      _showErrorOverlay('Global Error: $error');
-      return true;
-    };
+  // Garantir apenas orientação vertical
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
 
-    /* try {
-      await SystemChrome.setPreferredOrientations([
-        DeviceOrientation.portraitUp,
-        DeviceOrientation.portraitDown,
-      ]);
-    } catch (e) {
-      debugPrint('Orientation error: $e');
-    } */
+  final driftDb = AppDatabase();
 
-    debugPrint('Initializing Drift...');
-    final driftDb = AppDatabase();
-    debugPrint('Drift DB instance created.');
-
-    runApp(
-      MultiProvider(
-        providers: [
-          Provider(create: (_) { debugPrint('Creating AuthService...'); return AuthService(); }),
-          Provider.value(value: driftDb),
-          ChangeNotifierProvider(create: (_) { debugPrint('Creating ThemeProvider...'); return ThemeProvider(); }),
-          ChangeNotifierProvider(create: (_) { debugPrint('Creating ProfileProvider...'); return ProfileProvider(driftDb); }),
-          Provider(create: (_) => DisciplinaService()),
-          Provider(create: (_) => RankingService()),
-          ChangeNotifierProvider(create: (_) => DictionaryService()),
-          ChangeNotifierProvider(create: (_) => PomodoroProvider()),
-          ChangeNotifierProxyProvider<ProfileProvider, ProgressoService>(
-            create: (context) {
-               debugPrint('Creating ProgressoService...');
-               return ProgressoService(driftDb, null);
-            },
-            update: (context, profile, previous) {
-              debugPrint('Updating ProgressoService Proxy...');
-              final service = previous ?? ProgressoService(driftDb, null);
-              service.updateProvider(profile);
-              return service;
-            },
-          ),
-          ChangeNotifierProxyProvider<ProfileProvider, FlashcardService>(
-            create: (context) {
-              debugPrint('Creating FlashcardService...');
-              return FlashcardService(driftDb, null);
-            },
-            update: (context, profile, previous) {
-               debugPrint('Updating FlashcardService Proxy...');
-               final service = previous ?? FlashcardService(driftDb, null);
-               service.updateProvider(profile);
-               return service;
-            },
-          ),
-        ],
-        child: const MyApp(),
-      ),
-    );
-    debugPrint('runApp executed.');
-  }, (error, stack) {
-    debugPrint('ZONED ERROR: $error\n$stack');
-    _showErrorOverlay('Zoned Error: $error');
-  });
+  runApp(
+    MultiProvider(
+      providers: [
+        Provider(create: (_) => AuthService()),
+        Provider.value(value: driftDb),
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (_) => ProfileProvider(driftDb)),
+        Provider(create: (_) => DisciplinaService()),
+        Provider(create: (_) => RankingService()),
+        ChangeNotifierProvider(create: (_) => DictionaryService()),
+        ChangeNotifierProvider(create: (_) => PomodoroProvider()),
+        ChangeNotifierProxyProvider<ProfileProvider, ProgressoService>(
+          create: (context) => ProgressoService(driftDb, context.read<ProfileProvider>()),
+          update: (context, profile, previous) {
+            final service = previous!..updateProvider(profile);
+            profile.setProgressoService(service); // Vincula o serviço ao provider de perfil
+            return service;
+          },
+        ),
+        ChangeNotifierProxyProvider<ProfileProvider, FlashcardService>(
+          create: (context) => FlashcardService(driftDb, context.read<ProfileProvider>()),
+          update: (context, profile, previous) => previous!..updateProvider(profile),
+        ),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -143,7 +107,7 @@ void _showErrorOverlay(String error) {
   if (globalMessengerKey.currentState != null) {
     globalMessengerKey.currentState!.showSnackBar(
       SnackBar(
-        content: Text('ERRO V2 CAPTURADO:\n$error', style: const TextStyle(fontSize: 12)),
+        content: Text('ERRO CAPTURADO:\n$error', style: const TextStyle(fontSize: 12)),
         backgroundColor: Colors.red.shade900,
         duration: const Duration(seconds: 10),
         action: SnackBarAction(label: 'OK', textColor: Colors.white, onPressed: () {}),

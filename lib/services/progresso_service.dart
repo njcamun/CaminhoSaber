@@ -46,18 +46,17 @@ class ProgressoService with ChangeNotifier {
     return (currentStars + 1000).toDouble();
   }
 
-  ProgressoService(this._db, ProfileProvider? profileProvider);
-
-  bool _isInitLoading = false;
+  ProgressoService(this._db, ProfileProvider? profileProvider) {
+    if (profileProvider != null) {
+      updateProvider(profileProvider);
+    }
+  }
 
   void updateProvider(ProfileProvider newProvider) {
-    if (_profileProvider == newProvider) return;
     _profileProvider?.removeListener(_onProfileChanged);
     _profileProvider = newProvider;
     _profileProvider?.addListener(_onProfileChanged);
-    
-    // Use a microtask to avoid calling notifyListeners during the ProxyProvider update phase
-    scheduleMicrotask(() => _loadProgresso());
+    _loadProgresso();
   }
 
   void _onProfileChanged() {
@@ -65,84 +64,72 @@ class ProgressoService with ChangeNotifier {
   }
 
   Future<void> _loadProgresso() async {
-    if (_isInitLoading) return;
-    
-    try {
-      final profile = _profileProvider;
-      if (profile == null || profile.activeProfile == null) {
-        _progressoPorCapitulo.clear();
-        _totalXP = 0;
-        _totalDiamantes = 0;
-        _currentStreak = 0;
-        Future.microtask(() => notifyListeners());
-        return;
-      }
-
-      if (profile.pendingRestore && !profile.isLoading) {
-        profile.markRestoreDone();
-        // Restore in background to avoid blocking
-        unawaited(restoreFromCloud());
-      }
-
-      _isInitLoading = true;
-      final activeProfileUid = profile.activeProfile!.uid;
-
-      List<ProgressoCapitulo> todosProgressos = [];
-      try {
-        final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfileUid));
-        todosProgressos = await query.get();
-      } catch (dbError) {
-        debugPrint('[ProgressoService] _loadProgresso local DB failed: $dbError');
-        _isInitLoading = false;
-        _applyCloudFallbackForActiveProfile();
-        return;
-      }
-
-      // On web, DB can be unavailable or empty. If we already restored from Firestore,
-      // apply the cached cloud data directly to keep UI synced.
-      if (todosProgressos.isEmpty && _cloudProgressCache.containsKey(activeProfileUid)) {
-        _isInitLoading = false;
-        _applyCloudFallbackForActiveProfile();
-        return;
-      }
-
+    if (_profileProvider?.activeProfile == null) {
       _progressoPorCapitulo.clear();
-      int xpSoma = 0;
-      int diamantesSoma = 0;
+      _totalXP = 0;
+      _totalDiamantes = 0;
+      _currentStreak = 0;
+      Future.microtask(() => notifyListeners());
+      return;
+    }
 
-      for (var progresso in todosProgressos) {
-        final tipo = progresso.tipo ?? 'quiz';
-        
-        if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge') {
-           // Acumula o XP bruto de todas as atividades
-           xpSoma += progresso.pontuacao;
-           
-           if (tipo == 'leitura' || tipo == 'quiz') {
-             _progressoPorCapitulo[progresso.capituloId] = progresso.pontuacao;
-           }
-        }
-        
-        if (tipo == 'achievement' || tipo == 'payment') {
-          diamantesSoma += progresso.pontuacao;
-        }
+    final activeProfileUid = _profileProvider!.activeProfile!.uid;
+
+    List<ProgressoCapitulo> todosProgressos = [];
+    try {
+      final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfileUid));
+      todosProgressos = await query.get();
+    } catch (dbError) {
+      debugPrint('[ProgressoService] _loadProgresso local DB failed: $dbError');
+      _applyCloudFallbackForActiveProfile();
+      return;
+    }
+
+    // On web, DB can be unavailable or empty. If we already restored from Firestore,
+    // apply the cached cloud data directly to keep UI synced.
+    if (todosProgressos.isEmpty && _cloudProgressCache.containsKey(activeProfileUid)) {
+      _applyCloudFallbackForActiveProfile();
+      return;
+    }
+
+    _progressoPorCapitulo.clear();
+    int xpSoma = 0;
+    int diamantesSoma = 0;
+
+    for (var progresso in todosProgressos) {
+      final tipo = progresso.tipo ?? 'quiz';
+
+      if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge') {
+         // Acumula o XP bruto de todas as atividades
+         xpSoma += progresso.pontuacao;
+
+         if (tipo == 'leitura' || tipo == 'quiz') {
+           _progressoPorCapitulo[progresso.capituloId] = progresso.pontuacao;
+         }
       }
 
-      _totalXP = xpSoma;
+      if (tipo == 'achievement' || tipo == 'payment') {
+        diamantesSoma += progresso.pontuacao;
+      }
+    }
 
-      // Regra: 250 XP = 1 Estrela
-      // Regra: 50 Estrelas = 1 Diamante
-      int totalEstrelasGerais = (_totalXP / 250).floor();
-      int diamantesPorEstrelas = (totalEstrelasGerais / 50).floor();
-      
-      _totalDiamantes = diamantesPorEstrelas + diamantesSoma;
-      
-      await _updateAndLoadStreak();
+    _totalXP = xpSoma;
 
-      final activeProfile = _profileProvider!.activeProfile!;
-      if (activeProfile.totalPontos != totalPontos || 
-          activeProfile.totalDiamantes != _totalDiamantes || 
-          activeProfile.currentStreak != _currentStreak) {
-        
+    // Regra: 250 XP = 1 Estrela
+    // Regra: 50 Estrelas = 1 Diamante
+    int totalEstrelasGerais = (_totalXP / 250).floor();
+    int diamantesPorEstrelas = (totalEstrelasGerais / 50).floor();
+
+    _totalDiamantes = diamantesPorEstrelas + diamantesSoma;
+
+    await _updateAndLoadStreak();
+
+    final activeProfile = _profileProvider!.activeProfile!;
+    if (activeProfile.totalPontos != totalPontos ||
+        activeProfile.totalDiamantes != _totalDiamantes ||
+        activeProfile.currentStreak != _currentStreak) {
+      
+      try {
         await (_db.update(_db.profiles)..where((t) => t.uid.equals(activeProfile.uid))).write(
           ProfilesCompanion(
             totalPontos: Value(totalPontos),
@@ -150,14 +137,16 @@ class ProgressoService with ChangeNotifier {
             currentStreak: Value(_currentStreak),
           ),
         );
+      } catch (e) {
+        debugPrint('[ProgressoService] Erro ao atualizar perfil local: $e');
       }
-      
-      scheduleMicrotask(() => notifyListeners());
-    } catch (e, stack) {
-      debugPrint('[ProgressoService] FATAL ERROR in _loadProgresso: $e\n$stack');
-    } finally {
-      _isInitLoading = false;
     }
+
+    // IMPORTANTE: Removemos o refreshActiveProfile() daqui para quebrar o loop circular.
+    // O UI já usa Consumer2<ProfileProvider, ProgressoService> e terá os dados atualizados.
+    Future.microtask(() => notifyListeners());
+    // Removido syncWithCloud daqui para evitar loop de atualização.
+    // O syncWithCloud deve ser chamado apenas após alterações locais.
   }
 
   void _applyCloudFallbackForActiveProfile() {

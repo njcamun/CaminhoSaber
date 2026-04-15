@@ -1,6 +1,7 @@
+// lib/ui/widgets/safe_asset_image.dart
+
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 
 class SafeAssetImage extends StatelessWidget {
   final String path;
@@ -30,8 +31,6 @@ class SafeAssetImage extends StatelessWidget {
     }
 
     // Caso contrário, tratamos como um ficheiro local (foto tirada pela câmara)
-    if (kIsWeb) return _buildErrorWidget();
-
     try {
       final file = File(path);
       if (file.existsSync()) {
@@ -44,6 +43,7 @@ class SafeAssetImage extends StatelessWidget {
         );
       }
     } catch (e) {
+      // Se houver um erro ao criar o File (ex: caminho inválido), mostra o erro
       return _buildErrorWidget();
     }
 

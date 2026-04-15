@@ -11,12 +11,15 @@ class FlashcardService with ChangeNotifier {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  FlashcardService(this._db, ProfileProvider? profileProvider);
+  FlashcardService(this._db, ProfileProvider? profileProvider) {
+    if (profileProvider != null) {
+      updateProvider(profileProvider);
+    }
+  }
 
   void updateProvider(ProfileProvider newProvider) {
-    if (_profileProvider == newProvider) return;
     _profileProvider = newProvider;
-    scheduleMicrotask(() => notifyListeners());
+    notifyListeners();
   }
 
   Future<List<UserFlashcard>> loadFlashcardsForProfile(String profileUid) async {

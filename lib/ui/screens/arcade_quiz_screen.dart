@@ -46,7 +46,6 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   String? _opcaoSelecionada; 
   bool _estaProcessando = false; 
   bool _isGameOver = false;
-  int _sessionId = 0;
 
   bool _tempoAdicionalUsado = false;
   bool _ajuda5050Usada = false;
@@ -71,7 +70,6 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   @override
   void initState() {
     super.initState();
-    _sessionId++;
     _loadSettings();
     _startTimer();
     _playMusic();
@@ -124,25 +122,26 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   }
 
   void _startTimer() {
-    final currentSession = _sessionId;
     _timer = Timer.periodic(const Duration(seconds: 1), (timer) {
-      if (_isGameOver || currentSession != _sessionId || !mounted) {
+      if (_isGameOver) {
         timer.cancel();
         return;
       }
 
       if (_tempoRestante > 0) {
-        setState(() {
-          _tempoRestante--;
-          if (_tempoRestante <= 10 && _tempoRestante > 0) {
-            _pulseController.repeat(reverse: true);
-          } else {
-            _pulseController.stop();
-          }
-        });
+        if(mounted) {
+          setState(() {
+            _tempoRestante--;
+            if (_tempoRestante <= 10 && _tempoRestante > 0) {
+              _pulseController.repeat(reverse: true);
+            } else {
+              _pulseController.stop();
+            }
+          });
+        }
       }
       
-      if (_tempoRestante <= 0) {
+      if (_tempoRestante <= 0 && !_isGameOver) {
         _finishGame("TEMPO ESGOTADO!");
       }
     });
@@ -245,9 +244,8 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
       }
     }
 
-    final currentSession = _sessionId;
     await Future.delayed(const Duration(milliseconds: 1200));
-    if (!_isGameOver && mounted && currentSession == _sessionId) {
+    if (!_isGameOver) {
       _nextQuestion();
     }
   }
@@ -312,7 +310,6 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     setState(() {
       _isGameOver = true;
       _estaProcessando = true;
-      _sessionId++; // Invalida qualquer callback pendente
     });
     
     _timer?.cancel();
@@ -321,22 +318,29 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
       await _audioPlayer.stop();
     } catch (_) {}
     
-    final progressoService = Provider.of<ProgressoService>(context, listen: false);
-    
-    try {
-      await progressoService.addArcadePoints(_pontos).timeout(const Duration(seconds: 4));
-    } catch (e) {
-      debugPrint('Erro não crítico salvar arcade: $e');
-    }
-    
-    bool isNewRecord = false;
-    try {
-      isNewRecord = await progressoService.updateArcadeRecord(widget.disciplinaId, _pontos).timeout(const Duration(seconds: 4));
-    } catch (e) {
-      debugPrint('Erro não crítico update recorde arcade: $e');
+    final currentScore = _pontos;
+    final disciplineId = widget.disciplinaId;
+
+    // NAVEGAÇÃO IMEDIATA (Não bloqueante)
+    if (mounted) {
+      _showGameOverDialog(context, currentScore, titulo);
     }
 
-    if (!mounted) return;
+    // EFEITO COLATERAL (Background)
+    unawaited(
+      progressoService.addArcadePoints(currentScore)
+        .timeout(const Duration(seconds: 10))
+        .catchError((e) => debugPrint('Erro background arcade points: $e'))
+    );
+    
+    unawaited(
+      progressoService.updateArcadeRecord(disciplineId, currentScore)
+        .timeout(const Duration(seconds: 10))
+        .catchError((e) => debugPrint('Erro background recorde: $e'))
+    );
+  }
+
+  void _showGameOverDialog(BuildContext context, int score, String titulo) {
     showDialog(
       context: context,
       barrierDismissible: false,
@@ -346,20 +350,18 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
           mainAxisSize: MainAxisSize.min,
           children: [
             if (!kIsWeb)
-              Lottie.asset(
-                isNewRecord ? 'assets/animations/sucesso.json' : 'assets/animations/GameOver.json', 
-                width: 180, 
-                repeat: isNewRecord,
-                errorBuilder: (context, error, stackTrace) => Icon(isNewRecord ? Icons.emoji_events : Icons.gamepad, size: 80, color: Colors.grey),
+              const SizedBox(
+                height: 150,
+                child: Icon(Icons.gamepad, size: 80, color: Colors.redAccent),
               )
             else
-              Icon(isNewRecord ? Icons.emoji_events : Icons.gamepad, size: 80, color: isNewRecord ? Colors.green : Colors.red),
+              const Icon(Icons.gamepad, size: 80, color: Colors.red),
             const SizedBox(height: 10),
-            Text(isNewRecord ? "NOVO RECORDE!" : titulo, 
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: isNewRecord ? Colors.green : Colors.red)),
+            Text(titulo, 
+                style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.red)),
             const SizedBox(height: 20),
-            Text('Pontuação Final: $_pontos', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue)),
-            const Text('Refletido nas tuas conquistas!', style: TextStyle(fontSize: 12, color: Colors.grey)),
+            Text('Pontuação Final: $score', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue)),
+            const Text('A sincronizar com a nuvem...', style: TextStyle(fontSize: 12, color: Colors.grey)),
           ],
         ),
         actions: [
@@ -370,7 +372,10 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))
               ),
-              onPressed: () { Navigator.of(context).pop(); Navigator.of(context).pop(); },
+              onPressed: () { 
+                Navigator.of(context).pop(); // Fecha o dialog
+                if (mounted) Navigator.of(context).pop(); // Sai do quiz
+              },
               child: const Text('Voltar ao Menu', style: TextStyle(fontWeight: FontWeight.bold)),
             ),
           ),
@@ -535,14 +540,9 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                     child: Stack(
                       alignment: Alignment.center,
                       children: [
-                        if (_feedbackController.isAnimating && !kIsWeb)
+                        if (_feedbackController.isAnimating)
                           IgnorePointer(
-                            child: Lottie.asset(
-                              'assets/animations/festejo.json', 
-                              height: 100, 
-                              repeat: false,
-                              errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
-                            ),
+                            child: Lottie.asset('assets/animations/festejo.json', height: 100, repeat: false),
                           ),
                         ScaleTransition(
                           scale: _feedbackAnimation,

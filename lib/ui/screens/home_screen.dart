@@ -77,14 +77,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   }
 
   Future<List<Disciplina>> _loadDisciplinas() async {
-    try {
-      final String response = await rootBundle.loadString('assets/data/disciplinas.json');
-      final List<dynamic> data = json.decode(response);
-      return data.map((json) => Disciplina.fromJson(json)).toList();
-    } catch (e, stack) {
-      debugPrint('Error loading disciplinas: $e\n$stack');
-      return [];
-    }
+    final String response = await rootBundle.loadString('assets/data/disciplinas.json');
+    final List<dynamic> data = json.decode(response);
+    return data.map((json) => Disciplina.fromJson(json)).toList();
   }
 
   Map<String, List<Disciplina>> _groupDisciplinas(List<Disciplina> disciplinas) {

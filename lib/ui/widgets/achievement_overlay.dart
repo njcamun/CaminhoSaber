@@ -121,14 +121,13 @@ class _AchievementWidgetState extends State<_AchievementWidget> with SingleTicke
                   Stack(
                     alignment: Alignment.center,
                     children: [
-                      if (!kIsWeb)
-                        Lottie.asset(
-                          widget.isDiamond ? 'assets/animations/Diamond.json' : 'assets/animations/Trophy.json',
-                          width: 150,
-                          height: 150,
-                          repeat: true,
-                          errorBuilder: (context, error, stackTrace) => Icon(widget.icon, size: 80, color: widget.color),
-                        ),
+                      Lottie.asset(
+                        widget.isDiamond ? 'assets/animations/Diamond.json' : 'assets/animations/Trophy.json',
+                        width: 150,
+                        height: 150,
+                        repeat: true,
+                        errorBuilder: (context, error, stackTrace) => Icon(widget.icon, size: 80, color: widget.color),
+                      ),
                       Icon(widget.icon, size: 60, color: widget.color),
                     ],
                   ),
