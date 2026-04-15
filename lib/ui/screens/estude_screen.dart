@@ -25,6 +25,8 @@ class EstudeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final groupedDisciplinas = _groupDisciplinasByCategory(disciplinas);
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
 
     return Scaffold(
       appBar: AppBar(
@@ -36,7 +38,7 @@ class EstudeScreen extends StatelessWidget {
       body: BackgroundContainer(
         child: SizedBox.expand(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 100), // Padding inferior aumentado para visibilidade total
+            padding: const EdgeInsets.fromLTRB(16, 16, 16, 100),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: groupedDisciplinas.entries.map((entry) {
@@ -64,13 +66,13 @@ class EstudeScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 180, // Aumentado ligeiramente para acomodar cards maiores
+                      height: isTablet ? 220 : 180,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: disciplinasDaCategoria.length,
                         itemBuilder: (context, index) {
                           final disciplina = disciplinasDaCategoria[index];
-                          return _buildDisciplinaCard(context, disciplina);
+                          return _buildDisciplinaCard(context, disciplina, isTablet);
                         },
                       ),
                     ),
@@ -84,7 +86,8 @@ class EstudeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildDisciplinaCard(BuildContext context, Disciplina disciplina) {
+  Widget _buildDisciplinaCard(BuildContext context, Disciplina disciplina, bool isTablet) {
+    final size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(right: 16.0, bottom: 8.0),
       child: GestureDetector(
@@ -94,7 +97,7 @@ class EstudeScreen extends StatelessWidget {
           ));
         },
         child: Container(
-          width: 260,
+          width: isTablet ? 300 : size.width * 0.65 > 260 ? 260 : size.width * 0.65,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 5))],
@@ -120,12 +123,15 @@ class EstudeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Text(
-                        disciplina.nome,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          disciplina.nome,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: isTablet ? 24 : 20,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                       const SizedBox(height: 4),

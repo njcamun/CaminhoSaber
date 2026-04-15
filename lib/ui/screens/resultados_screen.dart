@@ -1,5 +1,6 @@
 // lib/ui/screens/resultados_screen.dart
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
 import 'package:caminho_do_saber/models/quiz_model.dart';
@@ -91,7 +92,6 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
   }
 
   void _iniciarAnimacao() async {
-    // Sequência de revelação dos pontos um a um com efeito sonoro
     await Future.delayed(const Duration(milliseconds: 600));
     if (mounted) {
       setState(() => _showPontosBase = true);
@@ -121,7 +121,6 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
       setState(() => _showTotalFinal = true);
       _playSound('hint.mp3');
 
-      // Mostrar animação de conquista se ganhou pontos (XP)
       if (widget.pontuacaoFinal > 0) {
         Future.delayed(const Duration(milliseconds: 800), () {
           if (mounted) {
@@ -141,6 +140,8 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
   @override
   Widget build(BuildContext context) {
     final bool sucesso = widget.desbloqueadoProximoNivel;
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
 
     return Scaffold(
       appBar: AppBar(
@@ -153,101 +154,68 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
       body: BackgroundContainer(
         child: SizedBox.expand(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(16, 20, 16, 100),
+            padding: EdgeInsets.fromLTRB(16, 20, 16, isTablet ? 120 : 100),
             child: Column(
               children: [
-                // 1. CARD PRINCIPAL DE CELEBRAÇÃO
                 Card(
                   elevation: 8,
                   shadowColor: Colors.black26,
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                   color: Colors.white.withOpacity(0.95),
-                  child: Stack(
-                    alignment: Alignment.center,
-                    children: [
-                      if (sucesso && !kIsWeb)
-                        Positioned.fill(
-                          child: Lottie.asset(
-                            'assets/animations/festejo.json',
-                            fit: BoxFit.cover,
-                            errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
-                          ),
-                        ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
-                        child: Column(
-                          children: [
-                            if (!kIsWeb)
-                              Lottie.asset(
-                                sucesso ? 'assets/animations/sucesso.json' : 'assets/animations/falha.json',
-                                width: 140,
-                                height: 140,
-                                repeat: true,
-                                errorBuilder: (context, error, stackTrace) => Icon(sucesso ? Icons.check_circle : Icons.error, size: 100, color: sucesso ? Colors.green : Colors.orange),
-                              )
-                            else
-                              Icon(sucesso ? Icons.check_circle : Icons.error, size: 100, color: sucesso ? Colors.green : Colors.orange),
-                            const SizedBox(height: 10),
-                            Text(
-                              sucesso ? 'PARABÉNS!' : 'QUASE LÁ!',
-                              style: TextStyle(
-                                fontSize: 26,
-                                fontWeight: FontWeight.w900,
-                                color: sucesso ? Colors.green.shade700 : Colors.orange.shade800,
-                              ),
-                            ),
-                            Text(
-                              sucesso ? 'Nível desbloqueado com sucesso!' : 'Faltou um pouco para avançar.',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(fontSize: 15, color: Colors.blueGrey.shade600, fontWeight: FontWeight.w500),
-                            ),
-                            const SizedBox(height: 20),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: List.generate(5, (index) {
-                                return Icon(
-                                  Icons.stars_rounded,
-                                  color: index < widget.estrelas ? Colors.amber : Colors.grey.withOpacity(0.3),
-                                  size: 40,
-                                );
-                              }),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 24),
-
-                // 2. RESUMO DA PONTUAÇÃO (COM ANIMAÇÃO UM A UM)
-                _buildSectionTitle(context, 'Resumo de Pontos'),
-                Card(
-                  elevation: 4,
-                  shadowColor: Colors.black26,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                  color: Colors.white.withOpacity(0.95),
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
+                  child: Container(
+                    width: isTablet ? size.width * 0.6 : double.infinity,
+                    child: Stack(
+                      alignment: Alignment.center,
                       children: [
-                        _buildScoreRow('Acertos Base', '+${widget.pontosBase}', Colors.green, Icons.check_circle_outline, _showPontosBase),
-                        _buildScoreRow('Bónus Velocidade', '+${widget.bonusTempo}', Colors.blue, Icons.timer_outlined, _showBonusTempo),
-                        _buildScoreRow('Penalidade Ajudas', '-${widget.penalidadeAjudas}', Colors.red, Icons.help_outline, _showPenalidadeAjudas),
-                        _buildScoreRow('Penalidade Tempo', '-${widget.penalidadeTempo}', Colors.redAccent, Icons.hourglass_empty, _showPenalidadeTempo),
-                        
-                        AnimatedOpacity(
-                          opacity: _showTotalFinal ? 1.0 : 0.0,
-                          duration: const Duration(milliseconds: 500),
+                        if (sucesso && !kIsWeb)
+                          Positioned.fill(
+                            child: Lottie.asset(
+                              'assets/animations/festejo.json',
+                              fit: BoxFit.cover,
+                              errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
+                            ),
+                          ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
                           child: Column(
                             children: [
-                              const Divider(height: 30, thickness: 1.5),
+                              if (!kIsWeb)
+                                Lottie.asset(
+                                  sucesso ? 'assets/animations/sucesso.json' : 'assets/animations/falha.json',
+                                  width: 140,
+                                  height: 140,
+                                  repeat: true,
+                                  errorBuilder: (context, error, stackTrace) => Icon(sucesso ? Icons.check_circle : Icons.error, size: 100, color: sucesso ? Colors.green : Colors.orange),
+                                )
+                              else
+                                Icon(sucesso ? Icons.check_circle : Icons.error, size: 100, color: sucesso ? Colors.green : Colors.orange),
+                              const SizedBox(height: 10),
+                              FittedBox(
+                                fit: BoxFit.scaleDown,
+                                child: Text(
+                                  sucesso ? 'PARABÉNS!' : 'QUASE LÁ!',
+                                  style: TextStyle(
+                                    fontSize: 26,
+                                    fontWeight: FontWeight.w900,
+                                    color: sucesso ? Colors.green.shade700 : Colors.orange.shade800,
+                                  ),
+                                ),
+                              ),
+                              Text(
+                                sucesso ? 'Nível desbloqueado com sucesso!' : 'Faltou um pouco para avançar.',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(fontSize: 15, color: Colors.blueGrey.shade600, fontWeight: FontWeight.w500),
+                              ),
+                              const SizedBox(height: 20),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  const Text('TOTAL FINAL', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black87)),
-                                  Text('${widget.pontuacaoFinal} pts', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: Colors.blue)),
-                                ],
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: List.generate(5, (index) {
+                                  return Icon(
+                                    Icons.stars_rounded,
+                                    color: index < widget.estrelas ? Colors.amber : Colors.grey.withOpacity(0.3),
+                                    size: isTablet ? 60 : 40,
+                                  );
+                                }),
                               ),
                             ],
                           ),
@@ -258,10 +226,49 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
                 ),
                 const SizedBox(height: 24),
 
-                // 3. REVISÃO RÁPIDA (HORIZONTAL)
+                _buildSectionTitle(context, 'Resumo de Pontos'),
+                Container(
+                  width: isTablet ? size.width * 0.6 : double.infinity,
+                  child: Card(
+                    elevation: 4,
+                    shadowColor: Colors.black26,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                    color: Colors.white.withOpacity(0.95),
+                    child: Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Column(
+                        children: [
+                          _buildScoreRow('Acertos Base', '+${widget.pontosBase}', Colors.green, Icons.check_circle_outline, _showPontosBase),
+                          _buildScoreRow('Bónus Velocidade', '+${widget.bonusTempo}', Colors.blue, Icons.timer_outlined, _showBonusTempo),
+                          _buildScoreRow('Penalidade Ajudas', '-${widget.penalidadeAjudas}', Colors.red, Icons.help_outline, _showPenalidadeAjudas),
+                          _buildScoreRow('Penalidade Tempo', '-${widget.penalidadeTempo}', Colors.redAccent, Icons.hourglass_empty, _showPenalidadeTempo),
+                          
+                          AnimatedOpacity(
+                            opacity: _showTotalFinal ? 1.0 : 0.0,
+                            duration: const Duration(milliseconds: 500),
+                            child: Column(
+                              children: [
+                                const Divider(height: 30, thickness: 1.5),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Text('TOTAL FINAL', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black87)),
+                                    Text('${widget.pontuacaoFinal} pts', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: Colors.blue)),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 24),
+
                 _buildSectionTitle(context, 'Revisão das Respostas'),
                 SizedBox(
-                  height: 150,
+                  height: isTablet ? 180 : 150,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: widget.respostasUtilizador.length,
@@ -271,7 +278,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
                       return GestureDetector(
                         onTap: () => _showReviewDialog(context, resp, index + 1),
                         child: Container(
-                          width: 120,
+                          width: isTablet ? 150 : 120,
                           margin: const EdgeInsets.only(right: 12),
                           decoration: BoxDecoration(
                             color: correta ? Colors.green.withOpacity(0.9) : Colors.red.withOpacity(0.9),
@@ -295,60 +302,62 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
                 ),
                 const SizedBox(height: 30),
 
-                // 4. BOTÕES DE AÇÃO
-                Column(
-                  children: [
-                    if (sucesso)
-                      _buildActionButton(
-                        context,
-                        'PRÓXIMO NÍVEL',
-                        Icons.arrow_forward_rounded,
-                        Colors.green.shade600,
-                        () => Navigator.of(context).pop(),
-                      ),
-                    const SizedBox(height: 12),
-                    _buildActionButton(
-                      context,
-                      'REFAZER O QUIZ',
-                      Icons.refresh_rounded,
-                      Colors.blue.shade700,
-                      () => _refazerQuiz(context),
-                    ),
-                    const SizedBox(height: 12),
-                    if (!sucesso)
-                      _buildActionButton(
-                        context,
-                        'ESTUDAR CARTÕES',
-                        Icons.style_rounded,
-                        Colors.purple.shade600,
-                        () => _irParaFlashcards(context),
-                      ),
-                    const SizedBox(height: 8),
-                    SizedBox(
-                      width: double.infinity,
-                      child: OutlinedButton.icon(
-                        onPressed: () => Navigator.of(context).pushAndRemoveUntil(
-                          MaterialPageRoute(builder: (context) => const HomeScreen()),
-                          (route) => false,
+                Container(
+                  width: isTablet ? size.width * 0.5 : double.infinity,
+                  child: Column(
+                    children: [
+                      if (sucesso)
+                        _buildActionButton(
+                          context,
+                          'PRÓXIMO NÍVEL',
+                          Icons.arrow_forward_rounded,
+                          Colors.green.shade600,
+                          () => Navigator.of(context).pop(),
                         ),
-                        icon: Icon(Icons.home_rounded, color: Colors.blue.shade900),
-                        label: Text(
-                          'VOLTAR AO INÍCIO',
-                          style: TextStyle(
-                            color: Colors.blue.shade900,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
+                      const SizedBox(height: 12),
+                      _buildActionButton(
+                        context,
+                        'REFAZER O QUIZ',
+                        Icons.refresh_rounded,
+                        Colors.blue.shade700,
+                        () => _refazerQuiz(context),
+                      ),
+                      const SizedBox(height: 12),
+                      if (!sucesso)
+                        _buildActionButton(
+                          context,
+                          'ESTUDAR CARTÕES',
+                          Icons.style_rounded,
+                          Colors.purple.shade600,
+                          () => _irParaFlashcards(context),
+                        ),
+                      const SizedBox(height: 8),
+                      SizedBox(
+                        width: double.infinity,
+                        child: OutlinedButton.icon(
+                          onPressed: () => Navigator.of(context).pushAndRemoveUntil(
+                            MaterialPageRoute(builder: (context) => const HomeScreen()),
+                            (route) => false,
+                          ),
+                          icon: Icon(Icons.home_rounded, color: Colors.blue.shade900),
+                          label: Text(
+                            'VOLTAR AO INÍCIO',
+                            style: TextStyle(
+                              color: Colors.blue.shade900,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          style: OutlinedButton.styleFrom(
+                            side: BorderSide(color: Colors.blue.shade900, width: 2),
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                            backgroundColor: Colors.white.withOpacity(0.8),
                           ),
                         ),
-                        style: OutlinedButton.styleFrom(
-                          side: BorderSide(color: Colors.blue.shade900, width: 2),
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                          backgroundColor: Colors.white.withOpacity(0.8),
-                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -425,6 +434,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
     showDialog(
       context: context,
       builder: (BuildContext context) {
+        final size = MediaQuery.of(context).size;
         return AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
           title: Row(
@@ -434,25 +444,28 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
               Text('Revisão Q$num'),
             ],
           ),
-          content: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                const Text('Pergunta:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
-                const SizedBox(height: 4),
-                Text(p.pergunta),
-                const SizedBox(height: 16),
-                const Text('Tua Resposta:', style: TextStyle(fontWeight: FontWeight.bold)),
-                const SizedBox(height: 4),
-                Text(data['respostaDada'] ?? 'Sem resposta', style: TextStyle(color: correta ? Colors.green : Colors.red)),
-                if (!correta) ...[
-                  const SizedBox(height: 16),
-                  const Text('Resposta Correta:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
+          content: Container(
+            width: size.width * 0.8,
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Text('Pergunta:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
                   const SizedBox(height: 4),
-                  Text(p.respostaCorreta),
+                  Text(p.pergunta),
+                  const SizedBox(height: 16),
+                  const Text('Tua Resposta:', style: TextStyle(fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 4),
+                  Text(data['respostaDada'] ?? 'Sem resposta', style: TextStyle(color: correta ? Colors.green : Colors.red)),
+                  if (!correta) ...[
+                    const SizedBox(height: 16),
+                    const Text('Resposta Correta:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
+                    const SizedBox(height: 4),
+                    Text(p.respostaCorreta),
+                  ],
                 ],
-              ],
+              ),
             ),
           ),
           actions: [

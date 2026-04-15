@@ -63,6 +63,7 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
     final perguntaController = TextEditingController();
     final respostaController = TextEditingController();
     String selectedCategoria = _categorias.first;
+    final size = MediaQuery.of(context).size;
 
     showDialog(
       context: context,
@@ -78,47 +79,50 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                     Text('Novo Flashcard', style: TextStyle(fontWeight: FontWeight.bold)),
                   ],
                 ),
-                content: SingleChildScrollView(
-                  child: Form(
-                    key: formKey,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        DropdownButtonFormField<String>(
-                          initialValue: selectedCategoria,
-                          decoration: InputDecoration(
-                            labelText: 'Disciplina',
-                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
-                            prefixIcon: const Icon(Icons.category_outlined),
+                content: Container(
+                  width: size.width * 0.85 > 500 ? 500 : size.width * 0.85,
+                  child: SingleChildScrollView(
+                    child: Form(
+                      key: formKey,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          DropdownButtonFormField<String>(
+                            initialValue: selectedCategoria,
+                            decoration: InputDecoration(
+                              labelText: 'Disciplina',
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                              prefixIcon: const Icon(Icons.category_outlined),
+                            ),
+                            items: _categorias.map((cat) => DropdownMenuItem(value: cat, child: Text(cat))).toList(),
+                            onChanged: (val) => setStateDialog(() => selectedCategoria = val!),
                           ),
-                          items: _categorias.map((cat) => DropdownMenuItem(value: cat, child: Text(cat))).toList(),
-                          onChanged: (val) => setStateDialog(() => selectedCategoria = val!),
-                        ),
-                        const SizedBox(height: 16),
-                        TextFormField(
-                          controller: perguntaController,
-                          decoration: InputDecoration(
-                            labelText: 'Pergunta',
-                            hintText: 'O que queres memorizar?',
-                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
-                            prefixIcon: const Icon(Icons.help_outline),
+                          const SizedBox(height: 16),
+                          TextFormField(
+                            controller: perguntaController,
+                            decoration: InputDecoration(
+                              labelText: 'Pergunta',
+                              hintText: 'O que queres memorizar?',
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                              prefixIcon: const Icon(Icons.help_outline),
+                            ),
+                            maxLines: 2,
+                            validator: (value) => (value == null || value.isEmpty) ? 'Escreve uma pergunta.' : null,
                           ),
-                          maxLines: 2,
-                          validator: (value) => (value == null || value.isEmpty) ? 'Escreve uma pergunta.' : null,
-                        ),
-                        const SizedBox(height: 16),
-                        TextFormField(
-                          controller: respostaController,
-                          decoration: InputDecoration(
-                            labelText: 'Resposta',
-                            hintText: 'A resposta mágica...',
-                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
-                            prefixIcon: const Icon(Icons.check_circle_outline),
+                          const SizedBox(height: 16),
+                          TextFormField(
+                            controller: respostaController,
+                            decoration: InputDecoration(
+                              labelText: 'Resposta',
+                              hintText: 'A resposta mágica...',
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                              prefixIcon: const Icon(Icons.check_circle_outline),
+                            ),
+                            maxLines: 3,
+                            validator: (value) => (value == null || value.isEmpty) ? 'Escreve a resposta.' : null,
                           ),
-                          maxLines: 3,
-                          validator: (value) => (value == null || value.isEmpty) ? 'Escreve a resposta.' : null,
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -210,6 +214,7 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
     final perguntaController = TextEditingController(text: flashcard.pergunta);
     final respostaController = TextEditingController(text: flashcard.resposta);
     String selectedCategoria = flashcard.disciplinaId;
+    final size = MediaQuery.of(context).size;
 
     showDialog(
       context: context,
@@ -225,42 +230,45 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                     Text('Editar Flashcard', style: TextStyle(fontWeight: FontWeight.bold)),
                   ],
                 ),
-                content: SingleChildScrollView(
-                  child: Form(
-                    key: formKey,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        DropdownButtonFormField<String>(
-                          initialValue: selectedCategoria,
-                          decoration: InputDecoration(
-                            labelText: 'Disciplina',
-                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                content: Container(
+                  width: size.width * 0.85 > 500 ? 500 : size.width * 0.85,
+                  child: SingleChildScrollView(
+                    child: Form(
+                      key: formKey,
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          DropdownButtonFormField<String>(
+                            initialValue: selectedCategoria,
+                            decoration: InputDecoration(
+                              labelText: 'Disciplina',
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                            ),
+                            items: _categorias.map((cat) => DropdownMenuItem(value: cat, child: Text(cat))).toList(),
+                            onChanged: (val) => setStateDialog(() => selectedCategoria = val!),
                           ),
-                          items: _categorias.map((cat) => DropdownMenuItem(value: cat, child: Text(cat))).toList(),
-                          onChanged: (val) => setStateDialog(() => selectedCategoria = val!),
-                        ),
-                        const SizedBox(height: 16),
-                        TextFormField(
-                          controller: perguntaController,
-                          decoration: InputDecoration(
-                            labelText: 'Pergunta',
-                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                          const SizedBox(height: 16),
+                          TextFormField(
+                            controller: perguntaController,
+                            decoration: InputDecoration(
+                              labelText: 'Pergunta',
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                            ),
+                            maxLines: 2,
+                            validator: (value) => (value == null || value.isEmpty) ? 'Escreve uma pergunta.' : null,
                           ),
-                          maxLines: 2,
-                          validator: (value) => (value == null || value.isEmpty) ? 'Escreve uma pergunta.' : null,
-                        ),
-                        const SizedBox(height: 16),
-                        TextFormField(
-                          controller: respostaController,
-                          decoration: InputDecoration(
-                            labelText: 'Resposta',
-                            border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                          const SizedBox(height: 16),
+                          TextFormField(
+                            controller: respostaController,
+                            decoration: InputDecoration(
+                              labelText: 'Resposta',
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                            ),
+                            maxLines: 3,
+                            validator: (value) => (value == null || value.isEmpty) ? 'Escreve a resposta.' : null,
                           ),
-                          maxLines: 3,
-                          validator: (value) => (value == null || value.isEmpty) ? 'Escreve a resposta.' : null,
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -363,6 +371,9 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Meus Cartões', style: TextStyle(fontWeight: FontWeight.bold)),
@@ -387,10 +398,13 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                             children: [
                               Icon(Icons.style_outlined, size: 80, color: Colors.white.withOpacity(0.5)),
                               const SizedBox(height: 20),
-                              const Text(
-                                'Ainda não criaste cartões para este perfil.\nCria o teu primeiro para começar!',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(color: Colors.black, fontSize: 28, fontWeight: FontWeight.w500),
+                              FittedBox(
+                                fit: BoxFit.scaleDown,
+                                child: const Text(
+                                  'Ainda não criaste cartões para este perfil.\nCria o teu primeiro para começar!',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.w500),
+                                ),
                               ),
                             ],
                           ),
@@ -404,74 +418,79 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                       groupedCards.putIfAbsent(card.disciplinaId, () => []).add(card);
                     }
 
-                    return SingleChildScrollView(
-                      padding: const EdgeInsets.fromLTRB(16, 16, 16, 100),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          ElevatedButton.icon(
-                            onPressed: () => _estudarTodos(allCards),
-                            icon: const Icon(Icons.school_rounded),
-                            label: const Text('Estudar Tudo deste Perfil', style: TextStyle(fontWeight: FontWeight.bold)),
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white.withOpacity(0.9),
-                              foregroundColor: Colors.blue.shade800,
-                              minimumSize: const Size(double.infinity, 55),
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                              elevation: 4,
-                            ),
-                          ),
-                          const SizedBox(height: 10),
-                          ...groupedCards.entries.map((entry) {
-                            return Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 24.0, bottom: 8.0, left: 4.0),
-                                  child: Row(
-                                    children: [
-                                      Text(
-                                        entry.key.toUpperCase(),
-                                        style: const TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white,
-                                          letterSpacing: 1.2,
-                                        ),
-                                      ),
-                                      const SizedBox(width: 10),
-                                      const Expanded(child: Divider(color: Colors.white24, thickness: 1.5)),
-                                    ],
-                                  ),
+                    return Center(
+                      child: Container(
+                        constraints: const BoxConstraints(maxWidth: 800),
+                        child: SingleChildScrollView(
+                          padding: const EdgeInsets.fromLTRB(16, 16, 16, 100),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              ElevatedButton.icon(
+                                onPressed: () => _estudarTodos(allCards),
+                                icon: const Icon(Icons.school_rounded),
+                                label: const Text('Estudar Tudo deste Perfil', style: TextStyle(fontWeight: FontWeight.bold)),
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.white.withOpacity(0.9),
+                                  foregroundColor: Colors.blue.shade800,
+                                  minimumSize: const Size(double.infinity, 55),
+                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                                  elevation: 4,
                                 ),
-                                ...entry.value.map((flashcard) => Padding(
-                                  padding: const EdgeInsets.only(bottom: 12.0),
-                                  child: Card(
-                                    elevation: 4,
-                                    shadowColor: Colors.black26,
-                                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                                    color: Colors.white.withOpacity(0.95),
-                                    child: InkWell(
-                                      onTap: () => _estudarCartao(flashcard),
-                                      onLongPress: () => _showFlashcardOptions(flashcard),
-                                      borderRadius: BorderRadius.circular(20),
-                                      child: ListTile(
-                                        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                                        title: Text(
-                                          flashcard.pergunta,
-                                          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black87),
-                                          maxLines: 3,
-                                          overflow: TextOverflow.ellipsis,
-                                        ),
-                                        trailing: const Icon(Icons.play_circle_fill, color: Colors.blueAccent, size: 30),
+                              ),
+                              const SizedBox(height: 10),
+                              ...groupedCards.entries.map((entry) {
+                                return Column(
+                                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 24.0, bottom: 8.0, left: 4.0),
+                                      child: Row(
+                                        children: [
+                                          Text(
+                                            entry.key.toUpperCase(),
+                                            style: const TextStyle(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.white,
+                                              letterSpacing: 1.2,
+                                            ),
+                                          ),
+                                          const SizedBox(width: 10),
+                                          const Expanded(child: Divider(color: Colors.white24, thickness: 1.5)),
+                                        ],
                                       ),
                                     ),
-                                  ),
-                                )),
-                              ],
-                            );
-                          }),
-                        ],
+                                    ...entry.value.map((flashcard) => Padding(
+                                      padding: const EdgeInsets.only(bottom: 12.0),
+                                      child: Card(
+                                        elevation: 4,
+                                        shadowColor: Colors.black26,
+                                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                                        color: Colors.white.withOpacity(0.95),
+                                        child: InkWell(
+                                          onTap: () => _estudarCartao(flashcard),
+                                          onLongPress: () => _showFlashcardOptions(flashcard),
+                                          borderRadius: BorderRadius.circular(20),
+                                          child: ListTile(
+                                            contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                                            title: Text(
+                                              flashcard.pergunta,
+                                              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black87),
+                                              maxLines: 3,
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
+                                            trailing: const Icon(Icons.play_circle_fill, color: Colors.blueAccent, size: 30),
+                                          ),
+                                        ),
+                                      ),
+                                    )),
+                                  ],
+                                );
+                              }),
+                            ],
+                          ),
+                        ),
                       ),
                     );
                   },

@@ -18,7 +18,6 @@ class QuizOptionWrapper extends StatefulWidget {
 
 class _QuizOptionWrapperState extends State<QuizOptionWrapper> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late Animation<double> _animation;
 
   @override
   void initState() {
@@ -27,7 +26,6 @@ class _QuizOptionWrapperState extends State<QuizOptionWrapper> with SingleTicker
       duration: const Duration(milliseconds: 400),
       vsync: this,
     );
-    _animation = CurvedAnimation(parent: _controller, curve: Curves.elasticOut);
   }
 
   @override

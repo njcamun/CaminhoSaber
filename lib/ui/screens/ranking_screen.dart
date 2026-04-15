@@ -16,6 +16,8 @@ class RankingScreen extends StatelessWidget {
     final rankingService = RankingService();
     final profileProvider = Provider.of<ProfileProvider>(context);
     final activeProfile = profileProvider.activeProfile;
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
 
     return Scaffold(
       appBar: AppBar(
@@ -29,7 +31,6 @@ class RankingScreen extends StatelessWidget {
         child: SizedBox.expand(
           child: Column(
             children: [
-              // Barra informativa com total de alunos
               StreamBuilder<int>(
                 stream: rankingService.getTotalExplorersStream(),
                 builder: (context, snapshot) {
@@ -55,7 +56,6 @@ class RankingScreen extends StatelessWidget {
                 }
               ),
 
-              // Lista do Ranking
               Expanded(
                 child: StreamBuilder<List<Map<String, dynamic>>>(
                   stream: rankingService.getGlobalTop10Stream(),
@@ -78,24 +78,28 @@ class RankingScreen extends StatelessWidget {
                       );
                     }
 
-                    return ListView.builder(
-                      padding: const EdgeInsets.fromLTRB(16, 15, 16, 30),
-                      itemCount: ranking.length,
-                      itemBuilder: (context, index) {
-                        final item = ranking[index];
-                        final bool isMe = activeProfile?.uid == item['profileUid'];
-                        final bool isTop3 = index < 3;
-                        
-                        return _buildRankingItem(index + 1, item, isMe, isTop3);
-                      },
+                    return Center(
+                      child: Container(
+                        constraints: const BoxConstraints(maxWidth: 800),
+                        child: ListView.builder(
+                          padding: const EdgeInsets.fromLTRB(16, 15, 16, 30),
+                          itemCount: ranking.length,
+                          itemBuilder: (context, index) {
+                            final item = ranking[index];
+                            final bool isMe = activeProfile?.uid == item['profileUid'];
+                            final bool isTop3 = index < 3;
+                            
+                            return _buildRankingItem(index + 1, item, isMe, isTop3, isTablet);
+                          },
+                        ),
+                      ),
                     );
                   },
                 ),
               ),
 
-              // Card fixo "Minha Posição" no fundo (Dock)
               if (activeProfile != null)
-                _buildMyPositionDock(context, activeProfile, rankingService),
+                _buildMyPositionDock(context, activeProfile, rankingService, isTablet),
             ],
           ),
         ),
@@ -103,7 +107,7 @@ class RankingScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildMyPositionDock(BuildContext context, activeProfile, RankingService service) {
+  Widget _buildMyPositionDock(BuildContext context, activeProfile, RankingService service, bool isTablet) {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
@@ -112,58 +116,63 @@ class RankingScreen extends StatelessWidget {
         boxShadow: [BoxShadow(color: Colors.black54, blurRadius: 15, offset: const Offset(0, -4))],
         border: const Border(top: BorderSide(color: Colors.white24, width: 1)),
       ),
-      child: StreamBuilder<int>(
-        stream: service.getProfileRankStream(activeProfile.uid),
-        builder: (context, snapshot) {
-          final myRank = snapshot.data ?? 0;
-          return SafeArea(
-            top: false,
-            child: Row(
-              children: [
-                _buildRankBadge(myRank, isSmall: true),
-                const SizedBox(width: 15),
-                Container(
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(color: Colors.white30, width: 2),
-                  ),
-                  child: CircleAvatar(
-                    radius: 24,
-                    backgroundColor: Colors.white10,
-                    child: ClipOval(child: SafeAssetImage(path: activeProfile.avatarAssetPath, fit: BoxFit.cover)),
-                  ),
+      child: Center(
+        child: Container(
+          constraints: const BoxConstraints(maxWidth: 800),
+          child: StreamBuilder<int>(
+            stream: service.getProfileRankStream(activeProfile.uid),
+            builder: (context, snapshot) {
+              final myRank = snapshot.data ?? 0;
+              return SafeArea(
+                top: false,
+                child: Row(
+                  children: [
+                    _buildRankBadge(myRank, isSmall: true),
+                    const SizedBox(width: 15),
+                    Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.white30, width: 2),
+                      ),
+                      child: CircleAvatar(
+                        radius: 24,
+                        backgroundColor: Colors.white10,
+                        child: ClipOval(child: SafeAssetImage(path: activeProfile.avatarAssetPath, fit: BoxFit.cover)),
+                      ),
+                    ),
+                    const SizedBox(width: 15),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const Text('A TUA CLASSIFICAÇÃO', style: TextStyle(color: Colors.white60, fontSize: 10, fontWeight: FontWeight.w900, letterSpacing: 1.1)),
+                          FittedBox(fit: BoxFit.scaleDown, child: Text(activeProfile.nome, style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold))),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                      decoration: BoxDecoration(color: Colors.amber.withOpacity(0.2), borderRadius: BorderRadius.circular(15), border: Border.all(color: Colors.amber.withOpacity(0.5))),
+                      child: const Row(
+                        children: [
+                          Icon(Icons.auto_awesome, color: Colors.amber, size: 16),
+                          SizedBox(width: 4),
+                          Text('TU', style: TextStyle(color: Colors.amber, fontWeight: FontWeight.w900, fontSize: 12)),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
-                const SizedBox(width: 15),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const Text('A TUA CLASSIFICAÇÃO', style: TextStyle(color: Colors.white60, fontSize: 10, fontWeight: FontWeight.w900, letterSpacing: 1.1)),
-                      Text(activeProfile.nome, style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                  decoration: BoxDecoration(color: Colors.amber.withOpacity(0.2), borderRadius: BorderRadius.circular(15), border: Border.all(color: Colors.amber.withOpacity(0.5))),
-                  child: const Row(
-                    children: [
-                      Icon(Icons.auto_awesome, color: Colors.amber, size: 16),
-                      SizedBox(width: 4),
-                      Text('TU', style: TextStyle(color: Colors.amber, fontWeight: FontWeight.w900, fontSize: 12)),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          );
-        }
+              );
+            }
+          ),
+        ),
       ),
     );
   }
 
-  Widget _buildRankingItem(int rank, Map<String, dynamic> item, bool isMe, bool isTop3) {
+  Widget _buildRankingItem(int rank, Map<String, dynamic> item, bool isMe, bool isTop3, bool isTablet) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 14.0),
       child: Stack(
@@ -182,7 +191,7 @@ class RankingScreen extends StatelessWidget {
             ),
             color: isMe ? Colors.blue.shade50.withOpacity(0.98) : Colors.white.withOpacity(0.95),
             child: ListTile(
-              contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              contentPadding: EdgeInsets.symmetric(horizontal: isTablet ? 24 : 16, vertical: 10),
               leading: _buildRankBadge(rank),
               title: Row(
                 children: [
@@ -192,14 +201,14 @@ class RankingScreen extends StatelessWidget {
                       border: Border.all(color: isMe ? Colors.blue.shade200 : Colors.transparent, width: 2),
                     ),
                     child: CircleAvatar(
-                      radius: 22,
+                      radius: isTablet ? 26 : 22,
                       backgroundColor: Colors.blue.shade50,
                       child: ClipOval(
                         child: SafeAssetImage(
                           path: item['avatarPath'] ?? 'assets/avatars/avatar1.png',
                           fit: BoxFit.cover,
-                          width: 44,
-                          height: 44,
+                          width: isTablet ? 52 : 44,
+                          height: isTablet ? 52 : 44,
                         ),
                       ),
                     ),
@@ -213,7 +222,7 @@ class RankingScreen extends StatelessWidget {
                           item['name'] ?? 'Anónimo',
                           style: TextStyle(
                             fontWeight: isMe || isTop3 ? FontWeight.bold : FontWeight.w600,
-                            fontSize: 17,
+                            fontSize: isTablet ? 19 : 17,
                             color: isMe ? Colors.blue.shade900 : (isTop3 ? Colors.blueGrey.shade900 : Colors.black87),
                           ),
                         ),
@@ -235,7 +244,7 @@ class RankingScreen extends StatelessWidget {
                         '${item['totalPoints']}',
                         style: TextStyle(
                           fontWeight: FontWeight.w900,
-                          fontSize: 20,
+                          fontSize: isTablet ? 24 : 20,
                           color: isMe ? Colors.blue.shade900 : (isTop3 ? Colors.blue.shade800 : Colors.blue.shade700),
                         ),
                       ),
@@ -253,16 +262,14 @@ class RankingScreen extends StatelessWidget {
             ),
           ),
           
-          // Efeito de partículas/brilho À FRENTE do cartão APENAS para o Top 1 (Líder)
-          // Colocado de forma menor e alinhado ao badge do líder
           if (rank == 1)
             Positioned(
               left: 5,
               top: 5,
               child: IgnorePointer(
                 child: SizedBox(
-                  width: 70,
-                  height: 70,
+                  width: isTablet ? 90 : 70,
+                  height: isTablet ? 90 : 70,
                   child: Lottie.asset(
                     'assets/animations/festejo.json',
                     fit: BoxFit.contain,
@@ -272,7 +279,6 @@ class RankingScreen extends StatelessWidget {
               ),
             ),
           
-          // Selo Especial para o Top 1
           if (rank == 1)
             Positioned(
               top: -8,

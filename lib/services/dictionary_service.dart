@@ -22,9 +22,13 @@ class DictionaryService with ChangeNotifier {
   }
 
   Future<void> _initTts() async {
-    await _tts.setLanguage("pt-PT");
-    await _tts.setPitch(1.0);
-    await _tts.setSpeechRate(0.5);
+    try {
+      await _tts.setLanguage("pt-PT");
+      await _tts.setPitch(1.0);
+      await _tts.setSpeechRate(0.5);
+    } catch (e) {
+      debugPrint("Erro ao inicializar TTS: $e");
+    }
   }
 
   Future<void> loadDictionary({bool force = false}) async {
@@ -123,8 +127,10 @@ class DictionaryService with ChangeNotifier {
       try {
         final String response = await rootBundle.loadString('assets/data/dicionario.json');
         final data = json.decode(response);
-        final List<dynamic> wordList = data['palavras'];
-        _localWords = wordList.map((json) => DictionaryWord.fromJson(json)).toList();
+        final List<dynamic>? wordList = data['palavras'] as List<dynamic>?;
+        if (wordList != null) {
+          _localWords = wordList.map((json) => DictionaryWord.fromJson(json)).toList();
+        }
       } catch (e) {
         debugPrint("Erro no fallback local: $e");
       }

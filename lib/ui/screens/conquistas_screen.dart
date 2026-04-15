@@ -9,6 +9,7 @@ import 'package:caminho_do_saber/services/disciplina_service.dart';
 import 'package:caminho_do_saber/providers/profile_provider.dart';
 import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
 import 'package:caminho_do_saber/ui/screens/ranking_screen.dart';
+import 'package:caminho_do_saber/ui/widgets/animated_stat_icon.dart';
 
 class ConquistasScreen extends StatefulWidget {
   const ConquistasScreen({super.key});
@@ -44,6 +45,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
     showDialog(
       context: context,
       builder: (context) {
+        final size = MediaQuery.of(context).size;
         return AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
           title: Row(
@@ -53,7 +55,10 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
               Flexible(child: Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20))),
             ],
           ),
-          content: Text(content, style: const TextStyle(fontSize: 16, height: 1.5, color: Colors.black87)),
+          content: Container(
+            width: size.width * 0.8,
+            child: Text(content, style: const TextStyle(fontSize: 16, height: 1.5, color: Colors.black87)),
+          ),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
@@ -68,6 +73,8 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
   @override
   Widget build(BuildContext context) {
     final Color textColor = Theme.of(context).colorScheme.onSurface;
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
 
     return Scaffold(
       appBar: AppBar(
@@ -81,24 +88,29 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
           child: SingleChildScrollView(
             physics: const AlwaysScrollableScrollPhysics(),
             padding: const EdgeInsets.fromLTRB(16, 20, 16, 40),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                _buildProfileCard(),
-                const SizedBox(height: 12),
-                _buildRankingCard(context),
-                const SizedBox(height: 20),
-                _buildXPProgressBar(context),
-                const SizedBox(height: 24),
+            child: Center(
+              child: Container(
+                constraints: const BoxConstraints(maxWidth: 800),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    _buildProfileCard(),
+                    const SizedBox(height: 12),
+                    _buildRankingCard(context),
+                    const SizedBox(height: 20),
+                    _buildXPProgressBar(context),
+                    const SizedBox(height: 24),
 
-                _buildSectionTitle(context, 'Desafios', textColor),
-                _buildChallengeStats(),
-                _buildArcadeRecords(),
-                const SizedBox(height: 24),
+                    _buildSectionTitle(context, 'Desafios', textColor),
+                    _buildChallengeStats(),
+                    _buildArcadeRecords(),
+                    const SizedBox(height: 24),
 
-                _buildSectionTitle(context, 'Troféus', textColor),
-                _buildTrophyGalleryDetailed(),
-              ],
+                    _buildSectionTitle(context, 'Troféus', textColor),
+                    _buildTrophyGalleryDetailed(isTablet),
+                  ],
+                ),
+              ),
             ),
           ),
         ),
@@ -109,33 +121,49 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
   Widget _buildChallengeStats() {
     return Consumer<ProgressoService>(
       builder: (context, ps, child) {
-        return Column(
-          children: [
-            _buildTieredStatCard(
-              title: 'Minhas Estrelas',
-              icon: Icons.stars_rounded,
-              items: [
-                {'label': 'Total Acumulado', 'value': ps.totalPontos, 'color': Colors.orangeAccent},
-                {'label': 'Próximo Nível', 'value': ps.getNextLevelXP(ps.totalPontos).toInt(), 'color': Colors.blueGrey},
-              ],
-            ),
-            const SizedBox(height: 16),
-            _buildTieredStatCard(
-              title: 'Meus Diamantes',
-              icon: Icons.diamond_rounded,
-              items: [
-                {'label': 'Disponíveis', 'value': ps.totalDiamantes, 'color': Colors.cyan},
-                {'label': 'Estrelas p/ Prox.', 'value': 5 - (ps.totalPontos % 5), 'color': Colors.purpleAccent},
-              ],
-            ),
-            const SizedBox(height: 16),
+        return _buildTieredStatCard(
+          title: 'Estatísticas Gerais',
+          icon: Icons.analytics_rounded,
+          items: [
+            {
+              'label': 'Total XP',
+              'value': ps.totalXP,
+              'color': Colors.blueAccent,
+              'icon': Icons.bolt_rounded
+            },
+            {
+              'label': 'Estrelas',
+              'value': ps.totalStarsTotal,
+              'color': Colors.orangeAccent,
+              'lottieAsset': 'assets/animations/desafio.json',
+              'icon': Icons.stars_rounded
+            },
+            {
+              'label': 'Diamantes',
+              'value': ps.totalDiamantes,
+              'color': Colors.cyan,
+              'lottieAsset': 'assets/animations/Diamond.json',
+              'icon': Icons.diamond_rounded
+            },
+            {
+              'label': 'Ofensiva',
+              'value': ps.currentStreak,
+              'color': Colors.orange,
+              'lottieAsset': 'assets/animations/fire.json',
+              'icon': Icons.local_fire_department_rounded
+            },
           ],
         );
       },
     );
   }
 
-  Widget _buildTieredStatCard({required String title, required IconData icon, required List<Map<String, dynamic>> items}) {
+  Widget _buildTieredStatCard({
+    required String title,
+    required IconData icon,
+    String? lottieAsset,
+    required List<Map<String, dynamic>> items,
+  }) {
     return Card(
       elevation: 4,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
@@ -146,22 +174,51 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
           children: [
             Row(
               children: [
-                Icon(icon, color: items.first['color'] as Color, size: 24),
+                Icon(icon, color: Colors.blueGrey, size: 24),
                 const SizedBox(width: 8),
                 Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.blueGrey)),
               ],
             ),
             const Divider(height: 24),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            Wrap(
+              spacing: 20,
+              runSpacing: 20,
+              alignment: WrapAlignment.spaceAround,
               children: items.map((item) {
-                return Column(
-                  children: [
-                    Icon(icon, color: item['color'] as Color, size: 32),
-                    const SizedBox(height: 4),
-                    Text('${item['value']}', style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900, color: (item['color'] as Color).withOpacity(0.8))),
-                    Text(item['label'] as String, style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.grey)),
-                  ],
+                final String? itemLottie = item['lottieAsset'] as String? ?? lottieAsset;
+                final IconData itemIcon = item['icon'] as IconData? ?? icon;
+                final Color itemColor = item['color'] as Color;
+
+                return Container(
+                  width: 70,
+                  child: Column(
+                    children: [
+                      itemLottie != null
+                          ? AnimatedStatIcon(
+                              lottieAsset: itemLottie,
+                              value: item['value'] as int,
+                              fallbackColor: itemColor,
+                              fallbackIcon: itemIcon,
+                              size: 45,
+                            )
+                          : Column(
+                              children: [
+                                Icon(itemIcon, color: itemColor, size: 32),
+                                const SizedBox(height: 4),
+                                FittedBox(
+                                  fit: BoxFit.scaleDown,
+                                  child: Text('${item['value']}', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w900, color: itemColor.withOpacity(0.8))),
+                                ),
+                              ],
+                            ),
+                      const SizedBox(height: 4),
+                      Text(
+                        item['label'] as String, 
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(fontSize: 9, fontWeight: FontWeight.bold, color: Colors.grey)
+                      ),
+                    ],
+                  ),
                 );
               }).toList(),
             ),
@@ -171,7 +228,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
     );
   }
 
-  Widget _buildTrophyGalleryDetailed() {
+  Widget _buildTrophyGalleryDetailed(bool isTablet) {
     return FutureBuilder<List<DisciplinaMetadata>>(
       future: _disciplinasMetadataFuture,
       builder: (context, snapshot) {
@@ -187,7 +244,8 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
               color: Colors.teal, 
               allItems: all, 
               ps: ps, 
-              isStudyShelf: true
+              isStudyShelf: true,
+              isTablet: isTablet
             ),
             const SizedBox(height: 16),
             _buildTrophyShelf(
@@ -196,7 +254,8 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
               color: Colors.orange, 
               allItems: all, 
               ps: ps, 
-              isStudyShelf: false
+              isStudyShelf: false,
+              isTablet: isTablet
             ),
           ],
         );
@@ -210,7 +269,8 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
     required Color color, 
     required List<DisciplinaMetadata> allItems, 
     required ProgressoService ps,
-    required bool isStudyShelf
+    required bool isStudyShelf,
+    required bool isTablet
   }) {
     return Card(
       elevation: 4,
@@ -233,7 +293,12 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
               itemCount: allItems.length,
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4, mainAxisSpacing: 10, crossAxisSpacing: 10, childAspectRatio: 0.8),
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: isTablet ? 6 : 4, 
+                mainAxisSpacing: 10, 
+                crossAxisSpacing: 10, 
+                childAspectRatio: 0.8
+              ),
               itemBuilder: (context, index) {
                 final d = allItems[index];
                 final atual = isStudyShelf ? ps.getProgressoLeituras(d.id) : ps.getProgressoQuizzes(d.id);
@@ -290,11 +355,21 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
           Stack(
             alignment: Alignment.center,
             children: [
-              // CÍRCULO DE PROGRESSO QUE ENVOLVE O ÍCONE (Aumentado)
+              if (!isUnlocked && percent > 0)
+                const SizedBox(
+                  width: 48,
+                  height: 48,
+                  child: CircularProgressIndicator(
+                    value: null,
+                    strokeWidth: 2,
+                    backgroundColor: Colors.transparent,
+                    valueColor: AlwaysStoppedAnimation<Color>(Colors.transparent),
+                  ),
+                ),
               if (!isUnlocked && percent > 0)
                 SizedBox(
-                  width: 52,
-                  height: 52,
+                  width: 48,
+                  height: 48,
                   child: CircularProgressIndicator(
                     value: percent,
                     strokeWidth: 4,
@@ -312,24 +387,25 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                   color: !isUnlocked ? Colors.grey.shade200 : null,
                 ),
                 child: CircleAvatar(
-                  radius: 20, 
+                  radius: 18, 
                   backgroundColor: isUnlocked ? Colors.white : Colors.grey.shade100, 
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
-                      // ÍCONE FICA EM FUNDO QUANDO TEM PERCENTAGEM
                       Opacity(
                         opacity: (!isUnlocked && percent > 0) ? 0.3 : 1.0,
-                        child: Icon(icon, color: isUnlocked ? trophyColor : Colors.grey.shade400, size: 22),
+                        child: Icon(icon, color: isUnlocked ? trophyColor : Colors.grey.shade400, size: 20),
                       ),
                       if (!isUnlocked && percent > 0)
-                        Text(
-                          '${(percent * 100).toInt()}%',
-                          style: TextStyle(
-                            fontSize: 10, 
-                            fontWeight: FontWeight.w900, 
-                            color: highlightColor,
-                            shadows: const [Shadow(color: Colors.white, blurRadius: 2)]
+                        FittedBox(
+                          child: Text(
+                            '${(percent * 100).toInt()}%',
+                            style: TextStyle(
+                              fontSize: 9, 
+                              fontWeight: FontWeight.w900, 
+                              color: highlightColor,
+                              shadows: const [Shadow(color: Colors.white, blurRadius: 2)]
+                            ),
                           ),
                         ),
                     ],
@@ -339,12 +415,14 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
             ],
           ),
           const SizedBox(height: 4),
-          Text(
-            nome, 
-            textAlign: TextAlign.center, 
-            style: TextStyle(fontSize: 8, fontWeight: isUnlocked ? FontWeight.bold : FontWeight.normal, color: isUnlocked ? Colors.black87 : Colors.grey), 
-            maxLines: 1, 
-            overflow: TextOverflow.ellipsis
+          FittedBox(
+            child: Text(
+              nome, 
+              textAlign: TextAlign.center, 
+              style: TextStyle(fontSize: 8, fontWeight: isUnlocked ? FontWeight.bold : FontWeight.normal, color: isUnlocked ? Colors.black87 : Colors.grey), 
+              maxLines: 1, 
+              overflow: TextOverflow.ellipsis
+            ),
           ),
         ],
       ),
@@ -435,16 +513,17 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(activeProfile.nome, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.blueAccent)),
+                      FittedBox(fit: BoxFit.scaleDown, child: Text(activeProfile.nome, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.blueAccent))),
                       const Text('Explorador do Saber', style: TextStyle(fontSize: 14, color: Colors.blueGrey)),
                     ],
                   ),
                 ),
-                Column(
-                  children: [
-                    const Icon(Icons.stars_rounded, color: Colors.orangeAccent, size: 30),
-                    Text('${ps.totalPontos}', style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.orangeAccent)),
-                  ],
+                AnimatedStatIcon(
+                  lottieAsset: 'assets/animations/desafio.json',
+                  value: ps.totalPontos,
+                  fallbackColor: Colors.orangeAccent,
+                  fallbackIcon: Icons.stars_rounded,
+                  size: 50,
                 ),
               ],
             ),

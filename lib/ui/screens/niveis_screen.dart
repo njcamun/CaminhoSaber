@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
-import 'dart:math';
 import 'package:caminho_do_saber/models/disciplina_model.dart';
 import 'package:caminho_do_saber/services/progresso_service.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
@@ -12,8 +11,6 @@ import 'package:caminho_do_saber/models/quiz_model.dart';
 import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
-import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
-import 'package:caminho_do_saber/ui/widgets/staggered_item.dart';
 
 class NiveisScreen extends StatefulWidget {
   final Disciplina disciplina;
@@ -29,16 +26,13 @@ class NiveisScreen extends StatefulWidget {
   State<NiveisScreen> createState() => _NiveisScreenState();
 }
 
-class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMixin {
+class _NiveisScreenState extends State<NiveisScreen> {
   late final ProgressoService _progressoService;
   Map<String, int> _progressoCapitulos = {};
   List<Capitulo> _capitulos = [];
   Map<String, List<PerguntaQuiz>> _quizzes = {};
   Map<String, List<FlashCard>> _flashCardsPorQuiz = {};
   bool _isLoading = true;
-
-  // Controle de Shake para níveis bloqueados
-  final Map<int, AnimationController> _shakeControllers = {};
 
   @override
   void initState() {
@@ -49,9 +43,6 @@ class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMix
 
   @override
   void dispose() {
-    for (var controller in _shakeControllers.values) {
-      controller.dispose();
-    }
     super.dispose();
   }
 
@@ -70,17 +61,6 @@ class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMix
         });
       }
     }
-  }
-
-  void _triggerShake(int index) {
-    if (!_shakeControllers.containsKey(index)) {
-      _shakeControllers[index] = AnimationController(
-        vsync: this,
-        duration: const Duration(milliseconds: 400),
-      );
-    }
-    _shakeControllers[index]!.forward(from: 0.0);
-    HapticFeedback.vibrate();
   }
 
   Future<void> _loadQuizzes() async {
@@ -179,86 +159,69 @@ class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMix
         : 0;
 
     final isUnlocked = _isNivelDesbloqueado(index, pontuacaoAnterior, totalPontosAnterior);
+    final size = MediaQuery.of(context).size;
 
-    if (!_shakeControllers.containsKey(index)) {
-      _shakeControllers[index] = AnimationController(vsync: this, duration: const Duration(milliseconds: 400));
-    }
-
-    return StaggeredFadeItem(
-      index: index,
-      child: AnimatedBuilder(
-        animation: _shakeControllers[index]!,
-        builder: (context, child) {
-          final double offset = sin(_shakeControllers[index]!.value * pi * 4) * 8;
-          return Transform.translate(
-            offset: Offset(isUnlocked ? 0 : offset, 0),
-            child: child,
-          );
-        },
-        child: ScalePressWrapper(
-          onTap: isUnlocked && quizPerguntas.isNotEmpty
-              ? () async {
-            await Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => QuizScreen(
-                  perguntas: quizPerguntas,
-                  disciplinaId: widget.disciplina.id,
-                  capituloIndex: index + 1,
-                  flashCards: _flashCardsPorQuiz[capitulo.quizId] ?? [],
-                ),
-              ),
-            );
-            await _loadData();
-          }
-              : () {
-            _triggerShake(index);
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(isUnlocked ? 'Nenhuma pergunta disponível.' : 'Nível bloqueado! Completa o anterior com 80%+.'),
-                duration: const Duration(milliseconds: 800),
-              ),
-            );
-          },
-          child: Card(
-            elevation: isUnlocked ? 8 : 2,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
-            child: Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15.0),
-                gradient: LinearGradient(
-                  colors: isUnlocked
-                      ? [Colors.blue.shade300, Colors.blue.shade900]
-                      : [Colors.grey.shade400, Colors.grey.shade700],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
-              ),
-              child: Stack(
-                children: [
-                  Align(
-                    alignment: Alignment.center,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text('${index + 1}', style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: isUnlocked ? Colors.white : Colors.grey.shade800)),
-                        const SizedBox(height: 5),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 4),
-                          child: Text(capitulo.capitulo, textAlign: TextAlign.center, style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: isUnlocked ? Colors.white : Colors.grey.shade800), maxLines: 2, overflow: TextOverflow.ellipsis),
-                        ),
-                        if (isUnlocked)
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: List.generate(5, (starIndex) => Icon(starIndex < estrelas ? Icons.star : Icons.star_border, color: Colors.amber, size: 14)),
-                          ),
-                      ],
-                    ),
+    return InkWell(
+      onTap: isUnlocked && quizPerguntas.isNotEmpty
+          ? () async {
+              await Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => QuizScreen(
+                    perguntas: quizPerguntas,
+                    disciplinaId: widget.disciplina.id,
+                    capituloIndex: index + 1,
+                    flashCards: _flashCardsPorQuiz[capitulo.quizId] ?? [],
                   ),
-                  if (!isUnlocked)
-                    const Positioned.fill(child: Icon(Icons.lock_rounded, color: Colors.white54, size: 40)),
-                ],
-              ),
+                ),
+              );
+              await _loadData();
+            }
+          : () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(isUnlocked ? 'Nenhuma pergunta disponível.' : 'Nível bloqueado! Completa o anterior com 80%+.'),
+                  duration: const Duration(milliseconds: 800),
+                ),
+              );
+            },
+      child: Card(
+        elevation: isUnlocked ? 4 : 1,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15.0),
+            gradient: LinearGradient(
+              colors: isUnlocked
+                  ? [Colors.blue.shade400, Colors.blue.shade800]
+                  : [Colors.grey.shade300, Colors.grey.shade500],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
+          ),
+          child: Stack(
+            children: [
+              Align(
+                alignment: Alignment.center,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    FittedBox(fit: BoxFit.scaleDown, child: Text('${index + 1}', style: TextStyle(fontSize: size.width * 0.1 > 40 ? 40 : size.width * 0.1, fontWeight: FontWeight.bold, color: isUnlocked ? Colors.white : Colors.grey.shade700))),
+                    const SizedBox(height: 5),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      child: Text(capitulo.capitulo, textAlign: TextAlign.center, style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.white), maxLines: 2, overflow: TextOverflow.ellipsis),
+                    ),
+                    if (isUnlocked)
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: List.generate(5, (starIndex) => Icon(starIndex < estrelas ? Icons.star : Icons.star_border, color: Colors.amber, size: size.width * 0.035 > 14 ? 14 : size.width * 0.035)),
+                      ),
+                  ],
+                ),
+              ),
+              if (!isUnlocked)
+                const Positioned.fill(child: Icon(Icons.lock_rounded, color: Colors.black26, size: 40)),
+            ],
           ),
         ),
       ),
@@ -267,6 +230,10 @@ class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMix
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
+    final headerHeight = size.height * 0.3 > 250 ? 250.0 : size.height * 0.3;
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -285,10 +252,10 @@ class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMix
                     children: [
                       Hero(
                         tag: 'disciplina_bg_${widget.disciplina.id}',
-                        child: SizedBox(height: 220, width: double.infinity, child: SafeAssetImage(path: widget.disciplina.animacao, fit: BoxFit.cover)),
+                        child: SizedBox(height: headerHeight, width: double.infinity, child: SafeAssetImage(path: widget.disciplina.animacao, fit: BoxFit.cover)),
                       ),
                       Container(
-                        height: 220,
+                        height: headerHeight,
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
                             begin: Alignment.topCenter,
@@ -302,7 +269,7 @@ class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMix
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(widget.disciplina.nome, style: const TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold)),
+                            FittedBox(fit: BoxFit.scaleDown, child: Text(widget.disciplina.nome, style: const TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold))),
                             Text(widget.disciplina.descricao, style: const TextStyle(color: Colors.white70, fontSize: 14), maxLines: 2, overflow: TextOverflow.ellipsis),
                           ],
                         ),
@@ -312,7 +279,12 @@ class _NiveisScreenState extends State<NiveisScreen> with TickerProviderStateMix
                   Expanded(
                     child: GridView.builder(
                       padding: const EdgeInsets.all(16),
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3, childAspectRatio: 0.9, crossAxisSpacing: 12, mainAxisSpacing: 12),
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: isTablet ? 4 : 3, 
+                        childAspectRatio: 0.9, 
+                        crossAxisSpacing: 12, 
+                        mainAxisSpacing: 12
+                      ),
                       itemCount: _capitulos.length,
                       itemBuilder: (context, index) => _buildNivelCard(context, index),
                     ),

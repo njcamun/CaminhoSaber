@@ -1,0 +1,617 @@
+{
+"disciplina": "aritmetica",
+"quizzes": [
+{
+"id": "1",
+"capitulo": "Capítulo 1 - O Que São os Números? O Número Puro e o Numeral",
+"nivel": "basico",
+"dicas": "Número é a quantidade e numeral é o símbolo que escrevemos.",
+"perguntas": [
+{
+"pergunta": "O que é um número?",
+"opcoes": ["Um desenho", "Uma quantidade", "Uma cor", "Um som"],
+"respostaCorreta": "Uma quantidade",
+"dica": "Representa quanto existe."
+},
+{
+"pergunta": "O que é um numeral?",
+"opcoes": ["Quantidade", "Símbolo do número", "Som", "Cor"],
+"respostaCorreta": "Símbolo do número",
+"dica": "Forma escrita."
+},
+{
+"pergunta": "Qual destes é um numeral?",
+"opcoes": ["Três laranjas", "Quantidade", "3", "Ideia"],
+"respostaCorreta": "3",
+"dica": "É um símbolo."
+},
+{
+"pergunta": "Número representa:",
+"opcoes": ["Cor", "Quantidade", "Som", "Desenho"],
+"respostaCorreta": "Quantidade",
+"dica": "Quanto existe."
+},
+{
+"pergunta": "Numeral serve para:",
+"opcoes": ["Pensar", "Escrever números", "Criar som", "Colorir"],
+"respostaCorreta": "Escrever números",
+"dica": "Representação escrita."
+},
+{
+"pergunta": "Se você tem 5 dedos, o número é:",
+"opcoes": ["O desenho 5", "A quantidade de dedos", "A cor da mão", "O nome dedo"],
+"respostaCorreta": "A quantidade de dedos",
+"dica": "Quantidade real."
+},
+{
+"pergunta": "O símbolo 'III' é:",
+"opcoes": ["Número", "Numeral", "Cor", "Som"],
+"respostaCorreta": "Numeral",
+"dica": "Forma escrita."
+},
+{
+"pergunta": "Número existe como:",
+"opcoes": ["Ideia", "Cor", "Som", "Linha"],
+"respostaCorreta": "Ideia",
+"dica": "É abstrato."
+},
+{
+"pergunta": "Numeral é:",
+"opcoes": ["Ideia", "Símbolo", "Som", "Quantidade"],
+"respostaCorreta": "Símbolo",
+"dica": "Forma escrita."
+},
+{
+"pergunta": "A aritmética estuda:",
+"opcoes": ["Cores", "Números", "Sons", "Desenhos"],
+"respostaCorreta": "Números",
+"dica": "Ciência dos números."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 1 - O Que São os Números? O Número Puro e o Numeral",
+"nivel": "medio",
+"dicas": "Diferenciar conceito abstrato e representação escrita.",
+"perguntas": [
+{
+"pergunta": "Número é considerado:",
+"opcoes": ["Concreto", "Abstrato", "Colorido", "Sonoro"],
+"respostaCorreta": "Abstrato",
+"dica": "Existe como ideia."
+},
+{
+"pergunta": "Numeral é:",
+"opcoes": ["Ideia", "Representação escrita", "Quantidade", "Som"],
+"respostaCorreta": "Representação escrita",
+"dica": "Forma visível."
+},
+{
+"pergunta": "A quantidade de objetos representa:",
+"opcoes": ["Numeral", "Número", "Cor", "Som"],
+"respostaCorreta": "Número",
+"dica": "Valor real."
+},
+{
+"pergunta": "O símbolo usado para escrever números é:",
+"opcoes": ["Número", "Numeral", "Quantidade", "Som"],
+"respostaCorreta": "Numeral",
+"dica": "Forma gráfica."
+},
+{
+"pergunta": "Número e numeral são:",
+"opcoes": ["Iguais", "Diferentes", "Sempre iguais", "Sem relação"],
+"respostaCorreta": "Diferentes",
+"dica": "Ideia vs símbolo."
+},
+{
+"pergunta": "Aritmética estuda o:",
+"opcoes": ["Numeral apenas", "Número puro", "Cor", "Som"],
+"respostaCorreta": "Número puro",
+"dica": "Quantidade."
+},
+{
+"pergunta": "O numeral depende de:",
+"opcoes": ["Sistema de escrita", "Quantidade", "Som", "Cor"],
+"respostaCorreta": "Sistema de escrita",
+"dica": "Forma varia."
+},
+{
+"pergunta": "O número 3 pode ser escrito como:",
+"opcoes": ["III", "3", "Ambos", "Nenhum"],
+"respostaCorreta": "Ambos",
+"dica": "Mesmo valor."
+},
+{
+"pergunta": "Número é percebido por:",
+"opcoes": ["Observação da quantidade", "Desenho", "Cor", "Som"],
+"respostaCorreta": "Observação da quantidade",
+"dica": "Experiência."
+},
+{
+"pergunta": "Numeral permite:",
+"opcoes": ["Escrever quantidades", "Criar sons", "Ignorar números", "Apagar ideias"],
+"respostaCorreta": "Escrever quantidades",
+"dica": "Representação."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 1 - O Que São os Números? O Número Puro e o Numeral",
+"nivel": "avancado",
+"dicas": "Analisar a diferença filosófica entre número e numeral.",
+"perguntas": [
+{
+"pergunta": "Número puro representa:",
+"opcoes": ["Símbolo", "Quantidade abstrata", "Cor", "Som"],
+"respostaCorreta": "Quantidade abstrata",
+"dica": "Ideia matemática."
+},
+{
+"pergunta": "Numeral é uma:",
+"opcoes": ["Ideia universal", "Representação simbólica", "Quantidade", "Som"],
+"respostaCorreta": "Representação simbólica",
+"dica": "Forma escrita."
+},
+{
+"pergunta": "A distinção entre número e numeral é:",
+"opcoes": ["Inexistente", "Conceitual", "Visual apenas", "Sonora"],
+"respostaCorreta": "Conceitual",
+"dica": "Ideia vs símbolo."
+},
+{
+"pergunta": "Número existe independentemente de:",
+"opcoes": ["Símbolos", "Quantidade", "Realidade", "Unidade"],
+"respostaCorreta": "Símbolos",
+"dica": "Não depende da escrita."
+},
+{
+"pergunta": "Numerais variam conforme:",
+"opcoes": ["Sistema cultural", "Quantidade", "Som", "Cor"],
+"respostaCorreta": "Sistema cultural",
+"dica": "Ex: romano, árabe."
+},
+{
+"pergunta": "A aritmética clássica foca no:",
+"opcoes": ["Numeral", "Número puro", "Desenho", "Som"],
+"respostaCorreta": "Número puro",
+"dica": "Essência matemática."
+},
+{
+"pergunta": "Número está presente em:",
+"opcoes": ["Natureza", "Geometria", "Música", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Universal."
+},
+{
+"pergunta": "Numeral serve para:",
+"opcoes": ["Comunicação matemática", "Criar quantidade", "Alterar valor", "Eliminar números"],
+"respostaCorreta": "Comunicação matemática",
+"dica": "Representação."
+},
+{
+"pergunta": "A unidade é:",
+"opcoes": ["Parte do número", "Base de todos os números", "Cor", "Som"],
+"respostaCorreta": "Base de todos os números",
+"dica": "Origem."
+},
+{
+"pergunta": "Compreender número e numeral ajuda a:",
+"opcoes": ["Entender matemática", "Ignorar números", "Apagar ideias", "Criar silêncio"],
+"respostaCorreta": "Entender matemática",
+"dica": "Base do conhecimento."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 2 - A Ordem da Contagem: Antecessor e Sucessor",
+"nivel": "basico",
+"dicas": "Antecessor é o número antes e sucessor é o número depois.",
+"perguntas": [
+{
+"pergunta": "O que é contagem crescente?",
+"opcoes": ["Diminuir números", "Aumentar números", "Parar números", "Ignorar números"],
+"respostaCorreta": "Aumentar números",
+"dica": "Vai para frente."
+},
+{
+"pergunta": "O que é contagem decrescente?",
+"opcoes": ["Aumentar números", "Diminuir números", "Parar números", "Ignorar números"],
+"respostaCorreta": "Diminuir números",
+"dica": "Vai para trás."
+},
+{
+"pergunta": "O antecessor de 5 é:",
+"opcoes": ["6", "4", "3", "7"],
+"respostaCorreta": "4",
+"dica": "Um a menos."
+},
+{
+"pergunta": "O sucessor de 5 é:",
+"opcoes": ["6", "4", "3", "7"],
+"respostaCorreta": "6",
+"dica": "Um a mais."
+},
+{
+"pergunta": "Qual número vem antes de 1?",
+"opcoes": ["0", "2", "3", "Nenhum"],
+"respostaCorreta": "0",
+"dica": "Antes de 1."
+},
+{
+"pergunta": "Na sequência 1, 2, 3 estamos:",
+"opcoes": ["Descendo", "Subindo", "Parando", "Ignorando"],
+"respostaCorreta": "Subindo",
+"dica": "Crescente."
+},
+{
+"pergunta": "Na sequência 3, 2, 1 estamos:",
+"opcoes": ["Subindo", "Descendo", "Parando", "Ignorando"],
+"respostaCorreta": "Descendo",
+"dica": "Decrescente."
+},
+{
+"pergunta": "O antecessor significa:",
+"opcoes": ["Depois", "Antes", "Igual", "Maior"],
+"respostaCorreta": "Antes",
+"dica": "Vem primeiro."
+},
+{
+"pergunta": "O sucessor significa:",
+"opcoes": ["Antes", "Depois", "Igual", "Menor"],
+"respostaCorreta": "Depois",
+"dica": "Vem depois."
+},
+{
+"pergunta": "Contar ajuda a:",
+"opcoes": ["Organizar números", "Ignorar números", "Apagar números", "Criar silêncio"],
+"respostaCorreta": "Organizar números",
+"dica": "Ordem."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 2 - A Ordem da Contagem: Antecessor e Sucessor",
+"nivel": "medio",
+"dicas": "Cada número tem um antes (antecessor) e um depois (sucessor).",
+"perguntas": [
+{
+"pergunta": "O antecessor é obtido por:",
+"opcoes": ["Somar 1", "Subtrair 1", "Multiplicar", "Dividir"],
+"respostaCorreta": "Subtrair 1",
+"dica": "Um a menos."
+},
+{
+"pergunta": "O sucessor é obtido por:",
+"opcoes": ["Somar 1", "Subtrair 1", "Multiplicar", "Dividir"],
+"respostaCorreta": "Somar 1",
+"dica": "Um a mais."
+},
+{
+"pergunta": "O antecessor de 10 é:",
+"opcoes": ["9", "11", "8", "12"],
+"respostaCorreta": "9",
+"dica": "Um antes."
+},
+{
+"pergunta": "O sucessor de 10 é:",
+"opcoes": ["9", "11", "12", "8"],
+"respostaCorreta": "11",
+"dica": "Um depois."
+},
+{
+"pergunta": "Na sequência 6, 7, 8 o 7 é:",
+"opcoes": ["Primeiro", "Meio", "Último", "Nenhum"],
+"respostaCorreta": "Meio",
+"dica": "Entre dois números."
+},
+{
+"pergunta": "A ordem numérica é:",
+"opcoes": ["Aleatória", "Organizada", "Confusa", "Inexistente"],
+"respostaCorreta": "Organizada",
+"dica": "Tem sequência."
+},
+{
+"pergunta": "O sucessor de um número é sempre:",
+"opcoes": ["Menor", "Maior", "Igual", "Zero"],
+"respostaCorreta": "Maior",
+"dica": "Aumenta."
+},
+{
+"pergunta": "O antecessor de um número é sempre:",
+"opcoes": ["Maior", "Menor", "Igual", "Zero"],
+"respostaCorreta": "Menor",
+"dica": "Diminui."
+},
+{
+"pergunta": "Contagem crescente é como:",
+"opcoes": ["Descer escada", "Subir escada", "Parar", "Ignorar"],
+"respostaCorreta": "Subir escada",
+"dica": "Vai para cima."
+},
+{
+"pergunta": "Contagem decrescente é como:",
+"opcoes": ["Subir escada", "Descer escada", "Parar", "Ignorar"],
+"respostaCorreta": "Descer escada",
+"dica": "Vai para baixo."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 2 - A Ordem da Contagem: Antecessor e Sucessor",
+"nivel": "avancado",
+"dicas": "A sequência numérica é fixa e cada número tem posição definida.",
+"perguntas": [
+{
+"pergunta": "A sequência numérica é:",
+"opcoes": ["Aleatória", "Fixa", "Confusa", "Inexistente"],
+"respostaCorreta": "Fixa",
+"dica": "Não muda."
+},
+{
+"pergunta": "Antecessor representa:",
+"opcoes": ["Número posterior", "Número anterior", "Número igual", "Número maior"],
+"respostaCorreta": "Número anterior",
+"dica": "Vem antes."
+},
+{
+"pergunta": "Sucessor representa:",
+"opcoes": ["Número anterior", "Número posterior", "Número igual", "Número menor"],
+"respostaCorreta": "Número posterior",
+"dica": "Vem depois."
+},
+{
+"pergunta": "Na sequência 9, 10, 11 o 10 é:",
+"opcoes": ["Antecessor", "Sucessor", "Elemento central", "Nenhum"],
+"respostaCorreta": "Elemento central",
+"dica": "Entre dois."
+},
+{
+"pergunta": "A ordem numérica garante:",
+"opcoes": ["Confusão", "Organização", "Silêncio", "Erro"],
+"respostaCorreta": "Organização",
+"dica": "Sequência lógica."
+},
+{
+"pergunta": "O sucessor sempre aumenta o número em:",
+"opcoes": ["2", "1", "0", "10"],
+"respostaCorreta": "1",
+"dica": "Incremento básico."
+},
+{
+"pergunta": "O antecessor sempre reduz o número em:",
+"opcoes": ["2", "1", "0", "10"],
+"respostaCorreta": "1",
+"dica": "Decremento."
+},
+{
+"pergunta": "A contagem estabelece:",
+"opcoes": ["Ritmo numérico", "Silêncio", "Erro", "Cor"],
+"respostaCorreta": "Ritmo numérico",
+"dica": "Sequência ordenada."
+},
+{
+"pergunta": "Sem ordem numérica haveria:",
+"opcoes": ["Organização", "Confusão", "Sequência", "Harmonia"],
+"respostaCorreta": "Confusão",
+"dica": "Sem lógica."
+},
+{
+"pergunta": "Entender antecessor e sucessor ajuda a:",
+"opcoes": ["Compreender sequência", "Ignorar números", "Apagar números", "Criar silêncio"],
+"respostaCorreta": "Compreender sequência",
+"dica": "Base da contagem."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 3 - O Sistema Decimal: Da Unidade ao Milhar",
+"nivel": "basico",
+"dicas": "O sistema decimal usa unidades, dezenas, centenas e milhares.",
+"perguntas": [
+{
+"pergunta": "O que é unidade?",
+"opcoes": ["10", "1", "100", "1000"],
+"respostaCorreta": "1",
+"dica": "Valor mais pequeno."
+},
+{
+"pergunta": "10 unidades formam:",
+"opcoes": ["1 dezena", "1 centena", "1 milhar", "Nada"],
+"respostaCorreta": "1 dezena",
+"dica": "Grupo de 10."
+},
+{
+"pergunta": "10 dezenas formam:",
+"opcoes": ["1 unidade", "1 centena", "1 milhar", "Nada"],
+"respostaCorreta": "1 centena",
+"dica": "100."
+},
+{
+"pergunta": "10 centenas formam:",
+"opcoes": ["1 milhar", "1 dezena", "1 unidade", "Nada"],
+"respostaCorreta": "1 milhar",
+"dica": "1000."
+},
+{
+"pergunta": "Qual número representa uma dezena?",
+"opcoes": ["1", "10", "100", "1000"],
+"respostaCorreta": "10",
+"dica": "Dez unidades."
+},
+{
+"pergunta": "Qual número representa uma centena?",
+"opcoes": ["10", "100", "1000", "1"],
+"respostaCorreta": "100",
+"dica": "Cem unidades."
+},
+{
+"pergunta": "Qual número representa um milhar?",
+"opcoes": ["10", "100", "1000", "1"],
+"respostaCorreta": "1000",
+"dica": "Mil unidades."
+},
+{
+"pergunta": "O sistema decimal usa base:",
+"opcoes": ["2", "5", "10", "100"],
+"respostaCorreta": "10",
+"dica": "Base dez."
+},
+{
+"pergunta": "Unidade, dezena e centena são:",
+"opcoes": ["Cores", "Ordens", "Sons", "Linhas"],
+"respostaCorreta": "Ordens",
+"dica": "Posições dos números."
+},
+{
+"pergunta": "O sistema decimal ajuda a:",
+"opcoes": ["Organizar números", "Apagar números", "Ignorar números", "Criar silêncio"],
+"respostaCorreta": "Organizar números",
+"dica": "Estrutura."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 3 - O Sistema Decimal: Da Unidade ao Milhar",
+"nivel": "medio",
+"dicas": "Cada posição no número tem um valor diferente.",
+"perguntas": [
+{
+"pergunta": "No número 25, o 2 representa:",
+"opcoes": ["2 unidades", "2 dezenas", "2 centenas", "2 milhares"],
+"respostaCorreta": "2 dezenas",
+"dica": "Está na posição das dezenas."
+},
+{
+"pergunta": "No número 134, o 1 representa:",
+"opcoes": ["1 unidade", "1 dezena", "1 centena", "1 milhar"],
+"respostaCorreta": "1 centena",
+"dica": "Primeiro dígito."
+},
+{
+"pergunta": "No número 407, o 0 indica:",
+"opcoes": ["Nada", "Ausência de dezenas", "Erro", "Milhar"],
+"respostaCorreta": "Ausência de dezenas",
+"dica": "Sem dezenas."
+},
+{
+"pergunta": "O valor posicional depende de:",
+"opcoes": ["Cor", "Posição do dígito", "Som", "Forma"],
+"respostaCorreta": "Posição do dígito",
+"dica": "Lugar no número."
+},
+{
+"pergunta": "No número 1000 temos:",
+"opcoes": ["1 unidade", "1 dezena", "1 centena", "1 milhar"],
+"respostaCorreta": "1 milhar",
+"dica": "Quatro dígitos."
+},
+{
+"pergunta": "Cada ordem vale:",
+"opcoes": ["Igual", "10 vezes mais", "Menos", "Nada"],
+"respostaCorreta": "10 vezes mais",
+"dica": "Multiplica por 10."
+},
+{
+"pergunta": "O sistema decimal organiza números em:",
+"opcoes": ["Ordens", "Cores", "Sons", "Linhas"],
+"respostaCorreta": "Ordens",
+"dica": "Unidade, dezena..."
+},
+{
+"pergunta": "O número 345 tem:",
+"opcoes": ["3 unidades", "4 dezenas", "5 centenas", "3 centenas"],
+"respostaCorreta": "3 centenas",
+"dica": "Primeiro dígito."
+},
+{
+"pergunta": "O zero serve para:",
+"opcoes": ["Aumentar valor", "Indicar ausência", "Criar som", "Apagar números"],
+"respostaCorreta": "Indicar ausência",
+"dica": "Sem valor naquela ordem."
+},
+{
+"pergunta": "Compreender o sistema decimal ajuda a:",
+"opcoes": ["Ler números", "Ignorar números", "Apagar números", "Criar silêncio"],
+"respostaCorreta": "Ler números",
+"dica": "Interpretação."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 3 - O Sistema Decimal: Da Unidade ao Milhar",
+"nivel": "avancado",
+"dicas": "O sistema decimal baseia-se no valor posicional e na base 10.",
+"perguntas": [
+{
+"pergunta": "O sistema decimal é baseado em:",
+"opcoes": ["Base 2", "Base 5", "Base 10", "Base 100"],
+"respostaCorreta": "Base 10",
+"dica": "Dez símbolos."
+},
+{
+"pergunta": "Valor posicional significa:",
+"opcoes": ["Valor fixo", "Valor depende da posição", "Valor aleatório", "Sem valor"],
+"respostaCorreta": "Valor depende da posição",
+"dica": "Lugar importa."
+},
+{
+"pergunta": "Cada ordem é:",
+"opcoes": ["Igual", "10 vezes maior que a anterior", "Menor", "Aleatória"],
+"respostaCorreta": "10 vezes maior que a anterior",
+"dica": "Multiplicação por 10."
+},
+{
+"pergunta": "O número 203 representa:",
+"opcoes": ["2 centenas e 3 unidades", "2 dezenas", "3 centenas", "2 unidades"],
+"respostaCorreta": "2 centenas e 3 unidades",
+"dica": "Sem dezenas."
+},
+{
+"pergunta": "O zero no sistema decimal:",
+"opcoes": ["Tem valor sempre", "Indica posição vazia", "Não existe", "Cria erro"],
+"respostaCorreta": "Indica posição vazia",
+"dica": "Elemento importante."
+},
+{
+"pergunta": "Ordens principais são:",
+"opcoes": ["Unidade, dezena, centena, milhar", "Cor, som, forma", "Linha, ponto, cor", "Nada"],
+"respostaCorreta": "Unidade, dezena, centena, milhar",
+"dica": "Estrutura básica."
+},
+{
+"pergunta": "O sistema decimal permite:",
+"opcoes": ["Organizar grandes números", "Ignorar números", "Apagar números", "Criar silêncio"],
+"respostaCorreta": "Organizar grandes números",
+"dica": "Estrutura eficiente."
+},
+{
+"pergunta": "O número 100 é:",
+"opcoes": ["1 dezena", "1 centena", "1 milhar", "10 unidades"],
+"respostaCorreta": "1 centena",
+"dica": "Cem."
+},
+{
+"pergunta": "A posição mais à esquerda indica:",
+"opcoes": ["Menor valor", "Maior valor", "Igual valor", "Sem valor"],
+"respostaCorreta": "Maior valor",
+"dica": "Ordem mais alta."
+},
+{
+"pergunta": "Entender o sistema decimal é essencial para:",
+"opcoes": ["Matemática", "Ignorar números", "Apagar ideias", "Criar silêncio"],
+"respostaCorreta": "Matemática",
+"dica": "Base do cálculo."
+}
+]
+}
+]
+}

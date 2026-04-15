@@ -64,7 +64,8 @@ class ProgressoService with ChangeNotifier {
   }
 
   Future<void> _loadProgresso() async {
-    if (_profileProvider?.activeProfile == null) {
+    final activeProfile = _profileProvider?.activeProfile;
+    if (activeProfile == null) {
       _progressoPorCapitulo.clear();
       _totalXP = 0;
       _totalDiamantes = 0;
@@ -73,7 +74,7 @@ class ProgressoService with ChangeNotifier {
       return;
     }
 
-    final activeProfileUid = _profileProvider!.activeProfile!.uid;
+    final activeProfileUid = activeProfile.uid;
 
     List<ProgressoCapitulo> todosProgressos = [];
     try {
@@ -99,7 +100,7 @@ class ProgressoService with ChangeNotifier {
     for (var progresso in todosProgressos) {
       final tipo = progresso.tipo ?? 'quiz';
 
-      if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge') {
+      if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge' || tipo == 'bonus') {
          // Acumula o XP bruto de todas as atividades
          xpSoma += progresso.pontuacao;
 
@@ -124,7 +125,6 @@ class ProgressoService with ChangeNotifier {
 
     await _updateAndLoadStreak();
 
-    final activeProfile = _profileProvider!.activeProfile!;
     if (activeProfile.totalPontos != totalPontos ||
         activeProfile.totalDiamantes != _totalDiamantes ||
         activeProfile.currentStreak != _currentStreak) {
@@ -166,7 +166,7 @@ class ProgressoService with ChangeNotifier {
       final capituloId = (entry['capituloId'] ?? '').toString();
       final pontuacao = (entry['pontuacao'] as num?)?.toInt() ?? 0;
 
-      if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge') {
+      if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge' || tipo == 'bonus') {
         xpSoma += pontuacao;
         if ((tipo == 'leitura' || tipo == 'quiz') && capituloId.isNotEmpty) {
           _progressoPorCapitulo[capituloId] = pontuacao;
@@ -272,6 +272,17 @@ class ProgressoService with ChangeNotifier {
                       highestStreak: Value(newHighest),
                     ),
                   );
+
+                  // Bónus: A cada 6 dias consecutivos, ganha 500 XP
+                  if (newStreak % 6 == 0) {
+                    await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                      capituloId: 'bonus_streak_${newStreak}_${today.millisecondsSinceEpoch}',
+                      pontuacao: 500,
+                      dataConclusao: DateTime.now(),
+                      profileUid: activeProfileUid,
+                      tipo: const Value('bonus'),
+                    ));
+                  }
                 } else if (today.difference(lastDate).inDays > 1 || stats.currentStreak == 0) {
                   await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
                     UserStatsTableCompanion(

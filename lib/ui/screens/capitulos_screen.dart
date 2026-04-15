@@ -22,13 +22,11 @@ class CapitulosScreen extends StatefulWidget {
 }
 
 class _CapitulosScreenState extends State<CapitulosScreen> {
-  late final ProgressoService _progressoService;
   late Future<List<ConteudoCapitulo>> _capitulosFuture;
 
   @override
   void initState() {
     super.initState();
-    _progressoService = Provider.of<ProgressoService>(context, listen: false);
     _capitulosFuture = context.read<DisciplinaService>().getCapitulos(widget.disciplina.id);
   }
 
@@ -55,6 +53,8 @@ class _CapitulosScreenState extends State<CapitulosScreen> {
   @override
   Widget build(BuildContext context) {
     final progressoService = context.watch<ProgressoService>();
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
 
     return Scaffold(
       appBar: AppBar(
@@ -79,8 +79,8 @@ class _CapitulosScreenState extends State<CapitulosScreen> {
             return GridView.builder(
               physics: const BouncingScrollPhysics(),
               padding: const EdgeInsets.all(20),
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: isTablet ? 3 : 2,
                 childAspectRatio: 1.1,
                 crossAxisSpacing: 16,
                 mainAxisSpacing: 16,
@@ -109,7 +109,6 @@ class _CapitulosScreenState extends State<CapitulosScreen> {
     Color bgColor;
     IconData iconData = Icons.lock;
     
-    // Mapeia score para estrelas (escala 1-3)
     int stars = 0;
     if (score >= 15) {
       stars = 3;

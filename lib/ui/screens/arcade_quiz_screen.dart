@@ -1,6 +1,7 @@
 // lib/ui/screens/arcade_quiz_screen.dart
 
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; 
 import 'package:caminho_do_saber/models/quiz_model.dart';
@@ -57,7 +58,6 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   final AudioPlayer _audioPlayer = AudioPlayer();
   bool _audioHabilitado = true;
 
-  // Feedback Animado Central
   String _feedbackText = "";
   IconData _feedbackIcon = Icons.star;
   Color _feedbackColor = Colors.amber;
@@ -320,13 +320,12 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     
     final currentScore = _pontos;
     final disciplineId = widget.disciplinaId;
+    final progressoService = context.read<ProgressoService>();
 
-    // NAVEGAÇÃO IMEDIATA (Não bloqueante)
     if (mounted) {
       _showGameOverDialog(context, currentScore, titulo);
     }
 
-    // EFEITO COLATERAL (Background)
     unawaited(
       progressoService.addArcadePoints(currentScore)
         .timeout(const Duration(seconds: 10))
@@ -351,14 +350,13 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
           children: [
             if (!kIsWeb)
               const SizedBox(
-                height: 150,
+                height: 120,
                 child: Icon(Icons.gamepad, size: 80, color: Colors.redAccent),
               )
             else
-              const Icon(Icons.gamepad, size: 80, color: Colors.red),
+              const Icon(Icons.gamepad, size: 60, color: Colors.red),
             const SizedBox(height: 10),
-            Text(titulo, 
-                style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.red)),
+            FittedBox(fit: BoxFit.scaleDown, child: Text(titulo, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.red))),
             const SizedBox(height: 20),
             Text('Pontuação Final: $score', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue)),
             const Text('A sincronizar com a nuvem...', style: TextStyle(fontSize: 12, color: Colors.grey)),
@@ -373,8 +371,8 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))
               ),
               onPressed: () { 
-                Navigator.of(context).pop(); // Fecha o dialog
-                if (mounted) Navigator.of(context).pop(); // Sai do quiz
+                Navigator.of(context).pop();
+                if (mounted) Navigator.of(context).pop();
               },
               child: const Text('Voltar ao Menu', style: TextStyle(fontWeight: FontWeight.bold)),
             ),
@@ -392,9 +390,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
         player.onPlayerComplete.listen((_) {
           player.dispose();
         });
-      } catch (e) {
-        // Ignorar falhas de áudio na Web para não travar
-      }
+      } catch (e) {}
     }
   }
 
@@ -412,11 +408,13 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   Widget build(BuildContext context) {
     final pergunta = _listaPerguntas[_perguntaAtualIndex];
     final Color timerColor = _tempoRestante <= 10 ? Colors.red : Colors.white;
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
 
     return RetroCRTWrapper(
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Arcade: ${widget.disciplinaNome}', style: const TextStyle(fontWeight: FontWeight.bold)),
+          title: FittedBox(fit: BoxFit.scaleDown, child: Text('Arcade: ${widget.disciplinaNome}', style: const TextStyle(fontWeight: FontWeight.bold))),
           backgroundColor: Colors.purple.shade700,
           foregroundColor: Colors.white,
           actions: [
@@ -434,193 +432,209 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
           ],
         ),
         body: BackgroundContainer(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Stack(
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Column(
                   children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    const SizedBox(height: 10),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        _buildStatusChip('Pontos: $_pontos', Icons.stars_rounded, Colors.orange.shade800),
-                        const SizedBox(height: 4),
-                        Row(
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            _buildComboProgress(_acertosParaTempo / 4, Colors.blue, "Tempo"),
-                            if (_multiplicador > 1) 
-                              Padding(
-                                padding: const EdgeInsets.only(left: 8.0),
-                                child: Text('x$_multiplicador', style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.w900, fontSize: 16)),
-                              ),
+                            _buildStatusChip('Pontos: $_pontos', Icons.stars_rounded, Colors.orange.shade800, size),
+                            const SizedBox(height: 4),
+                            Row(
+                              children: [
+                                _buildComboProgress(_acertosParaTempo / 4, Colors.blue, "Tempo", size),
+                                if (_multiplicador > 1) 
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 8.0),
+                                    child: Text('x$_multiplicador', style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.w900, fontSize: 16)),
+                                  ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            _buildStatusChip('Vidas: $_oportunidades', Icons.favorite_rounded, Colors.red.shade700, size),
+                            const SizedBox(height: 4),
+                            _buildComboProgress(_acertosParaVida / 5, Colors.green, "Vida", size),
                           ],
                         ),
                       ],
                     ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        _buildStatusChip('Vidas: $_oportunidades', Icons.favorite_rounded, Colors.red.shade700),
-                        const SizedBox(height: 4),
-                        _buildComboProgress(_acertosParaVida / 5, Colors.green, "Vida"),
-                      ],
-                    ),
-                  ],
-                ),
-                const Spacer(),
-                Card(
-                  elevation: 8,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-                  color: Colors.white.withValues(alpha: 0.95),
-                  child: Padding(
-                    padding: const EdgeInsets.all(24.0), 
-                    child: RetroTypewriterText(
-                      text: pergunta.pergunta,
-                      style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.black87),
-                    )
-                  )
-                ),
-                const SizedBox(height: 20),
+                    
+                    Expanded(
+                      child: Center(
+                        child: SingleChildScrollView(
+                          physics: const BouncingScrollPhysics(),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Card(
+                                elevation: 8,
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+                                color: Colors.white.withValues(alpha: 0.95),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(20.0), 
+                                  child: ConstrainedBox(
+                                    constraints: BoxConstraints(maxHeight: size.height * 0.2),
+                                    child: SingleChildScrollView(
+                                      child: RetroTypewriterText(
+                                        text: pergunta.pergunta,
+                                        style: TextStyle(fontSize: isTablet ? 24 : 20, fontWeight: FontWeight.bold, color: Colors.black87),
+                                      ),
+                                    ),
+                                  )
+                                )
+                              ),
+                              const SizedBox(height: 20),
+                              ..._opcoesAtuaisBaralhadas.map((opcao) {
+                                if (_opcoesRemovidas.contains(opcao)) return const SizedBox.shrink();
+                                
+                                bool isSelected = _opcaoSelecionada == opcao;
+                                bool isCorrect = opcao == pergunta.respostaCorreta;
+                                
+                                Color targetBgColor = isSelected 
+                                    ? (isCorrect ? Colors.green.shade100 : Colors.red.shade100)
+                                    : Colors.white.withValues(alpha: 0.9);
+                                
+                                Color targetBorderColor = isSelected 
+                                    ? (isCorrect ? Colors.green : Colors.red)
+                                    : Colors.blue.shade100;
                 
-                ..._opcoesAtuaisBaralhadas.map((opcao) {
-                  if (_opcoesRemovidas.contains(opcao)) return const SizedBox.shrink();
-                  
-                  bool isSelected = _opcaoSelecionada == opcao;
-                  bool isCorrect = opcao == pergunta.respostaCorreta;
-                  
-                  Color targetBgColor = isSelected 
-                      ? (isCorrect ? Colors.green.shade100 : Colors.red.shade100)
-                      : Colors.white.withValues(alpha: 0.9);
-                  
-                  Color targetBorderColor = isSelected 
-                      ? (isCorrect ? Colors.green : Colors.red)
-                      : Colors.blue.shade100;
-      
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 6.0),
-                    child: Listener(
-                      onPointerDown: (details) {
-                        if (!_estaProcessando) {
-                          _verificarResposta(opcao, details.position);
-                        }
-                      },
-                      child: QuizOptionWrapper(
-                        isSelected: isSelected,
-                        isCorrect: isCorrect,
-                        child: SizedBox(
-                          width: double.infinity, 
-                          child: ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: targetBgColor, 
-                              foregroundColor: isSelected ? (isCorrect ? Colors.green : Colors.red) : Colors.blue.shade900, 
-                              disabledBackgroundColor: targetBgColor,
-                              disabledForegroundColor: isSelected ? (isCorrect ? Colors.green : Colors.red) : Colors.blue.shade900,
-                              padding: const EdgeInsets.all(18), 
-                              elevation: isSelected ? 0 : 4, 
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(15),
-                                side: BorderSide(color: targetBorderColor, width: 2),
-                              )
-                            ),
-                            onPressed: null, // Controlado pelo Listener
-                            child: Text(opcao, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w600))
-                          )
+                                return Padding(
+                                  padding: const EdgeInsets.symmetric(vertical: 4.0),
+                                  child: Listener(
+                                    onPointerDown: (details) {
+                                      if (!_estaProcessando) {
+                                        _verificarResposta(opcao, details.position);
+                                      }
+                                    },
+                                    child: QuizOptionWrapper(
+                                      isSelected: isSelected,
+                                      isCorrect: isCorrect,
+                                      child: SizedBox(
+                                        width: double.infinity, 
+                                        child: ElevatedButton(
+                                          style: ElevatedButton.styleFrom(
+                                            backgroundColor: targetBgColor, 
+                                            foregroundColor: isSelected ? (isCorrect ? Colors.green : Colors.red) : Colors.blue.shade900, 
+                                            disabledBackgroundColor: targetBgColor,
+                                            disabledForegroundColor: isSelected ? (isCorrect ? Colors.green : Colors.red) : Colors.blue.shade900,
+                                            padding: EdgeInsets.all(isTablet ? 20 : 14), 
+                                            elevation: isSelected ? 0 : 4, 
+                                            shape: RoundedRectangleBorder(
+                                              borderRadius: BorderRadius.circular(15),
+                                              side: BorderSide(color: targetBorderColor, width: 2),
+                                            )
+                                          ),
+                                          onPressed: null,
+                                          child: Text(opcao, style: TextStyle(fontSize: isTablet ? 18 : 16, fontWeight: FontWeight.w600))
+                                        )
+                                      ),
+                                    ),
+                                  )
+                                );
+                              }).toList(),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    
+                    const SizedBox(height: 10),
+          
+                    SafeArea(
+                      child: Container(
+                        margin: const EdgeInsets.only(bottom: 10),
+                        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.blue.shade900.withValues(alpha: 0.9), 
+                          borderRadius: BorderRadius.circular(25),
+                          border: Border.all(color: Colors.white24, width: 1.5),
+                          boxShadow: const [BoxShadow(color: Colors.black38, blurRadius: 10, offset: Offset(0, 4))],
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            _buildHelpIcon(Icons.add_alarm_rounded, '+30s', _tempoAdicionalUsado, () {
+                              if (!_tempoAdicionalUsado && !_estaProcessando && !_isGameOver) {
+                                setState(() { _tempoRestante += 30; _tempoAdicionalUsado = true; });
+                                _showCentralFeedback("+30 SEGUNDOS!", Icons.add_alarm_rounded, Colors.cyan);
+                              }
+                            }),
+                            _buildHelpIcon(Icons.star_half_rounded, '50/50', _ajuda5050Usada, _use5050),
+                            _buildHelpIcon(Icons.lightbulb_outline_rounded, 'Dica', _ajudaDicaUsada, _useHint),
+                            _buildHelpIcon(Icons.skip_next_rounded, 'Pular', _puloUsado, _useSkip),
+                          ],
                         ),
                       ),
                     )
-                  );
-                }),
-                
-                const Spacer(),
-      
-                SizedBox(
-                  height: 100,
-                  child: Center(
-                    child: Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        if (_feedbackController.isAnimating)
-                          IgnorePointer(
-                            child: Lottie.asset('assets/animations/festejo.json', height: 100, repeat: false),
+                  ],
+                ),
+              ),
+              
+              IgnorePointer(
+                child: Center(
+                  child: ScaleTransition(
+                    scale: _feedbackAnimation,
+                    child: FadeTransition(
+                      opacity: _feedbackController,
+                      child: RotationTransition(
+                        turns: _rotationAnimation,
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                          decoration: BoxDecoration(
+                            color: _feedbackColor,
+                            borderRadius: BorderRadius.circular(50),
+                            boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))],
                           ),
-                        ScaleTransition(
-                          scale: _feedbackAnimation,
-                          child: FadeTransition(
-                            opacity: _feedbackController,
-                            child: RotationTransition(
-                              turns: _rotationAnimation,
-                              child: Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                                decoration: BoxDecoration(
-                                  color: _feedbackColor,
-                                  borderRadius: BorderRadius.circular(50),
-                                  boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))],
-                                ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Icon(_feedbackIcon, color: Colors.white, size: 28),
-                                    const SizedBox(width: 12),
-                                    Text(_feedbackText, style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w900)),
-                                  ],
-                                ),
-                              ),
-                            ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(_feedbackIcon, color: Colors.white, size: 28),
+                              const SizedBox(width: 12),
+                              Text(_feedbackText, style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w900)),
+                            ],
                           ),
                         ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
-      
-                const SizedBox(height: 10),
-      
-                SafeArea(
-                  child: Container(
-                    margin: const EdgeInsets.only(bottom: 50),
-                    padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
-                    decoration: BoxDecoration(
-                      color: Colors.blue.shade900.withValues(alpha: 0.9), 
-                      borderRadius: BorderRadius.circular(25),
-                      border: Border.all(color: Colors.white24, width: 1.5),
-                      boxShadow: const [BoxShadow(color: Colors.black38, blurRadius: 10, offset: Offset(0, 4))],
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        _buildHelpIcon(Icons.add_alarm_rounded, '+30s', _tempoAdicionalUsado, () {
-                          if (!_tempoAdicionalUsado && !_estaProcessando && !_isGameOver) {
-                            setState(() { _tempoRestante += 30; _tempoAdicionalUsado = true; });
-                            _showCentralFeedback("+30 SEGUNDOS!", Icons.add_alarm_rounded, Colors.cyan);
-                          }
-                        }),
-                        _buildHelpIcon(Icons.star_half_rounded, '50/50', _ajuda5050Usada, _use5050),
-                        _buildHelpIcon(Icons.lightbulb_outline_rounded, 'Dica', _ajudaDicaUsada, _useHint),
-                        _buildHelpIcon(Icons.skip_next_rounded, 'Pular', _puloUsado, _useSkip),
-                      ],
-                    ),
+              ),
+              
+              if (_feedbackController.isAnimating)
+                IgnorePointer(
+                  child: Center(
+                    child: Lottie.asset('assets/animations/festejo.json', height: 200, repeat: false),
                   ),
-                )
-              ],
-            ),
+                ),
+            ],
           ),
         ),
       ),
     );
   }
 
-  Widget _buildStatusChip(String text, IconData icon, Color color) {
+  Widget _buildStatusChip(String text, IconData icon, Color color, Size size) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(20), boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 4, offset: Offset(0, 2))]),
-      child: Row(children: [Icon(icon, color: Colors.white, size: 20), const SizedBox(width: 8), Text(text, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16))]));
+      child: Row(children: [Icon(icon, color: Colors.white, size: 16), const SizedBox(width: 6), Text(text, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: size.width * 0.035 > 13 ? 13 : size.width * 0.035))]));
   }
 
-  Widget _buildComboProgress(double progress, Color color, String label) {
+  Widget _buildComboProgress(double progress, Color color, String label, Size size) {
     return Container(
-      width: 100,
-      height: 6,
+      width: size.width * 0.2 > 80 ? 80 : size.width * 0.2,
+      height: 4,
       decoration: BoxDecoration(
         color: Colors.white24,
         borderRadius: BorderRadius.circular(10),
@@ -640,6 +654,6 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   }
 
   Widget _buildHelpIcon(IconData icon, String label, bool isUsed, VoidCallback onTap) {
-    return InkWell(onTap: isUsed ? null : onTap, child: Column(children: [Icon(icon, color: isUsed ? Colors.white24 : Colors.white, size: 32), Text(label, style: TextStyle(color: isUsed ? Colors.white24 : Colors.white, fontSize: 11, fontWeight: FontWeight.bold))]));
+    return InkWell(onTap: isUsed ? null : onTap, child: Column(children: [Icon(icon, color: isUsed ? Colors.white24 : Colors.white, size: 24), Text(label, style: TextStyle(color: isUsed ? Colors.white24 : Colors.white, fontSize: 10, fontWeight: FontWeight.bold))]));
   }
 }

@@ -1,0 +1,4493 @@
+{
+"disciplina": "geometria",
+"quizzes": [
+{
+"id": "1",
+"capitulo": "Capítulo 1 - O que é o Espaço?",
+"nivel": "basico",
+"dicas": "O espaço é onde tudo existe e ocupa lugar.",
+"perguntas": [
+{
+"pergunta": "O que é o espaço?",
+"opcoes": ["Uma cor", "Um lugar onde as coisas existem", "Um número", "Um desenho"],
+"respostaCorreta": "Um lugar onde as coisas existem",
+"dica": "Tudo está dentro dele."
+},
+{
+"pergunta": "O espaço permite:",
+"opcoes": ["Somar números", "Que coisas ocupem lugar", "Apagar objetos", "Desenhar letras"],
+"respostaCorreta": "Que coisas ocupem lugar",
+"dica": "Tudo ocupa um espaço."
+},
+{
+"pergunta": "Extensão significa:",
+"opcoes": ["Cor", "Ocupar lugar", "Somar", "Dividir"],
+"respostaCorreta": "Ocupar lugar",
+"dica": "Algo que tem tamanho."
+},
+{
+"pergunta": "Limite é:",
+"opcoes": ["Onde começa algo", "Onde termina algo", "Um número", "Uma soma"],
+"respostaCorreta": "Onde termina algo",
+"dica": "Separação entre coisas."
+},
+{
+"pergunta": "Posição indica:",
+"opcoes": ["Cor", "Onde algo está", "Tamanho", "Peso"],
+"respostaCorreta": "Onde algo está",
+"dica": "Localização."
+},
+{
+"pergunta": "Dentro e fora ajudam a:",
+"opcoes": ["Somar", "Definir limites", "Multiplicar", "Desenhar"],
+"respostaCorreta": "Definir limites",
+"dica": "Separar espaços."
+},
+{
+"pergunta": "Um objeto ocupa:",
+"opcoes": ["Nada", "Espaço", "Somente cor", "Somente número"],
+"respostaCorreta": "Espaço",
+"dica": "Tudo ocupa lugar."
+},
+{
+"pergunta": "O espaço é:",
+"opcoes": ["Inexistente", "Onde tudo está", "Uma conta", "Uma linha"],
+"respostaCorreta": "Onde tudo está",
+"dica": "Ambiente geral."
+},
+{
+"pergunta": "Limites ajudam a:",
+"opcoes": ["Confundir", "Separar objetos", "Somar", "Dividir"],
+"respostaCorreta": "Separar objetos",
+"dica": "Onde termina e começa."
+},
+{
+"pergunta": "Geometria estuda:",
+"opcoes": ["Somente números", "Formas no espaço", "Cores", "Letras"],
+"respostaCorreta": "Formas no espaço",
+"dica": "Figuras e posições."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 1 - O que é o Espaço?",
+"nivel": "medio",
+"dicas": "Aplicar conceitos de espaço, posição e limites.",
+"perguntas": [
+{
+"pergunta": "Se algo está dentro de uma caixa, está:",
+"opcoes": ["Fora", "Dentro", "Em cima", "Ao lado"],
+"respostaCorreta": "Dentro",
+"dica": "Interior."
+},
+{
+"pergunta": "Se algo está fora da caixa, está:",
+"opcoes": ["Dentro", "Fora", "No meio", "Igual"],
+"respostaCorreta": "Fora",
+"dica": "Exterior."
+},
+{
+"pergunta": "A posição depende de:",
+"opcoes": ["Cor", "Referência", "Somente número", "Peso"],
+"respostaCorreta": "Referência",
+"dica": "Comparação com outros."
+},
+{
+"pergunta": "O limite separa:",
+"opcoes": ["Números", "Espaços", "Cores", "Letras"],
+"respostaCorreta": "Espaços",
+"dica": "Divisão."
+},
+{
+"pergunta": "Extensão está ligada a:",
+"opcoes": ["Tamanho", "Cor", "Som", "Tempo"],
+"respostaCorreta": "Tamanho",
+"dica": "Ocupa espaço."
+},
+{
+"pergunta": "Se um objeto muda de lugar, muda sua:",
+"opcoes": ["Cor", "Posição", "Forma", "Tamanho"],
+"respostaCorreta": "Posição",
+"dica": "Localização."
+},
+{
+"pergunta": "Geometria ajuda a entender:",
+"opcoes": ["Somente números", "Espaço e formas", "Somente letras", "Cores"],
+"respostaCorreta": "Espaço e formas",
+"dica": "Localização e estrutura."
+},
+{
+"pergunta": "Dentro e fora são:",
+"opcoes": ["Cores", "Posições", "Números", "Formas"],
+"respostaCorreta": "Posições",
+"dica": "Localização relativa."
+},
+{
+"pergunta": "Sem limites, os objetos:",
+"opcoes": ["Ficam definidos", "Se misturam", "Somam", "Dividem"],
+"respostaCorreta": "Se misturam",
+"dica": "Sem separação."
+},
+{
+"pergunta": "O espaço permite:",
+"opcoes": ["Organização", "Confusão", "Apagar", "Ignorar"],
+"respostaCorreta": "Organização",
+"dica": "Tudo tem lugar."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 1 - O que é o Espaço?",
+"nivel": "avancado",
+"dicas": "Analisar conceitos de espaço, limite e relação entre objetos.",
+"perguntas": [
+{
+"pergunta": "Por que o conceito de limite é importante?",
+"opcoes": ["Para somar", "Para separar formas", "Para multiplicar", "Para dividir"],
+"respostaCorreta": "Para separar formas",
+"dica": "Define fronteiras."
+},
+{
+"pergunta": "Sem espaço, os objetos:",
+"opcoes": ["Existem normalmente", "Não teriam lugar", "Ficariam maiores", "Somariam"],
+"respostaCorreta": "Não teriam lugar",
+"dica": "Sem onde existir."
+},
+{
+"pergunta": "A posição é sempre:",
+"opcoes": ["Absoluta", "Relativa", "Fixa", "Igual"],
+"respostaCorreta": "Relativa",
+"dica": "Depende de referência."
+},
+{
+"pergunta": "Extensão permite:",
+"opcoes": ["Ignorar espaço", "Ocupar espaço", "Apagar formas", "Somar números"],
+"respostaCorreta": "Ocupar espaço",
+"dica": "Ter dimensão."
+},
+{
+"pergunta": "Dentro e fora existem por causa de:",
+"opcoes": ["Números", "Limites", "Cores", "Som"],
+"respostaCorreta": "Limites",
+"dica": "Separação."
+},
+{
+"pergunta": "O espaço organiza o mundo porque:",
+"opcoes": ["Mistura tudo", "Define posições", "Apaga formas", "Ignora objetos"],
+"respostaCorreta": "Define posições",
+"dica": "Localização."
+},
+{
+"pergunta": "Sem limites claros, formas seriam:",
+"opcoes": ["Definidas", "Confusas", "Simples", "Pequenas"],
+"respostaCorreta": "Confusas",
+"dica": "Sem separação."
+},
+{
+"pergunta": "Geometria é importante porque:",
+"opcoes": ["Ignora espaço", "Organiza o espaço", "Apaga formas", "Somente soma"],
+"respostaCorreta": "Organiza o espaço",
+"dica": "Estrutura."
+},
+{
+"pergunta": "Posição depende de:",
+"opcoes": ["Referência externa", "Cor", "Peso", "Som"],
+"respostaCorreta": "Referência externa",
+"dica": "Comparação."
+},
+{
+"pergunta": "Espaço e geometria ajudam a:",
+"opcoes": ["Pensar logicamente", "Ignorar mundo", "Confundir ideias", "Apagar números"],
+"respostaCorreta": "Pensar logicamente",
+"dica": "Organização mental."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 2 - Ponto, Linha e Plano",
+"nivel": "basico",
+"dicas": "Ponto, linha e plano são os elementos básicos da geometria.",
+"perguntas": [
+{
+"pergunta": "O que é um ponto?",
+"opcoes": ["Uma linha", "Uma forma", "Uma posição sem tamanho", "Um plano"],
+"respostaCorreta": "Uma posição sem tamanho",
+"dica": "Não tem dimensão."
+},
+{
+"pergunta": "O ponto possui:",
+"opcoes": ["Comprimento", "Largura", "Altura", "Nenhuma dimensão"],
+"respostaCorreta": "Nenhuma dimensão",
+"dica": "É apenas localização."
+},
+{
+"pergunta": "O que é uma linha?",
+"opcoes": ["Um ponto", "Uma extensão com comprimento", "Uma superfície", "Um sólido"],
+"respostaCorreta": "Uma extensão com comprimento",
+"dica": "Tem uma dimensão."
+},
+{
+"pergunta": "A linha possui:",
+"opcoes": ["Duas dimensões", "Três dimensões", "Uma dimensão", "Nenhuma dimensão"],
+"respostaCorreta": "Uma dimensão",
+"dica": "Só comprimento."
+},
+{
+"pergunta": "O plano possui:",
+"opcoes": ["Uma dimensão", "Duas dimensões", "Três dimensões", "Nenhuma"],
+"respostaCorreta": "Duas dimensões",
+"dica": "Comprimento e largura."
+},
+{
+"pergunta": "Uma linha nasce do movimento de:",
+"opcoes": ["Plano", "Forma", "Ponto", "Cor"],
+"respostaCorreta": "Ponto",
+"dica": "Ponto em movimento."
+},
+{
+"pergunta": "O plano é:",
+"opcoes": ["Uma linha", "Uma superfície", "Um ponto", "Um número"],
+"respostaCorreta": "Uma superfície",
+"dica": "Tem largura e comprimento."
+},
+{
+"pergunta": "Qual tem duas dimensões?",
+"opcoes": ["Ponto", "Linha", "Plano", "Nenhum"],
+"respostaCorreta": "Plano",
+"dica": "Superfície."
+},
+{
+"pergunta": "Qual não tem dimensão?",
+"opcoes": ["Linha", "Plano", "Ponto", "Forma"],
+"respostaCorreta": "Ponto",
+"dica": "Sem tamanho."
+},
+{
+"pergunta": "Geometria começa com:",
+"opcoes": ["Cores", "Números", "Ponto, linha e plano", "Desenhos"],
+"respostaCorreta": "Ponto, linha e plano",
+"dica": "Elementos básicos."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 2 - Ponto, Linha e Plano",
+"nivel": "medio",
+"dicas": "Relacionar dimensões e construções geométricas.",
+"perguntas": [
+{
+"pergunta": "Se um ponto se move, cria:",
+"opcoes": ["Plano", "Linha", "Volume", "Cor"],
+"respostaCorreta": "Linha",
+"dica": "Movimento gera extensão."
+},
+{
+"pergunta": "Se uma linha se move, cria:",
+"opcoes": ["Ponto", "Plano", "Nada", "Número"],
+"respostaCorreta": "Plano",
+"dica": "Gera superfície."
+},
+{
+"pergunta": "Qual possui comprimento e largura?",
+"opcoes": ["Ponto", "Linha", "Plano", "Nenhum"],
+"respostaCorreta": "Plano",
+"dica": "Duas dimensões."
+},
+{
+"pergunta": "Qual possui apenas comprimento?",
+"opcoes": ["Plano", "Linha", "Ponto", "Forma"],
+"respostaCorreta": "Linha",
+"dica": "Uma dimensão."
+},
+{
+"pergunta": "Qual representa apenas posição?",
+"opcoes": ["Linha", "Plano", "Ponto", "Volume"],
+"respostaCorreta": "Ponto",
+"dica": "Sem tamanho."
+},
+{
+"pergunta": "Dimensão significa:",
+"opcoes": ["Cor", "Direção de medida", "Som", "Número"],
+"respostaCorreta": "Direção de medida",
+"dica": "Comprimento, largura."
+},
+{
+"pergunta": "Uma folha de papel representa:",
+"opcoes": ["Ponto", "Linha", "Plano", "Volume"],
+"respostaCorreta": "Plano",
+"dica": "Superfície."
+},
+{
+"pergunta": "Um fio representa:",
+"opcoes": ["Plano", "Linha", "Ponto", "Volume"],
+"respostaCorreta": "Linha",
+"dica": "Comprimento."
+},
+{
+"pergunta": "Um ponto pode ser visto como:",
+"opcoes": ["Um objeto grande", "Uma posição exata", "Uma linha", "Um plano"],
+"respostaCorreta": "Uma posição exata",
+"dica": "Localização."
+},
+{
+"pergunta": "Os elementos básicos da geometria ajudam a:",
+"opcoes": ["Ignorar formas", "Construir formas", "Apagar figuras", "Somar números"],
+"respostaCorreta": "Construir formas",
+"dica": "Base da geometria."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 2 - Ponto, Linha e Plano",
+"nivel": "avancado",
+"dicas": "Analisar relações entre dimensões e construções.",
+"perguntas": [
+{
+"pergunta": "Por que o ponto não tem dimensão?",
+"opcoes": ["Porque é grande", "Porque é apenas posição", "Porque é linha", "Porque é plano"],
+"respostaCorreta": "Porque é apenas posição",
+"dica": "Sem extensão."
+},
+{
+"pergunta": "Uma linha é infinita porque:",
+"opcoes": ["Tem largura", "Não tem fim definido", "É um ponto", "É um plano"],
+"respostaCorreta": "Não tem fim definido",
+"dica": "Extensão contínua."
+},
+{
+"pergunta": "O plano é formado por:",
+"opcoes": ["Pontos apenas", "Linhas organizadas", "Cores", "Som"],
+"respostaCorreta": "Linhas organizadas",
+"dica": "Superfície."
+},
+{
+"pergunta": "Dimensões crescem na ordem:",
+"opcoes": ["Plano → linha → ponto", "Ponto → linha → plano", "Linha → ponto → plano", "Plano → ponto → linha"],
+"respostaCorreta": "Ponto → linha → plano",
+"dica": "Construção progressiva."
+},
+{
+"pergunta": "O movimento gera dimensões porque:",
+"opcoes": ["Cria espaço", "Cria extensão", "Apaga formas", "Ignora pontos"],
+"respostaCorreta": "Cria extensão",
+"dica": "Movimento do ponto."
+},
+{
+"pergunta": "Sem pontos não existiria:",
+"opcoes": ["Linhas", "Cores", "Som", "Tempo"],
+"respostaCorreta": "Linhas",
+"dica": "Base de tudo."
+},
+{
+"pergunta": "Sem linhas não existiria:",
+"opcoes": ["Plano", "Ponto", "Cor", "Som"],
+"respostaCorreta": "Plano",
+"dica": "Superfície depende delas."
+},
+{
+"pergunta": "Plano permite representar:",
+"opcoes": ["Volume completo", "Superfícies", "Somente pontos", "Som"],
+"respostaCorreta": "Superfícies",
+"dica": "Duas dimensões."
+},
+{
+"pergunta": "A geometria constrói o espaço usando:",
+"opcoes": ["Cores", "Elementos básicos", "Som", "Tempo"],
+"respostaCorreta": "Elementos básicos",
+"dica": "Ponto, linha e plano."
+},
+{
+"pergunta": "A relação entre ponto, linha e plano mostra:",
+"opcoes": ["Confusão", "Evolução das dimensões", "Erro", "Aleatoriedade"],
+"respostaCorreta": "Evolução das dimensões",
+"dica": "Crescimento geométrico."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 3 - Segmentos de Reta e Semirretas",
+"nivel": "basico",
+"dicas": "Segmentos e semirretas são partes de uma linha.",
+"perguntas": [
+{
+"pergunta": "O que é um segmento de reta?",
+"opcoes": ["Uma linha infinita", "Uma parte da reta com dois pontos", "Um ponto", "Um plano"],
+"respostaCorreta": "Uma parte da reta com dois pontos",
+"dica": "Tem começo e fim."
+},
+{
+"pergunta": "Um segmento de reta tem:",
+"opcoes": ["Um ponto", "Dois pontos", "Nenhum ponto", "Três pontos"],
+"respostaCorreta": "Dois pontos",
+"dica": "Extremidades."
+},
+{
+"pergunta": "O que é uma semirreta?",
+"opcoes": ["Uma linha fechada", "Uma linha com dois fins", "Uma linha com início e sem fim", "Um ponto"],
+"respostaCorreta": "Uma linha com início e sem fim",
+"dica": "Tem começo mas não termina."
+},
+{
+"pergunta": "A semirreta tem:",
+"opcoes": ["Dois fins", "Um início e infinito", "Nenhum início", "Três pontos"],
+"respostaCorreta": "Um início e infinito",
+"dica": "Vai para sempre."
+},
+{
+"pergunta": "Qual tem começo e fim?",
+"opcoes": ["Reta", "Semirreta", "Segmento", "Plano"],
+"respostaCorreta": "Segmento",
+"dica": "Tem limites."
+},
+{
+"pergunta": "Qual tem começo e não tem fim?",
+"opcoes": ["Segmento", "Semirreta", "Plano", "Ponto"],
+"respostaCorreta": "Semirreta",
+"dica": "Vai para infinito."
+},
+{
+"pergunta": "Segmento de reta é:",
+"opcoes": ["Infinito", "Limitado", "Sem começo", "Sem fim"],
+"respostaCorreta": "Limitado",
+"dica": "Tem tamanho definido."
+},
+{
+"pergunta": "Semirreta é:",
+"opcoes": ["Limitada", "Finita", "Infinita em uma direção", "Fechada"],
+"respostaCorreta": "Infinita em uma direção",
+"dica": "Segue para um lado."
+},
+{
+"pergunta": "Extremidades são:",
+"opcoes": ["Linhas", "Pontos", "Planos", "Cores"],
+"respostaCorreta": "Pontos",
+"dica": "Início e fim."
+},
+{
+"pergunta": "Segmentos ajudam a:",
+"opcoes": ["Ignorar espaço", "Medir distâncias", "Apagar formas", "Confundir"],
+"respostaCorreta": "Medir distâncias",
+"dica": "Comprimento definido."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 3 - Segmentos de Reta e Semirretas",
+"nivel": "medio",
+"dicas": "Aplicar conceitos de segmentos e semirretas.",
+"perguntas": [
+{
+"pergunta": "Um segmento é definido por:",
+"opcoes": ["Um ponto", "Dois pontos", "Três pontos", "Nenhum ponto"],
+"respostaCorreta": "Dois pontos",
+"dica": "Extremos."
+},
+{
+"pergunta": "Uma semirreta começa em:",
+"opcoes": ["Dois pontos", "Um ponto", "Nenhum ponto", "Três pontos"],
+"respostaCorreta": "Um ponto",
+"dica": "Ponto inicial."
+},
+{
+"pergunta": "Segmento pode ser medido porque:",
+"opcoes": ["É infinito", "Tem comprimento definido", "Não tem pontos", "É plano"],
+"respostaCorreta": "Tem comprimento definido",
+"dica": "Tem limites."
+},
+{
+"pergunta": "Semirreta não pode ser totalmente medida porque:",
+"opcoes": ["É pequena", "É infinita", "É curva", "É plana"],
+"respostaCorreta": "É infinita",
+"dica": "Não tem fim."
+},
+{
+"pergunta": "Uma régua mede:",
+"opcoes": ["Semirretas", "Segmentos", "Planos", "Pontos"],
+"respostaCorreta": "Segmentos",
+"dica": "Comprimento."
+},
+{
+"pergunta": "Semirreta segue:",
+"opcoes": ["Duas direções", "Uma direção", "Nenhuma direção", "Três direções"],
+"respostaCorreta": "Uma direção",
+"dica": "Só para um lado."
+},
+{
+"pergunta": "Segmento representa:",
+"opcoes": ["Infinito", "Distância finita", "Nada", "Plano"],
+"respostaCorreta": "Distância finita",
+"dica": "Medida possível."
+},
+{
+"pergunta": "Uma estrada infinita em um sentido representa:",
+"opcoes": ["Segmento", "Semirreta", "Ponto", "Plano"],
+"respostaCorreta": "Semirreta",
+"dica": "Começa mas não termina."
+},
+{
+"pergunta": "Um fio cortado representa:",
+"opcoes": ["Semirreta", "Segmento", "Plano", "Ponto"],
+"respostaCorreta": "Segmento",
+"dica": "Tem dois extremos."
+},
+{
+"pergunta": "Segmentos e semirretas vêm de:",
+"opcoes": ["Plano", "Reta", "Ponto", "Cor"],
+"respostaCorreta": "Reta",
+"dica": "Partes dela."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 3 - Segmentos de Reta e Semirretas",
+"nivel": "avancado",
+"dicas": "Analisar diferenças e propriedades.",
+"perguntas": [
+{
+"pergunta": "A principal diferença entre segmento e semirreta é:",
+"opcoes": ["Cor", "Número de dimensões", "Quantidade de extremos", "Peso"],
+"respostaCorreta": "Quantidade de extremos",
+"dica": "Segmento tem dois."
+},
+{
+"pergunta": "Segmento é limitado porque:",
+"opcoes": ["Não tem início", "Tem dois extremos", "É infinito", "É plano"],
+"respostaCorreta": "Tem dois extremos",
+"dica": "Define o fim."
+},
+{
+"pergunta": "Semirreta é ilimitada porque:",
+"opcoes": ["Não tem início", "Não tem fim", "Tem dois extremos", "É curva"],
+"respostaCorreta": "Não tem fim",
+"dica": "Segue infinitamente."
+},
+{
+"pergunta": "Uma reta completa é:",
+"opcoes": ["Limitada", "Infinita nos dois sentidos", "Com um fim", "Curta"],
+"respostaCorreta": "Infinita nos dois sentidos",
+"dica": "Sem extremos."
+},
+{
+"pergunta": "Segmento pode ser comparado a:",
+"opcoes": ["Linha infinita", "Caminho com início e fim", "Plano aberto", "Ponto único"],
+"respostaCorreta": "Caminho com início e fim",
+"dica": "Tem limites."
+},
+{
+"pergunta": "Semirreta pode ser comparada a:",
+"opcoes": ["Círculo", "Caminho sem início", "Caminho com início e sem fim", "Plano"],
+"respostaCorreta": "Caminho com início e sem fim",
+"dica": "Só um extremo."
+},
+{
+"pergunta": "Segmento permite calcular:",
+"opcoes": ["Área", "Distância", "Volume", "Peso"],
+"respostaCorreta": "Distância",
+"dica": "Comprimento."
+},
+{
+"pergunta": "Semirreta é usada para representar:",
+"opcoes": ["Valores finitos", "Direções", "Cores", "Áreas"],
+"respostaCorreta": "Direções",
+"dica": "Sentido."
+},
+{
+"pergunta": "Reta, semirreta e segmento mostram:",
+"opcoes": ["Confusão", "Diferentes extensões da linha", "Somente pontos", "Cores"],
+"respostaCorreta": "Diferentes extensões da linha",
+"dica": "Partes da reta."
+},
+{
+"pergunta": "Esses conceitos ajudam a entender:",
+"opcoes": ["Somente números", "Estrutura do espaço", "Cores", "Som"],
+"respostaCorreta": "Estrutura do espaço",
+"dica": "Base da geometria."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 4 - Ângulos: A Abertura entre Linhas",
+"nivel": "basico",
+"dicas": "Ângulo é a abertura entre duas linhas que se encontram.",
+"perguntas": [
+{
+"pergunta": "O que é um ângulo?",
+"opcoes": ["Uma linha", "Uma abertura entre duas linhas", "Um ponto", "Um plano"],
+"respostaCorreta": "Uma abertura entre duas linhas",
+"dica": "Duas linhas que se encontram."
+},
+{
+"pergunta": "Um ângulo é formado por:",
+"opcoes": ["Um ponto", "Duas linhas", "Três planos", "Uma cor"],
+"respostaCorreta": "Duas linhas",
+"dica": "Chamadas de lados."
+},
+{
+"pergunta": "O ponto onde as linhas se encontram chama-se:",
+"opcoes": ["Base", "Centro", "Vértice", "Extremo"],
+"respostaCorreta": "Vértice",
+"dica": "Ponto de encontro."
+},
+{
+"pergunta": "Um ângulo pequeno é:",
+"opcoes": ["Muito aberto", "Pouco aberto", "Fechado", "Grande"],
+"respostaCorreta": "Pouco aberto",
+"dica": "Abertura menor."
+},
+{
+"pergunta": "Um ângulo grande é:",
+"opcoes": ["Pequeno", "Pouco aberto", "Muito aberto", "Fechado"],
+"respostaCorreta": "Muito aberto",
+"dica": "Abertura maior."
+},
+{
+"pergunta": "Ângulos aparecem em:",
+"opcoes": ["Somente números", "Objetos do dia a dia", "Somente desenhos", "Nada"],
+"respostaCorreta": "Objetos do dia a dia",
+"dica": "Portas, relógios."
+},
+{
+"pergunta": "Um ângulo precisa de:",
+"opcoes": ["Uma linha", "Duas linhas", "Três pontos", "Um plano"],
+"respostaCorreta": "Duas linhas",
+"dica": "Para formar abertura."
+},
+{
+"pergunta": "O vértice é:",
+"opcoes": ["Uma linha", "Um ponto", "Um plano", "Uma cor"],
+"respostaCorreta": "Um ponto",
+"dica": "Onde tudo começa."
+},
+{
+"pergunta": "Ângulos ajudam a:",
+"opcoes": ["Ignorar formas", "Medir aberturas", "Apagar linhas", "Confundir"],
+"respostaCorreta": "Medir aberturas",
+"dica": "Tamanho da abertura."
+},
+{
+"pergunta": "Um ângulo é parte de:",
+"opcoes": ["Plano", "Reta", "Número", "Cor"],
+"respostaCorreta": "Plano",
+"dica": "Duas linhas no plano."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 4 - Ângulos: A Abertura entre Linhas",
+"nivel": "medio",
+"dicas": "Identificar tipos de ângulos.",
+"perguntas": [
+{
+"pergunta": "Um ângulo reto mede:",
+"opcoes": ["45°", "90°", "180°", "360°"],
+"respostaCorreta": "90°",
+"dica": "Forma um canto perfeito."
+},
+{
+"pergunta": "Um ângulo agudo é:",
+"opcoes": ["Maior que 90°", "Menor que 90°", "Igual a 180°", "Maior que 180°"],
+"respostaCorreta": "Menor que 90°",
+"dica": "Pequeno."
+},
+{
+"pergunta": "Um ângulo obtuso é:",
+"opcoes": ["Menor que 90°", "Igual a 90°", "Maior que 90° e menor que 180°", "Igual a 360°"],
+"respostaCorreta": "Maior que 90° e menor que 180°",
+"dica": "Mais aberto que reto."
+},
+{
+"pergunta": "Um ângulo raso mede:",
+"opcoes": ["90°", "45°", "180°", "360°"],
+"respostaCorreta": "180°",
+"dica": "Linha reta."
+},
+{
+"pergunta": "O instrumento para medir ângulos é:",
+"opcoes": ["Régua", "Compasso", "Transferidor", "Calculadora"],
+"respostaCorreta": "Transferidor",
+"dica": "Mede graus."
+},
+{
+"pergunta": "Graus servem para:",
+"opcoes": ["Medir comprimento", "Medir ângulos", "Medir peso", "Medir tempo"],
+"respostaCorreta": "Medir ângulos",
+"dica": "Unidade do ângulo."
+},
+{
+"pergunta": "Qual é um ângulo agudo?",
+"opcoes": ["30°", "90°", "120°", "180°"],
+"respostaCorreta": "30°",
+"dica": "Menor que 90°."
+},
+{
+"pergunta": "Qual é um ângulo obtuso?",
+"opcoes": ["60°", "90°", "120°", "45°"],
+"respostaCorreta": "120°",
+"dica": "Maior que 90°."
+},
+{
+"pergunta": "Um ângulo completo mede:",
+"opcoes": ["90°", "180°", "270°", "360°"],
+"respostaCorreta": "360°",
+"dica": "Volta completa."
+},
+{
+"pergunta": "Ângulos estão em:",
+"opcoes": ["Somente matemática", "Construções e objetos", "Somente números", "Nada"],
+"respostaCorreta": "Construções e objetos",
+"dica": "Uso real."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 4 - Ângulos: A Abertura entre Linhas",
+"nivel": "avancado",
+"dicas": "Analisar relações entre ângulos.",
+"perguntas": [
+{
+"pergunta": "Ângulos complementares somam:",
+"opcoes": ["90°", "180°", "270°", "360°"],
+"respostaCorreta": "90°",
+"dica": "Completa ângulo reto."
+},
+{
+"pergunta": "Ângulos suplementares somam:",
+"opcoes": ["90°", "180°", "270°", "360°"],
+"respostaCorreta": "180°",
+"dica": "Linha reta."
+},
+{
+"pergunta": "Se um ângulo mede 30°, seu complementar é:",
+"opcoes": ["60°", "90°", "120°", "150°"],
+"respostaCorreta": "60°",
+"dica": "90 - 30."
+},
+{
+"pergunta": "Se um ângulo mede 120°, seu suplementar é:",
+"opcoes": ["30°", "60°", "90°", "120°"],
+"respostaCorreta": "60°",
+"dica": "180 - 120."
+},
+{
+"pergunta": "Dois ângulos iguais de 45° são:",
+"opcoes": ["Suplementares", "Complementares", "Opostos", "Rasos"],
+"respostaCorreta": "Complementares",
+"dica": "45 + 45 = 90."
+},
+{
+"pergunta": "Ângulos opostos pelo vértice são:",
+"opcoes": ["Diferentes", "Iguais", "Menores", "Maiores"],
+"respostaCorreta": "Iguais",
+"dica": "Mesma medida."
+},
+{
+"pergunta": "Se duas retas se cruzam, formam:",
+"opcoes": ["1 ângulo", "2 ângulos", "4 ângulos", "3 ângulos"],
+"respostaCorreta": "4 ângulos",
+"dica": "Interseção."
+},
+{
+"pergunta": "Ângulo reto é importante porque:",
+"opcoes": ["É pequeno", "Serve de referência", "É grande", "Não é usado"],
+"respostaCorreta": "Serve de referência",
+"dica": "Base para medir."
+},
+{
+"pergunta": "Ângulos ajudam a entender:",
+"opcoes": ["Somente números", "Direções e formas", "Cores", "Som"],
+"respostaCorreta": "Direções e formas",
+"dica": "Orientação."
+},
+{
+"pergunta": "Relações entre ângulos mostram:",
+"opcoes": ["Confusão", "Organização geométrica", "Erro", "Aleatoriedade"],
+"respostaCorreta": "Organização geométrica",
+"dica": "Ligação entre medidas."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 5 - Polígonos: Figuras Fechadas",
+"nivel": "basico",
+"dicas": "Polígonos são figuras fechadas formadas por linhas.",
+"perguntas": [
+{
+"pergunta": "O que é um polígono?",
+"opcoes": ["Uma linha aberta", "Uma figura fechada", "Um ponto", "Um círculo"],
+"respostaCorreta": "Uma figura fechada",
+"dica": "Tem lados que se encontram."
+},
+{
+"pergunta": "Um polígono é formado por:",
+"opcoes": ["Curvas", "Linhas retas", "Pontos isolados", "Cores"],
+"respostaCorreta": "Linhas retas",
+"dica": "Segmentos de reta."
+},
+{
+"pergunta": "Quantos lados tem um triângulo?",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "3",
+"dica": "Tri = três."
+},
+{
+"pergunta": "Quantos lados tem um quadrado?",
+"opcoes": ["3", "4", "5", "6"],
+"respostaCorreta": "4",
+"dica": "Quatro lados iguais."
+},
+{
+"pergunta": "Um polígono deve ser:",
+"opcoes": ["Aberto", "Fechado", "Curvo", "Sem lados"],
+"respostaCorreta": "Fechado",
+"dica": "Linhas ligadas."
+},
+{
+"pergunta": "Qual é um polígono?",
+"opcoes": ["Círculo", "Triângulo", "Linha aberta", "Curva"],
+"respostaCorreta": "Triângulo",
+"dica": "Tem lados retos."
+},
+{
+"pergunta": "Os lados de um polígono são:",
+"opcoes": ["Curvos", "Retos", "Misturados", "Invisíveis"],
+"respostaCorreta": "Retos",
+"dica": "Segmentos."
+},
+{
+"pergunta": "Um quadrado é:",
+"opcoes": ["Aberto", "Fechado", "Curvo", "Infinito"],
+"respostaCorreta": "Fechado",
+"dica": "Forma completa."
+},
+{
+"pergunta": "Polígonos têm:",
+"opcoes": ["Somente pontos", "Lados e vértices", "Somente curvas", "Cores"],
+"respostaCorreta": "Lados e vértices",
+"dica": "Estrutura básica."
+},
+{
+"pergunta": "Geometria usa polígonos para:",
+"opcoes": ["Apagar formas", "Estudar figuras", "Ignorar espaço", "Somar números"],
+"respostaCorreta": "Estudar figuras",
+"dica": "Formas planas."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 5 - Polígonos: Figuras Fechadas",
+"nivel": "medio",
+"dicas": "Identificar tipos de polígonos.",
+"perguntas": [
+{
+"pergunta": "Um polígono de 5 lados chama-se:",
+"opcoes": ["Triângulo", "Quadrado", "Pentágono", "Hexágono"],
+"respostaCorreta": "Pentágono",
+"dica": "Penta = cinco."
+},
+{
+"pergunta": "Um polígono de 6 lados chama-se:",
+"opcoes": ["Pentágono", "Hexágono", "Heptágono", "Octógono"],
+"respostaCorreta": "Hexágono",
+"dica": "Hexa = seis."
+},
+{
+"pergunta": "Quantos lados tem um pentágono?",
+"opcoes": ["4", "5", "6", "7"],
+"respostaCorreta": "5",
+"dica": "Nome ajuda."
+},
+{
+"pergunta": "Quantos lados tem um hexágono?",
+"opcoes": ["5", "6", "7", "8"],
+"respostaCorreta": "6",
+"dica": "Hexa = seis."
+},
+{
+"pergunta": "Um polígono regular tem:",
+"opcoes": ["Lados diferentes", "Lados iguais", "Curvas", "Sem lados"],
+"respostaCorreta": "Lados iguais",
+"dica": "Todos iguais."
+},
+{
+"pergunta": "Um polígono irregular tem:",
+"opcoes": ["Lados iguais", "Lados diferentes", "Curvas", "Sem vértices"],
+"respostaCorreta": "Lados diferentes",
+"dica": "Não são iguais."
+},
+{
+"pergunta": "Qual é um polígono de 4 lados?",
+"opcoes": ["Triângulo", "Quadrilátero", "Pentágono", "Hexágono"],
+"respostaCorreta": "Quadrilátero",
+"dica": "Quatro lados."
+},
+{
+"pergunta": "Um triângulo é:",
+"opcoes": ["Polígono", "Curva", "Linha", "Plano"],
+"respostaCorreta": "Polígono",
+"dica": "Fechado com lados."
+},
+{
+"pergunta": "Um círculo é:",
+"opcoes": ["Polígono", "Não polígono", "Segmento", "Sem forma"],
+"respostaCorreta": "Não polígono",
+"dica": "Tem curva."
+},
+{
+"pergunta": "Polígonos são usados em:",
+"opcoes": ["Construções", "Somente matemática", "Somente desenho", "Nada"],
+"respostaCorreta": "Construções",
+"dica": "Uso real."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 5 - Polígonos: Figuras Fechadas",
+"nivel": "avancado",
+"dicas": "Analisar propriedades dos polígonos.",
+"perguntas": [
+{
+"pergunta": "Um polígono precisa ter no mínimo:",
+"opcoes": ["2 lados", "3 lados", "4 lados", "5 lados"],
+"respostaCorreta": "3 lados",
+"dica": "Triângulo é o menor."
+},
+{
+"pergunta": "Por que o círculo não é polígono?",
+"opcoes": ["Tem muitos lados", "Não tem lados retos", "Tem vértices", "É pequeno"],
+"respostaCorreta": "Não tem lados retos",
+"dica": "É curva."
+},
+{
+"pergunta": "Vértices são:",
+"opcoes": ["Curvas", "Pontos de encontro dos lados", "Linhas", "Planos"],
+"respostaCorreta": "Pontos de encontro dos lados",
+"dica": "Cantinhos."
+},
+{
+"pergunta": "Um hexágono regular tem:",
+"opcoes": ["Lados diferentes", "Lados iguais", "Curvas", "Sem vértices"],
+"respostaCorreta": "Lados iguais",
+"dica": "Regular = igual."
+},
+{
+"pergunta": "A soma dos lados forma:",
+"opcoes": ["Linha aberta", "Figura fechada", "Curva", "Plano infinito"],
+"respostaCorreta": "Figura fechada",
+"dica": "Polígono."
+},
+{
+"pergunta": "Polígonos representam:",
+"opcoes": ["Somente números", "Formas planas", "Somente linhas", "Cores"],
+"respostaCorreta": "Formas planas",
+"dica": "2D."
+},
+{
+"pergunta": "Quanto mais lados um polígono tem:",
+"opcoes": ["Mais simples", "Mais complexo", "Menor", "Igual"],
+"respostaCorreta": "Mais complexo",
+"dica": "Mais lados."
+},
+{
+"pergunta": "Um polígono irregular pode ter:",
+"opcoes": ["Todos lados iguais", "Lados diferentes", "Sem lados", "Curvas"],
+"respostaCorreta": "Lados diferentes",
+"dica": "Não uniforme."
+},
+{
+"pergunta": "Polígonos ajudam a entender:",
+"opcoes": ["Somente números", "Formas e espaço", "Cores", "Som"],
+"respostaCorreta": "Formas e espaço",
+"dica": "Geometria."
+},
+{
+"pergunta": "A geometria usa polígonos para:",
+"opcoes": ["Ignorar formas", "Organizar o espaço", "Apagar figuras", "Confundir"],
+"respostaCorreta": "Organizar o espaço",
+"dica": "Estrutura geométrica."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 6 - Perímetro: A Medida do Contorno",
+"nivel": "basico",
+"dicas": "Perímetro é a soma dos lados de uma figura.",
+"perguntas": [
+{
+"pergunta": "O que é perímetro?",
+"opcoes": ["Área da figura", "Soma dos lados", "Um ponto", "Uma cor"],
+"respostaCorreta": "Soma dos lados",
+"dica": "Contorno da figura."
+},
+{
+"pergunta": "Perímetro mede:",
+"opcoes": ["Interior", "Contorno", "Altura", "Peso"],
+"respostaCorreta": "Contorno",
+"dica": "Volta completa."
+},
+{
+"pergunta": "Para achar o perímetro, fazemos:",
+"opcoes": ["Multiplicação", "Divisão", "Soma", "Subtração"],
+"respostaCorreta": "Soma",
+"dica": "Somar todos os lados."
+},
+{
+"pergunta": "Um quadrado tem:",
+"opcoes": ["3 lados", "4 lados", "5 lados", "6 lados"],
+"respostaCorreta": "4 lados",
+"dica": "Todos iguais."
+},
+{
+"pergunta": "Se cada lado do quadrado mede 2, o perímetro é:",
+"opcoes": ["4", "6", "8", "10"],
+"respostaCorreta": "8",
+"dica": "2+2+2+2."
+},
+{
+"pergunta": "Um triângulo tem:",
+"opcoes": ["2 lados", "3 lados", "4 lados", "5 lados"],
+"respostaCorreta": "3 lados",
+"dica": "Tri = três."
+},
+{
+"pergunta": "Perímetro é usado para:",
+"opcoes": ["Medir área", "Medir contorno", "Medir peso", "Medir tempo"],
+"respostaCorreta": "Medir contorno",
+"dica": "Borda da figura."
+},
+{
+"pergunta": "Se um triângulo tem lados 2, 3 e 4, o perímetro é:",
+"opcoes": ["7", "8", "9", "10"],
+"respostaCorreta": "9",
+"dica": "2+3+4."
+},
+{
+"pergunta": "Perímetro de uma figura fechada é:",
+"opcoes": ["Interior", "Exterior", "Contorno completo", "Centro"],
+"respostaCorreta": "Contorno completo",
+"dica": "Volta toda."
+},
+{
+"pergunta": "Perímetro sempre envolve:",
+"opcoes": ["Somar lados", "Multiplicar lados", "Dividir lados", "Subtrair lados"],
+"respostaCorreta": "Somar lados",
+"dica": "Todos os lados juntos."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 6 - Perímetro: A Medida do Contorno",
+"nivel": "medio",
+"dicas": "Calcular perímetro em diferentes figuras.",
+"perguntas": [
+{
+"pergunta": "Qual é o perímetro de um quadrado de lado 5?",
+"opcoes": ["10", "15", "20", "25"],
+"respostaCorreta": "20",
+"dica": "4 x 5."
+},
+{
+"pergunta": "Qual é o perímetro de um retângulo com lados 4 e 6?",
+"opcoes": ["10", "20", "24", "12"],
+"respostaCorreta": "20",
+"dica": "4+6+4+6."
+},
+{
+"pergunta": "Qual é o perímetro de um triângulo com lados 3, 3 e 3?",
+"opcoes": ["6", "9", "12", "3"],
+"respostaCorreta": "9",
+"dica": "3+3+3."
+},
+{
+"pergunta": "Se um lado aumenta, o perímetro:",
+"opcoes": ["Diminui", "Permanece", "Aumenta", "Zera"],
+"respostaCorreta": "Aumenta",
+"dica": "Mais comprimento."
+},
+{
+"pergunta": "Um retângulo tem lados iguais dois a dois, então o perímetro é:",
+"opcoes": ["L + W", "2L + 2W", "L x W", "L ÷ W"],
+"respostaCorreta": "2L + 2W",
+"dica": "Dois lados iguais."
+},
+{
+"pergunta": "Qual é o perímetro de um quadrado de lado 10?",
+"opcoes": ["20", "30", "40", "50"],
+"respostaCorreta": "40",
+"dica": "4 x 10."
+},
+{
+"pergunta": "Se um triângulo tem lados 5, 6 e 7, o perímetro é:",
+"opcoes": ["16", "17", "18", "19"],
+"respostaCorreta": "18",
+"dica": "5+6+7."
+},
+{
+"pergunta": "Perímetro mede unidades de:",
+"opcoes": ["Área", "Comprimento", "Volume", "Tempo"],
+"respostaCorreta": "Comprimento",
+"dica": "Ex: cm, m."
+},
+{
+"pergunta": "Se todos os lados dobram, o perímetro:",
+"opcoes": ["Diminui", "Permanece", "Dobra", "Divide"],
+"respostaCorreta": "Dobra",
+"dica": "Tudo cresce igual."
+},
+{
+"pergunta": "Perímetro é útil para:",
+"opcoes": ["Pintar área", "Cercar terrenos", "Dividir números", "Somar frações"],
+"respostaCorreta": "Cercar terrenos",
+"dica": "Contorno real."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 6 - Perímetro: A Medida do Contorno",
+"nivel": "avancado",
+"dicas": "Analisar relações e aplicações do perímetro.",
+"perguntas": [
+{
+"pergunta": "Se um quadrado tem perímetro 20, qual é o lado?",
+"opcoes": ["4", "5", "6", "10"],
+"respostaCorreta": "5",
+"dica": "20 ÷ 4."
+},
+{
+"pergunta": "Se um retângulo tem perímetro 30 e lados 10 e x, x é:",
+"opcoes": ["5", "10", "15", "20"],
+"respostaCorreta": "5",
+"dica": "2(10 + x) = 30."
+},
+{
+"pergunta": "Duas figuras podem ter o mesmo perímetro e:",
+"opcoes": ["Mesma forma", "Formas diferentes", "Mesma área sempre", "Nenhuma"],
+"respostaCorreta": "Formas diferentes",
+"dica": "Formato muda."
+},
+{
+"pergunta": "Se aumentarmos apenas um lado, o perímetro:",
+"opcoes": ["Diminui", "Aumenta", "Permanece", "Zera"],
+"respostaCorreta": "Aumenta",
+"dica": "Mais comprimento."
+},
+{
+"pergunta": "Perímetro não mede:",
+"opcoes": ["Contorno", "Borda", "Interior", "Comprimento"],
+"respostaCorreta": "Interior",
+"dica": "Isso é área."
+},
+{
+"pergunta": "Se um triângulo tem perímetro fixo, mudar os lados:",
+"opcoes": ["Não muda forma", "Muda forma", "Zera perímetro", "Duplica perímetro"],
+"respostaCorreta": "Muda forma",
+"dica": "Distribuição muda."
+},
+{
+"pergunta": "Perímetro é importante para:",
+"opcoes": ["Volume", "Construção e cercas", "Somente matemática", "Cores"],
+"respostaCorreta": "Construção e cercas",
+"dica": "Uso prático."
+},
+{
+"pergunta": "Se todos os lados triplicam, o perímetro:",
+"opcoes": ["Duplica", "Triplica", "Diminui", "Permanece"],
+"respostaCorreta": "Triplica",
+"dica": "Escala proporcional."
+},
+{
+"pergunta": "Perímetro depende de:",
+"opcoes": ["Área", "Soma dos lados", "Cor", "Peso"],
+"respostaCorreta": "Soma dos lados",
+"dica": "Sempre."
+},
+{
+"pergunta": "Perímetro ajuda a resolver problemas de:",
+"opcoes": ["Área apenas", "Contorno e limites", "Somente números", "Tempo"],
+"respostaCorreta": "Contorno e limites",
+"dica": "Aplicação real."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 7 - Área: O Espaço Interior",
+"nivel": "basico",
+"dicas": "Área mede o espaço dentro de uma figura.",
+"perguntas": [
+{
+"pergunta": "O que é área?",
+"opcoes": ["Contorno", "Espaço interior", "Linha", "Ponto"],
+"respostaCorreta": "Espaço interior",
+"dica": "Parte de dentro da figura."
+},
+{
+"pergunta": "Área mede:",
+"opcoes": ["Exterior", "Interior", "Altura", "Peso"],
+"respostaCorreta": "Interior",
+"dica": "Dentro da figura."
+},
+{
+"pergunta": "Área é diferente de:",
+"opcoes": ["Cor", "Perímetro", "Altura", "Largura"],
+"respostaCorreta": "Perímetro",
+"dica": "Perímetro é contorno."
+},
+{
+"pergunta": "Área de um quadrado usa:",
+"opcoes": ["Soma", "Multiplicação", "Divisão", "Subtração"],
+"respostaCorreta": "Multiplicação",
+"dica": "Lado x lado."
+},
+{
+"pergunta": "Se o lado do quadrado é 2, a área é:",
+"opcoes": ["2", "4", "6", "8"],
+"respostaCorreta": "4",
+"dica": "2 x 2."
+},
+{
+"pergunta": "Área usa unidades de:",
+"opcoes": ["Comprimento", "Superfície", "Tempo", "Peso"],
+"respostaCorreta": "Superfície",
+"dica": "Ex: cm²."
+},
+{
+"pergunta": "Qual mede o interior?",
+"opcoes": ["Perímetro", "Área", "Linha", "Ponto"],
+"respostaCorreta": "Área",
+"dica": "Dentro da figura."
+},
+{
+"pergunta": "Área ajuda a:",
+"opcoes": ["Cercar", "Preencher", "Dividir", "Apagar"],
+"respostaCorreta": "Preencher",
+"dica": "Cobrir superfície."
+},
+{
+"pergunta": "Área de 1x1 é:",
+"opcoes": ["0", "1", "2", "3"],
+"respostaCorreta": "1",
+"dica": "1 x 1."
+},
+{
+"pergunta": "Área está ligada a:",
+"opcoes": ["Linha", "Superfície", "Ponto", "Som"],
+"respostaCorreta": "Superfície",
+"dica": "Espaço interno."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 7 - Área: O Espaço Interior",
+"nivel": "medio",
+"dicas": "Calcular área de figuras simples.",
+"perguntas": [
+{
+"pergunta": "Área de um quadrado de lado 4 é:",
+"opcoes": ["8", "12", "16", "20"],
+"respostaCorreta": "16",
+"dica": "4 x 4."
+},
+{
+"pergunta": "Área de um retângulo é:",
+"opcoes": ["L + W", "L x W", "2L + 2W", "L ÷ W"],
+"respostaCorreta": "L x W",
+"dica": "Comprimento x largura."
+},
+{
+"pergunta": "Área de um retângulo 3x5 é:",
+"opcoes": ["8", "10", "15", "20"],
+"respostaCorreta": "15",
+"dica": "3 x 5."
+},
+{
+"pergunta": "Área de um quadrado de lado 10 é:",
+"opcoes": ["20", "50", "100", "200"],
+"respostaCorreta": "100",
+"dica": "10 x 10."
+},
+{
+"pergunta": "Se dobrarmos um lado do quadrado, a área:",
+"opcoes": ["Dobra", "Quadruplica", "Permanece", "Diminui"],
+"respostaCorreta": "Quadruplica",
+"dica": "Área cresce ao quadrado."
+},
+{
+"pergunta": "Área mede em:",
+"opcoes": ["cm", "cm²", "kg", "s"],
+"respostaCorreta": "cm²",
+"dica": "Unidade quadrada."
+},
+{
+"pergunta": "Área de 2x6 é:",
+"opcoes": ["8", "10", "12", "14"],
+"respostaCorreta": "12",
+"dica": "2 x 6."
+},
+{
+"pergunta": "Se aumentarmos comprimento e largura, a área:",
+"opcoes": ["Diminui", "Aumenta", "Permanece", "Zera"],
+"respostaCorreta": "Aumenta",
+"dica": "Mais espaço."
+},
+{
+"pergunta": "Área é usada para:",
+"opcoes": ["Cercar", "Cobrir superfícies", "Medir tempo", "Somar números"],
+"respostaCorreta": "Cobrir superfícies",
+"dica": "Ex: pisos."
+},
+{
+"pergunta": "Área de um retângulo depende de:",
+"opcoes": ["Perímetro", "Altura e largura", "Cor", "Peso"],
+"respostaCorreta": "Altura e largura",
+"dica": "Duas dimensões."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 7 - Área: O Espaço Interior",
+"nivel": "avancado",
+"dicas": "Analisar relações e crescimento da área.",
+"perguntas": [
+{
+"pergunta": "Se um quadrado tem área 36, o lado é:",
+"opcoes": ["5", "6", "7", "8"],
+"respostaCorreta": "6",
+"dica": "√36."
+},
+{
+"pergunta": "Se um retângulo tem área 20 e largura 4, o comprimento é:",
+"opcoes": ["4", "5", "6", "8"],
+"respostaCorreta": "5",
+"dica": "20 ÷ 4."
+},
+{
+"pergunta": "Área cresce mais rápido que perímetro porque:",
+"opcoes": ["É soma", "É multiplicação", "É divisão", "É subtração"],
+"respostaCorreta": "É multiplicação",
+"dica": "Depende de dois lados."
+},
+{
+"pergunta": "Duas figuras podem ter mesma área e:",
+"opcoes": ["Mesma forma sempre", "Formas diferentes", "Mesmo perímetro sempre", "Nada"],
+"respostaCorreta": "Formas diferentes",
+"dica": "Distribuição muda."
+},
+{
+"pergunta": "Área não mede:",
+"opcoes": ["Interior", "Superfície", "Contorno", "Espaço"],
+"respostaCorreta": "Contorno",
+"dica": "Isso é perímetro."
+},
+{
+"pergunta": "Se dobrarmos comprimento e largura, a área:",
+"opcoes": ["Dobra", "Triplica", "Quadruplica", "Permanece"],
+"respostaCorreta": "Quadruplica",
+"dica": "2 x 2."
+},
+{
+"pergunta": "Área ajuda em:",
+"opcoes": ["Pintura e construção", "Somente matemática", "Cores", "Tempo"],
+"respostaCorreta": "Pintura e construção",
+"dica": "Cobrir superfícies."
+},
+{
+"pergunta": "Área depende de:",
+"opcoes": ["Uma dimensão", "Duas dimensões", "Três dimensões", "Nenhuma"],
+"respostaCorreta": "Duas dimensões",
+"dica": "Comprimento e largura."
+},
+{
+"pergunta": "Se a área é fixa, mudar forma:",
+"opcoes": ["Não muda nada", "Muda dimensões", "Zera área", "Duplica área"],
+"respostaCorreta": "Muda dimensões",
+"dica": "Distribuição."
+},
+{
+"pergunta": "Área é fundamental para:",
+"opcoes": ["Somente números", "Entender espaço interno", "Ignorar figuras", "Apagar formas"],
+"respostaCorreta": "Entender espaço interno",
+"dica": "Base da geometria."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 8 - Sólidos Geométricos: Formas no Espaço",
+"nivel": "basico",
+"dicas": "Sólidos são formas que ocupam espaço.",
+"perguntas": [
+{
+"pergunta": "O que é um sólido geométrico?",
+"opcoes": ["Uma linha", "Uma forma que ocupa espaço", "Um ponto", "Um plano"],
+"respostaCorreta": "Uma forma que ocupa espaço",
+"dica": "Tem volume."
+},
+{
+"pergunta": "Qual é um sólido?",
+"opcoes": ["Quadrado", "Círculo", "Cubo", "Linha"],
+"respostaCorreta": "Cubo",
+"dica": "Forma 3D."
+},
+{
+"pergunta": "Um sólido tem:",
+"opcoes": ["2 dimensões", "3 dimensões", "1 dimensão", "Nenhuma"],
+"respostaCorreta": "3 dimensões",
+"dica": "Comprimento, largura e altura."
+},
+{
+"pergunta": "Qual destes é um sólido?",
+"opcoes": ["Triângulo", "Retângulo", "Esfera", "Linha"],
+"respostaCorreta": "Esfera",
+"dica": "Forma redonda 3D."
+},
+{
+"pergunta": "Sólidos ocupam:",
+"opcoes": ["Linha", "Plano", "Espaço", "Ponto"],
+"respostaCorreta": "Espaço",
+"dica": "Volume."
+},
+{
+"pergunta": "Um cubo tem forma de:",
+"opcoes": ["Bola", "Caixa", "Linha", "Plano"],
+"respostaCorreta": "Caixa",
+"dica": "Como um dado."
+},
+{
+"pergunta": "Uma bola é um exemplo de:",
+"opcoes": ["Plano", "Linha", "Esfera", "Segmento"],
+"respostaCorreta": "Esfera",
+"dica": "Forma redonda."
+},
+{
+"pergunta": "Sólidos têm:",
+"opcoes": ["Somente lados", "Volume", "Somente pontos", "Somente linhas"],
+"respostaCorreta": "Volume",
+"dica": "Espaço interno."
+},
+{
+"pergunta": "Qual NÃO é sólido?",
+"opcoes": ["Cubo", "Esfera", "Quadrado", "Cilindro"],
+"respostaCorreta": "Quadrado",
+"dica": "É 2D."
+},
+{
+"pergunta": "Sólidos são estudados na:",
+"opcoes": ["Aritmética", "Geometria", "História", "Língua"],
+"respostaCorreta": "Geometria",
+"dica": "Formas no espaço."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 8 - Sólidos Geométricos: Formas no Espaço",
+"nivel": "medio",
+"dicas": "Identificar tipos de sólidos e suas partes.",
+"perguntas": [
+{
+"pergunta": "Um cubo tem quantas faces?",
+"opcoes": ["4", "6", "8", "12"],
+"respostaCorreta": "6",
+"dica": "Como um dado."
+},
+{
+"pergunta": "Um cilindro tem:",
+"opcoes": ["Apenas faces planas", "Faces curvas e planas", "Somente linhas", "Somente pontos"],
+"respostaCorreta": "Faces curvas e planas",
+"dica": "Lados redondos."
+},
+{
+"pergunta": "Uma esfera tem:",
+"opcoes": ["Faces planas", "Apenas superfície curva", "Vértices", "Arestas"],
+"respostaCorreta": "Apenas superfície curva",
+"dica": "Sem lados retos."
+},
+{
+"pergunta": "Um cubo tem quantos vértices?",
+"opcoes": ["6", "8", "10", "12"],
+"respostaCorreta": "8",
+"dica": "Cantinhos."
+},
+{
+"pergunta": "Um prisma é:",
+"opcoes": ["Plano", "Sólido com bases iguais", "Linha", "Ponto"],
+"respostaCorreta": "Sólido com bases iguais",
+"dica": "Duas bases iguais."
+},
+{
+"pergunta": "Um cone tem:",
+"opcoes": ["Duas bases", "Uma base e um vértice", "Sem base", "Somente linhas"],
+"respostaCorreta": "Uma base e um vértice",
+"dica": "Forma de chapéu."
+},
+{
+"pergunta": "Faces são:",
+"opcoes": ["Linhas", "Superfícies do sólido", "Pontos", "Cores"],
+"respostaCorreta": "Superfícies do sólido",
+"dica": "Lados."
+},
+{
+"pergunta": "Arestas são:",
+"opcoes": ["Pontos", "Linhas onde faces se encontram", "Planos", "Cores"],
+"respostaCorreta": "Linhas onde faces se encontram",
+"dica": "Encontro de faces."
+},
+{
+"pergunta": "Vértices são:",
+"opcoes": ["Linhas", "Superfícies", "Pontos de encontro", "Cores"],
+"respostaCorreta": "Pontos de encontro",
+"dica": "Cantinhos."
+},
+{
+"pergunta": "Sólidos são usados em:",
+"opcoes": ["Somente matemática", "Objetos do dia a dia", "Somente desenho", "Nada"],
+"respostaCorreta": "Objetos do dia a dia",
+"dica": "Ex: caixas, bolas."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 8 - Sólidos Geométricos: Formas no Espaço",
+"nivel": "avancado",
+"dicas": "Analisar propriedades dos sólidos geométricos.",
+"perguntas": [
+{
+"pergunta": "Um cubo tem 6 faces, 12 arestas e:",
+"opcoes": ["6 vértices", "8 vértices", "10 vértices", "12 vértices"],
+"respostaCorreta": "8 vértices",
+"dica": "Cantos do cubo."
+},
+{
+"pergunta": "Uma esfera não tem:",
+"opcoes": ["Volume", "Superfície", "Arestas", "Forma"],
+"respostaCorreta": "Arestas",
+"dica": "É totalmente curva."
+},
+{
+"pergunta": "Um cilindro tem quantas bases?",
+"opcoes": ["0", "1", "2", "3"],
+"respostaCorreta": "2",
+"dica": "Topo e base."
+},
+{
+"pergunta": "O volume mede:",
+"opcoes": ["Área", "Comprimento", "Espaço ocupado", "Peso"],
+"respostaCorreta": "Espaço ocupado",
+"dica": "Dentro do sólido."
+},
+{
+"pergunta": "Sólidos diferem de figuras planas porque:",
+"opcoes": ["São menores", "Têm volume", "São mais simples", "Não têm forma"],
+"respostaCorreta": "Têm volume",
+"dica": "3 dimensões."
+},
+{
+"pergunta": "Um prisma sempre tem:",
+"opcoes": ["Bases diferentes", "Bases iguais", "Sem faces", "Somente curvas"],
+"respostaCorreta": "Bases iguais",
+"dica": "Característica principal."
+},
+{
+"pergunta": "Um cone tem uma base e:",
+"opcoes": ["Duas arestas", "Um vértice", "Duas faces planas", "Sem superfície"],
+"respostaCorreta": "Um vértice",
+"dica": "Ponta."
+},
+{
+"pergunta": "A soma das faces forma:",
+"opcoes": ["Linha", "Superfície total", "Ponto", "Plano infinito"],
+"respostaCorreta": "Superfície total",
+"dica": "Exterior do sólido."
+},
+{
+"pergunta": "Sólidos ajudam a entender:",
+"opcoes": ["Somente números", "Espaço tridimensional", "Cores", "Som"],
+"respostaCorreta": "Espaço tridimensional",
+"dica": "3D."
+},
+{
+"pergunta": "Geometria espacial estuda:",
+"opcoes": ["Linhas", "Planos", "Sólidos", "Pontos"],
+"respostaCorreta": "Sólidos",
+"dica": "Formas no espaço."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 9 - Volume: O Espaço Ocupado",
+"nivel": "basico",
+"dicas": "Volume mede o espaço dentro de um sólido.",
+"perguntas": [
+{
+"pergunta": "O que é volume?",
+"opcoes": ["Área", "Espaço ocupado", "Linha", "Ponto"],
+"respostaCorreta": "Espaço ocupado",
+"dica": "Dentro do sólido."
+},
+{
+"pergunta": "Volume mede:",
+"opcoes": ["Contorno", "Interior 3D", "Linha", "Altura"],
+"respostaCorreta": "Interior 3D",
+"dica": "Espaço interno."
+},
+{
+"pergunta": "Qual figura tem volume?",
+"opcoes": ["Quadrado", "Linha", "Cubo", "Segmento"],
+"respostaCorreta": "Cubo",
+"dica": "Forma 3D."
+},
+{
+"pergunta": "Volume usa unidades de:",
+"opcoes": ["cm", "cm²", "cm³", "kg"],
+"respostaCorreta": "cm³",
+"dica": "Unidade cúbica."
+},
+{
+"pergunta": "Volume está ligado a:",
+"opcoes": ["2 dimensões", "3 dimensões", "1 dimensão", "Nenhuma"],
+"respostaCorreta": "3 dimensões",
+"dica": "Comprimento, largura e altura."
+},
+{
+"pergunta": "Qual mede o espaço dentro de uma caixa?",
+"opcoes": ["Área", "Perímetro", "Volume", "Linha"],
+"respostaCorreta": "Volume",
+"dica": "Interior."
+},
+{
+"pergunta": "Um sólido tem:",
+"opcoes": ["Área apenas", "Volume", "Somente linhas", "Somente pontos"],
+"respostaCorreta": "Volume",
+"dica": "Espaço interno."
+},
+{
+"pergunta": "Uma caixa cheia mostra:",
+"opcoes": ["Área", "Volume", "Linha", "Cor"],
+"respostaCorreta": "Volume",
+"dica": "Capacidade."
+},
+{
+"pergunta": "Volume serve para medir:",
+"opcoes": ["Superfície", "Espaço interno", "Linha", "Tempo"],
+"respostaCorreta": "Espaço interno",
+"dica": "Dentro do objeto."
+},
+{
+"pergunta": "Volume ajuda a:",
+"opcoes": ["Cercar", "Encher objetos", "Somar", "Apagar"],
+"respostaCorreta": "Encher objetos",
+"dica": "Capacidade."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 9 - Volume: O Espaço Ocupado",
+"nivel": "medio",
+"dicas": "Calcular volume de sólidos simples.",
+"perguntas": [
+{
+"pergunta": "Volume de um cubo é:",
+"opcoes": ["L + L + L", "L x L x L", "2L", "L ÷ L"],
+"respostaCorreta": "L x L x L",
+"dica": "Lado ao cubo."
+},
+{
+"pergunta": "Volume de um cubo de lado 2 é:",
+"opcoes": ["4", "6", "8", "10"],
+"respostaCorreta": "8",
+"dica": "2 x 2 x 2."
+},
+{
+"pergunta": "Volume de um cubo de lado 3 é:",
+"opcoes": ["9", "18", "27", "12"],
+"respostaCorreta": "27",
+"dica": "3³."
+},
+{
+"pergunta": "Volume de um paralelepípedo é:",
+"opcoes": ["L + W + H", "L x W x H", "2L + 2W", "L ÷ W"],
+"respostaCorreta": "L x W x H",
+"dica": "Multiplica as três dimensões."
+},
+{
+"pergunta": "Volume de 2x3x4 é:",
+"opcoes": ["9", "12", "24", "18"],
+"respostaCorreta": "24",
+"dica": "2 x 3 x 4."
+},
+{
+"pergunta": "Se aumentarmos uma dimensão, o volume:",
+"opcoes": ["Diminui", "Aumenta", "Permanece", "Zera"],
+"respostaCorreta": "Aumenta",
+"dica": "Mais espaço."
+},
+{
+"pergunta": "Volume mede em:",
+"opcoes": ["cm", "cm²", "cm³", "m"],
+"respostaCorreta": "cm³",
+"dica": "Cúbico."
+},
+{
+"pergunta": "Se dobrarmos o lado do cubo, o volume:",
+"opcoes": ["Dobra", "Triplica", "Octuplica", "Permanece"],
+"respostaCorreta": "Octuplica",
+"dica": "2³ = 8."
+},
+{
+"pergunta": "Volume é útil para:",
+"opcoes": ["Pintar", "Armazenar líquidos", "Somar", "Dividir"],
+"respostaCorreta": "Armazenar líquidos",
+"dica": "Capacidade."
+},
+{
+"pergunta": "Volume depende de:",
+"opcoes": ["1 dimensão", "2 dimensões", "3 dimensões", "Nenhuma"],
+"respostaCorreta": "3 dimensões",
+"dica": "Comprimento, largura, altura."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 9 - Volume: O Espaço Ocupado",
+"nivel": "avancado",
+"dicas": "Analisar relações e crescimento do volume.",
+"perguntas": [
+{
+"pergunta": "Se um cubo tem volume 27, o lado é:",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "3",
+"dica": "³√27."
+},
+{
+"pergunta": "Se volume é 24 e base 2x3, altura é:",
+"opcoes": ["2", "3", "4", "6"],
+"respostaCorreta": "4",
+"dica": "24 ÷ (2x3)."
+},
+{
+"pergunta": "Volume cresce mais rápido porque:",
+"opcoes": ["É soma", "É multiplicação tripla", "É divisão", "É subtração"],
+"respostaCorreta": "É multiplicação tripla",
+"dica": "3 dimensões."
+},
+{
+"pergunta": "Duas figuras podem ter mesmo volume e:",
+"opcoes": ["Mesma forma sempre", "Formas diferentes", "Mesmo perímetro sempre", "Nada"],
+"respostaCorreta": "Formas diferentes",
+"dica": "Distribuição muda."
+},
+{
+"pergunta": "Volume não mede:",
+"opcoes": ["Interior", "Capacidade", "Superfície", "Espaço"],
+"respostaCorreta": "Superfície",
+"dica": "Isso é área."
+},
+{
+"pergunta": "Se dobrarmos todas dimensões, o volume:",
+"opcoes": ["Dobra", "Triplica", "Octuplica", "Permanece"],
+"respostaCorreta": "Octuplica",
+"dica": "2³."
+},
+{
+"pergunta": "Volume é essencial para:",
+"opcoes": ["Somente matemática", "Construção e armazenamento", "Cores", "Tempo"],
+"respostaCorreta": "Construção e armazenamento",
+"dica": "Uso prático."
+},
+{
+"pergunta": "Volume depende de:",
+"opcoes": ["Área apenas", "Perímetro", "Três dimensões", "Linha"],
+"respostaCorreta": "Três dimensões",
+"dica": "3D."
+},
+{
+"pergunta": "Se volume é fixo, mudar forma:",
+"opcoes": ["Não muda nada", "Muda dimensões", "Zera volume", "Duplica volume"],
+"respostaCorreta": "Muda dimensões",
+"dica": "Distribuição."
+},
+{
+"pergunta": "Volume ajuda a entender:",
+"opcoes": ["Somente linhas", "Espaço tridimensional", "Cores", "Som"],
+"respostaCorreta": "Espaço tridimensional",
+"dica": "3 dimensões."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 10 - Transformações Geométricas: Movendo Figuras",
+"nivel": "basico",
+"dicas": "Transformações mudam a posição ou forma das figuras.",
+"perguntas": [
+{
+"pergunta": "O que é uma transformação geométrica?",
+"opcoes": ["Uma soma", "Mudança na figura", "Um número", "Um ponto"],
+"respostaCorreta": "Mudança na figura",
+"dica": "Mover ou girar."
+},
+{
+"pergunta": "Mover uma figura sem girar é:",
+"opcoes": ["Rotação", "Reflexão", "Translação", "Divisão"],
+"respostaCorreta": "Translação",
+"dica": "Deslizar."
+},
+{
+"pergunta": "Girar uma figura é:",
+"opcoes": ["Translação", "Rotação", "Reflexão", "Soma"],
+"respostaCorreta": "Rotação",
+"dica": "Rodar."
+},
+{
+"pergunta": "Espelhar uma figura é:",
+"opcoes": ["Rotação", "Reflexão", "Translação", "Multiplicação"],
+"respostaCorreta": "Reflexão",
+"dica": "Como no espelho."
+},
+{
+"pergunta": "Uma transformação muda:",
+"opcoes": ["Cor", "Posição", "Número", "Som"],
+"respostaCorreta": "Posição",
+"dica": "Lugar da figura."
+},
+{
+"pergunta": "Translação mantém:",
+"opcoes": ["Forma", "Cor", "Tamanho", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Só muda posição."
+},
+{
+"pergunta": "Rotação gira em torno de:",
+"opcoes": ["Linha", "Ponto", "Plano", "Cor"],
+"respostaCorreta": "Ponto",
+"dica": "Centro."
+},
+{
+"pergunta": "Reflexão usa:",
+"opcoes": ["Linha como espelho", "Número", "Cor", "Som"],
+"respostaCorreta": "Linha como espelho",
+"dica": "Simetria."
+},
+{
+"pergunta": "Transformações são usadas para:",
+"opcoes": ["Ignorar formas", "Estudar movimentos", "Apagar figuras", "Somar números"],
+"respostaCorreta": "Estudar movimentos",
+"dica": "Mudanças."
+},
+{
+"pergunta": "Uma figura após transformação pode:",
+"opcoes": ["Sumir", "Mudar posição", "Apagar", "Ficar invisível"],
+"respostaCorreta": "Mudar posição",
+"dica": "Se deslocar."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 10 - Transformações Geométricas: Movendo Figuras",
+"nivel": "medio",
+"dicas": "Identificar tipos de transformações.",
+"perguntas": [
+{
+"pergunta": "Translação muda:",
+"opcoes": ["Forma", "Tamanho", "Posição", "Ângulo"],
+"respostaCorreta": "Posição",
+"dica": "Deslocamento."
+},
+{
+"pergunta": "Rotação muda:",
+"opcoes": ["Posição e orientação", "Somente cor", "Tamanho", "Área"],
+"respostaCorreta": "Posição e orientação",
+"dica": "Gira."
+},
+{
+"pergunta": "Reflexão cria:",
+"opcoes": ["Figura maior", "Imagem espelhada", "Figura menor", "Linha"],
+"respostaCorreta": "Imagem espelhada",
+"dica": "Simetria."
+},
+{
+"pergunta": "Transformações mantêm:",
+"opcoes": ["Forma", "Tamanho", "Proporções", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Não deformam."
+},
+{
+"pergunta": "Rotação de 360° resulta em:",
+"opcoes": ["Figura diferente", "Figura igual", "Figura maior", "Figura menor"],
+"respostaCorreta": "Figura igual",
+"dica": "Volta completa."
+},
+{
+"pergunta": "Reflexão depende de:",
+"opcoes": ["Linha de simetria", "Número", "Cor", "Tempo"],
+"respostaCorreta": "Linha de simetria",
+"dica": "Espelho."
+},
+{
+"pergunta": "Uma translação pode ser:",
+"opcoes": ["Para cima", "Para baixo", "Para lados", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Qualquer direção."
+},
+{
+"pergunta": "Transformações não alteram:",
+"opcoes": ["Posição", "Orientação", "Forma", "Direção"],
+"respostaCorreta": "Forma",
+"dica": "Mantém estrutura."
+},
+{
+"pergunta": "Rotação usa um:",
+"opcoes": ["Centro", "Lado", "Plano", "Segmento"],
+"respostaCorreta": "Centro",
+"dica": "Ponto central."
+},
+{
+"pergunta": "Transformações são importantes para:",
+"opcoes": ["Desenho e matemática", "Somente números", "Cores", "Nada"],
+"respostaCorreta": "Desenho e matemática",
+"dica": "Movimentos."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 10 - Transformações Geométricas: Movendo Figuras",
+"nivel": "avancado",
+"dicas": "Analisar propriedades das transformações.",
+"perguntas": [
+{
+"pergunta": "Transformações isométricas preservam:",
+"opcoes": ["Forma e tamanho", "Cor", "Tempo", "Peso"],
+"respostaCorreta": "Forma e tamanho",
+"dica": "Não deformam."
+},
+{
+"pergunta": "Uma rotação de 180° resulta em:",
+"opcoes": ["Imagem igual invertida", "Imagem diferente", "Sem mudança", "Desaparece"],
+"respostaCorreta": "Imagem igual invertida",
+"dica": "Meia volta."
+},
+{
+"pergunta": "Reflexão cria simetria porque:",
+"opcoes": ["Duplica", "Espelha", "Apaga", "Divide"],
+"respostaCorreta": "Espelha",
+"dica": "Imagem refletida."
+},
+{
+"pergunta": "Translação não altera:",
+"opcoes": ["Posição", "Local", "Distâncias internas", "Lugar"],
+"respostaCorreta": "Distâncias internas",
+"dica": "Mantém forma."
+},
+{
+"pergunta": "Combinar transformações pode:",
+"opcoes": ["Criar novas posições", "Apagar figuras", "Diminuir tamanho", "Somar lados"],
+"respostaCorreta": "Criar novas posições",
+"dica": "Movimentos combinados."
+},
+{
+"pergunta": "Simetria está ligada a:",
+"opcoes": ["Reflexão", "Soma", "Divisão", "Multiplicação"],
+"respostaCorreta": "Reflexão",
+"dica": "Espelho."
+},
+{
+"pergunta": "Rotação mantém:",
+"opcoes": ["Forma", "Tamanho", "Distância", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Isométrica."
+},
+{
+"pergunta": "Transformações ajudam a entender:",
+"opcoes": ["Movimentos no plano", "Somente números", "Cores", "Tempo"],
+"respostaCorreta": "Movimentos no plano",
+"dica": "Geometria dinâmica."
+},
+{
+"pergunta": "Uma figura após reflexão pode:",
+"opcoes": ["Ser igual", "Ser invertida", "Desaparecer", "Ficar menor"],
+"respostaCorreta": "Ser invertida",
+"dica": "Espelho."
+},
+{
+"pergunta": "Transformações são fundamentais para:",
+"opcoes": ["Ignorar formas", "Analisar movimento e simetria", "Somente cálculo", "Apagar figuras"],
+"respostaCorreta": "Analisar movimento e simetria",
+"dica": "Base geométrica."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 11 - Simetria: Equilíbrio nas Formas",
+"nivel": "basico",
+"dicas": "Simetria é quando uma figura é igual dos dois lados.",
+"perguntas": [
+{
+"pergunta": "O que é simetria?",
+"opcoes": ["Uma soma", "Igualdade entre lados", "Um número", "Uma linha"],
+"respostaCorreta": "Igualdade entre lados",
+"dica": "Lados iguais."
+},
+{
+"pergunta": "Uma figura simétrica é:",
+"opcoes": ["Diferente dos lados", "Igual dos dois lados", "Sem forma", "Curva"],
+"respostaCorreta": "Igual dos dois lados",
+"dica": "Espelho."
+},
+{
+"pergunta": "A linha de simetria divide a figura em:",
+"opcoes": ["Partes diferentes", "Partes iguais", "Linhas", "Pontos"],
+"respostaCorreta": "Partes iguais",
+"dica": "Duas metades."
+},
+{
+"pergunta": "Um exemplo de simetria é:",
+"opcoes": ["Círculo", "Desenho irregular", "Linha aberta", "Número"],
+"respostaCorreta": "Círculo",
+"dica": "Forma equilibrada."
+},
+{
+"pergunta": "Simetria lembra:",
+"opcoes": ["Soma", "Espelho", "Divisão", "Multiplicação"],
+"respostaCorreta": "Espelho",
+"dica": "Reflexo."
+},
+{
+"pergunta": "Um coração desenhado bem feito é:",
+"opcoes": ["Assimétrico", "Simétrico", "Sem forma", "Aberto"],
+"respostaCorreta": "Simétrico",
+"dica": "Dois lados iguais."
+},
+{
+"pergunta": "A simetria está presente em:",
+"opcoes": ["Somente matemática", "Natureza e objetos", "Somente números", "Nada"],
+"respostaCorreta": "Natureza e objetos",
+"dica": "Ex: borboletas."
+},
+{
+"pergunta": "A linha de simetria é:",
+"opcoes": ["Curva", "Linha imaginária", "Número", "Cor"],
+"respostaCorreta": "Linha imaginária",
+"dica": "Divide a figura."
+},
+{
+"pergunta": "Uma figura sem simetria é:",
+"opcoes": ["Igual dos lados", "Diferente dos lados", "Perfeita", "Redonda"],
+"respostaCorreta": "Diferente dos lados",
+"dica": "Não coincide."
+},
+{
+"pergunta": "Simetria ajuda a:",
+"opcoes": ["Desorganizar", "Equilibrar formas", "Apagar figuras", "Somar números"],
+"respostaCorreta": "Equilibrar formas",
+"dica": "Harmonia."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 11 - Simetria: Equilíbrio nas Formas",
+"nivel": "medio",
+"dicas": "Identificar e aplicar simetria.",
+"perguntas": [
+{
+"pergunta": "Um quadrado tem quantas linhas de simetria?",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "4",
+"dica": "Vertical, horizontal e diagonais."
+},
+{
+"pergunta": "Um retângulo tem quantas linhas de simetria?",
+"opcoes": ["1", "2", "3", "4"],
+"respostaCorreta": "2",
+"dica": "Vertical e horizontal."
+},
+{
+"pergunta": "Um triângulo equilátero tem:",
+"opcoes": ["1 linha", "2 linhas", "3 linhas", "4 linhas"],
+"respostaCorreta": "3 linhas",
+"dica": "Uma por vértice."
+},
+{
+"pergunta": "Simetria axial ocorre quando:",
+"opcoes": ["Gira", "Desliza", "Reflete", "Divide"],
+"respostaCorreta": "Reflete",
+"dica": "Espelho."
+},
+{
+"pergunta": "Uma figura com simetria axial:",
+"opcoes": ["Não muda", "Reflete-se", "Diminui", "Aumenta"],
+"respostaCorreta": "Reflete-se",
+"dica": "Imagem espelhada."
+},
+{
+"pergunta": "Simetria ajuda a identificar:",
+"opcoes": ["Cores", "Padrões", "Números", "Som"],
+"respostaCorreta": "Padrões",
+"dica": "Repetição."
+},
+{
+"pergunta": "Um círculo tem:",
+"opcoes": ["Nenhuma simetria", "1 linha", "Infinitas linhas", "2 linhas"],
+"respostaCorreta": "Infinitas linhas",
+"dica": "Qualquer diâmetro."
+},
+{
+"pergunta": "Simetria está ligada a:",
+"opcoes": ["Rotação", "Reflexão", "Translação", "Divisão"],
+"respostaCorreta": "Reflexão",
+"dica": "Espelho."
+},
+{
+"pergunta": "Uma figura irregular tem:",
+"opcoes": ["Sempre simetria", "Nunca simetria", "Pode não ter simetria", "Sempre duas linhas"],
+"respostaCorreta": "Pode não ter simetria",
+"dica": "Depende da forma."
+},
+{
+"pergunta": "Simetria é importante para:",
+"opcoes": ["Arte e matemática", "Somente números", "Somente desenho", "Nada"],
+"respostaCorreta": "Arte e matemática",
+"dica": "Beleza e equilíbrio."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 11 - Simetria: Equilíbrio nas Formas",
+"nivel": "avancado",
+"dicas": "Analisar propriedades da simetria.",
+"perguntas": [
+{
+"pergunta": "Simetria axial preserva:",
+"opcoes": ["Forma", "Tamanho", "Distâncias", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Transformação isométrica."
+},
+{
+"pergunta": "Uma figura pode ter múltiplas linhas de simetria?",
+"opcoes": ["Não", "Sim", "Nunca", "Às vezes não"],
+"respostaCorreta": "Sim",
+"dica": "Ex: quadrado."
+},
+{
+"pergunta": "Simetria rotacional ocorre quando:",
+"opcoes": ["Reflete", "Gira e coincide", "Desliza", "Divide"],
+"respostaCorreta": "Gira e coincide",
+"dica": "Rotação."
+},
+{
+"pergunta": "Um quadrado tem simetria rotacional de:",
+"opcoes": ["90°", "180°", "270°", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Várias rotações."
+},
+{
+"pergunta": "Simetria está ligada a:",
+"opcoes": ["Equilíbrio", "Confusão", "Erro", "Aleatoriedade"],
+"respostaCorreta": "Equilíbrio",
+"dica": "Harmonia visual."
+},
+{
+"pergunta": "Uma figura sem simetria é chamada:",
+"opcoes": ["Simétrica", "Assimétrica", "Regular", "Perfeita"],
+"respostaCorreta": "Assimétrica",
+"dica": "Sem equilíbrio."
+},
+{
+"pergunta": "Simetria é importante na natureza porque:",
+"opcoes": ["Confunde", "Organiza formas", "Apaga padrões", "Ignora formas"],
+"respostaCorreta": "Organiza formas",
+"dica": "Estrutura natural."
+},
+{
+"pergunta": "Simetria ajuda a prever:",
+"opcoes": ["Mudanças", "Padrões repetidos", "Erros", "Som"],
+"respostaCorreta": "Padrões repetidos",
+"dica": "Regularidade."
+},
+{
+"pergunta": "Uma transformação de simetria é:",
+"opcoes": ["Não geométrica", "Isométrica", "Numérica", "Aleatória"],
+"respostaCorreta": "Isométrica",
+"dica": "Mantém forma."
+},
+{
+"pergunta": "Simetria é fundamental para:",
+"opcoes": ["Arte, arquitetura e ciência", "Somente matemática", "Cores", "Tempo"],
+"respostaCorreta": "Arte, arquitetura e ciência",
+"dica": "Aplicação ampla."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 12 - Coordenadas: Localizando no Plano",
+"nivel": "basico",
+"dicas": "Coordenadas ajudam a localizar pontos no plano.",
+"perguntas": [
+{
+"pergunta": "O que são coordenadas?",
+"opcoes": ["Números aleatórios", "Forma de localizar pontos", "Linhas curvas", "Cores"],
+"respostaCorreta": "Forma de localizar pontos",
+"dica": "Mostram posição."
+},
+{
+"pergunta": "Um ponto é representado por:",
+"opcoes": ["Um número", "Dois números", "Três cores", "Uma linha"],
+"respostaCorreta": "Dois números",
+"dica": "Ex: (x, y)."
+},
+{
+"pergunta": "O plano cartesiano tem:",
+"opcoes": ["Uma linha", "Duas linhas", "Três linhas", "Nenhuma"],
+"respostaCorreta": "Duas linhas",
+"dica": "Eixos."
+},
+{
+"pergunta": "As linhas do plano são chamadas:",
+"opcoes": ["Segmentos", "Eixos", "Planos", "Cores"],
+"respostaCorreta": "Eixos",
+"dica": "Horizontal e vertical."
+},
+{
+"pergunta": "O eixo horizontal é chamado:",
+"opcoes": ["Y", "X", "Z", "W"],
+"respostaCorreta": "X",
+"dica": "Linha deitada."
+},
+{
+"pergunta": "O eixo vertical é chamado:",
+"opcoes": ["X", "Y", "Z", "W"],
+"respostaCorreta": "Y",
+"dica": "Linha em pé."
+},
+{
+"pergunta": "O ponto (0,0) é chamado:",
+"opcoes": ["Centro", "Origem", "Linha", "Plano"],
+"respostaCorreta": "Origem",
+"dica": "Início."
+},
+{
+"pergunta": "Coordenadas servem para:",
+"opcoes": ["Somar", "Localizar pontos", "Apagar figuras", "Desenhar cores"],
+"respostaCorreta": "Localizar pontos",
+"dica": "Posição."
+},
+{
+"pergunta": "O primeiro número indica:",
+"opcoes": ["Altura", "Horizontal", "Cor", "Tempo"],
+"respostaCorreta": "Horizontal",
+"dica": "Eixo X."
+},
+{
+"pergunta": "O segundo número indica:",
+"opcoes": ["Horizontal", "Vertical", "Cor", "Peso"],
+"respostaCorreta": "Vertical",
+"dica": "Eixo Y."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 12 - Coordenadas: Localizando no Plano",
+"nivel": "medio",
+"dicas": "Interpretar pontos no plano cartesiano.",
+"perguntas": [
+{
+"pergunta": "O ponto (3,2) significa:",
+"opcoes": ["3 vertical, 2 horizontal", "3 horizontal, 2 vertical", "2 horizontal, 3 vertical", "Somente 3"],
+"respostaCorreta": "3 horizontal, 2 vertical",
+"dica": "Primeiro X, depois Y."
+},
+{
+"pergunta": "Qual é o ponto na origem?",
+"opcoes": ["(1,1)", "(0,0)", "(2,2)", "(0,1)"],
+"respostaCorreta": "(0,0)",
+"dica": "Centro."
+},
+{
+"pergunta": "Se x aumenta, o ponto vai:",
+"opcoes": ["Para cima", "Para baixo", "Para direita", "Para esquerda"],
+"respostaCorreta": "Para direita",
+"dica": "Eixo X."
+},
+{
+"pergunta": "Se y aumenta, o ponto vai:",
+"opcoes": ["Para cima", "Para baixo", "Para direita", "Para esquerda"],
+"respostaCorreta": "Para cima",
+"dica": "Eixo Y."
+},
+{
+"pergunta": "O ponto (0,5) está:",
+"opcoes": ["No eixo X", "No eixo Y", "No centro", "Fora do plano"],
+"respostaCorreta": "No eixo Y",
+"dica": "x = 0."
+},
+{
+"pergunta": "O ponto (4,0) está:",
+"opcoes": ["No eixo Y", "No eixo X", "No centro", "Fora"],
+"respostaCorreta": "No eixo X",
+"dica": "y = 0."
+},
+{
+"pergunta": "Coordenadas ajudam a desenhar:",
+"opcoes": ["Linhas", "Gráficos", "Somente pontos", "Nada"],
+"respostaCorreta": "Gráficos",
+"dica": "Representação visual."
+},
+{
+"pergunta": "O plano cartesiano divide-se em:",
+"opcoes": ["2 partes", "3 partes", "4 partes", "5 partes"],
+"respostaCorreta": "4 partes",
+"dica": "Quadrantes."
+},
+{
+"pergunta": "Cada parte chama-se:",
+"opcoes": ["Linha", "Quadrante", "Plano", "Segmento"],
+"respostaCorreta": "Quadrante",
+"dica": "Divisão do plano."
+},
+{
+"pergunta": "Coordenadas são úteis em:",
+"opcoes": ["Mapas", "Jogos", "Gráficos", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Aplicações reais."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 12 - Coordenadas: Localizando no Plano",
+"nivel": "avancado",
+"dicas": "Analisar relações no plano cartesiano.",
+"perguntas": [
+{
+"pergunta": "O ponto (2,3) está em qual quadrante?",
+"opcoes": ["1º", "2º", "3º", "4º"],
+"respostaCorreta": "1º",
+"dica": "x e y positivos."
+},
+{
+"pergunta": "O ponto (-2,3) está em qual quadrante?",
+"opcoes": ["1º", "2º", "3º", "4º"],
+"respostaCorreta": "2º",
+"dica": "x negativo, y positivo."
+},
+{
+"pergunta": "O ponto (-2,-3) está em qual quadrante?",
+"opcoes": ["1º", "2º", "3º", "4º"],
+"respostaCorreta": "3º",
+"dica": "Ambos negativos."
+},
+{
+"pergunta": "O ponto (2,-3) está em qual quadrante?",
+"opcoes": ["1º", "2º", "3º", "4º"],
+"respostaCorreta": "4º",
+"dica": "x positivo, y negativo."
+},
+{
+"pergunta": "Se x = 0, o ponto está:",
+"opcoes": ["No eixo X", "No eixo Y", "No quadrante", "Fora"],
+"respostaCorreta": "No eixo Y",
+"dica": "Linha vertical."
+},
+{
+"pergunta": "Se y = 0, o ponto está:",
+"opcoes": ["No eixo X", "No eixo Y", "No quadrante", "Fora"],
+"respostaCorreta": "No eixo X",
+"dica": "Linha horizontal."
+},
+{
+"pergunta": "Distância entre pontos depende de:",
+"opcoes": ["Cor", "Coordenadas", "Som", "Tempo"],
+"respostaCorreta": "Coordenadas",
+"dica": "Posição."
+},
+{
+"pergunta": "Plano cartesiano permite:",
+"opcoes": ["Localizar e analisar", "Somar apenas", "Ignorar posições", "Apagar pontos"],
+"respostaCorreta": "Localizar e analisar",
+"dica": "Ferramenta matemática."
+},
+{
+"pergunta": "Coordenadas negativas indicam:",
+"opcoes": ["Direções opostas", "Erro", "Nada", "Centro"],
+"respostaCorreta": "Direções opostas",
+"dica": "Lado contrário."
+},
+{
+"pergunta": "Sistema de coordenadas é essencial para:",
+"opcoes": ["Gráficos e mapas", "Somente números", "Cores", "Tempo"],
+"respostaCorreta": "Gráficos e mapas",
+"dica": "Aplicações reais."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 13 - Distância no Plano Cartesiano",
+"nivel": "basico",
+"dicas": "Distância é o espaço entre dois pontos.",
+"perguntas": [
+{
+"pergunta": "O que é distância?",
+"opcoes": ["Uma cor", "Espaço entre dois pontos", "Uma linha", "Um número negativo"],
+"respostaCorreta": "Espaço entre dois pontos",
+"dica": "Separação entre pontos."
+},
+{
+"pergunta": "A distância mede:",
+"opcoes": ["Cor", "Espaço", "Tempo", "Peso"],
+"respostaCorreta": "Espaço",
+"dica": "Quanto separa dois pontos."
+},
+{
+"pergunta": "Para medir distância usamos:",
+"opcoes": ["Régua", "Cor", "Som", "Tempo"],
+"respostaCorreta": "Régua",
+"dica": "Ferramenta de medida."
+},
+{
+"pergunta": "Distância entre pontos pode ser:",
+"opcoes": ["Negativa", "Zero ou positiva", "Sempre negativa", "Sempre zero"],
+"respostaCorreta": "Zero ou positiva",
+"dica": "Nunca negativa."
+},
+{
+"pergunta": "Se dois pontos são iguais, a distância é:",
+"opcoes": ["1", "2", "0", "10"],
+"respostaCorreta": "0",
+"dica": "Mesmo lugar."
+},
+{
+"pergunta": "Distância ajuda a:",
+"opcoes": ["Ignorar espaço", "Medir separação", "Apagar pontos", "Somar cores"],
+"respostaCorreta": "Medir separação",
+"dica": "Entre pontos."
+},
+{
+"pergunta": "No plano, pontos têm:",
+"opcoes": ["Uma coordenada", "Duas coordenadas", "Três cores", "Nenhuma"],
+"respostaCorreta": "Duas coordenadas",
+"dica": "(x, y)."
+},
+{
+"pergunta": "Distância pode ser representada por:",
+"opcoes": ["Linha", "Segmento", "Plano", "Cor"],
+"respostaCorreta": "Segmento",
+"dica": "Liga dois pontos."
+},
+{
+"pergunta": "Quanto maior a distância:",
+"opcoes": ["Mais próximos", "Mais distantes", "Iguais", "Menores"],
+"respostaCorreta": "Mais distantes",
+"dica": "Mais separação."
+},
+{
+"pergunta": "Distância é usada em:",
+"opcoes": ["Mapas", "Jogos", "Geometria", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Aplicações reais."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 13 - Distância no Plano Cartesiano",
+"nivel": "medio",
+"dicas": "Calcular distâncias simples no plano.",
+"perguntas": [
+{
+"pergunta": "Distância entre (0,0) e (3,0) é:",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "3",
+"dica": "Diferença no eixo X."
+},
+{
+"pergunta": "Distância entre (0,0) e (0,4) é:",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "4",
+"dica": "Diferença no eixo Y."
+},
+{
+"pergunta": "Distância entre (1,0) e (4,0) é:",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "3",
+"dica": "4 - 1."
+},
+{
+"pergunta": "Distância entre (2,2) e (2,5) é:",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "3",
+"dica": "5 - 2."
+},
+{
+"pergunta": "Quando pontos têm mesma coordenada x:",
+"opcoes": ["Distância horizontal", "Distância vertical", "Sem distância", "Diagonal"],
+"respostaCorreta": "Distância vertical",
+"dica": "Mudança no Y."
+},
+{
+"pergunta": "Quando pontos têm mesma coordenada y:",
+"opcoes": ["Distância vertical", "Distância horizontal", "Sem distância", "Diagonal"],
+"respostaCorreta": "Distância horizontal",
+"dica": "Mudança no X."
+},
+{
+"pergunta": "Distância sempre é:",
+"opcoes": ["Negativa", "Positiva", "Zero ou positiva", "Aleatória"],
+"respostaCorreta": "Zero ou positiva",
+"dica": "Nunca negativa."
+},
+{
+"pergunta": "Distância no plano pode ser:",
+"opcoes": ["Horizontal", "Vertical", "Diagonal", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Depende dos pontos."
+},
+{
+"pergunta": "Segmento entre pontos representa:",
+"opcoes": ["Área", "Distância", "Volume", "Cor"],
+"respostaCorreta": "Distância",
+"dica": "Ligação direta."
+},
+{
+"pergunta": "Distância ajuda a resolver:",
+"opcoes": ["Posições", "Movimentos", "Problemas geométricos", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Aplicações práticas."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 13 - Distância no Plano Cartesiano",
+"nivel": "avancado",
+"dicas": "Aplicar fórmula da distância no plano cartesiano.",
+"perguntas": [
+{
+"pergunta": "Distância entre (0,0) e (3,4) é:",
+"opcoes": ["5", "6", "7", "4"],
+"respostaCorreta": "5",
+"dica": "Triângulo 3-4-5."
+},
+{
+"pergunta": "Distância entre (1,1) e (4,5) é:",
+"opcoes": ["3", "4", "5", "6"],
+"respostaCorreta": "5",
+"dica": "Diferenças 3 e 4."
+},
+{
+"pergunta": "A fórmula da distância usa:",
+"opcoes": ["Soma simples", "Teorema de Pitágoras", "Divisão", "Subtração"],
+"respostaCorreta": "Teorema de Pitágoras",
+"dica": "Triângulo retângulo."
+},
+{
+"pergunta": "Distância depende de:",
+"opcoes": ["Cor", "Diferença entre coordenadas", "Som", "Tempo"],
+"respostaCorreta": "Diferença entre coordenadas",
+"dica": "x e y."
+},
+{
+"pergunta": "Se dois pontos estão alinhados verticalmente:",
+"opcoes": ["Usa Pitágoras", "Diferença de y", "Diferença de x", "Zero"],
+"respostaCorreta": "Diferença de y",
+"dica": "Mesma x."
+},
+{
+"pergunta": "Se dois pontos estão alinhados horizontalmente:",
+"opcoes": ["Diferença de x", "Diferença de y", "Pitágoras", "Zero"],
+"respostaCorreta": "Diferença de x",
+"dica": "Mesma y."
+},
+{
+"pergunta": "Distância no plano é sempre:",
+"opcoes": ["Negativa", "Positiva", "Zero ou positiva", "Aleatória"],
+"respostaCorreta": "Zero ou positiva",
+"dica": "Regra geral."
+},
+{
+"pergunta": "A distância forma um:",
+"opcoes": ["Quadrado", "Triângulo retângulo", "Círculo", "Plano"],
+"respostaCorreta": "Triângulo retângulo",
+"dica": "Catetos e hipotenusa."
+},
+{
+"pergunta": "Distância é fundamental para:",
+"opcoes": ["Geometria analítica", "Somente números", "Cores", "Tempo"],
+"respostaCorreta": "Geometria analítica",
+"dica": "Estudo no plano."
+},
+{
+"pergunta": "Calcular distância permite:",
+"opcoes": ["Medir separação exata", "Apenas estimar", "Ignorar pontos", "Apagar dados"],
+"respostaCorreta": "Medir separação exata",
+"dica": "Precisão matemática."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 14 - Circunferência e Círculo",
+"nivel": "basico",
+"dicas": "Circunferência é a linha ao redor e círculo é a área interna.",
+"perguntas": [
+{
+"pergunta": "O que é um círculo?",
+"opcoes": ["Uma linha", "Uma área redonda", "Um ponto", "Um plano"],
+"respostaCorreta": "Uma área redonda",
+"dica": "Parte de dentro."
+},
+{
+"pergunta": "A circunferência é:",
+"opcoes": ["Área", "Linha ao redor", "Centro", "Ponto"],
+"respostaCorreta": "Linha ao redor",
+"dica": "Contorno do círculo."
+},
+{
+"pergunta": "O centro é:",
+"opcoes": ["Borda", "Meio", "Linha", "Cor"],
+"respostaCorreta": "Meio",
+"dica": "Ponto central."
+},
+{
+"pergunta": "O raio é:",
+"opcoes": ["Linha ao redor", "Distância do centro à borda", "Área", "Diâmetro"],
+"respostaCorreta": "Distância do centro à borda",
+"dica": "Metade do diâmetro."
+},
+{
+"pergunta": "O diâmetro é:",
+"opcoes": ["Metade do raio", "Duas vezes o raio", "Linha curva", "Centro"],
+"respostaCorreta": "Duas vezes o raio",
+"dica": "Passa pelo centro."
+},
+{
+"pergunta": "Qual é redondo?",
+"opcoes": ["Quadrado", "Triângulo", "Círculo", "Retângulo"],
+"respostaCorreta": "Círculo",
+"dica": "Sem lados."
+},
+{
+"pergunta": "O círculo tem:",
+"opcoes": ["Lados retos", "Curvas", "Ângulos", "Vértices"],
+"respostaCorreta": "Curvas",
+"dica": "Forma redonda."
+},
+{
+"pergunta": "O centro está:",
+"opcoes": ["Na borda", "No meio", "Fora", "Em cima"],
+"respostaCorreta": "No meio",
+"dica": "Ponto central."
+},
+{
+"pergunta": "Círculos aparecem em:",
+"opcoes": ["Somente matemática", "Objetos do dia a dia", "Somente desenhos", "Nada"],
+"respostaCorreta": "Objetos do dia a dia",
+"dica": "Ex: rodas."
+},
+{
+"pergunta": "Circunferência mede:",
+"opcoes": ["Área", "Contorno", "Altura", "Peso"],
+"respostaCorreta": "Contorno",
+"dica": "Linha ao redor."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 14 - Circunferência e Círculo",
+"nivel": "medio",
+"dicas": "Aplicar conceitos de raio, diâmetro e medidas.",
+"perguntas": [
+{
+"pergunta": "Se o raio é 5, o diâmetro é:",
+"opcoes": ["5", "10", "15", "20"],
+"respostaCorreta": "10",
+"dica": "2 x raio."
+},
+{
+"pergunta": "Se o diâmetro é 8, o raio é:",
+"opcoes": ["2", "3", "4", "6"],
+"respostaCorreta": "4",
+"dica": "Metade."
+},
+{
+"pergunta": "O raio vai do:",
+"opcoes": ["Centro à borda", "Borda à borda", "Centro ao centro", "Linha à linha"],
+"respostaCorreta": "Centro à borda",
+"dica": "Linha interna."
+},
+{
+"pergunta": "O diâmetro passa pelo:",
+"opcoes": ["Centro", "Borda", "Exterior", "Plano"],
+"respostaCorreta": "Centro",
+"dica": "Linha maior."
+},
+{
+"pergunta": "O diâmetro é a maior:",
+"opcoes": ["Curva", "Linha no círculo", "Área", "Altura"],
+"respostaCorreta": "Linha no círculo",
+"dica": "Maior distância."
+},
+{
+"pergunta": "Círculo é uma figura:",
+"opcoes": ["Poligonal", "Curva", "Linear", "Plana com lados"],
+"respostaCorreta": "Curva",
+"dica": "Sem lados retos."
+},
+{
+"pergunta": "Circunferência é usada para:",
+"opcoes": ["Medir área", "Medir contorno", "Medir volume", "Medir peso"],
+"respostaCorreta": "Medir contorno",
+"dica": "Volta completa."
+},
+{
+"pergunta": "Rodas são exemplos de:",
+"opcoes": ["Quadrados", "Círculos", "Triângulos", "Linhas"],
+"respostaCorreta": "Círculos",
+"dica": "Forma redonda."
+},
+{
+"pergunta": "O centro define:",
+"opcoes": ["Borda", "Posição do círculo", "Cor", "Peso"],
+"respostaCorreta": "Posição do círculo",
+"dica": "Localização."
+},
+{
+"pergunta": "Raio e diâmetro ajudam a:",
+"opcoes": ["Ignorar figura", "Medir o círculo", "Apagar forma", "Somar lados"],
+"respostaCorreta": "Medir o círculo",
+"dica": "Dimensões."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 14 - Circunferência e Círculo",
+"nivel": "avancado",
+"dicas": "Analisar relações e medidas do círculo.",
+"perguntas": [
+{
+"pergunta": "A relação entre diâmetro e raio é:",
+"opcoes": ["d = r", "d = 2r", "d = r/2", "d = r²"],
+"respostaCorreta": "d = 2r",
+"dica": "Dobro do raio."
+},
+{
+"pergunta": "Se o raio dobra, o diâmetro:",
+"opcoes": ["Diminui", "Permanece", "Dobra", "Divide"],
+"respostaCorreta": "Dobra",
+"dica": "Proporcional."
+},
+{
+"pergunta": "Todos os raios de um círculo são:",
+"opcoes": ["Diferentes", "Iguais", "Curvos", "Variáveis"],
+"respostaCorreta": "Iguais",
+"dica": "Mesma distância."
+},
+{
+"pergunta": "O centro é importante porque:",
+"opcoes": ["Define cor", "Define forma", "Define simetria", "Apaga figura"],
+"respostaCorreta": "Define simetria",
+"dica": "Equilíbrio."
+},
+{
+"pergunta": "Um círculo tem:",
+"opcoes": ["Vértices", "Arestas", "Nenhum lado reto", "Segmentos"],
+"respostaCorreta": "Nenhum lado reto",
+"dica": "Totalmente curvo."
+},
+{
+"pergunta": "A circunferência representa:",
+"opcoes": ["Área", "Contorno", "Centro", "Altura"],
+"respostaCorreta": "Contorno",
+"dica": "Linha externa."
+},
+{
+"pergunta": "Círculos são importantes para:",
+"opcoes": ["Engenharia e matemática", "Somente desenho", "Cores", "Tempo"],
+"respostaCorreta": "Engenharia e matemática",
+"dica": "Aplicações reais."
+},
+{
+"pergunta": "A forma circular permite:",
+"opcoes": ["Movimento suave", "Parar objetos", "Apagar formas", "Somar lados"],
+"respostaCorreta": "Movimento suave",
+"dica": "Rodas."
+},
+{
+"pergunta": "O diâmetro divide o círculo em:",
+"opcoes": ["Três partes", "Duas partes iguais", "Partes diferentes", "Nenhuma"],
+"respostaCorreta": "Duas partes iguais",
+"dica": "Semicírculos."
+},
+{
+"pergunta": "O estudo do círculo ajuda a entender:",
+"opcoes": ["Formas curvas e movimento", "Somente números", "Cores", "Som"],
+"respostaCorreta": "Formas curvas e movimento",
+"dica": "Geometria aplicada."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 15 - Triângulos: Tipos e Propriedades",
+"nivel": "basico",
+"dicas": "Triângulos são figuras com três lados.",
+"perguntas": [
+{
+"pergunta": "O que é um triângulo?",
+"opcoes": ["Figura com 2 lados", "Figura com 3 lados", "Figura com 4 lados", "Figura redonda"],
+"respostaCorreta": "Figura com 3 lados",
+"dica": "Tri = três."
+},
+{
+"pergunta": "Quantos lados tem um triângulo?",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "3",
+"dica": "Sempre três."
+},
+{
+"pergunta": "Um triângulo tem quantos vértices?",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "3",
+"dica": "Cantinhos."
+},
+{
+"pergunta": "Um triângulo é uma figura:",
+"opcoes": ["Aberta", "Fechada", "Curva", "Infinita"],
+"respostaCorreta": "Fechada",
+"dica": "Lados ligados."
+},
+{
+"pergunta": "Os lados do triângulo são:",
+"opcoes": ["Curvos", "Retos", "Mistos", "Invisíveis"],
+"respostaCorreta": "Retos",
+"dica": "Segmentos."
+},
+{
+"pergunta": "Triângulos fazem parte dos:",
+"opcoes": ["Círculos", "Polígonos", "Linhas", "Pontos"],
+"respostaCorreta": "Polígonos",
+"dica": "Figura com lados."
+},
+{
+"pergunta": "Um triângulo pequeno é:",
+"opcoes": ["Aberto", "Menor figura", "Curvo", "Sem lados"],
+"respostaCorreta": "Menor figura",
+"dica": "Polígono mais simples."
+},
+{
+"pergunta": "Triângulos aparecem em:",
+"opcoes": ["Somente matemática", "Construções e objetos", "Somente desenhos", "Nada"],
+"respostaCorreta": "Construções e objetos",
+"dica": "Telhados."
+},
+{
+"pergunta": "Triângulo tem:",
+"opcoes": ["3 lados e 3 vértices", "2 lados", "4 lados", "Nenhum vértice"],
+"respostaCorreta": "3 lados e 3 vértices",
+"dica": "Estrutura básica."
+},
+{
+"pergunta": "Triângulos ajudam a:",
+"opcoes": ["Ignorar formas", "Estudar figuras", "Apagar linhas", "Somar cores"],
+"respostaCorreta": "Estudar figuras",
+"dica": "Base da geometria."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 15 - Triângulos: Tipos e Propriedades",
+"nivel": "medio",
+"dicas": "Identificar tipos de triângulos.",
+"perguntas": [
+{
+"pergunta": "Triângulo com todos os lados iguais chama-se:",
+"opcoes": ["Escaleno", "Isósceles", "Equilátero", "Obtuso"],
+"respostaCorreta": "Equilátero",
+"dica": "Todos iguais."
+},
+{
+"pergunta": "Triângulo com dois lados iguais é:",
+"opcoes": ["Equilátero", "Isósceles", "Escaleno", "Reto"],
+"respostaCorreta": "Isósceles",
+"dica": "Dois iguais."
+},
+{
+"pergunta": "Triângulo com lados diferentes é:",
+"opcoes": ["Equilátero", "Isósceles", "Escaleno", "Reto"],
+"respostaCorreta": "Escaleno",
+"dica": "Todos diferentes."
+},
+{
+"pergunta": "Triângulo com um ângulo de 90° é:",
+"opcoes": ["Agudo", "Obtuso", "Retângulo", "Escaleno"],
+"respostaCorreta": "Retângulo",
+"dica": "Ângulo reto."
+},
+{
+"pergunta": "Triângulo com todos ângulos menores que 90° é:",
+"opcoes": ["Retângulo", "Obtuso", "Acutângulo", "Escaleno"],
+"respostaCorreta": "Acutângulo",
+"dica": "Todos pequenos."
+},
+{
+"pergunta": "Triângulo com um ângulo maior que 90° é:",
+"opcoes": ["Acutângulo", "Obtusângulo", "Retângulo", "Equilátero"],
+"respostaCorreta": "Obtusângulo",
+"dica": "Ângulo grande."
+},
+{
+"pergunta": "Um triângulo pode ser classificado por:",
+"opcoes": ["Cor", "Lados e ângulos", "Peso", "Som"],
+"respostaCorreta": "Lados e ângulos",
+"dica": "Duas formas."
+},
+{
+"pergunta": "Triângulo equilátero tem quantos ângulos iguais?",
+"opcoes": ["1", "2", "3", "Nenhum"],
+"respostaCorreta": "3",
+"dica": "Todos iguais."
+},
+{
+"pergunta": "Um triângulo retângulo tem:",
+"opcoes": ["2 ângulos retos", "1 ângulo reto", "Nenhum", "3 ângulos retos"],
+"respostaCorreta": "1 ângulo reto",
+"dica": "Apenas um."
+},
+{
+"pergunta": "Triângulos são usados em:",
+"opcoes": ["Construção", "Engenharia", "Arquitetura", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Estruturas."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 15 - Triângulos: Tipos e Propriedades",
+"nivel": "avancado",
+"dicas": "Analisar propriedades e relações dos triângulos.",
+"perguntas": [
+{
+"pergunta": "A soma dos ângulos internos de um triângulo é:",
+"opcoes": ["90°", "180°", "270°", "360°"],
+"respostaCorreta": "180°",
+"dica": "Sempre."
+},
+{
+"pergunta": "Em um triângulo equilátero, cada ângulo mede:",
+"opcoes": ["30°", "45°", "60°", "90°"],
+"respostaCorreta": "60°",
+"dica": "180 ÷ 3."
+},
+{
+"pergunta": "O maior lado está oposto ao:",
+"opcoes": ["Menor ângulo", "Maior ângulo", "Ângulo reto", "Centro"],
+"respostaCorreta": "Maior ângulo",
+"dica": "Relação direta."
+},
+{
+"pergunta": "Se um triângulo tem ângulo de 100°, ele é:",
+"opcoes": ["Acutângulo", "Retângulo", "Obtusângulo", "Equilátero"],
+"respostaCorreta": "Obtusângulo",
+"dica": "Maior que 90°."
+},
+{
+"pergunta": "Dois lados iguais implicam:",
+"opcoes": ["Ângulos iguais", "Ângulos diferentes", "Sem relação", "Mais lados"],
+"respostaCorreta": "Ângulos iguais",
+"dica": "Isósceles."
+},
+{
+"pergunta": "Triângulos são importantes porque:",
+"opcoes": ["São simples", "São estáveis", "Não quebram", "Não têm lados"],
+"respostaCorreta": "São estáveis",
+"dica": "Estruturas."
+},
+{
+"pergunta": "Um triângulo não pode ter:",
+"opcoes": ["3 lados", "2 lados iguais", "Soma de ângulos maior que 180°", "Ângulo reto"],
+"respostaCorreta": "Soma de ângulos maior que 180°",
+"dica": "Regra fixa."
+},
+{
+"pergunta": "Triângulos ajudam a resolver:",
+"opcoes": ["Problemas geométricos", "Somente números", "Cores", "Tempo"],
+"respostaCorreta": "Problemas geométricos",
+"dica": "Base da geometria."
+},
+{
+"pergunta": "A desigualdade triangular diz que:",
+"opcoes": ["Um lado é maior que soma dos outros", "Um lado é menor que soma dos outros", "Todos iguais", "Não há regra"],
+"respostaCorreta": "Um lado é menor que soma dos outros",
+"dica": "Regra importante."
+},
+{
+"pergunta": "Triângulos são fundamentais para:",
+"opcoes": ["Geometria e engenharia", "Somente desenho", "Cores", "Tempo"],
+"respostaCorreta": "Geometria e engenharia",
+"dica": "Aplicações reais."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 16 - Quadriláteros: Figuras de Quatro Lados",
+"nivel": "basico",
+"dicas": "Quadriláteros são figuras com quatro lados.",
+"perguntas": [
+{
+"pergunta": "O que é um quadrilátero?",
+"opcoes": ["Figura com 3 lados", "Figura com 4 lados", "Figura redonda", "Figura com 5 lados"],
+"respostaCorreta": "Figura com 4 lados",
+"dica": "Quadri = quatro."
+},
+{
+"pergunta": "Quantos lados tem um quadrilátero?",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "4",
+"dica": "Sempre quatro."
+},
+{
+"pergunta": "Quantos vértices tem um quadrilátero?",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "4",
+"dica": "Um para cada lado."
+},
+{
+"pergunta": "Um quadrilátero é uma figura:",
+"opcoes": ["Aberta", "Fechada", "Curva", "Infinita"],
+"respostaCorreta": "Fechada",
+"dica": "Lados ligados."
+},
+{
+"pergunta": "Os lados de um quadrilátero são:",
+"opcoes": ["Curvos", "Retos", "Misturados", "Invisíveis"],
+"respostaCorreta": "Retos",
+"dica": "Segmentos de reta."
+},
+{
+"pergunta": "Um quadrado é um:",
+"opcoes": ["Triângulo", "Quadrilátero", "Círculo", "Linha"],
+"respostaCorreta": "Quadrilátero",
+"dica": "Tem quatro lados."
+},
+{
+"pergunta": "Quadriláteros fazem parte dos:",
+"opcoes": ["Polígonos", "Círculos", "Linhas", "Pontos"],
+"respostaCorreta": "Polígonos",
+"dica": "Figuras fechadas."
+},
+{
+"pergunta": "Um retângulo é um:",
+"opcoes": ["Triângulo", "Quadrilátero", "Círculo", "Segmento"],
+"respostaCorreta": "Quadrilátero",
+"dica": "Quatro lados."
+},
+{
+"pergunta": "Quadriláteros têm:",
+"opcoes": ["3 lados", "4 lados e 4 vértices", "5 lados", "Nenhum lado"],
+"respostaCorreta": "4 lados e 4 vértices",
+"dica": "Estrutura básica."
+},
+{
+"pergunta": "Quadriláteros ajudam a:",
+"opcoes": ["Ignorar formas", "Estudar figuras", "Apagar linhas", "Somar cores"],
+"respostaCorreta": "Estudar figuras",
+"dica": "Geometria."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 16 - Quadriláteros: Figuras de Quatro Lados",
+"nivel": "medio",
+"dicas": "Identificar tipos de quadriláteros.",
+"perguntas": [
+{
+"pergunta": "Um quadrado tem todos os lados:",
+"opcoes": ["Diferentes", "Iguais", "Curvos", "Invisíveis"],
+"respostaCorreta": "Iguais",
+"dica": "Todos iguais."
+},
+{
+"pergunta": "Um retângulo tem:",
+"opcoes": ["Lados iguais todos", "Lados opostos iguais", "Sem lados", "Curvas"],
+"respostaCorreta": "Lados opostos iguais",
+"dica": "Dois pares."
+},
+{
+"pergunta": "Um losango tem:",
+"opcoes": ["Lados diferentes", "Todos lados iguais", "Sem vértices", "Curvas"],
+"respostaCorreta": "Todos lados iguais",
+"dica": "Como quadrado inclinado."
+},
+{
+"pergunta": "Um trapézio tem:",
+"opcoes": ["Nenhum lado paralelo", "Um par de lados paralelos", "Todos lados iguais", "Curvas"],
+"respostaCorreta": "Um par de lados paralelos",
+"dica": "Base paralela."
+},
+{
+"pergunta": "Um paralelogramo tem:",
+"opcoes": ["Lados paralelos dois a dois", "Nenhum paralelo", "Curvas", "Somente um lado"],
+"respostaCorreta": "Lados paralelos dois a dois",
+"dica": "Paralelos."
+},
+{
+"pergunta": "Quadrado é um tipo de:",
+"opcoes": ["Trapézio", "Paralelogramo", "Triângulo", "Círculo"],
+"respostaCorreta": "Paralelogramo",
+"dica": "Lados paralelos."
+},
+{
+"pergunta": "Retângulo tem quantos ângulos retos?",
+"opcoes": ["2", "3", "4", "1"],
+"respostaCorreta": "4",
+"dica": "Todos 90°."
+},
+{
+"pergunta": "Losango tem:",
+"opcoes": ["Ângulos retos sempre", "Lados iguais", "Curvas", "Sem lados"],
+"respostaCorreta": "Lados iguais",
+"dica": "Característica principal."
+},
+{
+"pergunta": "Quadriláteros podem ser classificados por:",
+"opcoes": ["Cor", "Lados e ângulos", "Peso", "Som"],
+"respostaCorreta": "Lados e ângulos",
+"dica": "Propriedades."
+},
+{
+"pergunta": "Quadriláteros são usados em:",
+"opcoes": ["Construção", "Arquitetura", "Objetos", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Uso prático."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 16 - Quadriláteros: Figuras de Quatro Lados",
+"nivel": "avancado",
+"dicas": "Analisar propriedades dos quadriláteros.",
+"perguntas": [
+{
+"pergunta": "A soma dos ângulos internos de um quadrilátero é:",
+"opcoes": ["180°", "270°", "360°", "90°"],
+"respostaCorreta": "360°",
+"dica": "Sempre."
+},
+{
+"pergunta": "Um paralelogramo tem lados opostos:",
+"opcoes": ["Diferentes", "Iguais e paralelos", "Curvos", "Invisíveis"],
+"respostaCorreta": "Iguais e paralelos",
+"dica": "Propriedade principal."
+},
+{
+"pergunta": "Um retângulo é especial porque tem:",
+"opcoes": ["Curvas", "Ângulos retos", "Lados diferentes", "Sem vértices"],
+"respostaCorreta": "Ângulos retos",
+"dica": "Todos 90°."
+},
+{
+"pergunta": "Um quadrado é especial porque tem:",
+"opcoes": ["Somente lados iguais", "Somente ângulos retos", "Lados iguais e ângulos retos", "Curvas"],
+"respostaCorreta": "Lados iguais e ângulos retos",
+"dica": "Combinação."
+},
+{
+"pergunta": "Um losango tem diagonais que:",
+"opcoes": ["São iguais", "Se cruzam perpendicularmente", "São curvas", "Não existem"],
+"respostaCorreta": "Se cruzam perpendicularmente",
+"dica": "Ângulo de 90°."
+},
+{
+"pergunta": "Trapézio tem:",
+"opcoes": ["Dois pares paralelos", "Um par paralelo", "Nenhum paralelo", "Todos iguais"],
+"respostaCorreta": "Um par paralelo",
+"dica": "Definição."
+},
+{
+"pergunta": "Quadriláteros são importantes porque:",
+"opcoes": ["São simples", "Aparecem em construções", "Não têm uso", "São raros"],
+"respostaCorreta": "Aparecem em construções",
+"dica": "Uso real."
+},
+{
+"pergunta": "Um quadrilátero irregular tem:",
+"opcoes": ["Todos lados iguais", "Lados diferentes", "Curvas", "Sem ângulos"],
+"respostaCorreta": "Lados diferentes",
+"dica": "Não uniforme."
+},
+{
+"pergunta": "Quadriláteros ajudam a entender:",
+"opcoes": ["Somente números", "Formas e espaço", "Cores", "Som"],
+"respostaCorreta": "Formas e espaço",
+"dica": "Geometria."
+},
+{
+"pergunta": "Geometria usa quadriláteros para:",
+"opcoes": ["Ignorar formas", "Organizar o espaço", "Apagar figuras", "Confundir"],
+"respostaCorreta": "Organizar o espaço",
+"dica": "Estrutura."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 17 - Poliedros: Sólidos com Faces Planas",
+"nivel": "basico",
+"dicas": "Poliedros são sólidos com faces planas.",
+"perguntas": [
+{
+"pergunta": "O que é um poliedro?",
+"opcoes": ["Figura plana", "Sólido com faces planas", "Linha", "Ponto"],
+"respostaCorreta": "Sólido com faces planas",
+"dica": "Forma 3D com lados retos."
+},
+{
+"pergunta": "Um poliedro tem:",
+"opcoes": ["Curvas", "Faces planas", "Somente pontos", "Somente linhas"],
+"respostaCorreta": "Faces planas",
+"dica": "Superfícies retas."
+},
+{
+"pergunta": "Qual é um poliedro?",
+"opcoes": ["Esfera", "Cubo", "Círculo", "Linha"],
+"respostaCorreta": "Cubo",
+"dica": "Faces planas."
+},
+{
+"pergunta": "Poliedros são figuras:",
+"opcoes": ["2D", "3D", "1D", "Sem dimensão"],
+"respostaCorreta": "3D",
+"dica": "Três dimensões."
+},
+{
+"pergunta": "Um cubo tem:",
+"opcoes": ["Faces curvas", "Faces planas", "Sem faces", "Somente pontos"],
+"respostaCorreta": "Faces planas",
+"dica": "Quadrados."
+},
+{
+"pergunta": "Poliedros ocupam:",
+"opcoes": ["Linha", "Plano", "Espaço", "Ponto"],
+"respostaCorreta": "Espaço",
+"dica": "Volume."
+},
+{
+"pergunta": "Qual NÃO é poliedro?",
+"opcoes": ["Cubo", "Prisma", "Esfera", "Pirâmide"],
+"respostaCorreta": "Esfera",
+"dica": "Tem superfície curva."
+},
+{
+"pergunta": "Poliedros têm:",
+"opcoes": ["Faces, arestas e vértices", "Somente linhas", "Somente pontos", "Somente curvas"],
+"respostaCorreta": "Faces, arestas e vértices",
+"dica": "Partes do sólido."
+},
+{
+"pergunta": "Um dado é exemplo de:",
+"opcoes": ["Círculo", "Poliedro", "Linha", "Plano"],
+"respostaCorreta": "Poliedro",
+"dica": "Forma cúbica."
+},
+{
+"pergunta": "Poliedros são estudados na:",
+"opcoes": ["Aritmética", "Geometria", "História", "Língua"],
+"respostaCorreta": "Geometria",
+"dica": "Formas no espaço."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 17 - Poliedros: Sólidos com Faces Planas",
+"nivel": "medio",
+"dicas": "Identificar tipos de poliedros.",
+"perguntas": [
+{
+"pergunta": "Um cubo tem quantas faces?",
+"opcoes": ["4", "6", "8", "12"],
+"respostaCorreta": "6",
+"dica": "Faces quadradas."
+},
+{
+"pergunta": "Um cubo tem quantas arestas?",
+"opcoes": ["6", "8", "10", "12"],
+"respostaCorreta": "12",
+"dica": "Ligações das faces."
+},
+{
+"pergunta": "Um cubo tem quantos vértices?",
+"opcoes": ["6", "8", "10", "12"],
+"respostaCorreta": "8",
+"dica": "Cantinhos."
+},
+{
+"pergunta": "Um prisma tem:",
+"opcoes": ["Bases iguais", "Curvas", "Sem faces", "Somente pontos"],
+"respostaCorreta": "Bases iguais",
+"dica": "Duas bases iguais."
+},
+{
+"pergunta": "Uma pirâmide tem:",
+"opcoes": ["Duas bases", "Uma base e vértice", "Sem faces", "Somente linhas"],
+"respostaCorreta": "Uma base e vértice",
+"dica": "Forma pontuda."
+},
+{
+"pergunta": "Arestas são:",
+"opcoes": ["Superfícies", "Linhas entre faces", "Pontos", "Curvas"],
+"respostaCorreta": "Linhas entre faces",
+"dica": "Encontro de faces."
+},
+{
+"pergunta": "Vértices são:",
+"opcoes": ["Linhas", "Superfícies", "Pontos de encontro", "Cores"],
+"respostaCorreta": "Pontos de encontro",
+"dica": "Cantinhos."
+},
+{
+"pergunta": "Faces são:",
+"opcoes": ["Linhas", "Superfícies planas", "Pontos", "Curvas"],
+"respostaCorreta": "Superfícies planas",
+"dica": "Lados do sólido."
+},
+{
+"pergunta": "Poliedros são usados em:",
+"opcoes": ["Construções", "Arquitetura", "Objetos", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Uso prático."
+},
+{
+"pergunta": "Um prisma triangular tem base:",
+"opcoes": ["Quadrada", "Circular", "Triangular", "Curva"],
+"respostaCorreta": "Triangular",
+"dica": "Nome indica."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 17 - Poliedros: Sólidos com Faces Planas",
+"nivel": "avancado",
+"dicas": "Analisar propriedades dos poliedros.",
+"perguntas": [
+{
+"pergunta": "A relação de Euler é:",
+"opcoes": ["F + A + V = 0", "F + V = A + 2", "F + A = V", "F = V + A"],
+"respostaCorreta": "F + V = A + 2",
+"dica": "Faces + vértices = arestas + 2."
+},
+{
+"pergunta": "Se um poliedro tem 6 faces e 8 vértices, quantas arestas tem?",
+"opcoes": ["10", "12", "14", "16"],
+"respostaCorreta": "12",
+"dica": "Use Euler."
+},
+{
+"pergunta": "Poliedros convexos são:",
+"opcoes": ["Com curvas", "Sem reentrâncias", "Abertos", "Planos"],
+"respostaCorreta": "Sem reentrâncias",
+"dica": "Forma regular."
+},
+{
+"pergunta": "Um cubo é um poliedro:",
+"opcoes": ["Irregular", "Convexo", "Curvo", "Aberto"],
+"respostaCorreta": "Convexo",
+"dica": "Sem entradas."
+},
+{
+"pergunta": "A soma das faces forma:",
+"opcoes": ["Linha", "Superfície total", "Ponto", "Plano"],
+"respostaCorreta": "Superfície total",
+"dica": "Exterior."
+},
+{
+"pergunta": "Poliedros regulares têm:",
+"opcoes": ["Faces diferentes", "Faces iguais", "Curvas", "Sem vértices"],
+"respostaCorreta": "Faces iguais",
+"dica": "Uniformidade."
+},
+{
+"pergunta": "Exemplo de poliedro regular é:",
+"opcoes": ["Cubo", "Cilindro", "Cone", "Esfera"],
+"respostaCorreta": "Cubo",
+"dica": "Faces iguais."
+},
+{
+"pergunta": "Poliedros ajudam a entender:",
+"opcoes": ["Somente linhas", "Espaço tridimensional", "Cores", "Som"],
+"respostaCorreta": "Espaço tridimensional",
+"dica": "3D."
+},
+{
+"pergunta": "Faces, arestas e vértices mostram:",
+"opcoes": ["Confusão", "Estrutura do sólido", "Erro", "Aleatoriedade"],
+"respostaCorreta": "Estrutura do sólido",
+"dica": "Partes principais."
+},
+{
+"pergunta": "Geometria espacial usa poliedros para:",
+"opcoes": ["Ignorar formas", "Modelar objetos reais", "Apagar figuras", "Somar números"],
+"respostaCorreta": "Modelar objetos reais",
+"dica": "Aplicação prática."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 18 - Prismas: Sólidos com Bases Iguais",
+"nivel": "basico",
+"dicas": "Prismas são sólidos com duas bases iguais.",
+"perguntas": [
+{
+"pergunta": "O que é um prisma?",
+"opcoes": ["Figura plana", "Sólido com duas bases iguais", "Linha", "Ponto"],
+"respostaCorreta": "Sólido com duas bases iguais",
+"dica": "Tem duas bases iguais."
+},
+{
+"pergunta": "Um prisma tem:",
+"opcoes": ["Uma base", "Duas bases iguais", "Curvas", "Somente linhas"],
+"respostaCorreta": "Duas bases iguais",
+"dica": "Topo e base."
+},
+{
+"pergunta": "As bases de um prisma são:",
+"opcoes": ["Diferentes", "Iguais", "Curvas", "Invisíveis"],
+"respostaCorreta": "Iguais",
+"dica": "Mesma forma."
+},
+{
+"pergunta": "Um prisma é uma figura:",
+"opcoes": ["2D", "3D", "1D", "Sem dimensão"],
+"respostaCorreta": "3D",
+"dica": "Ocupa espaço."
+},
+{
+"pergunta": "Um prisma ocupa:",
+"opcoes": ["Linha", "Plano", "Espaço", "Ponto"],
+"respostaCorreta": "Espaço",
+"dica": "Volume."
+},
+{
+"pergunta": "Qual é um prisma?",
+"opcoes": ["Cubo", "Círculo", "Linha", "Ponto"],
+"respostaCorreta": "Cubo",
+"dica": "Tem bases iguais."
+},
+{
+"pergunta": "As faces laterais de um prisma são:",
+"opcoes": ["Curvas", "Planas", "Inexistentes", "Pontos"],
+"respostaCorreta": "Planas",
+"dica": "Faces retas."
+},
+{
+"pergunta": "Um prisma tem:",
+"opcoes": ["Faces curvas", "Faces planas", "Sem faces", "Somente pontos"],
+"respostaCorreta": "Faces planas",
+"dica": "Superfícies retas."
+},
+{
+"pergunta": "Prismas fazem parte dos:",
+"opcoes": ["Círculos", "Poliedros", "Linhas", "Pontos"],
+"respostaCorreta": "Poliedros",
+"dica": "Faces planas."
+},
+{
+"pergunta": "Prismas são estudados na:",
+"opcoes": ["Aritmética", "Geometria", "História", "Língua"],
+"respostaCorreta": "Geometria",
+"dica": "Formas no espaço."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 18 - Prismas: Sólidos com Bases Iguais",
+"nivel": "medio",
+"dicas": "Identificar tipos de prismas.",
+"perguntas": [
+{
+"pergunta": "Um prisma triangular tem base:",
+"opcoes": ["Quadrada", "Triangular", "Circular", "Curva"],
+"respostaCorreta": "Triangular",
+"dica": "Nome indica."
+},
+{
+"pergunta": "Um prisma quadrangular tem base:",
+"opcoes": ["Triangular", "Quadrada", "Circular", "Curva"],
+"respostaCorreta": "Quadrada",
+"dica": "Quatro lados."
+},
+{
+"pergunta": "Um prisma hexagonal tem base:",
+"opcoes": ["Triangular", "Quadrada", "Hexagonal", "Curva"],
+"respostaCorreta": "Hexagonal",
+"dica": "Seis lados."
+},
+{
+"pergunta": "As faces laterais de um prisma são geralmente:",
+"opcoes": ["Triângulos", "Retângulos", "Curvas", "Círculos"],
+"respostaCorreta": "Retângulos",
+"dica": "Faces planas."
+},
+{
+"pergunta": "Um prisma tem quantas bases?",
+"opcoes": ["1", "2", "3", "4"],
+"respostaCorreta": "2",
+"dica": "Topo e base."
+},
+{
+"pergunta": "O número de faces laterais depende de:",
+"opcoes": ["Altura", "Base", "Cor", "Peso"],
+"respostaCorreta": "Base",
+"dica": "Número de lados."
+},
+{
+"pergunta": "Um prisma triangular tem quantas faces laterais?",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "3",
+"dica": "Uma por lado da base."
+},
+{
+"pergunta": "Um prisma quadrangular tem quantas faces laterais?",
+"opcoes": ["3", "4", "5", "6"],
+"respostaCorreta": "4",
+"dica": "Quatro lados."
+},
+{
+"pergunta": "Prismas são usados em:",
+"opcoes": ["Construções", "Objetos", "Arquitetura", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Uso real."
+},
+{
+"pergunta": "As arestas de um prisma ligam:",
+"opcoes": ["Pontos", "Faces", "Cores", "Planos"],
+"respostaCorreta": "Faces",
+"dica": "Encontro das faces."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 18 - Prismas: Sólidos com Bases Iguais",
+"nivel": "avancado",
+"dicas": "Analisar propriedades dos prismas.",
+"perguntas": [
+{
+"pergunta": "O volume de um prisma é:",
+"opcoes": ["Área da base x altura", "Perímetro x altura", "Área lateral", "Soma das faces"],
+"respostaCorreta": "Área da base x altura",
+"dica": "Fórmula principal."
+},
+{
+"pergunta": "A área lateral de um prisma depende de:",
+"opcoes": ["Base e altura", "Cor", "Peso", "Tempo"],
+"respostaCorreta": "Base e altura",
+"dica": "Faces laterais."
+},
+{
+"pergunta": "Prismas são classificados por:",
+"opcoes": ["Altura", "Base", "Cor", "Peso"],
+"respostaCorreta": "Base",
+"dica": "Forma da base."
+},
+{
+"pergunta": "Um prisma reto tem faces laterais:",
+"opcoes": ["Inclinadas", "Perpendiculares à base", "Curvas", "Inexistentes"],
+"respostaCorreta": "Perpendiculares à base",
+"dica": "Retas."
+},
+{
+"pergunta": "Um prisma oblíquo tem faces laterais:",
+"opcoes": ["Perpendiculares", "Inclinadas", "Curvas", "Sem faces"],
+"respostaCorreta": "Inclinadas",
+"dica": "Não são retas."
+},
+{
+"pergunta": "O número total de faces de um prisma é:",
+"opcoes": ["n", "n + 1", "n + 2", "2n"],
+"respostaCorreta": "n + 2",
+"dica": "n lados + 2 bases."
+},
+{
+"pergunta": "Um prisma triangular tem quantas faces no total?",
+"opcoes": ["4", "5", "6", "7"],
+"respostaCorreta": "5",
+"dica": "3 laterais + 2 bases."
+},
+{
+"pergunta": "Prismas ajudam a entender:",
+"opcoes": ["Somente linhas", "Espaço tridimensional", "Cores", "Som"],
+"respostaCorreta": "Espaço tridimensional",
+"dica": "3D."
+},
+{
+"pergunta": "Prismas são importantes para:",
+"opcoes": ["Construção e engenharia", "Somente matemática", "Cores", "Tempo"],
+"respostaCorreta": "Construção e engenharia",
+"dica": "Aplicação prática."
+},
+{
+"pergunta": "Geometria espacial usa prismas para:",
+"opcoes": ["Ignorar formas", "Modelar objetos reais", "Apagar figuras", "Somar números"],
+"respostaCorreta": "Modelar objetos reais",
+"dica": "Uso real."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 19 - Pirâmides: Sólidos com Base e Vértice",
+"nivel": "basico",
+"dicas": "Pirâmides são sólidos com uma base e uma ponta.",
+"perguntas": [
+{
+"pergunta": "O que é uma pirâmide?",
+"opcoes": ["Figura plana", "Sólido com base e vértice", "Linha", "Ponto"],
+"respostaCorreta": "Sólido com base e vértice",
+"dica": "Tem uma base e uma ponta."
+},
+{
+"pergunta": "Uma pirâmide tem quantas bases?",
+"opcoes": ["2", "1", "3", "0"],
+"respostaCorreta": "1",
+"dica": "Só uma base."
+},
+{
+"pergunta": "A ponta da pirâmide chama-se:",
+"opcoes": ["Face", "Aresta", "Vértice", "Base"],
+"respostaCorreta": "Vértice",
+"dica": "Topo."
+},
+{
+"pergunta": "A base de uma pirâmide é:",
+"opcoes": ["Curva", "Plana", "Linha", "Ponto"],
+"respostaCorreta": "Plana",
+"dica": "Figura plana."
+},
+{
+"pergunta": "Uma pirâmide é figura:",
+"opcoes": ["2D", "3D", "1D", "Sem dimensão"],
+"respostaCorreta": "3D",
+"dica": "Ocupa espaço."
+},
+{
+"pergunta": "Pirâmides ocupam:",
+"opcoes": ["Linha", "Plano", "Espaço", "Ponto"],
+"respostaCorreta": "Espaço",
+"dica": "Volume."
+},
+{
+"pergunta": "Qual é exemplo de pirâmide?",
+"opcoes": ["Cubo", "Cone", "Pirâmide do Egito", "Esfera"],
+"respostaCorreta": "Pirâmide do Egito",
+"dica": "Forma real."
+},
+{
+"pergunta": "As faces laterais de uma pirâmide são:",
+"opcoes": ["Curvas", "Triangulares", "Circulares", "Quadradas sempre"],
+"respostaCorreta": "Triangulares",
+"dica": "Ligam à ponta."
+},
+{
+"pergunta": "Pirâmides fazem parte dos:",
+"opcoes": ["Círculos", "Poliedros", "Linhas", "Pontos"],
+"respostaCorreta": "Poliedros",
+"dica": "Faces planas."
+},
+{
+"pergunta": "Pirâmides são estudadas na:",
+"opcoes": ["Aritmética", "Geometria", "História", "Língua"],
+"respostaCorreta": "Geometria",
+"dica": "Formas no espaço."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 19 - Pirâmides: Sólidos com Base e Vértice",
+"nivel": "medio",
+"dicas": "Identificar tipos de pirâmides.",
+"perguntas": [
+{
+"pergunta": "Uma pirâmide triangular tem base:",
+"opcoes": ["Quadrada", "Triangular", "Circular", "Curva"],
+"respostaCorreta": "Triangular",
+"dica": "Nome indica."
+},
+{
+"pergunta": "Uma pirâmide quadrangular tem base:",
+"opcoes": ["Triangular", "Quadrada", "Circular", "Curva"],
+"respostaCorreta": "Quadrada",
+"dica": "Quatro lados."
+},
+{
+"pergunta": "O número de faces laterais depende de:",
+"opcoes": ["Altura", "Base", "Cor", "Peso"],
+"respostaCorreta": "Base",
+"dica": "Número de lados."
+},
+{
+"pergunta": "Uma pirâmide triangular tem quantas faces laterais?",
+"opcoes": ["2", "3", "4", "5"],
+"respostaCorreta": "3",
+"dica": "Uma por lado."
+},
+{
+"pergunta": "Uma pirâmide quadrangular tem quantas faces laterais?",
+"opcoes": ["3", "4", "5", "6"],
+"respostaCorreta": "4",
+"dica": "Quatro lados."
+},
+{
+"pergunta": "As faces laterais encontram-se em:",
+"opcoes": ["Base", "Centro", "Vértice", "Linha"],
+"respostaCorreta": "Vértice",
+"dica": "Ponta."
+},
+{
+"pergunta": "Uma pirâmide tem quantos vértices?",
+"opcoes": ["Depende da base", "Sempre 4", "Sempre 5", "Sempre 6"],
+"respostaCorreta": "Depende da base",
+"dica": "Base + ponta."
+},
+{
+"pergunta": "Pirâmides são usadas em:",
+"opcoes": ["Construções", "Arquitetura", "Monumentos", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Uso real."
+},
+{
+"pergunta": "As arestas ligam:",
+"opcoes": ["Faces", "Cores", "Planos", "Som"],
+"respostaCorreta": "Faces",
+"dica": "Encontro de faces."
+},
+{
+"pergunta": "Uma pirâmide é classificada pela:",
+"opcoes": ["Altura", "Base", "Cor", "Peso"],
+"respostaCorreta": "Base",
+"dica": "Forma da base."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 19 - Pirâmides: Sólidos com Base e Vértice",
+"nivel": "avancado",
+"dicas": "Analisar propriedades das pirâmides.",
+"perguntas": [
+{
+"pergunta": "O volume de uma pirâmide é:",
+"opcoes": ["Área da base x altura", "Área da base x altura ÷ 3", "Perímetro x altura", "Área lateral"],
+"respostaCorreta": "Área da base x altura ÷ 3",
+"dica": "Fórmula principal."
+},
+{
+"pergunta": "A área lateral depende de:",
+"opcoes": ["Base e altura inclinada", "Cor", "Peso", "Tempo"],
+"respostaCorreta": "Base e altura inclinada",
+"dica": "Faces triangulares."
+},
+{
+"pergunta": "Uma pirâmide regular tem:",
+"opcoes": ["Base irregular", "Base regular e faces iguais", "Curvas", "Sem faces"],
+"respostaCorreta": "Base regular e faces iguais",
+"dica": "Uniforme."
+},
+{
+"pergunta": "O número total de faces de uma pirâmide é:",
+"opcoes": ["n", "n + 1", "n + 2", "2n"],
+"respostaCorreta": "n + 1",
+"dica": "n lados + base."
+},
+{
+"pergunta": "Uma pirâmide triangular tem quantas faces?",
+"opcoes": ["3", "4", "5", "6"],
+"respostaCorreta": "4",
+"dica": "3 laterais + 1 base."
+},
+{
+"pergunta": "Pirâmides são diferentes de prismas porque:",
+"opcoes": ["Têm duas bases", "Têm uma base", "Têm curvas", "Não têm faces"],
+"respostaCorreta": "Têm uma base",
+"dica": "Característica principal."
+},
+{
+"pergunta": "A altura de uma pirâmide é:",
+"opcoes": ["Aresta", "Distância do vértice à base", "Base", "Face"],
+"respostaCorreta": "Distância do vértice à base",
+"dica": "Altura vertical."
+},
+{
+"pergunta": "Pirâmides ajudam a entender:",
+"opcoes": ["Somente linhas", "Espaço tridimensional", "Cores", "Som"],
+"respostaCorreta": "Espaço tridimensional",
+"dica": "3D."
+},
+{
+"pergunta": "Pirâmides são importantes para:",
+"opcoes": ["Arquitetura e engenharia", "Somente matemática", "Cores", "Tempo"],
+"respostaCorreta": "Arquitetura e engenharia",
+"dica": "Aplicações reais."
+},
+{
+"pergunta": "Geometria espacial usa pirâmides para:",
+"opcoes": ["Ignorar formas", "Modelar estruturas reais", "Apagar figuras", "Somar números"],
+"respostaCorreta": "Modelar estruturas reais",
+"dica": "Uso prático."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 20 - Cilindros: Sólidos com Bases Circulares",
+"nivel": "basico",
+"dicas": "Cilindros são sólidos com duas bases redondas.",
+"perguntas": [
+{
+"pergunta": "O que é um cilindro?",
+"opcoes": ["Figura plana", "Sólido com bases circulares", "Linha", "Ponto"],
+"respostaCorreta": "Sólido com bases circulares",
+"dica": "Tem duas bases redondas."
+},
+{
+"pergunta": "Um cilindro tem quantas bases?",
+"opcoes": ["1", "2", "3", "0"],
+"respostaCorreta": "2",
+"dica": "Topo e base."
+},
+{
+"pergunta": "As bases do cilindro são:",
+"opcoes": ["Quadradas", "Triangulares", "Circulares", "Curvas"],
+"respostaCorreta": "Circulares",
+"dica": "Forma de círculo."
+},
+{
+"pergunta": "Um cilindro é uma figura:",
+"opcoes": ["2D", "3D", "1D", "Sem dimensão"],
+"respostaCorreta": "3D",
+"dica": "Ocupa espaço."
+},
+{
+"pergunta": "Um cilindro ocupa:",
+"opcoes": ["Linha", "Plano", "Espaço", "Ponto"],
+"respostaCorreta": "Espaço",
+"dica": "Volume."
+},
+{
+"pergunta": "Qual é um exemplo de cilindro?",
+"opcoes": ["Caixa", "Lata", "Triângulo", "Quadrado"],
+"respostaCorreta": "Lata",
+"dica": "Forma comum."
+},
+{
+"pergunta": "A superfície lateral do cilindro é:",
+"opcoes": ["Plana", "Curva", "Triangular", "Quadrada"],
+"respostaCorreta": "Curva",
+"dica": "Envolve o sólido."
+},
+{
+"pergunta": "Um cilindro tem:",
+"opcoes": ["Somente faces planas", "Faces planas e curva", "Somente linhas", "Somente pontos"],
+"respostaCorreta": "Faces planas e curva",
+"dica": "Bases planas e lado curvo."
+},
+{
+"pergunta": "Cilindros fazem parte dos:",
+"opcoes": ["Poliedros", "Corpos redondos", "Linhas", "Pontos"],
+"respostaCorreta": "Corpos redondos",
+"dica": "Superfície curva."
+},
+{
+"pergunta": "Cilindros são estudados na:",
+"opcoes": ["Aritmética", "Geometria", "História", "Língua"],
+"respostaCorreta": "Geometria",
+"dica": "Formas no espaço."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 20 - Cilindros: Sólidos com Bases Circulares",
+"nivel": "medio",
+"dicas": "Identificar partes do cilindro.",
+"perguntas": [
+{
+"pergunta": "O raio do cilindro é:",
+"opcoes": ["Altura", "Distância do centro à borda da base", "Diâmetro", "Volume"],
+"respostaCorreta": "Distância do centro à borda da base",
+"dica": "Metade do diâmetro."
+},
+{
+"pergunta": "A altura do cilindro é:",
+"opcoes": ["Raio", "Distância entre as bases", "Diâmetro", "Área"],
+"respostaCorreta": "Distância entre as bases",
+"dica": "Separação vertical."
+},
+{
+"pergunta": "O diâmetro é:",
+"opcoes": ["Raio x 2", "Raio ÷ 2", "Altura", "Área"],
+"respostaCorreta": "Raio x 2",
+"dica": "Dobro do raio."
+},
+{
+"pergunta": "A base do cilindro é:",
+"opcoes": ["Quadrado", "Triângulo", "Círculo", "Linha"],
+"respostaCorreta": "Círculo",
+"dica": "Forma redonda."
+},
+{
+"pergunta": "Um cilindro tem quantas superfícies?",
+"opcoes": ["1", "2", "3", "4"],
+"respostaCorreta": "3",
+"dica": "2 bases + 1 lateral."
+},
+{
+"pergunta": "A superfície lateral pode ser aberta em:",
+"opcoes": ["Triângulo", "Retângulo", "Círculo", "Quadrado"],
+"respostaCorreta": "Retângulo",
+"dica": "Desenrolada."
+},
+{
+"pergunta": "Cilindros são usados em:",
+"opcoes": ["Latas", "Copos", "Tubos", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Objetos comuns."
+},
+{
+"pergunta": "O cilindro não tem:",
+"opcoes": ["Bases", "Altura", "Vértices", "Raio"],
+"respostaCorreta": "Vértices",
+"dica": "Sem cantos."
+},
+{
+"pergunta": "A superfície curva liga:",
+"opcoes": ["Pontos", "As duas bases", "Linhas", "Cores"],
+"respostaCorreta": "As duas bases",
+"dica": "Envolve o sólido."
+},
+{
+"pergunta": "Cilindros são importantes para:",
+"opcoes": ["Somente matemática", "Objetos do dia a dia", "Cores", "Tempo"],
+"respostaCorreta": "Objetos do dia a dia",
+"dica": "Uso prático."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 20 - Cilindros: Sólidos com Bases Circulares",
+"nivel": "avancado",
+"dicas": "Analisar propriedades e cálculos do cilindro.",
+"perguntas": [
+{
+"pergunta": "O volume de um cilindro é:",
+"opcoes": ["πr²h", "2πr", "πr²", "πrh"],
+"respostaCorreta": "πr²h",
+"dica": "Área da base x altura."
+},
+{
+"pergunta": "A área da base do cilindro é:",
+"opcoes": ["πr²", "2πr", "πrh", "r²"],
+"respostaCorreta": "πr²",
+"dica": "Área do círculo."
+},
+{
+"pergunta": "A área lateral do cilindro é:",
+"opcoes": ["2πrh", "πr²", "πr", "rh"],
+"respostaCorreta": "2πrh",
+"dica": "Circunferência x altura."
+},
+{
+"pergunta": "Se o raio dobra, o volume:",
+"opcoes": ["Dobra", "Triplica", "Quadruplica", "Octuplica"],
+"respostaCorreta": "Quadruplica",
+"dica": "r²."
+},
+{
+"pergunta": "Se a altura dobra, o volume:",
+"opcoes": ["Dobra", "Triplica", "Quadruplica", "Permanece"],
+"respostaCorreta": "Dobra",
+"dica": "Proporcional."
+},
+{
+"pergunta": "O cilindro é classificado como:",
+"opcoes": ["Poliedro", "Corpo redondo", "Plano", "Linha"],
+"respostaCorreta": "Corpo redondo",
+"dica": "Superfície curva."
+},
+{
+"pergunta": "Cilindros ajudam a entender:",
+"opcoes": ["Somente linhas", "Espaço tridimensional", "Cores", "Som"],
+"respostaCorreta": "Espaço tridimensional",
+"dica": "3D."
+},
+{
+"pergunta": "Cilindros são importantes para:",
+"opcoes": ["Engenharia e armazenamento", "Somente matemática", "Cores", "Tempo"],
+"respostaCorreta": "Engenharia e armazenamento",
+"dica": "Uso prático."
+},
+{
+"pergunta": "A fórmula do volume combina:",
+"opcoes": ["Área e altura", "Perímetro e altura", "Linha e ponto", "Cor e forma"],
+"respostaCorreta": "Área e altura",
+"dica": "Base x altura."
+},
+{
+"pergunta": "Geometria usa cilindros para:",
+"opcoes": ["Ignorar formas", "Modelar objetos reais", "Apagar figuras", "Somar números"],
+"respostaCorreta": "Modelar objetos reais",
+"dica": "Aplicações reais."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 21 - Cones: Sólidos com Base Circular e Vértice",
+"nivel": "basico",
+"dicas": "Cones são sólidos com uma base redonda e uma ponta.",
+"perguntas": [
+{
+"pergunta": "O que é um cone?",
+"opcoes": ["Figura plana", "Sólido com base circular e vértice", "Linha", "Ponto"],
+"respostaCorreta": "Sólido com base circular e vértice",
+"dica": "Tem uma base redonda e uma ponta."
+},
+{
+"pergunta": "Um cone tem quantas bases?",
+"opcoes": ["2", "1", "0", "3"],
+"respostaCorreta": "1",
+"dica": "Só uma base."
+},
+{
+"pergunta": "A base do cone é:",
+"opcoes": ["Quadrada", "Triangular", "Circular", "Linha"],
+"respostaCorreta": "Circular",
+"dica": "Forma redonda."
+},
+{
+"pergunta": "A ponta do cone chama-se:",
+"opcoes": ["Face", "Aresta", "Vértice", "Base"],
+"respostaCorreta": "Vértice",
+"dica": "Topo."
+},
+{
+"pergunta": "Um cone é uma figura:",
+"opcoes": ["2D", "3D", "1D", "Sem dimensão"],
+"respostaCorreta": "3D",
+"dica": "Ocupa espaço."
+},
+{
+"pergunta": "Qual é um exemplo de cone?",
+"opcoes": ["Caixa", "Lata", "Casquinha de gelado", "Livro"],
+"respostaCorreta": "Casquinha de gelado",
+"dica": "Forma pontuda."
+},
+{
+"pergunta": "O cone ocupa:",
+"opcoes": ["Linha", "Plano", "Espaço", "Ponto"],
+"respostaCorreta": "Espaço",
+"dica": "Volume."
+},
+{
+"pergunta": "A superfície lateral do cone é:",
+"opcoes": ["Plana", "Curva", "Triangular", "Quadrada"],
+"respostaCorreta": "Curva",
+"dica": "Envolve o sólido."
+},
+{
+"pergunta": "Um cone tem:",
+"opcoes": ["Somente faces planas", "Uma base e uma superfície curva", "Somente linhas", "Somente pontos"],
+"respostaCorreta": "Uma base e uma superfície curva",
+"dica": "Base + lado curvo."
+},
+{
+"pergunta": "Cones fazem parte dos:",
+"opcoes": ["Poliedros", "Corpos redondos", "Linhas", "Pontos"],
+"respostaCorreta": "Corpos redondos",
+"dica": "Superfície curva."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 21 - Cones: Sólidos com Base Circular e Vértice",
+"nivel": "medio",
+"dicas": "Identificar partes do cone.",
+"perguntas": [
+{
+"pergunta": "O raio do cone é:",
+"opcoes": ["Altura", "Distância do centro à borda da base", "Diâmetro", "Volume"],
+"respostaCorreta": "Distância do centro à borda da base",
+"dica": "Metade do diâmetro."
+},
+{
+"pergunta": "A altura do cone é:",
+"opcoes": ["Distância da base ao vértice", "Raio", "Diâmetro", "Área"],
+"respostaCorreta": "Distância da base ao vértice",
+"dica": "Altura vertical."
+},
+{
+"pergunta": "A geratriz do cone é:",
+"opcoes": ["Altura", "Lado inclinado", "Base", "Centro"],
+"respostaCorreta": "Lado inclinado",
+"dica": "Linha lateral."
+},
+{
+"pergunta": "A base do cone é um:",
+"opcoes": ["Quadrado", "Triângulo", "Círculo", "Linha"],
+"respostaCorreta": "Círculo",
+"dica": "Forma redonda."
+},
+{
+"pergunta": "Um cone tem quantas superfícies?",
+"opcoes": ["1", "2", "3", "4"],
+"respostaCorreta": "2",
+"dica": "Base + lateral."
+},
+{
+"pergunta": "A superfície lateral pode ser aberta em:",
+"opcoes": ["Triângulo", "Setor circular", "Retângulo", "Quadrado"],
+"respostaCorreta": "Setor circular",
+"dica": "Parte de círculo."
+},
+{
+"pergunta": "Cones são usados em:",
+"opcoes": ["Sinalização", "Gelados", "Funis", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Uso comum."
+},
+{
+"pergunta": "O cone tem quantos vértices?",
+"opcoes": ["0", "1", "2", "3"],
+"respostaCorreta": "1",
+"dica": "Apenas a ponta."
+},
+{
+"pergunta": "O cone não tem:",
+"opcoes": ["Base", "Altura", "Arestas retas", "Raio"],
+"respostaCorreta": "Arestas retas",
+"dica": "Superfície curva."
+},
+{
+"pergunta": "A superfície curva liga:",
+"opcoes": ["Pontos", "Base ao vértice", "Linhas", "Cores"],
+"respostaCorreta": "Base ao vértice",
+"dica": "Forma lateral."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 21 - Cones: Sólidos com Base Circular e Vértice",
+"nivel": "avancado",
+"dicas": "Analisar propriedades e cálculos do cone.",
+"perguntas": [
+{
+"pergunta": "O volume de um cone é:",
+"opcoes": ["πr²h", "πr²h ÷ 3", "2πrh", "πr"],
+"respostaCorreta": "πr²h ÷ 3",
+"dica": "Terço do cilindro."
+},
+{
+"pergunta": "A área da base do cone é:",
+"opcoes": ["πr²", "2πr", "πrh", "r²"],
+"respostaCorreta": "πr²",
+"dica": "Área do círculo."
+},
+{
+"pergunta": "A área lateral do cone depende de:",
+"opcoes": ["πrg", "πr²", "2πrh", "r²"],
+"respostaCorreta": "πrg",
+"dica": "r = raio, g = geratriz."
+},
+{
+"pergunta": "Se o raio dobra, o volume:",
+"opcoes": ["Dobra", "Triplica", "Quadruplica", "Permanece"],
+"respostaCorreta": "Quadruplica",
+"dica": "r²."
+},
+{
+"pergunta": "Se a altura dobra, o volume:",
+"opcoes": ["Dobra", "Triplica", "Quadruplica", "Permanece"],
+"respostaCorreta": "Dobra",
+"dica": "Proporcional."
+},
+{
+"pergunta": "O cone é classificado como:",
+"opcoes": ["Poliedro", "Corpo redondo", "Plano", "Linha"],
+"respostaCorreta": "Corpo redondo",
+"dica": "Superfície curva."
+},
+{
+"pergunta": "Cones ajudam a entender:",
+"opcoes": ["Somente linhas", "Espaço tridimensional", "Cores", "Som"],
+"respostaCorreta": "Espaço tridimensional",
+"dica": "3D."
+},
+{
+"pergunta": "Cones são importantes para:",
+"opcoes": ["Engenharia e design", "Somente matemática", "Cores", "Tempo"],
+"respostaCorreta": "Engenharia e design",
+"dica": "Aplicações reais."
+},
+{
+"pergunta": "A fórmula do volume relaciona:",
+"opcoes": ["Área e altura", "Perímetro e altura", "Linha e ponto", "Cor e forma"],
+"respostaCorreta": "Área e altura",
+"dica": "Base x altura ÷ 3."
+},
+{
+"pergunta": "Geometria usa cones para:",
+"opcoes": ["Ignorar formas", "Modelar objetos reais", "Apagar figuras", "Somar números"],
+"respostaCorreta": "Modelar objetos reais",
+"dica": "Uso prático."
+}
+]
+},
+{
+"id": "1",
+"capitulo": "Capítulo 22 - Esferas: Sólidos Totalmente Redondos",
+"nivel": "basico",
+"dicas": "Esferas são sólidos redondos como uma bola.",
+"perguntas": [
+{
+"pergunta": "O que é uma esfera?",
+"opcoes": ["Figura plana", "Sólido redondo", "Linha", "Ponto"],
+"respostaCorreta": "Sólido redondo",
+"dica": "Como uma bola."
+},
+{
+"pergunta": "Uma esfera tem:",
+"opcoes": ["Faces planas", "Superfície curva", "Lados retos", "Arestas"],
+"respostaCorreta": "Superfície curva",
+"dica": "Totalmente redonda."
+},
+{
+"pergunta": "Uma esfera tem quantas bases?",
+"opcoes": ["2", "1", "0", "3"],
+"respostaCorreta": "0",
+"dica": "Não tem base."
+},
+{
+"pergunta": "Uma esfera é uma figura:",
+"opcoes": ["2D", "3D", "1D", "Sem dimensão"],
+"respostaCorreta": "3D",
+"dica": "Ocupa espaço."
+},
+{
+"pergunta": "Qual é um exemplo de esfera?",
+"opcoes": ["Caixa", "Lata", "Bola", "Livro"],
+"respostaCorreta": "Bola",
+"dica": "Forma redonda."
+},
+{
+"pergunta": "A esfera ocupa:",
+"opcoes": ["Linha", "Plano", "Espaço", "Ponto"],
+"respostaCorreta": "Espaço",
+"dica": "Volume."
+},
+{
+"pergunta": "Uma esfera tem vértices?",
+"opcoes": ["Sim", "Não", "Às vezes", "Depende"],
+"respostaCorreta": "Não",
+"dica": "Sem cantos."
+},
+{
+"pergunta": "Uma esfera tem arestas?",
+"opcoes": ["Sim", "Não", "Algumas", "Muitas"],
+"respostaCorreta": "Não",
+"dica": "Sem linhas retas."
+},
+{
+"pergunta": "Esferas fazem parte dos:",
+"opcoes": ["Poliedros", "Corpos redondos", "Linhas", "Pontos"],
+"respostaCorreta": "Corpos redondos",
+"dica": "Superfície curva."
+},
+{
+"pergunta": "Esferas são estudadas na:",
+"opcoes": ["Aritmética", "Geometria", "História", "Língua"],
+"respostaCorreta": "Geometria",
+"dica": "Formas no espaço."
+}
+]
+},
+{
+"id": "2",
+"capitulo": "Capítulo 22 - Esferas: Sólidos Totalmente Redondos",
+"nivel": "medio",
+"dicas": "Identificar partes e propriedades da esfera.",
+"perguntas": [
+{
+"pergunta": "O centro da esfera é:",
+"opcoes": ["Borda", "Ponto no meio", "Linha", "Plano"],
+"respostaCorreta": "Ponto no meio",
+"dica": "Ponto central."
+},
+{
+"pergunta": "O raio da esfera é:",
+"opcoes": ["Altura", "Distância do centro à superfície", "Diâmetro", "Área"],
+"respostaCorreta": "Distância do centro à superfície",
+"dica": "Metade do diâmetro."
+},
+{
+"pergunta": "O diâmetro da esfera é:",
+"opcoes": ["Raio x 2", "Raio ÷ 2", "Altura", "Área"],
+"respostaCorreta": "Raio x 2",
+"dica": "Dobro do raio."
+},
+{
+"pergunta": "Uma esfera tem quantas superfícies?",
+"opcoes": ["1", "2", "3", "4"],
+"respostaCorreta": "1",
+"dica": "Superfície contínua."
+},
+{
+"pergunta": "Todos os pontos da esfera estão:",
+"opcoes": ["A distâncias diferentes", "À mesma distância do centro", "No plano", "Em linhas"],
+"respostaCorreta": "À mesma distância do centro",
+"dica": "Definição."
+},
+{
+"pergunta": "A esfera não tem:",
+"opcoes": ["Centro", "Raio", "Faces planas", "Diâmetro"],
+"respostaCorreta": "Faces planas",
+"dica": "Totalmente curva."
+},
+{
+"pergunta": "Esferas são usadas em:",
+"opcoes": ["Bolas", "Planetas", "Decorações", "Todas as anteriores"],
+"respostaCorreta": "Todas as anteriores",
+"dica": "Exemplos reais."
+},
+{
+"pergunta": "A forma esférica permite:",
+"opcoes": ["Movimento suave", "Parar objetos", "Apagar formas", "Somar lados"],
+"respostaCorreta": "Movimento suave",
+"dica": "Rolar facilmente."
+},
+{
+"pergunta": "A superfície da esfera é:",
+"opcoes": ["Plana", "Curva", "Triangular", "Quadrada"],
+"respostaCorreta": "Curva",
+"dica": "Sem lados retos."
+},
+{
+"pergunta": "Esferas são importantes para:",
+"opcoes": ["Somente matemática", "Objetos do dia a dia", "Cores", "Tempo"],
+"respostaCorreta": "Objetos do dia a dia",
+"dica": "Uso real."
+}
+]
+},
+{
+"id": "3",
+"capitulo": "Capítulo 22 - Esferas: Sólidos Totalmente Redondos",
+"nivel": "avancado",
+"dicas": "Analisar propriedades e cálculos da esfera.",
+"perguntas": [
+{
+"pergunta": "O volume da esfera é:",
+"opcoes": ["4/3 πr³", "πr²", "2πr", "πr³"],
+"respostaCorreta": "4/3 πr³",
+"dica": "Fórmula do volume."
+},
+{
+"pergunta": "A área da superfície da esfera é:",
+"opcoes": ["4πr²", "πr²", "2πr", "πr³"],
+"respostaCorreta": "4πr²",
+"dica": "Fórmula da área."
+},
+{
+"pergunta": "Se o raio dobra, o volume:",
+"opcoes": ["Dobra", "Triplica", "Quadruplica", "Octuplica"],
+"respostaCorreta": "Octuplica",
+"dica": "2³ = 8."
+},
+{
+"pergunta": "Se o raio dobra, a área:",
+"opcoes": ["Dobra", "Triplica", "Quadruplica", "Permanece"],
+"respostaCorreta": "Quadruplica",
+"dica": "r²."
+},
+{
+"pergunta": "A esfera é classificada como:",
+"opcoes": ["Poliedro", "Corpo redondo", "Plano", "Linha"],
+"respostaCorreta": "Corpo redondo",
+"dica": "Superfície curva."
+},
+{
+"pergunta": "Esferas ajudam a entender:",
+"opcoes": ["Somente linhas", "Espaço tridimensional", "Cores", "Som"],
+"respostaCorreta": "Espaço tridimensional",
+"dica": "3D."
+},
+{
+"pergunta": "Esferas são importantes para:",
+"opcoes": ["Astronomia e engenharia", "Somente matemática", "Cores", "Tempo"],
+"respostaCorreta": "Astronomia e engenharia",
+"dica": "Planetas e objetos."
+},
+{
+"pergunta": "A fórmula do volume envolve:",
+"opcoes": ["r³", "r²", "r", "Nenhum"],
+"respostaCorreta": "r³",
+"dica": "Potência 3."
+},
+{
+"pergunta": "Geometria usa esferas para:",
+"opcoes": ["Ignorar formas", "Modelar objetos reais", "Apagar figuras", "Somar números"],
+"respostaCorreta": "Modelar objetos reais",
+"dica": "Uso prático."
+},
+{
+"pergunta": "A esfera é especial porque:",
+"opcoes": ["Tem lados", "É totalmente curva", "Tem vértices", "Tem arestas"],
+"respostaCorreta": "É totalmente curva",
+"dica": "Sem partes planas."
+}
+]
+}
+]
+}

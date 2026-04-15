@@ -62,7 +62,6 @@ class _LoginScreenState extends State<LoginScreen> {
         MaterialPageRoute(builder: (context) => const HomeScreen()),
       );
     } else {
-      // On web redirect fallback, sign-in continues after page reload.
       if (kIsWeb && _authService.lastAuthError == null) return;
 
       ScaffoldMessenger.of(context).showSnackBar(
@@ -73,16 +72,18 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
+
     return Scaffold(
       body: BackgroundContainer(
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(24.0),
+            padding: EdgeInsets.all(isTablet ? 40.0 : 24.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                const SizedBox(height: 80),
-                // ÍCONE AUMENTADO
+                SizedBox(height: size.height * 0.1),
                 Container(
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
@@ -97,71 +98,77 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: ClipOval(
                     child: Image.asset(
                       'assets/images/logo.png',
-                      width: 180, // Aumentado de 130 para 180
-                      height: 180, // Aumentado de 130 para 180
+                      width: size.width * 0.4 > 180 ? 180 : size.width * 0.4,
+                      height: size.width * 0.4 > 180 ? 180 : size.width * 0.4,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
-                const SizedBox(height: 40),
+                SizedBox(height: size.height * 0.05),
                 Opacity(
                   opacity: 0.95,
-                  child: AuthFormCard(
-                    child: Column(
-                      children: <Widget>[
-                        Text(
-                          'Bem-vindo!',
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey.shade800,
+                  child: Container(
+                    width: isTablet ? 500 : double.infinity,
+                    child: AuthFormCard(
+                      child: Column(
+                        children: <Widget>[
+                          Text(
+                            'Bem-vindo!',
+                            style: TextStyle(
+                              fontSize: isTablet ? 28 : 24,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey.shade800,
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 20),
-                        CustomTextField(
-                          labelText: 'E-mail',
-                          icon: Icons.email,
-                          controller: _emailController,
-                        ),
-                        const SizedBox(height: 15),
-                        CustomTextField(
-                          labelText: 'Senha',
-                          icon: Icons.lock,
-                          isPassword: true,
-                          controller: _passwordController,
-                        ),
-                        const SizedBox(height: 10),
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: TextButton(
-                            onPressed: () {},
-                            child: const Text('Esqueceu a senha?'),
+                          const SizedBox(height: 20),
+                          CustomTextField(
+                            labelText: 'E-mail',
+                            icon: Icons.email,
+                            controller: _emailController,
                           ),
-                        ),
-                        const SizedBox(height: 20),
-                        CustomGradientButton(
-                          text: 'LOGIN',
-                          onPressed: _signIn,
-                        ),
-                        const SizedBox(height: 20),
-                        CustomGradientButton(
-                          text: 'ANÔNIMO',
-                          onPressed: _signInAnonymously,
-                        ),
-                      ],
+                          const SizedBox(height: 15),
+                          CustomTextField(
+                            labelText: 'Senha',
+                            icon: Icons.lock,
+                            isPassword: true,
+                            controller: _passwordController,
+                          ),
+                          const SizedBox(height: 10),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: TextButton(
+                              onPressed: () {},
+                              child: const Text('Esqueceu a senha?'),
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                          CustomGradientButton(
+                            text: 'LOGIN',
+                            onPressed: _signIn,
+                          ),
+                          const SizedBox(height: 20),
+                          CustomGradientButton(
+                            text: 'ANÔNIMO',
+                            onPressed: _signInAnonymously,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 const SizedBox(height: 20),
-                Row(
-                  children: [
-                    Expanded(child: Divider(color: Colors.black, thickness: 1.5)),
-                    const Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10),
-                      child: Text('Ou', style: TextStyle(color: Colors.black, fontSize: 16)),
-                    ),
-                    Expanded(child: Divider(color: Colors.black, thickness: 1.5)),
-                  ],
+                Container(
+                  width: isTablet ? 500 : double.infinity,
+                  child: Row(
+                    children: [
+                      Expanded(child: Divider(color: Colors.black, thickness: 1.5)),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        child: Text('Ou', style: TextStyle(color: Colors.black, fontSize: 16)),
+                      ),
+                      Expanded(child: Divider(color: Colors.black, thickness: 1.5)),
+                    ],
+                  ),
                 ),
                 const SizedBox(height: 20),
                 Row(
@@ -171,7 +178,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       onTap: _signInWithGoogle,
                       child: Lottie.asset(
                         'assets/animations/google.json',
-                        height: 100,
+                        height: isTablet ? 120 : 100,
                         fit: BoxFit.contain,
                         errorBuilder: (context, error, stackTrace) => Image.asset('assets/icons/google_icon.png', height: 50),
                       ),

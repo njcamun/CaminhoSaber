@@ -107,7 +107,6 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
     }
 
     if (alreadyUsed) {
-      // VERIFICAÇÃO DE RECURSOS (DIAMANTES)
       if (progressoService.totalDiamantes < cost) {
         if (mounted) {
           showDialog(
@@ -128,11 +127,9 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
       final confirm = await _showPaymentDialog(cost);
       if (!confirm) return;
 
-      // Descontar diamantes (valor negativo usando o tipo payment)
       await progressoService.saveProgresso('payment_challenge_${DateTime.now().millisecondsSinceEpoch}', -cost, tipo: 'payment');
     }
 
-    // Marcar como usado hoje para controlo de custos
     if (type == 'disciplina') {
       await prefs.setString('last_mystery_challenge_date', today);
     } else if (type == 'mix') {
@@ -237,9 +234,12 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
+
     return BackgroundContainer(
       child: Scaffold(
-        backgroundColor: Colors.transparent, // Crucial para ver a imagem de fundo
+        backgroundColor: Colors.transparent,
         appBar: AppBar(
           title: const Text('Desafios', style: TextStyle(fontWeight: FontWeight.bold)),
           backgroundColor: Colors.blue,
@@ -249,44 +249,55 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
         body: _isLoading
         ? const Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [CircularProgressIndicator(color: Colors.white), SizedBox(height: 20), Text('A preparar o desafio...', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold))]))
         : SafeArea(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const Text('ESCOLHE O TEU DESAFIO!', textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w900, letterSpacing: 1.5, shadows: [Shadow(color: Colors.black54, blurRadius: 6, offset: Offset(0, 2))])),
-                  const SizedBox(height: 30),
-                  
-                  _buildChallengeCard(
-                    title: 'DESAFIO 24H',
-                    subtitle: _timeRemaining.isEmpty ? 'Um conjunto novo de 30 perguntas a cada dia.' : 'Próximo desafio grátis em: $_timeRemaining',
-                    icon: Icons.history_toggle_off_rounded,
-                    color: Colors.orange.shade800,
-                    onTap: () => _handleChallengeAccess('24h'),
-                    isDisabled: _timeRemaining.isNotEmpty,
-                  ),
-                  
-                  _buildChallengeCard(
-                    title: 'DISCIPLINA MISTÉRIO',
-                    subtitle: _mysteryUsedToday ? 'Gasta 4 diamantes para repetir!' : 'Foca numa matéria aleatória.',
-                    icon: Icons.question_mark_rounded,
-                    color: Colors.purple.shade700,
-                    onTap: () => _handleChallengeAccess('disciplina'),
-                    costLabel: _mysteryUsedToday ? '4 💎' : 'Grátis',
-                  ),
-                  
-                  _buildChallengeCard(
-                    title: 'MEGA MIX',
-                    subtitle: _mixUsedToday ? 'Gasta 8 diamantes para repetir!' : 'Todas as perguntas sem limites!',
-                    icon: Icons.psychology_rounded,
-                    color: Colors.teal.shade700,
-                    onTap: () => _handleChallengeAccess('mix'),
-                    costLabel: _mixUsedToday ? '8 💎' : 'Grátis',
-                  ),
+            child: Center(
+              child: Container(
+                constraints: const BoxConstraints(maxWidth: 800),
+                child: SingleChildScrollView(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: const Text('ESCOLHE O TEU DESAFIO!', textAlign: TextAlign.center, style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.w900, letterSpacing: 1.5, shadows: [Shadow(color: Colors.black54, blurRadius: 6, offset: Offset(0, 2))])),
+                      ),
+                      const SizedBox(height: 30),
+                      
+                      _buildChallengeCard(
+                        title: 'DESAFIO 24H',
+                        subtitle: _timeRemaining.isEmpty ? 'Um conjunto novo de 30 perguntas a cada dia.' : 'Próximo desafio grátis em: $_timeRemaining',
+                        icon: Icons.history_toggle_off_rounded,
+                        color: Colors.orange.shade800,
+                        onTap: () => _handleChallengeAccess('24h'),
+                        isDisabled: _timeRemaining.isNotEmpty,
+                        isTablet: isTablet
+                      ),
+                      
+                      _buildChallengeCard(
+                        title: 'DISCIPLINA MISTÉRIO',
+                        subtitle: _mysteryUsedToday ? 'Gasta 4 diamantes para repetir!' : 'Foca numa matéria aleatória.',
+                        icon: Icons.question_mark_rounded,
+                        color: Colors.purple.shade700,
+                        onTap: () => _handleChallengeAccess('disciplina'),
+                        costLabel: _mysteryUsedToday ? '4 💎' : 'Grátis',
+                        isTablet: isTablet
+                      ),
+                      
+                      _buildChallengeCard(
+                        title: 'MEGA MIX',
+                        subtitle: _mixUsedToday ? 'Gasta 8 diamantes para repetir!' : 'Todas as perguntas sem limites!',
+                        icon: Icons.psychology_rounded,
+                        color: Colors.teal.shade700,
+                        onTap: () => _handleChallengeAccess('mix'),
+                        costLabel: _mixUsedToday ? '8 💎' : 'Grátis',
+                        isTablet: isTablet
+                      ),
 
-                  const SizedBox(height: 40),
-                  const Card(color: Colors.white24, child: Padding(padding: EdgeInsets.all(16.0), child: Row(children: [Icon(Icons.info_outline, color: Colors.white), SizedBox(width: 15), Expanded(child: Text('Regras Arcade Ativas: 60 segundos iniciais, 3 vidas, bónus de tempo e combos!', style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.bold)))])))
-                ],
+                      const SizedBox(height: 40),
+                      const Card(color: Colors.white24, child: Padding(padding: EdgeInsets.all(16.0), child: Row(children: [Icon(Icons.info_outline, color: Colors.white), SizedBox(width: 15), Expanded(child: Text('Regras Arcade Ativas: 60 segundos iniciais, 3 vidas, bónus de tempo e combos!', style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.bold)))])))
+                    ],
+                  ),
+                ),
               ),
             ),
           ),
@@ -302,6 +313,7 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
     required VoidCallback onTap,
     bool isDisabled = false,
     String? costLabel,
+    required bool isTablet,
   }) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 20.0),
@@ -311,7 +323,7 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
           onTap: isDisabled ? null : onTap,
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            padding: const EdgeInsets.all(20),
+            padding: EdgeInsets.all(isTablet ? 24 : 20),
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.9),
               borderRadius: BorderRadius.circular(25),
@@ -320,17 +332,17 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
             ),
             child: Row(
               children: [
-                Container(padding: const EdgeInsets.all(12), decoration: BoxDecoration(color: isDisabled ? Colors.grey : color, borderRadius: BorderRadius.circular(18)), child: Icon(icon, color: Colors.white, size: 35)),
+                Container(padding: const EdgeInsets.all(12), decoration: BoxDecoration(color: isDisabled ? Colors.grey : color, borderRadius: BorderRadius.circular(18)), child: Icon(icon, color: Colors.white, size: isTablet ? 45 : 35)),
                 const SizedBox(width: 20),
                 Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                   Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                    Text(title, style: TextStyle(color: isDisabled ? Colors.grey : color, fontWeight: FontWeight.w900, fontSize: 18)),
+                    FittedBox(fit: BoxFit.scaleDown, child: Text(title, style: TextStyle(color: isDisabled ? Colors.grey : color, fontWeight: FontWeight.w900, fontSize: isTablet ? 22 : 18))),
                     if (costLabel != null) Container(padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2), decoration: BoxDecoration(color: color.withOpacity(0.1), borderRadius: BorderRadius.circular(10)), child: Text(costLabel, style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 12))),
                   ]),
                   const SizedBox(height: 4),
-                  Text(subtitle, style: TextStyle(color: Colors.grey.shade700, fontSize: 14)),
+                  Text(subtitle, style: TextStyle(color: Colors.grey.shade700, fontSize: isTablet ? 16 : 14)),
                 ])),
-                Icon(isDisabled ? Icons.lock_clock_rounded : Icons.play_circle_fill_rounded, color: isDisabled ? Colors.grey : color, size: 40),
+                Icon(isDisabled ? Icons.lock_clock_rounded : Icons.play_circle_fill_rounded, color: isDisabled ? Colors.grey : color, size: isTablet ? 50 : 40),
               ],
             ),
           ),

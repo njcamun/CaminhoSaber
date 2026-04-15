@@ -22,11 +22,11 @@ class Disciplina {
     List<Capitulo>? capituloList = capitulosFromJson?.map((i) => Capitulo.fromJson(i)).toList();
 
     return Disciplina(
-      id: json['id'] as String,
-      nome: json['nome'] as String,
-      categoria: json['categoria'] as String,
-      descricao: json['descricao'] as String,
-      animacao: json['animacao'] as String,
+      id: (json['id'] ?? '').toString(),
+      nome: (json['nome'] ?? 'Sem Nome').toString(),
+      categoria: (json['categoria'] ?? 'OUTROS').toString(),
+      descricao: (json['descricao'] ?? '').toString(),
+      animacao: (json['animacao'] ?? 'assets/images/default.png').toString(),
       capitulos: capituloList,
     );
   }
@@ -45,9 +45,9 @@ class Capitulo {
 
   factory Capitulo.fromJson(Map<String, dynamic> json) {
     return Capitulo(
-      capitulo: json['capitulo'] as String,
-      resumo: json['resumo'] as String? ?? 'Quiz sobre o tema.',
-      quizId: json['id'] as String?,
+      capitulo: (json['capitulo'] ?? 'Capítulo').toString(),
+      resumo: (json['resumo'] ?? 'Quiz sobre o tema.').toString(),
+      quizId: json['id']?.toString(),
     );
   }
 }

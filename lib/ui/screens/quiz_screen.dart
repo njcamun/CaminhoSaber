@@ -36,6 +36,7 @@ class QuizScreen extends StatefulWidget {
 }
 
 class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
+  final String _sessionId = DateTime.now().millisecondsSinceEpoch.toString();
   int _perguntaAtualIndex = 0;
   bool _respostaSelecionada = false;
   String? _respostaSelecionadaTexto;
@@ -239,7 +240,6 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     if (estaCorreta) {
       _pontosBase += 5;
       HapticFeedback.mediumImpact();
-      // Módulo 2 & 6: Flying XP + Pixel Explosion
       if (tapPosition != Offset.zero) {
         showXPFlyer(context, tapPosition);
         showPixelExplosion(context, tapPosition, Colors.green);
@@ -310,8 +310,6 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     final progressoService = Provider.of<ProgressoService>(context, listen: false);
     final String capituloId = '${widget.disciplinaId}_capitulo_${widget.capituloIndex}';
     
-    // NAVEGAÇÃO IMEDIATA (Não bloqueante)
-    // Passamos todos os dados necessários para o ecrã de resultados.
     if (mounted) {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
@@ -333,7 +331,6 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
       );
     }
 
-    // EFEITO COLATERAL (Background): Grava o progresso sem travar a UI.
     unawaited(
       progressoService.saveProgresso(capituloId, pontuacaoFinal)
         .timeout(const Duration(seconds: 8))
@@ -346,6 +343,8 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     if (widget.perguntas.isEmpty) return const Scaffold(body: Center(child: Text("Nenhuma pergunta encontrada.")));
     
     final perguntaAtual = _perguntasBaralhadas[_perguntaAtualIndex];
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
 
     String formatTime(int seconds) {
       final minutes = (seconds ~/ 60).toString().padLeft(2, '0');
@@ -362,7 +361,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     return RetroCRTWrapper(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Desafio do Saber', style: TextStyle(fontWeight: FontWeight.bold)),
+          title: FittedBox(fit: BoxFit.scaleDown, child: const Text('Desafio do Saber', style: TextStyle(fontWeight: FontWeight.bold))),
           centerTitle: true,
           backgroundColor: Colors.blue,
           elevation: 4,
@@ -381,160 +380,160 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
           ],
         ),
         body: BackgroundContainer(
-          child: SizedBox.expand(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 60),
-              child: Column(
-                children: [
-                  Card(
-                    elevation: 4,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                    color: Colors.white.withValues(alpha: 0.95),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text('Pergunta ${_perguntaAtualIndex + 1}/${_perguntasBaralhadas.length}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.blueGrey)),
-                              Text('$_segundosRestantes s', style: TextStyle(fontWeight: FontWeight.bold, color: getTimerColor(_segundosRestantes))),
-                            ],
-                          ),
-                          const SizedBox(height: 8),
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
-                            child: Stack(
-                              children: [
-                                LinearProgressIndicator(
-                                  value: _segundosRestantes / _tempoMaximoPergunta,
-                                  minHeight: 12,
-                                  backgroundColor: Colors.grey.shade200,
-                                  valueColor: AlwaysStoppedAnimation<Color>(
-                                    _segundosRestantes <= 5 
-                                      ? (_segundosRestantes % 2 == 0 ? Colors.red : Colors.orange)
-                                      : getTimerColor(_segundosRestantes)
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          const SizedBox(height: 16),
-                          RetroTypewriterText(
-                            text: perguntaAtual.pergunta,
-                            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black87, height: 1.3),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-      
-                  Expanded(
-                    child: SingleChildScrollView(
-                      physics: const BouncingScrollPhysics(),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          ..._opcoesAtuaisBaralhadas.map((opcao) {
-                            if (_opcoesRemovidas.contains(opcao)) return const SizedBox.shrink();
-                            
-                            bool isSelected = _respostaSelecionada && opcao == _respostaSelecionadaTexto;
-                            bool isCorrect = opcao == perguntaAtual.respostaCorreta;
-                            
-                            Color targetBgColor = isSelected 
-                                ? (isCorrect ? Colors.green.shade100 : Colors.red.shade100)
-                                : Colors.white.withValues(alpha: 0.9);
-                            
-                            Color targetBorderColor = isSelected 
-                                ? (isCorrect ? Colors.green : Colors.red)
-                                : Colors.blue.shade100;
-      
-                            return Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 6.0),
-                              child: Listener(
-                                onPointerDown: (details) {
-                                  if (!_respostaSelecionada) {
-                                    _verificarResposta(opcao, details.position);
-                                  }
-                                },
-                                child: QuizOptionWrapper(
-                                  isSelected: isSelected,
-                                  isCorrect: isCorrect,
-                                  child: ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                      backgroundColor: targetBgColor,
-                                      foregroundColor: Colors.black87,
-                                      disabledBackgroundColor: targetBgColor,
-                                      disabledForegroundColor: Colors.black87,
-                                      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 20),
-                                      elevation: isSelected ? 0 : 2,
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(15),
-                                        side: BorderSide(color: targetBorderColor, width: 2),
-                                      ),
-                                    ),
-                                    onPressed: null, // Controlado pelo Listener para pegar a posição do clique
-                                    child: Text(opcao, textAlign: TextAlign.center, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500)),
-                                  ),
-                                ),
-                              ),
-                            );
-                          }),
-                          
-                          if (_segundosRestantesGlobal <= 10)
-                            Padding(
-                              padding: const EdgeInsets.only(top: 60),
-                              child: Column(
-                                children: [
-                                  const Text('A T E N Ç Ã O ! !', style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold, fontSize: 70)),
-                                  const SizedBox(height: 4),
-                                  Text(
-                                    '$_segundosRestantesGlobal',
-                                    style: const TextStyle(fontSize: 96, fontWeight: FontWeight.w900, color: Colors.red),
-                                  ),
-                                ],
-                              ),
-                            ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-      
-                  Container(
-                    padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                    decoration: BoxDecoration(
-                      color: Colors.blue.shade800.withValues(alpha: 0.95),
-                      borderRadius: BorderRadius.circular(20),
-                      boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))],
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(16, 12, 16, isTablet ? 80 : 60),
+            child: Column(
+              children: [
+                Card(
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  color: Colors.white.withValues(alpha: 0.95),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-                        _buildAjudaButton(
-                          onTap: _ajuda5050Usada || _respostaSelecionada ? null : _use5050,
-                          icon: Icons.star_half,
-                          label: '50/50',
-                          isUsed: _ajuda5050Usada,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text('Pergunta ${_perguntaAtualIndex + 1}/${_perguntasBaralhadas.length}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.blueGrey)),
+                            Text('$_segundosRestantes s', style: TextStyle(fontWeight: FontWeight.bold, color: getTimerColor(_segundosRestantes))),
+                          ],
                         ),
-                        _buildAjudaButton(
-                          onTap: _ajudaDicaUsada || _respostaSelecionada ? null : _useHint,
-                          icon: Icons.lightbulb_outline,
-                          label: 'Dica',
-                          isUsed: _ajudaDicaUsada,
+                        const SizedBox(height: 8),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(10),
+                          child: LinearProgressIndicator(
+                            value: _segundosRestantes / _tempoMaximoPergunta,
+                            minHeight: 12,
+                            backgroundColor: Colors.grey.shade200,
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              _segundosRestantes <= 5 
+                                ? (_segundosRestantes % 2 == 0 ? Colors.red : Colors.orange)
+                                : getTimerColor(_segundosRestantes)
+                            ),
+                          ),
                         ),
-                        _buildAjudaButton(
-                          onTap: _ajudaPulaUsada || _respostaSelecionada ? null : _skipQuestion,
-                          icon: Icons.skip_next,
-                          label: 'Pular',
-                          isUsed: _ajudaPulaUsada,
+                        const SizedBox(height: 16),
+                        ConstrainedBox(
+                          constraints: BoxConstraints(maxHeight: size.height * 0.2),
+                          child: SingleChildScrollView(
+                            child: RetroTypewriterText(
+                              text: perguntaAtual.pergunta,
+                              style: TextStyle(fontSize: isTablet ? 24 : 20, fontWeight: FontWeight.bold, color: Colors.black87, height: 1.3),
+                            ),
+                          ),
                         ),
                       ],
                     ),
                   ),
-                ],
-              ),
+                ),
+                const SizedBox(height: 12),
+      
+                Expanded(
+                  child: SingleChildScrollView(
+                    physics: const BouncingScrollPhysics(),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        ..._opcoesAtuaisBaralhadas.map((opcao) {
+                          if (_opcoesRemovidas.contains(opcao)) return const SizedBox.shrink();
+                          
+                          bool isSelected = _respostaSelecionada && opcao == _respostaSelecionadaTexto;
+                          bool isCorrect = opcao == perguntaAtual.respostaCorreta;
+                          
+                          Color targetBgColor = isSelected 
+                              ? (isCorrect ? Colors.green.shade100 : Colors.red.shade100)
+                              : Colors.white.withValues(alpha: 0.9);
+                          
+                          Color targetBorderColor = isSelected 
+                              ? (isCorrect ? Colors.green : Colors.red)
+                              : Colors.blue.shade100;
+      
+                          return Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 6.0),
+                            child: Listener(
+                              onPointerDown: (details) {
+                                if (!_respostaSelecionada) {
+                                  _verificarResposta(opcao, details.position);
+                                }
+                              },
+                              child: QuizOptionWrapper(
+                                isSelected: isSelected,
+                                isCorrect: isCorrect,
+                                child: ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: targetBgColor,
+                                    foregroundColor: Colors.black87,
+                                    disabledBackgroundColor: targetBgColor,
+                                    disabledForegroundColor: Colors.black87,
+                                    padding: EdgeInsets.symmetric(vertical: isTablet ? 24 : 16, horizontal: 20),
+                                    elevation: isSelected ? 0 : 2,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(15),
+                                      side: BorderSide(color: targetBorderColor, width: 2),
+                                    ),
+                                  ),
+                                  onPressed: null,
+                                  child: Text(opcao, textAlign: TextAlign.center, style: TextStyle(fontSize: isTablet ? 18 : 16, fontWeight: FontWeight.w500)),
+                                ),
+                              ),
+                            ),
+                          );
+                        }),
+                        
+                        if (_segundosRestantesGlobal <= 10)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 40),
+                            child: Column(
+                              children: [
+                                FittedBox(fit: BoxFit.scaleDown, child: const Text('A T E N Ç Ã O ! !', style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold, fontSize: 70))),
+                                const SizedBox(height: 4),
+                                Text(
+                                  '$_segundosRestantesGlobal',
+                                  style: const TextStyle(fontSize: 80, fontWeight: FontWeight.w900, color: Colors.red),
+                                ),
+                              ],
+                            ),
+                          ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 12),
+      
+                Container(
+                  padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.blue.shade800.withValues(alpha: 0.95),
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))],
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      _buildAjudaButton(
+                        onTap: _ajuda5050Usada || _respostaSelecionada ? null : _use5050,
+                        icon: Icons.star_half,
+                        label: '50/50',
+                        isUsed: _ajuda5050Usada,
+                      ),
+                      _buildAjudaButton(
+                        onTap: _ajudaDicaUsada || _respostaSelecionada ? null : _useHint,
+                        icon: Icons.lightbulb_outline,
+                        label: 'Dica',
+                        isUsed: _ajudaDicaUsada,
+                      ),
+                      _buildAjudaButton(
+                        onTap: _ajudaPulaUsada || _respostaSelecionada ? null : _skipQuestion,
+                        icon: Icons.skip_next,
+                        label: 'Pular',
+                        isUsed: _ajudaPulaUsada,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
           ),
         ),

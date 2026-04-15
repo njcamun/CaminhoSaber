@@ -2,6 +2,7 @@
 
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class SafeAssetImage extends StatelessWidget {
   final String path;
@@ -30,7 +31,22 @@ class SafeAssetImage extends StatelessWidget {
       );
     }
 
-    // Caso contrário, tratamos como um ficheiro local (foto tirada pela câmara)
+    // No Web, não suportamos Image.file nem dart:io
+    if (kIsWeb) {
+      // Se for uma URL (ex: downloadUrl do Firebase Storage)
+      if (path.startsWith('http')) {
+        return Image.network(
+          path,
+          width: width,
+          height: height,
+          fit: fit,
+          errorBuilder: (context, error, stackTrace) => _buildErrorWidget(),
+        );
+      }
+      return _buildErrorWidget();
+    }
+
+    // Caso contrário, tratamos como um ficheiro local (Android/iOS)
     try {
       final file = File(path);
       if (file.existsSync()) {
@@ -43,11 +59,21 @@ class SafeAssetImage extends StatelessWidget {
         );
       }
     } catch (e) {
-      // Se houver um erro ao criar o File (ex: caminho inválido), mostra o erro
+      debugPrint('Erro SafeAssetImage: $e');
       return _buildErrorWidget();
     }
 
-    // Se não for nem asset nem ficheiro válido, mostra o erro
+    // Se não for nem asset nem ficheiro válido, tenta network como fallback
+    if (path.startsWith('http')) {
+      return Image.network(
+        path,
+        width: width,
+        height: height,
+        fit: fit,
+        errorBuilder: (context, error, stackTrace) => _buildErrorWidget(),
+      );
+    }
+
     return _buildErrorWidget();
   }
 

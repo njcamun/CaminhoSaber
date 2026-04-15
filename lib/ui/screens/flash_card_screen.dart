@@ -30,10 +30,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
   final AudioPlayer _audioPlayer = AudioPlayer();
   bool _audioHabilitado = true;
 
-  // Variáveis para controle de Swipe
-  double _dragStartX = 0.0;
-  bool _isFlipped = false;
-
   @override
   void initState() {
     super.initState();
@@ -52,14 +48,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
       TweenSequenceItem(tween: Tween(begin: 1.0, end: 0.90), weight: 50),
       TweenSequenceItem(tween: Tween(begin: 0.90, end: 1.0), weight: 50),
     ]).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOutCubic));
-
-    _controller.addStatusListener((status) {
-      if (status == AnimationStatus.completed) {
-        _isFlipped = true;
-      } else if (status == AnimationStatus.dismissed) {
-        _isFlipped = false;
-      }
-    });
   }
 
   @override
@@ -101,7 +89,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
       setState(() {
         _cardAtualIndex++;
         _controller.reset();
-        _isFlipped = false;
       });
       _playSound('jogo.mp3');
     }
@@ -112,7 +99,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
       setState(() {
         _cardAtualIndex--;
         _controller.reset();
-        _isFlipped = false;
       });
       _playSound('jogo.mp3');
     }
@@ -120,6 +106,9 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
+
     if (widget.flashCards.isEmpty) {
       return Scaffold(
         appBar: AppBar(
@@ -134,7 +123,7 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.titulo, style: const TextStyle(fontWeight: FontWeight.bold)),
+        title: FittedBox(fit: BoxFit.scaleDown, child: Text(widget.titulo, style: const TextStyle(fontWeight: FontWeight.bold))),
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
         elevation: 0,
@@ -143,7 +132,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
         child: Column(
           children: [
             const SizedBox(height: 20),
-            // Barra de Progresso Superior
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: Column(
@@ -166,7 +154,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
             
             Expanded(
               child: GestureDetector(
-                onHorizontalDragStart: (details) => _dragStartX = details.globalPosition.dx,
                 onHorizontalDragEnd: (details) {
                   double dragEndX = details.primaryVelocity ?? 0;
                   if (dragEndX < -500) {
@@ -182,7 +169,7 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
                     builder: (context, child) {
                       final isFront = _flipAnimation.value <= pi / 2;
                       final transform = Matrix4.identity()
-                        ..setEntry(3, 2, 0.0012) // Perspectiva levemente maior
+                        ..setEntry(3, 2, 0.0012)
                         ..rotateY(_flipAnimation.value);
 
                       return Transform(
@@ -191,11 +178,11 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
                         child: ScaleTransition(
                           scale: _scaleAnimation,
                           child: isFront
-                              ? _buildCollectorCard(cardAtual.pergunta, isFront: true)
+                              ? _buildCollectorCard(cardAtual.pergunta, isFront: true, size: size)
                               : Transform(
                                   transform: Matrix4.identity()..rotateY(pi),
                                   alignment: Alignment.center,
-                                  child: _buildCollectorCard(cardAtual.resposta, isFront: false),
+                                  child: _buildCollectorCard(cardAtual.resposta, isFront: false, size: size),
                                 ),
                         ),
                       );
@@ -205,16 +192,19 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
               ),
             ),
 
-            const Text(
-              'Desliza para os lados ou toca para virar',
-              style: TextStyle(color: Colors.white70, fontStyle: FontStyle.italic),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Text(
+                'Desliza para os lados ou toca para virar',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white70, fontStyle: FontStyle.italic),
+              ),
             ),
             
-            const SizedBox(height: 40),
+            const SizedBox(height: 20),
 
-            // Navegação inferior com ScalePress
             Padding(
-              padding: const EdgeInsets.only(bottom: 60),
+              padding: EdgeInsets.only(bottom: isTablet ? 80 : 60),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -248,10 +238,13 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
     );
   }
 
-  Widget _buildCollectorCard(String texto, {required bool isFront}) {
+  Widget _buildCollectorCard(String texto, {required bool isFront, required Size size}) {
+    final double cardWidth = size.width * 0.8 > 350 ? 350 : size.width * 0.8;
+    final double cardHeight = size.height * 0.5 > 500 ? 500 : size.height * 0.5;
+
     return Container(
-      width: 310,
-      height: 450,
+      width: cardWidth,
+      height: cardHeight,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(25),
@@ -269,7 +262,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
       ),
       child: Stack(
         children: [
-          // Padrão de fundo do cartão
           Positioned.fill(
             child: Opacity(
               opacity: 0.05,
@@ -277,7 +269,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
             ),
           ),
           
-          // Conteúdo
           Padding(
             padding: const EdgeInsets.all(25),
             child: Column(
@@ -300,14 +291,19 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
                   ],
                 ),
                 const Spacer(),
-                Text(
-                  texto,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blueGrey.shade900,
-                    height: 1.2,
+                ConstrainedBox(
+                  constraints: BoxConstraints(maxHeight: cardHeight * 0.6),
+                  child: SingleChildScrollView(
+                    child: Text(
+                      texto,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: texto.length > 50 ? 20 : 26,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey.shade900,
+                        height: 1.2,
+                      ),
+                    ),
                   ),
                 ),
                 const Spacer(),

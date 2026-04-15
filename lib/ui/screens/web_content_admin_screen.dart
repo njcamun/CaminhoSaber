@@ -12,7 +12,6 @@ class WebContentAdminScreen extends StatefulWidget {
 }
 
 class _WebContentAdminScreenState extends State<WebContentAdminScreen> {
-  final _uuid = const Uuid();
   String _disciplinaId = 'nova_disciplina';
   String _disciplinaNome = 'Nova Disciplina';
   final List<Map<String, dynamic>> _capitulos = [];

@@ -23,10 +23,11 @@ import 'package:caminho_do_saber/providers/pomodoro_provider.dart';
 import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/xp_progress_bar.dart';
 import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
-import 'package:caminho_do_saber/ui/widgets/staggered_item.dart';
 import 'package:caminho_do_saber/ui/widgets/streak_fire.dart';
 import 'package:caminho_do_saber/ui/widgets/punch_counter.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_crt_wrapper.dart';
+import 'package:caminho_do_saber/ui/widgets/animated_stat_icon.dart';
+import 'package:lottie/lottie.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -57,7 +58,6 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     if (state == AppLifecycleState.resumed) {
       context.read<DictionaryService>().loadDictionary();
     } else if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
-      // Sincroniza com o Cloud ao sair da app ou ir para segundo plano
       context.read<ProgressoService>().syncWithCloud();
     }
   }
@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   Map<String, List<Disciplina>> _groupDisciplinas(List<Disciplina> disciplinas) {
     final Map<String, List<Disciplina>> grouped = {};
     for (var disciplina in disciplinas) {
-      final categoria = (disciplina.categoria ?? 'OUTROS').toUpperCase();
+      final categoria = disciplina.categoria.toUpperCase();
       if (!grouped.containsKey(categoria)) {
         grouped[categoria] = [];
       }
@@ -96,23 +96,24 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
 
   void _showProfileSwitcherDialog(BuildContext context) {
     final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
+    final size = MediaQuery.of(context).size;
     showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-          title: const Column(
+          title: Column(
             children: [
-              Icon(Icons.people_alt_rounded, size: 40, color: Colors.blue),
-              SizedBox(height: 10),
-              Text('Quem vai estudar hoje?', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
-              Text('Escolhe o teu perfil para continuar', style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.grey)),
+              const Icon(Icons.people_alt_rounded, size: 40, color: Colors.blue),
+              const SizedBox(height: 10),
+              Text('Quem vai estudar hoje?', style: TextStyle(fontWeight: FontWeight.bold, fontSize: size.width * 0.05)),
+              const Text('Escolhe o teu perfil para continuar', style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.grey)),
             ],
           ),
           content: SizedBox(
             width: double.maxFinite,
             child: ConstrainedBox(
-              constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.4),
+              constraints: BoxConstraints(maxHeight: size.height * 0.4),
               child: ListView.builder(
                 shrinkWrap: true,
                 itemCount: profileProvider.allProfiles.length,
@@ -137,14 +138,14 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                         child: Row(
                           children: [
                             CircleAvatar(
-                              radius: 25,
+                              radius: size.width * 0.06,
                               backgroundColor: Colors.blue.shade100,
                               child: ClipOval(
                                 child: SafeAssetImage(
                                   path: profile.avatarAssetPath,
                                   fit: BoxFit.cover,
-                                  width: 50,
-                                  height: 50,
+                                  width: size.width * 0.12,
+                                  height: size.width * 0.12,
                                 ),
                               ),
                             ),
@@ -153,13 +154,13 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                               child: Text(
                                 profile.nome,
                                 style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: size.width * 0.045,
                                   fontWeight: isActive ? FontWeight.bold : FontWeight.normal,
                                   color: isActive ? Colors.blue.shade800 : Colors.black87,
                                 ),
                               ),
                             ),
-                            if (isActive) const Icon(Icons.check_circle_rounded, color: Colors.blue, size: 28),
+                            if (isActive) Icon(Icons.check_circle_rounded, color: Colors.blue, size: size.width * 0.07),
                           ],
                         ),
                       ),
@@ -277,9 +278,54 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     }
   }
 
+  void _showStatInfoDialog({
+    required String title,
+    required String description,
+    required String howToGain,
+    required String lottieAsset,
+    required Color color,
+  }) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+        title: Column(
+          children: [
+            SizedBox(
+              height: 100,
+              width: 100,
+              child: Lottie.asset(lottieAsset, repeat: true),
+            ),
+            const SizedBox(height: 10),
+            Text(title, textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold, color: color)),
+          ],
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(description, style: const TextStyle(fontSize: 16)),
+            const SizedBox(height: 15),
+            const Text('Como conquistar:', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+            const SizedBox(height: 5),
+            Text(howToGain, style: TextStyle(fontSize: 14, color: Colors.grey.shade700)),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Entendido!', style: TextStyle(fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildHomeTab(BuildContext context, List<Disciplina> disciplinas) {
     final groupedDisciplinas = _groupDisciplinas(disciplinas);
     final theme = Theme.of(context);
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
 
     return Scaffold(
       body: BackgroundContainer(
@@ -287,217 +333,237 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // 1. CARD DE UTILIZADOR (Staggered index 0)
-              StaggeredFadeItem(
-                index: 0,
-                child: Consumer2<ProfileProvider, ProgressoService>(
-                  builder: (context, profileProvider, progressoService, child) {
-                    if (profileProvider.isLoading || profileProvider.activeProfile == null) return const Center(child: CircularProgressIndicator());
-                    final activeProfile = profileProvider.activeProfile!;
-                    return Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
-                      child: NeumorphicWrapper(
-                        baseColor: Colors.white.withValues(alpha: 0.95),
-                        child: Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  CircleAvatar(radius: 30, backgroundColor: Colors.blue.shade100, child: ClipOval(child: SafeAssetImage(path: activeProfile.avatarAssetPath, fit: BoxFit.cover))),
-                                  const SizedBox(width: 16),
-                                  Expanded(
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Row(
-                                          children: [
-                                            Icon(_getGreetingIcon(), size: 16, color: Colors.orangeAccent),
-                                            const SizedBox(width: 4),
-                                            Text('${_getAdaptiveGreeting()},', style: const TextStyle(fontSize: 14, color: Colors.blueGrey)),
-                                          ],
-                                        ),
-                                        Text('${activeProfile.nome}!', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.blueAccent)),
-                                      ],
-                                    ),
-                                  ),
-                                  // Streak Fire (Dinâmico)
-                                  StreakFire(days: progressoService.currentStreak, isActive: progressoService.currentStreak > 0),
-                                  const SizedBox(width: 12),
-                                  // Diamantes (Módulo 50 Estrelas)
-                                  Column(
+              // 1. CARD DE UTILIZADOR
+              Consumer2<ProfileProvider, ProgressoService>(
+                builder: (context, profileProvider, progressoService, child) {
+                  if (profileProvider.isLoading || profileProvider.activeProfile == null) return const Center(child: CircularProgressIndicator());
+                  final activeProfile = profileProvider.activeProfile!;
+                  return Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                    child: NeumorphicWrapper(
+                      baseColor: Colors.white.withValues(alpha: 0.95),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: size.width * 0.08 > 40 ? 40 : size.width * 0.08,
+                                  backgroundColor: Colors.blue.shade100,
+                                  child: ClipOval(child: SafeAssetImage(path: activeProfile.avatarAssetPath, fit: BoxFit.cover)),
+                                ),
+                                const SizedBox(width: 16),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      const Icon(Icons.diamond_rounded, color: Colors.cyan, size: 28),
-                                      PunchCounter(value: progressoService.totalDiamantes, color: Colors.cyan)
-                                    ]
+                                      Row(
+                                        children: [
+                                          Icon(_getGreetingIcon(), size: 16, color: Colors.orangeAccent),
+                                          const SizedBox(width: 4),
+                                          Text('${_getAdaptiveGreeting()},', style: const TextStyle(fontSize: 14, color: Colors.blueGrey)),
+                                        ],
+                                      ),
+                                      Text('${activeProfile.nome}!', style: TextStyle(fontSize: size.width * 0.055 > 24 ? 24 : size.width * 0.055, fontWeight: FontWeight.bold, color: Colors.blueAccent)),
+                                    ],
                                   ),
-                                  const SizedBox(width: 12),
-                                  // Estrelas (0-49)
-                                  Column(
-                                    children: [
-                                      const Icon(Icons.stars, color: Colors.orangeAccent, size: 34),
-                                      PunchCounter(value: progressoService.totalStarsDisplay, color: Colors.orangeAccent)
-                                    ]
+                                ),
+                                // Streak Fire (Dinâmico)
+                                InkWell(
+                                  onTap: () => _showStatInfoDialog(
+                                    title: 'Ofensiva Diária',
+                                    description: 'Representa a tua consistência no estudo. Mostra quantos dias seguidos tens mantido o teu foco!',
+                                    howToGain: 'Estuda todos os dias! Se completares 6 dias seguidos, recebes um super bónus de 500 XP!',
+                                    lottieAsset: 'assets/animations/fire.json',
+                                    color: Colors.orange,
                                   ),
-                                ],
-                              ),
-                              const SizedBox(height: 12),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    'Nível: ${progressoService.getLevelName(progressoService.totalStarsTotal)}',
-                                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange.shade900, fontSize: 14),
+                                  borderRadius: BorderRadius.circular(25),
+                                  child: StreakFire(days: progressoService.currentStreak, isActive: progressoService.currentStreak > 0),
+                                ),
+                                const SizedBox(width: 8),
+                                // Diamantes Animados
+                                InkWell(
+                                  onTap: () => _showStatInfoDialog(
+                                    title: 'Diamantes Azuis',
+                                    description: 'Uma moeda rara e valiosa conquistada pelos estudantes mais dedicados.',
+                                    howToGain: 'Ganha 1 diamante a cada 50 estrelas que conquistares! Usa-os para desbloquear desafios especiais.',
+                                    lottieAsset: 'assets/animations/Diamond.json',
+                                    color: Colors.cyan,
                                   ),
-                                  Text(
-                                    '${progressoService.totalStarsTotal} / ${progressoService.getNextLevelXP(progressoService.totalStarsTotal).toInt()} Estrelas',
-                                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.blueGrey.shade700),
+                                  borderRadius: BorderRadius.circular(25),
+                                  child: AnimatedStatIcon(
+                                    lottieAsset: 'assets/animations/Diamond.json',
+                                    value: progressoService.totalDiamantes,
+                                    fallbackColor: Colors.cyan,
+                                    fallbackIcon: Icons.diamond_rounded,
+                                    size: 45,
                                   ),
-                                ],
-                              ),
-                              XPProgressBar(
-                                currentXP: progressoService.totalStarsTotal.toDouble(),
-                                nextLevelXP: progressoService.getNextLevelXP(progressoService.totalStarsTotal),
-                                color: Colors.orangeAccent,
-                              ),
-                              const SizedBox(height: 12),
-                              // Barra de XP para a Próxima Estrela
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    'Progresso para Estrela',
-                                    style: TextStyle(fontSize: 11, fontWeight: FontWeight.w500, color: Colors.blueGrey.shade400),
+                                ),
+                                const SizedBox(width: 8),
+                                // Estrelas Animadas
+                                InkWell(
+                                  onTap: () => _showStatInfoDialog(
+                                    title: 'Estrelas de Sabedoria',
+                                    description: 'Representam o teu progresso total e o brilho do teu conhecimento acumulado.',
+                                    howToGain: 'Completa lições e acerta nos Quizzes! Cada 250 XP que ganhas transforma-se numa nova Estrela.',
+                                    lottieAsset: 'assets/animations/desafio.json',
+                                    color: Colors.orangeAccent,
                                   ),
-                                  Text(
-                                    '${progressoService.totalXP % 250} / 250 XP',
-                                    style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.orange.shade700),
+                                  borderRadius: BorderRadius.circular(25),
+                                  child: AnimatedStatIcon(
+                                    lottieAsset: 'assets/animations/desafio.json', // Usando desafio.json como representação de estrela/troféu
+                                    value: progressoService.totalStarsDisplay,
+                                    fallbackColor: Colors.orangeAccent,
+                                    fallbackIcon: Icons.stars,
+                                    size: 45,
                                   ),
-                                ],
-                              ),
-                              XPProgressBar(
-                                currentXP: (progressoService.totalXP % 250).toDouble(),
-                                nextLevelXP: 250,
-                                color: Colors.blueAccent,
-                              ),
-                            ],
-                          ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 12),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Nível: ${progressoService.getLevelName(progressoService.totalStarsTotal)}',
+                                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange.shade900, fontSize: 14),
+                                ),
+                                Text(
+                                  '${progressoService.totalStarsTotal} / ${progressoService.getNextLevelXP(progressoService.totalStarsTotal).toInt()} Estrelas',
+                                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.blueGrey.shade700),
+                                ),
+                              ],
+                            ),
+                            XPProgressBar(
+                              currentXP: progressoService.totalStarsTotal.toDouble(),
+                              nextLevelXP: progressoService.getNextLevelXP(progressoService.totalStarsTotal),
+                              color: Colors.orangeAccent,
+                            ),
+                            const SizedBox(height: 12),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Progresso para Estrela',
+                                  style: TextStyle(fontSize: 11, fontWeight: FontWeight.w500, color: Colors.blueGrey.shade400),
+                                ),
+                                Text(
+                                  '${progressoService.totalXP % 250} / 250 XP',
+                                  style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.orange.shade700),
+                                ),
+                              ],
+                            ),
+                            XPProgressBar(
+                              currentXP: (progressoService.totalXP % 250).toDouble(),
+                              nextLevelXP: 250,
+                              color: Colors.blueAccent,
+                            ),
+                          ],
                         ),
                       ),
-                    );
-                  },
-                ),
+                    ),
+                  );
+                },
               ),
 
-              // 2. BOTÕES DE NAVEGAÇÃO (Staggered index 1)
-              StaggeredFadeItem(
-                index: 1,
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
-                  child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                    _buildNavCard(context, 'Conquistas', Icons.emoji_events_rounded, Colors.amber.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ConquistasScreen()))),
-                    _buildNavCard(context, 'Estude', Icons.auto_stories_rounded, Colors.blue.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => EstudeScreen(disciplinas: disciplinas)))),
-                    _buildNavCard(context, 'Cartões', Icons.style_rounded, Colors.purple.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const MeusFlashcardsScreen()))),
-                    _buildNavCard(context, 'Ajustes', Icons.settings_suggest_rounded, Colors.grey.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const DefinicoesScreen()))),
-                  ]),
-                ),
+              // 2. BOTÕES DE NAVEGAÇÃO
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
+                child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+                  _buildNavCard(context, 'Conquistas', Icons.emoji_events_rounded, Colors.amber.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ConquistasScreen()))),
+                  _buildNavCard(context, 'Estude', Icons.auto_stories_rounded, Colors.blue.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => EstudeScreen(disciplinas: disciplinas)))),
+                  _buildNavCard(context, 'Cartões', Icons.style_rounded, Colors.purple.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const MeusFlashcardsScreen()))),
+                  _buildNavCard(context, 'Ajustes', Icons.settings_suggest_rounded, Colors.grey.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const DefinicoesScreen()))),
+                ]),
               ),
 
-              // 2.1 DESAFIOS RÁPIDOS (Staggered index 2)
-              StaggeredFadeItem(
-                index: 2,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  child: Consumer<ProgressoService>(
-                    builder: (context, progressoService, child) {
-                      return Row(
-                        children: [
-                          Expanded(
-                            child: _buildModeActionCard(
-                              context,
-                              'Desafio Diário',
-                              Icons.auto_awesome_rounded,
-                              Colors.orange.shade800,
-                              () => _handleDailyChallengeClick(context, progressoService.totalPontos)
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: _buildModeActionCard(
-                              context,
-                              'Modo Arcade',
-                              Icons.videogame_asset_rounded,
-                              Colors.purple.shade700,
-                              () => _showArcadeArenaPicker(context, disciplinas)
-                            ),
-                          ),
-                        ],
-                      );
-                    }
-                  ),
-                ),
-              ),
-
-              // 3. CARD DO DICIONÁRIO (Staggered index 3)
-              StaggeredFadeItem(
-                index: 3,
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
-                  child: Consumer<DictionaryService>(
-                    builder: (context, dictionaryService, child) {
-                      final word = dictionaryService.wordOfTheDay;
-                      if (word == null && !dictionaryService.isLoading) return const SizedBox.shrink();
-                      return _buildDictionaryCard(context, word, dictionaryService.isLoading);
-                    },
-                  ),
-                ),
-              ),
-
-              // 4. LISTA DE DISCIPLINAS (Staggered index 4)
-              StaggeredFadeItem(
-                index: 4,
+              // 2.1 DESAFIOS RÁPIDOS
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Consumer<ProgressoService>(
                   builder: (context, progressoService, child) {
-                    return Column(
-                      children: groupedDisciplinas.entries.map((entry) {
-                        return Padding(
-                          padding: const EdgeInsets.only(bottom: 24.0),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                                child: Row(
-                                  children: [
-                                    Text(
-                                      entry.key,
-                                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, letterSpacing: 1.1, color: theme.colorScheme.onSurface),
-                                    ),
-                                    const SizedBox(width: 10),
-                                    Expanded(child: Divider(color: theme.colorScheme.onSurface.withValues(alpha: 0.3), thickness: 1.5)),
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(height: 12),
-                              SizedBox(
-                                height: 260,
-                                child: ListView.builder(
-                                  padding: const EdgeInsets.only(left: 16),
-                                  scrollDirection: Axis.horizontal,
-                                  itemCount: entry.value.length,
-                                  itemBuilder: (context, index) => Padding(
-                                    padding: const EdgeInsets.only(right: 16.0),
-                                    child: _buildDisciplinaCard(entry.value[index], disciplinas, progressoService),
-                                  ),
-                                ),
-                              ),
-                            ],
+                    return Row(
+                      children: [
+                        Expanded(
+                          child: _buildModeActionCard(
+                            context,
+                            'Desafio Diário',
+                            Icons.auto_awesome_rounded,
+                            Colors.orange.shade800,
+                            () => _handleDailyChallengeClick(context, progressoService.totalPontos)
                           ),
-                        );
-                      }).toList(),
+                        ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: _buildModeActionCard(
+                            context,
+                            'Modo Arcade',
+                            Icons.videogame_asset_rounded,
+                            Colors.purple.shade700,
+                            () => _showArcadeArenaPicker(context, disciplinas)
+                          ),
+                        ),
+                      ],
                     );
+                  }
+                ),
+              ),
+
+              // 3. CARD DO DICIONÁRIO
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+                child: Consumer<DictionaryService>(
+                  builder: (context, dictionaryService, child) {
+                    final word = dictionaryService.wordOfTheDay;
+                    if (word == null && !dictionaryService.isLoading) return const SizedBox.shrink();
+                    return _buildDictionaryCard(context, word, dictionaryService.isLoading);
                   },
                 ),
+              ),
+
+              // 4. LISTA DE DISCIPLINAS
+              Consumer<ProgressoService>(
+                builder: (context, progressoService, child) {
+                  return Column(
+                    children: groupedDisciplinas.entries.map((entry) {
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 24.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    entry.key,
+                                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, letterSpacing: 1.1, color: theme.colorScheme.onSurface),
+                                  ),
+                                  const SizedBox(width: 10),
+                                  Expanded(child: Divider(color: theme.colorScheme.onSurface.withValues(alpha: 0.3), thickness: 1.5)),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            SizedBox(
+                              height: isTablet ? 300 : 260,
+                              child: ListView.builder(
+                                padding: const EdgeInsets.only(left: 16),
+                                scrollDirection: Axis.horizontal,
+                                itemCount: entry.value.length,
+                                itemBuilder: (context, index) => Padding(
+                                  padding: const EdgeInsets.only(right: 16.0),
+                                  child: _buildDisciplinaCard(entry.value[index], disciplinas, progressoService),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    }).toList(),
+                  );
+                },
               ),
               const SizedBox(height: 50),
             ],
@@ -509,15 +575,18 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
 
   Widget _buildDictionaryCard(BuildContext context, DictionaryWord? word, bool isLoading) {
     final dictionaryService = context.read<DictionaryService>();
-    return ScalePressWrapper(
+    final size = MediaQuery.of(context).size;
+    final cardWidth = size.width * 0.85 > 400 ? 400.0 : size.width * 0.85;
+
+    return InkWell(
       onTap: word != null ? () => _showWordDetailsDialog(context, word) : () {},
       child: SizedBox(
         height: 225,
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Positioned(bottom: 5, child: Transform.rotate(angle: 0.15, child: Card(color: Colors.teal.shade900.withValues(alpha: 0.4), elevation: 0, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), child: const SizedBox(width: 290, height: 175)))),
-            Positioned(bottom: 10, child: Transform.rotate(angle: -0.08, child: Card(color: Colors.teal.shade800.withValues(alpha: 0.6), elevation: 2, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), child: const SizedBox(width: 310, height: 180)))),
+            Positioned(bottom: 5, child: Transform.rotate(angle: 0.15, child: Card(color: Colors.teal.shade900.withValues(alpha: 0.4), elevation: 0, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), child: SizedBox(width: cardWidth * 0.9, height: 175)))),
+            Positioned(bottom: 10, child: Transform.rotate(angle: -0.08, child: Card(color: Colors.teal.shade800.withValues(alpha: 0.6), elevation: 2, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), child: SizedBox(width: cardWidth, height: 180)))),
             Card(
               color: Colors.teal.shade700,
               elevation: 8,
@@ -525,7 +594,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
               child: Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(20),
-                child: isLoading
+                child: isLoading || word == null
                 ? const Center(child: CircularProgressIndicator(color: Colors.white))
                 : Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -537,7 +606,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                         const SizedBox(width: 10),
                         IconButton(
                           icon: const Icon(Icons.volume_up_rounded, color: Colors.white70),
-                          onPressed: () => dictionaryService.speakWord(word!.palavra),
+                          onPressed: () => dictionaryService.speakWord(word.palavra),
                         ),
                         IconButton(
                           icon: const Icon(Icons.refresh_rounded, color: Colors.white70),
@@ -547,7 +616,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                       ],
                     ),
                     const SizedBox(height: 8),
-                    Text(word!.palavra, style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white)),
+                    FittedBox(fit: BoxFit.scaleDown, child: Text(word.palavra, style: const TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white))),
                     Text('(${word.classe.toLowerCase()})', style: const TextStyle(fontSize: 14, fontStyle: FontStyle.italic, color: Colors.white70)),
                     const SizedBox(height: 10),
                     Text(word.significado, textAlign: TextAlign.center, maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 15, color: Colors.white)),
@@ -563,6 +632,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
 
   void _showWordDetailsDialog(BuildContext context, DictionaryWord word) {
     final dictionaryService = context.read<DictionaryService>();
+    final size = MediaQuery.of(context).size;
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -573,7 +643,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
             const Icon(Icons.translate_rounded, size: 30, color: Colors.teal),
             Expanded(child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: Text(word.palavra, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 28, color: Colors.teal)),
+              child: FittedBox(fit: BoxFit.scaleDown, child: Text(word.palavra, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 28, color: Colors.teal))),
             )),
             IconButton(
               icon: const Icon(Icons.volume_up_rounded, color: Colors.teal, size: 30),
@@ -581,16 +651,19 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
             ),
           ],
         ),
-        content: SingleChildScrollView(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              _buildDetailSection(Icons.info_outline, 'Significado', word.significado, Colors.blue),
-              if (word.sinonimo.isNotEmpty) _buildDetailSection(Icons.compare_arrows_rounded, 'Sinónimo', word.sinonimo, Colors.green),
-              if (word.antonimo.isNotEmpty) _buildDetailSection(Icons.swap_horiz_rounded, 'Antónimo', word.antonimo, Colors.orange),
-              _buildDetailSection(Icons.lightbulb_outline, 'Exemplo', word.exemplo, Colors.amber, isItalic: true),
-            ],
+        content: SizedBox(
+          width: size.width * 0.8,
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildDetailSection(Icons.info_outline, 'Significado', word.significado, Colors.blue),
+                if (word.sinonimo.isNotEmpty) _buildDetailSection(Icons.compare_arrows_rounded, 'Sinónimo', word.sinonimo, Colors.green),
+                if (word.antonimo.isNotEmpty) _buildDetailSection(Icons.swap_horiz_rounded, 'Antónimo', word.antonimo, Colors.orange),
+                _buildDetailSection(Icons.lightbulb_outline, 'Exemplo', word.exemplo, Colors.amber, isItalic: true),
+              ],
+            ),
           ),
         ),
         actions: [TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Fechar', style: TextStyle(fontWeight: FontWeight.bold)))],
@@ -632,18 +705,19 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   Widget _buildNavCard(BuildContext context, String title, IconData icon, Color color, VoidCallback onTap) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 6.0),
-        child: ScalePressWrapper(
+        padding: const EdgeInsets.symmetric(horizontal: 4.0),
+        child: InkWell(
           onTap: onTap,
+          borderRadius: BorderRadius.circular(15),
           child: NeumorphicWrapper(
             baseColor: color,
             child: Container(
-              padding: const EdgeInsets.all(12),
+              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
               child: Column(
                 children: [
-                  Icon(icon, size: 28, color: Colors.white),
+                  Icon(icon, size: 24, color: Colors.white),
                   const SizedBox(height: 8),
-                  Text(title, style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.bold), textAlign: TextAlign.center),
+                  FittedBox(fit: BoxFit.scaleDown, child: Text(title, style: const TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold), textAlign: TextAlign.center)),
                 ],
               ),
             ),
@@ -654,8 +728,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   }
 
   Widget _buildModeActionCard(BuildContext context, String title, IconData icon, Color color, VoidCallback onTap) {
-    return ScalePressWrapper(
+    return InkWell(
       onTap: onTap,
+      borderRadius: BorderRadius.circular(20),
       child: NeumorphicWrapper(
         baseColor: Colors.white.withValues(alpha: 0.95),
         child: Padding(
@@ -664,7 +739,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
             children: [
               Icon(icon, color: color, size: 32),
               const SizedBox(height: 8),
-              Text(title, style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 13)),
+              FittedBox(fit: BoxFit.scaleDown, child: Text(title, style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 13))),
             ],
           ),
         ),
@@ -676,17 +751,18 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     final int totais = disciplina.capitulos?.length ?? 0;
     final int atuais = progressoService.getProgressoDisciplina(disciplina.id);
     final bool completa = totais > 0 && atuais == totais;
+    final size = MediaQuery.of(context).size;
 
-    return ScalePressWrapper(
+    return GestureDetector(
       onTap: () => Navigator.of(context).push(PageRouteBuilder(
-        transitionDuration: const Duration(milliseconds: 600),
+        transitionDuration: const Duration(milliseconds: 300),
         pageBuilder: (context, animation, secondaryAnimation) => NiveisScreen(disciplina: disciplina, todasDisciplinas: todasDisciplinas),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           return FadeTransition(opacity: animation, child: child);
         },
       )),
       child: Container(
-        width: 190,
+        width: size.width * 0.45 > 200 ? 200 : size.width * 0.45,
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 10, offset: Offset(0, 5))]),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(20),
@@ -698,7 +774,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                 child: SafeAssetImage(path: disciplina.animacao, fit: BoxFit.cover)
               ),
               Container(decoration: BoxDecoration(gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Colors.transparent, Colors.black.withValues(alpha: 0.85)]))),
-              Positioned(bottom: 12, left: 12, right: 12, child: Column(children: [Text(disciplina.nome, textAlign: TextAlign.center, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white)), const SizedBox(height: 4), Text(disciplina.descricao, textAlign: TextAlign.center, style: const TextStyle(fontSize: 12, color: Colors.white70), maxLines: 2, overflow: TextOverflow.ellipsis)])),
+              Positioned(bottom: 12, left: 12, right: 12, child: Column(children: [FittedBox(fit: BoxFit.scaleDown, child: Text(disciplina.nome, textAlign: TextAlign.center, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white))), const SizedBox(height: 4), Text(disciplina.descricao, textAlign: TextAlign.center, style: const TextStyle(fontSize: 12, color: Colors.white70), maxLines: 2, overflow: TextOverflow.ellipsis)])),
               if (completa)
                 Positioned(
                   top: 10,
@@ -725,6 +801,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
       pageBuilder: (context, anim1, anim2) => const SizedBox.shrink(),
       transitionDuration: const Duration(milliseconds: 300),
       transitionBuilder: (context, anim1, anim2, child) {
+        final size = MediaQuery.of(context).size;
         return FadeTransition(
           opacity: anim1,
           child: ScaleTransition(
@@ -734,22 +811,19 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                 color: Colors.transparent,
                 child: Stack(
                   children: [
-                    // Fundo com grelha cibernética animada (Synthwave style)
                     Positioned.fill(child: CustomPaint(painter: _CyberGridBackgroundPainter())),
-
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        // Título em Português com Estilo Retro-Moderno
-                        const Text(
+                        Text(
                           'ESCOLHA DA ARENA',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.yellow,
-                            fontSize: 32,
+                            fontSize: size.width * 0.08 > 32 ? 32 : size.width * 0.08,
                             fontWeight: FontWeight.w900,
                             letterSpacing: 4,
-                            shadows: [
+                            shadows: const [
                               Shadow(color: Colors.red, offset: Offset(3, 3)),
                               Shadow(color: Colors.blue, offset: Offset(-2, -2)),
                             ],
@@ -761,10 +835,8 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                           style: TextStyle(color: Colors.cyanAccent, fontSize: 12, letterSpacing: 3, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 40),
-
-                        // Lista Horizontal de Arenas
                         SizedBox(
-                          height: 400,
+                          height: size.height * 0.5 > 400 ? 400 : size.height * 0.5,
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             padding: const EdgeInsets.symmetric(horizontal: 40),
@@ -785,10 +857,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                             },
                           ),
                         ),
-
                         const SizedBox(height: 40),
-
-                        // Botão de Voltar Estilo Arcade
                         ScalePressWrapper(
                           onTap: () => Navigator.pop(context),
                           child: Container(
@@ -972,7 +1041,6 @@ class _ModernArcadeCardState extends State<_ModernArcadeCard> with SingleTickerP
               fit: StackFit.expand,
               children: [
                 SafeAssetImage(path: widget.disciplina.animacao, fit: BoxFit.cover),
-                // Cyberpunk overlay
                 Container(
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
@@ -992,15 +1060,18 @@ class _ModernArcadeCardState extends State<_ModernArcadeCard> with SingleTickerP
                   right: 10,
                   child: Column(
                     children: [
-                      Text(
-                        widget.disciplina.nome.toUpperCase(),
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w900,
-                          fontSize: 18,
-                          letterSpacing: 1.2,
-                          shadows: [Shadow(color: Colors.cyanAccent, blurRadius: 8)]
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          widget.disciplina.nome.toUpperCase(),
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w900,
+                            fontSize: 18,
+                            letterSpacing: 1.2,
+                            shadows: [Shadow(color: Colors.cyanAccent, blurRadius: 8)]
+                          ),
                         ),
                       ),
                       const SizedBox(height: 8),
@@ -1028,7 +1099,6 @@ class _CyberGridBackgroundPainter extends CustomPainter {
       ..color = Colors.purple.withValues(alpha: 0.1)
       ..strokeWidth = 1;
 
-    // Perspectiva Grid (Tron style)
     for (double i = 0; i <= size.width; i += 40) {
       canvas.drawLine(
         Offset(i, size.height * 0.6),
@@ -1045,7 +1115,6 @@ class _CyberGridBackgroundPainter extends CustomPainter {
       );
     }
 
-    // Glowing lines
     final glowPaint = Paint()
       ..color = Colors.cyanAccent.withValues(alpha: 0.05)
       ..strokeWidth = 2;

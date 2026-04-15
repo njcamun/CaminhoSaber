@@ -9,12 +9,16 @@ import 'package:caminho_do_saber/database/database.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
 import 'package:caminho_do_saber/services/progresso_service.dart';
 import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class DependentesScreen extends StatelessWidget {
   const DependentesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+    final isTablet = size.width > 600;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Gerir Perfis', style: TextStyle(fontWeight: FontWeight.bold)),
@@ -23,21 +27,26 @@ class DependentesScreen extends StatelessWidget {
         elevation: 4,
       ),
       body: BackgroundContainer(
-        child: Consumer<ProfileProvider>(
-          builder: (context, profileProvider, child) {
-            if (profileProvider.isLoading) {
-              return const Center(child: CircularProgressIndicator());
-            }
+        child: Center(
+          child: Container(
+            constraints: const BoxConstraints(maxWidth: 600),
+            child: Consumer<ProfileProvider>(
+              builder: (context, profileProvider, child) {
+                if (profileProvider.isLoading) {
+                  return const Center(child: CircularProgressIndicator());
+                }
 
-            return ListView.builder(
-              padding: const EdgeInsets.fromLTRB(16, 20, 16, 80),
-              itemCount: profileProvider.allProfiles.length,
-              itemBuilder: (context, index) {
-                final profile = profileProvider.allProfiles[index];
-                return _buildProfileListItem(context, profile);
+                return ListView.builder(
+                  padding: const EdgeInsets.fromLTRB(16, 20, 16, 80),
+                  itemCount: profileProvider.allProfiles.length,
+                  itemBuilder: (context, index) {
+                    final profile = profileProvider.allProfiles[index];
+                    return _buildProfileListItem(context, profile);
+                  },
+                );
               },
-            );
-          },
+            ),
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
@@ -82,12 +91,16 @@ class DependentesScreen extends StatelessWidget {
               ),
             ),
           ),
-          title: Text(
-            profile.nome,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: isActive ? Colors.blue.shade900 : Colors.black87),
+          title: FittedBox(
+            alignment: Alignment.centerLeft,
+            fit: BoxFit.scaleDown,
+            child: Text(
+              profile.nome,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: isActive ? Colors.blue.shade900 : Colors.black87),
+            ),
           ),
           subtitle: Text(
-            profile.isMainProfile ? 'Perfil Principal (Nelson)' : 'Perfil Dependente',
+            profile.isMainProfile ? 'Perfil Principal' : 'Perfil Dependente',
             style: TextStyle(color: Colors.grey.shade600),
           ),
           trailing: PopupMenuButton<String>(
@@ -101,7 +114,7 @@ class DependentesScreen extends StatelessWidget {
             },
             itemBuilder: (context) => [
               const PopupMenuItem(value: 'edit', child: ListTile(leading: Icon(Icons.edit_outlined), title: Text('Editar'), contentPadding: EdgeInsets.zero)),
-              if (!profile.isMainProfile) // Apenas permite remover se NÃO for o principal
+              if (!profile.isMainProfile)
                 const PopupMenuItem(value: 'delete', child: ListTile(leading: Icon(Icons.delete_outline, color: Colors.red), title: Text('Remover', style: TextStyle(color: Colors.red)), contentPadding: EdgeInsets.zero)),
             ],
           ),
@@ -111,9 +124,10 @@ class DependentesScreen extends StatelessWidget {
   }
 
   Widget _buildAvatarDisplay(String path) {
-    if (path.startsWith('assets/')) {
+    if (path.startsWith('assets/') || path.startsWith('http')) {
       return SafeAssetImage(path: path, fit: BoxFit.cover, width: 56, height: 56);
     } else {
+      if (kIsWeb) return const Icon(Icons.person);
       return Image.file(File(path), fit: BoxFit.cover, width: 56, height: 56);
     }
   }
@@ -123,6 +137,7 @@ class DependentesScreen extends StatelessWidget {
     final isEditing = profileToEdit != null;
     final nameController = TextEditingController(text: isEditing ? profileToEdit.nome : '');
     final ImagePicker picker = ImagePicker();
+    final size = MediaQuery.of(context).size;
 
     final List<String> assetAvatars = [
       'assets/avatars/avatar1.png',
@@ -148,81 +163,85 @@ class DependentesScreen extends StatelessWidget {
                   Text(isEditing ? 'Editar Perfil' : 'Novo Perfil', style: const TextStyle(fontWeight: FontWeight.bold)),
                 ],
               ),
-              content: SingleChildScrollView(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    TextField(
-                      controller: nameController,
-                      decoration: InputDecoration(
-                        labelText: 'Nome do Explorador',
-                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
-                        prefixIcon: const Icon(Icons.face_rounded),
+              content: Container(
+                width: size.width * 0.85 > 500 ? 500 : size.width * 0.85,
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      TextField(
+                        controller: nameController,
+                        decoration: InputDecoration(
+                          labelText: 'Nome do Explorador',
+                          border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                          prefixIcon: const Icon(Icons.face_rounded),
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 24),
-                    const Text('Personaliza o teu Avatar:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueGrey)),
-                    const SizedBox(height: 16),
-                    
-                    InkWell(
-                      onTap: () async {
-                        final XFile? photo = await picker.pickImage(source: ImageSource.camera);
-                        if (photo != null) {
-                          setState(() => selectedAvatar = photo.path);
-                        }
-                      },
-                      child: Column(
-                        children: [
-                          Container(
-                            width: 80,
-                            height: 80,
-                            decoration: BoxDecoration(
-                              color: Colors.blue.shade50,
-                              shape: BoxShape.circle,
-                              border: Border.all(
-                                color: !selectedAvatar.startsWith('assets/') ? Colors.blue : Colors.transparent,
-                                width: 3,
+                      const SizedBox(height: 24),
+                      const Text('Personaliza o teu Avatar:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueGrey)),
+                      const SizedBox(height: 16),
+                      
+                      if (!kIsWeb)
+                      InkWell(
+                        onTap: () async {
+                          final XFile? photo = await picker.pickImage(source: ImageSource.camera);
+                          if (photo != null) {
+                            setState(() => selectedAvatar = photo.path);
+                          }
+                        },
+                        child: Column(
+                          children: [
+                            Container(
+                              width: 80,
+                              height: 80,
+                              decoration: BoxDecoration(
+                                color: Colors.blue.shade50,
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: !selectedAvatar.startsWith('assets/') ? Colors.blue : Colors.transparent,
+                                  width: 3,
+                                ),
+                              ),
+                              child: !selectedAvatar.startsWith('assets/') 
+                                ? ClipOval(child: Image.file(File(selectedAvatar), fit: BoxFit.cover))
+                                : const Icon(Icons.camera_alt_rounded, size: 40, color: Colors.blue),
+                            ),
+                            const SizedBox(height: 4),
+                            const Text('Tirar Foto', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.blue)),
+                          ],
+                        ),
+                      ),
+                      
+                      const Padding(padding: EdgeInsets.symmetric(vertical: 16.0), child: Divider(thickness: 1)),
+                      const Text('Ou escolhe um boneco:', style: TextStyle(fontSize: 12, color: Colors.grey)),
+                      const SizedBox(height: 12),
+                      Wrap(
+                        spacing: 12,
+                        runSpacing: 12,
+                        alignment: WrapAlignment.center,
+                        children: assetAvatars.map((avatar) {
+                          final bool isSel = selectedAvatar == avatar;
+                          return GestureDetector(
+                            onTap: () => setState(() => selectedAvatar = avatar),
+                            child: AnimatedContainer(
+                              duration: const Duration(milliseconds: 300),
+                              width: 60,
+                              height: 60,
+                              padding: const EdgeInsets.all(2),
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(color: isSel ? Colors.blue : Colors.transparent, width: 3),
+                              ),
+                              child: CircleAvatar(
+                                backgroundColor: Colors.blue.shade50,
+                                child: ClipOval(child: SafeAssetImage(path: avatar, fit: BoxFit.cover)),
                               ),
                             ),
-                            child: !selectedAvatar.startsWith('assets/') 
-                              ? ClipOval(child: Image.file(File(selectedAvatar), fit: BoxFit.cover))
-                              : const Icon(Icons.camera_alt_rounded, size: 40, color: Colors.blue),
-                          ),
-                          const SizedBox(height: 4),
-                          const Text('Tirar Foto', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.blue)),
-                        ],
-                      ),
-                    ),
-                    
-                    const Padding(padding: EdgeInsets.symmetric(vertical: 16.0), child: Divider(thickness: 1)),
-                    const Text('Ou escolhe um boneco:', style: TextStyle(fontSize: 12, color: Colors.grey)),
-                    const SizedBox(height: 12),
-                    Wrap(
-                      spacing: 12,
-                      runSpacing: 12,
-                      alignment: WrapAlignment.center,
-                      children: assetAvatars.map((avatar) {
-                        final bool isSel = selectedAvatar == avatar;
-                        return GestureDetector(
-                          onTap: () => setState(() => selectedAvatar = avatar),
-                          child: AnimatedContainer(
-                            duration: const Duration(milliseconds: 300),
-                            width: 60,
-                            height: 60,
-                            padding: const EdgeInsets.all(2),
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              border: Border.all(color: isSel ? Colors.blue : Colors.transparent, width: 3),
-                            ),
-                            child: CircleAvatar(
-                              backgroundColor: Colors.blue.shade50,
-                              child: ClipOval(child: SafeAssetImage(path: avatar, fit: BoxFit.cover)),
-                            ),
-                          ),
-                        );
-                      }).toList(),
-                    )
-                  ],
+                          );
+                        }).toList(),
+                      )
+                    ],
+                  ),
                 ),
               ),
               actions: [
@@ -250,7 +269,7 @@ class DependentesScreen extends StatelessWidget {
   }
 
   void _showConfirmRemoveDialog(BuildContext context, Profile profile) {
-    if (profile.isMainProfile) return; // Segurança extra
+    if (profile.isMainProfile) return;
 
     final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
     final progressoService = Provider.of<ProgressoService>(context, listen: false);
