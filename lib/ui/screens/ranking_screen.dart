@@ -13,7 +13,7 @@ class RankingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final rankingService = RankingService();
+    final rankingService = Provider.of<RankingService>(context, listen: false);
     final profileProvider = Provider.of<ProfileProvider>(context);
     final activeProfile = profileProvider.activeProfile;
     final size = MediaQuery.of(context).size;
@@ -58,23 +58,43 @@ class RankingScreen extends StatelessWidget {
 
               Expanded(
                 child: StreamBuilder<List<Map<String, dynamic>>>(
-                  stream: rankingService.getGlobalTop10Stream(),
+                  stream: rankingService.getLocalRankingStream(),
                   builder: (context, snapshot) {
                     if (snapshot.connectionState == ConnectionState.waiting) {
                       return const Center(child: CircularProgressIndicator(color: Colors.white));
                     }
 
                     if (snapshot.hasError) {
-                      return const Center(child: Text('Erro ao carregar o ranking', style: TextStyle(color: Colors.white)));
+                      return Center(
+                        child: Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Text(
+                            'Erro ao carregar o ranking:\n${snapshot.error}',
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(color: Colors.white, fontSize: 14),
+                          ),
+                        ),
+                      );
                     }
 
                     final ranking = snapshot.data ?? [];
 
                     if (ranking.isEmpty) {
-                      return const Center(
-                        child: Text('Ainda não há exploradores no ranking.\nSê o primeiro!',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+                      return Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Text('Ainda não há exploradores no ranking.\nSê o primeiro!',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold)),
+                            const SizedBox(height: 20),
+                            ElevatedButton.icon(
+                              onPressed: () => rankingService.refreshLocalRankingCache(),
+                              icon: const Icon(Icons.refresh),
+                              label: const Text('Atualizar Ranking'),
+                            ),
+                          ],
+                        ),
                       );
                     }
 
@@ -173,6 +193,9 @@ class RankingScreen extends StatelessWidget {
   }
 
   Widget _buildRankingItem(int rank, Map<String, dynamic> item, bool isMe, bool isTop3, bool isTablet) {
+    // Se não houver UID de perfil, tratamos como anónimo
+    final String profileUid = item['profileUid'] ?? 'unknown';
+    
     return Padding(
       padding: const EdgeInsets.only(bottom: 14.0),
       child: Stack(
@@ -228,6 +251,9 @@ class RankingScreen extends StatelessWidget {
                         ),
                         if (isMe)
                           Text('Estás a brilhar!', style: TextStyle(color: Colors.blue.shade700, fontSize: 11, fontWeight: FontWeight.bold)),
+                        // Identificador discreto para debugging ou para diferenciar perfis com mesmo nome
+                        if (item['parentUid'] == 'system_bot')
+                          const Text('Explorador Virtual', style: TextStyle(color: Colors.grey, fontSize: 9, fontWeight: FontWeight.normal)),
                       ],
                     ),
                   ),

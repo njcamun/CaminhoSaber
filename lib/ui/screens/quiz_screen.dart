@@ -37,6 +37,9 @@ class QuizScreen extends StatefulWidget {
 }
 
 class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
+  late AudioService _audioService;
+  late ProgressoService _progressoService;
+
   final String _sessionId = DateTime.now().millisecondsSinceEpoch.toString();
   int _perguntaAtualIndex = 0;
   bool _respostaSelecionada = false;
@@ -69,6 +72,8 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
+    _audioService = context.read<AudioService>();
+    _progressoService = context.read<ProgressoService>();
     _playQuizMusic();
     _perguntasBaralhadas = List.from(widget.perguntas)..shuffle();
     _prepararPerguntaAtual();
@@ -82,7 +87,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     WidgetsBinding.instance.removeObserver(this);
     _timer?.cancel();
     _timerGlobal?.cancel();
-    context.read<AudioService>().stopMusic();
+    _audioService.stopMusic();
     super.dispose();
   }
 
@@ -98,7 +103,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
     if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive || state == AppLifecycleState.detached) {
-      if (_isMusicPlaying) context.read<AudioService>().stopMusic();
+      if (_isMusicPlaying) _audioService.stopMusic();
     } else if (state == AppLifecycleState.resumed) {
       if (_isMusicPlaying) _playQuizMusic();
     }
@@ -159,7 +164,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   }
 
   Future<void> _playQuizMusic() async {
-    await context.read<AudioService>().playMusic('desafio.mp3');
+    await _audioService.playMusic('desafio.mp3');
     _isMusicPlaying = true;
   }
 
@@ -228,14 +233,14 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     if (estaCorreta) {
       _pontosBase += 5;
       HapticFeedback.mediumImpact();
-      context.read<AudioService>().playSfx('acerto.mp3');
+      _audioService.playSfx('acerto.mp3');
       if (tapPosition != Offset.zero) {
         showXPFlyer(context, tapPosition);
         showPixelExplosion(context, tapPosition, Colors.green);
       }
     } else {
       HapticFeedback.vibrate();
-      context.read<AudioService>().playSfx('erro.mp3');
+      _audioService.playSfx('erro.mp3');
       if (tapPosition != Offset.zero) {
         showPixelExplosion(context, tapPosition, Colors.red);
       }
@@ -267,7 +272,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     if (_quizFinalizado) return;
     _quizFinalizado = true;
 
-    context.read<AudioService>().stopMusic();
+    _audioService.stopMusic();
 
     _isMusicPlaying = false;
     _timer?.cancel();
@@ -295,7 +300,6 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
       }
     }
 
-    final progressoService = Provider.of<ProgressoService>(context, listen: false);
     final String capituloId = '${widget.disciplinaId}_capitulo_${widget.capituloIndex}';
     
     if (mounted) {
@@ -320,7 +324,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     }
 
     unawaited(
-      progressoService.saveProgresso(capituloId, pontuacaoFinal)
+      _progressoService.saveProgresso(capituloId, pontuacaoFinal)
         .timeout(const Duration(seconds: 8))
         .catchError((e) => debugPrint('Sync background error: $e'))
     );

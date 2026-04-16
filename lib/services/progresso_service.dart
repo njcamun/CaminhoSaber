@@ -13,7 +13,7 @@ class ProgressoService with ChangeNotifier {
   ProfileProvider? _profileProvider;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  final RankingService _rankingService = RankingService();
+  late final RankingService _rankingService;
 
   int _totalXP = 0;
   int _totalDiamantes = 0;
@@ -47,6 +47,7 @@ class ProgressoService with ChangeNotifier {
   }
 
   ProgressoService(this._db, ProfileProvider? profileProvider) {
+    _rankingService = RankingService(_db);
     if (profileProvider != null) {
       updateProvider(profileProvider);
     }
@@ -301,6 +302,13 @@ class ProgressoService with ChangeNotifier {
             }
           });
           await _loadProgresso();
+          
+          // Sincroniza com o ranking global (Atualiza local imediatamente e cloud se logado)
+          final updatedProfile = _profileProvider?.activeProfile;
+          if (updatedProfile != null) {
+            await _rankingService.updateProfileRanking(updatedProfile, totalPontos);
+          }
+
           await syncWithCloud(); // Sincroniza logo após salvar localmente
         }
       }).timeout(const Duration(seconds: 4));
@@ -424,73 +432,62 @@ class ProgressoService with ChangeNotifier {
 
   Future<void> syncWithCloud() async {
     final user = _auth.currentUser;
-    final activeProfile = _profileProvider?.activeProfile;
-    if (user == null || activeProfile == null || user.isAnonymous) return;
-    try {
-      if (kIsWeb) {
-        final batch = _firestore.batch();
-        final progressRef = _firestore
-            .collection('users')
-            .doc(user.uid)
-            .collection('profiles')
-            .doc(activeProfile.uid)
-            .collection('progresso');
+    if (user == null || user.isAnonymous) return;
 
-        for (final entry in _progressoPorCapitulo.entries) {
-          final docRef = progressRef.doc(entry.key);
+    try {
+      // 1. Sincroniza o documento do utilizador (Parent)
+      await _firestore.collection('users').doc(user.uid).set({
+        'lastSync': FieldValue.serverTimestamp(),
+        'email': user.email,
+      }, SetOptions(merge: true));
+
+      // 2. Sincroniza TODOS os perfis locais
+      final allLocalProfiles = await _db.select(_db.profiles).get();
+      debugPrint('[ProgressoService] Iniciando sync massivo para ${allLocalProfiles.length} perfis');
+
+      for (final profile in allLocalProfiles) {
+        final localProgressos = await (_db.select(_db.progressoCapitulos)
+          ..where((t) => t.profileUid.equals(profile.uid))).get();
+
+        // Limita o batch por perfil para segurança
+        final batch = _firestore.batch();
+        
+        for (var p in localProgressos) {
+          final docRef = _firestore
+              .collection('users').doc(user.uid)
+              .collection('profiles').doc(profile.uid)
+              .collection('progresso').doc(p.capituloId);
+          
           batch.set(docRef, {
-            'pontuacao': entry.value,
-            'dataConclusao': FieldValue.serverTimestamp(),
-            'capituloId': entry.key,
-            'tipo': 'quiz',
+            'pontuacao': p.pontuacao,
+            'dataConclusao': p.dataConclusao,
+            'capituloId': p.capituloId,
+            'tipo': p.tipo
           }, SetOptions(merge: true));
         }
 
-        final profileRef = _firestore.collection('users').doc(user.uid).collection('profiles').doc(activeProfile.uid);
+        final profileRef = _firestore
+            .collection('users').doc(user.uid)
+            .collection('profiles').doc(profile.uid);
+            
         batch.set(profileRef, {
-          'totalXP': _totalXP,
-          'totalPontos': totalPontos,
-          'totalDiamantes': _totalDiamantes,
-          'currentStreak': _currentStreak,
-          'nome': activeProfile.nome,
+          'uid': profile.uid,
+          'totalPontos': profile.totalPontos,
+          'totalDiamantes': profile.totalDiamantes,
+          'currentStreak': profile.currentStreak,
+          'nome': profile.nome,
           'lastSync': FieldValue.serverTimestamp(),
-          'avatarAssetPath': activeProfile.avatarAssetPath,
-          'isMainProfile': activeProfile.isMainProfile,
+          'avatarAssetPath': profile.avatarAssetPath
         }, SetOptions(merge: true));
 
-        // Adiciona Timeout de 5 segundos no Web para evitar "congelamento" (UI Thread Blocked)
-        await batch.commit().timeout(const Duration(seconds: 5));
-        return;
+        await batch.commit().timeout(const Duration(seconds: 10));
+        
+        // Sincroniza com o ranking global (essencial para listar todos os perfis)
+        await _rankingService.updateProfileRanking(profile, profile.totalPontos);
       }
-
-      final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfile.uid));
-      final localProgressos = await query.get();
-
-      final batch = _firestore.batch();
-      for (var p in localProgressos) {
-        final docRef = _firestore.collection('users').doc(user.uid).collection('profiles').doc(activeProfile.uid).collection('progresso').doc(p.capituloId);
-        batch.set(docRef, {
-          'pontuacao': p.pontuacao, 
-          'dataConclusao': p.dataConclusao, 
-          'capituloId': p.capituloId,
-          'tipo': p.tipo
-        }, SetOptions(merge: true));
-      }
-      final profileRef = _firestore.collection('users').doc(user.uid).collection('profiles').doc(activeProfile.uid);
-      batch.set(profileRef, {
-        'totalXP': _totalXP,
-        'totalPontos': totalPontos,
-        'totalDiamantes': _totalDiamantes,
-        'currentStreak': _currentStreak,
-        'nome': activeProfile.nome,
-        'lastSync': FieldValue.serverTimestamp(),
-        'avatarAssetPath': activeProfile.avatarAssetPath
-      }, SetOptions(merge: true));
-      await batch.commit().timeout(const Duration(seconds: 5));
-
-      await _rankingService.updateProfileRanking(activeProfile, totalStarsTotal);
+      debugPrint('[ProgressoService] Sync massivo concluído com sucesso');
     } catch (e) {
-      debugPrint('SyncCloud Erro: $e');
+      debugPrint('SyncCloud Multi-Profile Erro: $e');
     }
   }
 

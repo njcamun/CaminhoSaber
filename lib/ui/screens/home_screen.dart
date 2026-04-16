@@ -27,6 +27,7 @@ import 'package:caminho_do_saber/ui/widgets/streak_fire.dart';
 import 'package:caminho_do_saber/ui/widgets/punch_counter.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_crt_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/animated_stat_icon.dart';
+import 'package:caminho_do_saber/services/ranking_service.dart';
 import 'package:lottie/lottie.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -44,13 +45,13 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     WidgetsBinding.instance.addObserver(this);
     _disciplinasFuture = _loadDisciplinas();
     context.read<DictionaryService>().loadDictionary();
-    
-    // Adicionar dados de teste ao ranking após o arranque para verificação
-    Future.delayed(const Duration(seconds: 3), () {
+
+    // Sincronização automática no arranque
+    Future.delayed(const Duration(seconds: 3), () async {
       if (mounted) {
-        final rankingService = context.read<RankingService>();
-        rankingService.addTestRankingData();
-        context.read<ProgressoService>().syncWithCloud();
+        await context.read<ProgressoService>().syncWithCloud();
+        // Baixamos o ranking atualizado para o banco local
+        await context.read<RankingService>().refreshLocalRankingCache();
       }
     });
   }
@@ -66,6 +67,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     super.didChangeAppLifecycleState(state);
     if (state == AppLifecycleState.resumed) {
       context.read<DictionaryService>().loadDictionary();
+      context.read<RankingService>().refreshLocalRankingCache();
     } else if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
       context.read<ProgressoService>().syncWithCloud();
     }

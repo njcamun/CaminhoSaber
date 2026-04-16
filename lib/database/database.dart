@@ -42,10 +42,37 @@ class UserFlashcards extends Table {
   DateTimeColumn get dataCriacao => dateTime().withDefault(currentDateAndTime)();
 }
 
-@DriftDatabase(tables: [Profiles, ProgressoCapitulos, UserStatsTable, UserFlashcards])
+class GlobalRanking extends Table {
+  TextColumn get profileUid => text()();
+  TextColumn get name => text()();
+  TextColumn get avatarPath => text()();
+  IntColumn get totalPoints => integer()();
+  DateTimeColumn get lastUpdate => dateTime()();
+  TextColumn get parentUid => text().nullable()();
+
+  @override
+  Set<Column> get primaryKey => {profileUid};
+}
+
+@DriftDatabase(tables: [Profiles, ProgressoCapitulos, UserStatsTable, UserFlashcards, GlobalRanking])
 class AppDatabase extends _$AppDatabase {
   AppDatabase() : super(openConnection());
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
+
+  @override
+  MigrationStrategy get migration {
+    return MigrationStrategy(
+      onCreate: (m) async {
+        await m.createAll();
+      },
+      onUpgrade: (m, from, to) async {
+        if (from < 2) {
+          // Adicionar a nova tabela de ranking global no upgrade para a versão 2
+          await m.createTable(globalRanking);
+        }
+      },
+    );
+  }
 }

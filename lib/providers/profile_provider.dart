@@ -36,6 +36,11 @@ class ProfileProvider with ChangeNotifier {
   void setProgressoService(ProgressoService progressoService) {
     _progressoService = progressoService;
     _tryRestore();
+    
+    // Sincroniza o perfil atual com o ranking assim que o serviço é vinculado
+    if (_activeProfile != null && !_activeProfile!.uid.startsWith('guest')) {
+      _progressoService?.syncWithCloud();
+    }
   }
 
   void _tryRestore() {
@@ -252,9 +257,10 @@ class ProfileProvider with ChangeNotifier {
             isMainProfile: true,
           ));
           
-          final query = _db.select(_db.profiles)..where((t) => t.parentUid.equals(firebaseUser.uid));
-          _allProfiles = await query.get();
-          debugPrint('[ProfileProvider] Default profile created. Profiles now: ${_allProfiles.length}');
+          // Carrega e sincroniza imediatamente o novo utilizador
+          await _loadProfilesForUser(firebaseUser);
+          _progressoService?.syncWithCloud();
+          return;
         } catch (dbError) {
           debugPrint('[ProfileProvider] Could not create profile in DB: $dbError');
           // Create profile in-memory if DB fails

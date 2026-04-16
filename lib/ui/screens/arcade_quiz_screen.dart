@@ -35,6 +35,9 @@ class ArcadeQuizScreen extends StatefulWidget {
 }
 
 class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProviderStateMixin {
+  late AudioService _audioService;
+  late ProgressoService _progressoService;
+
   int _pontos = 0;
   int _tempoRestante = 60;
   int _oportunidades = 3; 
@@ -70,6 +73,8 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   @override
   void initState() {
     super.initState();
+    _audioService = context.read<AudioService>();
+    _progressoService = context.read<ProgressoService>();
     _loadSettings();
     _startTimer();
     _playMusic();
@@ -98,7 +103,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   @override
   void dispose() {
     _timer?.cancel();
-    context.read<AudioService>().stopMusic();
+    _audioService.stopMusic();
     _feedbackController.dispose();
     _pulseController.dispose();
     super.dispose();
@@ -209,11 +214,11 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
         } else if (_comboConsecutivo == 20) {
           _pontos += 100;
           _showCentralFeedback("MEDALHA! X3 ATIVO!", Icons.workspace_premium_rounded, Colors.amber);
-          context.read<ProgressoService>().registerSpecialAchievement('medalha');
+          _progressoService.registerSpecialAchievement('medalha');
         } else if (_comboConsecutivo == 30) {
           _pontos += 250;
           _showCentralFeedback("DIAMANTE!", Icons.diamond_rounded, Colors.cyan);
-          context.read<ProgressoService>().registerSpecialAchievement('diamante');
+          _progressoService.registerSpecialAchievement('diamante');
         }
 
         if (_comboConsecutivo % 15 == 0) {
@@ -314,24 +319,23 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     
     _timer?.cancel();
     _pulseController.stop();
-    context.read<AudioService>().stopMusic();
+    _audioService.stopMusic();
     
     final currentScore = _pontos;
     final disciplineId = widget.disciplinaId;
-    final progressoService = context.read<ProgressoService>();
 
     if (mounted) {
       _showGameOverDialog(context, currentScore, titulo);
     }
 
     unawaited(
-      progressoService.addArcadePoints(currentScore)
+      _progressoService.addArcadePoints(currentScore)
         .timeout(const Duration(seconds: 10))
         .catchError((e) => debugPrint('Erro background arcade points: $e'))
     );
     
     unawaited(
-      progressoService.updateArcadeRecord(disciplineId, currentScore)
+      _progressoService.updateArcadeRecord(disciplineId, currentScore)
         .timeout(const Duration(seconds: 10))
         .catchError((e) => debugPrint('Erro background recorde: $e'))
     );
@@ -381,11 +385,11 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   }
 
   void _playSound(String file) {
-    context.read<AudioService>().playSfx(file);
+    _audioService.playSfx(file);
   }
 
   Future<void> _playMusic() async {
-    context.read<AudioService>().playMusic('desafioArcade.mp3');
+    _audioService.playMusic('desafioArcade.mp3');
   }
 
   @override

@@ -51,7 +51,10 @@ void main() async {
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
         ChangeNotifierProvider(create: (_) => ProfileProvider(driftDb)),
         Provider(create: (_) => DisciplinaService()),
-        Provider(create: (_) => RankingService()),
+        Provider<RankingService>(
+          create: (context) => RankingService(context.read<AppDatabase>()),
+          dispose: (_, service) => service.dispose(),
+        ),
         ChangeNotifierProvider(create: (_) => DictionaryService()),
         ChangeNotifierProvider(create: (_) => PomodoroProvider()),
         ChangeNotifierProxyProvider<ProfileProvider, ProgressoService>(

@@ -1459,6 +1459,353 @@ class UserFlashcardsCompanion extends UpdateCompanion<UserFlashcard> {
   }
 }
 
+class $GlobalRankingTable extends GlobalRanking
+    with TableInfo<$GlobalRankingTable, GlobalRankingData> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $GlobalRankingTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _profileUidMeta =
+      const VerificationMeta('profileUid');
+  @override
+  late final GeneratedColumn<String> profileUid = GeneratedColumn<String>(
+      'profile_uid', aliasedName, false,
+      type: DriftSqlType.string, requiredDuringInsert: true);
+  static const VerificationMeta _nameMeta = const VerificationMeta('name');
+  @override
+  late final GeneratedColumn<String> name = GeneratedColumn<String>(
+      'name', aliasedName, false,
+      type: DriftSqlType.string, requiredDuringInsert: true);
+  static const VerificationMeta _avatarPathMeta =
+      const VerificationMeta('avatarPath');
+  @override
+  late final GeneratedColumn<String> avatarPath = GeneratedColumn<String>(
+      'avatar_path', aliasedName, false,
+      type: DriftSqlType.string, requiredDuringInsert: true);
+  static const VerificationMeta _totalPointsMeta =
+      const VerificationMeta('totalPoints');
+  @override
+  late final GeneratedColumn<int> totalPoints = GeneratedColumn<int>(
+      'total_points', aliasedName, false,
+      type: DriftSqlType.int, requiredDuringInsert: true);
+  static const VerificationMeta _lastUpdateMeta =
+      const VerificationMeta('lastUpdate');
+  @override
+  late final GeneratedColumn<DateTime> lastUpdate = GeneratedColumn<DateTime>(
+      'last_update', aliasedName, false,
+      type: DriftSqlType.dateTime, requiredDuringInsert: true);
+  static const VerificationMeta _parentUidMeta =
+      const VerificationMeta('parentUid');
+  @override
+  late final GeneratedColumn<String> parentUid = GeneratedColumn<String>(
+      'parent_uid', aliasedName, true,
+      type: DriftSqlType.string, requiredDuringInsert: false);
+  @override
+  List<GeneratedColumn> get $columns =>
+      [profileUid, name, avatarPath, totalPoints, lastUpdate, parentUid];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'global_ranking';
+  @override
+  VerificationContext validateIntegrity(Insertable<GlobalRankingData> instance,
+      {bool isInserting = false}) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('profile_uid')) {
+      context.handle(
+          _profileUidMeta,
+          profileUid.isAcceptableOrUnknown(
+              data['profile_uid']!, _profileUidMeta));
+    } else if (isInserting) {
+      context.missing(_profileUidMeta);
+    }
+    if (data.containsKey('name')) {
+      context.handle(
+          _nameMeta, name.isAcceptableOrUnknown(data['name']!, _nameMeta));
+    } else if (isInserting) {
+      context.missing(_nameMeta);
+    }
+    if (data.containsKey('avatar_path')) {
+      context.handle(
+          _avatarPathMeta,
+          avatarPath.isAcceptableOrUnknown(
+              data['avatar_path']!, _avatarPathMeta));
+    } else if (isInserting) {
+      context.missing(_avatarPathMeta);
+    }
+    if (data.containsKey('total_points')) {
+      context.handle(
+          _totalPointsMeta,
+          totalPoints.isAcceptableOrUnknown(
+              data['total_points']!, _totalPointsMeta));
+    } else if (isInserting) {
+      context.missing(_totalPointsMeta);
+    }
+    if (data.containsKey('last_update')) {
+      context.handle(
+          _lastUpdateMeta,
+          lastUpdate.isAcceptableOrUnknown(
+              data['last_update']!, _lastUpdateMeta));
+    } else if (isInserting) {
+      context.missing(_lastUpdateMeta);
+    }
+    if (data.containsKey('parent_uid')) {
+      context.handle(_parentUidMeta,
+          parentUid.isAcceptableOrUnknown(data['parent_uid']!, _parentUidMeta));
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {profileUid};
+  @override
+  GlobalRankingData map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return GlobalRankingData(
+      profileUid: attachedDatabase.typeMapping
+          .read(DriftSqlType.string, data['${effectivePrefix}profile_uid'])!,
+      name: attachedDatabase.typeMapping
+          .read(DriftSqlType.string, data['${effectivePrefix}name'])!,
+      avatarPath: attachedDatabase.typeMapping
+          .read(DriftSqlType.string, data['${effectivePrefix}avatar_path'])!,
+      totalPoints: attachedDatabase.typeMapping
+          .read(DriftSqlType.int, data['${effectivePrefix}total_points'])!,
+      lastUpdate: attachedDatabase.typeMapping
+          .read(DriftSqlType.dateTime, data['${effectivePrefix}last_update'])!,
+      parentUid: attachedDatabase.typeMapping
+          .read(DriftSqlType.string, data['${effectivePrefix}parent_uid']),
+    );
+  }
+
+  @override
+  $GlobalRankingTable createAlias(String alias) {
+    return $GlobalRankingTable(attachedDatabase, alias);
+  }
+}
+
+class GlobalRankingData extends DataClass
+    implements Insertable<GlobalRankingData> {
+  final String profileUid;
+  final String name;
+  final String avatarPath;
+  final int totalPoints;
+  final DateTime lastUpdate;
+  final String? parentUid;
+  const GlobalRankingData(
+      {required this.profileUid,
+      required this.name,
+      required this.avatarPath,
+      required this.totalPoints,
+      required this.lastUpdate,
+      this.parentUid});
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['profile_uid'] = Variable<String>(profileUid);
+    map['name'] = Variable<String>(name);
+    map['avatar_path'] = Variable<String>(avatarPath);
+    map['total_points'] = Variable<int>(totalPoints);
+    map['last_update'] = Variable<DateTime>(lastUpdate);
+    if (!nullToAbsent || parentUid != null) {
+      map['parent_uid'] = Variable<String>(parentUid);
+    }
+    return map;
+  }
+
+  GlobalRankingCompanion toCompanion(bool nullToAbsent) {
+    return GlobalRankingCompanion(
+      profileUid: Value(profileUid),
+      name: Value(name),
+      avatarPath: Value(avatarPath),
+      totalPoints: Value(totalPoints),
+      lastUpdate: Value(lastUpdate),
+      parentUid: parentUid == null && nullToAbsent
+          ? const Value.absent()
+          : Value(parentUid),
+    );
+  }
+
+  factory GlobalRankingData.fromJson(Map<String, dynamic> json,
+      {ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return GlobalRankingData(
+      profileUid: serializer.fromJson<String>(json['profileUid']),
+      name: serializer.fromJson<String>(json['name']),
+      avatarPath: serializer.fromJson<String>(json['avatarPath']),
+      totalPoints: serializer.fromJson<int>(json['totalPoints']),
+      lastUpdate: serializer.fromJson<DateTime>(json['lastUpdate']),
+      parentUid: serializer.fromJson<String?>(json['parentUid']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'profileUid': serializer.toJson<String>(profileUid),
+      'name': serializer.toJson<String>(name),
+      'avatarPath': serializer.toJson<String>(avatarPath),
+      'totalPoints': serializer.toJson<int>(totalPoints),
+      'lastUpdate': serializer.toJson<DateTime>(lastUpdate),
+      'parentUid': serializer.toJson<String?>(parentUid),
+    };
+  }
+
+  GlobalRankingData copyWith(
+          {String? profileUid,
+          String? name,
+          String? avatarPath,
+          int? totalPoints,
+          DateTime? lastUpdate,
+          Value<String?> parentUid = const Value.absent()}) =>
+      GlobalRankingData(
+        profileUid: profileUid ?? this.profileUid,
+        name: name ?? this.name,
+        avatarPath: avatarPath ?? this.avatarPath,
+        totalPoints: totalPoints ?? this.totalPoints,
+        lastUpdate: lastUpdate ?? this.lastUpdate,
+        parentUid: parentUid.present ? parentUid.value : this.parentUid,
+      );
+  @override
+  String toString() {
+    return (StringBuffer('GlobalRankingData(')
+          ..write('profileUid: $profileUid, ')
+          ..write('name: $name, ')
+          ..write('avatarPath: $avatarPath, ')
+          ..write('totalPoints: $totalPoints, ')
+          ..write('lastUpdate: $lastUpdate, ')
+          ..write('parentUid: $parentUid')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      profileUid, name, avatarPath, totalPoints, lastUpdate, parentUid);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is GlobalRankingData &&
+          other.profileUid == this.profileUid &&
+          other.name == this.name &&
+          other.avatarPath == this.avatarPath &&
+          other.totalPoints == this.totalPoints &&
+          other.lastUpdate == this.lastUpdate &&
+          other.parentUid == this.parentUid);
+}
+
+class GlobalRankingCompanion extends UpdateCompanion<GlobalRankingData> {
+  final Value<String> profileUid;
+  final Value<String> name;
+  final Value<String> avatarPath;
+  final Value<int> totalPoints;
+  final Value<DateTime> lastUpdate;
+  final Value<String?> parentUid;
+  final Value<int> rowid;
+  const GlobalRankingCompanion({
+    this.profileUid = const Value.absent(),
+    this.name = const Value.absent(),
+    this.avatarPath = const Value.absent(),
+    this.totalPoints = const Value.absent(),
+    this.lastUpdate = const Value.absent(),
+    this.parentUid = const Value.absent(),
+    this.rowid = const Value.absent(),
+  });
+  GlobalRankingCompanion.insert({
+    required String profileUid,
+    required String name,
+    required String avatarPath,
+    required int totalPoints,
+    required DateTime lastUpdate,
+    this.parentUid = const Value.absent(),
+    this.rowid = const Value.absent(),
+  })  : profileUid = Value(profileUid),
+        name = Value(name),
+        avatarPath = Value(avatarPath),
+        totalPoints = Value(totalPoints),
+        lastUpdate = Value(lastUpdate);
+  static Insertable<GlobalRankingData> custom({
+    Expression<String>? profileUid,
+    Expression<String>? name,
+    Expression<String>? avatarPath,
+    Expression<int>? totalPoints,
+    Expression<DateTime>? lastUpdate,
+    Expression<String>? parentUid,
+    Expression<int>? rowid,
+  }) {
+    return RawValuesInsertable({
+      if (profileUid != null) 'profile_uid': profileUid,
+      if (name != null) 'name': name,
+      if (avatarPath != null) 'avatar_path': avatarPath,
+      if (totalPoints != null) 'total_points': totalPoints,
+      if (lastUpdate != null) 'last_update': lastUpdate,
+      if (parentUid != null) 'parent_uid': parentUid,
+      if (rowid != null) 'rowid': rowid,
+    });
+  }
+
+  GlobalRankingCompanion copyWith(
+      {Value<String>? profileUid,
+      Value<String>? name,
+      Value<String>? avatarPath,
+      Value<int>? totalPoints,
+      Value<DateTime>? lastUpdate,
+      Value<String?>? parentUid,
+      Value<int>? rowid}) {
+    return GlobalRankingCompanion(
+      profileUid: profileUid ?? this.profileUid,
+      name: name ?? this.name,
+      avatarPath: avatarPath ?? this.avatarPath,
+      totalPoints: totalPoints ?? this.totalPoints,
+      lastUpdate: lastUpdate ?? this.lastUpdate,
+      parentUid: parentUid ?? this.parentUid,
+      rowid: rowid ?? this.rowid,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (profileUid.present) {
+      map['profile_uid'] = Variable<String>(profileUid.value);
+    }
+    if (name.present) {
+      map['name'] = Variable<String>(name.value);
+    }
+    if (avatarPath.present) {
+      map['avatar_path'] = Variable<String>(avatarPath.value);
+    }
+    if (totalPoints.present) {
+      map['total_points'] = Variable<int>(totalPoints.value);
+    }
+    if (lastUpdate.present) {
+      map['last_update'] = Variable<DateTime>(lastUpdate.value);
+    }
+    if (parentUid.present) {
+      map['parent_uid'] = Variable<String>(parentUid.value);
+    }
+    if (rowid.present) {
+      map['rowid'] = Variable<int>(rowid.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('GlobalRankingCompanion(')
+          ..write('profileUid: $profileUid, ')
+          ..write('name: $name, ')
+          ..write('avatarPath: $avatarPath, ')
+          ..write('totalPoints: $totalPoints, ')
+          ..write('lastUpdate: $lastUpdate, ')
+          ..write('parentUid: $parentUid, ')
+          ..write('rowid: $rowid')
+          ..write(')'))
+        .toString();
+  }
+}
+
 abstract class _$AppDatabase extends GeneratedDatabase {
   _$AppDatabase(QueryExecutor e) : super(e);
   _$AppDatabaseManager get managers => _$AppDatabaseManager(this);
@@ -1467,12 +1814,18 @@ abstract class _$AppDatabase extends GeneratedDatabase {
       $ProgressoCapitulosTable(this);
   late final $UserStatsTableTable userStatsTable = $UserStatsTableTable(this);
   late final $UserFlashcardsTable userFlashcards = $UserFlashcardsTable(this);
+  late final $GlobalRankingTable globalRanking = $GlobalRankingTable(this);
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>
       allSchemaEntities.whereType<TableInfo<Table, Object?>>();
   @override
-  List<DatabaseSchemaEntity> get allSchemaEntities =>
-      [profiles, progressoCapitulos, userStatsTable, userFlashcards];
+  List<DatabaseSchemaEntity> get allSchemaEntities => [
+        profiles,
+        progressoCapitulos,
+        userStatsTable,
+        userFlashcards,
+        globalRanking
+      ];
 }
 
 typedef $$ProfilesTableInsertCompanionBuilder = ProfilesCompanion Function({
@@ -2137,6 +2490,165 @@ class $$UserFlashcardsTableOrderingComposer
           ColumnOrderings(column, joinBuilders: joinBuilders));
 }
 
+typedef $$GlobalRankingTableInsertCompanionBuilder = GlobalRankingCompanion
+    Function({
+  required String profileUid,
+  required String name,
+  required String avatarPath,
+  required int totalPoints,
+  required DateTime lastUpdate,
+  Value<String?> parentUid,
+  Value<int> rowid,
+});
+typedef $$GlobalRankingTableUpdateCompanionBuilder = GlobalRankingCompanion
+    Function({
+  Value<String> profileUid,
+  Value<String> name,
+  Value<String> avatarPath,
+  Value<int> totalPoints,
+  Value<DateTime> lastUpdate,
+  Value<String?> parentUid,
+  Value<int> rowid,
+});
+
+class $$GlobalRankingTableTableManager extends RootTableManager<
+    _$AppDatabase,
+    $GlobalRankingTable,
+    GlobalRankingData,
+    $$GlobalRankingTableFilterComposer,
+    $$GlobalRankingTableOrderingComposer,
+    $$GlobalRankingTableProcessedTableManager,
+    $$GlobalRankingTableInsertCompanionBuilder,
+    $$GlobalRankingTableUpdateCompanionBuilder> {
+  $$GlobalRankingTableTableManager(_$AppDatabase db, $GlobalRankingTable table)
+      : super(TableManagerState(
+          db: db,
+          table: table,
+          filteringComposer:
+              $$GlobalRankingTableFilterComposer(ComposerState(db, table)),
+          orderingComposer:
+              $$GlobalRankingTableOrderingComposer(ComposerState(db, table)),
+          getChildManagerBuilder: (p) =>
+              $$GlobalRankingTableProcessedTableManager(p),
+          getUpdateCompanionBuilder: ({
+            Value<String> profileUid = const Value.absent(),
+            Value<String> name = const Value.absent(),
+            Value<String> avatarPath = const Value.absent(),
+            Value<int> totalPoints = const Value.absent(),
+            Value<DateTime> lastUpdate = const Value.absent(),
+            Value<String?> parentUid = const Value.absent(),
+            Value<int> rowid = const Value.absent(),
+          }) =>
+              GlobalRankingCompanion(
+            profileUid: profileUid,
+            name: name,
+            avatarPath: avatarPath,
+            totalPoints: totalPoints,
+            lastUpdate: lastUpdate,
+            parentUid: parentUid,
+            rowid: rowid,
+          ),
+          getInsertCompanionBuilder: ({
+            required String profileUid,
+            required String name,
+            required String avatarPath,
+            required int totalPoints,
+            required DateTime lastUpdate,
+            Value<String?> parentUid = const Value.absent(),
+            Value<int> rowid = const Value.absent(),
+          }) =>
+              GlobalRankingCompanion.insert(
+            profileUid: profileUid,
+            name: name,
+            avatarPath: avatarPath,
+            totalPoints: totalPoints,
+            lastUpdate: lastUpdate,
+            parentUid: parentUid,
+            rowid: rowid,
+          ),
+        ));
+}
+
+class $$GlobalRankingTableProcessedTableManager extends ProcessedTableManager<
+    _$AppDatabase,
+    $GlobalRankingTable,
+    GlobalRankingData,
+    $$GlobalRankingTableFilterComposer,
+    $$GlobalRankingTableOrderingComposer,
+    $$GlobalRankingTableProcessedTableManager,
+    $$GlobalRankingTableInsertCompanionBuilder,
+    $$GlobalRankingTableUpdateCompanionBuilder> {
+  $$GlobalRankingTableProcessedTableManager(super.$state);
+}
+
+class $$GlobalRankingTableFilterComposer
+    extends FilterComposer<_$AppDatabase, $GlobalRankingTable> {
+  $$GlobalRankingTableFilterComposer(super.$state);
+  ColumnFilters<String> get profileUid => $state.composableBuilder(
+      column: $state.table.profileUid,
+      builder: (column, joinBuilders) =>
+          ColumnFilters(column, joinBuilders: joinBuilders));
+
+  ColumnFilters<String> get name => $state.composableBuilder(
+      column: $state.table.name,
+      builder: (column, joinBuilders) =>
+          ColumnFilters(column, joinBuilders: joinBuilders));
+
+  ColumnFilters<String> get avatarPath => $state.composableBuilder(
+      column: $state.table.avatarPath,
+      builder: (column, joinBuilders) =>
+          ColumnFilters(column, joinBuilders: joinBuilders));
+
+  ColumnFilters<int> get totalPoints => $state.composableBuilder(
+      column: $state.table.totalPoints,
+      builder: (column, joinBuilders) =>
+          ColumnFilters(column, joinBuilders: joinBuilders));
+
+  ColumnFilters<DateTime> get lastUpdate => $state.composableBuilder(
+      column: $state.table.lastUpdate,
+      builder: (column, joinBuilders) =>
+          ColumnFilters(column, joinBuilders: joinBuilders));
+
+  ColumnFilters<String> get parentUid => $state.composableBuilder(
+      column: $state.table.parentUid,
+      builder: (column, joinBuilders) =>
+          ColumnFilters(column, joinBuilders: joinBuilders));
+}
+
+class $$GlobalRankingTableOrderingComposer
+    extends OrderingComposer<_$AppDatabase, $GlobalRankingTable> {
+  $$GlobalRankingTableOrderingComposer(super.$state);
+  ColumnOrderings<String> get profileUid => $state.composableBuilder(
+      column: $state.table.profileUid,
+      builder: (column, joinBuilders) =>
+          ColumnOrderings(column, joinBuilders: joinBuilders));
+
+  ColumnOrderings<String> get name => $state.composableBuilder(
+      column: $state.table.name,
+      builder: (column, joinBuilders) =>
+          ColumnOrderings(column, joinBuilders: joinBuilders));
+
+  ColumnOrderings<String> get avatarPath => $state.composableBuilder(
+      column: $state.table.avatarPath,
+      builder: (column, joinBuilders) =>
+          ColumnOrderings(column, joinBuilders: joinBuilders));
+
+  ColumnOrderings<int> get totalPoints => $state.composableBuilder(
+      column: $state.table.totalPoints,
+      builder: (column, joinBuilders) =>
+          ColumnOrderings(column, joinBuilders: joinBuilders));
+
+  ColumnOrderings<DateTime> get lastUpdate => $state.composableBuilder(
+      column: $state.table.lastUpdate,
+      builder: (column, joinBuilders) =>
+          ColumnOrderings(column, joinBuilders: joinBuilders));
+
+  ColumnOrderings<String> get parentUid => $state.composableBuilder(
+      column: $state.table.parentUid,
+      builder: (column, joinBuilders) =>
+          ColumnOrderings(column, joinBuilders: joinBuilders));
+}
+
 class _$AppDatabaseManager {
   final _$AppDatabase _db;
   _$AppDatabaseManager(this._db);
@@ -2148,4 +2660,6 @@ class _$AppDatabaseManager {
       $$UserStatsTableTableTableManager(_db, _db.userStatsTable);
   $$UserFlashcardsTableTableManager get userFlashcards =>
       $$UserFlashcardsTableTableManager(_db, _db.userFlashcards);
+  $$GlobalRankingTableTableManager get globalRanking =>
+      $$GlobalRankingTableTableManager(_db, _db.globalRanking);
 }
