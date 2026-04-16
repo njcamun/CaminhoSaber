@@ -58,7 +58,7 @@ class RankingScreen extends StatelessWidget {
 
               Expanded(
                 child: StreamBuilder<List<Map<String, dynamic>>>(
-                  stream: rankingService.getGlobalTop10Stream(),
+                  stream: rankingService.getGlobalTop50Stream(),
                   builder: (context, snapshot) {
                     if (snapshot.connectionState == ConnectionState.waiting) {
                       return const Center(child: CircularProgressIndicator(color: Colors.white));
@@ -250,13 +250,13 @@ class RankingScreen extends StatelessWidget {
                       ),
                       const SizedBox(width: 4),
                       Icon(
-                        Icons.star,
-                        color: isMe ? Colors.blue.shade900 : Colors.amber.shade700,
+                        Icons.bolt_rounded,
+                        color: isMe ? Colors.blue.shade900 : Colors.orange.shade700,
                         size: 18,
                       ),
                     ],
                   ),
-                  Text('ESTRELAS', style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold, color: Colors.blueGrey.withOpacity(0.6))),
+                  Text('XP TOTAL', style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold, color: Colors.blueGrey.withOpacity(0.6))),
                 ],
               ),
             ),

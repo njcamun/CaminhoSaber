@@ -30,14 +30,15 @@ class RankingService {
     }
   }
 
-  // Stream para os 10 melhores alunos de toda a aplicação
-  Stream<List<Map<String, dynamic>>> getGlobalTop10Stream() {
+  // Stream para os 50 melhores exploradores (aumentado para visibilidade)
+  Stream<List<Map<String, dynamic>>> getGlobalTop50Stream() {
     return _firestore
         .collection('ranking_global')
         .orderBy('totalPoints', descending: true)
-        .limit(10)
+        .limit(50)
         .snapshots()
         .map((snapshot) {
+      debugPrint('Ranking: ${snapshot.docs.length} perfis carregados.');
       return snapshot.docs.map((doc) => doc.data()).toList();
     });
   }

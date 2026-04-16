@@ -465,7 +465,8 @@ class ProgressoService with ChangeNotifier {
           'parentUid': user.uid,
           'name': activeProfile.nome,
           'avatarPath': activeProfile.avatarAssetPath,
-          'totalPoints': totalStarsTotal,
+          'totalPoints': _totalXP, // Usar XP bruto para ranking mais preciso
+          'stars': totalStarsTotal,
           'lastUpdate': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));
 
@@ -505,7 +506,8 @@ class ProgressoService with ChangeNotifier {
         'parentUid': user.uid,
         'name': activeProfile.nome,
         'avatarPath': activeProfile.avatarAssetPath,
-        'totalPoints': totalStarsTotal,
+        'totalPoints': _totalXP, // Usar XP bruto para ranking mais preciso
+        'stars': totalStarsTotal,
         'lastUpdate': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
 

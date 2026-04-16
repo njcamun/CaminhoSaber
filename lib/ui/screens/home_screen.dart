@@ -43,6 +43,14 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     WidgetsBinding.instance.addObserver(this);
     _disciplinasFuture = _loadDisciplinas();
     context.read<DictionaryService>().loadDictionary();
+    
+    // GARANTIR SINCRONIZAÇÃO NO ARRANQUE
+    // Isso garante que o perfil aparece no ranking global logo que a app abre
+    Future.delayed(const Duration(seconds: 2), () {
+      if (mounted) {
+        context.read<ProgressoService>().syncWithCloud();
+      }
+    });
   }
 
   @override
