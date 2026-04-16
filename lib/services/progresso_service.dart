@@ -458,6 +458,17 @@ class ProgressoService with ChangeNotifier {
           'isMainProfile': activeProfile.isMainProfile,
         }, SetOptions(merge: true));
 
+        // ATUALIZAÇÃO CRÍTICA WEB: Sincroniza o ranking global
+        final rankingRef = _firestore.collection('ranking_global').doc(activeProfile.uid);
+        batch.set(rankingRef, {
+          'profileUid': activeProfile.uid,
+          'parentUid': user.uid,
+          'name': activeProfile.nome,
+          'avatarPath': activeProfile.avatarAssetPath,
+          'totalPoints': totalStarsTotal,
+          'lastUpdate': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true));
+
         // Adiciona Timeout de 5 segundos no Web para evitar "congelamento" (UI Thread Blocked)
         await batch.commit().timeout(const Duration(seconds: 5));
         return;
@@ -486,9 +497,19 @@ class ProgressoService with ChangeNotifier {
         'lastSync': FieldValue.serverTimestamp(),
         'avatarAssetPath': activeProfile.avatarAssetPath
       }, SetOptions(merge: true));
-      await batch.commit().timeout(const Duration(seconds: 5));
       
-      await _rankingService.updateProfileRanking(activeProfile, totalStarsTotal);
+      // ATUALIZAÇÃO CRÍTICA: Sincroniza o ranking global imediatamente
+      final rankingRef = _firestore.collection('ranking_global').doc(activeProfile.uid);
+      batch.set(rankingRef, {
+        'profileUid': activeProfile.uid,
+        'parentUid': user.uid,
+        'name': activeProfile.nome,
+        'avatarPath': activeProfile.avatarAssetPath,
+        'totalPoints': totalStarsTotal,
+        'lastUpdate': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+
+      await batch.commit().timeout(const Duration(seconds: 5));
     } catch (e) {
       debugPrint('SyncCloud Erro: $e');
     }
