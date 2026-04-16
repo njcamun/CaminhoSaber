@@ -32,12 +32,11 @@ class RankingService {
   }
 
   // Stream para os 100 melhores exploradores de TODOS os utilizadores
-  // Inclui ordenação secundária por nome para perfis com pontuação zero
+  // Removida a ordenação por nome para evitar a necessidade de índices compostos manuais
   Stream<List<Map<String, dynamic>>> getGlobalTop50Stream() {
     return _firestore
         .collection('ranking_global')
         .orderBy('totalPoints', descending: true)
-        .orderBy('name', descending: false)
         .limit(100)
         .snapshots()
         .map((snapshot) {
