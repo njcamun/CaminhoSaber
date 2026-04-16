@@ -211,7 +211,7 @@ class _NiveisScreenState extends State<NiveisScreen> {
                         child: Text(
                           '${index + 1}',
                           style: TextStyle(
-                            fontSize: size.width * 0.1 > 40 ? 40 : size.width * 0.1,
+                            fontSize: size.width * 0.12 > 48 ? 48 : size.width * 0.12,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           ),
@@ -219,21 +219,22 @@ class _NiveisScreenState extends State<NiveisScreen> {
                       ),
                       const SizedBox(height: 5),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 4),
+                        padding: const EdgeInsets.symmetric(horizontal: 6),
                         child: Text(
                           capitulo.capitulo,
                           textAlign: TextAlign.center,
-                          style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.white),
+                          style: const TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.white),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                         ),
                       ),
+                      const SizedBox(height: 4),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: List.generate(5, (starIndex) => Icon(
                           starIndex < estrelas ? Icons.star : Icons.star_border,
                           color: Colors.amber,
-                          size: size.width * 0.035 > 14 ? 14 : size.width * 0.035,
+                          size: size.width * 0.04 > 18 ? 18 : size.width * 0.04,
                         )),
                       ),
                     ],
@@ -244,29 +245,29 @@ class _NiveisScreenState extends State<NiveisScreen> {
                   children: [
                     // Nível no canto superior para evitar confusão com o cadeado central
                     Positioned(
-                      top: 8,
-                      left: 10,
+                      top: 10,
+                      left: 12,
                       child: Text(
                         '${index + 1}',
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 20,
                           fontWeight: FontWeight.w900,
                           color: Colors.black.withValues(alpha: 0.15),
                         ),
                       ),
                     ),
                     const Center(
-                      child: Icon(Icons.lock_rounded, color: Colors.black26, size: 42),
+                      child: Icon(Icons.lock_rounded, color: Colors.black26, size: 48),
                     ),
                     Align(
                       alignment: Alignment.bottomCenter,
                       child: Padding(
-                        padding: const EdgeInsets.only(bottom: 8, left: 4, right: 4),
+                        padding: const EdgeInsets.only(bottom: 10, left: 6, right: 6),
                         child: Text(
                           capitulo.capitulo,
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            fontSize: 9,
+                            fontSize: 12,
                             fontWeight: FontWeight.bold,
                             color: Colors.black.withValues(alpha: 0.2),
                           ),
