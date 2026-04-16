@@ -21,75 +21,55 @@ import 'package:caminho_do_saber/database/database.dart';
 final GlobalKey<ScaffoldMessengerState> globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
 
 void main() async {
-  try {
-    WidgetsFlutterBinding.ensureInitialized();
-    
-    // Inicialização do Firebase com tratamento de erro para Web/GitHub
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    ).timeout(const Duration(seconds: 10), onTimeout: () {
-      debugPrint('Firebase initialization timed out');
-      return Firebase.app(); // Tenta retornar a app padrão se já existir
-    });
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
-    // Capturador Global de Erros
-    FlutterError.onError = (FlutterErrorDetails details) {
-      FlutterError.presentError(details);
-      _showErrorOverlay(details.exceptionAsString());
-    };
+  // Capturador Global de Erros para facilitar o debug em Web
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.presentError(details);
+    _showErrorOverlay(details.exceptionAsString());
+  };
 
-    // Garantir apenas orientação vertical
-    await SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-    ]);
+  // Garantir apenas orientação vertical
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
 
-    final driftDb = AppDatabase();
-    final audioService = AudioService();
-    // Não bloqueamos o arranque da app se o áudio falhar (comum no Web)
-    audioService.init().catchError((e) => debugPrint('Erro Audio: $e'));
+  final driftDb = AppDatabase();
+  final audioService = AudioService();
+  await audioService.init();
 
-    runApp(
-      MultiProvider(
-        providers: [
-          Provider(create: (_) => AuthService()),
-          Provider.value(value: driftDb),
-          Provider.value(value: audioService),
-          ChangeNotifierProvider(create: (_) => ThemeProvider()),
-          ChangeNotifierProvider(create: (_) => ProfileProvider(driftDb)),
-          Provider(create: (_) => DisciplinaService()),
-          Provider(create: (_) => RankingService()),
-          ChangeNotifierProvider(create: (_) => DictionaryService()),
-          ChangeNotifierProvider(create: (_) => PomodoroProvider()),
-          ChangeNotifierProxyProvider<ProfileProvider, ProgressoService>(
-            create: (context) => ProgressoService(driftDb, context.read<ProfileProvider>()),
-            update: (context, profile, previous) {
-              final service = previous ?? ProgressoService(driftDb, profile);
-              service.updateProvider(profile);
-              profile.setProgressoService(service);
-              return service;
-            },
-          ),
-          ChangeNotifierProxyProvider<ProfileProvider, FlashcardService>(
-            create: (context) => FlashcardService(driftDb, context.read<ProfileProvider>()),
-            update: (context, profile, previous) {
-              final service = previous ?? FlashcardService(driftDb, profile);
-              service.updateProvider(profile);
-              return service;
-            },
-          ),
-        ],
-        child: const MyApp(),
-      ),
-    );
-  } catch (e) {
-    debugPrint('ERRO FATAL NO MAIN: $e');
-    // Se falhar tudo, tenta mostrar uma tela de erro básica em vez de ficar branca
-    runApp(MaterialApp(home: Scaffold(body: Center(child: Padding(
-      padding: const EdgeInsets.all(24.0),
-      child: Text('Erro ao carregar a aplicação: $e\n\nPor favor, recarregue a página.', textAlign: TextAlign.center),
-    )))));
-  }
+  runApp(
+    MultiProvider(
+      providers: [
+        Provider(create: (_) => AuthService()),
+        Provider.value(value: driftDb),
+        Provider.value(value: audioService),
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
+        ChangeNotifierProvider(create: (_) => ProfileProvider(driftDb)),
+        Provider(create: (_) => DisciplinaService()),
+        Provider(create: (_) => RankingService()),
+        ChangeNotifierProvider(create: (_) => DictionaryService()),
+        ChangeNotifierProvider(create: (_) => PomodoroProvider()),
+        ChangeNotifierProxyProvider<ProfileProvider, ProgressoService>(
+          create: (context) => ProgressoService(driftDb, context.read<ProfileProvider>()),
+          update: (context, profile, previous) {
+            final service = previous!..updateProvider(profile);
+            profile.setProgressoService(service); // Vincula o serviço ao provider de perfil
+            return service;
+          },
+        ),
+        ChangeNotifierProxyProvider<ProfileProvider, FlashcardService>(
+          create: (context) => FlashcardService(driftDb, context.read<ProfileProvider>()),
+          update: (context, profile, previous) => previous!..updateProvider(profile),
+        ),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -128,16 +108,14 @@ class MyApp extends StatelessWidget {
 }
 
 void _showErrorOverlay(String error) {
-  WidgetsBinding.instance.addPostFrameCallback((_) {
-    if (globalMessengerKey.currentState != null) {
-      globalMessengerKey.currentState!.showSnackBar(
-        SnackBar(
-          content: Text('ERRO CAPTURADO:\n$error', style: const TextStyle(fontSize: 12)),
-          backgroundColor: Colors.red.shade900,
-          duration: const Duration(seconds: 10),
-          action: SnackBarAction(label: 'OK', textColor: Colors.white, onPressed: () {}),
-        ),
-      );
-    }
-  });
+  if (globalMessengerKey.currentState != null) {
+    globalMessengerKey.currentState!.showSnackBar(
+      SnackBar(
+        content: Text('ERRO CAPTURADO:\n$error', style: const TextStyle(fontSize: 12)),
+        backgroundColor: Colors.red.shade900,
+        duration: const Duration(seconds: 10),
+        action: SnackBarAction(label: 'OK', textColor: Colors.white, onPressed: () {}),
+      ),
+    );
+  }
 }

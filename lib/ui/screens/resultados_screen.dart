@@ -67,7 +67,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
   }
 
   void _playSound(String fileName) {
-    AudioService().playSfx(fileName);
+    context.read<AudioService>().playSfx(fileName);
   }
 
   void _iniciarAnimacao() async {

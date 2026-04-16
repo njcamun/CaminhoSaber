@@ -14,37 +14,27 @@ class AudioService {
   double _volume = 1.0;
 
   Future<void> init() async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      _audioEnabled = prefs.getBool('audioEnabled') ?? true;
-      _volume = prefs.getDouble('volumeGeral') ?? 1.0;
+    final prefs = await SharedPreferences.getInstance();
+    _audioEnabled = prefs.getBool('audioEnabled') ?? true;
+    _volume = prefs.getDouble('volumeGeral') ?? 1.0;
 
-      // Pre-initialize players for common sounds to reduce delay on Web
-      if (kIsWeb) {
-        // Não usamos await aqui para não bloquear a inicialização se o browser barrar o áudio
-        _preloadSfx('correct.mp3');
-        _preloadSfx('incorrect.mp3');
-        _preloadSfx('hint.mp3');
-        _preloadSfx('jogo.mp3');
-      }
-    } catch (e) {
-      debugPrint('Erro ao inicializar AudioService: $e');
+    // Pre-initialize players for common sounds to reduce delay on Web
+    if (kIsWeb) {
+      await _preloadSfx('acerto.mp3');
+      await _preloadSfx('erro.mp3');
+      await _preloadSfx('hint.mp3');
+      await _preloadSfx('jogo.mp3');
     }
   }
 
   Future<void> _preloadSfx(String fileName) async {
-    try {
-      final player = AudioPlayer();
-      await player.setSource(AssetSource('sounds/$fileName'));
-      await player.setVolume(0); // Começa mudo para "aquecer"
-      // No Web, o play() pode falhar sem interação do utilizador, por isso ignoramos erros aqui
-      await player.play(AssetSource('sounds/$fileName')).catchError((e) => debugPrint('Preload play ignored: $e'));
-      await player.stop();
-      await player.setVolume(_volume);
-      _sfxPlayers[fileName] = player;
-    } catch (e) {
-      debugPrint('Erro ao fazer preload de $fileName: $e');
-    }
+    final player = AudioPlayer();
+    await player.setSource(AssetSource('sounds/$fileName'));
+    await player.setVolume(0); // Start muted to "warm up"
+    await player.play(AssetSource('sounds/$fileName'));
+    await player.stop();
+    await player.setVolume(_volume);
+    _sfxPlayers[fileName] = player;
   }
 
   Future<void> playSfx(String fileName) async {

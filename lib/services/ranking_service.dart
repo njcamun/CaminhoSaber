@@ -1,6 +1,5 @@
 // lib/services/ranking_service.dart
 
-import 'package:flutter/foundation.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:caminho_do_saber/services/auth_service.dart';
 import 'package:caminho_do_saber/database/database.dart';
@@ -31,6 +30,39 @@ class RankingService {
     }
   }
 
+  // Adiciona um perfil de teste para verificar se o ranking está a funcionar
+  Future<void> addTestRankingData() async {
+    try {
+      final testProfiles = [
+        {
+          'profileUid': 'tester_mestre_1',
+          'parentUid': 'system',
+          'name': 'Mestre do Saber (Bot)',
+          'avatarPath': 'assets/avatars/avatar1.png',
+          'totalPoints': 5000,
+          'stars': 20,
+          'lastUpdate': FieldValue.serverTimestamp(),
+        },
+        {
+          'profileUid': 'tester_explorador_2',
+          'parentUid': 'system',
+          'name': 'Explorador Curioso (Bot)',
+          'avatarPath': 'assets/avatars/avatar2.png',
+          'totalPoints': 1250,
+          'stars': 5,
+          'lastUpdate': FieldValue.serverTimestamp(),
+        }
+      ];
+
+      for (var data in testProfiles) {
+        await _firestore.collection('ranking_global').doc(data['profileUid'] as String).set(data, SetOptions(merge: true));
+      }
+      print('Dados de teste adicionados ao ranking com sucesso!');
+    } catch (e) {
+      print('Erro ao adicionar dados de teste: $e');
+    }
+  }
+
   // Stream para os 100 melhores exploradores de TODOS os utilizadores
   // Removida a ordenação por nome para evitar a necessidade de índices compostos manuais
   Stream<List<Map<String, dynamic>>> getGlobalTop50Stream() {
@@ -40,7 +72,6 @@ class RankingService {
         .limit(100)
         .snapshots()
         .map((snapshot) {
-      debugPrint('Ranking Global: ${snapshot.docs.length} perfis carregados de toda a base.');
       return snapshot.docs.map((doc) => doc.data()).toList();
     });
   }

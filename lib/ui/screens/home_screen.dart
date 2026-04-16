@@ -24,6 +24,7 @@ import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/xp_progress_bar.dart';
 import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/streak_fire.dart';
+import 'package:caminho_do_saber/ui/widgets/punch_counter.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_crt_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/animated_stat_icon.dart';
 import 'package:lottie/lottie.dart';
@@ -44,10 +45,11 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     _disciplinasFuture = _loadDisciplinas();
     context.read<DictionaryService>().loadDictionary();
     
-    // GARANTIR SINCRONIZAÇÃO NO ARRANQUE
-    // Isso garante que o perfil aparece no ranking global logo que a app abre
-    Future.delayed(const Duration(seconds: 2), () {
+    // Adicionar dados de teste ao ranking após o arranque para verificação
+    Future.delayed(const Duration(seconds: 3), () {
       if (mounted) {
+        final rankingService = context.read<RankingService>();
+        rankingService.addTestRankingData();
         context.read<ProgressoService>().syncWithCloud();
       }
     });
@@ -334,245 +336,247 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     final size = MediaQuery.of(context).size;
     final isTablet = size.width > 600;
 
-    return BackgroundContainer(
-      child: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // 1. CARD DE UTILIZADOR
-            Consumer2<ProfileProvider, ProgressoService>(
-              builder: (context, profileProvider, progressoService, child) {
-                if (profileProvider.isLoading || profileProvider.activeProfile == null) return const Center(child: CircularProgressIndicator());
-                final activeProfile = profileProvider.activeProfile!;
-                return Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
-                  child: NeumorphicWrapper(
-                    baseColor: Colors.white.withValues(alpha: 0.95),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              CircleAvatar(
-                                radius: size.width * 0.08 > 40 ? 40 : size.width * 0.08,
-                                backgroundColor: Colors.blue.shade100,
-                                child: ClipOval(child: SafeAssetImage(path: activeProfile.avatarAssetPath, fit: BoxFit.cover)),
-                              ),
-                              const SizedBox(width: 16),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Icon(_getGreetingIcon(), size: 16, color: Colors.orangeAccent),
-                                        const SizedBox(width: 4),
-                                        Text('${_getAdaptiveGreeting()},', style: const TextStyle(fontSize: 14, color: Colors.blueGrey)),
-                                      ],
-                                    ),
-                                    Text('${activeProfile.nome}!', style: TextStyle(fontSize: size.width * 0.055 > 24 ? 24 : size.width * 0.055, fontWeight: FontWeight.bold, color: Colors.blueAccent)),
-                                  ],
-                                ),
-                              ),
-                              // Streak Fire (Dinâmico)
-                              InkWell(
-                                onTap: () => _showStatInfoDialog(
-                                  title: 'Ofensiva Diária',
-                                  description: 'Representa a tua consistência no estudo. Mostra quantos dias seguidos tens mantido o teu foco!',
-                                  howToGain: 'Estuda todos os dias! Se completares 6 dias seguidos, recebes um super bónus de 500 XP!',
-                                  lottieAsset: 'assets/animations/fire.json',
-                                  color: Colors.orange,
-                                ),
-                                borderRadius: BorderRadius.circular(25),
-                                child: StreakFire(days: progressoService.currentStreak, isActive: progressoService.currentStreak > 0),
-                              ),
-                              const SizedBox(width: 8),
-                              // Diamantes Animados
-                              InkWell(
-                                onTap: () => _showStatInfoDialog(
-                                  title: 'Diamantes Azuis',
-                                  description: 'Uma moeda rara e valiosa conquistada pelos estudantes mais dedicados.',
-                                  howToGain: 'Ganha 1 diamante a cada 50 estrelas que conquistares! Usa-os para desbloquear desafios especiais.',
-                                  lottieAsset: 'assets/animations/Diamond.json',
-                                  color: Colors.cyan,
-                                ),
-                                borderRadius: BorderRadius.circular(25),
-                                child: AnimatedStatIcon(
-                                  lottieAsset: 'assets/animations/Diamond.json',
-                                  value: progressoService.totalDiamantes,
-                                  fallbackColor: Colors.cyan,
-                                  fallbackIcon: Icons.diamond_rounded,
-                                  size: 45,
-                                ),
-                              ),
-                              const SizedBox(width: 8),
-                              // Estrelas Animadas
-                              InkWell(
-                                onTap: () => _showStatInfoDialog(
-                                  title: 'Estrelas de Sabedoria',
-                                  description: 'Representam o teu progresso total e o brilho do teu conhecimento acumulado.',
-                                  howToGain: 'Completa lições e acerta nos Quizzes! Cada 250 XP que ganhas transforma-se numa nova Estrela.',
-                                  lottieAsset: 'assets/animations/desafio.json',
-                                  color: Colors.orangeAccent,
-                                ),
-                                borderRadius: BorderRadius.circular(25),
-                                child: AnimatedStatIcon(
-                                  lottieAsset: 'assets/animations/desafio.json', 
-                                  value: progressoService.totalStarsDisplay,
-                                  fallbackColor: Colors.orangeAccent,
-                                  fallbackIcon: Icons.stars,
-                                  size: 45,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 12),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'Nível: ${progressoService.getLevelName(progressoService.totalStarsTotal)}',
-                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange.shade900, fontSize: 14),
-                              ),
-                              Text(
-                                '${progressoService.totalStarsTotal} / ${progressoService.getNextLevelXP(progressoService.totalStarsTotal).toInt()} Estrelas',
-                                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.blueGrey.shade700),
-                              ),
-                            ],
-                          ),
-                          XPProgressBar(
-                            currentXP: progressoService.totalStarsTotal.toDouble(),
-                            nextLevelXP: progressoService.getNextLevelXP(progressoService.totalStarsTotal),
-                            color: Colors.orangeAccent,
-                          ),
-                          const SizedBox(height: 12),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'Progresso para Estrela',
-                                style: TextStyle(fontSize: 11, fontWeight: FontWeight.w500, color: Colors.blueGrey.shade400),
-                              ),
-                              Text(
-                                '${progressoService.totalXP % 250} / 250 XP',
-                                style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.orange.shade700),
-                              ),
-                            ],
-                          ),
-                          XPProgressBar(
-                            currentXP: (progressoService.totalXP % 250).toDouble(),
-                            nextLevelXP: 250,
-                            color: Colors.blueAccent,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                );
-              },
-            ),
-
-            // 2. BOTÕES DE NAVEGAÇÃO
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                _buildNavCard(context, 'Conquistas', Icons.emoji_events_rounded, Colors.amber.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ConquistasScreen()))),
-                _buildNavCard(context, 'Estude', Icons.auto_stories_rounded, Colors.blue.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => EstudeScreen(disciplinas: disciplinas)))),
-                _buildNavCard(context, 'Cartões', Icons.style_rounded, Colors.purple.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const MeusFlashcardsScreen()))),
-                _buildNavCard(context, 'Ajustes', Icons.settings_suggest_rounded, Colors.grey.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const DefinicoesScreen()))),
-              ]),
-            ),
-
-            // 2.1 DESAFIOS RÁPIDOS
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: Consumer<ProgressoService>(
-                builder: (context, progressoService, child) {
-                  return Row(
-                    children: [
-                      Expanded(
-                        child: _buildModeActionCard(
-                          context,
-                          'Desafio Diário',
-                          Icons.auto_awesome_rounded,
-                          Colors.orange.shade800,
-                          () => _handleDailyChallengeClick(context, progressoService.totalPontos)
-                        ),
-                      ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: _buildModeActionCard(
-                          context,
-                          'Modo Arcade',
-                          Icons.videogame_asset_rounded,
-                          Colors.purple.shade700,
-                          () => _showArcadeArenaPicker(context, disciplinas)
-                        ),
-                      ),
-                    ],
-                  );
-                }
-              ),
-            ),
-
-            // 3. CARD DO DICIONÁRIO
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
-              child: Consumer<DictionaryService>(
-                builder: (context, dictionaryService, child) {
-                  final word = dictionaryService.wordOfTheDay;
-                  if (word == null && !dictionaryService.isLoading) return const SizedBox.shrink();
-                  return _buildDictionaryCard(context, word, dictionaryService.isLoading);
-                },
-              ),
-            ),
-
-            // 4. LISTA DE DISCIPLINAS
-            Consumer<ProgressoService>(
-              builder: (context, progressoService, child) {
-                return Column(
-                  children: groupedDisciplinas.entries.map((entry) {
-                    return Padding(
-                      padding: const EdgeInsets.only(bottom: 24.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                            child: Row(
+    return Scaffold(
+      body: BackgroundContainer(
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // 1. CARD DE UTILIZADOR
+              Consumer2<ProfileProvider, ProgressoService>(
+                builder: (context, profileProvider, progressoService, child) {
+                  if (profileProvider.isLoading || profileProvider.activeProfile == null) return const Center(child: CircularProgressIndicator());
+                  final activeProfile = profileProvider.activeProfile!;
+                  return Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+                    child: NeumorphicWrapper(
+                      baseColor: Colors.white.withValues(alpha: 0.95),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Column(
+                          children: [
+                            Row(
                               children: [
-                                Text(
-                                  entry.key,
-                                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, letterSpacing: 1.1, color: theme.colorScheme.onSurface),
+                                CircleAvatar(
+                                  radius: size.width * 0.08 > 40 ? 40 : size.width * 0.08,
+                                  backgroundColor: Colors.blue.shade100,
+                                  child: ClipOval(child: SafeAssetImage(path: activeProfile.avatarAssetPath, fit: BoxFit.cover)),
                                 ),
-                                const SizedBox(width: 10),
-                                Expanded(child: Divider(color: theme.colorScheme.onSurface.withValues(alpha: 0.3), thickness: 1.5)),
+                                const SizedBox(width: 16),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Icon(_getGreetingIcon(), size: 16, color: Colors.orangeAccent),
+                                          const SizedBox(width: 4),
+                                          Text('${_getAdaptiveGreeting()},', style: const TextStyle(fontSize: 14, color: Colors.blueGrey)),
+                                        ],
+                                      ),
+                                      Text('${activeProfile.nome}!', style: TextStyle(fontSize: size.width * 0.055 > 24 ? 24 : size.width * 0.055, fontWeight: FontWeight.bold, color: Colors.blueAccent)),
+                                    ],
+                                  ),
+                                ),
+                                // Streak Fire (Dinâmico)
+                                InkWell(
+                                  onTap: () => _showStatInfoDialog(
+                                    title: 'Ofensiva Diária',
+                                    description: 'Representa a tua consistência no estudo. Mostra quantos dias seguidos tens mantido o teu foco!',
+                                    howToGain: 'Estuda todos os dias! Se completares 6 dias seguidos, recebes um super bónus de 500 XP!',
+                                    lottieAsset: 'assets/animations/fire.json',
+                                    color: Colors.orange,
+                                  ),
+                                  borderRadius: BorderRadius.circular(25),
+                                  child: StreakFire(days: progressoService.currentStreak, isActive: progressoService.currentStreak > 0),
+                                ),
+                                const SizedBox(width: 8),
+                                // Diamantes Animados
+                                InkWell(
+                                  onTap: () => _showStatInfoDialog(
+                                    title: 'Diamantes Azuis',
+                                    description: 'Uma moeda rara e valiosa conquistada pelos estudantes mais dedicados.',
+                                    howToGain: 'Ganha 1 diamante a cada 50 estrelas que conquistares! Usa-os para desbloquear desafios especiais.',
+                                    lottieAsset: 'assets/animations/Diamond.json',
+                                    color: Colors.cyan,
+                                  ),
+                                  borderRadius: BorderRadius.circular(25),
+                                  child: AnimatedStatIcon(
+                                    lottieAsset: 'assets/animations/Diamond.json',
+                                    value: progressoService.totalDiamantes,
+                                    fallbackColor: Colors.cyan,
+                                    fallbackIcon: Icons.diamond_rounded,
+                                    size: 45,
+                                  ),
+                                ),
+                                const SizedBox(width: 8),
+                                // Estrelas Animadas
+                                InkWell(
+                                  onTap: () => _showStatInfoDialog(
+                                    title: 'Estrelas de Sabedoria',
+                                    description: 'Representam o teu progresso total e o brilho do teu conhecimento acumulado.',
+                                    howToGain: 'Completa lições e acerta nos Quizzes! Cada 250 XP que ganhas transforma-se numa nova Estrela.',
+                                    lottieAsset: 'assets/animations/desafio.json',
+                                    color: Colors.orangeAccent,
+                                  ),
+                                  borderRadius: BorderRadius.circular(25),
+                                  child: AnimatedStatIcon(
+                                    lottieAsset: 'assets/animations/desafio.json', // Usando desafio.json como representação de estrela/troféu
+                                    value: progressoService.totalStarsDisplay,
+                                    fallbackColor: Colors.orangeAccent,
+                                    fallbackIcon: Icons.stars,
+                                    size: 45,
+                                  ),
+                                ),
                               ],
                             ),
+                            const SizedBox(height: 12),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Nível: ${progressoService.getLevelName(progressoService.totalStarsTotal)}',
+                                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange.shade900, fontSize: 14),
+                                ),
+                                Text(
+                                  '${progressoService.totalStarsTotal} / ${progressoService.getNextLevelXP(progressoService.totalStarsTotal).toInt()} Estrelas',
+                                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.blueGrey.shade700),
+                                ),
+                              ],
+                            ),
+                            XPProgressBar(
+                              currentXP: progressoService.totalStarsTotal.toDouble(),
+                              nextLevelXP: progressoService.getNextLevelXP(progressoService.totalStarsTotal),
+                              color: Colors.orangeAccent,
+                            ),
+                            const SizedBox(height: 12),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Progresso para Estrela',
+                                  style: TextStyle(fontSize: 11, fontWeight: FontWeight.w500, color: Colors.blueGrey.shade400),
+                                ),
+                                Text(
+                                  '${progressoService.totalXP % 250} / 250 XP',
+                                  style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.orange.shade700),
+                                ),
+                              ],
+                            ),
+                            XPProgressBar(
+                              currentXP: (progressoService.totalXP % 250).toDouble(),
+                              nextLevelXP: 250,
+                              color: Colors.blueAccent,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+
+              // 2. BOTÕES DE NAVEGAÇÃO
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 8, 16, 8),
+                child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+                  _buildNavCard(context, 'Conquistas', Icons.emoji_events_rounded, Colors.amber.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ConquistasScreen()))),
+                  _buildNavCard(context, 'Estude', Icons.auto_stories_rounded, Colors.blue.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => EstudeScreen(disciplinas: disciplinas)))),
+                  _buildNavCard(context, 'Cartões', Icons.style_rounded, Colors.purple.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const MeusFlashcardsScreen()))),
+                  _buildNavCard(context, 'Ajustes', Icons.settings_suggest_rounded, Colors.grey.shade800, () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const DefinicoesScreen()))),
+                ]),
+              ),
+
+              // 2.1 DESAFIOS RÁPIDOS
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Consumer<ProgressoService>(
+                  builder: (context, progressoService, child) {
+                    return Row(
+                      children: [
+                        Expanded(
+                          child: _buildModeActionCard(
+                            context,
+                            'Desafio Diário',
+                            Icons.auto_awesome_rounded,
+                            Colors.orange.shade800,
+                            () => _handleDailyChallengeClick(context, progressoService.totalPontos)
                           ),
-                          const SizedBox(height: 12),
-                          SizedBox(
-                            height: isTablet ? 300 : 260,
-                            child: ListView.builder(
-                              padding: const EdgeInsets.only(left: 16),
-                              scrollDirection: Axis.horizontal,
-                              itemCount: entry.value.length,
-                              itemBuilder: (context, index) => Padding(
-                                padding: const EdgeInsets.only(right: 16.0),
-                                child: _buildDisciplinaCard(entry.value[index], disciplinas, progressoService),
+                        ),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: _buildModeActionCard(
+                            context,
+                            'Modo Arcade',
+                            Icons.videogame_asset_rounded,
+                            Colors.purple.shade700,
+                            () => _showArcadeArenaPicker(context, disciplinas)
+                          ),
+                        ),
+                      ],
+                    );
+                  }
+                ),
+              ),
+
+              // 3. CARD DO DICIONÁRIO
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
+                child: Consumer<DictionaryService>(
+                  builder: (context, dictionaryService, child) {
+                    final word = dictionaryService.wordOfTheDay;
+                    if (word == null && !dictionaryService.isLoading) return const SizedBox.shrink();
+                    return _buildDictionaryCard(context, word, dictionaryService.isLoading);
+                  },
+                ),
+              ),
+
+              // 4. LISTA DE DISCIPLINAS
+              Consumer<ProgressoService>(
+                builder: (context, progressoService, child) {
+                  return Column(
+                    children: groupedDisciplinas.entries.map((entry) {
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 24.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                              child: Row(
+                                children: [
+                                  Text(
+                                    entry.key,
+                                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, letterSpacing: 1.1, color: theme.colorScheme.onSurface),
+                                  ),
+                                  const SizedBox(width: 10),
+                                  Expanded(child: Divider(color: theme.colorScheme.onSurface.withValues(alpha: 0.3), thickness: 1.5)),
+                                ],
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                    );
-                  }).toList(),
-                );
-              },
-            ),
-            const SizedBox(height: 50),
-          ],
+                            const SizedBox(height: 12),
+                            SizedBox(
+                              height: isTablet ? 300 : 260,
+                              child: ListView.builder(
+                                padding: const EdgeInsets.only(left: 16),
+                                scrollDirection: Axis.horizontal,
+                                itemCount: entry.value.length,
+                                itemBuilder: (context, index) => Padding(
+                                  padding: const EdgeInsets.only(right: 16.0),
+                                  child: _buildDisciplinaCard(entry.value[index], disciplinas, progressoService),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    }).toList(),
+                  );
+                },
+              ),
+              const SizedBox(height: 50),
+            ],
+          ),
         ),
       ),
     );

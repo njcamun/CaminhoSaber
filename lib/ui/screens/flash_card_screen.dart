@@ -56,7 +56,7 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
   }
 
   void _playSound(String fileName) {
-    AudioService().playSfx(fileName);
+    context.read<AudioService>().playSfx(fileName);
   }
 
   void _virarCard() {
