@@ -4797,6 +4797,1734 @@
 "dica": "A resposta deve unir espelho, coração e mudança."
 }
 ]
+},
+{
+"id": "13-basico",
+"capitulo": "Capítulo 13 - A Lei e a Consciência",
+"nivel": "basico",
+"dicas": [
+"A consciência é como uma voz dentro de você.",
+"Ela ajuda a saber o certo e o errado.",
+"Pode ficar fraca se não for ouvida."
+],
+"perguntas": [
+{
+"pergunta": "O que é a consciência?",
+"opcoes": ["Uma voz interna", "Um brinquedo", "Um livro", "Uma comida"],
+"respostaCorreta": "Uma voz interna",
+"dica": "Pense em algo que fala dentro de você."
+},
+{
+"pergunta": "A consciência ajuda a saber o quê?",
+"opcoes": ["O certo e o errado", "A cor das roupas", "O clima", "O nome dos animais"],
+"respostaCorreta": "O certo e o errado",
+"dica": "Ela ajuda a escolher bem."
+},
+{
+"pergunta": "Uma consciência sensível faz o quê?",
+"opcoes": ["Avisa quando erramos", "Faz dormir", "Faz rir", "Conta histórias"],
+"respostaCorreta": "Avisa quando erramos",
+"dica": "Ela alerta você."
+},
+{
+"pergunta": "O que é uma consciência cauterizada?",
+"opcoes": ["Não sente mais o erro", "Muito feliz", "Muito forte", "Muito rápida"],
+"respostaCorreta": "Não sente mais o erro",
+"dica": "Ela deixa de perceber o errado."
+},
+{
+"pergunta": "Devemos ouvir a consciência?",
+"opcoes": ["Sim", "Não", "Às vezes nunca", "Só de manhã"],
+"respostaCorreta": "Sim",
+"dica": "Ela ajuda você."
+},
+{
+"pergunta": "A consciência ajuda em nossas ações?",
+"opcoes": ["Sim", "Não", "Nunca", "Só brincando"],
+"respostaCorreta": "Sim",
+"dica": "Ela guia suas atitudes."
+},
+{
+"pergunta": "Ignorar a consciência é bom?",
+"opcoes": ["Não", "Sim", "Sempre", "Depende"],
+"respostaCorreta": "Não",
+"dica": "Ignorar o certo não é bom."
+},
+{
+"pergunta": "A consciência é importante para?",
+"opcoes": ["Fazer o bem", "Correr rápido", "Comer mais", "Dormir mais"],
+"respostaCorreta": "Fazer o bem",
+"dica": "Ela ajuda nas boas escolhas."
+},
+{
+"pergunta": "A consciência pode ficar fraca?",
+"opcoes": ["Sim", "Não", "Nunca", "Só à noite"],
+"respostaCorreta": "Sim",
+"dica": "Se não ouvir, ela enfraquece."
+},
+{
+"pergunta": "Devemos pedir desculpa quando erramos?",
+"opcoes": ["Sim", "Não", "Nunca", "Só brincando"],
+"respostaCorreta": "Sim",
+"dica": "A consciência mostra o erro."
+}
+]
+},
+{
+"id": "13-medio",
+"capitulo": "Capítulo 13 - A Lei e a Consciência",
+"nivel": "medio",
+"dicas": [
+"A consciência aplica a Lei aos atos.",
+"Ela pode ser sensível ou cauterizada.",
+"Forma-se com prática e verdade."
+],
+"perguntas": [
+{
+"pergunta": "Qual é a função da consciência?",
+"opcoes": ["Aplicar a Lei às ações", "Criar regras novas", "Ignorar erros", "Contar histórias"],
+"respostaCorreta": "Aplicar a Lei às ações",
+"dica": "Ela usa princípios para julgar atos."
+},
+{
+"pergunta": "Uma consciência sensível reage como?",
+"opcoes": ["Alerta rapidamente", "Ignora tudo", "Fica confusa", "Não reage"],
+"respostaCorreta": "Alerta rapidamente",
+"dica": "Ela percebe pequenos erros."
+},
+{
+"pergunta": "O que causa uma consciência cauterizada?",
+"opcoes": ["Hábito de errar", "Estudo", "Descanso", "Alegria"],
+"respostaCorreta": "Hábito de errar",
+"dica": "Repetir o erro enfraquece."
+},
+{
+"pergunta": "A consciência pode ser educada?",
+"opcoes": ["Sim", "Não", "Nunca", "Só às vezes"],
+"respostaCorreta": "Sim",
+"dica": "Ela melhora com aprendizado."
+},
+{
+"pergunta": "O que acontece ao ignorar a consciência?",
+"opcoes": ["Ela enfraquece", "Ela cresce", "Ela desaparece rápido", "Nada acontece"],
+"respostaCorreta": "Ela enfraquece",
+"dica": "Ignorar torna-a menos ativa."
+},
+{
+"pergunta": "A consciência ajuda em decisões?",
+"opcoes": ["Sim", "Não", "Nunca", "Só à noite"],
+"respostaCorreta": "Sim",
+"dica": "Ela guia escolhas."
+},
+{
+"pergunta": "Qual tipo de consciência é ideal?",
+"opcoes": ["Sensível", "Cauterizada", "Confusa", "Vazia"],
+"respostaCorreta": "Sensível",
+"dica": "Ela percebe o certo."
+},
+{
+"pergunta": "A consciência está ligada a quê?",
+"opcoes": ["Moral", "Esporte", "Comida", "Brincadeira"],
+"respostaCorreta": "Moral",
+"dica": "Relaciona-se ao certo e errado."
+},
+{
+"pergunta": "Como fortalecer a consciência?",
+"opcoes": ["Praticando o bem", "Ignorando erros", "Dormindo", "Comendo"],
+"respostaCorreta": "Praticando o bem",
+"dica": "A prática ajuda."
+},
+{
+"pergunta": "A consciência acusa quando?",
+"opcoes": ["Quando erramos", "Quando acertamos", "Sempre", "Nunca"],
+"respostaCorreta": "Quando erramos",
+"dica": "Ela aponta falhas."
+}
+]
+},
+{
+"id": "13-avancado",
+"capitulo": "Capítulo 13 - A Lei e a Consciência",
+"nivel": "avancado",
+"dicas": [
+"A consciência aplica princípios universais.",
+"Pode ser deformada pelo hábito.",
+"Tem relação com responsabilidade moral."
+],
+"perguntas": [
+{
+"pergunta": "Por que a consciência é chamada de tribunal interno?",
+"opcoes": ["Julga ações internas", "Cria leis novas", "Ignora erros", "Controla emoções"],
+"respostaCorreta": "Julga ações internas",
+"dica": "Ela avalia suas atitudes."
+},
+{
+"pergunta": "Qual o efeito do hábito do erro na consciência?",
+"opcoes": ["Torna-a insensível", "Fortalece-a", "Melhora-a", "Neutraliza-a totalmente"],
+"respostaCorreta": "Torna-a insensível",
+"dica": "Repetição reduz sensibilidade."
+},
+{
+"pergunta": "Como a consciência se relaciona com a Lei?",
+"opcoes": ["Aplica a Lei aos casos", "Substitui a Lei", "Ignora a Lei", "Cria outra Lei"],
+"respostaCorreta": "Aplica a Lei aos casos",
+"dica": "Ela usa princípios para julgar."
+},
+{
+"pergunta": "Qual o risco de ignorar constantemente a consciência?",
+"opcoes": ["Perda de senso moral", "Mais alegria", "Mais conhecimento", "Mais liberdade"],
+"respostaCorreta": "Perda de senso moral",
+"dica": "Ignorar enfraquece o julgamento."
+},
+{
+"pergunta": "Uma consciência bem formada depende de quê?",
+"opcoes": ["Verdade e prática", "Sorte", "Força física", "Tempo livre"],
+"respostaCorreta": "Verdade e prática",
+"dica": "Precisa de base correta."
+},
+{
+"pergunta": "Qual a consequência de uma consciência cauterizada na sociedade?",
+"opcoes": ["Mais injustiça", "Mais paz", "Mais ordem", "Mais igualdade"],
+"respostaCorreta": "Mais injustiça",
+"dica": "Sem sensibilidade, há erro."
+},
+{
+"pergunta": "Por que a consciência é essencial para a responsabilidade moral?",
+"opcoes": ["Permite julgar ações", "Evita pensar", "Cria emoções", "Dá força física"],
+"respostaCorreta": "Permite julgar ações",
+"dica": "Sem julgamento não há responsabilidade."
+},
+{
+"pergunta": "Como a consciência pode ser restaurada?",
+"opcoes": ["Arrependimento e verdade", "Ignorando erros", "Descanso", "Silêncio total"],
+"respostaCorreta": "Arrependimento e verdade",
+"dica": "Reconhecer erros ajuda."
+},
+{
+"pergunta": "Qual a relação entre consciência e caráter?",
+"opcoes": ["Forma o caráter", "Destrói o caráter", "Não influencia", "Evita decisões"],
+"respostaCorreta": "Forma o caráter",
+"dica": "Ela molda hábitos."
+},
+{
+"pergunta": "O que acontece quando a consciência é bem orientada?",
+"opcoes": ["Decisões justas", "Erros constantes", "Confusão moral", "Indiferença"],
+"respostaCorreta": "Decisões justas",
+"dica": "Ela guia corretamente."
+}
+]
+},
+{
+"id": "14-basico",
+"capitulo": "Capítulo 14 - A Função da Lei",
+"nivel": "basico",
+"dicas": [
+"A Lei mostra o certo e o errado.",
+"Ela ajuda a viver melhor.",
+"Funciona como um guia."
+],
+"perguntas": [
+{
+"pergunta": "O que a Lei mostra?",
+"opcoes": ["O certo e o errado", "As cores", "Os animais", "Os jogos"],
+"respostaCorreta": "O certo e o errado",
+"dica": "Ela ensina o caminho certo."
+},
+{
+"pergunta": "A Lei ajuda a fazer o quê?",
+"opcoes": ["Viver bem", "Correr rápido", "Dormir mais", "Brincar"],
+"respostaCorreta": "Viver bem",
+"dica": "Ela guia a vida."
+},
+{
+"pergunta": "A Lei é como um quê?",
+"opcoes": ["Guia", "Brinquedo", "Comida", "Roupa"],
+"respostaCorreta": "Guia",
+"dica": "Ela orienta você."
+},
+{
+"pergunta": "A Lei ajuda a evitar o quê?",
+"opcoes": ["O mal", "A comida", "O sono", "O jogo"],
+"respostaCorreta": "O mal",
+"dica": "Ela protege do erro."
+},
+{
+"pergunta": "Devemos seguir a Lei?",
+"opcoes": ["Sim", "Não", "Nunca", "Às vezes nunca"],
+"respostaCorreta": "Sim",
+"dica": "Ela ajuda você."
+},
+{
+"pergunta": "A Lei ajuda na convivência?",
+"opcoes": ["Sim", "Não", "Nunca", "Só em casa"],
+"respostaCorreta": "Sim",
+"dica": "Ela organiza a vida em grupo."
+},
+{
+"pergunta": "A Lei mostra quando erramos?",
+"opcoes": ["Sim", "Não", "Nunca", "Só à noite"],
+"respostaCorreta": "Sim",
+"dica": "Ela revela erros."
+},
+{
+"pergunta": "A Lei ajuda a ser melhor?",
+"opcoes": ["Sim", "Não", "Nunca", "Só brincando"],
+"respostaCorreta": "Sim",
+"dica": "Ela ensina o bem."
+},
+{
+"pergunta": "A Lei protege as pessoas?",
+"opcoes": ["Sim", "Não", "Nunca", "Só crianças"],
+"respostaCorreta": "Sim",
+"dica": "Ela mantém ordem."
+},
+{
+"pergunta": "A Lei ensina o quê?",
+"opcoes": ["Como agir bem", "Como correr", "Como cantar", "Como dormir"],
+"respostaCorreta": "Como agir bem",
+"dica": "Ela ensina atitudes corretas."
+}
+]
+},
+{
+"id": "14-medio",
+"capitulo": "Capítulo 14 - A Função da Lei",
+"nivel": "medio",
+"dicas": [
+"A Lei revela o erro.",
+"Conduz ao arrependimento.",
+"Ajuda na vida em sociedade."
+],
+"perguntas": [
+{
+"pergunta": "Uma função da Lei é revelar o quê?",
+"opcoes": ["O erro", "O clima", "A cor", "O tempo"],
+"respostaCorreta": "O erro",
+"dica": "Ela mostra falhas."
+},
+{
+"pergunta": "A Lei conduz ao quê?",
+"opcoes": ["Arrependimento", "Sono", "Diversão", "Corrida"],
+"respostaCorreta": "Arrependimento",
+"dica": "Ela faz reconhecer erros."
+},
+{
+"pergunta": "A Lei ajuda a refrear o quê?",
+"opcoes": ["O mal", "A comida", "O estudo", "O descanso"],
+"respostaCorreta": "O mal",
+"dica": "Ela limita erros."
+},
+{
+"pergunta": "Por que a Lei é importante na sociedade?",
+"opcoes": ["Cria ordem", "Cria bagunça", "Evita estudo", "Evita trabalho"],
+"respostaCorreta": "Cria ordem",
+"dica": "Ela organiza convivência."
+},
+{
+"pergunta": "Sem a Lei, haveria o quê?",
+"opcoes": ["Confusão", "Ordem perfeita", "Alegria total", "Silêncio"],
+"respostaCorreta": "Confusão",
+"dica": "Sem regras há desordem."
+},
+{
+"pergunta": "A Lei ajuda a melhorar o quê?",
+"opcoes": ["Comportamento", "Velocidade", "Força", "Altura"],
+"respostaCorreta": "Comportamento",
+"dica": "Ela molda ações."
+},
+{
+"pergunta": "A Lei mostra limites?",
+"opcoes": ["Sim", "Não", "Nunca", "Só às vezes"],
+"respostaCorreta": "Sim",
+"dica": "Ela define o certo."
+},
+{
+"pergunta": "A Lei protege o quê?",
+"opcoes": ["A convivência", "A comida", "O clima", "O jogo"],
+"respostaCorreta": "A convivência",
+"dica": "Ela ajuda relações."
+},
+{
+"pergunta": "A Lei ajuda a crescer em quê?",
+"opcoes": ["Caráter", "Força", "Altura", "Velocidade"],
+"respostaCorreta": "Caráter",
+"dica": "Ela forma quem somos."
+},
+{
+"pergunta": "A Lei é vista como proteção ou limite?",
+"opcoes": ["Proteção", "Só limite ruim", "Nada", "Brincadeira"],
+"respostaCorreta": "Proteção",
+"dica": "Ela ajuda a viver bem."
+}
+]
+},
+{
+"id": "14-avancado",
+"capitulo": "Capítulo 14 - A Função da Lei",
+"nivel": "avancado",
+"dicas": [
+"A Lei tem função pedagógica.",
+"Revela o pecado.",
+"Orienta a sociedade."
+],
+"perguntas": [
+{
+"pergunta": "Qual é a função pedagógica da Lei?",
+"opcoes": ["Ensinar o certo", "Criar emoções", "Controlar clima", "Gerar força"],
+"respostaCorreta": "Ensinar o certo",
+"dica": "Ela educa moralmente."
+},
+{
+"pergunta": "Como a Lei revela o pecado?",
+"opcoes": ["Mostrando o erro", "Escondendo falhas", "Ignorando atos", "Mudando regras"],
+"respostaCorreta": "Mostrando o erro",
+"dica": "Ela expõe falhas."
+},
+{
+"pergunta": "Qual efeito da Lei na sociedade?",
+"opcoes": ["Ordem moral", "Caos total", "Indiferença", "Confusão leve"],
+"respostaCorreta": "Ordem moral",
+"dica": "Ela mantém justiça."
+},
+{
+"pergunta": "Por que a Lei conduz ao arrependimento?",
+"opcoes": ["Mostra falhas", "Cria orgulho", "Evita reflexão", "Ignora erros"],
+"respostaCorreta": "Mostra falhas",
+"dica": "Ver o erro leva à mudança."
+},
+{
+"pergunta": "Qual o papel da Lei no controle do mal?",
+"opcoes": ["Refrear ações", "Incentivar erros", "Ignorar atitudes", "Criar dúvidas"],
+"respostaCorreta": "Refrear ações",
+"dica": "Ela limita o mal."
+},
+{
+"pergunta": "Sem a Lei, o que ocorre com a justiça?",
+"opcoes": ["Desaparece", "Aumenta", "Permanece igual", "Melhora"],
+"respostaCorreta": "Desaparece",
+"dica": "Sem regra não há justiça."
+},
+{
+"pergunta": "A Lei atua como quê no desenvolvimento humano?",
+"opcoes": ["Guia moral", "Entretenimento", "Descanso", "Recompensa"],
+"respostaCorreta": "Guia moral",
+"dica": "Ela orienta escolhas."
+},
+{
+"pergunta": "Qual a relação entre Lei e liberdade?",
+"opcoes": ["Protege a liberdade", "Destrói liberdade", "Ignora liberdade", "Evita escolhas"],
+"respostaCorreta": "Protege a liberdade",
+"dica": "Limites corretos trazem liberdade."
+},
+{
+"pergunta": "A Lei ajuda a formar o quê?",
+"opcoes": ["Caráter", "Força física", "Velocidade", "Altura"],
+"respostaCorreta": "Caráter",
+"dica": "Ela molda quem somos."
+},
+{
+"pergunta": "Por que a Lei é essencial para convivência?",
+"opcoes": ["Garante justiça", "Evita relações", "Cria isolamento", "Elimina regras"],
+"respostaCorreta": "Garante justiça",
+"dica": "Ela mantém equilíbrio social."
+}
+]
+},
+{
+"id": "15-basico",
+"capitulo": "Capítulo 15 - A Lei Cumprida",
+"nivel": "basico",
+"dicas": [
+"Jesus cumpriu a Lei.",
+"Ele fez tudo certo.",
+"É um exemplo."
+],
+"perguntas": [
+{
+"pergunta": "Quem cumpriu a Lei perfeitamente?",
+"opcoes": ["Jesus", "Moisés", "Um rei", "Um amigo"],
+"respostaCorreta": "Jesus",
+"dica": "Ele é o exemplo perfeito."
+},
+{
+"pergunta": "Jesus errou alguma vez?",
+"opcoes": ["Não", "Sim", "Às vezes", "Muitas vezes"],
+"respostaCorreta": "Não",
+"dica": "Ele foi perfeito."
+},
+{
+"pergunta": "Jesus veio anular a Lei?",
+"opcoes": ["Não", "Sim", "Às vezes", "Não sabemos"],
+"respostaCorreta": "Não",
+"dica": "Ele deu sentido à Lei."
+},
+{
+"pergunta": "Jesus é exemplo de quê?",
+"opcoes": ["Vida correta", "Erro", "Confusão", "Medo"],
+"respostaCorreta": "Vida correta",
+"dica": "Ele mostrou o caminho."
+},
+{
+"pergunta": "Devemos seguir o exemplo de Jesus?",
+"opcoes": ["Sim", "Não", "Nunca", "Só às vezes"],
+"respostaCorreta": "Sim",
+"dica": "Ele ensina o bem."
+},
+{
+"pergunta": "Jesus mostrou como viver?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ele é modelo."
+},
+{
+"pergunta": "Jesus cumpriu a Lei com amor?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ele agiu com bondade."
+},
+{
+"pergunta": "Devemos aprender com Jesus?",
+"opcoes": ["Sim", "Não", "Nunca", "Só crianças"],
+"respostaCorreta": "Sim",
+"dica": "Ele ensina o certo."
+},
+{
+"pergunta": "Jesus mostrou o quê na prática?",
+"opcoes": ["Os mandamentos", "Jogos", "Histórias", "Brincadeiras"],
+"respostaCorreta": "Os mandamentos",
+"dica": "Ele viveu a Lei."
+},
+{
+"pergunta": "Jesus é o padrão de quê?",
+"opcoes": ["Perfeição", "Erro", "Confusão", "Fraqueza"],
+"respostaCorreta": "Perfeição",
+"dica": "Ele fez tudo certo."
+}
+]
+},
+{
+"id": "15-medio",
+"capitulo": "Capítulo 15 - A Lei Cumprida",
+"nivel": "medio",
+"dicas": [
+"Jesus cumpriu a Lei.",
+"Ele deu significado completo.",
+"É modelo prático."
+],
+"perguntas": [
+{
+"pergunta": "O que significa dizer que Jesus cumpriu a Lei?",
+"opcoes": ["Obedeceu perfeitamente", "Ignorou regras", "Mudou leis", "Criou novas leis"],
+"respostaCorreta": "Obedeceu perfeitamente",
+"dica": "Ele nunca falhou."
+},
+{
+"pergunta": "Jesus veio para anular a Lei?",
+"opcoes": ["Não", "Sim", "Às vezes", "Não sabemos"],
+"respostaCorreta": "Não",
+"dica": "Ele completou seu sentido."
+},
+{
+"pergunta": "Jesus mostra a Lei como?",
+"opcoes": ["Na prática", "Na teoria apenas", "Sem sentido", "Com erros"],
+"respostaCorreta": "Na prática",
+"dica": "Ele viveu os mandamentos."
+},
+{
+"pergunta": "Qual o papel de Jesus em relação à Lei?",
+"opcoes": ["Exemplo perfeito", "Crítico da Lei", "Destruidor da Lei", "Ignorador da Lei"],
+"respostaCorreta": "Exemplo perfeito",
+"dica": "Ele mostrou como viver."
+},
+{
+"pergunta": "Onde falhamos, Jesus fez o quê?",
+"opcoes": ["Obedeceu", "Errou", "Ignorou", "Mudou"],
+"respostaCorreta": "Obedeceu",
+"dica": "Ele acertou onde falhamos."
+},
+{
+"pergunta": "Jesus mostrou amor ao cumprir a Lei?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ele agiu com amor."
+},
+{
+"pergunta": "A vida de Jesus ensina o quê?",
+"opcoes": ["Como viver corretamente", "Como evitar regras", "Como fugir", "Como ignorar"],
+"respostaCorreta": "Como viver corretamente",
+"dica": "Ele é modelo."
+},
+{
+"pergunta": "Jesus representa o quê em relação à Lei?",
+"opcoes": ["Cumprimento", "Erro", "Falha", "Dúvida"],
+"respostaCorreta": "Cumprimento",
+"dica": "Ele realizou a Lei."
+},
+{
+"pergunta": "Devemos olhar para Jesus para?",
+"opcoes": ["Aprender", "Ignorar", "Criticar", "Esquecer"],
+"respostaCorreta": "Aprender",
+"dica": "Ele é exemplo."
+},
+{
+"pergunta": "Jesus mostrou a Lei em quê?",
+"opcoes": ["Ações", "Palavras apenas", "Ideias vagas", "Silêncio"],
+"respostaCorreta": "Ações",
+"dica": "Ele viveu na prática."
+}
+]
+},
+{
+"id": "15-avancado",
+"capitulo": "Capítulo 15 - A Lei Cumprida",
+"nivel": "avancado",
+"dicas": [
+"Cristo cumpre a Lei.",
+"Ele revela seu significado pleno.",
+"É padrão moral perfeito."
+],
+"perguntas": [
+{
+"pergunta": "O que significa Cristo cumprir a Lei plenamente?",
+"opcoes": ["Obediência total", "Mudança parcial", "Rejeição da Lei", "Ignorar regras"],
+"respostaCorreta": "Obediência total",
+"dica": "Ele não falhou em nada."
+},
+{
+"pergunta": "Qual a diferença entre anular e cumprir a Lei?",
+"opcoes": ["Cumprir dá sentido completo", "São iguais", "Anular melhora", "Cumprir ignora"],
+"respostaCorreta": "Cumprir dá sentido completo",
+"dica": "Cumprir completa, não elimina."
+},
+{
+"pergunta": "Como Cristo revela a essência da Lei?",
+"opcoes": ["Vivendo-a", "Ignorando-a", "Mudando-a", "Simplificando-a"],
+"respostaCorreta": "Vivendo-a",
+"dica": "Ele mostrou na prática."
+},
+{
+"pergunta": "Por que Cristo é o padrão moral?",
+"opcoes": ["Perfeição absoluta", "Força física", "Conhecimento humano", "Popularidade"],
+"respostaCorreta": "Perfeição absoluta",
+"dica": "Ele é exemplo perfeito."
+},
+{
+"pergunta": "Qual o impacto do cumprimento da Lei por Cristo?",
+"opcoes": ["Mostra o ideal humano", "Remove regras", "Cria confusão", "Elimina moral"],
+"respostaCorreta": "Mostra o ideal humano",
+"dica": "Ele mostra como devemos ser."
+},
+{
+"pergunta": "Cristo falhou em algum mandamento?",
+"opcoes": ["Não", "Sim", "Pouco", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "Ele foi perfeito."
+},
+{
+"pergunta": "Por que olhar para Cristo ajuda na moral?",
+"opcoes": ["Ele é exemplo vivo", "Ele ignora regras", "Ele cria dúvidas", "Ele evita decisões"],
+"respostaCorreta": "Ele é exemplo vivo",
+"dica": "Ele mostra como agir."
+},
+{
+"pergunta": "Cristo transforma a visão da Lei como?",
+"opcoes": ["Plena e viva", "Fraca", "Inútil", "Confusa"],
+"respostaCorreta": "Plena e viva",
+"dica": "Ele dá significado completo."
+},
+{
+"pergunta": "Qual a relação entre Cristo e os mandamentos?",
+"opcoes": ["Ele os cumpre perfeitamente", "Ele os ignora", "Ele os muda", "Ele os esquece"],
+"respostaCorreta": "Ele os cumpre perfeitamente",
+"dica": "Ele viveu todos."
+},
+{
+"pergunta": "O cumprimento da Lei por Cristo aponta para quê?",
+"opcoes": ["Modelo de vida", "Fim da moral", "Confusão", "Desordem"],
+"respostaCorreta": "Modelo de vida",
+"dica": "Ele mostra o caminho ideal."
+}
+]
+},
+{
+"id": "16-basico",
+"capitulo": "Capítulo 16 - Obediência por Amor",
+"nivel": "basico",
+"dicas": [
+"Obedecer pode vir do amor.",
+"Amor é melhor que medo.",
+"Fazer o bem com alegria."
+],
+"perguntas": [
+{
+"pergunta": "Devemos obedecer por amor ou medo?",
+"opcoes": ["Amor", "Medo", "Raiva", "Tristeza"],
+"respostaCorreta": "Amor",
+"dica": "O melhor motivo é positivo."
+},
+{
+"pergunta": "O amor gera o quê?",
+"opcoes": ["Alegria", "Medo", "Raiva", "Confusão"],
+"respostaCorreta": "Alegria",
+"dica": "Amor traz coisas boas."
+},
+{
+"pergunta": "Obedecer com medo é bom?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "Medo não é o melhor motivo."
+},
+{
+"pergunta": "Obedecer com amor faz sentir o quê?",
+"opcoes": ["Bem", "Mal", "Raiva", "Medo"],
+"respostaCorreta": "Bem",
+"dica": "Amor traz paz."
+},
+{
+"pergunta": "O amor leva a fazer o quê?",
+"opcoes": ["O bem", "O mal", "Nada", "Confusão"],
+"respostaCorreta": "O bem",
+"dica": "Amor inspira boas ações."
+},
+{
+"pergunta": "Devemos fazer o bem escondido?",
+"opcoes": ["Sim", "Não", "Nunca", "Só às vezes"],
+"respostaCorreta": "Sim",
+"dica": "Fazer o bem sem mostrar é bom."
+},
+{
+"pergunta": "Amar ajuda a obedecer?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Amor motiva ações."
+},
+{
+"pergunta": "Obedecer por amor traz liberdade?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Amor não prende."
+},
+{
+"pergunta": "Amor é melhor que medo?",
+"opcoes": ["Sim", "Não", "Igual", "Depende"],
+"respostaCorreta": "Sim",
+"dica": "Um é positivo, outro negativo."
+},
+{
+"pergunta": "Devemos fazer o certo por quê?",
+"opcoes": ["Amor", "Medo", "Pressão", "Obrigação"],
+"respostaCorreta": "Amor",
+"dica": "O melhor motivo é amar."
+}
+]
+},
+{
+"id": "16-medio",
+"capitulo": "Capítulo 16 - Obediência por Amor",
+"nivel": "medio",
+"dicas": [
+"Amor motiva ações corretas.",
+"Medo gera atitudes falsas.",
+"Obediência verdadeira vem do coração."
+],
+"perguntas": [
+{
+"pergunta": "Qual é a melhor motivação para obedecer?",
+"opcoes": ["Amor", "Medo", "Obrigação", "Pressão"],
+"respostaCorreta": "Amor",
+"dica": "É uma motivação interna."
+},
+{
+"pergunta": "O medo gera que tipo de comportamento?",
+"opcoes": ["Hipocrisia", "Sinceridade", "Alegria", "Liberdade"],
+"respostaCorreta": "Hipocrisia",
+"dica": "Ação sem verdade."
+},
+{
+"pergunta": "O amor gera o quê na obediência?",
+"opcoes": ["Gratidão", "Medo", "Raiva", "Dúvida"],
+"respostaCorreta": "Gratidão",
+"dica": "É uma resposta positiva."
+},
+{
+"pergunta": "Obedecer por amor vem de onde?",
+"opcoes": ["Coração", "Força", "Pressão externa", "Medo"],
+"respostaCorreta": "Coração",
+"dica": "É algo interno."
+},
+{
+"pergunta": "O medo leva à liberdade?",
+"opcoes": ["Não", "Sim", "Às vezes", "Sempre"],
+"respostaCorreta": "Não",
+"dica": "Ele prende."
+},
+{
+"pergunta": "O amor leva à liberdade?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ele liberta."
+},
+{
+"pergunta": "A obediência verdadeira é aquela que vem de?",
+"opcoes": ["Amor", "Medo", "Obrigação", "Rotina"],
+"respostaCorreta": "Amor",
+"dica": "Ela é sincera."
+},
+{
+"pergunta": "Fazer o bem sem esperar recompensa é sinal de?",
+"opcoes": ["Amor", "Interesse", "Medo", "Dúvida"],
+"respostaCorreta": "Amor",
+"dica": "É algo genuíno."
+},
+{
+"pergunta": "Qual sentimento aproxima mais da obediência correta?",
+"opcoes": ["Amor", "Raiva", "Medo", "Orgulho"],
+"respostaCorreta": "Amor",
+"dica": "É positivo."
+},
+{
+"pergunta": "A obediência por amor gera o quê na pessoa?",
+"opcoes": ["Paz", "Confusão", "Medo", "Insegurança"],
+"respostaCorreta": "Paz",
+"dica": "Traz tranquilidade."
+}
+]
+},
+{
+"id": "16-avancado",
+"capitulo": "Capítulo 16 - Obediência por Amor",
+"nivel": "avancado",
+"dicas": [
+"Amor transforma a motivação moral.",
+"Medo gera escravidão.",
+"Obediência autêntica é interna."
+],
+"perguntas": [
+{
+"pergunta": "Por que a obediência por medo é considerada inferior?",
+"opcoes": ["Gera escravidão", "Gera liberdade", "Gera amor", "Gera sabedoria"],
+"respostaCorreta": "Gera escravidão",
+"dica": "Não liberta a pessoa."
+},
+{
+"pergunta": "Qual a principal característica da obediência por amor?",
+"opcoes": ["Liberdade", "Medo", "Pressão", "Obrigação"],
+"respostaCorreta": "Liberdade",
+"dica": "É espontânea."
+},
+{
+"pergunta": "Como o amor transforma a obediência?",
+"opcoes": ["Torna-a voluntária", "Torna-a forçada", "Elimina regras", "Cria confusão"],
+"respostaCorreta": "Torna-a voluntária",
+"dica": "Não é imposta."
+},
+{
+"pergunta": "Qual o problema da obediência baseada apenas em regras externas?",
+"opcoes": ["Falta sinceridade", "Excesso de amor", "Muita liberdade", "Clareza moral"],
+"respostaCorreta": "Falta sinceridade",
+"dica": "Não vem do interior."
+},
+{
+"pergunta": "Por que o amor gera verdadeira moralidade?",
+"opcoes": ["Vem do interior", "Depende de medo", "Evita escolhas", "Ignora valores"],
+"respostaCorreta": "Vem do interior",
+"dica": "É interno."
+},
+{
+"pergunta": "Qual o efeito do amor na relação com a Lei?",
+"opcoes": ["Cumprimento sincero", "Rejeição", "Indiferença", "Confusão"],
+"respostaCorreta": "Cumprimento sincero",
+"dica": "Motiva a obedecer."
+},
+{
+"pergunta": "Por que a obediência por amor gera gratidão?",
+"opcoes": ["Reconhece o bem recebido", "Evita emoções", "Cria medo", "Ignora valores"],
+"respostaCorreta": "Reconhece o bem recebido",
+"dica": "É resposta ao amor."
+},
+{
+"pergunta": "Qual a consequência da obediência por amor na sociedade?",
+"opcoes": ["Relações saudáveis", "Mais conflitos", "Desordem", "Isolamento"],
+"respostaCorreta": "Relações saudáveis",
+"dica": "Melhora convivência."
+},
+{
+"pergunta": "Como diferenciar obediência por amor e por medo?",
+"opcoes": ["Motivação interna vs externa", "São iguais", "Não há diferença", "Depende da situação"],
+"respostaCorreta": "Motivação interna vs externa",
+"dica": "Uma vem de dentro."
+},
+{
+"pergunta": "Por que o amor é considerado a base da obediência correta?",
+"opcoes": ["Gera autenticidade", "Cria medo", "Impõe regras", "Evita decisões"],
+"respostaCorreta": "Gera autenticidade",
+"dica": "É verdadeiro."
+}
+]
+},
+{
+"id": "17-basico",
+"capitulo": "Capítulo 17 - Exame do Coração",
+"nivel": "basico",
+"dicas": [
+"Examinar é olhar para dentro.",
+"Pensar nas ações do dia.",
+"Aprender com erros."
+],
+"perguntas": [
+{
+"pergunta": "O que é examinar o coração?",
+"opcoes": ["Pensar nas ações", "Comer bem", "Dormir", "Correr"],
+"respostaCorreta": "Pensar nas ações",
+"dica": "É refletir sobre o dia."
+},
+{
+"pergunta": "Devemos pensar sobre o que fizemos?",
+"opcoes": ["Sim", "Não", "Nunca", "Só às vezes"],
+"respostaCorreta": "Sim",
+"dica": "Ajuda a melhorar."
+},
+{
+"pergunta": "O exame ajuda a fazer o quê?",
+"opcoes": ["Melhorar", "Piorar", "Dormir", "Correr"],
+"respostaCorreta": "Melhorar",
+"dica": "Ajuda a crescer."
+},
+{
+"pergunta": "Devemos reconhecer erros?",
+"opcoes": ["Sim", "Não", "Nunca", "Só brincando"],
+"respostaCorreta": "Sim",
+"dica": "É importante aprender."
+},
+{
+"pergunta": "O exame do coração acontece quando?",
+"opcoes": ["No dia a dia", "Nunca", "Só no jogo", "Só na escola"],
+"respostaCorreta": "No dia a dia",
+"dica": "É algo frequente."
+},
+{
+"pergunta": "Pensar sobre ações ajuda em quê?",
+"opcoes": ["Ser melhor", "Correr mais", "Dormir mais", "Comer mais"],
+"respostaCorreta": "Ser melhor",
+"dica": "Ajuda no comportamento."
+},
+{
+"pergunta": "Devemos mudar quando erramos?",
+"opcoes": ["Sim", "Não", "Nunca", "Só às vezes"],
+"respostaCorreta": "Sim",
+"dica": "Errar e aprender."
+},
+{
+"pergunta": "O exame do coração ajuda a evitar o quê?",
+"opcoes": ["Erros", "Comida", "Sono", "Brincadeiras"],
+"respostaCorreta": "Erros",
+"dica": "Ajuda a corrigir."
+},
+{
+"pergunta": "Devemos pensar no fim do dia?",
+"opcoes": ["Sim", "Não", "Nunca", "Só cedo"],
+"respostaCorreta": "Sim",
+"dica": "É um bom momento."
+},
+{
+"pergunta": "Examinar o coração ajuda a crescer?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ajuda a melhorar sempre."
+}
+]
+},
+{
+"id": "17-medio",
+"capitulo": "Capítulo 17 - Exame do Coração",
+"nivel": "medio",
+"dicas": [
+"Autoavaliação diária.",
+"Reconhecer erros.",
+"Decidir mudar."
+],
+"perguntas": [
+{
+"pergunta": "O que é autoavaliação?",
+"opcoes": ["Analisar ações", "Ignorar erros", "Correr", "Dormir"],
+"respostaCorreta": "Analisar ações",
+"dica": "É pensar sobre o que fez."
+},
+{
+"pergunta": "Por que reconhecer erros é importante?",
+"opcoes": ["Para melhorar", "Para esquecer", "Para fugir", "Para ignorar"],
+"respostaCorreta": "Para melhorar",
+"dica": "Ajuda a crescer."
+},
+{
+"pergunta": "O exame do coração deve ser feito quando?",
+"opcoes": ["Diariamente", "Nunca", "Uma vez", "Só na escola"],
+"respostaCorreta": "Diariamente",
+"dica": "É uma prática constante."
+},
+{
+"pergunta": "Após reconhecer um erro, o que fazer?",
+"opcoes": ["Mudar", "Ignorar", "Repetir", "Esconder"],
+"respostaCorreta": "Mudar",
+"dica": "Corrigir o caminho."
+},
+{
+"pergunta": "O exame ajuda a desenvolver o quê?",
+"opcoes": ["Caráter", "Velocidade", "Força", "Altura"],
+"respostaCorreta": "Caráter",
+"dica": "Forma quem somos."
+},
+{
+"pergunta": "Pensar nas intenções é importante?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Não só ações importam."
+},
+{
+"pergunta": "O exame do coração ajuda a evitar o quê?",
+"opcoes": ["Repetir erros", "Aprender", "Crescer", "Mudar"],
+"respostaCorreta": "Repetir erros",
+"dica": "Ajuda a corrigir."
+},
+{
+"pergunta": "O que vem depois do arrependimento?",
+"opcoes": ["Mudança", "Erro", "Esquecimento", "Parar"],
+"respostaCorreta": "Mudança",
+"dica": "É ação prática."
+},
+{
+"pergunta": "Examinar o coração envolve o quê?",
+"opcoes": ["Ações e intenções", "Só ações", "Só palavras", "Nada"],
+"respostaCorreta": "Ações e intenções",
+"dica": "Inclui pensamentos."
+},
+{
+"pergunta": "Essa prática ajuda na vida?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ajuda a evoluir."
+}
+]
+},
+{
+"id": "17-avancado",
+"capitulo": "Capítulo 17 - Exame do Coração",
+"nivel": "avancado",
+"dicas": [
+"Reflexão moral profunda.",
+"Análise de intenções.",
+"Transformação contínua."
+],
+"perguntas": [
+{
+"pergunta": "Qual o objetivo do exame do coração?",
+"opcoes": ["Transformação moral", "Descanso", "Diversão", "Esquecimento"],
+"respostaCorreta": "Transformação moral",
+"dica": "Vai além de pensar."
+},
+{
+"pergunta": "Por que analisar intenções é importante?",
+"opcoes": ["Revela motivações", "Evita pensar", "Cria dúvidas", "Ignora ações"],
+"respostaCorreta": "Revela motivações",
+"dica": "Mostra o interior."
+},
+{
+"pergunta": "Qual o papel do arrependimento?",
+"opcoes": ["Reconhecer e mudar", "Ignorar erros", "Repetir falhas", "Evitar reflexão"],
+"respostaCorreta": "Reconhecer e mudar",
+"dica": "Inclui ação."
+},
+{
+"pergunta": "Como o exame diário afeta o caráter?",
+"opcoes": ["Fortalece", "Enfraquece", "Não muda", "Confunde"],
+"respostaCorreta": "Fortalece",
+"dica": "Cria hábitos bons."
+},
+{
+"pergunta": "Qual o risco de não examinar o coração?",
+"opcoes": ["Repetir erros", "Melhorar rápido", "Crescer mais", "Evitar problemas"],
+"respostaCorreta": "Repetir erros",
+"dica": "Sem reflexão, não há mudança."
+},
+{
+"pergunta": "O exame do coração envolve comparação com o quê?",
+"opcoes": ["Princípios morais", "Opiniões", "Sentimentos apenas", "Costumes"],
+"respostaCorreta": "Princípios morais",
+"dica": "Usa um padrão."
+},
+{
+"pergunta": "Por que a prática deve ser constante?",
+"opcoes": ["Manter progresso", "Evitar pensar", "Criar rotina vazia", "Ignorar erros"],
+"respostaCorreta": "Manter progresso",
+"dica": "Constância traz melhoria."
+},
+{
+"pergunta": "Qual a relação entre exame e autoconhecimento?",
+"opcoes": ["Aprofunda", "Diminui", "Ignora", "Confunde"],
+"respostaCorreta": "Aprofunda",
+"dica": "Ajuda a se conhecer."
+},
+{
+"pergunta": "O exame ajuda a alinhar ações com o quê?",
+"opcoes": ["Valores", "Desejos momentâneos", "Medo", "Pressão"],
+"respostaCorreta": "Valores",
+"dica": "Segue princípios."
+},
+{
+"pergunta": "Qual resultado de um exame bem feito?",
+"opcoes": ["Crescimento contínuo", "Estagnação", "Confusão", "Erro constante"],
+"respostaCorreta": "Crescimento contínuo",
+"dica": "Leva à evolução."
+}
+]
+},
+{
+"id": "18-basico",
+"capitulo": "Capítulo 18 - Vida em Sociedade",
+"nivel": "basico",
+"dicas": [
+"Viver em sociedade é viver com outras pessoas.",
+"Precisamos respeitar os outros.",
+"Ser justo é importante."
+],
+"perguntas": [
+{
+"pergunta": "O que é viver em sociedade?",
+"opcoes": ["Viver com outras pessoas", "Viver sozinho", "Dormir", "Brincar sozinho"],
+"respostaCorreta": "Viver com outras pessoas",
+"dica": "É viver em grupo."
+},
+{
+"pergunta": "Devemos respeitar os outros?",
+"opcoes": ["Sim", "Não", "Nunca", "Só às vezes"],
+"respostaCorreta": "Sim",
+"dica": "Respeito é importante."
+},
+{
+"pergunta": "Ser honesto é importante?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ajuda na convivência."
+},
+{
+"pergunta": "Devemos tratar os outros como?",
+"opcoes": ["Com respeito", "Com raiva", "Com desprezo", "Sem atenção"],
+"respostaCorreta": "Com respeito",
+"dica": "Trate bem as pessoas."
+},
+{
+"pergunta": "A justiça ajuda na convivência?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ela mantém ordem."
+},
+{
+"pergunta": "Devemos ser gentis?",
+"opcoes": ["Sim", "Não", "Nunca", "Só amigos"],
+"respostaCorreta": "Sim",
+"dica": "Gentileza é importante."
+},
+{
+"pergunta": "Mentir ajuda na sociedade?",
+"opcoes": ["Não", "Sim", "Sempre", "Às vezes"],
+"respostaCorreta": "Não",
+"dica": "A verdade é melhor."
+},
+{
+"pergunta": "A convivência precisa de regras?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Regras ajudam todos."
+},
+{
+"pergunta": "Devemos ajudar os outros?",
+"opcoes": ["Sim", "Não", "Nunca", "Só família"],
+"respostaCorreta": "Sim",
+"dica": "Ajudar é bom."
+},
+{
+"pergunta": "Ser justo significa o quê?",
+"opcoes": ["Fazer o certo", "Fazer o errado", "Ignorar", "Brincar"],
+"respostaCorreta": "Fazer o certo",
+"dica": "É agir corretamente."
+}
+]
+},
+{
+"id": "18-medio",
+"capitulo": "Capítulo 18 - Vida em Sociedade",
+"nivel": "medio",
+"dicas": [
+"A Lei ajuda na convivência.",
+"Justiça dá equilíbrio.",
+"Honestidade gera confiança."
+],
+"perguntas": [
+{
+"pergunta": "Qual o papel da Lei na sociedade?",
+"opcoes": ["Garantir justiça", "Criar confusão", "Evitar relações", "Ignorar regras"],
+"respostaCorreta": "Garantir justiça",
+"dica": "Ela organiza convivência."
+},
+{
+"pergunta": "A honestidade gera o quê?",
+"opcoes": ["Confiança", "Medo", "Raiva", "Dúvida"],
+"respostaCorreta": "Confiança",
+"dica": "Ser verdadeiro aproxima pessoas."
+},
+{
+"pergunta": "O respeito é importante para?",
+"opcoes": ["Boa convivência", "Conflito", "Desordem", "Isolamento"],
+"respostaCorreta": "Boa convivência",
+"dica": "Ajuda relações."
+},
+{
+"pergunta": "Sem justiça, o que acontece?",
+"opcoes": ["Desordem", "Paz", "Alegria", "Equilíbrio"],
+"respostaCorreta": "Desordem",
+"dica": "Falta de ordem."
+},
+{
+"pergunta": "A Lei ajuda a evitar o quê?",
+"opcoes": ["Injustiça", "Amizade", "Respeito", "Bondade"],
+"respostaCorreta": "Injustiça",
+"dica": "Ela protege direitos."
+},
+{
+"pergunta": "Por que ajudar os outros é importante?",
+"opcoes": ["Fortalece a sociedade", "Cria problemas", "Evita amizade", "Gera medo"],
+"respostaCorreta": "Fortalece a sociedade",
+"dica": "União faz diferença."
+},
+{
+"pergunta": "Qual valor é essencial nas relações?",
+"opcoes": ["Respeito", "Raiva", "Orgulho", "Indiferença"],
+"respostaCorreta": "Respeito",
+"dica": "Sem ele não há harmonia."
+},
+{
+"pergunta": "A convivência depende de quê?",
+"opcoes": ["Regras e valores", "Só vontade", "Força", "Velocidade"],
+"respostaCorreta": "Regras e valores",
+"dica": "Há princípios envolvidos."
+},
+{
+"pergunta": "Ser justo significa?",
+"opcoes": ["Dar a cada um o que é devido", "Dar tudo a si", "Ignorar outros", "Fazer favoritismo"],
+"respostaCorreta": "Dar a cada um o que é devido",
+"dica": "Equilíbrio nas ações."
+},
+{
+"pergunta": "A sociedade melhora quando há?",
+"opcoes": ["Honestidade", "Mentira", "Desrespeito", "Caos"],
+"respostaCorreta": "Honestidade",
+"dica": "Valor essencial."
+}
+]
+},
+{
+"id": "18-avancado",
+"capitulo": "Capítulo 18 - Vida em Sociedade",
+"nivel": "avancado",
+"dicas": [
+"A Lei sustenta a justiça social.",
+"Valores moldam convivência.",
+"A ética influencia relações."
+],
+"perguntas": [
+{
+"pergunta": "Como a Lei contribui para o bem comum?",
+"opcoes": ["Estabelecendo justiça", "Criando caos", "Eliminando regras", "Gerando isolamento"],
+"respostaCorreta": "Estabelecendo justiça",
+"dica": "Ela organiza a sociedade."
+},
+{
+"pergunta": "Qual o impacto da honestidade nas relações?",
+"opcoes": ["Gera confiança", "Gera medo", "Cria conflitos", "Provoca dúvidas"],
+"respostaCorreta": "Gera confiança",
+"dica": "Confiança fortalece vínculos."
+},
+{
+"pergunta": "Por que a justiça é essencial?",
+"opcoes": ["Mantém equilíbrio", "Cria desigualdade", "Evita relações", "Ignora direitos"],
+"respostaCorreta": "Mantém equilíbrio",
+"dica": "Sem ela há caos."
+},
+{
+"pergunta": "Qual a consequência da falta de valores?",
+"opcoes": ["Desordem social", "Mais harmonia", "Mais justiça", "Mais respeito"],
+"respostaCorreta": "Desordem social",
+"dica": "Valores sustentam ordem."
+},
+{
+"pergunta": "Como a ética influencia a sociedade?",
+"opcoes": ["Orienta comportamentos", "Evita decisões", "Cria dúvidas", "Ignora ações"],
+"respostaCorreta": "Orienta comportamentos",
+"dica": "Guia atitudes."
+},
+{
+"pergunta": "Qual a base das relações sociais saudáveis?",
+"opcoes": ["Respeito e justiça", "Medo e força", "Orgulho e egoísmo", "Indiferença"],
+"respostaCorreta": "Respeito e justiça",
+"dica": "Valores fundamentais."
+},
+{
+"pergunta": "O que acontece quando cada um busca apenas si?",
+"opcoes": ["Conflito", "Harmonia", "Justiça", "Equilíbrio"],
+"respostaCorreta": "Conflito",
+"dica": "Falta de cooperação."
+},
+{
+"pergunta": "Como a Lei protege a sociedade?",
+"opcoes": ["Definindo limites", "Removendo regras", "Criando caos", "Ignorando valores"],
+"respostaCorreta": "Definindo limites",
+"dica": "Limites trazem ordem."
+},
+{
+"pergunta": "Por que o respeito é essencial?",
+"opcoes": ["Reconhece dignidade", "Cria desigualdade", "Evita convivência", "Ignora pessoas"],
+"respostaCorreta": "Reconhece dignidade",
+"dica": "Valor humano."
+},
+{
+"pergunta": "Qual o resultado de uma sociedade justa?",
+"opcoes": ["Paz e ordem", "Caos", "Conflito", "Desigualdade"],
+"respostaCorreta": "Paz e ordem",
+"dica": "Equilíbrio social."
+}
+]
+},
+{
+"id": "19-basico",
+"capitulo": "Capítulo 19 - Formação do Caráter",
+"nivel": "basico",
+"dicas": [
+"Caráter é como você age sempre.",
+"Bons hábitos ajudam.",
+"Fazer o bem sempre."
+],
+"perguntas": [
+{
+"pergunta": "O que é caráter?",
+"opcoes": ["Como você age", "Sua roupa", "Seu nome", "Seu brinquedo"],
+"respostaCorreta": "Como você age",
+"dica": "É seu jeito de viver."
+},
+{
+"pergunta": "Bons hábitos ajudam no quê?",
+"opcoes": ["Caráter", "Velocidade", "Altura", "Força"],
+"respostaCorreta": "Caráter",
+"dica": "Formam quem você é."
+},
+{
+"pergunta": "Devemos fazer o bem sempre?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Constância é importante."
+},
+{
+"pergunta": "Ser fiel significa?",
+"opcoes": ["Manter o bem", "Mudar sempre", "Ignorar", "Brincar"],
+"respostaCorreta": "Manter o bem",
+"dica": "Continuar firme."
+},
+{
+"pergunta": "Disciplina ajuda em quê?",
+"opcoes": ["Fazer o bem sempre", "Dormir", "Correr", "Brincar"],
+"respostaCorreta": "Fazer o bem sempre",
+"dica": "Ajuda a manter hábitos."
+},
+{
+"pergunta": "Integridade significa?",
+"opcoes": ["Ser o mesmo sempre", "Mudar sempre", "Mentir", "Esconder"],
+"respostaCorreta": "Ser o mesmo sempre",
+"dica": "Ser verdadeiro."
+},
+{
+"pergunta": "Caráter se forma com o quê?",
+"opcoes": ["Hábitos", "Sorte", "Tempo", "Brincadeiras"],
+"respostaCorreta": "Hábitos",
+"dica": "Repetição do bem."
+},
+{
+"pergunta": "Devemos praticar o bem?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ajuda a crescer."
+},
+{
+"pergunta": "Caráter forte é?",
+"opcoes": ["Fazer o certo", "Fazer o errado", "Ignorar", "Mentir"],
+"respostaCorreta": "Fazer o certo",
+"dica": "É agir bem."
+},
+{
+"pergunta": "Devemos ser constantes?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Repetir o bem."
+}
+]
+},
+{
+"id": "19-medio",
+"capitulo": "Capítulo 19 - Formação do Caráter",
+"nivel": "medio",
+"dicas": [
+"Caráter é formado por hábitos.",
+"Disciplina mantém constância.",
+"Integridade é coerência."
+],
+"perguntas": [
+{
+"pergunta": "Como o caráter é formado?",
+"opcoes": ["Por hábitos", "Por sorte", "Por acaso", "Por força"],
+"respostaCorreta": "Por hábitos",
+"dica": "Repetição forma caráter."
+},
+{
+"pergunta": "O que é disciplina?",
+"opcoes": ["Constância no bem", "Fazer o que quer", "Ignorar regras", "Evitar esforço"],
+"respostaCorreta": "Constância no bem",
+"dica": "Manter o certo."
+},
+{
+"pergunta": "O que significa integridade?",
+"opcoes": ["Coerência", "Mudança constante", "Mentira", "Dúvida"],
+"respostaCorreta": "Coerência",
+"dica": "Ser igual sempre."
+},
+{
+"pergunta": "A fidelidade significa?",
+"opcoes": ["Manter princípios", "Mudar ideias", "Ignorar valores", "Evitar decisões"],
+"respostaCorreta": "Manter princípios",
+"dica": "Ser firme."
+},
+{
+"pergunta": "O caráter influencia o quê?",
+"opcoes": ["Ações", "Altura", "Peso", "Velocidade"],
+"respostaCorreta": "Ações",
+"dica": "Afeta comportamento."
+},
+{
+"pergunta": "Praticar o bem diariamente gera?",
+"opcoes": ["Virtude", "Erro", "Confusão", "Medo"],
+"respostaCorreta": "Virtude",
+"dica": "Repetição do bem."
+},
+{
+"pergunta": "Sem disciplina, o que ocorre?",
+"opcoes": ["Inconstância", "Estabilidade", "Fidelidade", "Coerência"],
+"respostaCorreta": "Inconstância",
+"dica": "Falta de firmeza."
+},
+{
+"pergunta": "O caráter é visível onde?",
+"opcoes": ["Ações", "Palavras apenas", "Pensamentos apenas", "Nada"],
+"respostaCorreta": "Ações",
+"dica": "Mostra-se no agir."
+},
+{
+"pergunta": "Ser íntegro significa?",
+"opcoes": ["Ser verdadeiro sempre", "Mudar sempre", "Mentir", "Esconder"],
+"respostaCorreta": "Ser verdadeiro sempre",
+"dica": "Coerência."
+},
+{
+"pergunta": "O objetivo do caráter é?",
+"opcoes": ["Viver bem", "Correr rápido", "Dormir mais", "Ganhar sempre"],
+"respostaCorreta": "Viver bem",
+"dica": "Vida correta."
+}
+]
+},
+{
+"id": "19-avancado",
+"capitulo": "Capítulo 19 - Formação do Caráter",
+"nivel": "avancado",
+"dicas": [
+"Caráter é disposição permanente.",
+"Virtude vem da repetição.",
+"Integridade une interior e exterior."
+],
+"perguntas": [
+{
+"pergunta": "O que define o caráter?",
+"opcoes": ["Hábitos consistentes", "Aparência", "Força física", "Sorte"],
+"respostaCorreta": "Hábitos consistentes",
+"dica": "Repetição molda."
+},
+{
+"pergunta": "Como a disciplina influencia o caráter?",
+"opcoes": ["Mantém constância", "Cria dúvida", "Gera medo", "Evita ação"],
+"respostaCorreta": "Mantém constância",
+"dica": "Ajuda a persistir."
+},
+{
+"pergunta": "Qual a relação entre virtude e hábito?",
+"opcoes": ["Virtude nasce do hábito", "Virtude evita hábito", "Não há relação", "Hábito destrói virtude"],
+"respostaCorreta": "Virtude nasce do hábito",
+"dica": "Repetição gera qualidade."
+},
+{
+"pergunta": "Por que a integridade é essencial?",
+"opcoes": ["Une ações e valores", "Cria conflito", "Ignora princípios", "Evita decisões"],
+"respostaCorreta": "Une ações e valores",
+"dica": "Coerência total."
+},
+{
+"pergunta": "Qual o efeito da falta de caráter?",
+"opcoes": ["Inconsistência", "Estabilidade", "Virtude", "Coerência"],
+"respostaCorreta": "Inconsistência",
+"dica": "Falta de firmeza."
+},
+{
+"pergunta": "Como o caráter se fortalece?",
+"opcoes": ["Prática constante do bem", "Evitar esforço", "Ignorar valores", "Mudança constante"],
+"respostaCorreta": "Prática constante do bem",
+"dica": "Repetição positiva."
+},
+{
+"pergunta": "Qual a consequência de hábitos ruins?",
+"opcoes": ["Caráter fraco", "Caráter forte", "Virtude", "Coerência"],
+"respostaCorreta": "Caráter fraco",
+"dica": "Maus hábitos prejudicam."
+},
+{
+"pergunta": "Por que fidelidade é importante?",
+"opcoes": ["Mantém princípios", "Cria dúvida", "Evita compromisso", "Ignora valores"],
+"respostaCorreta": "Mantém princípios",
+"dica": "Firmeza moral."
+},
+{
+"pergunta": "O caráter influencia a sociedade como?",
+"opcoes": ["Melhora relações", "Cria caos", "Evita convivência", "Ignora outros"],
+"respostaCorreta": "Melhora relações",
+"dica": "Afeta o coletivo."
+},
+{
+"pergunta": "Qual o objetivo final da formação do caráter?",
+"opcoes": ["Vida virtuosa", "Vida confusa", "Vida sem regras", "Vida egoísta"],
+"respostaCorreta": "Vida virtuosa",
+"dica": "Buscar o bem."
+}
+]
+},
+{
+"id": "21-basico",
+"capitulo": "Conclusão - O Fruto da Lei Moral",
+"nivel": "basico",
+"dicas": [
+"A Lei ajuda a viver bem.",
+"Ensina amar.",
+"Forma o caráter."
+],
+"perguntas": [
+{
+"pergunta": "A Lei ajuda a fazer o quê?",
+"opcoes": ["Viver bem", "Dormir", "Correr", "Brincar"],
+"respostaCorreta": "Viver bem",
+"dica": "Ela orienta a vida."
+},
+{
+"pergunta": "Devemos amar os outros?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Amor é importante."
+},
+{
+"pergunta": "A Lei ajuda a formar o quê?",
+"opcoes": ["Caráter", "Força", "Velocidade", "Altura"],
+"respostaCorreta": "Caráter",
+"dica": "Forma quem somos."
+},
+{
+"pergunta": "Viver bem significa?",
+"opcoes": ["Fazer o certo", "Fazer o errado", "Ignorar", "Mentir"],
+"respostaCorreta": "Fazer o certo",
+"dica": "Agir corretamente."
+},
+{
+"pergunta": "Devemos ser humildes?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "É importante reconhecer limites."
+},
+{
+"pergunta": "A Lei traz felicidade?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ajuda a viver melhor."
+},
+{
+"pergunta": "Devemos viver com verdade?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "A verdade é importante."
+},
+{
+"pergunta": "A Lei ensina a amar quem?",
+"opcoes": ["Deus e o próximo", "Só amigos", "Só família", "Ninguém"],
+"respostaCorreta": "Deus e o próximo",
+"dica": "Amor completo."
+},
+{
+"pergunta": "Devemos agradecer pela Lei?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ela protege."
+},
+{
+"pergunta": "A Lei é boa?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Ela ajuda a viver bem."
+}
+]
+},
+{
+"id": "21-medio",
+"capitulo": "Conclusão - O Fruto da Lei Moral",
+"nivel": "medio",
+"dicas": [
+"A Lei forma o caráter.",
+"Ensina amor e justiça.",
+"Leva à felicidade verdadeira."
+],
+"perguntas": [
+{
+"pergunta": "Qual o fruto da Lei Moral?",
+"opcoes": ["Caráter maduro", "Confusão", "Erro", "Desordem"],
+"respostaCorreta": "Caráter maduro",
+"dica": "Resultado da prática."
+},
+{
+"pergunta": "A Lei ensina a amar quem?",
+"opcoes": ["Deus e o próximo", "Só a si mesmo", "Só amigos", "Ninguém"],
+"respostaCorreta": "Deus e o próximo",
+"dica": "Amor completo."
+},
+{
+"pergunta": "A prática da Lei leva a quê?",
+"opcoes": ["Felicidade", "Confusão", "Erro", "Medo"],
+"respostaCorreta": "Felicidade",
+"dica": "Vida correta."
+},
+{
+"pergunta": "Qual valor cresce com a Lei?",
+"opcoes": ["Humildade", "Orgulho", "Raiva", "Indiferença"],
+"respostaCorreta": "Humildade",
+"dica": "Reconhecer limites."
+},
+{
+"pergunta": "A Lei ajuda a viver como?",
+"opcoes": ["Com integridade", "Com mentira", "Com medo", "Com confusão"],
+"respostaCorreta": "Com integridade",
+"dica": "Vida coerente."
+},
+{
+"pergunta": "A Lei orienta o quê?",
+"opcoes": ["Ações", "Altura", "Peso", "Velocidade"],
+"respostaCorreta": "Ações",
+"dica": "Guia comportamento."
+},
+{
+"pergunta": "Sem a Lei há?",
+"opcoes": ["Desordem", "Felicidade", "Paz", "Equilíbrio"],
+"respostaCorreta": "Desordem",
+"dica": "Falta direção."
+},
+{
+"pergunta": "A Lei leva à maturidade em quê?",
+"opcoes": ["Caráter", "Força", "Altura", "Velocidade"],
+"respostaCorreta": "Caráter",
+"dica": "Forma quem somos."
+},
+{
+"pergunta": "A Lei ensina justiça?",
+"opcoes": ["Sim", "Não", "Nunca", "Pouco"],
+"respostaCorreta": "Sim",
+"dica": "Valor essencial."
+},
+{
+"pergunta": "A vida correta gera o quê?",
+"opcoes": ["Paz", "Confusão", "Medo", "Erro"],
+"respostaCorreta": "Paz",
+"dica": "Resultado do bem."
+}
+]
+},
+{
+"id": "21-avancado",
+"capitulo": "Conclusão - O Fruto da Lei Moral",
+"nivel": "avancado",
+"dicas": [
+"A Lei produz maturidade.",
+"Une amor e justiça.",
+"Leva à plenitude humana."
+],
+"perguntas": [
+{
+"pergunta": "Qual o resultado final da Lei Moral na vida humana?",
+"opcoes": ["Maturidade do caráter", "Confusão", "Desordem", "Indiferença"],
+"respostaCorreta": "Maturidade do caráter",
+"dica": "Resultado da prática contínua."
+},
+{
+"pergunta": "Como a Lei integra amor e justiça?",
+"opcoes": ["Equilibra relações", "Cria conflito", "Ignora valores", "Evita decisões"],
+"respostaCorreta": "Equilibra relações",
+"dica": "Une dois princípios."
+},
+{
+"pergunta": "Por que a Lei conduz à felicidade?",
+"opcoes": ["Alinha com a natureza humana", "Evita escolhas", "Cria medo", "Ignora valores"],
+"respostaCorreta": "Alinha com a natureza humana",
+"dica": "Vida conforme propósito."
+},
+{
+"pergunta": "Qual o papel da humildade no fruto da Lei?",
+"opcoes": ["Reconhecer limitações", "Criar orgulho", "Ignorar erros", "Evitar reflexão"],
+"respostaCorreta": "Reconhecer limitações",
+"dica": "Importante para crescimento."
+},
+{
+"pergunta": "A integridade resulta em quê?",
+"opcoes": ["Coerência de vida", "Confusão", "Erro", "Dúvida"],
+"respostaCorreta": "Coerência de vida",
+"dica": "Alinha ações e valores."
+},
+{
+"pergunta": "Qual a consequência social da prática da Lei?",
+"opcoes": ["Sociedade justa", "Caos", "Isolamento", "Desigualdade"],
+"respostaCorreta": "Sociedade justa",
+"dica": "Impacto coletivo."
+},
+{
+"pergunta": "Como a Lei contribui para o autoconhecimento?",
+"opcoes": ["Revela falhas", "Esconde erros", "Ignora ações", "Evita reflexão"],
+"respostaCorreta": "Revela falhas",
+"dica": "Funciona como espelho."
+},
+{
+"pergunta": "Por que a Lei é considerada caminho?",
+"opcoes": ["Guia para viver bem", "Evita decisões", "Cria dúvidas", "Ignora valores"],
+"respostaCorreta": "Guia para viver bem",
+"dica": "Orienta a vida."
+},
+{
+"pergunta": "Qual o efeito da prática constante da Lei?",
+"opcoes": ["Transformação pessoal", "Estagnação", "Confusão", "Erro"],
+"respostaCorreta": "Transformação pessoal",
+"dica": "Mudança contínua."
+},
+{
+"pergunta": "O fruto final da Lei é?",
+"opcoes": ["Vida plena", "Vida confusa", "Vida vazia", "Vida desordenada"],
+"respostaCorreta": "Vida plena",
+"dica": "Resultado completo."
+}
+]
 }
 ]
 }

@@ -24,7 +24,6 @@ import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/xp_progress_bar.dart';
 import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/streak_fire.dart';
-import 'package:caminho_do_saber/ui/widgets/punch_counter.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_crt_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/animated_stat_icon.dart';
 import 'package:caminho_do_saber/services/ranking_service.dart';
@@ -48,11 +47,16 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
 
     // Sincronização automática no arranque
     Future.delayed(const Duration(seconds: 3), () async {
-      if (mounted) {
-        await context.read<ProgressoService>().syncWithCloud();
-        // Baixamos o ranking atualizado para o banco local
-        await context.read<RankingService>().refreshLocalRankingCache();
-      }
+      if (!mounted) return;
+      
+      final progressoService = context.read<ProgressoService>();
+      final rankingService = context.read<RankingService>();
+      
+      await progressoService.syncWithCloud();
+      
+      if (!mounted) return;
+      // Baixamos o ranking atualizado para o banco local
+      await rankingService.refreshLocalRankingCache();
     });
   }
 
@@ -65,11 +69,17 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
+    if (!mounted) return;
+
+    final rankingService = context.read<RankingService>();
+    final dictionaryService = context.read<DictionaryService>();
+    final progressoService = context.read<ProgressoService>();
+
     if (state == AppLifecycleState.resumed) {
-      context.read<DictionaryService>().loadDictionary();
-      context.read<RankingService>().refreshLocalRankingCache();
+      dictionaryService.loadDictionary();
+      rankingService.refreshLocalRankingCache();
     } else if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
-      context.read<ProgressoService>().syncWithCloud();
+      progressoService.syncWithCloud();
     }
   }
 
