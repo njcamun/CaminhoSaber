@@ -1,5 +1,6 @@
 // lib/services/ranking_service.dart
 
+import 'package:flutter/foundation.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:caminho_do_saber/services/auth_service.dart';
 import 'package:caminho_do_saber/database/database.dart';
@@ -30,15 +31,17 @@ class RankingService {
     }
   }
 
-  // Stream para os 50 melhores exploradores (aumentado para visibilidade)
+  // Stream para os 100 melhores exploradores de TODOS os utilizadores
+  // Inclui ordenação secundária por nome para perfis com pontuação zero
   Stream<List<Map<String, dynamic>>> getGlobalTop50Stream() {
     return _firestore
         .collection('ranking_global')
         .orderBy('totalPoints', descending: true)
-        .limit(50)
+        .orderBy('name', descending: false)
+        .limit(100)
         .snapshots()
         .map((snapshot) {
-      debugPrint('Ranking: ${snapshot.docs.length} perfis carregados.');
+      debugPrint('Ranking Global: ${snapshot.docs.length} perfis carregados de toda a base.');
       return snapshot.docs.map((doc) => doc.data()).toList();
     });
   }
