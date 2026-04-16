@@ -18,8 +18,8 @@ class BackgroundContainer extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: isDarkMode 
-            ? [Colors.black, primaryColor.withOpacity(0.2)]
-            : [primaryColor.withOpacity(0.1), Colors.white],
+            ? [Colors.black, primaryColor.withValues(alpha: 0.2)]
+            : [primaryColor.withValues(alpha: 0.1), Colors.white],
         ),
       ),
       child: Stack(

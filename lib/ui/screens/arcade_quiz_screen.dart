@@ -98,7 +98,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   @override
   void dispose() {
     _timer?.cancel();
-    context.read<AudioService>().stopMusic();
+    AudioService().stopMusic();
     _feedbackController.dispose();
     _pulseController.dispose();
     super.dispose();
@@ -224,7 +224,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
           _showCentralFeedback("AJUDAS RESTAURADAS!", Icons.auto_fix_high_rounded, Colors.tealAccent.shade700);
         }
       });
-      _playSound('acerto.mp3');
+      _playSound('correct.mp3');
     } else {
       HapticFeedback.heavyImpact();
       if (tapPosition != Offset.zero) {
@@ -236,7 +236,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
         _acertosParaTempo = 0;
         _acertosParaVida = 0;
       });
-      _playSound('erro.mp3');
+      _playSound('incorrect.mp3');
       
       if (_oportunidades <= 0) {
         _finishGame("SEM OPORTUNIDADES!");
@@ -314,7 +314,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     
     _timer?.cancel();
     _pulseController.stop();
-    context.read<AudioService>().stopMusic();
+    AudioService().stopMusic();
     
     final currentScore = _pontos;
     final disciplineId = widget.disciplinaId;
@@ -381,11 +381,11 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   }
 
   void _playSound(String file) {
-    context.read<AudioService>().playSfx(file);
+    AudioService().playSfx(file);
   }
 
   Future<void> _playMusic() async {
-    context.read<AudioService>().playMusic('desafioArcade.mp3');
+    AudioService().playMusic('desafioArcade.mp3');
   }
 
   @override

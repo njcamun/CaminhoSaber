@@ -115,7 +115,7 @@ class MyApp extends StatelessWidget {
                 if (themeProvider.isBlueLightFilterEnabled)
                   IgnorePointer(
                     child: Container(
-                      color: Colors.orange.withOpacity(0.15),
+                      color: Colors.orange.withValues(alpha: 0.15),
                     ),
                   ),
               ],
@@ -128,14 +128,16 @@ class MyApp extends StatelessWidget {
 }
 
 void _showErrorOverlay(String error) {
-  if (globalMessengerKey.currentState != null) {
-    globalMessengerKey.currentState!.showSnackBar(
-      SnackBar(
-        content: Text('ERRO CAPTURADO:\n$error', style: const TextStyle(fontSize: 12)),
-        backgroundColor: Colors.red.shade900,
-        duration: const Duration(seconds: 10),
-        action: SnackBarAction(label: 'OK', textColor: Colors.white, onPressed: () {}),
-      ),
-    );
-  }
+  WidgetsBinding.instance.addPostFrameCallback((_) {
+    if (globalMessengerKey.currentState != null) {
+      globalMessengerKey.currentState!.showSnackBar(
+        SnackBar(
+          content: Text('ERRO CAPTURADO:\n$error', style: const TextStyle(fontSize: 12)),
+          backgroundColor: Colors.red.shade900,
+          duration: const Duration(seconds: 10),
+          action: SnackBarAction(label: 'OK', textColor: Colors.white, onPressed: () {}),
+        ),
+      );
+    }
+  });
 }

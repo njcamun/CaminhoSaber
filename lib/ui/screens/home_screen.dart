@@ -130,7 +130,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                       child: Container(
                         padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
-                          color: isActive ? Colors.blue.withOpacity(0.1) : Colors.grey.shade50,
+                          color: isActive ? Colors.blue.withValues(alpha: 0.1) : Colors.grey.shade50,
                           borderRadius: BorderRadius.circular(15),
                           border: Border.all(color: isActive ? Colors.blue : Colors.grey.shade300, width: 2),
                         ),
@@ -239,7 +239,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(padding: const EdgeInsets.all(8), decoration: BoxDecoration(color: color.withOpacity(0.1), borderRadius: BorderRadius.circular(12)), child: Icon(icon, color: color, size: 24)),
+          Container(padding: const EdgeInsets.all(8), decoration: BoxDecoration(color: color.withValues(alpha: 0.1), borderRadius: BorderRadius.circular(12)), child: Icon(icon, color: color, size: 24)),
           const SizedBox(width: 14),
           Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [Text(title, style: const TextStyle(fontWeight: FontWeight.bold)), Text(desc, style: const TextStyle(fontSize: 13, color: Colors.grey, height: 1.3))])),
         ],
@@ -339,7 +339,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                 return Padding(
                   padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
                   child: NeumorphicWrapper(
-                    baseColor: Colors.white.withOpacity(0.95),
+                    baseColor: Colors.white.withValues(alpha: 0.95),
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Column(
@@ -539,7 +539,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, letterSpacing: 1.1, color: theme.colorScheme.onSurface),
                                 ),
                                 const SizedBox(width: 10),
-                                Expanded(child: Divider(color: theme.colorScheme.onSurface.withOpacity(0.3), thickness: 1.5)),
+                                Expanded(child: Divider(color: theme.colorScheme.onSurface.withValues(alpha: 0.3), thickness: 1.5)),
                               ],
                             ),
                           ),
@@ -582,8 +582,8 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
         child: Stack(
           alignment: Alignment.center,
           children: [
-            Positioned(bottom: 5, child: Transform.rotate(angle: 0.15, child: Card(color: Colors.teal.shade900.withOpacity(0.4), elevation: 0, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), child: SizedBox(width: cardWidth * 0.9, height: 175)))),
-            Positioned(bottom: 10, child: Transform.rotate(angle: -0.08, child: Card(color: Colors.teal.shade800.withOpacity(0.6), elevation: 2, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), child: SizedBox(width: cardWidth, height: 180)))),
+            Positioned(bottom: 5, child: Transform.rotate(angle: 0.15, child: Card(color: Colors.teal.shade900.withValues(alpha: 0.4), elevation: 0, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), child: SizedBox(width: cardWidth * 0.9, height: 175)))),
+            Positioned(bottom: 10, child: Transform.rotate(angle: -0.08, child: Card(color: Colors.teal.shade800.withValues(alpha: 0.6), elevation: 2, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)), child: SizedBox(width: cardWidth, height: 180)))),
             Card(
               color: Colors.teal.shade700,
               elevation: 8,
@@ -729,7 +729,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
       onTap: onTap,
       borderRadius: BorderRadius.circular(20),
       child: NeumorphicWrapper(
-        baseColor: Colors.white.withOpacity(0.95),
+        baseColor: Colors.white.withValues(alpha: 0.95),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
           child: Column(
@@ -770,7 +770,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                 tag: 'disciplina_bg_${disciplina.id}',
                 child: SafeAssetImage(path: disciplina.animacao, fit: BoxFit.cover)
               ),
-              Container(decoration: BoxDecoration(gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Colors.transparent, Colors.black.withOpacity(0.85)]))),
+              Container(decoration: BoxDecoration(gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Colors.transparent, Colors.black.withValues(alpha: 0.85)]))),
               Positioned(bottom: 12, left: 12, right: 12, child: Column(children: [FittedBox(fit: BoxFit.scaleDown, child: Text(disciplina.nome, textAlign: TextAlign.center, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white))), const SizedBox(height: 4), Text(disciplina.descricao, textAlign: TextAlign.center, style: const TextStyle(fontSize: 12, color: Colors.white70), maxLines: 2, overflow: TextOverflow.ellipsis)])),
               if (completa)
                 Positioned(
@@ -794,7 +794,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'ArcadePicker',
-      barrierColor: Colors.black.withOpacity(0.95),
+      barrierColor: Colors.black.withValues(alpha: 0.95),
       pageBuilder: (context, anim1, anim2) => const SizedBox.shrink(),
       transitionDuration: const Duration(milliseconds: 300),
       transitionBuilder: (context, anim1, anim2, child) {
@@ -1026,7 +1026,7 @@ class _ModernArcadeCardState extends State<_ModernArcadeCard> with SingleTickerP
             border: Border.all(color: Colors.cyanAccent, width: 2),
             boxShadow: [
               BoxShadow(
-                color: Colors.cyanAccent.withOpacity(0.3),
+                color: Colors.cyanAccent.withValues(alpha: 0.3),
                 blurRadius: 15,
                 spreadRadius: 2,
               ),
@@ -1045,8 +1045,8 @@ class _ModernArcadeCardState extends State<_ModernArcadeCard> with SingleTickerP
                       end: Alignment.bottomCenter,
                       colors: [
                         Colors.transparent,
-                        Colors.purple.withOpacity(0.4),
-                        Colors.black.withOpacity(0.9),
+                        Colors.purple.withValues(alpha: 0.4),
+                        Colors.black.withValues(alpha: 0.9),
                       ],
                     ),
                   ),
@@ -1093,7 +1093,7 @@ class _CyberGridBackgroundPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = Colors.purple.withOpacity(0.1)
+      ..color = Colors.purple.withValues(alpha: 0.1)
       ..strokeWidth = 1;
 
     for (double i = 0; i <= size.width; i += 40) {
@@ -1108,12 +1108,12 @@ class _CyberGridBackgroundPainter extends CustomPainter {
       canvas.drawLine(
         Offset(0, i),
         Offset(size.width, i),
-        paint..color = Colors.purple.withOpacity((i - size.height * 0.6) / (size.height * 0.4) * 0.2),
+        paint..color = Colors.purple.withValues(alpha: (i - size.height * 0.6) / (size.height * 0.4) * 0.2),
       );
     }
 
     final glowPaint = Paint()
-      ..color = Colors.cyanAccent.withOpacity(0.05)
+      ..color = Colors.cyanAccent.withValues(alpha: 0.05)
       ..strokeWidth = 2;
     for (double i = 0; i < size.height; i += 100) {
       canvas.drawLine(Offset(0, i), Offset(size.width, i), glowPaint);

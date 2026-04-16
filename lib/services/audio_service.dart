@@ -22,8 +22,8 @@ class AudioService {
       // Pre-initialize players for common sounds to reduce delay on Web
       if (kIsWeb) {
         // Não usamos await aqui para não bloquear a inicialização se o browser barrar o áudio
-        _preloadSfx('acerto.mp3');
-        _preloadSfx('erro.mp3');
+        _preloadSfx('correct.mp3');
+        _preloadSfx('incorrect.mp3');
         _preloadSfx('hint.mp3');
         _preloadSfx('jogo.mp3');
       }

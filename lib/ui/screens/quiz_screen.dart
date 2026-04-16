@@ -82,7 +82,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     WidgetsBinding.instance.removeObserver(this);
     _timer?.cancel();
     _timerGlobal?.cancel();
-    context.read<AudioService>().stopMusic();
+    AudioService().stopMusic(); // Uso do Singleton diretamente
     super.dispose();
   }
 
@@ -98,7 +98,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
     if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive || state == AppLifecycleState.detached) {
-      if (_isMusicPlaying) context.read<AudioService>().stopMusic();
+      if (_isMusicPlaying) AudioService().stopMusic();
     } else if (state == AppLifecycleState.resumed) {
       if (_isMusicPlaying) _playQuizMusic();
     }
@@ -159,7 +159,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   }
 
   Future<void> _playQuizMusic() async {
-    await context.read<AudioService>().playMusic('desafio.mp3');
+    await AudioService().playMusic('desafio.mp3');
     _isMusicPlaying = true;
   }
 
@@ -228,14 +228,14 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     if (estaCorreta) {
       _pontosBase += 5;
       HapticFeedback.mediumImpact();
-      context.read<AudioService>().playSfx('acerto.mp3');
+      AudioService().playSfx('correct.mp3');
       if (tapPosition != Offset.zero) {
         showXPFlyer(context, tapPosition);
         showPixelExplosion(context, tapPosition, Colors.green);
       }
     } else {
       HapticFeedback.vibrate();
-      context.read<AudioService>().playSfx('erro.mp3');
+      AudioService().playSfx('incorrect.mp3');
       if (tapPosition != Offset.zero) {
         showPixelExplosion(context, tapPosition, Colors.red);
       }
@@ -267,7 +267,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     if (_quizFinalizado) return;
     _quizFinalizado = true;
 
-    context.read<AudioService>().stopMusic();
+    AudioService().stopMusic();
 
     _isMusicPlaying = false;
     _timer?.cancel();
