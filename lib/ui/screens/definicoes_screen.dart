@@ -11,6 +11,7 @@ import 'package:caminho_do_saber/ui/screens/dependentes_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:caminho_do_saber/providers/pomodoro_provider.dart';
 import 'package:caminho_do_saber/providers/theme_provider.dart';
+import 'package:caminho_do_saber/services/audio_service.dart';
 
 class DefinicoesScreen extends StatefulWidget {
   const DefinicoesScreen({super.key});
@@ -23,7 +24,6 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
   final AuthService _authService = AuthService();
   bool _audioHabilitado = true;
   double _volumeGeral = 1.0;
-  final AudioPlayer _audioPlayer = AudioPlayer();
 
   @override
   void initState() {
@@ -33,7 +33,6 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
 
   @override
   void dispose() {
-    _audioPlayer.dispose();
     super.dispose();
   }
 
@@ -45,7 +44,6 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
         _volumeGeral = prefs.getDouble('volumeGeral') ?? 1.0;
       });
     }
-    await _audioPlayer.setVolume(_audioHabilitado ? _volumeGeral : 0.0);
   }
 
   Future<void> _handleAudioToggle(bool newValue) async {
@@ -54,7 +52,7 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
       _audioHabilitado = newValue;
     });
     await prefs.setBool('audioHabilitado', newValue);
-    await _audioPlayer.setVolume(newValue ? _volumeGeral : 0.0);
+    context.read<AudioService>().updateSettings(newValue, _volumeGeral);
   }
 
   Future<void> _setVolumeGeral(double newVolume) async {
@@ -63,9 +61,7 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
       _volumeGeral = newVolume;
     });
     await prefs.setDouble('volumeGeral', newVolume);
-    if (_audioHabilitado) {
-      await _audioPlayer.setVolume(newVolume);
-    }
+    context.read<AudioService>().updateSettings(_audioHabilitado, newVolume);
   }
 
   Future<void> _handleAuth() async {

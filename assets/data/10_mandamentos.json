@@ -1,0 +1,4802 @@
+{
+"disciplina": "dez_mandamentos",
+"quizzes": [
+{
+"id": "1-basico",
+"capitulo": "Introdução - O que são os Dez Mandamentos?",
+"nivel": "basico",
+"dicas": [
+"Os Dez Mandamentos são ensinamentos morais.",
+"Eles mostram quem Deus é e como viver bem.",
+"Também ensinam como tratar o próximo.",
+"A Lei pode funcionar como um guia."
+],
+"perguntas": [
+{
+"pergunta": "O que são os Dez Mandamentos?",
+"opcoes": [
+"Regras morais dadas por Deus",
+"Somente histórias antigas",
+"Nomes de montanhas",
+"Tipos de músicas"
+],
+"respostaCorreta": "Regras morais dadas por Deus",
+"dica": "Eles ensinam como viver de modo certo."
+},
+{
+"pergunta": "Os Dez Mandamentos foram entregues a:",
+"opcoes": [
+"Moisés",
+"Davi",
+"José",
+"Salomão"
+],
+"respostaCorreta": "Moisés",
+"dica": "O texto cita o Monte Sinai."
+},
+{
+"pergunta": "Os Dez Mandamentos ensinam como devemos:",
+"opcoes": [
+"Adorar a Deus e viver com o próximo",
+"Desenhar figuras",
+"Medir objetos",
+"Contar estrelas"
+],
+"respostaCorreta": "Adorar a Deus e viver com o próximo",
+"dica": "Eles tratam de Deus e das pessoas."
+},
+{
+"pergunta": "A Lei moral é apresentada como:",
+"opcoes": [
+"Um guia para a vida",
+"Um jogo de sorte",
+"Uma pintura famosa",
+"Um cálculo difícil"
+],
+"respostaCorreta": "Um guia para a vida",
+"dica": "Ela ajuda a caminhar no bem."
+},
+{
+"pergunta": "Os Dez Mandamentos mostram quem Deus é em Sua:",
+"opcoes": [
+"Santidade",
+"Cor",
+"Altura",
+"Velocidade"
+],
+"respostaCorreta": "Santidade",
+"dica": "O texto usa essa palavra."
+},
+{
+"pergunta": "Além das ações, a Lei também olha para o:",
+"opcoes": [
+"Coração",
+"Sapato",
+"Cabelo",
+"Caderno"
+],
+"respostaCorreta": "Coração",
+"dica": "Ela trata do interior da pessoa."
+},
+{
+"pergunta": "Os Dez Mandamentos ajudam a viver em:",
+"opcoes": [
+"Harmonia",
+"Desordem",
+"Silêncio total",
+"Confusão"
+],
+"respostaCorreta": "Harmonia",
+"dica": "O texto fala da vida com o próximo."
+},
+{
+"pergunta": "A Lei pode ser comparada a um:",
+"opcoes": [
+"Espelho e mapa",
+"Livro vazio",
+"Jogo de cartas",
+"Relógio quebrado"
+],
+"respostaCorreta": "Espelho e mapa",
+"dica": "Ela mostra a condição moral e aponta o caminho."
+},
+{
+"pergunta": "Entender a Lei é um passo para o:",
+"opcoes": [
+"Autoconhecimento",
+"Esquecimento",
+"Barulho",
+"Sono"
+],
+"respostaCorreta": "Autoconhecimento",
+"dica": "O texto fala em conhecer a si mesmo."
+},
+{
+"pergunta": "Sem esses princípios, pode surgir:",
+"opcoes": [
+"Caos",
+"Mais ordem",
+"Mais descanso",
+"Mais silêncio"
+],
+"respostaCorreta": "Caos",
+"dica": "O desafio final fala disso."
+}
+]
+},
+{
+"id": "1-medio",
+"capitulo": "Introdução - O que são os Dez Mandamentos?",
+"nivel": "medio",
+"dicas": [
+"Os mandamentos resumem a Lei moral.",
+"Eles orientam a relação com Deus e com o próximo.",
+"A Lei também examina intenções.",
+"Ela funciona como espelho e mapa."
+],
+"perguntas": [
+{
+"pergunta": "Qual é a principal função dos Dez Mandamentos segundo a introdução?",
+"opcoes": [
+"Servir de base moral para a vida",
+"Ensinar somente histórias antigas",
+"Substituir toda reflexão pessoal",
+"Explicar apenas costumes de um povo"
+],
+"respostaCorreta": "Servir de base moral para a vida",
+"dica": "O texto fala em fundamento da ordem universal."
+},
+{
+"pergunta": "Os Dez Mandamentos ensinam tanto sobre:",
+"opcoes": [
+"Adoração a Deus e convivência com o próximo",
+"Geometria e música",
+"Somente regras de trabalho",
+"Somente punições"
+],
+"respostaCorreta": "Adoração a Deus e convivência com o próximo",
+"dica": "Eles se dividem entre Deus e o próximo."
+},
+{
+"pergunta": "Por que a Lei é comparada a um espelho?",
+"opcoes": [
+"Porque revela nossa condição moral",
+"Porque reflete o rosto literalmente",
+"Porque aumenta a imagem",
+"Porque é feita de vidro"
+],
+"respostaCorreta": "Porque revela nossa condição moral",
+"dica": "Ela mostra o que precisa ser corrigido."
+},
+{
+"pergunta": "Por que a Lei também é comparada a um mapa?",
+"opcoes": [
+"Porque aponta o caminho da virtude",
+"Porque mostra países e rios",
+"Porque mede distâncias",
+"Porque desenha montanhas"
+],
+"respostaCorreta": "Porque aponta o caminho da virtude",
+"dica": "Ela orienta a direção da vida."
+},
+{
+"pergunta": "Qual aspecto interno a Lei também governa?",
+"opcoes": [
+"O coração",
+"Somente a roupa",
+"A altura da pessoa",
+"A idade"
+],
+"respostaCorreta": "O coração",
+"dica": "Não fala só de ações externas."
+},
+{
+"pergunta": "Como a introdução apresenta os Dez Mandamentos?",
+"opcoes": [
+"Não como sugestões, mas como base moral",
+"Como conselhos opcionais",
+"Como enigmas matemáticos",
+"Como histórias sem aplicação"
+],
+"respostaCorreta": "Não como sugestões, mas como base moral",
+"dica": "O texto usa essa diferença claramente."
+},
+{
+"pergunta": "Qual pergunta importante a introdução faz sobre a Lei?",
+"opcoes": [
+"Se ela é um fardo ou um guia para a liberdade",
+"Se ela é maior que uma montanha",
+"Se ela é mais antiga que o mar",
+"Se ela é igual a uma parábola"
+],
+"respostaCorreta": "Se ela é um fardo ou um guia para a liberdade",
+"dica": "A reflexão interior traz essa comparação."
+},
+{
+"pergunta": "A falta dos princípios da Lei pode gerar:",
+"opcoes": [
+"Caos na sociedade e na vida pessoal",
+"Mais equilíbrio sempre",
+"Maior silêncio apenas",
+"Somente mudanças pequenas sem efeito"
+],
+"respostaCorreta": "Caos na sociedade e na vida pessoal",
+"dica": "O desafio final usa essa ideia."
+},
+{
+"pergunta": "Qual destas ideias está mais de acordo com a introdução?",
+"opcoes": [
+"A moralidade verdadeira envolve atitudes e intenções",
+"Só importa o que os outros veem",
+"O coração não importa",
+"A Lei serve apenas para aparência"
+],
+"respostaCorreta": "A moralidade verdadeira envolve atitudes e intenções",
+"dica": "O texto fala do interior da pessoa."
+},
+{
+"pergunta": "Entender a Lei é importante porque ajuda a pessoa a:",
+"opcoes": [
+"Conhecer a si mesma e buscar virtude",
+"Evitar qualquer responsabilidade",
+"Pensar só em regras externas",
+"Ignorar o próximo"
+],
+"respostaCorreta": "Conhecer a si mesma e buscar virtude",
+"dica": "A introdução une autoconhecimento e caráter."
+}
+]
+},
+{
+"id": "1-avancado",
+"capitulo": "Introdução - O que são os Dez Mandamentos?",
+"nivel": "avancado",
+"dicas": [
+"A Lei moral envolve ações e intenções.",
+"Ela revela quem Deus é e como o ser humano deve viver.",
+"O espelho mostra a condição moral; o mapa mostra o caminho.",
+"A ausência da Lei produz desordem."
+],
+"perguntas": [
+{
+"pergunta": "Por que a introdução apresenta os Dez Mandamentos como fundamento da ordem universal?",
+"opcoes": [
+"Porque eles organizam a relação com Deus e com o próximo",
+"Porque servem apenas para um povo antigo",
+"Porque tratam somente de rituais externos",
+"Porque eliminam toda escolha humana"
+],
+"respostaCorreta": "Porque eles organizam a relação com Deus e com o próximo",
+"dica": "A resposta deve juntar adoração e convivência."
+},
+{
+"pergunta": "Qual análise explica melhor a comparação da Lei com um espelho?",
+"opcoes": [
+"Ela expõe a condição moral da pessoa sem produzir mudança automática",
+"Ela faz a pessoa parecer melhor do que é",
+"Ela troca o certo pelo errado",
+"Ela serve apenas para refletir ações externas"
+],
+"respostaCorreta": "Ela expõe a condição moral da pessoa sem produzir mudança automática",
+"dica": "O espelho revela, mas não limpa."
+},
+{
+"pergunta": "Qual análise explica melhor a comparação da Lei com um mapa?",
+"opcoes": [
+"Ela orienta a vida em direção à virtude",
+"Ela apenas mostra erros passados",
+"Ela substitui toda decisão moral",
+"Ela mede a intensidade dos sentimentos"
+],
+"respostaCorreta": "Ela orienta a vida em direção à virtude",
+"dica": "O mapa aponta um caminho."
+},
+{
+"pergunta": "Por que a introdução insiste que a Lei governa o coração e não apenas ações externas?",
+"opcoes": [
+"Porque o problema moral começa também nas intenções",
+"Porque ações não importam",
+"Porque sentimentos substituem a verdade",
+"Porque só o interior interessa"
+],
+"respostaCorreta": "Porque o problema moral começa também nas intenções",
+"dica": "A Lei examina a raiz, não só o resultado."
+},
+{
+"pergunta": "Qual consequência a introdução sugere quando um dos princípios da Lei é abandonado?",
+"opcoes": [
+"Surge desordem na vida pessoal e social",
+"A sociedade fica automaticamente livre",
+"Nada importante acontece",
+"A moralidade se fortalece sozinha"
+],
+"respostaCorreta": "Surge desordem na vida pessoal e social",
+"dica": "O desafio final menciona o caos."
+},
+{
+"pergunta": "Qual é a relação entre santidade de Deus e os Dez Mandamentos na introdução?",
+"opcoes": [
+"Os mandamentos revelam o caráter santo de Deus",
+"Os mandamentos escondem quem Deus é",
+"A santidade não tem ligação com a Lei",
+"A Lei existe apenas para punir"
+],
+"respostaCorreta": "Os mandamentos revelam o caráter santo de Deus",
+"dica": "A introdução liga a Lei à identidade divina."
+},
+{
+"pergunta": "Qual situação mostra melhor a função pedagógica da Lei já sugerida na introdução?",
+"opcoes": [
+"Levar a pessoa a reconhecer seus erros e buscar virtude",
+"Ensinar apenas a obedecer sem pensar",
+"Substituir o autoconhecimento",
+"Tornar a consciência desnecessária"
+],
+"respostaCorreta": "Levar a pessoa a reconhecer seus erros e buscar virtude",
+"dica": "A Lei ensina e forma o caráter."
+},
+{
+"pergunta": "Por que a pergunta 'a Lei é um fardo ou um guia?' é importante?",
+"opcoes": [
+"Porque revela como a pessoa entende a liberdade e a moralidade",
+"Porque a Lei não tem efeito real",
+"Porque liberdade significa ausência de direção",
+"Porque toda regra é sempre opressão"
+],
+"respostaCorreta": "Porque revela como a pessoa entende a liberdade e a moralidade",
+"dica": "A reflexão interior relaciona lei e liberdade."
+},
+{
+"pergunta": "Qual conclusão está mais de acordo com a introdução?",
+"opcoes": [
+"A verdadeira liberdade precisa de orientação moral",
+"A liberdade cresce quando toda lei desaparece",
+"A virtude não depende de princípios",
+"O coração humano é naturalmente suficiente sem correção"
+],
+"respostaCorreta": "A verdadeira liberdade precisa de orientação moral",
+"dica": "A introdução trata a Lei como guia."
+},
+{
+"pergunta": "Qual frase resume melhor a introdução?",
+"opcoes": [
+"Os Dez Mandamentos resumem a Lei moral de Deus, revelam Sua santidade e orientam a vida interior e exterior do ser humano",
+"Os Dez Mandamentos são apenas regras externas sem relação com o coração",
+"Os Dez Mandamentos servem somente para evitar punição social",
+"Os Dez Mandamentos tratam apenas de costumes antigos sem aplicação moral"
+],
+"respostaCorreta": "Os Dez Mandamentos resumem a Lei moral de Deus, revelam Sua santidade e orientam a vida interior e exterior do ser humano",
+"dica": "A resposta deve unir Deus, moralidade e coração."
+}
+]
+},
+{
+"id": "2-basico",
+"capitulo": "Capítulo 1 - Não Terás Outros Deuses",
+"nivel": "basico",
+"dicas": [
+"Deus deve ser o primeiro.",
+"Nada deve ocupar Seu lugar.",
+"Ídolos podem ser coisas do coração.",
+"Tempo, amor e preocupação mostram prioridades."
+],
+"perguntas": [
+{
+"pergunta": "O primeiro mandamento diz:",
+"opcoes": [
+"Não terás outros deuses",
+"Não furtarás",
+"Não matarás",
+"Honra teu pai e tua mãe"
+],
+"respostaCorreta": "Não terás outros deuses",
+"dica": "É o começo da lista."
+},
+{
+"pergunta": "Quem deve ocupar o primeiro lugar na vida?",
+"opcoes": [
+"Deus",
+"Dinheiro",
+"Fama",
+"Vaidade"
+],
+"respostaCorreta": "Deus",
+"dica": "O mandamento fala de exclusividade."
+},
+{
+"pergunta": "Adorar falsas divindades é algo que o mandamento:",
+"opcoes": [
+"Proíbe",
+"Ensina",
+"Ignora",
+"Aumenta"
+],
+"respostaCorreta": "Proíbe",
+"dica": "O texto fala contra falsos deuses."
+},
+{
+"pergunta": "Além de estátuas ou entidades, um 'deus' falso pode ser:",
+"opcoes": [
+"Dinheiro ou ego",
+"Somente montanhas",
+"Somente livros",
+"Somente roupas"
+],
+"respostaCorreta": "Dinheiro ou ego",
+"dica": "O texto fala de ídolos modernos."
+},
+{
+"pergunta": "Se algo toma o lugar de Deus no coração, isso vira:",
+"opcoes": [
+"Um ídolo",
+"Uma virtude",
+"Uma promessa",
+"Uma parábola"
+],
+"respostaCorreta": "Um ídolo",
+"dica": "Ídolo é aquilo que ocupa o trono do coração."
+},
+{
+"pergunta": "O texto compara Deus na vida com:",
+"opcoes": [
+"O primeiro botão da camisa",
+"A última página do livro",
+"Uma janela fechada",
+"Uma estrada vazia"
+],
+"respostaCorreta": "O primeiro botão da camisa",
+"dica": "Se ele fica errado, o resto desajusta."
+},
+{
+"pergunta": "O que mostra qual pode ser o seu 'deus'?",
+"opcoes": [
+"O que ocupa mais tempo e afeição",
+"A cor da roupa",
+"O tamanho da casa",
+"A altura da pessoa"
+],
+"respostaCorreta": "O que ocupa mais tempo e afeição",
+"dica": "O texto fala de tempo, preocupação e amor."
+},
+{
+"pergunta": "O primeiro mandamento ensina que Deus deve ser o:",
+"opcoes": [
+"Centro da vida",
+"Último pensamento",
+"Menor valor",
+"Mesmo que tudo"
+],
+"respostaCorreta": "Centro da vida",
+"dica": "O capítulo usa essa ideia claramente."
+},
+{
+"pergunta": "Qual destas coisas pode virar ídolo moderno?",
+"opcoes": [
+"Carreira",
+"Somente templos antigos",
+"Somente pedras",
+"Somente rios"
+],
+"respostaCorreta": "Carreira",
+"dica": "O texto cita exemplos do coração moderno."
+},
+{
+"pergunta": "Se Deus não for o primeiro, a vida moral fica:",
+"opcoes": [
+"Desajustada",
+"Perfeita",
+"Sem escolhas",
+"Mais clara automaticamente"
+],
+"respostaCorreta": "Desajustada",
+"dica": "Lembre da camisa com os botões tortos."
+}
+]
+},
+{
+"id": "2-medio",
+"capitulo": "Capítulo 1 - Não Terás Outros Deuses",
+"nivel": "medio",
+"dicas": [
+"O mandamento fala de adoração e prioridades.",
+"Ídolos modernos não precisam ser imagens.",
+"O coração revela aquilo que governa a pessoa.",
+"Se Deus sai do centro, a moral se desorganiza."
+],
+"perguntas": [
+{
+"pergunta": "O que o primeiro mandamento proíbe externamente?",
+"opcoes": [
+"Adorar falsas divindades",
+"Trabalhar com dedicação",
+"Ter família",
+"Usar palavras difíceis"
+],
+"respostaCorreta": "Adorar falsas divindades",
+"dica": "O texto fala de divindades ou entidades fora do Criador."
+},
+{
+"pergunta": "O que o primeiro mandamento proíbe internamente?",
+"opcoes": [
+"Colocar qualquer coisa acima de Deus no coração",
+"Ter responsabilidades",
+"Planejar o futuro",
+"Gostar de estudar"
+],
+"respostaCorreta": "Colocar qualquer coisa acima de Deus no coração",
+"dica": "A questão é o trono do coração."
+},
+{
+"pergunta": "Qual destes exemplos aparece como possível ídolo moderno?",
+"opcoes": [
+"Dinheiro",
+"Somente árvores",
+"Somente animais",
+"Somente o clima"
+],
+"respostaCorreta": "Dinheiro",
+"dica": "O texto cita isso diretamente."
+},
+{
+"pergunta": "Por que o capítulo usa a imagem do primeiro botão da camisa?",
+"opcoes": [
+"Para mostrar que, se o começo está errado, o resto se desajusta",
+"Para ensinar moda",
+"Para falar apenas de roupas",
+"Para mostrar que detalhes não importam"
+],
+"respostaCorreta": "Para mostrar que, se o começo está errado, o resto se desajusta",
+"dica": "A comparação fala da ordem das prioridades."
+},
+{
+"pergunta": "Se alguém vive dominado pelo próprio ego, segundo o capítulo isso pode significar que:",
+"opcoes": [
+"O ego virou um falso deus",
+"A pessoa está mais humilde",
+"Nada espiritual está acontecendo",
+"O mandamento não se aplica"
+],
+"respostaCorreta": "O ego virou um falso deus",
+"dica": "O texto inclui o ego entre os ídolos."
+},
+{
+"pergunta": "O que pode revelar qual é o 'deus' de alguém?",
+"opcoes": [
+"Aquilo que recebe mais tempo, preocupação e afeição",
+"Somente a roupa que a pessoa usa",
+"A cidade onde ela mora",
+"A altura do seu corpo"
+],
+"respostaCorreta": "Aquilo que recebe mais tempo, preocupação e afeição",
+"dica": "A reflexão interior responde isso."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do primeiro mandamento?",
+"opcoes": [
+"Deus deve ser o centro absoluto da vida",
+"Tudo deve ter o mesmo valor",
+"A vida moral independe de Deus",
+"Só importa não adorar imagens"
+],
+"respostaCorreta": "Deus deve ser o centro absoluto da vida",
+"dica": "O capítulo vai além da adoração externa."
+},
+{
+"pergunta": "Qual situação mostra aplicação interna do mandamento?",
+"opcoes": [
+"Perceber que a carreira tomou o lugar de Deus",
+"Construir uma casa com cuidado",
+"Guardar um livro na estante",
+"Aprender a cozinhar"
+],
+"respostaCorreta": "Perceber que a carreira tomou o lugar de Deus",
+"dica": "O problema está na prioridade suprema."
+},
+{
+"pergunta": "Por que o primeiro mandamento é tão importante para a moralidade?",
+"opcoes": [
+"Porque quando Deus não é o primeiro, o restante se desorganiza",
+"Porque ele trata apenas de rituais antigos",
+"Porque ele substitui todos os outros mandamentos",
+"Porque ele fala só de templos"
+],
+"respostaCorreta": "Porque quando Deus não é o primeiro, o restante se desorganiza",
+"dica": "Lembre da imagem dos botões."
+},
+{
+"pergunta": "Qual destas opções representa melhor um exame do coração proposto pelo capítulo?",
+"opcoes": [
+"Observar o que mais domina seus pensamentos e afetos",
+"Contar quantos objetos há no quarto",
+"Medir o tempo de sono apenas",
+"Somar ganhos do mês"
+],
+"respostaCorreta": "Observar o que mais domina seus pensamentos e afetos",
+"dica": "A reflexão interior pede essa observação."
+}
+]
+},
+{
+"id": "2-avancado",
+"capitulo": "Capítulo 1 - Não Terás Outros Deuses",
+"nivel": "avancado",
+"dicas": [
+"O mandamento trata de adoração externa e lealdade interna.",
+"Ídolos modernos podem ser invisíveis, mas dominantes.",
+"A ordem moral depende da ordem das prioridades.",
+"O coração revela aquilo que governa a vida."
+],
+"perguntas": [
+{
+"pergunta": "Por que o primeiro mandamento é apresentado como base da ordem moral?",
+"opcoes": [
+"Porque, se Deus não ocupa o primeiro lugar, todo o restante da vida se desajusta",
+"Porque ele fala apenas contra imagens antigas",
+"Porque ele substitui a necessidade de virtudes",
+"Porque trata somente de religião pública"
+],
+"respostaCorreta": "Porque, se Deus não ocupa o primeiro lugar, todo o restante da vida se desajusta",
+"dica": "A imagem do primeiro botão ajuda a entender isso."
+},
+{
+"pergunta": "Qual análise explica melhor a idolatria interna descrita no capítulo?",
+"opcoes": [
+"É colocar dinheiro, carreira, família ou ego no lugar supremo que pertence a Deus",
+"É apenas fabricar estátuas com as mãos",
+"É somente negar a existência de seres espirituais",
+"É apenas deixar de frequentar cultos"
+],
+"respostaCorreta": "É colocar dinheiro, carreira, família ou ego no lugar supremo que pertence a Deus",
+"dica": "O capítulo amplia o sentido do mandamento para o coração."
+},
+{
+"pergunta": "Por que o texto diz que o que ocupa mais tempo, preocupação e afeição revela o 'deus' da pessoa?",
+"opcoes": [
+"Porque a devoção real aparece nas prioridades concretas da vida",
+"Porque sentimentos não têm relação com fé",
+"Porque o coração não influencia escolhas",
+"Porque apenas palavras definem a adoração"
+],
+"respostaCorreta": "Porque a devoção real aparece nas prioridades concretas da vida",
+"dica": "O coração se mostra no uso do tempo e da atenção."
+},
+{
+"pergunta": "Qual consequência moral pode surgir quando a carreira se torna um ídolo?",
+"opcoes": [
+"Outras áreas da vida passam a ser sacrificadas ao que tomou o lugar de Deus",
+"A pessoa automaticamente se torna mais justa",
+"O primeiro mandamento deixa de valer",
+"A idolatria passa a ser apenas externa"
+],
+"respostaCorreta": "Outras áreas da vida passam a ser sacrificadas ao que tomou o lugar de Deus",
+"dica": "O ídolo reorganiza toda a escala de valores."
+},
+{
+"pergunta": "Qual análise está correta sobre o princípio eterno do primeiro mandamento?",
+"opcoes": [
+"Ele exige lealdade total a Deus como centro da existência",
+"Ele trata apenas da proibição de crenças antigas",
+"Ele permite dividir o coração igualmente entre Deus e outros senhores",
+"Ele se limita ao comportamento visível"
+],
+"respostaCorreta": "Ele exige lealdade total a Deus como centro da existência",
+"dica": "O capítulo fala de centralidade absoluta."
+},
+{
+"pergunta": "Por que o ego pode ser chamado de ídolo moderno?",
+"opcoes": [
+"Porque a pessoa pode colocar a si mesma no trono que pertence a Deus",
+"Porque autoestima é sempre idolatria",
+"Porque toda consciência de si é proibida",
+"Porque o ego é uma imagem física"
+],
+"respostaCorreta": "Porque a pessoa pode colocar a si mesma no trono que pertence a Deus",
+"dica": "A questão é a supremacia do eu."
+},
+{
+"pergunta": "Qual situação mostra melhor a aplicação interna do mandamento?",
+"opcoes": [
+"Reconhecer que o medo de perder status governa mais o coração do que a obediência a Deus",
+"Guardar uma fotografia de família",
+"Planejar um horário de trabalho",
+"Estudar para uma prova importante"
+],
+"respostaCorreta": "Reconhecer que o medo de perder status governa mais o coração do que a obediência a Deus",
+"dica": "O problema está no senhorio do coração."
+},
+{
+"pergunta": "Qual relação de causa e efeito o capítulo sugere?",
+"opcoes": [
+"Se Deus deixa de ser o primeiro, a moralidade inteira perde seu alinhamento",
+"Se a pessoa tem muitos bens, ela já quebrou o mandamento automaticamente",
+"Se alguém ama a família, então sempre caiu em idolatria",
+"Se a pessoa trabalha muito, então não pode obedecer a Deus"
+],
+"respostaCorreta": "Se Deus deixa de ser o primeiro, a moralidade inteira perde seu alinhamento",
+"dica": "A camisa com botão errado mostra esse efeito."
+},
+{
+"pergunta": "Qual distinção o capítulo faz entre significado externo e interno do mandamento?",
+"opcoes": [
+"Externamente ele proíbe falsos deuses; internamente ele proíbe qualquer rival no coração",
+"Externamente ele fala do coração; internamente ele fala apenas de objetos",
+"Não há diferença entre externo e interno",
+"O sentido interno substitui completamente o externo"
+],
+"respostaCorreta": "Externamente ele proíbe falsos deuses; internamente ele proíbe qualquer rival no coração",
+"dica": "O capítulo trata dos dois níveis."
+},
+{
+"pergunta": "Qual frase resume melhor o capítulo?",
+"opcoes": [
+"O primeiro mandamento exige que Deus seja o centro absoluto da vida, rejeitando tanto falsos deuses externos quanto ídolos do coração",
+"O primeiro mandamento trata apenas de adorar corretamente em público",
+"O primeiro mandamento proíbe somente imagens físicas",
+"O primeiro mandamento fala apenas sobre emoções religiosas"
+],
+"respostaCorreta": "O primeiro mandamento exige que Deus seja o centro absoluto da vida, rejeitando tanto falsos deuses externos quanto ídolos do coração",
+"dica": "A resposta precisa unir exclusividade, centro e coração."
+}
+]
+},
+{
+"id": "3-basico",
+"capitulo": "Capítulo 2 - Não Farás Imagens para Adoração",
+"nivel": "basico",
+"dicas": [
+"O mandamento fala de adoração correta.",
+"Não devemos adorar imagens.",
+"Também não devemos inventar um deus falso na mente.",
+"Deus é maior do que a nossa imaginação."
+],
+"perguntas": [
+{
+"pergunta": "O segundo mandamento diz:",
+"opcoes": [
+"Não farás imagens para adoração",
+"Não furtarás",
+"Não cobiçarás",
+"Não matarás"
+],
+"respostaCorreta": "Não farás imagens para adoração",
+"dica": "Ele fala de imagens ligadas ao culto."
+},
+{
+"pergunta": "Externamente, esse mandamento proíbe:",
+"opcoes": [
+"Fazer objetos para adoração idólatra",
+"Construir casas",
+"Desenhar mapas",
+"Escrever livros"
+],
+"respostaCorreta": "Fazer objetos para adoração idólatra",
+"dica": "A proibição está ligada ao culto falso."
+},
+{
+"pergunta": "Internamente, esse mandamento também proíbe:",
+"opcoes": [
+"Inventar ideias falsas sobre Deus",
+"Aprender sobre Deus",
+"Ler as Escrituras",
+"Fazer perguntas honestas"
+],
+"respostaCorreta": "Inventar ideias falsas sobre Deus",
+"dica": "O texto fala de reduzir Deus à nossa imaginação."
+},
+{
+"pergunta": "Deus deve ser adorado como:",
+"opcoes": [
+"Ele ordena",
+"Cada um imagina",
+"For mais fácil",
+"Parecer mais confortável"
+],
+"respostaCorreta": "Ele ordena",
+"dica": "O capítulo destaca a pureza da adoração."
+},
+{
+"pergunta": "O texto diz que Deus não pode ser contido em:",
+"opcoes": [
+"Formas humanas",
+"Palavras verdadeiras",
+"Leitura das Escrituras",
+"Obediência"
+],
+"respostaCorreta": "Formas humanas",
+"dica": "Ele é maior do que qualquer forma criada."
+},
+{
+"pergunta": "Uma ideia falsa sobre Deus pode funcionar como:",
+"opcoes": [
+"Um ídolo do pensamento",
+"Uma virtude",
+"Uma promessa",
+"Uma prova matemática"
+],
+"respostaCorreta": "Um ídolo do pensamento",
+"dica": "O problema pode estar na mente e não só em objetos."
+},
+{
+"pergunta": "O segundo mandamento ensina que Deus é:",
+"opcoes": [
+"Transcendente",
+"Limitado",
+"Pequeno",
+"Controlado por nós"
+],
+"respostaCorreta": "Transcendente",
+"dica": "Essa palavra aparece no texto."
+},
+{
+"pergunta": "Se alguém cria um 'deus' que nunca corrige seus erros, essa pessoa pode estar:",
+"opcoes": [
+"Inventando uma ideia falsa sobre Deus",
+"Praticando justiça",
+"Guardando o dia do Senhor",
+"Honrando pai e mãe"
+],
+"respostaCorreta": "Inventando uma ideia falsa sobre Deus",
+"dica": "O texto fala de um deus que apenas valida vontades."
+},
+{
+"pergunta": "O segundo mandamento protege a pureza da:",
+"opcoes": [
+"Adoração",
+"Velocidade",
+"Comida",
+"Escrita"
+],
+"respostaCorreta": "Adoração",
+"dica": "Esse é o tema central do capítulo."
+},
+{
+"pergunta": "Qual destas palavras combina melhor com o capítulo?",
+"opcoes": [
+"Verdade",
+"Invenção",
+"Bagunça",
+"Pressa"
+],
+"respostaCorreta": "Verdade",
+"dica": "Devemos conhecer Deus como Ele se revelou."
+}
+]
+},
+{
+"id": "3-medio",
+"capitulo": "Capítulo 2 - Não Farás Imagens para Adoração",
+"nivel": "medio",
+"dicas": [
+"O mandamento tem sentido externo e interno.",
+"Não se trata só de imagens físicas.",
+"Ideias falsas sobre Deus também são problema.",
+"Adoração correta segue a revelação, não a imaginação."
+],
+"perguntas": [
+{
+"pergunta": "Qual é o significado externo do segundo mandamento?",
+"opcoes": [
+"Proibir a fabricação de objetos para culto idólatra",
+"Proibir toda arte e toda escultura",
+"Proibir qualquer tipo de lembrança visual",
+"Proibir casas de adoração"
+],
+"respostaCorreta": "Proibir a fabricação de objetos para culto idólatra",
+"dica": "O foco é adoração falsa, não arte em geral."
+},
+{
+"pergunta": "Qual é o significado interno do segundo mandamento?",
+"opcoes": [
+"Não inventar ideias falsas sobre Deus",
+"Não estudar teologia",
+"Não falar sobre atributos divinos",
+"Não pensar sobre adoração"
+],
+"respostaCorreta": "Não inventar ideias falsas sobre Deus",
+"dica": "O capítulo fala de reduzir Deus à nossa vontade."
+},
+{
+"pergunta": "Por que o capítulo diz que Deus deve ser adorado como Ele ordena?",
+"opcoes": [
+"Porque nossa imaginação é limitada e pode distorcer quem Ele é",
+"Porque toda imaginação é sempre pecado",
+"Porque Deus não pode ser conhecido",
+"Porque somente símbolos físicos importam"
+],
+"respostaCorreta": "Porque nossa imaginação é limitada e pode distorcer quem Ele é",
+"dica": "O problema é criar um deus à nossa medida."
+},
+{
+"pergunta": "Qual situação mostra a quebra interna desse mandamento?",
+"opcoes": [
+"Criar uma ideia de Deus que nunca confronta o pecado",
+"Ler as Escrituras com atenção",
+"Buscar conhecer a santidade divina",
+"Orar com reverência"
+],
+"respostaCorreta": "Criar uma ideia de Deus que nunca confronta o pecado",
+"dica": "O texto alerta contra um deus inventado."
+},
+{
+"pergunta": "O que significa dizer que Deus é transcendente?",
+"opcoes": [
+"Que Ele é maior do que nossas formas e conceitos humanos",
+"Que Ele muda de acordo com nossa vontade",
+"Que Ele é igual a um objeto sagrado",
+"Que Ele depende da imaginação humana"
+],
+"respostaCorreta": "Que Ele é maior do que nossas formas e conceitos humanos",
+"dica": "Ele não pode ser reduzido ao que criamos."
+},
+{
+"pergunta": "Qual destas ideias está de acordo com o capítulo?",
+"opcoes": [
+"Nem toda idolatria é física; parte dela pode estar na mente",
+"A idolatria só existe com esculturas",
+"Pensamentos sobre Deus nunca podem errar",
+"Toda imagem é automaticamente adoração"
+],
+"respostaCorreta": "Nem toda idolatria é física; parte dela pode estar na mente",
+"dica": "O capítulo fala de falsas concepções internas."
+},
+{
+"pergunta": "Qual atributo o capítulo sugere buscar, em vez de ignorar?",
+"opcoes": [
+"Justiça, misericórdia ou santidade",
+"Rapidez, força ou fama",
+"Altura, peso ou cor",
+"Número, forma ou volume"
+],
+"respostaCorreta": "Justiça, misericórdia ou santidade",
+"dica": "O desafio final traz esses exemplos."
+},
+{
+"pergunta": "Por que um 'deus' criado para validar nossas vontades é problemático?",
+"opcoes": [
+"Porque não é o Deus verdadeiro revelado nas Escrituras",
+"Porque toda vontade humana é sempre boa",
+"Porque Deus precisa ser inventado por cada pessoa",
+"Porque isso torna a fé mais forte"
+],
+"respostaCorreta": "Porque não é o Deus verdadeiro revelado nas Escrituras",
+"dica": "O texto contrasta imaginação e revelação."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do segundo mandamento?",
+"opcoes": [
+"Deus deve ser adorado como Ele se revelou, não como o homem deseja imaginá-Lo",
+"Toda adoração depende apenas do sentimento",
+"O importante é que cada um invente seu próprio caminho",
+"A forma externa é tudo o que importa"
+],
+"respostaCorreta": "Deus deve ser adorado como Ele se revelou, não como o homem deseja imaginá-Lo",
+"dica": "A resposta precisa unir revelação e adoração."
+},
+{
+"pergunta": "Qual exame interior o capítulo propõe?",
+"opcoes": [
+"Perguntar se adoramos o Deus das Escrituras ou um deus criado por nós",
+"Perguntar só se usamos imagens em casa",
+"Perguntar apenas se conhecemos histórias antigas",
+"Perguntar somente se decoramos nomes bíblicos"
+],
+"respostaCorreta": "Perguntar se adoramos o Deus das Escrituras ou um deus criado por nós",
+"dica": "A reflexão interior formula exatamente isso."
+}
+]
+},
+{
+"id": "3-avancado",
+"capitulo": "Capítulo 2 - Não Farás Imagens para Adoração",
+"nivel": "avancado",
+"dicas": [
+"O mandamento protege a pureza da adoração.",
+"Idolatria pode ser material ou conceitual.",
+"Deus não pode ser reduzido à vontade humana.",
+"A revelação corrige a imaginação."
+],
+"perguntas": [
+{
+"pergunta": "Por que o segundo mandamento não trata apenas de imagens físicas?",
+"opcoes": [
+"Porque também proíbe falsas ideias sobre Deus que o reduzem à imaginação humana",
+"Porque elimina toda forma de pensamento religioso",
+"Porque substitui o primeiro mandamento completamente",
+"Porque fala apenas de arte antiga"
+],
+"respostaCorreta": "Porque também proíbe falsas ideias sobre Deus que o reduzem à imaginação humana",
+"dica": "O capítulo destaca um significado interno."
+},
+{
+"pergunta": "Qual análise explica melhor a idolatria conceitual descrita no capítulo?",
+"opcoes": [
+"Criar uma imagem mental de Deus que apenas confirma nossas vontades",
+"Estudar os atributos de Deus nas Escrituras",
+"Reconhecer a santidade divina",
+"Buscar corrigir ideias erradas sobre Deus"
+],
+"respostaCorreta": "Criar uma imagem mental de Deus que apenas confirma nossas vontades",
+"dica": "O problema é fabricar um deus manipulável."
+},
+{
+"pergunta": "Por que o texto insiste que Deus deve ser adorado como Ele ordena?",
+"opcoes": [
+"Porque a verdadeira adoração depende da revelação divina e não da fantasia humana",
+"Porque toda forma externa já garante pureza de culto",
+"Porque Deus não pode ser conhecido de modo algum",
+"Porque qualquer ideia humana sobre Deus é suficiente"
+],
+"respostaCorreta": "Porque a verdadeira adoração depende da revelação divina e não da fantasia humana",
+"dica": "Revelação e imaginação são colocadas em contraste."
+},
+{
+"pergunta": "Qual consequência espiritual pode surgir quando uma pessoa adora um 'deus' que ela mesma inventou?",
+"opcoes": [
+"Ela passa a servir uma projeção de si mesma em vez do Deus verdadeiro",
+"Ela compreende melhor a santidade divina",
+"Ela é automaticamente corrigida",
+"Ela evita toda forma de idolatria"
+],
+"respostaCorreta": "Ela passa a servir uma projeção de si mesma em vez do Deus verdadeiro",
+"dica": "O falso deus costuma refletir desejos humanos."
+},
+{
+"pergunta": "Qual relação de causa e efeito o capítulo sugere?",
+"opcoes": [
+"Se Deus é reduzido a um conceito manipulável, a adoração deixa de ser verdadeira",
+"Se a pessoa usa linguagem religiosa, então toda adoração é pura",
+"Se uma imagem não é grande, então não há idolatria",
+"Se alguém é sincero, então qualquer ideia sobre Deus basta"
+],
+"respostaCorreta": "Se Deus é reduzido a um conceito manipulável, a adoração deixa de ser verdadeira",
+"dica": "O problema é moldar Deus às próprias vontades."
+},
+{
+"pergunta": "Por que a transcendência de Deus é importante para entender esse mandamento?",
+"opcoes": [
+"Porque mostra que Ele é maior do que qualquer forma ou conceito humano",
+"Porque indica que Deus não tem relação com o mundo",
+"Porque ensina que Deus não pode ser conhecido em nada",
+"Porque nega a necessidade de adoração"
+],
+"respostaCorreta": "Porque mostra que Ele é maior do que qualquer forma ou conceito humano",
+"dica": "Transcendência impede que o Criador seja reduzido ao criado."
+},
+{
+"pergunta": "Qual situação mostra melhor obediência interna ao segundo mandamento?",
+"opcoes": [
+"Aceitar atributos de Deus que confrontam nossos desejos, em vez de ignorá-los",
+"Inventar uma imagem mental mais confortável de Deus",
+"Escolher só os aspectos divinos que agradam",
+"Evitar qualquer reflexão sobre quem Deus é"
+],
+"respostaCorreta": "Aceitar atributos de Deus que confrontam nossos desejos, em vez de ignorá-los",
+"dica": "O desafio fala em buscar atributos antes ignorados."
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": [
+"A idolatria externa fabrica objetos; a interna fabrica versões falsas de Deus",
+"A idolatria externa é pecado, mas a interna não",
+"A idolatria interna é só imaginação sem efeito moral",
+"A idolatria externa e a interna não têm relação"
+],
+"respostaCorreta": "A idolatria externa fabrica objetos; a interna fabrica versões falsas de Deus",
+"dica": "O capítulo apresenta dois níveis do mandamento."
+},
+{
+"pergunta": "Por que conhecer atributos como justiça, misericórdia e santidade ajuda a obedecer a esse mandamento?",
+"opcoes": [
+"Porque impede que escolhamos apenas um deus moldado ao nosso gosto",
+"Porque elimina toda necessidade de adoração",
+"Porque faz a imaginação substituir a verdade",
+"Porque reduz Deus a uma ideia simples e confortável"
+],
+"respostaCorreta": "Porque impede que escolhamos apenas um deus moldado ao nosso gosto",
+"dica": "Conhecer a revelação combate as distorções."
+},
+{
+"pergunta": "Qual frase resume melhor o capítulo?",
+"opcoes": [
+"O segundo mandamento exige adoração pura, rejeitando tanto imagens de culto quanto ideias falsas que reduzem Deus à imaginação humana",
+"O segundo mandamento proíbe apenas objetos religiosos visíveis",
+"O segundo mandamento trata apenas de costumes antigos sem aplicação interior",
+"O segundo mandamento ensina que qualquer noção de Deus serve, desde que sincera"
+],
+"respostaCorreta": "O segundo mandamento exige adoração pura, rejeitando tanto imagens de culto quanto ideias falsas que reduzem Deus à imaginação humana",
+"dica": "A resposta deve unir culto, coração e revelação."
+}
+]
+},
+{
+"id": "4-basico",
+"capitulo": "Capítulo 3 - Não Tomarás o Nome de Deus em Vão",
+"nivel": "basico",
+"dicas": [
+"O nome de Deus é santo.",
+"Não devemos usar o nome de Deus de forma vazia.",
+"As palavras mostram o que há no coração.",
+"Respeito ao sagrado aparece na fala."
+],
+"perguntas": [
+{
+"pergunta": "O terceiro mandamento fala sobre:",
+"opcoes": [
+"O nome de Deus",
+"O dia do descanso",
+"A família",
+"A propriedade"
+],
+"respostaCorreta": "O nome de Deus",
+"dica": "Ele ensina reverência ao que é sagrado."
+},
+{
+"pergunta": "Tomar o nome de Deus em vão significa usar esse nome de forma:",
+"opcoes": [
+"Irreverente",
+"Respeitosa",
+"Cuidadosa",
+"Sábia"
+],
+"respostaCorreta": "Irreverente",
+"dica": "A ideia é tratar o sagrado sem o devido respeito."
+},
+{
+"pergunta": "O nome de Deus deve ser tratado como:",
+"opcoes": [
+"Santo",
+"Comum",
+"Brincadeira",
+"Enfeite"
+],
+"respostaCorreta": "Santo",
+"dica": "O capítulo destaca a santidade do nome."
+},
+{
+"pergunta": "Qual atitude combina com este mandamento?",
+"opcoes": [
+"Falar com reverência",
+"Fazer piadas com o sagrado",
+"Usar juramentos falsos",
+"Falar sem pensar"
+],
+"respostaCorreta": "Falar com reverência",
+"dica": "O respeito aparece nas palavras."
+},
+{
+"pergunta": "O nome representa a:",
+"opcoes": [
+"Pessoa",
+"Roupa",
+"Casa",
+"Idade"
+],
+"respostaCorreta": "Pessoa",
+"dica": "Desonrar o nome é desonrar quem ele representa."
+},
+{
+"pergunta": "Uma forma errada de usar o nome de Deus é em:",
+"opcoes": [
+"Piadas e blasfêmias",
+"Orações sinceras",
+"Leitura respeitosa",
+"Louvor reverente"
+],
+"respostaCorreta": "Piadas e blasfêmias",
+"dica": "O texto cita exemplos de uso irreverente."
+},
+{
+"pergunta": "A linguagem que usamos mostra a saúde da nossa:",
+"opcoes": [
+"Alma",
+"Mochila",
+"Escola",
+"Mesa"
+],
+"respostaCorreta": "Alma",
+"dica": "As palavras revelam o interior."
+},
+{
+"pergunta": "Usar o nome de Deus sem pensar é tratar o sagrado com:",
+"opcoes": [
+"Banalidade",
+"Honra",
+"Amor",
+"Temor"
+],
+"respostaCorreta": "Banalidade",
+"dica": "O capítulo contrasta respeito com indiferença."
+},
+{
+"pergunta": "Este mandamento ensina principalmente:",
+"opcoes": [
+"Reverência",
+"Rapidez",
+"Silêncio sempre",
+"Força física"
+],
+"respostaCorreta": "Reverência",
+"dica": "A fala deve mostrar respeito a Deus."
+},
+{
+"pergunta": "Qual atitude foi proposta no desafio do capítulo?",
+"opcoes": [
+"Observar as palavras durante o dia",
+"Contar quantas vezes fala",
+"Ficar sem conversar sempre",
+"Escrever apenas em silêncio"
+],
+"respostaCorreta": "Observar as palavras durante o dia",
+"dica": "O desafio pede atenção à fala."
+}
+]
+},
+{
+"id": "4-medio",
+"capitulo": "Capítulo 3 - Não Tomarás o Nome de Deus em Vão",
+"nivel": "medio",
+"dicas": [
+"O mandamento trata da fala e do coração.",
+"O nome representa o caráter de Deus.",
+"Palavras irreverentes revelam desrespeito.",
+"Honrar o nome é honrar a presença de Deus."
+],
+"perguntas": [
+{
+"pergunta": "Qual é o significado externo do terceiro mandamento?",
+"opcoes": [
+"Não usar o nome de Deus de forma irreverente ou falsa",
+"Não pronunciar o nome de Deus nunca",
+"Não falar sobre Deus com ninguém",
+"Não escrever palavras sagradas"
+],
+"respostaCorreta": "Não usar o nome de Deus de forma irreverente ou falsa",
+"dica": "O texto cita piadas, blasfêmias e juramentos falsos."
+},
+{
+"pergunta": "Qual é o significado interno do terceiro mandamento?",
+"opcoes": [
+"Ter profundo respeito pelo caráter de Deus",
+"Evitar toda conversa religiosa",
+"Guardar silêncio em público",
+"Esconder a fé"
+],
+"respostaCorreta": "Ter profundo respeito pelo caráter de Deus",
+"dica": "O capítulo vai além da fala externa."
+},
+{
+"pergunta": "Por que desonrar o nome de Deus é algo grave?",
+"opcoes": [
+"Porque o nome representa a pessoa e o caráter divino",
+"Porque é apenas uma tradição antiga",
+"Porque toda palavra tem o mesmo peso",
+"Porque o nome não tem significado"
+],
+"respostaCorreta": "Porque o nome representa a pessoa e o caráter divino",
+"dica": "O texto liga nome e presença."
+},
+{
+"pergunta": "Qual destas atitudes quebra este mandamento?",
+"opcoes": [
+"Usar o nome de Deus em juramento falso",
+"Orar com reverência",
+"Ler a Escritura com atenção",
+"Louvar com sinceridade"
+],
+"respostaCorreta": "Usar o nome de Deus em juramento falso",
+"dica": "Esse é um dos exemplos citados."
+},
+{
+"pergunta": "O que a linguagem revela, segundo o capítulo?",
+"opcoes": [
+"A saúde da alma",
+"O tamanho do corpo",
+"A idade da pessoa",
+"O número de amigos"
+],
+"respostaCorreta": "A saúde da alma",
+"dica": "As palavras refletem o interior."
+},
+{
+"pergunta": "Qual frase está de acordo com o princípio eterno do mandamento?",
+"opcoes": [
+"O nome de Deus é santo",
+"Toda fala tem o mesmo peso moral",
+"O sagrado pode ser tratado como comum",
+"Palavras nunca revelam o coração"
+],
+"respostaCorreta": "O nome de Deus é santo",
+"dica": "Essa é a frase central do capítulo."
+},
+{
+"pergunta": "Se alguém usa termos sagrados de forma impensada, isso mostra:",
+"opcoes": [
+"Falta de reverência",
+"Maior maturidade espiritual",
+"Respeito automático",
+"Conhecimento profundo"
+],
+"respostaCorreta": "Falta de reverência",
+"dica": "O problema está na banalização."
+},
+{
+"pergunta": "Qual aplicação prática o capítulo propõe?",
+"opcoes": [
+"Vigiar as palavras usadas no dia a dia",
+"Evitar toda conversa",
+"Falar apenas de si mesmo",
+"Usar qualquer expressão religiosa"
+],
+"respostaCorreta": "Vigiar as palavras usadas no dia a dia",
+"dica": "O desafio pede observação da fala."
+},
+{
+"pergunta": "Por que este mandamento envolve mais do que vocabulário?",
+"opcoes": [
+"Porque trata do respeito real a Deus no coração",
+"Porque proíbe todas as palavras religiosas",
+"Porque fala só de silêncio",
+"Porque depende apenas do costume"
+],
+"respostaCorreta": "Porque trata do respeito real a Deus no coração",
+"dica": "O foco não é só o som da palavra."
+},
+{
+"pergunta": "Qual atitude honra melhor este mandamento?",
+"opcoes": [
+"Usar a fala com verdade e reverência",
+"Fazer brincadeiras com o sagrado",
+"Falar sem pensar em nada",
+"Prometer coisas falsas em nome de Deus"
+],
+"respostaCorreta": "Usar a fala com verdade e reverência",
+"dica": "O mandamento une linguagem e caráter."
+}
+]
+},
+{
+"id": "4-avancado",
+"capitulo": "Capítulo 3 - Não Tomarás o Nome de Deus em Vão",
+"nivel": "avancado",
+"dicas": [
+"O mandamento protege a santidade do nome divino.",
+"O nome expressa caráter e presença.",
+"A irreverência verbal nasce de um problema interior.",
+"A fala pode honrar ou desonrar a verdade."
+],
+"perguntas": [
+{
+"pergunta": "Por que o terceiro mandamento vai além de evitar certas palavras?",
+"opcoes": [
+"Porque exige reverência real ao caráter de Deus e não apenas cuidado externo com sons",
+"Porque proíbe toda linguagem religiosa",
+"Porque ensina apenas regras de etiqueta",
+"Porque só trata de vocabulário antigo"
+],
+"respostaCorreta": "Porque exige reverência real ao caráter de Deus e não apenas cuidado externo com sons",
+"dica": "O capítulo fala de significado interno e externo."
+},
+{
+"pergunta": "Qual análise explica melhor a gravidade de usar o nome de Deus em vão?",
+"opcoes": [
+"É grave porque o nome representa a pessoa de Deus e Seu caráter santo",
+"É grave apenas porque soa feio",
+"É grave somente em lugares religiosos",
+"É grave porque toda palavra tem o mesmo peso"
+],
+"respostaCorreta": "É grave porque o nome representa a pessoa de Deus e Seu caráter santo",
+"dica": "O nome carrega a presença de quem é nomeado."
+},
+{
+"pergunta": "Qual relação de causa e efeito o capítulo sugere sobre a fala?",
+"opcoes": [
+"Se a alma trata o sagrado com indiferença, a fala tende a banalizar o nome de Deus",
+"Se a pessoa fala muito, ela sempre quebra o mandamento",
+"Se alguém conhece palavras religiosas, então já é reverente",
+"Se o nome é dito baixo, então nunca é em vão"
+],
+"respostaCorreta": "Se a alma trata o sagrado com indiferença, a fala tende a banalizar o nome de Deus",
+"dica": "A linguagem revela o estado do coração."
+},
+{
+"pergunta": "Por que juramentos falsos envolvendo o nome de Deus violam esse mandamento?",
+"opcoes": [
+"Porque usam o sagrado para sustentar mentira",
+"Porque todo juramento é proibido em qualquer situação",
+"Porque Deus não se importa com a fala humana",
+"Porque mentiras pequenas não têm peso moral"
+],
+"respostaCorreta": "Porque usam o sagrado para sustentar mentira",
+"dica": "O capítulo liga o nome de Deus à verdade."
+},
+{
+"pergunta": "Qual análise está correta sobre o princípio eterno do mandamento?",
+"opcoes": [
+"A santidade do nome de Deus exige que a linguagem seja marcada por verdade e reverência",
+"A linguagem não tem relação com a moralidade",
+"O sagrado pode ser tratado como qualquer coisa comum",
+"O nome de Deus importa apenas em cerimônias"
+],
+"respostaCorreta": "A santidade do nome de Deus exige que a linguagem seja marcada por verdade e reverência",
+"dica": "O capítulo une santidade e fala."
+},
+{
+"pergunta": "Qual situação mostra melhor uma violação interna desse mandamento?",
+"opcoes": [
+"Tratar o caráter de Deus com desprezo, mesmo sem blasfêmia pública",
+"Fazer uma oração sincera em silêncio",
+"Ler as Escrituras com atenção",
+"Corrigir a própria fala com humildade"
+],
+"respostaCorreta": "Tratar o caráter de Deus com desprezo, mesmo sem blasfêmia pública",
+"dica": "O problema pode existir antes da palavra pronunciada."
+},
+{
+"pergunta": "Por que o capítulo diz que a linguagem reflete a saúde da alma?",
+"opcoes": [
+"Porque a forma como falamos revela o que honramos ou desprezamos internamente",
+"Porque palavras não têm relação com o coração",
+"Porque a alma é medida pelo tamanho do vocabulário",
+"Porque a linguagem é só um hábito neutro"
+],
+"respostaCorreta": "Porque a forma como falamos revela o que honramos ou desprezamos internamente",
+"dica": "A fala é um espelho moral."
+},
+{
+"pergunta": "Qual atitude melhor cumpre esse mandamento em profundidade?",
+"opcoes": [
+"Cultivar uma fala reverente porque se reconhece a santidade de Deus",
+"Evitar só palavras religiosas em público",
+"Falar menos, sem mudar o coração",
+"Usar expressões sagradas para parecer espiritual"
+],
+"respostaCorreta": "Cultivar uma fala reverente porque se reconhece a santidade de Deus",
+"dica": "A obediência nasce de um respeito real."
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": [
+"Blasfêmia pública e banalidade interior são formas diferentes de desonrar o sagrado",
+"Somente a blasfêmia pública importa",
+"Somente o silêncio total honra a Deus",
+"Toda irreverência é apenas erro de linguagem"
+],
+"respostaCorreta": "Blasfêmia pública e banalidade interior são formas diferentes de desonrar o sagrado",
+"dica": "O capítulo trabalha com externo e interno."
+},
+{
+"pergunta": "Qual frase resume melhor o capítulo?",
+"opcoes": [
+"O terceiro mandamento exige que o nome de Deus seja tratado com verdade, reverência e profundo respeito ao Seu caráter santo",
+"O terceiro mandamento trata apenas de evitar certas expressões populares",
+"O terceiro mandamento fala só de regras de fala em cerimônias",
+"O terceiro mandamento ensina que palavras não têm peso moral"
+],
+"respostaCorreta": "O terceiro mandamento exige que o nome de Deus seja tratado com verdade, reverência e profundo respeito ao Seu caráter santo",
+"dica": "A resposta deve unir fala, santidade e coração."
+}
+]
+},
+{
+"id": "5-basico",
+"capitulo": "Capítulo 4 - Guardar o Dia do Senhor",
+"nivel": "basico",
+"dicas": [
+"Um dia deve ser separado para Deus.",
+"Descanso não é preguiça.",
+"Esse dia lembra que Deus sustenta a vida.",
+"Também é tempo de adoração."
+],
+"perguntas": [
+{
+"pergunta": "O quarto mandamento fala sobre:",
+"opcoes": [
+"Guardar o dia do Senhor",
+"Não furtar",
+"Não matar",
+"Não cobiçar"
+],
+"respostaCorreta": "Guardar o dia do Senhor",
+"dica": "Ele trata do tempo separado para Deus."
+},
+{
+"pergunta": "Guardar o dia do Senhor significa separar um tempo para:",
+"opcoes": [
+"Descanso e adoração",
+"Somente trabalho",
+"Somente compras",
+"Somente brincadeiras"
+],
+"respostaCorreta": "Descanso e adoração",
+"dica": "O capítulo cita essas duas ideias."
+},
+{
+"pergunta": "O tempo pertence a:",
+"opcoes": [
+"Deus",
+"Somente ao relógio",
+"Somente às pessoas",
+"Somente ao trabalho"
+],
+"respostaCorreta": "Deus",
+"dica": "Esse é o princípio eterno do capítulo."
+},
+{
+"pergunta": "O descanso, no capítulo, não é visto como:",
+"opcoes": [
+"Preguiça",
+"Ato de fé",
+"Confiança",
+"Tempo santo"
+],
+"respostaCorreta": "Preguiça",
+"dica": "O texto corrige essa ideia."
+},
+{
+"pergunta": "Separar um dia para Deus mostra confiança em Sua:",
+"opcoes": [
+"Providência",
+"Cor",
+"Altura",
+"Velocidade"
+],
+"respostaCorreta": "Providência",
+"dica": "O capítulo diz que Deus sustenta a vida."
+},
+{
+"pergunta": "Guardar o dia do Senhor ajuda a lembrar que não somos:",
+"opcoes": [
+"Escravos da produtividade",
+"Pessoas que descansam",
+"Seres humanos finitos",
+"Criaturas dependentes"
+],
+"respostaCorreta": "Escravos da produtividade",
+"dica": "A reflexão interior usa essa expressão."
+},
+{
+"pergunta": "Qual destas atitudes combina com o mandamento?",
+"opcoes": [
+"Parar para focar no que é eterno",
+"Trabalhar sem parar sempre",
+"Viver sem silêncio",
+"Ignorar a adoração"
+],
+"respostaCorreta": "Parar para focar no que é eterno",
+"dica": "O descanso abre espaço para Deus."
+},
+{
+"pergunta": "O quarto mandamento ensina que o descanso é um ato de:",
+"opcoes": [
+"Fé",
+"Preguiça",
+"Esquecimento",
+"Indiferença"
+],
+"respostaCorreta": "Fé",
+"dica": "Descansar mostra confiança em Deus."
+},
+{
+"pergunta": "O desafio do capítulo sugere planejar um período de:",
+"opcoes": [
+"Silêncio e leitura",
+"Corrida e barulho",
+"Compras e festa",
+"Viagem e trabalho"
+],
+"respostaCorreta": "Silêncio e leitura",
+"dica": "O texto propõe esse exercício."
+},
+{
+"pergunta": "Guardar o dia do Senhor ajuda a pessoa a:",
+"opcoes": [
+"Voltar os olhos para Deus",
+"Esquecer toda reverência",
+"Valorizar só o material",
+"Aumentar a ansiedade"
+],
+"respostaCorreta": "Voltar os olhos para Deus",
+"dica": "O dia é consagrado ao que é eterno."
+}
+]
+},
+{
+"id": "5-medio",
+"capitulo": "Capítulo 4 - Guardar o Dia do Senhor",
+"nivel": "medio",
+"dicas": [
+"O mandamento envolve descanso e adoração.",
+"Descansar pode ser um ato de confiança.",
+"O tempo não deve ser tratado como propriedade absoluta nossa.",
+"Silêncio e leitura podem ajudar a viver esse princípio."
+],
+"perguntas": [
+{
+"pergunta": "Qual é o significado externo do quarto mandamento?",
+"opcoes": [
+"Separar um dia da semana para descanso e adoração",
+"Parar de trabalhar para sempre",
+"Descansar somente quando sobrar tempo",
+"Trocar o trabalho por distração contínua"
+],
+"respostaCorreta": "Separar um dia da semana para descanso e adoração",
+"dica": "O texto fala de um dia específico."
+},
+{
+"pergunta": "Qual é o significado interno do quarto mandamento?",
+"opcoes": [
+"Confiar que Deus sustenta a vida mesmo quando paramos",
+"Acreditar que o trabalho é inútil",
+"Fugir de toda responsabilidade",
+"Valorizar apenas o conforto"
+],
+"respostaCorreta": "Confiar que Deus sustenta a vida mesmo quando paramos",
+"dica": "O descanso é apresentado como confiança."
+},
+{
+"pergunta": "Por que o descanso não é chamado de preguiça no capítulo?",
+"opcoes": [
+"Porque é um ato de fé e reconhecimento dos limites humanos",
+"Porque elimina toda obrigação moral",
+"Porque não exige disciplina alguma",
+"Porque substitui a adoração"
+],
+"respostaCorreta": "Porque é um ato de fé e reconhecimento dos limites humanos",
+"dica": "O capítulo fala de finitude e providência."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do quarto mandamento?",
+"opcoes": [
+"O tempo pertence a Deus",
+"O tempo pertence só ao trabalho",
+"O descanso atrapalha a fé",
+"O silêncio não tem valor espiritual"
+],
+"respostaCorreta": "O tempo pertence a Deus",
+"dica": "Essa é a frase central do princípio eterno."
+},
+{
+"pergunta": "Qual situação mostra que alguém está vivendo como 'escravo da produtividade'?",
+"opcoes": [
+"Nunca parar para adorar ou descansar por achar que tudo depende de si",
+"Separar um tempo semanal para Deus",
+"Ler em silêncio e orar",
+"Confiar que Deus provê"
+],
+"respostaCorreta": "Nunca parar para adorar ou descansar por achar que tudo depende de si",
+"dica": "A reflexão interior usa essa imagem."
+},
+{
+"pergunta": "Qual prática foi sugerida no desafio do capítulo?",
+"opcoes": [
+"Planejar um período de silêncio e leitura",
+"Trabalhar mais horas sem parar",
+"Evitar qualquer pausa durante a semana",
+"Trocar a adoração por distrações"
+],
+"respostaCorreta": "Planejar um período de silêncio e leitura",
+"dica": "O desafio propõe um tempo de desconexão."
+},
+{
+"pergunta": "Qual ideia está correta sobre o descanso santo?",
+"opcoes": [
+"Ele ajuda a focar no que é eterno",
+"Ele serve apenas para dormir mais",
+"Ele elimina a necessidade de adoração",
+"Ele valoriza só o corpo"
+],
+"respostaCorreta": "Ele ajuda a focar no que é eterno",
+"dica": "O capítulo une descanso e direção espiritual."
+},
+{
+"pergunta": "Por que guardar o dia do Senhor corrige uma visão errada da vida?",
+"opcoes": [
+"Porque lembra que não controlamos tudo e dependemos de Deus",
+"Porque ensina que o trabalho é sempre ruim",
+"Porque torna desnecessária toda responsabilidade",
+"Porque substitui todos os outros mandamentos"
+],
+"respostaCorreta": "Porque lembra que não controlamos tudo e dependemos de Deus",
+"dica": "A confiança em Deus é central."
+},
+{
+"pergunta": "Qual destas opções aplica melhor esse mandamento hoje?",
+"opcoes": [
+"Separar tempo real para culto, descanso e reflexão",
+"Viver ocupado o tempo todo",
+"Trocar a adoração por entretenimento contínuo",
+"Fazer do trabalho o centro da semana inteira"
+],
+"respostaCorreta": "Separar tempo real para culto, descanso e reflexão",
+"dica": "O mandamento envolve consagração do tempo."
+},
+{
+"pergunta": "Guardar o dia do Senhor ajuda a pessoa a reconhecer:",
+"opcoes": [
+"Sua finitude e a providência divina",
+"Que ela não precisa de Deus",
+"Que o descanso é inútil",
+"Que só o material importa"
+],
+"respostaCorreta": "Sua finitude e a providência divina",
+"dica": "Essas duas ideias aparecem juntas no capítulo."
+}
+]
+},
+{
+"id": "5-avancado",
+"capitulo": "Capítulo 4 - Guardar o Dia do Senhor",
+"nivel": "avancado",
+"dicas": [
+"O mandamento consagra o tempo.",
+"O descanso é espiritual e moral, não só físico.",
+"Produtividade sem limite pode virar escravidão.",
+"Confiar em Deus inclui saber parar."
+],
+"perguntas": [
+{
+"pergunta": "Por que o quarto mandamento pode ser visto como um ato de confiança e não apenas de pausa física?",
+"opcoes": [
+"Porque ao descansar a pessoa reconhece que Deus sustenta sua vida e seu trabalho",
+"Porque o descanso elimina toda responsabilidade humana",
+"Porque parar sempre significa fugir da realidade",
+"Porque o mandamento trata apenas do corpo"
+],
+"respostaCorreta": "Porque ao descansar a pessoa reconhece que Deus sustenta sua vida e seu trabalho",
+"dica": "A providência divina está no centro do capítulo."
+},
+{
+"pergunta": "Qual análise explica melhor a frase 'o tempo pertence a Deus'?",
+"opcoes": [
+"A vida humana não deve usar todo o tempo apenas para interesses materiais",
+"A pessoa perde totalmente o direito de organizar seus dias",
+"O trabalho deixa de ter valor moral",
+"Todo tempo livre é automaticamente santo"
+],
+"respostaCorreta": "A vida humana não deve usar todo o tempo apenas para interesses materiais",
+"dica": "O mandamento reorganiza as prioridades do tempo."
+},
+{
+"pergunta": "Qual relação de causa e efeito o capítulo sugere sobre produtividade?",
+"opcoes": [
+"Se a pessoa vive sem parar, pode se tornar escrava da produtividade e esquecer o eterno",
+"Se a pessoa trabalha, então já desobedece ao mandamento",
+"Se a pessoa descansa, então abandona a responsabilidade",
+"Se a pessoa tem agenda cheia, automaticamente honra a Deus"
+],
+"respostaCorreta": "Se a pessoa vive sem parar, pode se tornar escrava da produtividade e esquecer o eterno",
+"dica": "A reflexão interior usa exatamente essa tensão."
+},
+{
+"pergunta": "Por que o descanso é chamado de ato de fé?",
+"opcoes": [
+"Porque ao parar a pessoa demonstra que confia mais na providência de Deus do que no próprio controle",
+"Porque descansar é sempre mais fácil que trabalhar",
+"Porque o descanso substitui a adoração",
+"Porque fé significa inatividade permanente"
+],
+"respostaCorreta": "Porque ao parar a pessoa demonstra que confia mais na providência de Deus do que no próprio controle",
+"dica": "O mandamento confronta a ilusão de autossuficiência."
+},
+{
+"pergunta": "Qual situação mostra uma obediência mais profunda a esse mandamento?",
+"opcoes": [
+"Separar tempo para adoração, descanso e escuta de Deus mesmo em meio às pressões",
+"Apenas deixar de trabalhar, mas encher o dia de distração vazia",
+"Dormir mais sem qualquer direção espiritual",
+"Trocar o culto por preocupações materiais"
+],
+"respostaCorreta": "Separar tempo para adoração, descanso e escuta de Deus mesmo em meio às pressões",
+"dica": "O coração do mandamento é consagração, não simples pausa."
+},
+{
+"pergunta": "Por que o capítulo relaciona descanso com finitude humana?",
+"opcoes": [
+"Porque o ser humano não é infinito nem autossuficiente, e precisa reconhecer seus limites",
+"Porque descansar significa desistir da vida",
+"Porque a finitude torna o trabalho inútil",
+"Porque o descanso nega a criação"
+],
+"respostaCorreta": "Porque o ser humano não é infinito nem autossuficiente, e precisa reconhecer seus limites",
+"dica": "O mandamento ensina humildade diante do tempo."
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": [
+"Preguiça foge do dever; descanso santo interrompe o trabalho para honrar a Deus",
+"Preguiça e descanso santo são exatamente a mesma coisa",
+"Descanso santo rejeita toda forma de responsabilidade",
+"Preguiça é sempre mais espiritual que trabalho"
+],
+"respostaCorreta": "Preguiça foge do dever; descanso santo interrompe o trabalho para honrar a Deus",
+"dica": "O capítulo distingue claramente essas duas atitudes."
+},
+{
+"pergunta": "Qual consequência espiritual o capítulo sugere para quem nunca silencia diante de Deus?",
+"opcoes": [
+"A pessoa pode perder a capacidade de ouvir o que é eterno",
+"A pessoa honra automaticamente o dia santo",
+"A produtividade se transforma em reverência",
+"O descanso deixa de ser necessário para todos"
+],
+"respostaCorreta": "A pessoa pode perder a capacidade de ouvir o que é eterno",
+"dica": "A reflexão interior fala sobre silenciar para ouvir."
+},
+{
+"pergunta": "Por que silêncio e leitura foram sugeridos no desafio?",
+"opcoes": [
+"Porque ajudam a desligar o coração das pressões materiais e voltar a atenção para Deus",
+"Porque substituem toda forma de oração",
+"Porque o objetivo do mandamento é apenas ficar sozinho",
+"Porque ler é mais importante que adorar"
+],
+"respostaCorreta": "Porque ajudam a desligar o coração das pressões materiais e voltar a atenção para Deus",
+"dica": "O desafio aponta para recolhimento e foco espiritual."
+},
+{
+"pergunta": "Qual frase resume melhor o capítulo?",
+"opcoes": [
+"O quarto mandamento consagra o tempo a Deus, ensinando descanso, adoração e confiança na providência divina",
+"O quarto mandamento ensina apenas a parar de trabalhar sem outro propósito",
+"O quarto mandamento valoriza o descanso acima da adoração",
+"O quarto mandamento trata somente de regras externas sem ligação com a fé"
+],
+"respostaCorreta": "O quarto mandamento consagra o tempo a Deus, ensinando descanso, adoração e confiança na providência divina",
+"dica": "A resposta deve unir tempo, fé e descanso."
+}
+]
+},
+{
+"id": "6-basico",
+"capitulo": "Capítulo 5 - Honrar Pai e Mãe",
+"nivel": "basico",
+"dicas": [
+"Honrar é respeitar e valorizar.",
+"Pais devem ser tratados com gratidão.",
+"Esse mandamento fala de família e autoridade.",
+"Pequenos gestos mostram honra."
+],
+"perguntas": [
+{
+"pergunta": "O quinto mandamento diz:",
+"opcoes": [
+"Honra teu pai e tua mãe",
+"Não matarás",
+"Não furtarás",
+"Não cobiçarás"
+],
+"respostaCorreta": "Honra teu pai e tua mãe",
+"dica": "É o mandamento sobre família."
+},
+{
+"pergunta": "Honrar pai e mãe significa:",
+"opcoes": [
+"Respeitar e agradecer",
+"Ignorar conselhos",
+"Falar com dureza",
+"Agir com orgulho"
+],
+"respostaCorreta": "Respeitar e agradecer",
+"dica": "Honra envolve atitude e coração."
+},
+{
+"pergunta": "Externamente, devemos:",
+"opcoes": [
+"Obedecer, respeitar e ajudar",
+"Mandar nos pais",
+"Evitar ouvir",
+"Desobedecer sempre"
+],
+"respostaCorreta": "Obedecer, respeitar e ajudar",
+"dica": "O texto fala dessas atitudes."
+},
+{
+"pergunta": "Internamente, devemos ter um coração:",
+"opcoes": [
+"Humilde e grato",
+"Orgulhoso",
+"Indiferente",
+"Revoltado"
+],
+"respostaCorreta": "Humilde e grato",
+"dica": "A honra começa dentro."
+},
+{
+"pergunta": "A família é base da:",
+"opcoes": [
+"Ordem social",
+"Desordem",
+"Confusão",
+"Pressa"
+],
+"respostaCorreta": "Ordem social",
+"dica": "O capítulo ensina isso."
+},
+{
+"pergunta": "Honrar os pais ajuda a aprender a honrar:",
+"opcoes": [
+"Autoridade",
+"Somente amigos",
+"Somente dinheiro",
+"Somente regras da escola"
+],
+"respostaCorreta": "Autoridade",
+"dica": "A família ensina respeito."
+},
+{
+"pergunta": "Qual atitude combina com esse mandamento?",
+"opcoes": [
+"Agradecer",
+"Responder mal",
+"Ignorar",
+"Desprezar"
+],
+"respostaCorreta": "Agradecer",
+"dica": "Gratidão é parte da honra."
+},
+{
+"pergunta": "O que pode impedir a honra?",
+"opcoes": [
+"Orgulho",
+"Paciência",
+"Bondade",
+"Respeito"
+],
+"respostaCorreta": "Orgulho",
+"dica": "O texto cita isso."
+},
+{
+"pergunta": "Pais representam nossas:",
+"opcoes": [
+"Raízes",
+"Roupas",
+"Notas",
+"Brincadeiras"
+],
+"respostaCorreta": "Raízes",
+"dica": "Eles são nossa origem."
+},
+{
+"pergunta": "Uma forma de honrar é:",
+"opcoes": [
+"Ajudar em casa",
+"Desobedecer",
+"Reclamar sempre",
+"Fugir de responsabilidades"
+],
+"respostaCorreta": "Ajudar em casa",
+"dica": "Ações mostram honra."
+}
+]
+},
+{
+"id": "6-medio",
+"capitulo": "Capítulo 5 - Honrar Pai e Mãe",
+"nivel": "medio",
+"dicas": [
+"O mandamento envolve ação e atitude.",
+"A honra nasce de humildade.",
+"Família é escola moral.",
+"Autoridade começa em casa."
+],
+"perguntas": [
+{
+"pergunta": "Qual é o significado externo do mandamento?",
+"opcoes": [
+"Obedecer, respeitar e ajudar os pais",
+"Mandar nos pais",
+"Evitar responsabilidades",
+"Ignorar conselhos"
+],
+"respostaCorreta": "Obedecer, respeitar e ajudar os pais",
+"dica": "O texto destaca essas ações."
+},
+{
+"pergunta": "Qual é o significado interno?",
+"opcoes": [
+"Ter humildade e gratidão",
+"Buscar independência total",
+"Ser indiferente",
+"Ser orgulhoso"
+],
+"respostaCorreta": "Ter humildade e gratidão",
+"dica": "A honra nasce no coração."
+},
+{
+"pergunta": "Por que a família é importante para a sociedade?",
+"opcoes": [
+"Porque ensina respeito e autoridade",
+"Porque substitui tudo",
+"Porque evita regras",
+"Porque elimina conflitos"
+],
+"respostaCorreta": "Porque ensina respeito e autoridade",
+"dica": "A família forma o caráter."
+},
+{
+"pergunta": "Qual atitude demonstra honra prática?",
+"opcoes": [
+"Ajudar os pais",
+"Responder mal",
+"Ignorar pedidos",
+"Evitar contato"
+],
+"respostaCorreta": "Ajudar os pais",
+"dica": "Honra aparece em ações."
+},
+{
+"pergunta": "Qual sentimento pode impedir a honra?",
+"opcoes": [
+"Amargura",
+"Alegria",
+"Paz",
+"Bondade"
+],
+"respostaCorreta": "Amargura",
+"dica": "O texto cita isso."
+},
+{
+"pergunta": "O que é reconhecer a 'dívida de vida'?",
+"opcoes": [
+"Ser grato por quem cuidou de nós",
+"Pagar dinheiro sempre",
+"Nunca discordar",
+"Ficar preso ao passado"
+],
+"respostaCorreta": "Ser grato por quem cuidou de nós",
+"dica": "Fala de gratidão."
+},
+{
+"pergunta": "Quem não honra os pais pode ter dificuldade em:",
+"opcoes": [
+"Respeitar a justiça",
+"Estudar",
+"Trabalhar",
+"Descansar"
+],
+"respostaCorreta": "Respeitar a justiça",
+"dica": "O texto liga isso à sociedade."
+},
+{
+"pergunta": "Qual prática foi sugerida?",
+"opcoes": [
+"Fazer um gesto de gratidão",
+"Ficar em silêncio sempre",
+"Evitar falar com pais",
+"Ignorar sentimentos"
+],
+"respostaCorreta": "Fazer um gesto de gratidão",
+"dica": "O desafio pede ação."
+},
+{
+"pergunta": "Por que a humildade é importante?",
+"opcoes": [
+"Ajuda a reconhecer valor dos pais",
+"Elimina decisões",
+"Apaga personalidade",
+"Impede crescimento"
+],
+"respostaCorreta": "Ajuda a reconhecer valor dos pais",
+"dica": "Humildade permite honra."
+},
+{
+"pergunta": "Qual frase resume o mandamento?",
+"opcoes": [
+"Honrar os pais ajuda a formar uma sociedade justa",
+"Família não importa",
+"Autoridade não existe",
+"Gratidão é opcional"
+],
+"respostaCorreta": "Honrar os pais ajuda a formar uma sociedade justa",
+"dica": "A resposta liga família e sociedade."
+}
+]
+},
+{
+"id": "6-avancado",
+"capitulo": "Capítulo 5 - Honrar Pai e Mãe",
+"nivel": "avancado",
+"dicas": [
+"Honra envolve ação e coração.",
+"Família é base moral.",
+"Orgulho pode bloquear honra.",
+"Autoridade começa no lar."
+],
+"perguntas": [
+{
+"pergunta": "Por que esse mandamento é base da ordem social?",
+"opcoes": [
+"Porque ensina respeito à autoridade desde a família",
+"Porque elimina regras",
+"Porque substitui leis",
+"Porque só vale em casa"
+],
+"respostaCorreta": "Porque ensina respeito à autoridade desde a família",
+"dica": "A família é a primeira escola."
+},
+{
+"pergunta": "Qual diferença entre honra externa e interna?",
+"opcoes": [
+"Externa é ação; interna é atitude do coração",
+"Não existe diferença",
+"Interna é mais importante sempre",
+"Externa é suficiente"
+],
+"respostaCorreta": "Externa é ação; interna é atitude do coração",
+"dica": "O capítulo trata dos dois níveis."
+},
+{
+"pergunta": "Por que o orgulho impede a honra?",
+"opcoes": [
+"Porque impede reconhecer autoridade",
+"Porque aumenta respeito",
+"Porque gera gratidão",
+"Porque facilita obediência"
+],
+"respostaCorreta": "Porque impede reconhecer autoridade",
+"dica": "Orgulho fecha o coração."
+},
+{
+"pergunta": "Qual relação de causa e efeito está correta?",
+"opcoes": [
+"Não honrar pais leva a dificuldade em respeitar justiça",
+"Honrar pais elimina erros",
+"Desobedecer sempre melhora caráter",
+"Autoridade não influencia vida"
+],
+"respostaCorreta": "Não honrar pais leva a dificuldade em respeitar justiça",
+"dica": "O texto liga casa e sociedade."
+},
+{
+"pergunta": "Qual atitude mostra maturidade?",
+"opcoes": [
+"Honrar mesmo lutando contra orgulho",
+"Obedecer com desprezo",
+"Ignorar necessidades",
+"Ajudar só para parecer bom"
+],
+"respostaCorreta": "Honrar mesmo lutando contra orgulho",
+"dica": "Honra verdadeira envolve esforço interior."
+},
+{
+"pergunta": "O que é 'dívida de vida'?",
+"opcoes": [
+"Reconhecer quem nos deu cuidado e origem",
+"Pagar dinheiro",
+"Nunca discordar",
+"Evitar responsabilidade"
+],
+"respostaCorreta": "Reconhecer quem nos deu cuidado e origem",
+"dica": "É sobre gratidão."
+},
+{
+"pergunta": "Por que honra não pode ser só formal?",
+"opcoes": [
+"Porque sem coração ela é vazia",
+"Porque ações não importam",
+"Porque palavras bastam",
+"Porque tradição resolve tudo"
+],
+"respostaCorreta": "Porque sem coração ela é vazia",
+"dica": "O capítulo enfatiza o interior."
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": [
+"Família ensina autoridade; sociedade aplica",
+"Família não ensina nada",
+"Sociedade substitui família",
+"Autoridade não se aprende"
+],
+"respostaCorreta": "Família ensina autoridade; sociedade aplica",
+"dica": "Existe continuidade."
+},
+{
+"pergunta": "Qual atitude representa o desafio?",
+"opcoes": [
+"Transformar gratidão em ação",
+"Esperar vontade",
+"Falar sem agir",
+"Ignorar sentimentos"
+],
+"respostaCorreta": "Transformar gratidão em ação",
+"dica": "Honra precisa ser prática."
+},
+{
+"pergunta": "Qual frase resume o capítulo?",
+"opcoes": [
+"Honrar pais forma caráter e sustenta a ordem social",
+"Honrar pais é opcional",
+"Família não importa",
+"Autoridade é desnecessária"
+],
+"respostaCorreta": "Honrar pais forma caráter e sustenta a ordem social",
+"dica": "Une família e sociedade."
+}
+]
+},
+{
+"id": "7-basico",
+"capitulo": "Capítulo 6 - Não Matarás",
+"nivel": "basico",
+"dicas": [
+"A vida é sagrada.",
+"Não matar também envolve o coração.",
+"Raiva pode ser perigosa.",
+"Perdoar é importante."
+],
+"perguntas": [
+{
+"pergunta": "O sexto mandamento diz:",
+"opcoes": [
+"Não matarás",
+"Não furtarás",
+"Não cobiçarás",
+"Não adulterarás"
+],
+"respostaCorreta": "Não matarás",
+"dica": "É sobre proteger a vida."
+},
+{
+"pergunta": "Externamente, esse mandamento proíbe:",
+"opcoes": [
+"Tirar a vida injustamente",
+"Ajudar pessoas",
+"Falar com respeito",
+"Descansar"
+],
+"respostaCorreta": "Tirar a vida injustamente",
+"dica": "É o ato físico."
+},
+{
+"pergunta": "Internamente, ele proíbe:",
+"opcoes": [
+"Ódio",
+"Perdão",
+"Amor",
+"Bondade"
+],
+"respostaCorreta": "Ódio",
+"dica": "O coração também importa."
+},
+{
+"pergunta": "A vida é sagrada porque somos:",
+"opcoes": [
+"Imagem de Deus",
+"Fortes",
+"Ricos",
+"Perfeitos"
+],
+"respostaCorreta": "Imagem de Deus",
+"dica": "Essa é a razão principal."
+},
+{
+"pergunta": "A raiva injusta pode ser:",
+"opcoes": [
+"Raiz do mal",
+"Sempre boa",
+"Sem efeito",
+"Sempre justa"
+],
+"respostaCorreta": "Raiz do mal",
+"dica": "O capítulo fala disso."
+},
+{
+"pergunta": "Palavras podem ferir de forma:",
+"opcoes": [
+"Interior",
+"Física apenas",
+"Sem efeito",
+"Material"
+],
+"respostaCorreta": "Interior",
+"dica": "Elas podem machucar o coração."
+},
+{
+"pergunta": "Qual atitude ajuda a obedecer?",
+"opcoes": [
+"Perdoar",
+"Odiar",
+"Ignorar",
+"Vingar"
+],
+"respostaCorreta": "Perdoar",
+"dica": "O desafio sugere isso."
+},
+{
+"pergunta": "O mandamento protege a:",
+"opcoes": [
+"Vida",
+"Riqueza",
+"Velocidade",
+"Fama"
+],
+"respostaCorreta": "Vida",
+"dica": "Esse é o foco."
+},
+{
+"pergunta": "Qual atitude é correta?",
+"opcoes": [
+"Proteger a vida",
+"Desprezar pessoas",
+"Ferir por raiva",
+"Guardar ódio"
+],
+"respostaCorreta": "Proteger a vida",
+"dica": "A vida deve ser preservada."
+},
+{
+"pergunta": "O desafio pede:",
+"opcoes": [
+"Perdoar alguém",
+"Ignorar tudo",
+"Fugir",
+"Esquecer"
+],
+"respostaCorreta": "Perdoar alguém",
+"dica": "Perdão limpa o coração."
+}
+]
+},
+{
+"id": "7-medio",
+"capitulo": "Capítulo 6 - Não Matarás",
+"nivel": "medio",
+"dicas": [
+"A vida tem valor sagrado.",
+"Há sentido externo e interno.",
+"Raiva pode gerar violência.",
+"Perdão combate o mal."
+],
+"perguntas": [
+{
+"pergunta": "Significado externo do mandamento:",
+"opcoes": [
+"Não tirar a vida injustamente",
+"Não falar alto",
+"Não sentir emoções",
+"Não discutir"
+],
+"respostaCorreta": "Não tirar a vida injustamente",
+"dica": "Refere-se ao ato físico."
+},
+{
+"pergunta": "Significado interno:",
+"opcoes": [
+"Não odiar",
+"Não estudar",
+"Não trabalhar",
+"Não falar"
+],
+"respostaCorreta": "Não odiar",
+"dica": "O coração também importa."
+},
+{
+"pergunta": "Por que a vida é sagrada?",
+"opcoes": [
+"Porque somos imagem de Deus",
+"Porque somos fortes",
+"Porque somos muitos",
+"Porque somos inteligentes"
+],
+"respostaCorreta": "Porque somos imagem de Deus",
+"dica": "Base moral do capítulo."
+},
+{
+"pergunta": "A ira injusta pode ser:",
+"opcoes": [
+"Raiz do homicídio",
+"Sempre boa",
+"Sem efeito",
+"Virtude"
+],
+"respostaCorreta": "Raiz do homicídio",
+"dica": "O texto ensina isso."
+},
+{
+"pergunta": "O que significa 'matar com palavras'?",
+"opcoes": [
+"Ferir com desprezo",
+"Falar alto",
+"Contar histórias",
+"Explicar ideias"
+],
+"respostaCorreta": "Ferir com desprezo",
+"dica": "Palavras também machucam."
+},
+{
+"pergunta": "Qual atitude ajuda a obedecer?",
+"opcoes": [
+"Perdoar",
+"Guardar raiva",
+"Buscar vingança",
+"Ignorar tudo"
+],
+"respostaCorreta": "Perdoar",
+"dica": "Perdão combate o mal."
+},
+{
+"pergunta": "Qual frase resume o princípio?",
+"opcoes": [
+"A vida é sagrada",
+"Só o corpo importa",
+"O coração não importa",
+"Raiva é sempre boa"
+],
+"respostaCorreta": "A vida é sagrada",
+"dica": "Esse é o centro."
+},
+{
+"pergunta": "Aplicação interna:",
+"opcoes": [
+"Examinar o coração",
+"Contar pessoas",
+"Medir tempo",
+"Organizar objetos"
+],
+"respostaCorreta": "Examinar o coração",
+"dica": "A reflexão pede isso."
+},
+{
+"pergunta": "Proteger a vida é importante porque:",
+"opcoes": [
+"Tem valor sagrado",
+"Evita problemas apenas",
+"É costume",
+"É regra antiga"
+],
+"respostaCorreta": "Tem valor sagrado",
+"dica": "Base moral."
+},
+{
+"pergunta": "Qual atitude é contrária ao mandamento?",
+"opcoes": [
+"Ódio",
+"Amor",
+"Perdão",
+"Cuidado"
+],
+"respostaCorreta": "Ódio",
+"dica": "Começa no coração."
+}
+]
+},
+{
+"id": "7-avancado",
+"capitulo": "Capítulo 6 - Não Matarás",
+"nivel": "avancado",
+"dicas": [
+"O mandamento vai além do ato físico.",
+"A raiz está no coração.",
+"A dignidade humana é central.",
+"Perdão combate a violência interior."
+],
+"perguntas": [
+{
+"pergunta": "Por que o mandamento vai além do ato físico?",
+"opcoes": [
+"Porque inclui ódio e ira no coração",
+"Porque ignora ações",
+"Porque fala só de emoções",
+"Porque elimina regras"
+],
+"respostaCorreta": "Porque inclui ódio e ira no coração",
+"dica": "O capítulo amplia o significado."
+},
+{
+"pergunta": "Por que a vida é sagrada?",
+"opcoes": [
+"Porque reflete a imagem de Deus",
+"Porque é longa",
+"Porque é fácil",
+"Porque é comum"
+],
+"respostaCorreta": "Porque reflete a imagem de Deus",
+"dica": "Essa é a base."
+},
+{
+"pergunta": "Relação correta:",
+"opcoes": [
+"Ira pode levar ao homicídio",
+"Ira sempre salva",
+"Ódio não importa",
+"Coração não influencia"
+],
+"respostaCorreta": "Ira pode levar ao homicídio",
+"dica": "Raiz interna."
+},
+{
+"pergunta": "Palavras ofensivas são graves porque:",
+"opcoes": [
+"Ferem a dignidade humana",
+"São apenas sons",
+"Não têm efeito",
+"São necessárias"
+],
+"respostaCorreta": "Ferem a dignidade humana",
+"dica": "O texto valoriza a pessoa."
+},
+{
+"pergunta": "Obediência profunda significa:",
+"opcoes": [
+"Perdoar e combater a raiva",
+"Evitar só o ato físico",
+"Guardar ódio",
+"Ignorar sentimentos"
+],
+"respostaCorreta": "Perdoar e combater a raiva",
+"dica": "Vai além da aparência."
+},
+{
+"pergunta": "Por que perdoar é importante?",
+"opcoes": [
+"Combate o mal interior",
+"Apaga justiça",
+"Ignora erros",
+"Evita pensar"
+],
+"respostaCorreta": "Combate o mal interior",
+"dica": "Limpa o coração."
+},
+{
+"pergunta": "Comparação correta:",
+"opcoes": [
+"Ódio interno leva ao mal externo",
+"Só ações importam",
+"Só palavras importam",
+"Nada se relaciona"
+],
+"respostaCorreta": "Ódio interno leva ao mal externo",
+"dica": "Raiz e fruto."
+},
+{
+"pergunta": "Princípio eterno:",
+"opcoes": [
+"A vida deve ser protegida",
+"Só o corpo importa",
+"Raiva é boa",
+"Vida não tem valor"
+],
+"respostaCorreta": "A vida deve ser protegida",
+"dica": "Centro do mandamento."
+},
+{
+"pergunta": "Desprezo é errado porque:",
+"opcoes": [
+"Desvaloriza a pessoa",
+"É neutro",
+"É necessário",
+"É saudável"
+],
+"respostaCorreta": "Desvaloriza a pessoa",
+"dica": "A dignidade é importante."
+},
+{
+"pergunta": "Resumo do capítulo:",
+"opcoes": [
+"A vida é sagrada e deve ser protegida por fora e por dentro",
+"Só o ato físico importa",
+"Raiva não importa",
+"Mandamento é só externo"
+],
+"respostaCorreta": "A vida é sagrada e deve ser protegida por fora e por dentro",
+"dica": "Une ação e coração."
+}
+]
+},
+{
+"id": "8-basico",
+"capitulo": "Capítulo 7 - Não Adulterarás",
+"nivel": "basico",
+"dicas": [
+"O casamento deve ser fiel.",
+"Pureza não é só no corpo, mas também no coração.",
+"O amor verdadeiro protege a aliança.",
+"Desejos errados podem começar dentro da mente."
+],
+"perguntas": [
+{
+"pergunta": "O sétimo mandamento diz:",
+"opcoes": [
+"Não adulterarás",
+"Não furtarás",
+"Não matarás",
+"Não cobiçarás"
+],
+"respostaCorreta": "Não adulterarás",
+"dica": "É o mandamento sobre fidelidade."
+},
+{
+"pergunta": "Esse mandamento protege principalmente a:",
+"opcoes": [
+"Fidelidade no casamento",
+"Velocidade no trabalho",
+"Força do corpo",
+"Riqueza da casa"
+],
+"respostaCorreta": "Fidelidade no casamento",
+"dica": "Ele trata da aliança entre marido e mulher."
+},
+{
+"pergunta": "Externamente, esse mandamento proíbe:",
+"opcoes": [
+"A infidelidade conjugal",
+"Ajudar a família",
+"Falar com respeito",
+"Guardar o dia do Senhor"
+],
+"respostaCorreta": "A infidelidade conjugal",
+"dica": "O texto fala do pecado contra a aliança."
+},
+{
+"pergunta": "Internamente, esse mandamento também proíbe:",
+"opcoes": [
+"Desejos impuros",
+"Gratidão",
+"Bondade",
+"Paciência"
+],
+"respostaCorreta": "Desejos impuros",
+"dica": "O coração também deve ser guardado."
+},
+{
+"pergunta": "O casamento é apresentado como uma:",
+"opcoes": [
+"Aliança",
+"Brincadeira",
+"Competição",
+"Troca sem valor"
+],
+"respostaCorreta": "Aliança",
+"dica": "Essa palavra aparece no capítulo."
+},
+{
+"pergunta": "Qual atitude combina com esse mandamento?",
+"opcoes": [
+"Fidelidade",
+"Traição",
+"Engano",
+"Descuido"
+],
+"respostaCorreta": "Fidelidade",
+"dica": "O mandamento protege a pureza da relação."
+},
+{
+"pergunta": "Jesus ensinou que a pureza começa também no:",
+"opcoes": [
+"Coração",
+"Bolso",
+"Sapato",
+"Rosto"
+],
+"respostaCorreta": "Coração",
+"dica": "O capítulo amplia o sentido do mandamento."
+},
+{
+"pergunta": "Quando alguém guarda os olhos e os pensamentos, está cuidando da:",
+"opcoes": [
+"Pureza",
+"Velocidade",
+"Fama",
+"Força"
+],
+"respostaCorreta": "Pureza",
+"dica": "Pureza envolve mente e ações."
+},
+{
+"pergunta": "O amor verdadeiro faz o quê com a aliança?",
+"opcoes": [
+"Protege",
+"Quebra",
+"Esquece",
+"Troca"
+],
+"respostaCorreta": "Protege",
+"dica": "O amor fiel guarda o compromisso."
+},
+{
+"pergunta": "Qual atitude foi sugerida no desafio do capítulo?",
+"opcoes": [
+"Observar os pensamentos e pedir pureza a Deus",
+"Ignorar a consciência",
+"Fingir que o coração não importa",
+"Buscar distrações sem limite"
+],
+"respostaCorreta": "Observar os pensamentos e pedir pureza a Deus",
+"dica": "O desafio aponta para vigilância interior."
+}
+]
+},
+{
+"id": "8-medio",
+"capitulo": "Capítulo 7 - Não Adulterarás",
+"nivel": "medio",
+"dicas": [
+"O mandamento fala de fidelidade externa e pureza interna.",
+"A aliança do casamento deve ser protegida.",
+"Jesus mostrou que o pecado pode começar no olhar e no desejo.",
+"Pureza exige vigilância sobre pensamentos e intenções."
+],
+"perguntas": [
+{
+"pergunta": "Qual é o significado externo do sétimo mandamento?",
+"opcoes": [
+"Não quebrar a fidelidade do casamento",
+"Não conversar com outras pessoas",
+"Não trabalhar demais",
+"Não descansar aos domingos"
+],
+"respostaCorreta": "Não quebrar a fidelidade do casamento",
+"dica": "O texto fala da infidelidade conjugal."
+},
+{
+"pergunta": "Qual é o significado interno do sétimo mandamento?",
+"opcoes": [
+"Guardar o coração de desejos impuros",
+"Evitar toda amizade",
+"Pensar apenas em si",
+"Ignorar a própria consciência"
+],
+"respostaCorreta": "Guardar o coração de desejos impuros",
+"dica": "A pureza começa antes da ação externa."
+},
+{
+"pergunta": "Por que o casamento é tratado com tanta seriedade no capítulo?",
+"opcoes": [
+"Porque é uma aliança que deve ser honrada com fidelidade",
+"Porque é apenas um costume social",
+"Porque não envolve compromisso",
+"Porque depende só de emoção passageira"
+],
+"respostaCorreta": "Porque é uma aliança que deve ser honrada com fidelidade",
+"dica": "A palavra central é aliança."
+},
+{
+"pergunta": "Qual ensinamento de Jesus reforça o sentido interno desse mandamento?",
+"opcoes": [
+"Que o olhar cobiçoso já revela impureza do coração",
+"Que só o ato físico importa",
+"Que desejos nunca têm peso moral",
+"Que pureza depende apenas de aparência"
+],
+"respostaCorreta": "Que o olhar cobiçoso já revela impureza do coração",
+"dica": "O capítulo fala do pecado antes da ação."
+},
+{
+"pergunta": "Qual atitude protege melhor a fidelidade conjugal?",
+"opcoes": [
+"Vigiar pensamentos, intenções e ações",
+"Confiar apenas em sentimentos momentâneos",
+"Ignorar pequenos desvios no coração",
+"Separar o corpo do coração"
+],
+"respostaCorreta": "Vigiar pensamentos, intenções e ações",
+"dica": "A vigilância inclui interior e exterior."
+},
+{
+"pergunta": "Qual destas situações mostra quebra interna do mandamento?",
+"opcoes": [
+"Cultivar fantasias impuras no coração",
+"Orar por pureza",
+"Honrar a aliança com respeito",
+"Buscar fidelidade nas palavras"
+],
+"respostaCorreta": "Cultivar fantasias impuras no coração",
+"dica": "O problema pode começar em segredo."
+},
+{
+"pergunta": "O princípio eterno do capítulo pode ser resumido em:",
+"opcoes": [
+"A pureza e a fidelidade são bens sagrados",
+"Somente a aparência importa",
+"O casamento depende só de emoção",
+"O coração não interfere na fidelidade"
+],
+"respostaCorreta": "A pureza e a fidelidade são bens sagrados",
+"dica": "A resposta une os dois temas principais."
+},
+{
+"pergunta": "Qual frase está correta sobre esse mandamento?",
+"opcoes": [
+"Ele protege tanto a aliança do casamento quanto a pureza do coração",
+"Ele fala apenas de regras sociais externas",
+"Ele trata só de desejos e não de ações",
+"Ele não se aplica ao interior da pessoa"
+],
+"respostaCorreta": "Ele protege tanto a aliança do casamento quanto a pureza do coração",
+"dica": "O capítulo trabalha com externo e interno."
+},
+{
+"pergunta": "Por que pensamentos impuros são perigosos?",
+"opcoes": [
+"Porque podem preparar o coração para quebrar a fidelidade",
+"Porque nunca influenciam ações",
+"Porque são moralmente neutros",
+"Porque substituem toda decisão humana"
+],
+"respostaCorreta": "Porque podem preparar o coração para quebrar a fidelidade",
+"dica": "O interior pode abrir caminho para o exterior."
+},
+{
+"pergunta": "Qual prática foi sugerida no desafio do capítulo?",
+"opcoes": [
+"Examinar pensamentos e pedir pureza a Deus",
+"Evitar toda reflexão moral",
+"Cuidar apenas da aparência",
+"Fingir que o desejo não importa"
+],
+"respostaCorreta": "Examinar pensamentos e pedir pureza a Deus",
+"dica": "O desafio aponta para vigilância interior."
+}
+]
+},
+{
+"id": "8-avancado",
+"capitulo": "Capítulo 7 - Não Adulterarás",
+"nivel": "avancado",
+"dicas": [
+"O mandamento protege a aliança e a pureza.",
+"Infidelidade externa e impureza interna estão ligadas.",
+"Desejos desordenados podem corroer a fidelidade antes do ato.",
+"A honra do corpo e do coração pertence a Deus."
+],
+"perguntas": [
+{
+"pergunta": "Por que o sétimo mandamento não pode ser reduzido apenas ao ato físico de adultério?",
+"opcoes": [
+"Porque ele também condena a infidelidade que começa no desejo e no coração",
+"Porque o ato físico não importa",
+"Porque se aplica apenas ao pensamento",
+"Porque fala apenas da vida social"
+],
+"respostaCorreta": "Porque ele também condena a infidelidade que começa no desejo e no coração",
+"dica": "O capítulo une pureza interna e fidelidade externa."
+},
+{
+"pergunta": "Qual análise explica melhor por que o casamento é chamado de aliança?",
+"opcoes": [
+"Porque envolve compromisso fiel e sagrado, não simples sentimento passageiro",
+"Porque depende apenas de costume humano",
+"Porque não exige responsabilidade",
+"Porque pode ser tratado como algo descartável"
+],
+"respostaCorreta": "Porque envolve compromisso fiel e sagrado, não simples sentimento passageiro",
+"dica": "A palavra aliança aponta para permanência e honra."
+},
+{
+"pergunta": "Qual relação de causa e efeito o capítulo sugere entre desejo impuro e infidelidade?",
+"opcoes": [
+"Desejos cultivados no coração podem preparar a quebra da aliança na prática",
+"Desejos nunca influenciam comportamento",
+"A infidelidade nasce apenas de acidentes externos",
+"O coração não tem ligação com a conduta"
+],
+"respostaCorreta": "Desejos cultivados no coração podem preparar a quebra da aliança na prática",
+"dica": "O interior pode se tornar raiz do exterior."
+},
+{
+"pergunta": "Por que Jesus aprofunda esse mandamento ao falar do olhar e do coração?",
+"opcoes": [
+"Porque mostra que a pureza moral não se limita ao comportamento visível",
+"Porque elimina a importância do corpo",
+"Porque ensina que apenas pensamentos importam",
+"Porque torna o casamento algo secundário"
+],
+"respostaCorreta": "Porque mostra que a pureza moral não se limita ao comportamento visível",
+"dica": "A Lei alcança intenções e desejos."
+},
+{
+"pergunta": "Qual situação mostra melhor obediência profunda a esse mandamento?",
+"opcoes": [
+"Honrar a aliança externamente e vigiar internamente os desejos",
+"Evitar o adultério físico, mas alimentar fantasias impuras",
+"Manter aparência de fidelidade sem pureza interior",
+"Tratar o casamento como compromisso flexível"
+],
+"respostaCorreta": "Honrar a aliança externamente e vigiar internamente os desejos",
+"dica": "A obediência verdadeira une corpo e coração."
+},
+{
+"pergunta": "Por que a pureza é apresentada como um bem sagrado?",
+"opcoes": [
+"Porque protege a dignidade da pessoa e a fidelidade da aliança",
+"Porque serve apenas à reputação pública",
+"Porque é somente um costume antigo",
+"Porque vale apenas para algumas pessoas"
+],
+"respostaCorreta": "Porque protege a dignidade da pessoa e a fidelidade da aliança",
+"dica": "Pureza e fidelidade caminham juntas."
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": [
+"Infidelidade física rompe a aliança externamente; desejos impuros a corroem internamente",
+"Somente a infidelidade física importa moralmente",
+"Somente o coração importa, nunca as ações",
+"A pureza é apenas uma questão de aparência social"
+],
+"respostaCorreta": "Infidelidade física rompe a aliança externamente; desejos impuros a corroem internamente",
+"dica": "O capítulo trata das duas dimensões."
+},
+{
+"pergunta": "Por que vigiar os olhos, pensamentos e intenções é importante?",
+"opcoes": [
+"Porque a fidelidade começa antes da ação, no governo do coração",
+"Porque os pensamentos não têm nenhuma consequência",
+"Porque a pureza depende só do ambiente",
+"Porque basta parecer correto diante dos outros"
+],
+"respostaCorreta": "Porque a fidelidade começa antes da ação, no governo do coração",
+"dica": "O coração antecede o comportamento."
+},
+{
+"pergunta": "Qual consequência espiritual o capítulo sugere quando a pureza é desprezada?",
+"opcoes": [
+"A aliança perde sua proteção e o coração se torna vulnerável à infidelidade",
+"A fidelidade se fortalece automaticamente",
+"Os desejos deixam de influenciar a vida",
+"O mandamento passa a não valer mais"
+],
+"respostaCorreta": "A aliança perde sua proteção e o coração se torna vulnerável à infidelidade",
+"dica": "Descuido interior abre espaço para queda."
+},
+{
+"pergunta": "Qual frase resume melhor o capítulo?",
+"opcoes": [
+"O sétimo mandamento protege a aliança do casamento e exige pureza de corpo, olhar e coração",
+"O sétimo mandamento trata apenas do ato externo de adultério",
+"O sétimo mandamento fala só de sentimentos e não de compromisso",
+"O sétimo mandamento não se relaciona com fidelidade interior"
+],
+"respostaCorreta": "O sétimo mandamento protege a aliança do casamento e exige pureza de corpo, olhar e coração",
+"dica": "A resposta deve unir aliança, pureza e fidelidade."
+}
+]
+},
+{
+"id": "9-basico",
+"capitulo": "Capítulo 8 - Não Furtarás",
+"nivel": "basico",
+"dicas": [
+"Roubar é tomar o que é do outro.",
+"Também é errado enganar ou explorar.",
+"A honestidade agrada a Deus.",
+"Generosidade combate a ganância."
+],
+"perguntas": [
+{
+"pergunta": "O oitavo mandamento diz:",
+"opcoes": [
+"Não furtarás",
+"Não matarás",
+"Não adulterarás",
+"Não cobiçarás"
+],
+"respostaCorreta": "Não furtarás",
+"dica": "É o mandamento sobre propriedade e justiça."
+},
+{
+"pergunta": "Furtar significa:",
+"opcoes": [
+"Tomar o que é do outro",
+"Ajudar alguém",
+"Trabalhar com esforço",
+"Guardar silêncio"
+],
+"respostaCorreta": "Tomar o que é do outro",
+"dica": "É pegar injustamente o que não pertence a você."
+},
+{
+"pergunta": "Além do roubo direto, o capítulo também condena:",
+"opcoes": [
+"Fraude e exploração",
+"Bondade e ajuda",
+"Descanso e oração",
+"Gratidão e serviço"
+],
+"respostaCorreta": "Fraude e exploração",
+"dica": "Roubar também pode acontecer de outras formas."
+},
+{
+"pergunta": "Externamente, esse mandamento proíbe:",
+"opcoes": [
+"Roubar ou enganar",
+"Dar presentes",
+"Trabalhar com dedicação",
+"Falar com gentileza"
+],
+"respostaCorreta": "Roubar ou enganar",
+"dica": "O texto fala de furtar, fraudar e explorar."
+},
+{
+"pergunta": "Internamente, esse mandamento combate:",
+"opcoes": [
+"Ganância",
+"Paciência",
+"Justiça",
+"Humildade"
+],
+"respostaCorreta": "Ganância",
+"dica": "O coração pode querer possuir de forma errada."
+},
+{
+"pergunta": "Qual atitude combina com esse mandamento?",
+"opcoes": [
+"Honestidade",
+"Mentira",
+"Trapaça",
+"Exploração"
+],
+"respostaCorreta": "Honestidade",
+"dica": "A honestidade é a resposta correta ao roubo."
+},
+{
+"pergunta": "Se uma pessoa engana para lucrar, ela está:",
+"opcoes": [
+"Quebrando esse mandamento",
+"Praticando justiça",
+"Mostrando generosidade",
+"Honrando o próximo"
+],
+"respostaCorreta": "Quebrando esse mandamento",
+"dica": "Fraude também é forma de furto."
+},
+{
+"pergunta": "O princípio eterno do capítulo ensina respeito ao que é:",
+"opcoes": [
+"Do próximo",
+"Somente seu",
+"Sem dono",
+"Sem valor"
+],
+"respostaCorreta": "Do próximo",
+"dica": "O mandamento protege a justiça entre pessoas."
+},
+{
+"pergunta": "Qual atitude ajuda a vencer a ganância?",
+"opcoes": [
+"Generosidade",
+"Inveja",
+"Acúmulo egoísta",
+"Exploração"
+],
+"respostaCorreta": "Generosidade",
+"dica": "O capítulo aponta esse caminho."
+},
+{
+"pergunta": "O desafio do capítulo sugere:",
+"opcoes": [
+"Praticar um ato de honestidade ou generosidade",
+"Esquecer o próximo",
+"Buscar vantagem em tudo",
+"Guardar só para si"
+],
+"respostaCorreta": "Praticar um ato de honestidade ou generosidade",
+"dica": "A resposta pratica combate o pecado."
+}
+]
+},
+{
+"id": "9-medio",
+"capitulo": "Capítulo 8 - Não Furtarás",
+"nivel": "medio",
+"dicas": [
+"Roubo não é só pegar um objeto.",
+"Fraude e exploração também são injustiça.",
+"A raiz pode ser a ganância.",
+"Honestidade e generosidade corrigem o coração."
+],
+"perguntas": [
+{
+"pergunta": "Qual é o significado externo do oitavo mandamento?",
+"opcoes": [
+"Não tirar injustamente bens ou direitos do próximo",
+"Não trabalhar por salário",
+"Não guardar objetos pessoais",
+"Não ter propriedades"
+],
+"respostaCorreta": "Não tirar injustamente bens ou direitos do próximo",
+"dica": "O mandamento trata de justiça material."
+},
+{
+"pergunta": "Qual é o significado interno do oitavo mandamento?",
+"opcoes": [
+"Combater a ganância e o egoísmo",
+"Evitar toda economia",
+"Parar de planejar o futuro",
+"Desprezar o valor do trabalho"
+],
+"respostaCorreta": "Combater a ganância e o egoísmo",
+"dica": "A raiz do furto pode estar no coração."
+},
+{
+"pergunta": "Por que fraude e exploração também quebram esse mandamento?",
+"opcoes": [
+"Porque tiram do próximo aquilo que lhe é devido, mesmo sem roubo direto",
+"Porque só parecem erradas, mas não são",
+"Porque o mandamento se limita a objetos perdidos",
+"Porque só importam em tribunais"
+],
+"respostaCorreta": "Porque tiram do próximo aquilo que lhe é devido, mesmo sem roubo direto",
+"dica": "O capítulo amplia o sentido de furtar."
+},
+{
+"pergunta": "Qual atitude mostra respeito verdadeiro por este mandamento?",
+"opcoes": [
+"Negociar com honestidade",
+"Esconder lucros injustos",
+"Enganar para ganhar mais",
+"Explorar a fraqueza dos outros"
+],
+"respostaCorreta": "Negociar com honestidade",
+"dica": "A justiça aparece também nos negócios."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do capítulo?",
+"opcoes": [
+"O que é do outro deve ser respeitado",
+"Tudo pode ser tomado se houver necessidade",
+"Ganhar vantagem é sempre correto",
+"A propriedade do próximo não tem valor moral"
+],
+"respostaCorreta": "O que é do outro deve ser respeitado",
+"dica": "Essa é a ideia central do princípio eterno."
+},
+{
+"pergunta": "Se alguém mente para receber mais do que merece, isso é:",
+"opcoes": [
+"Uma forma de furto",
+"Uma forma de bondade",
+"Uma simples estratégia neutra",
+"Um sinal de humildade"
+],
+"respostaCorreta": "Uma forma de furto",
+"dica": "O capítulo inclui a fraude nesse mandamento."
+},
+{
+"pergunta": "Qual atitude interna costuma alimentar o roubo?",
+"opcoes": [
+"Ganância",
+"Gratidão",
+"Paciência",
+"Contentamento"
+],
+"respostaCorreta": "Ganância",
+"dica": "O coração quer possuir de modo desordenado."
+},
+{
+"pergunta": "Por que a generosidade é importante nesse capítulo?",
+"opcoes": [
+"Porque combate o egoísmo que deseja tomar para si",
+"Porque substitui toda honestidade",
+"Porque elimina o valor do trabalho",
+"Porque torna qualquer lucro errado"
+],
+"respostaCorreta": "Porque combate o egoísmo que deseja tomar para si",
+"dica": "Ela cura o coração possessivo."
+},
+{
+"pergunta": "Qual destas situações aplica o mandamento hoje?",
+"opcoes": [
+"Recusar-se a enganar mesmo quando isso daria vantagem",
+"Aceitar pequenas fraudes por conveniência",
+"Explorar alguém mais fraco para lucrar",
+"Esconder a verdade em uma negociação"
+],
+"respostaCorreta": "Recusar-se a enganar mesmo quando isso daria vantagem",
+"dica": "O teste da honestidade aparece nas pequenas decisões."
+},
+{
+"pergunta": "O desafio do capítulo aponta para qual prática?",
+"opcoes": [
+"Um ato concreto de honestidade ou generosidade",
+"Um dia sem falar com ninguém",
+"Um cálculo de perdas e ganhos",
+"Uma promessa vaga sem ação"
+],
+"respostaCorreta": "Um ato concreto de honestidade ou generosidade",
+"dica": "A mudança precisa aparecer em ação."
+}
+]
+},
+{
+"id": "9-avancado",
+"capitulo": "Capítulo 8 - Não Furtarás",
+"nivel": "avancado",
+"dicas": [
+"O mandamento protege a justiça nas relações humanas.",
+"Roubo direto, fraude e exploração têm a mesma raiz moral.",
+"Ganância desordena a relação com bens e pessoas.",
+"Honestidade e generosidade restauram o uso correto dos bens."
+],
+"perguntas": [
+{
+"pergunta": "Por que o oitavo mandamento não se limita ao roubo visível?",
+"opcoes": [
+"Porque também condena fraude, exploração e qualquer forma de apropriação injusta",
+"Porque o roubo visível não importa",
+"Porque só a intenção conta",
+"Porque propriedade não tem valor moral"
+],
+"respostaCorreta": "Porque também condena fraude, exploração e qualquer forma de apropriação injusta",
+"dica": "O texto amplia a ideia de furtar."
+},
+{
+"pergunta": "Qual análise explica melhor a raiz interior do furto segundo o capítulo?",
+"opcoes": [
+"A ganância leva a pessoa a desejar para si o que não lhe pertence",
+"A justiça produz roubo",
+"A honestidade gera exploração",
+"O contentamento alimenta fraude"
+],
+"respostaCorreta": "A ganância leva a pessoa a desejar para si o que não lhe pertence",
+"dica": "O problema começa no coração possessivo."
+},
+{
+"pergunta": "Por que exploração econômica ou relacional viola esse mandamento?",
+"opcoes": [
+"Porque usa a fraqueza do outro para tirar dele o que lhe é devido",
+"Porque só é errada quando existe violência física",
+"Porque depende apenas da opinião das pessoas",
+"Porque lucro e justiça nunca podem andar juntos"
+],
+"respostaCorreta": "Porque usa a fraqueza do outro para tirar dele o que lhe é devido",
+"dica": "O capítulo trata da injustiça além do furto direto."
+},
+{
+"pergunta": "Qual relação de causa e efeito o capítulo sugere?",
+"opcoes": [
+"Se a ganância governa o coração, a honestidade nas relações fica ameaçada",
+"Se a pessoa deseja mais, então já pratica generosidade",
+"Se alguém tem bens, automaticamente se torna injusto",
+"Se há lucro, então há furto necessariamente"
+],
+"respostaCorreta": "Se a ganância governa o coração, a honestidade nas relações fica ameaçada",
+"dica": "A raiz interior afeta as ações externas."
+},
+{
+"pergunta": "Qual situação mostra melhor obediência profunda a esse mandamento?",
+"opcoes": [
+"Recusar vantagem injusta e agir com honestidade mesmo quando ninguém vê",
+"Evitar roubo direto, mas aceitar pequenas fraudes",
+"Explorar brechas para ganhar mais do que é justo",
+"Manter boa aparência enquanto engana em segredo"
+],
+"respostaCorreta": "Recusar vantagem injusta e agir com honestidade mesmo quando ninguém vê",
+"dica": "A integridade vale também no invisível."
+},
+{
+"pergunta": "Por que a generosidade é apresentada como remédio moral nesse capítulo?",
+"opcoes": [
+"Porque enfraquece o egoísmo que quer possuir tudo para si",
+"Porque elimina a importância da justiça",
+"Porque torna o trabalho inútil",
+"Porque substitui toda necessidade de verdade"
+],
+"respostaCorreta": "Porque enfraquece o egoísmo que quer possuir tudo para si",
+"dica": "O oposto da avareza é repartir."
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": [
+"Roubo direto toma à força; fraude toma por engano; exploração toma por abuso",
+"Fraude é moralmente neutra, ao contrário do roubo",
+"Exploração não tem relação com justiça",
+"Somente objetos físicos podem ser roubados"
+],
+"respostaCorreta": "Roubo direto toma à força; fraude toma por engano; exploração toma por abuso",
+"dica": "São formas diferentes da mesma injustiça."
+},
+{
+"pergunta": "Por que este mandamento protege também a dignidade do próximo?",
+"opcoes": [
+"Porque tomar injustamente o que é do outro trata a pessoa como meio e não como portadora de direitos",
+"Porque dignidade não tem relação com bens",
+"Porque só a intenção do ladrão importa",
+"Porque a justiça é um tema separado da moral"
+],
+"respostaCorreta": "Porque tomar injustamente o que é do outro trata a pessoa como meio e não como portadora de direitos",
+"dica": "O próximo não deve ser usado em benefício egoísta."
+},
+{
+"pergunta": "Qual situação mostra aplicação interna do mandamento?",
+"opcoes": [
+"Examinar se o desejo de ganhar mais está levando a escolhas desonestas",
+"Calcular lucros sem pensar na justiça",
+"Esconder pequenas vantagens como se fossem inocentes",
+"Separar moralidade dos negócios"
+],
+"respostaCorreta": "Examinar se o desejo de ganhar mais está levando a escolhas desonestas",
+"dica": "A reflexão interior pergunta pela raiz da ação."
+},
+{
+"pergunta": "Qual frase resume melhor o capítulo?",
+"opcoes": [
+"O oitavo mandamento exige respeito pelos bens e direitos do próximo, condenando roubo, fraude, exploração e a ganância que os alimenta",
+"O oitavo mandamento trata apenas do roubo físico visível",
+"O oitavo mandamento ensina que vantagem pessoal é o valor principal",
+"O oitavo mandamento fala de honestidade sem relação com o coração"
+],
+"respostaCorreta": "O oitavo mandamento exige respeito pelos bens e direitos do próximo, condenando roubo, fraude, exploração e a ganância que os alimenta",
+"dica": "A resposta deve unir justiça externa e raiz interna."
+}
+]
+},
+{
+"id": "10-basico",
+"capitulo": "Capítulo 9 - Não Dirás Falso Testemunho",
+"nivel": "basico",
+"dicas": [
+"A verdade é importante.",
+"Mentir fere o próximo.",
+"Falso testemunho destrói reputações.",
+"A fala deve servir à justiça."
+],
+"perguntas": [
+{
+"pergunta": "O nono mandamento diz:",
+"opcoes": [
+"Não dirás falso testemunho",
+"Não furtarás",
+"Não adulterarás",
+"Não cobiçarás"
+],
+"respostaCorreta": "Não dirás falso testemunho",
+"dica": "É o mandamento sobre verdade e palavra."
+},
+{
+"pergunta": "Falso testemunho é:",
+"opcoes": [
+"Mentir contra alguém",
+"Ajudar alguém",
+"Guardar silêncio reverente",
+"Falar com sinceridade"
+],
+"respostaCorreta": "Mentir contra alguém",
+"dica": "O texto fala de usar a palavra contra o próximo."
+},
+{
+"pergunta": "Esse mandamento protege a:",
+"opcoes": [
+"Verdade",
+"Velocidade",
+"Força",
+"Fama falsa"
+],
+"respostaCorreta": "Verdade",
+"dica": "A verdade é o coração do capítulo."
+},
+{
+"pergunta": "Mentira e calúnia podem destruir a:",
+"opcoes": [
+"Reputação",
+"Altura",
+"Casa",
+"Comida"
+],
+"respostaCorreta": "Reputação",
+"dica": "O capítulo cita esse dano."
+},
+{
+"pergunta": "Externamente, esse mandamento proíbe:",
+"opcoes": [
+"Mentira, calúnia e engano",
+"Bondade e justiça",
+"Orações e louvor",
+"Descanso e silêncio"
+],
+"respostaCorreta": "Mentira, calúnia e engano",
+"dica": "São exemplos de falso testemunho."
+},
+{
+"pergunta": "Internamente, esse mandamento combate:",
+"opcoes": [
+"Falsidade no coração",
+"Gratidão",
+"Humildade",
+"Paciência"
+],
+"respostaCorreta": "Falsidade no coração",
+"dica": "A verdade também começa dentro."
+},
+{
+"pergunta": "Qual atitude combina com esse mandamento?",
+"opcoes": [
+"Falar a verdade com justiça",
+"Espalhar boatos",
+"Acusar sem saber",
+"Distorcer fatos"
+],
+"respostaCorreta": "Falar a verdade com justiça",
+"dica": "A fala deve servir ao bem."
+},
+{
+"pergunta": "Um boato injusto pode:",
+"opcoes": [
+"Ferir o próximo",
+"Curar o próximo",
+"Ajudar sempre",
+"Trazer justiça automaticamente"
+],
+"respostaCorreta": "Ferir o próximo",
+"dica": "O texto mostra o poder destrutivo da mentira."
+},
+{
+"pergunta": "O princípio eterno do capítulo ensina amor à:",
+"opcoes": [
+"Verdade",
+"Mentira",
+"Fofoca",
+"Enganação"
+],
+"respostaCorreta": "Verdade",
+"dica": "A palavra deve refletir o que é verdadeiro."
+},
+{
+"pergunta": "O desafio do capítulo sugere:",
+"opcoes": [
+"Corrigir uma mentira ou evitar espalhar um boato",
+"Inventar uma desculpa",
+"Falar mais sem pensar",
+"Repetir tudo o que ouvir"
+],
+"respostaCorreta": "Corrigir uma mentira ou evitar espalhar um boato",
+"dica": "O desafio pede ação prática em favor da verdade."
+}
+]
+},
+{
+"id": "10-medio",
+"capitulo": "Capítulo 9 - Não Dirás Falso Testemunho",
+"nivel": "medio",
+"dicas": [
+"O mandamento protege a verdade e a justiça.",
+"Mentiras podem ferir pessoas e reputações.",
+"A palavra tem poder moral.",
+"Boatos e calúnias também são formas de falsidade."
+],
+"perguntas": [
+{
+"pergunta": "Qual é o significado externo do nono mandamento?",
+"opcoes": [
+"Não mentir, caluniar ou enganar o próximo",
+"Não falar em público",
+"Não dar opinião alguma",
+"Não se defender"
+],
+"respostaCorreta": "Não mentir, caluniar ou enganar o próximo",
+"dica": "O texto fala de falso testemunho e boatos."
+},
+{
+"pergunta": "Qual é o significado interno do nono mandamento?",
+"opcoes": [
+"Amar a verdade no coração",
+"Desconfiar de tudo",
+"Guardar silêncio sempre",
+"Evitar qualquer correção"
+],
+"respostaCorreta": "Amar a verdade no coração",
+"dica": "A fala correta nasce de um interior verdadeiro."
+},
+{
+"pergunta": "Por que o falso testemunho é tão grave?",
+"opcoes": [
+"Porque fere a justiça e pode destruir a reputação do próximo",
+"Porque é apenas um erro pequeno de linguagem",
+"Porque só importa em tribunais antigos",
+"Porque a verdade não faz diferença"
+],
+"respostaCorreta": "Porque fere a justiça e pode destruir a reputação do próximo",
+"dica": "A palavra tem poder de dano."
+},
+{
+"pergunta": "Qual destas atitudes quebra esse mandamento?",
+"opcoes": [
+"Espalhar um boato sem verificar se é verdade",
+"Corrigir um erro com honestidade",
+"Defender a verdade com respeito",
+"Evitar acusação injusta"
+],
+"respostaCorreta": "Espalhar um boato sem verificar se é verdade",
+"dica": "Boatos também machucam."
+},
+{
+"pergunta": "O que o capítulo ensina sobre a reputação do próximo?",
+"opcoes": [
+"Ela deve ser tratada com justiça e cuidado",
+"Ela não importa moralmente",
+"Pode ser usada para vantagem pessoal",
+"Só importa se a pessoa for famosa"
+],
+"respostaCorreta": "Ela deve ser tratada com justiça e cuidado",
+"dica": "Mentiras podem destruir o nome de alguém."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do capítulo?",
+"opcoes": [
+"A verdade deve governar a palavra e o coração",
+"A fala não tem peso moral",
+"Mentiras pequenas não importam",
+"Boatos podem ser úteis"
+],
+"respostaCorreta": "A verdade deve governar a palavra e o coração",
+"dica": "A resposta une interior e exterior."
+},
+{
+"pergunta": "Por que calúnia é uma forma de injustiça?",
+"opcoes": [
+"Porque atribui falsamente culpa ou erro a alguém",
+"Porque sempre diverte as pessoas",
+"Porque protege a reputação",
+"Porque é neutra"
+],
+"respostaCorreta": "Porque atribui falsamente culpa ou erro a alguém",
+"dica": "Calúnia usa a mentira contra o próximo."
+},
+{
+"pergunta": "Qual prática foi sugerida no desafio do capítulo?",
+"opcoes": [
+"Corrigir uma mentira ou não espalhar boatos",
+"Ficar sem falar o dia inteiro",
+"Anotar erros dos outros",
+"Ignorar conversas falsas"
+],
+"respostaCorreta": "Corrigir uma mentira ou não espalhar boatos",
+"dica": "A verdade pede atitude concreta."
+},
+{
+"pergunta": "Qual destas situações mostra obediência a esse mandamento?",
+"opcoes": [
+"Verificar os fatos antes de falar",
+"Acusar sem certeza",
+"Repetir boatos",
+"Distorcer a história para vencer"
+],
+"respostaCorreta": "Verificar os fatos antes de falar",
+"dica": "A fala justa não corre na frente da verdade."
+},
+{
+"pergunta": "Por que esse mandamento envolve o coração?",
+"opcoes": [
+"Porque a mentira pode nascer de malícia, inveja ou falsidade interior",
+"Porque só a boca importa",
+"Porque as intenções não têm valor",
+"Porque a verdade depende apenas da memória"
+],
+"respostaCorreta": "Porque a mentira pode nascer de malícia, inveja ou falsidade interior",
+"dica": "A raiz da fala errada pode estar dentro."
+}
+]
+},
+{
+"id": "10-avancado",
+"capitulo": "Capítulo 9 - Não Dirás Falso Testemunho",
+"nivel": "avancado",
+"dicas": [
+"O mandamento protege a verdade, a justiça e o próximo.",
+"A falsidade pode ser verbal, moral e interior.",
+"Boatos, calúnias e distorções corrompem relações.",
+"Amar a verdade exige disciplina da língua e do coração."
+],
+"perguntas": [
+{
+"pergunta": "Por que o nono mandamento não se limita ao contexto de um tribunal?",
+"opcoes": [
+"Porque toda mentira contra o próximo fere a verdade e a justiça, mesmo fora de julgamento formal",
+"Porque só tribunais usam a palavra",
+"Porque boatos não têm peso moral",
+"Porque o mandamento trata apenas de silêncio"
+],
+"respostaCorreta": "Porque toda mentira contra o próximo fere a verdade e a justiça, mesmo fora de julgamento formal",
+"dica": "O capítulo amplia o sentido de falso testemunho."
+},
+{
+"pergunta": "Qual análise explica melhor por que a mentira é apresentada como grave?",
+"opcoes": [
+"Porque distorce a realidade e pode destruir a reputação de alguém injustamente",
+"Porque é apenas um defeito pequeno de comunicação",
+"Porque só se torna errada quando escrita",
+"Porque não tem relação com a justiça"
+],
+"respostaCorreta": "Porque distorce a realidade e pode destruir a reputação de alguém injustamente",
+"dica": "A mentira não afeta só fatos, mas pessoas."
+},
+{
+"pergunta": "Qual relação de causa e efeito o capítulo sugere sobre boatos?",
+"opcoes": [
+"Se boatos são espalhados sem verdade, a reputação do próximo pode ser ferida injustamente",
+"Se o boato é interessante, ele se torna aceitável",
+"Se muitos repetem uma história, ela se torna moralmente certa",
+"Se a intenção parece boa, a mentira perde seu peso"
+],
+"respostaCorreta": "Se boatos são espalhados sem verdade, a reputação do próximo pode ser ferida injustamente",
+"dica": "A fala irresponsável produz dano real."
+},
+{
+"pergunta": "Por que a calúnia viola a justiça?",
+"opcoes": [
+"Porque coloca culpa falsa sobre alguém e usa a palavra como arma",
+"Porque apenas exagera sem consequências",
+"Porque ajuda a corrigir o próximo",
+"Porque é sempre neutra quando feita em segredo"
+],
+"respostaCorreta": "Porque coloca culpa falsa sobre alguém e usa a palavra como arma",
+"dica": "Calúnia é mentira aplicada contra uma pessoa."
+},
+{
+"pergunta": "Qual situação mostra melhor obediência profunda a esse mandamento?",
+"opcoes": [
+"Recusar-se a repetir algo duvidoso e preferir a verdade mesmo quando ela custa",
+"Evitar mentiras grandes, mas aceitar pequenas distorções úteis",
+"Dizer o que favorece seu lado, mesmo sem certeza",
+"Usar palavras verdadeiras com intenção de humilhar"
+],
+"respostaCorreta": "Recusar-se a repetir algo duvidoso e preferir a verdade mesmo quando ela custa",
+"dica": "Amar a verdade exige disciplina moral."
+},
+{
+"pergunta": "Por que o capítulo diz que esse mandamento também envolve o coração?",
+"opcoes": [
+"Porque a falsidade pode nascer de inveja, malícia ou falta de amor à verdade",
+"Porque sentimentos sempre substituem fatos",
+"Porque a boca fala sem ligação com o interior",
+"Porque o coração não interfere na linguagem"
+],
+"respostaCorreta": "Porque a falsidade pode nascer de inveja, malícia ou falta de amor à verdade",
+"dica": "A raiz da mentira não está só na língua."
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": [
+"Falso testemunho ataca a justiça como o furto ataca a propriedade",
+"Mentira e verdade têm o mesmo valor moral",
+"Boatos são leves e não afetam ninguém",
+"Calúnia é grave apenas quando feita em público"
+],
+"respostaCorreta": "Falso testemunho ataca a justiça como o furto ataca a propriedade",
+"dica": "Cada mandamento protege um bem importante."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do capítulo?",
+"opcoes": [
+"A palavra humana deve servir à verdade e à justiça, não ao engano",
+"A palavra é neutra e sem peso moral",
+"A verdade importa apenas quando convém",
+"O próximo não tem direito a uma boa reputação"
+],
+"respostaCorreta": "A palavra humana deve servir à verdade e à justiça, não ao engano",
+"dica": "A fala tem vocação moral."
+},
+{
+"pergunta": "Por que verificar fatos antes de falar é importante à luz desse mandamento?",
+"opcoes": [
+"Porque evita que a língua participe da injustiça contra o próximo",
+"Porque toda dúvida deve ser ignorada",
+"Porque o silêncio sempre resolve tudo",
+"Porque repetir histórias é moralmente neutro"
+],
+"respostaCorreta": "Porque evita que a língua participe da injustiça contra o próximo",
+"dica": "A verdade exige responsabilidade."
+},
+{
+"pergunta": "Qual frase resume melhor o capítulo?",
+"opcoes": [
+"O nono mandamento exige amor à verdade, rejeitando mentira, calúnia, boato e toda falsidade que fere a justiça e a reputação do próximo",
+"O nono mandamento trata apenas de falas em tribunais antigos",
+"O nono mandamento fala só de linguagem, sem relação com o coração",
+"O nono mandamento permite distorções pequenas se trouxerem vantagem"
+],
+"respostaCorreta": "O nono mandamento exige amor à verdade, rejeitando mentira, calúnia, boato e toda falsidade que fere a justiça e a reputação do próximo",
+"dica": "A resposta deve unir verdade, justiça e próximo."
+}
+]
+},
+{
+"id": "11-basico",
+"capitulo": "Capítulo 10 - Não Cobiçarás",
+"nivel": "basico",
+"dicas": [
+"Cobiçar é desejar de forma errada o que é do outro.",
+"Esse pecado acontece dentro do coração.",
+"A gratidão ajuda a vencer a cobiça.",
+"Contentamento é aprender a valorizar o que Deus já deu."
+],
+"perguntas": [
+{
+"pergunta": "O décimo mandamento diz:",
+"opcoes": [
+"Não cobiçarás",
+"Não furtarás",
+"Não matarás",
+"Não adulterarás"
+],
+"respostaCorreta": "Não cobiçarás",
+"dica": "É o mandamento que fala dos desejos do coração."
+},
+{
+"pergunta": "Cobiçar significa:",
+"opcoes": [
+"Desejar de forma errada o que é do outro",
+"Ajudar com alegria",
+"Trabalhar com dedicação",
+"Falar com respeito"
+],
+"respostaCorreta": "Desejar de forma errada o que é do outro",
+"dica": "É querer possuir aquilo que pertence ao próximo."
+},
+{
+"pergunta": "A cobiça acontece primeiro no:",
+"opcoes": [
+"Coração",
+"Sapato",
+"Braço",
+"Caderno"
+],
+"respostaCorreta": "Coração",
+"dica": "Esse mandamento mostra que o pecado pode começar por dentro."
+},
+{
+"pergunta": "Qual atitude ajuda a combater a cobiça?",
+"opcoes": [
+"Gratidão",
+"Inveja",
+"Comparação",
+"Ganância"
+],
+"respostaCorreta": "Gratidão",
+"dica": "Ser grato ajuda a valorizar o que já foi recebido."
+},
+{
+"pergunta": "Quem vive se comparando com os outros pode alimentar:",
+"opcoes": [
+"Cobiça",
+"Paz",
+"Humildade",
+"Contentamento"
+],
+"respostaCorreta": "Cobiça",
+"dica": "Comparação constante pode gerar desejo desordenado."
+},
+{
+"pergunta": "O décimo mandamento cuida especialmente dos:",
+"opcoes": [
+"Desejos",
+"Sapatos",
+"Alimentos",
+"Livros"
+],
+"respostaCorreta": "Desejos",
+"dica": "Ele mostra que nem todo erro começa com ações visíveis."
+},
+{
+"pergunta": "Qual palavra combina melhor com o oposto de cobiça?",
+"opcoes": [
+"Contentamento",
+"Ganância",
+"Inveja",
+"Roubo"
+],
+"respostaCorreta": "Contentamento",
+"dica": "Contentamento é descansar no que Deus já deu."
+},
+{
+"pergunta": "Cobiçar pode levar a outros pecados porque:",
+"opcoes": [
+"O desejo errado pode empurrar a pessoa para ações erradas",
+"A cobiça sempre fica escondida sem efeito",
+"O coração não influencia a vida",
+"Desejos nunca mudam nada"
+],
+"respostaCorreta": "O desejo errado pode empurrar a pessoa para ações erradas",
+"dica": "O coração muitas vezes prepara o caminho para os atos."
+},
+{
+"pergunta": "Qual atitude mostra contentamento?",
+"opcoes": [
+"Agradecer pelo que se tem",
+"Querer sempre o que é do outro",
+"Reclamar sem parar",
+"Comparar tudo com inveja"
+],
+"respostaCorreta": "Agradecer pelo que se tem",
+"dica": "A gratidão fortalece o coração contra a cobiça."
+},
+{
+"pergunta": "O desafio do capítulo sugere:",
+"opcoes": [
+"Agradecer por algo que você já recebeu",
+"Pensar só no que falta",
+"Comparar sua vida com a dos outros",
+"Desejar mais sem parar"
+],
+"respostaCorreta": "Agradecer por algo que você já recebeu",
+"dica": "A prática da gratidão ajuda a curar a cobiça."
+}
+]
+},
+{
+"id": "11-medio",
+"capitulo": "Capítulo 10 - Não Cobiçarás",
+"nivel": "medio",
+"dicas": [
+"A cobiça é um pecado interior.",
+"Ela revela desejos desordenados.",
+"Comparação e inveja alimentam a cobiça.",
+"Contentamento e gratidão corrigem o coração."
+],
+"perguntas": [
+{
+"pergunta": "Qual é o significado externo do décimo mandamento?",
+"opcoes": [
+"Evitar desejos que empurram para tomar o que é do próximo",
+"Não possuir nenhum bem",
+"Não trabalhar para crescer",
+"Não admirar nada de ninguém"
+],
+"respostaCorreta": "Evitar desejos que empurram para tomar o que é do próximo",
+"dica": "O texto mostra que a cobiça pode abrir caminho para outros pecados."
+},
+{
+"pergunta": "Qual é o significado interno do décimo mandamento?",
+"opcoes": [
+"Purificar os desejos do coração",
+"Esconder sentimentos",
+"Ignorar a consciência",
+"Parar de pensar"
+],
+"respostaCorreta": "Purificar os desejos do coração",
+"dica": "Esse mandamento vai direto à raiz interior."
+},
+{
+"pergunta": "Por que a cobiça é um pecado tão importante de ser enfrentado?",
+"opcoes": [
+"Porque ela nasce no coração e pode gerar muitos outros pecados",
+"Porque ela só aparece em pessoas ricas",
+"Porque ela não tem relação com ações",
+"Porque ela se limita a objetos pequenos"
+],
+"respostaCorreta": "Porque ela nasce no coração e pode gerar muitos outros pecados",
+"dica": "O texto mostra a cobiça como raiz."
+},
+{
+"pergunta": "Qual sentimento costuma caminhar junto com a cobiça?",
+"opcoes": [
+"Inveja",
+"Gratidão",
+"Paz",
+"Humildade"
+],
+"respostaCorreta": "Inveja",
+"dica": "Invejar a vida do outro alimenta o desejo errado."
+},
+{
+"pergunta": "Qual prática enfraquece a cobiça segundo o capítulo?",
+"opcoes": [
+"Cultivar contentamento",
+"Comparar-se mais",
+"Desejar mais sem limite",
+"Reclamar sempre"
+],
+"respostaCorreta": "Cultivar contentamento",
+"dica": "O contentamento ajuda o coração a descansar."
+},
+{
+"pergunta": "Por que comparar a própria vida com a dos outros pode ser perigoso?",
+"opcoes": [
+"Porque pode transformar admiração em inveja e cobiça",
+"Porque sempre produz justiça",
+"Porque elimina o orgulho automaticamente",
+"Porque nunca afeta o coração"
+],
+"respostaCorreta": "Porque pode transformar admiração em inveja e cobiça",
+"dica": "A comparação errada pode distorcer os desejos."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do capítulo?",
+"opcoes": [
+"Deus deseja um coração contente e puro",
+"Só ações externas importam",
+"Desejos não têm valor moral",
+"A cobiça é inevitável e neutra"
+],
+"respostaCorreta": "Deus deseja um coração contente e puro",
+"dica": "O foco é a vida interior."
+},
+{
+"pergunta": "Se alguém deseja a posição, os bens ou a família do próximo de forma desordenada, isso é:",
+"opcoes": [
+"Cobiça",
+"Justiça",
+"Humildade",
+"Serviço"
+],
+"respostaCorreta": "Cobiça",
+"dica": "O mandamento fala exatamente desse desejo errado."
+},
+{
+"pergunta": "Qual atitude ajuda a transformar o coração cobiçoso?",
+"opcoes": [
+"Agradecer pelo que Deus já concedeu",
+"Repetir pensamentos de inveja",
+"Ficar preso ao que falta",
+"Alimentar insatisfação"
+],
+"respostaCorreta": "Agradecer pelo que Deus já concedeu",
+"dica": "Gratidão e contentamento andam juntos."
+},
+{
+"pergunta": "O desafio do capítulo aponta para qual exercício?",
+"opcoes": [
+"Anotar algo pelo qual agradecer",
+"Listar tudo o que os outros têm",
+"Comparar-se com mais pessoas",
+"Pensar só em ganhar mais"
+],
+"respostaCorreta": "Anotar algo pelo qual agradecer",
+"dica": "Esse exercício treina o coração contra a cobiça."
+}
+]
+},
+{
+"id": "11-avancado",
+"capitulo": "Capítulo 10 - Não Cobiçarás",
+"nivel": "avancado",
+"dicas": [
+"A cobiça revela desordem no coração.",
+"Esse mandamento mostra que a Lei alcança desejos e intenções.",
+"A comparação errada pode gerar inveja e ruptura moral.",
+"Gratidão e contentamento reordenam os afetos."
+],
+"perguntas": [
+{
+"pergunta": "Por que o décimo mandamento é especialmente importante para entender a profundidade da Lei?",
+"opcoes": [
+"Porque mostra que Deus julga também os desejos e não apenas as ações externas",
+"Porque fala apenas de riqueza material",
+"Porque trata só de costumes antigos",
+"Porque elimina os outros mandamentos"
+],
+"respostaCorreta": "Porque mostra que Deus julga também os desejos e não apenas as ações externas",
+"dica": "Esse mandamento vai diretamente ao interior da pessoa."
+},
+{
+"pergunta": "Qual análise explica melhor a cobiça segundo o capítulo?",
+"opcoes": [
+"É um desejo desordenado pelo que pertence ao próximo, nascido de um coração insatisfeito",
+"É o mesmo que trabalhar por algo lícito",
+"É apenas admiração inocente",
+"É um problema sem relação com outros pecados"
+],
+"respostaCorreta": "É um desejo desordenado pelo que pertence ao próximo, nascido de um coração insatisfeito",
+"dica": "A cobiça une desejo errado e falta de contentamento."
+},
+{
+"pergunta": "Qual relação de causa e efeito o capítulo sugere entre comparação e cobiça?",
+"opcoes": [
+"A comparação invejosa pode transformar admiração em desejo pecaminoso",
+"A comparação sempre produz gratidão",
+"Comparar-se com outros nunca afeta o coração",
+"Toda comparação é boa em qualquer caso"
+],
+"respostaCorreta": "A comparação invejosa pode transformar admiração em desejo pecaminoso",
+"dica": "O olhar desordenado para o próximo pode deformar os afetos."
+},
+{
+"pergunta": "Por que a cobiça pode gerar outros pecados?",
+"opcoes": [
+"Porque desejos alimentados no coração podem empurrar a pessoa para mentira, furto ou traição",
+"Porque a cobiça sempre fica isolada e sem fruto",
+"Porque ações não nascem do interior",
+"Porque o coração não influencia decisões"
+],
+"respostaCorreta": "Porque desejos alimentados no coração podem empurrar a pessoa para mentira, furto ou traição",
+"dica": "O capítulo apresenta a cobiça como raiz."
+},
+{
+"pergunta": "Qual situação mostra melhor obediência profunda a esse mandamento?",
+"opcoes": [
+"Lutar contra desejos desordenados com gratidão e contentamento",
+"Evitar roubo externo, mas alimentar inveja secreta",
+"Fingir contentamento enquanto deseja o bem do outro para si",
+"Comparar-se o tempo todo e chamar isso de motivação"
+],
+"respostaCorreta": "Lutar contra desejos desordenados com gratidão e contentamento",
+"dica": "A obediência real precisa tocar os afetos."
+},
+{
+"pergunta": "Por que o contentamento é apresentado como virtude central nesse capítulo?",
+"opcoes": [
+"Porque ele reordena o coração para receber com paz o que Deus concedeu",
+"Porque elimina todo desejo humano",
+"Porque torna a pessoa passiva e sem responsabilidade",
+"Porque dispensa a gratidão"
+],
+"respostaCorreta": "Porque ele reordena o coração para receber com paz o que Deus concedeu",
+"dica": "Contentamento não é passividade, mas descanso moral."
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": [
+"A cobiça consome o coração por dentro, mesmo antes de qualquer ação visível",
+"A cobiça só existe quando alguém rouba fisicamente",
+"Desejos não têm importância moral",
+"A gratidão e a cobiça podem crescer juntas sem conflito"
+],
+"respostaCorreta": "A cobiça consome o coração por dentro, mesmo antes de qualquer ação visível",
+"dica": "O mandamento trata do invisível."
+},
+{
+"pergunta": "Por que a gratidão combate a cobiça?",
+"opcoes": [
+"Porque ensina o coração a valorizar o bem recebido em vez de viver dominado pelo que falta",
+"Porque faz a pessoa esquecer a justiça",
+"Porque transforma desejo em inveja",
+"Porque substitui toda responsabilidade moral"
+],
+"respostaCorreta": "Porque ensina o coração a valorizar o bem recebido em vez de viver dominado pelo que falta",
+"dica": "Gratidão corrige a insatisfação."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do capítulo?",
+"opcoes": [
+"Deus exige pureza dos desejos e contentamento do coração",
+"Deus se importa apenas com o comportamento visível",
+"O coração é moralmente neutro",
+"Desejar o que é do próximo é normal e sem peso"
+],
+"respostaCorreta": "Deus exige pureza dos desejos e contentamento do coração",
+"dica": "A resposta precisa unir interior e contentamento."
+},
+{
+"pergunta": "Qual frase resume melhor o capítulo?",
+"opcoes": [
+"O décimo mandamento condena a cobiça como desordem interior que alimenta outros pecados e chama o coração à gratidão e ao contentamento",
+"O décimo mandamento fala apenas de objetos materiais visíveis",
+"O décimo mandamento se limita a impedir comparações sociais",
+"O décimo mandamento não se relaciona com a vida interior"
+],
+"respostaCorreta": "O décimo mandamento condena a cobiça como desordem interior que alimenta outros pecados e chama o coração à gratidão e ao contentamento",
+"dica": "A resposta deve unir raiz interior, perigo moral e remédio espiritual."
+}
+]
+},
+{
+"id": "12-basico",
+"capitulo": "Capítulo 11 - A Lei é Espiritual",
+"nivel": "basico",
+"dicas": [
+"A Lei não fala só de ações visíveis.",
+"Ela também alcança o coração.",
+"Deus olha para dentro e para fora.",
+"A obediência verdadeira começa no interior."
+],
+"perguntas": [
+{
+"pergunta": "Quando o capítulo diz que a Lei é espiritual, isso significa que ela alcança:",
+"opcoes": [
+"O coração",
+"Só as mãos",
+"Só os olhos",
+"Só o rosto"
+],
+"respostaCorreta": "O coração",
+"dica": "A Lei não trata apenas do que aparece por fora."
+},
+{
+"pergunta": "A Lei julga apenas ações externas?",
+"opcoes": [
+"Não",
+"Sim",
+"Somente às vezes",
+"Só em público"
+],
+"respostaCorreta": "Não",
+"dica": "O texto mostra que Deus vê mais profundamente."
+},
+{
+"pergunta": "A obediência verdadeira começa no:",
+"opcoes": [
+"Interior",
+"Sapato",
+"Braço",
+"Bolso"
+],
+"respostaCorreta": "Interior",
+"dica": "O coração é o centro moral da pessoa."
+},
+{
+"pergunta": "Qual destas coisas a Lei também examina?",
+"opcoes": [
+"Intenções",
+"Somente roupas",
+"Somente idade",
+"Somente altura"
+],
+"respostaCorreta": "Intenções",
+"dica": "A Lei vai além dos gestos visíveis."
+},
+{
+"pergunta": "A Lei espiritual mostra que Deus se importa com:",
+"opcoes": [
+"O dentro e o fora",
+"Só o que é visto",
+"Só cerimônias",
+"Só palavras repetidas"
+],
+"respostaCorreta": "O dentro e o fora",
+"dica": "A vida moral não está só na aparência."
+},
+{
+"pergunta": "Quem parece bom por fora, mas guarda maldade por dentro, ainda precisa de:",
+"opcoes": [
+"Transformação interior",
+"Mais aparência",
+"Mais silêncio apenas",
+"Menos consciência"
+],
+"respostaCorreta": "Transformação interior",
+"dica": "A Lei espiritual não se contenta com fachada."
+},
+{
+"pergunta": "Qual palavra combina melhor com a Lei espiritual?",
+"opcoes": [
+"Profundidade",
+"Superfície",
+"Pressa",
+"Disfarce"
+],
+"respostaCorreta": "Profundidade",
+"dica": "Ela desce ao coração."
+},
+{
+"pergunta": "A Lei espiritual ensina que Deus vê:",
+"opcoes": [
+"O coração",
+"Só o comportamento público",
+"Só o trabalho",
+"Só as palavras bonitas"
+],
+"respostaCorreta": "O coração",
+"dica": "Esse é o ponto central do capítulo."
+},
+{
+"pergunta": "Qual atitude combina com essa verdade?",
+"opcoes": [
+"Examinar o interior",
+"Cuidar só da aparência",
+"Esconder intenções",
+"Fingir bondade"
+],
+"respostaCorreta": "Examinar o interior",
+"dica": "A Lei espiritual chama à sinceridade."
+},
+{
+"pergunta": "O desafio do capítulo sugere:",
+"opcoes": [
+"Observar intenções durante o dia",
+"Pensar só na aparência",
+"Ignorar o coração",
+"Falar menos sem refletir"
+],
+"respostaCorreta": "Observar intenções durante o dia",
+"dica": "O exercício é olhar para dentro."
+}
+]
+},
+{
+"id": "12-medio",
+"capitulo": "Capítulo 11 - A Lei é Espiritual",
+"nivel": "medio",
+"dicas": [
+"A Lei alcança atitudes internas.",
+"Deus julga intenções, desejos e pensamentos.",
+"A aparência pode esconder desordem moral.",
+"A obediência verdadeira nasce de dentro."
+],
+"perguntas": [
+{
+"pergunta": "Qual é a principal ideia do capítulo ao dizer que a Lei é espiritual?",
+"opcoes": [
+"Que a Lei alcança o interior da pessoa",
+"Que a Lei fala apenas de anjos",
+"Que a Lei não se aplica à vida real",
+"Que a Lei ignora ações externas"
+],
+"respostaCorreta": "Que a Lei alcança o interior da pessoa",
+"dica": "Ela se dirige ao coração, não só à conduta visível."
+},
+{
+"pergunta": "Por que a aparência externa de bondade não é suficiente?",
+"opcoes": [
+"Porque a Lei também examina intenções e desejos",
+"Porque Deus ignora ações",
+"Porque só palavras importam",
+"Porque sentimentos substituem tudo"
+],
+"respostaCorreta": "Porque a Lei também examina intenções e desejos",
+"dica": "O texto combate a moralidade só de fachada."
+},
+{
+"pergunta": "Qual destas opções a Lei espiritual também julga?",
+"opcoes": [
+"Pensamentos",
+"Somente roupas",
+"Somente posição social",
+"Somente hábitos públicos"
+],
+"respostaCorreta": "Pensamentos",
+"dica": "Ela vai mais fundo do que o exterior."
+},
+{
+"pergunta": "Qual frase resume melhor a obediência verdadeira nesse capítulo?",
+"opcoes": [
+"Ela nasce no coração e aparece nas ações",
+"Ela depende só de regras externas",
+"Ela é apenas aparência",
+"Ela não precisa de sinceridade"
+],
+"respostaCorreta": "Ela nasce no coração e aparece nas ações",
+"dica": "Interior e exterior precisam caminhar juntos."
+},
+{
+"pergunta": "O que a Lei espiritual revela sobre Deus?",
+"opcoes": [
+"Que Ele vê profundamente o ser humano",
+"Que Ele olha só a aparência",
+"Que Ele ignora a mente",
+"Que Ele julga só em público"
+],
+"respostaCorreta": "Que Ele vê profundamente o ser humano",
+"dica": "O capítulo destaca esse olhar divino."
+},
+{
+"pergunta": "Qual destas situações mostra uma falha interna diante da Lei?",
+"opcoes": [
+"Parecer justo por fora, mas nutrir malícia por dentro",
+"Agir com verdade e sinceridade",
+"Pedir perdão com humildade",
+"Corrigir atitudes erradas"
+],
+"respostaCorreta": "Parecer justo por fora, mas nutrir malícia por dentro",
+"dica": "A Lei espiritual desmascara a hipocrisia."
+},
+{
+"pergunta": "Por que esse capítulo é importante para entender os mandamentos?",
+"opcoes": [
+"Porque mostra que todos eles têm profundidade interior",
+"Porque anula os mandamentos anteriores",
+"Porque fala apenas de sentimentos",
+"Porque trata só de religião antiga"
+],
+"respostaCorreta": "Porque mostra que todos eles têm profundidade interior",
+"dica": "A Lei não fica na superfície."
+},
+{
+"pergunta": "Qual atitude prática combina com esse ensino?",
+"opcoes": [
+"Examinar intenções antes de agir",
+"Cuidar só da reputação",
+"Esconder desejos errados",
+"Fingir bondade externa"
+],
+"respostaCorreta": "Examinar intenções antes de agir",
+"dica": "A Lei espiritual chama para sinceridade."
+},
+{
+"pergunta": "Qual frase está correta sobre a Lei espiritual?",
+"opcoes": [
+"Ela julga tanto o que se faz quanto o motivo pelo qual se faz",
+"Ela se importa só com resultados",
+"Ela não tem relação com desejos",
+"Ela observa apenas regras públicas"
+],
+"respostaCorreta": "Ela julga tanto o que se faz quanto o motivo pelo qual se faz",
+"dica": "A motivação também importa."
+},
+{
+"pergunta": "O desafio do capítulo leva a pessoa a:",
+"opcoes": [
+"Perceber o que move o coração",
+"Pensar só nas aparências",
+"Avaliar apenas os outros",
+"Ignorar a consciência"
+],
+"respostaCorreta": "Perceber o que move o coração",
+"dica": "A reflexão é sobre intenções profundas."
+}
+]
+},
+{
+"id": "12-avancado",
+"capitulo": "Capítulo 11 - A Lei é Espiritual",
+"nivel": "avancado",
+"dicas": [
+"A Lei espiritual alcança desejos, intenções e motivações.",
+"A moralidade bíblica não é mera aparência.",
+"Ações e coração estão ligados.",
+"O exame interior revela a necessidade de transformação real."
+],
+"perguntas": [
+{
+"pergunta": "Por que afirmar que a Lei é espiritual aprofunda o entendimento dos mandamentos?",
+"opcoes": [
+"Porque mostra que a Lei julga também motivações, desejos e intenções",
+"Porque limita a Lei ao mundo invisível apenas",
+"Porque elimina a importância das ações",
+"Porque reduz a moralidade a sentimentos vagos"
+],
+"respostaCorreta": "Porque mostra que a Lei julga também motivações, desejos e intenções",
+"dica": "O capítulo insiste que Deus vê o interior."
+},
+{
+"pergunta": "Qual análise explica melhor por que a aparência moral pode ser insuficiente?",
+"opcoes": [
+"Porque uma vida externamente correta pode esconder um coração desordenado",
+"Porque ações não têm nenhum valor",
+"Porque Deus julga apenas pensamentos",
+"Porque a aparência já basta para cumprir a Lei"
+],
+"respostaCorreta": "Porque uma vida externamente correta pode esconder um coração desordenado",
+"dica": "A Lei espiritual confronta a hipocrisia."
+},
+{
+"pergunta": "Qual relação de causa e efeito o capítulo sugere entre interior e exterior?",
+"opcoes": [
+"O coração influencia as ações, por isso a Lei alcança a raiz e não só os frutos",
+"As ações nunca têm ligação com desejos",
+"O interior não afeta a moralidade",
+"A aparência molda automaticamente o coração"
+],
+"respostaCorreta": "O coração influencia as ações, por isso a Lei alcança a raiz e não só os frutos",
+"dica": "A raiz moral antecede o comportamento."
+},
+{
+"pergunta": "Por que a Lei espiritual revela a profundidade do pecado humano?",
+"opcoes": [
+"Porque mostra que o problema não está só em atos externos, mas também em desejos e intenções corrompidas",
+"Porque transforma todo erro em aparência pública",
+"Porque nega a existência do coração",
+"Porque ensina que ações importam menos que reputação"
+],
+"respostaCorreta": "Porque mostra que o problema não está só em atos externos, mas também em desejos e intenções corrompidas",
+"dica": "O texto leva o leitor a um exame mais profundo."
+},
+{
+"pergunta": "Qual situação mostra melhor obediência real à Lei espiritual?",
+"opcoes": [
+"Buscar pureza de intenções e agir com sinceridade",
+"Manter boa imagem enquanto esconde maldade",
+"Corrigir apenas a aparência pública",
+"Evitar escândalo externo sem mudar o coração"
+],
+"respostaCorreta": "Buscar pureza de intenções e agir com sinceridade",
+"dica": "A obediência verdadeira une interior e exterior."
+},
+{
+"pergunta": "Por que esse capítulo impede uma visão superficial da religião?",
+"opcoes": [
+"Porque mostra que Deus não se satisfaz com comportamento correto sem transformação interior",
+"Porque ensina que religião é só emoção",
+"Porque declara irrelevantes as ações externas",
+"Porque reduz tudo ao silêncio e à contemplação"
+],
+"respostaCorreta": "Porque mostra que Deus não se satisfaz com comportamento correto sem transformação interior",
+"dica": "A Lei espiritual rejeita a fachada moral."
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": [
+"A Lei espiritual é como uma luz que entra no íntimo e revela o que não aparece na superfície",
+"A Lei espiritual observa apenas palavras públicas",
+"A Lei espiritual é menos exigente que a externa",
+"A Lei espiritual trata só de ideias abstratas"
+],
+"respostaCorreta": "A Lei espiritual é como uma luz que entra no íntimo e revela o que não aparece na superfície",
+"dica": "Ela expõe o interior oculto."
+},
+{
+"pergunta": "Por que examinar as intenções é moralmente necessário segundo o capítulo?",
+"opcoes": [
+"Porque a motivação também participa do bem ou do mal diante de Deus",
+"Porque o resultado final basta sozinho",
+"Porque intenções são mais importantes que tudo e ações não contam",
+"Porque a consciência não precisa de verdade"
+],
+"respostaCorreta": "Porque a motivação também participa do bem ou do mal diante de Deus",
+"dica": "O motivo pelo qual se faz algo também é julgado."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do capítulo?",
+"opcoes": [
+"Deus exige não só ações corretas, mas também um coração alinhado com Sua vontade",
+"Deus julga somente aparências",
+"O coração é moralmente neutro",
+"Só regras públicas importam"
+],
+"respostaCorreta": "Deus exige não só ações corretas, mas também um coração alinhado com Sua vontade",
+"dica": "A resposta deve unir conduta e interior."
+},
+{
+"pergunta": "Qual frase resume melhor o capítulo?",
+"opcoes": [
+"A Lei é espiritual porque alcança intenções, desejos e motivações, revelando que a verdadeira obediência precisa nascer no coração",
+"A Lei é espiritual porque ignora o comportamento visível",
+"A Lei é espiritual porque fala apenas de sentimentos religiosos",
+"A Lei é espiritual porque serve só para reflexão sem prática"
+],
+"respostaCorreta": "A Lei é espiritual porque alcança intenções, desejos e motivações, revelando que a verdadeira obediência precisa nascer no coração",
+"dica": "A resposta deve unir profundidade, interior e obediência."
+}
+]
+},
+{
+"id": "13-basico",
+"capitulo": "Capítulo 12 - A Lei Revela o Coração",
+"nivel": "basico",
+"dicas": [
+"A Lei mostra o que existe dentro de nós.",
+"Ela funciona como um espelho.",
+"O problema do ser humano não é só externo.",
+"Ver o erro é o começo da mudança."
+],
+"perguntas": [
+{
+"pergunta": "A Lei revela principalmente o:",
+"opcoes": [
+"Coração",
+"Sapato",
+"Caderno",
+"Cabelo"
+],
+"respostaCorreta": "Coração",
+"dica": "O capítulo mostra que a Lei revela o interior."
+},
+{
+"pergunta": "A Lei é comparada a um:",
+"opcoes": [
+"Espelho",
+"Barco",
+"Relógio",
+"Martelo"
+],
+"respostaCorreta": "Espelho",
+"dica": "Ela mostra quem realmente somos."
+},
+{
+"pergunta": "O espelho mostra:",
+"opcoes": [
+"Nossa condição moral",
+"Somente nossa roupa",
+"Somente nossa idade",
+"Somente nossa força"
+],
+"respostaCorreta": "Nossa condição moral",
+"dica": "A comparação fala do estado do coração."
+},
+{
+"pergunta": "Segundo o capítulo, o problema do ser humano é apenas externo?",
+"opcoes": [
+"Não",
+"Sim",
+"Só às vezes",
+"Somente em público"
+],
+"respostaCorreta": "Não",
+"dica": "O capítulo insiste que o coração também está envolvido."
+},
+{
+"pergunta": "Ver o próprio erro pode ajudar a:",
+"opcoes": [
+"Buscar mudança",
+"Fingir perfeição",
+"Ignorar a consciência",
+"Acusar sempre os outros"
+],
+"respostaCorreta": "Buscar mudança",
+"dica": "Reconhecer o problema é um passo importante."
+},
+{
+"pergunta": "A Lei não serve para esconder o pecado, mas para:",
+"opcoes": [
+"Revelá-lo",
+"Enfeitá-lo",
+"Aumentá-lo",
+"Confundi-lo"
+],
+"respostaCorreta": "Revelá-lo",
+"dica": "Ela mostra a verdade sobre nós."
+},
+{
+"pergunta": "Qual atitude combina com esse capítulo?",
+"opcoes": [
+"Examinar a si mesmo",
+"Cuidar só da aparência",
+"Negar todo erro",
+"Fingir que está tudo bem"
+],
+"respostaCorreta": "Examinar a si mesmo",
+"dica": "A Lei chama ao autoconhecimento."
+},
+{
+"pergunta": "Quando a Lei revela o coração, ela mostra:",
+"opcoes": [
+"O que precisa ser corrigido",
+"Somente as qualidades",
+"Somente a aparência",
+"Somente o passado"
+],
+"respostaCorreta": "O que precisa ser corrigido",
+"dica": "O espelho ajuda a perceber falhas reais."
+},
+{
+"pergunta": "Qual palavra combina melhor com esse capítulo?",
+"opcoes": [
+"Exame",
+"Disfarce",
+"Fingimento",
+"Esquecimento"
+],
+"respostaCorreta": "Exame",
+"dica": "A Lei examina o interior."
+},
+{
+"pergunta": "O desafio do capítulo sugere:",
+"opcoes": [
+"Parar e pensar no que a Lei mostra sobre você",
+"Comparar apenas os outros",
+"Esconder sentimentos",
+"Evitar qualquer reflexão"
+],
+"respostaCorreta": "Parar e pensar no que a Lei mostra sobre você",
+"dica": "A aplicação é pessoal e interior."
+}
+]
+},
+{
+"id": "13-medio",
+"capitulo": "Capítulo 12 - A Lei Revela o Coração",
+"nivel": "medio",
+"dicas": [
+"A Lei mostra o interior humano.",
+"Ela funciona como espelho moral.",
+"A consciência pode ser despertada pela verdade.",
+"Reconhecer o pecado é parte do processo de mudança."
+],
+"perguntas": [
+{
+"pergunta": "Qual é a principal função da Lei neste capítulo?",
+"opcoes": [
+"Revelar o coração humano",
+"Esconder falhas",
+"Melhorar a aparência",
+"Julgar só ações públicas"
+],
+"respostaCorreta": "Revelar o coração humano",
+"dica": "O capítulo usa a imagem do espelho."
+},
+{
+"pergunta": "Por que a Lei é comparada a um espelho?",
+"opcoes": [
+"Porque mostra a verdade sobre nossa condição moral",
+"Porque muda quem somos automaticamente",
+"Porque serve só para refletir aparência",
+"Porque confunde o observador"
+],
+"respostaCorreta": "Porque mostra a verdade sobre nossa condição moral",
+"dica": "Ela revela, não esconde."
+},
+{
+"pergunta": "O que esse capítulo ensina sobre o problema humano?",
+"opcoes": [
+"Que ele está também no interior e não só nas ações externas",
+"Que ele se resume a erros sociais",
+"Que ele está apenas no corpo",
+"Que ele desaparece com boa aparência"
+],
+"respostaCorreta": "Que ele está também no interior e não só nas ações externas",
+"dica": "O coração é um tema central aqui."
+},
+{
+"pergunta": "Qual atitude é necessária quando a Lei mostra um erro?",
+"opcoes": [
+"Reconhecê-lo e buscar mudança",
+"Negá-lo imediatamente",
+"Fingir perfeição",
+"Culpar somente os outros"
+],
+"respostaCorreta": "Reconhecê-lo e buscar mudança",
+"dica": "Ver o erro é o começo da correção."
+},
+{
+"pergunta": "Qual destas frases está correta?",
+"opcoes": [
+"A Lei ajuda a despertar a consciência",
+"A Lei serve para anestesiar o coração",
+"A Lei trata só de regras sociais externas",
+"A Lei elimina toda responsabilidade pessoal"
+],
+"respostaCorreta": "A Lei ajuda a despertar a consciência",
+"dica": "Ela confronta o interior com a verdade."
+},
+{
+"pergunta": "O que o espelho moral da Lei mostra?",
+"opcoes": [
+"Quem realmente somos diante de Deus",
+"Somente a opinião das pessoas",
+"Somente nossas qualidades",
+"Somente a aparência externa"
+],
+"respostaCorreta": "Quem realmente somos diante de Deus",
+"dica": "A imagem do espelho é profunda."
+},
+{
+"pergunta": "Qual prática combina com este capítulo?",
+"opcoes": [
+"Fazer autoexame com sinceridade",
+"Comparar-se apenas com os outros",
+"Esconder as falhas",
+"Buscar elogios"
+],
+"respostaCorreta": "Fazer autoexame com sinceridade",
+"dica": "A Lei chama a olhar para dentro."
+},
+{
+"pergunta": "Por que a Lei é importante para o autoconhecimento?",
+"opcoes": [
+"Porque revela áreas do coração que precisam ser tratadas",
+"Porque substitui a consciência",
+"Porque mostra só os acertos",
+"Porque elimina a necessidade de reflexão"
+],
+"respostaCorreta": "Porque revela áreas do coração que precisam ser tratadas",
+"dica": "Ela mostra a verdade sobre nós."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do capítulo?",
+"opcoes": [
+"A verdade da Lei expõe o interior humano",
+"A Lei esconde o coração",
+"Só a aparência importa",
+"O coração não precisa ser examinado"
+],
+"respostaCorreta": "A verdade da Lei expõe o interior humano",
+"dica": "A resposta une Lei e revelação interior."
+},
+{
+"pergunta": "O desafio do capítulo aponta para:",
+"opcoes": [
+"Refletir sobre o que a Lei mostra em você",
+"Julgar apenas os outros",
+"Proteger a aparência",
+"Evitar pensar sobre si"
+],
+"respostaCorreta": "Refletir sobre o que a Lei mostra em você",
+"dica": "A aplicação é pessoal."
+}
+]
+},
+{
+"id": "13-avancado",
+"capitulo": "Capítulo 12 - A Lei Revela o Coração",
+"nivel": "avancado",
+"dicas": [
+"A Lei revela o pecado em profundidade.",
+"Ela funciona como espelho moral, não como disfarce.",
+"O autoengano é vencido pela verdade.",
+"Reconhecer o coração é o início da transformação real."
+],
+"perguntas": [
+{
+"pergunta": "Por que o capítulo diz que a Lei revela o coração e não apenas o comportamento?",
+"opcoes": [
+"Porque a verdade moral de Deus expõe motivações, intenções e desordens internas",
+"Porque o comportamento não importa",
+"Porque a Lei fala só de sentimentos vagos",
+"Porque o coração é sempre inocente"
+],
+"respostaCorreta": "Porque a verdade moral de Deus expõe motivações, intenções e desordens internas",
+"dica": "A Lei alcança a raiz do problema humano."
+},
+{
+"pergunta": "Qual análise explica melhor a imagem da Lei como espelho?",
+"opcoes": [
+"Ela mostra a condição real da alma, mesmo quando a pessoa preferiria não ver",
+"Ela muda a pessoa automaticamente sem reconhecimento",
+"Ela reflete só a aparência religiosa",
+"Ela serve apenas para acusar os outros"
+],
+"respostaCorreta": "Ela mostra a condição real da alma, mesmo quando a pessoa preferiria não ver",
+"dica": "O espelho revela o que existe, não o que gostaríamos de parecer."
+},
+{
+"pergunta": "Qual relação de causa e efeito o capítulo sugere?",
+"opcoes": [
+"Quando a Lei revela o pecado interior, a pessoa pode começar a buscar transformação verdadeira",
+"Quando a Lei revela o pecado, o melhor caminho é escondê-lo",
+"Se o coração é confrontado, a consciência deve ser ignorada",
+"Ver o erro torna a mudança desnecessária"
+],
+"respostaCorreta": "Quando a Lei revela o pecado interior, a pessoa pode começar a buscar transformação verdadeira",
+"dica": "Reconhecimento é passo inicial para mudança."
+},
+{
+"pergunta": "Por que a aparência externa pode produzir autoengano espiritual?",
+"opcoes": [
+"Porque alguém pode parecer correto por fora enquanto o coração permanece desordenado",
+"Porque ações externas nunca têm valor",
+"Porque a aparência sempre é falsa",
+"Porque Deus só vê sentimentos"
+],
+"respostaCorreta": "Porque alguém pode parecer correto por fora enquanto o coração permanece desordenado",
+"dica": "O capítulo combate a ilusão da fachada moral."
+},
+{
+"pergunta": "Qual situação mostra melhor o efeito da Lei revelando o coração?",
+"opcoes": [
+"A pessoa percebe que seu problema não é só o que faz, mas também o que deseja",
+"A pessoa aprende apenas a esconder melhor seus erros",
+"A pessoa conclui que intenções não importam",
+"A pessoa passa a julgar apenas os outros"
+],
+"respostaCorreta": "A pessoa percebe que seu problema não é só o que faz, mas também o que deseja",
+"dica": "A Lei vai além dos atos visíveis."
+},
+{
+"pergunta": "Por que o autoconhecimento moral depende da Lei nesse capítulo?",
+"opcoes": [
+"Porque a Lei fornece um padrão verdadeiro para julgar o interior humano",
+"Porque a pessoa pode criar seu próprio padrão sem problema",
+"Porque o coração se conhece sozinho de forma perfeita",
+"Porque toda consciência já é suficiente sem verdade objetiva"
+],
+"respostaCorreta": "Porque a Lei fornece um padrão verdadeiro para julgar o interior humano",
+"dica": "O espelho precisa ser verdadeiro para revelar corretamente."
+},
+{
+"pergunta": "Qual comparação está correta?",
+"opcoes": [
+"A Lei não é maquiagem moral; é espelho que remove disfarces",
+"A Lei serve para enfeitar a aparência do coração",
+"A Lei só acusa externamente e ignora motivações",
+"A Lei foi dada apenas para comparar pessoas entre si"
+],
+"respostaCorreta": "A Lei não é maquiagem moral; é espelho que remove disfarces",
+"dica": "Ela revela, não encobre."
+},
+{
+"pergunta": "Qual frase resume melhor o princípio eterno do capítulo?",
+"opcoes": [
+"A Lei de Deus expõe a verdade do coração humano",
+"O coração pode ser ignorado desde que a aparência esteja boa",
+"A consciência não precisa de correção",
+"O pecado está só no exterior"
+],
+"respostaCorreta": "A Lei de Deus expõe a verdade do coração humano",
+"dica": "A resposta deve unir Lei, verdade e interior."
+},
+{
+"pergunta": "Por que reconhecer o próprio pecado é moralmente importante?",
+"opcoes": [
+"Porque sem verdade sobre si mesmo não há arrependimento nem mudança real",
+"Porque culpa sempre deve ser escondida",
+"Porque admitir erro enfraquece a consciência",
+"Porque mudança pode acontecer sem autoconhecimento"
+],
+"respostaCorreta": "Porque sem verdade sobre si mesmo não há arrependimento nem mudança real",
+"dica": "A cura começa com diagnóstico verdadeiro."
+},
+{
+"pergunta": "Qual frase resume melhor o capítulo?",
+"opcoes": [
+"A Lei revela o coração como um espelho moral, expondo o pecado interior e chamando a pessoa à verdade e à transformação",
+"A Lei revela apenas comportamentos públicos sem tocar o interior",
+"A Lei serve apenas para condenar outras pessoas",
+"A Lei existe para proteger aparências religiosas"
+],
+"respostaCorreta": "A Lei revela o coração como um espelho moral, expondo o pecado interior e chamando a pessoa à verdade e à transformação",
+"dica": "A resposta deve unir espelho, coração e mudança."
+}
+]
+}
+]
+}

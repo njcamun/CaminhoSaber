@@ -193,34 +193,90 @@ class _NiveisScreenState extends State<NiveisScreen> {
             gradient: LinearGradient(
               colors: isUnlocked
                   ? [Colors.blue.shade400, Colors.blue.shade800]
-                  : [Colors.grey.shade300, Colors.grey.shade500],
+                  : [Colors.grey.shade300, Colors.grey.shade400],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
           ),
           child: Stack(
             children: [
-              Align(
-                alignment: Alignment.center,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    FittedBox(fit: BoxFit.scaleDown, child: Text('${index + 1}', style: TextStyle(fontSize: size.width * 0.1 > 40 ? 40 : size.width * 0.1, fontWeight: FontWeight.bold, color: isUnlocked ? Colors.white : Colors.grey.shade700))),
-                    const SizedBox(height: 5),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 4),
-                      child: Text(capitulo.capitulo, textAlign: TextAlign.center, style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.white), maxLines: 2, overflow: TextOverflow.ellipsis),
-                    ),
-                    if (isUnlocked)
+              if (isUnlocked)
+                Align(
+                  alignment: Alignment.center,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          '${index + 1}',
+                          style: TextStyle(
+                            fontSize: size.width * 0.1 > 40 ? 40 : size.width * 0.1,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 5),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 4),
+                        child: Text(
+                          capitulo.capitulo,
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.white),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: List.generate(5, (starIndex) => Icon(starIndex < estrelas ? Icons.star : Icons.star_border, color: Colors.amber, size: size.width * 0.035 > 14 ? 14 : size.width * 0.035)),
+                        children: List.generate(5, (starIndex) => Icon(
+                          starIndex < estrelas ? Icons.star : Icons.star_border,
+                          color: Colors.amber,
+                          size: size.width * 0.035 > 14 ? 14 : size.width * 0.035,
+                        )),
                       ),
+                    ],
+                  ),
+                )
+              else
+                Stack(
+                  children: [
+                    // Nível no canto superior para evitar confusão com o cadeado central
+                    Positioned(
+                      top: 8,
+                      left: 10,
+                      child: Text(
+                        '${index + 1}',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w900,
+                          color: Colors.black.withValues(alpha: 0.15),
+                        ),
+                      ),
+                    ),
+                    const Center(
+                      child: Icon(Icons.lock_rounded, color: Colors.black26, size: 42),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Padding(
+                        padding: const EdgeInsets.only(bottom: 8, left: 4, right: 4),
+                        child: Text(
+                          capitulo.capitulo,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 9,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black.withValues(alpha: 0.2),
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ),
                   ],
                 ),
-              ),
-              if (!isUnlocked)
-                const Positioned.fill(child: Icon(Icons.lock_rounded, color: Colors.black26, size: 40)),
             ],
           ),
         ),

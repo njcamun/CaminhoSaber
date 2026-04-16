@@ -10,8 +10,9 @@ import 'package:caminho_do_saber/ui/screens/home_screen.dart';
 import 'package:caminho_do_saber/ui/screens/flash_card_screen.dart';
 import 'package:caminho_do_saber/ui/widgets/achievement_overlay.dart';
 import 'package:lottie/lottie.dart';
-import 'package:audioplayers/audioplayers.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:caminho_do_saber/services/audio_service.dart';
+import 'package:provider/provider.dart';
 
 class ResultadosScreen extends StatefulWidget {
   final int pontuacaoFinal;
@@ -54,41 +55,19 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
   bool _showBonusTempo = false;
   bool _showTotalFinal = false;
 
-  final AudioPlayer _audioPlayer = AudioPlayer();
-  bool _audioHabilitado = true;
-
   @override
   void initState() {
     super.initState();
-    _loadAudioSettings();
     _iniciarAnimacao();
   }
 
   @override
   void dispose() {
-    _audioPlayer.dispose();
     super.dispose();
   }
 
-  Future<void> _loadAudioSettings() async {
-    final prefs = await SharedPreferences.getInstance();
-    if (mounted) {
-      setState(() {
-        _audioHabilitado = prefs.getBool('audioHabilitado') ?? true;
-      });
-    }
-  }
-
-  void _playSound(String fileName) async {
-    if (_audioHabilitado) {
-      try {
-        final player = AudioPlayer();
-        await player.play(AssetSource('sounds/$fileName'));
-        player.onPlayerComplete.listen((_) {
-          player.dispose();
-        });
-      } catch (_) {}
-    }
+  void _playSound(String fileName) {
+    context.read<AudioService>().playSfx(fileName);
   }
 
   void _iniciarAnimacao() async {

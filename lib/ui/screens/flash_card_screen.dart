@@ -7,6 +7,8 @@ import 'package:caminho_do_saber/ui/widgets/background_container.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
+import 'package:caminho_do_saber/services/audio_service.dart';
+import 'package:provider/provider.dart';
 
 class FlashCardScreen extends StatefulWidget {
   final String titulo;
@@ -27,13 +29,10 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
   late Animation<double> _flipAnimation;
   late Animation<double> _scaleAnimation;
   int _cardAtualIndex = 0;
-  final AudioPlayer _audioPlayer = AudioPlayer();
-  bool _audioHabilitado = true;
 
   @override
   void initState() {
     super.initState();
-    _loadAudioSettings();
     _controller = AnimationController(
       duration: const Duration(milliseconds: 600),
       vsync: this,
@@ -53,24 +52,11 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
   @override
   void dispose() {
     _controller.dispose();
-    _audioPlayer.dispose();
     super.dispose();
   }
 
-  Future<void> _loadAudioSettings() async {
-    final prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _audioHabilitado = prefs.getBool('audioHabilitado') ?? true;
-    });
-  }
-
-  void _playSound(String fileName) async {
-    if (_audioHabilitado) {
-      try {
-        await _audioPlayer.stop();
-        await _audioPlayer.play(AssetSource('sounds/$fileName'));
-      } catch (_) {}
-    }
+  void _playSound(String fileName) {
+    context.read<AudioService>().playSfx(fileName);
   }
 
   void _virarCard() {

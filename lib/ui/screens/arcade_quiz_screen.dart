@@ -16,6 +16,7 @@ import 'package:caminho_do_saber/ui/widgets/retro_crt_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_typewriter_text.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_pixel_explosion.dart';
 import 'package:caminho_do_saber/ui/widgets/xp_flyer.dart';
+import 'package:caminho_do_saber/services/audio_service.dart';
 
 class ArcadeQuizScreen extends StatefulWidget {
   final List<PerguntaQuiz> perguntas;
@@ -55,7 +56,6 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   
   List<String> _opcoesRemovidas = [];
   Timer? _timer;
-  final AudioPlayer _audioPlayer = AudioPlayer();
   bool _audioHabilitado = true;
 
   String _feedbackText = "";
@@ -98,7 +98,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   @override
   void dispose() {
     _timer?.cancel();
-    _audioPlayer.dispose();
+    context.read<AudioService>().stopMusic();
     _feedbackController.dispose();
     _pulseController.dispose();
     super.dispose();
@@ -314,9 +314,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     
     _timer?.cancel();
     _pulseController.stop();
-    try {
-      await _audioPlayer.stop();
-    } catch (_) {}
+    context.read<AudioService>().stopMusic();
     
     final currentScore = _pontos;
     final disciplineId = widget.disciplinaId;
@@ -382,26 +380,12 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     );
   }
 
-  void _playSound(String file) async {
-    if (_audioHabilitado) {
-      try {
-        final player = AudioPlayer();
-        await player.play(AssetSource('sounds/$file'));
-        player.onPlayerComplete.listen((_) {
-          player.dispose();
-        });
-      } catch (e) {}
-    }
+  void _playSound(String file) {
+    context.read<AudioService>().playSfx(file);
   }
 
   Future<void> _playMusic() async {
-    final prefs = await SharedPreferences.getInstance();
-    if (prefs.getBool('audioHabilitado') ?? true) {
-      final double volumeGeral = prefs.getDouble('volumeGeral') ?? 1.0;
-      await _audioPlayer.setVolume(volumeGeral * 0.6); 
-      await _audioPlayer.setReleaseMode(ReleaseMode.loop);
-      await _audioPlayer.play(AssetSource('sounds/desafioArcade.mp3'));
-    }
+    context.read<AudioService>().playMusic('desafioArcade.mp3');
   }
 
   @override

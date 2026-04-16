@@ -16,6 +16,7 @@ import 'package:caminho_do_saber/ui/widgets/retro_crt_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_typewriter_text.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_pixel_explosion.dart';
 import 'package:caminho_do_saber/ui/widgets/xp_flyer.dart';
+import 'package:caminho_do_saber/services/audio_service.dart';
 
 class QuizScreen extends StatefulWidget {
   final List<PerguntaQuiz> perguntas;
@@ -41,7 +42,6 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   bool _respostaSelecionada = false;
   String? _respostaSelecionadaTexto;
 
-  final AudioPlayer _audioPlayer = AudioPlayer();
   bool _isMusicPlaying = false;
 
   Timer? _timer;
@@ -82,7 +82,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     WidgetsBinding.instance.removeObserver(this);
     _timer?.cancel();
     _timerGlobal?.cancel();
-    _audioPlayer.dispose();
+    context.read<AudioService>().stopMusic();
     super.dispose();
   }
 
@@ -98,9 +98,9 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   void didChangeAppLifecycleState(AppLifecycleState state) {
     super.didChangeAppLifecycleState(state);
     if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive || state == AppLifecycleState.detached) {
-      if (_isMusicPlaying) _audioPlayer.pause();
+      if (_isMusicPlaying) context.read<AudioService>().stopMusic();
     } else if (state == AppLifecycleState.resumed) {
-      if (_isMusicPlaying) _audioPlayer.resume();
+      if (_isMusicPlaying) _playQuizMusic();
     }
   }
 
@@ -159,20 +159,8 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   }
 
   Future<void> _playQuizMusic() async {
-    try {
-      final prefs = await SharedPreferences.getInstance();
-      final bool audioHabilitado = prefs.getBool('audioHabilitado') ?? true;
-      final double volumeGeral = prefs.getDouble('volumeGeral') ?? 1.0;
-
-      if (audioHabilitado) {
-        await _audioPlayer.setVolume(volumeGeral);
-        await _audioPlayer.setReleaseMode(ReleaseMode.loop);
-        await _audioPlayer.play(AssetSource('sounds/desafio.mp3'));
-        _isMusicPlaying = true;
-      }
-    } catch (e) {
-      _isMusicPlaying = false;
-    }
+    await context.read<AudioService>().playMusic('desafio.mp3');
+    _isMusicPlaying = true;
   }
 
   void _use5050() {
@@ -240,12 +228,14 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     if (estaCorreta) {
       _pontosBase += 5;
       HapticFeedback.mediumImpact();
+      context.read<AudioService>().playSfx('acerto.mp3');
       if (tapPosition != Offset.zero) {
         showXPFlyer(context, tapPosition);
         showPixelExplosion(context, tapPosition, Colors.green);
       }
     } else {
       HapticFeedback.vibrate();
+      context.read<AudioService>().playSfx('erro.mp3');
       if (tapPosition != Offset.zero) {
         showPixelExplosion(context, tapPosition, Colors.red);
       }
@@ -277,9 +267,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     if (_quizFinalizado) return;
     _quizFinalizado = true;
 
-    try {
-      await _audioPlayer.stop();
-    } catch (_) {}
+    context.read<AudioService>().stopMusic();
 
     _isMusicPlaying = false;
     _timer?.cancel();
