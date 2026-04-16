@@ -458,17 +458,37 @@ class ProgressoService with ChangeNotifier {
           'isMainProfile': activeProfile.isMainProfile,
         }, SetOptions(merge: true));
 
-        // ATUALIZAÇÃO CRÍTICA WEB: Sincroniza o ranking global
-        final rankingRef = _firestore.collection('ranking_global').doc(activeProfile.uid);
-        batch.set(rankingRef, {
-          'profileUid': activeProfile.uid,
-          'parentUid': user.uid,
-          'name': activeProfile.nome,
-          'avatarPath': activeProfile.avatarAssetPath,
-          'totalPoints': _totalXP, // Usar XP bruto para ranking mais preciso
-          'stars': totalStarsTotal,
-          'lastUpdate': FieldValue.serverTimestamp(),
-        }, SetOptions(merge: true));
+        // ATUALIZAÇÃO CRÍTICA WEB: Sincroniza TODOS os perfis locais no ranking global
+        // Nota: No Web, podemos precisar de carregar todos os perfis do cache cloud primeiro
+        for (var profileUid in _cloudProfileCache.keys) {
+          final profile = _cloudProfileCache[profileUid]!;
+          final isAtivo = profileUid == activeProfile.uid;
+          
+          final rankingRef = _firestore.collection('ranking_global').doc(profileUid);
+          batch.set(rankingRef, {
+            'profileUid': profileUid,
+            'parentUid': user.uid,
+            'name': isAtivo ? activeProfile.nome : (profile['nome'] ?? 'Perfil'),
+            'avatarPath': isAtivo ? activeProfile.avatarAssetPath : (profile['avatarAssetPath'] ?? ''),
+            'totalPoints': isAtivo ? _totalXP : (profile['totalXP'] ?? 0),
+            'stars': isAtivo ? totalStarsTotal : (profile['totalPontos'] ?? 0),
+            'lastUpdate': FieldValue.serverTimestamp(),
+          }, SetOptions(merge: true));
+        }
+
+        // Caso o cache esteja vazio (primeiro arranque), garante pelo menos o ativo
+        if (!_cloudProfileCache.containsKey(activeProfile.uid)) {
+          final rankingRef = _firestore.collection('ranking_global').doc(activeProfile.uid);
+          batch.set(rankingRef, {
+            'profileUid': activeProfile.uid,
+            'parentUid': user.uid,
+            'name': activeProfile.nome,
+            'avatarPath': activeProfile.avatarAssetPath,
+            'totalPoints': _totalXP,
+            'stars': totalStarsTotal,
+            'lastUpdate': FieldValue.serverTimestamp(),
+          }, SetOptions(merge: true));
+        }
 
         // Adiciona Timeout de 5 segundos no Web para evitar "congelamento" (UI Thread Blocked)
         await batch.commit().timeout(const Duration(seconds: 5));
@@ -477,8 +497,13 @@ class ProgressoService with ChangeNotifier {
 
       final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfile.uid));
       final localProgressos = await query.get();
+      
+      // Carregar todos os perfis locais para garantir sincronização global de todos
+      final todosPerfisLocais = await _db.select(_db.profiles).get();
 
       final batch = _firestore.batch();
+      
+      // 1. Sincroniza o progresso do perfil ATIVO
       for (var p in localProgressos) {
         final docRef = _firestore.collection('users').doc(user.uid).collection('profiles').doc(activeProfile.uid).collection('progresso').doc(p.capituloId);
         batch.set(docRef, {
@@ -488,28 +513,36 @@ class ProgressoService with ChangeNotifier {
           'tipo': p.tipo
         }, SetOptions(merge: true));
       }
-      final profileRef = _firestore.collection('users').doc(user.uid).collection('profiles').doc(activeProfile.uid);
-      batch.set(profileRef, {
-        'totalXP': _totalXP,
-        'totalPontos': totalPontos, 
-        'totalDiamantes': _totalDiamantes,
-        'currentStreak': _currentStreak,
-        'nome': activeProfile.nome, 
-        'lastSync': FieldValue.serverTimestamp(),
-        'avatarAssetPath': activeProfile.avatarAssetPath
-      }, SetOptions(merge: true));
-      
-      // ATUALIZAÇÃO CRÍTICA: Sincroniza o ranking global imediatamente
-      final rankingRef = _firestore.collection('ranking_global').doc(activeProfile.uid);
-      batch.set(rankingRef, {
-        'profileUid': activeProfile.uid,
-        'parentUid': user.uid,
-        'name': activeProfile.nome,
-        'avatarPath': activeProfile.avatarAssetPath,
-        'totalPoints': _totalXP, // Usar XP bruto para ranking mais preciso
-        'stars': totalStarsTotal,
-        'lastUpdate': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
+
+      // 2. Sincroniza TODOS os perfis locais no ranking global e na coleção de perfis do user
+      for (var profile in todosPerfisLocais) {
+        final isAtivo = profile.uid == activeProfile.uid;
+        
+        // Atualiza na coleção do utilizador
+        final pRef = _firestore.collection('users').doc(user.uid).collection('profiles').doc(profile.uid);
+        batch.set(pRef, {
+          'totalXP': isAtivo ? _totalXP : profile.totalPontos, // Ajustar se localmente guardamos XP ou estrelas
+          'totalPontos': isAtivo ? totalPontos : profile.totalPontos, 
+          'totalDiamantes': isAtivo ? _totalDiamantes : profile.totalDiamantes,
+          'currentStreak': isAtivo ? _currentStreak : profile.currentStreak,
+          'nome': profile.nome, 
+          'lastSync': FieldValue.serverTimestamp(),
+          'avatarAssetPath': profile.avatarAssetPath,
+          'isMainProfile': profile.isMainProfile,
+        }, SetOptions(merge: true));
+
+        // Atualiza no ranking global (ATÓMICO)
+        final rankingRef = _firestore.collection('ranking_global').doc(profile.uid);
+        batch.set(rankingRef, {
+          'profileUid': profile.uid,
+          'parentUid': user.uid,
+          'name': profile.nome,
+          'avatarPath': profile.avatarAssetPath,
+          'totalPoints': isAtivo ? _totalXP : profile.totalPontos, // Usa XP ou estrelas guardadas
+          'stars': isAtivo ? totalStarsTotal : (profile.totalPontos / 250).floor(),
+          'lastUpdate': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true));
+      }
 
       await batch.commit().timeout(const Duration(seconds: 5));
     } catch (e) {
