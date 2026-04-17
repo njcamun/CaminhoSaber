@@ -303,10 +303,11 @@ class ProgressoService with ChangeNotifier {
           });
           await _loadProgresso();
           
-          // Sincroniza com o ranking global (Atualiza local imediatamente e cloud se logado)
+          // Sincroniza com o ranking global usando os PONTOS BRUTOS acumulados
           final updatedProfile = _profileProvider?.activeProfile;
           if (updatedProfile != null) {
-            await _rankingService.updateProfileRanking(updatedProfile, totalPontos);
+            // Enviamos os Pontos brutos (totalPontosAcumulados) para garantir precisão no ranking
+            await _rankingService.updateProfileRanking(updatedProfile, totalPontosAcumulados);
           }
 
           await syncWithCloud(); // Sincroniza logo após salvar localmente
@@ -483,7 +484,9 @@ class ProgressoService with ChangeNotifier {
         await batch.commit().timeout(const Duration(seconds: 10));
         
         // Sincroniza com o ranking global (essencial para listar todos os perfis)
-        await _rankingService.updateProfileRanking(profile, profile.totalPontos);
+        // SEMPRE enviar totalPontosAcumulados para manter a consistência do ranking
+        await _rankingService.updateProfileRanking(profile, profile.totalPontosAcumulados); 
+        // Nota: totalPontosAcumulados é o valor bruto real
       }
       debugPrint('[ProgressoService] Sync massivo concluído com sucesso');
     } catch (e) {

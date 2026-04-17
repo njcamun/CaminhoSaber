@@ -21,7 +21,7 @@ import 'package:caminho_do_saber/ui/screens/arcade_quiz_screen.dart';
 import 'package:caminho_do_saber/models/quiz_model.dart';
 import 'package:caminho_do_saber/providers/pomodoro_provider.dart';
 import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
-import 'package:caminho_do_saber/ui/widgets/xp_progress_bar.dart';
+import 'package:caminho_do_saber/ui/widgets/points_progress_bar.dart';
 import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/streak_fire.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_crt_wrapper.dart';
@@ -395,7 +395,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                   onTap: () => _showStatInfoDialog(
                                     title: 'Ofensiva Diária',
                                     description: 'Representa a tua consistência no estudo. Mostra quantos dias seguidos tens mantido o teu foco!',
-                                    howToGain: 'Estuda todos os dias! Se completares 6 dias seguidos, recebes um super bónus de 500 XP!',
+                                    howToGain: 'Estuda todos os dias! Se completares 6 dias seguidos, recebes um super bónus de 500 Pontos!',
                                     lottieAsset: 'assets/animations/fire.json',
                                     color: Colors.orange,
                                   ),
@@ -427,13 +427,13 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                   onTap: () => _showStatInfoDialog(
                                     title: 'Estrelas de Sabedoria',
                                     description: 'Representam o teu progresso total e o brilho do teu conhecimento acumulado.',
-                                    howToGain: 'Completa lições e acerta nos Quizzes! Cada 250 XP que ganhas transforma-se numa nova Estrela.',
-                                    lottieAsset: 'assets/animations/desafio.json',
+                                    howToGain: 'Completa lições e acerta nos Quizzes! Cada 250 Pontos que ganhas transforma-se numa nova Estrela.',
+                                    lottieAsset: 'assets/animations/Star.json',
                                     color: Colors.orangeAccent,
                                   ),
                                   borderRadius: BorderRadius.circular(25),
                                   child: AnimatedStatIcon(
-                                    lottieAsset: 'assets/animations/desafio.json', // Usando desafio.json como representação de estrela/troféu
+                                    lottieAsset: 'assets/animations/Star.json',
                                     value: progressoService.totalStarsDisplay,
                                     fallbackColor: Colors.orangeAccent,
                                     fallbackIcon: Icons.stars,
@@ -456,9 +456,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                 ),
                               ],
                             ),
-                            XPProgressBar(
-                              currentXP: progressoService.totalStarsTotal.toDouble(),
-                              nextLevelXP: progressoService.getNextLevelProgress(progressoService.totalStarsTotal),
+                            PointsProgressBar(
+                              currentPoints: progressoService.totalStarsTotal.toDouble(),
+                              nextLevelPoints: progressoService.getNextLevelProgress(progressoService.totalStarsTotal),
                               color: Colors.orangeAccent,
                             ),
                             const SizedBox(height: 12),
@@ -475,9 +475,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                 ),
                               ],
                             ),
-                            XPProgressBar(
-                              currentXP: (progressoService.totalPontosAcumulados % 250).toDouble(),
-                              nextLevelXP: 250,
+                            PointsProgressBar(
+                              currentPoints: (progressoService.totalPontosAcumulados % 250).toDouble(),
+                              nextLevelPoints: 250,
                               color: Colors.blueAccent,
                             ),
                           ],

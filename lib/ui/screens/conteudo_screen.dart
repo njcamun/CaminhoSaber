@@ -112,16 +112,16 @@ class _ConteudoScreenState extends State<ConteudoScreen> {
                     child: InkWell(
                       onTap: () async {
                         if (!isCompleted) {
-                          // Define o XP da leitura (ex: 15 XP para 3 estrelas se for a primeira vez)
-                          // Atualmente o sistema usa 5 XP fixos, mas vamos recompensar mais pela leitura 
+                          // Define os Pontos da leitura (ex: 15 Pontos para 3 estrelas se for a primeira vez)
+                          // Atualmente o sistema usa 5 pontos fixos, mas vamos recompensar mais pela leitura 
                           // para incentivar o estudo antes do quiz.
-                          const int xpLeitura = 15; 
-                          await progressoService.saveProgresso(widget.capituloId, xpLeitura, tipo: 'leitura');
+                          const int pontosLeitura = 15; 
+                          await progressoService.saveProgresso(widget.capituloId, pontosLeitura, tipo: 'leitura');
                           
                           if (mounted) {
                             ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(
-                                content: Text('Incrível! Concluíste este capítulo e ganhaste $xpLeitura XP!'),
+                                content: Text('Incrível! Concluíste este capítulo e ganhaste $pontosLeitura Pontos!'),
                                 behavior: SnackBarBehavior.floating,
                                 backgroundColor: Colors.green,
                               ),

@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-class XPProgressBar extends StatelessWidget {
-  final double currentXP;
-  final double nextLevelXP;
+class PointsProgressBar extends StatelessWidget {
+  final double currentPoints;
+  final double nextLevelPoints;
   final Color? color;
 
-  const XPProgressBar({
-    required this.currentXP,
-    required this.nextLevelXP,
+  const PointsProgressBar({
+    required this.currentPoints,
+    required this.nextLevelPoints,
     this.color,
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    final double progress = (nextLevelXP > 0) 
-        ? (currentXP / nextLevelXP).clamp(0.0, 1.0) 
+    final double progress = (nextLevelPoints > 0) 
+        ? (currentPoints / nextLevelPoints).clamp(0.0, 1.0) 
         : 0.0;
 
     return Column(
@@ -36,8 +36,6 @@ class XPProgressBar extends StatelessWidget {
                 duration: const Duration(milliseconds: 1500),
                 curve: Curves.elasticOut,
                 builder: (context, value, child) {
-                  // Garante que o valor seja um número válido e esteja entre 0 e 1
-                  // Curves.elasticOut pode oscilar para fora do intervalo [0, 1]
                   final double safeValue = value.isNaN ? 0.0 : value.clamp(0.0, 1.0);
 
                   return FractionallySizedBox(

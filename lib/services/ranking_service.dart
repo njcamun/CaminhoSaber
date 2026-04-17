@@ -31,6 +31,7 @@ class RankingService {
         'name': profile.nome,
         'avatarPath': profile.avatarAssetPath,
         'totalPoints': totalPoints,
+        'stars': (totalPoints / 250).floor(), // Campo adicionado para redundância e compatibilidade
         'lastUpdate': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
       

@@ -9,6 +9,7 @@ import 'package:caminho_do_saber/services/disciplina_service.dart';
 import 'package:caminho_do_saber/providers/profile_provider.dart';
 import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
 import 'package:caminho_do_saber/ui/screens/ranking_screen.dart';
+import 'package:caminho_do_saber/ui/widgets/points_progress_bar.dart';
 import 'package:caminho_do_saber/ui/widgets/animated_stat_icon.dart';
 
 class ConquistasScreen extends StatefulWidget {
@@ -98,7 +99,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                     const SizedBox(height: 12),
                     _buildRankingCard(context),
                     const SizedBox(height: 20),
-                    _buildXPProgressBar(context),
+                    _buildPointsProgressBar(context),
                     const SizedBox(height: 24),
 
                     _buildSectionTitle(context, 'Desafios', textColor),
@@ -135,7 +136,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
               'label': 'Estrelas',
               'value': ps.totalStarsTotal,
               'color': Colors.orangeAccent,
-              'lottieAsset': 'assets/animations/desafio.json',
+              'lottieAsset': 'assets/animations/Star.json',
               'icon': Icons.stars_rounded
             },
             {
@@ -429,12 +430,11 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
     );
   }
 
-  Widget _buildXPProgressBar(BuildContext context) {
+  Widget _buildPointsProgressBar(BuildContext context) {
     return Consumer<ProgressoService>(
       builder: (context, ps, child) {
         final current = ps.totalPontos;
         final next = _getNextLevelPoints(current);
-        final percent = (current / next).clamp(0.0, 1.0);
         final title = _getUserClass(current);
 
         Color classColor;
@@ -471,16 +471,17 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                           children: [
                             Text('Classe: $title', style: TextStyle(fontWeight: FontWeight.bold, color: classColor, fontSize: 18)),
                             const SizedBox(height: 4),
-                            Text('$current / $next Estrelas para evoluir', style: TextStyle(color: Colors.grey.shade700, fontWeight: FontWeight.bold, fontSize: 12)),
+                            Text('$current / $next Pontos para evoluir', style: TextStyle(color: Colors.grey.shade700, fontWeight: FontWeight.bold, fontSize: 12)),
                           ],
                         ),
                       ),
                     ],
                   ),
                   const SizedBox(height: 14),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: LinearProgressIndicator(value: percent, minHeight: 12, backgroundColor: classColor.withOpacity(0.1), valueColor: AlwaysStoppedAnimation<Color>(classColor)),
+                  PointsProgressBar(
+                    currentPoints: current.toDouble(),
+                    nextLevelPoints: next.toDouble(),
+                    color: classColor,
                   ),
                 ],
               ),
@@ -519,7 +520,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                   ),
                 ),
                 AnimatedStatIcon(
-                  lottieAsset: 'assets/animations/desafio.json',
+                  lottieAsset: 'assets/animations/Star.json',
                   value: ps.totalPontos,
                   fallbackColor: Colors.orangeAccent,
                   fallbackIcon: Icons.stars_rounded,

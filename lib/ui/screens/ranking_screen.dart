@@ -270,19 +270,26 @@ class RankingScreen extends StatelessWidget {
                         '${item['totalPoints']}',
                         style: TextStyle(
                           fontWeight: FontWeight.w900,
-                          fontSize: isTablet ? 24 : 20,
+                          fontSize: isTablet ? 22 : 18,
                           color: isMe ? Colors.blue.shade900 : (isTop3 ? Colors.blue.shade800 : Colors.blue.shade700),
                         ),
                       ),
-                      const SizedBox(width: 4),
-                      Icon(
-                        Icons.star,
-                        color: isMe ? Colors.blue.shade900 : Colors.amber.shade700,
-                        size: 18,
-                      ),
                     ],
                   ),
-                  Text('ESTRELAS', style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold, color: Colors.blueGrey.withOpacity(0.6))),
+                  Text('PONTOS', style: TextStyle(fontSize: 9, fontWeight: FontWeight.bold, color: Colors.blueGrey.withOpacity(0.6))),
+                  const SizedBox(height: 2),
+                  // Mostra estrelas como métrica secundária
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        '${(item['totalPoints'] / 250).floor()}',
+                        style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.orange.shade700),
+                      ),
+                      const SizedBox(width: 2),
+                      Icon(Icons.star, color: Colors.orange.shade700, size: 10),
+                    ],
+                  ),
                 ],
               ),
             ),

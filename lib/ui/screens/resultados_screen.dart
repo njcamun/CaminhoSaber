@@ -106,7 +106,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
             AchievementOverlay.show(
               context,
               title: 'Pontos Ganhos!',
-              message: 'Concluíste o desafio e ganhaste ${widget.pontuacaoFinal} XP!',
+              message: 'Concluíste o desafio e ganhaste ${widget.pontuacaoFinal} Pontos!',
               icon: Icons.trending_up_rounded,
               color: Colors.orangeAccent
             );

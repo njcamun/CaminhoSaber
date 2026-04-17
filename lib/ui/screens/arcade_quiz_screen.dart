@@ -15,7 +15,7 @@ import 'package:caminho_do_saber/ui/widgets/quiz_option_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_crt_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_typewriter_text.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_pixel_explosion.dart';
-import 'package:caminho_do_saber/ui/widgets/xp_flyer.dart';
+import 'package:caminho_do_saber/ui/widgets/points_flyer.dart';
 import 'package:caminho_do_saber/services/audio_service.dart';
 
 class ArcadeQuizScreen extends StatefulWidget {
@@ -185,7 +185,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     if (acertou) {
       HapticFeedback.mediumImpact();
       if (tapPosition != Offset.zero) {
-        showXPFlyer(context, tapPosition);
+        showPointsFlyer(context, tapPosition);
         showPixelExplosion(context, tapPosition, Colors.green);
       }
       setState(() {

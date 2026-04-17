@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class XPFlyer extends StatefulWidget {
+class PointsFlyer extends StatefulWidget {
   final Offset startPos;
   final VoidCallback onComplete;
 
-  const XPFlyer({required this.startPos, required this.onComplete, super.key});
+  const PointsFlyer({required this.startPos, required this.onComplete, super.key});
 
   @override
-  State<XPFlyer> createState() => _XPFlyerState();
+  State<PointsFlyer> createState() => _PointsFlyerState();
 }
 
-class _XPFlyerState extends State<XPFlyer> with SingleTickerProviderStateMixin {
+class _PointsFlyerState extends State<PointsFlyer> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _opacity;
   late Animation<Offset> _position;
@@ -80,14 +80,14 @@ class _XPFlyerState extends State<XPFlyer> with SingleTickerProviderStateMixin {
                 child: const Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Icon(Icons.stars, color: Colors.white, size: 18),
+                    Icon(Icons.bolt_rounded, color: Colors.white, size: 18),
                     SizedBox(width: 4),
                     Text(
-                      '+5 XP',
+                      '+5 Pontos',
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 16,
+                        fontSize: 14,
                       ),
                     ),
                   ],
@@ -101,11 +101,11 @@ class _XPFlyerState extends State<XPFlyer> with SingleTickerProviderStateMixin {
   }
 }
 
-void showXPFlyer(BuildContext context, Offset position) {
+void showPointsFlyer(BuildContext context, Offset position) {
   final overlay = Overlay.of(context);
   late OverlayEntry entry;
   entry = OverlayEntry(
-    builder: (context) => XPFlyer(
+    builder: (context) => PointsFlyer(
       startPos: position,
       onComplete: () {
         if (entry.mounted) entry.remove();
