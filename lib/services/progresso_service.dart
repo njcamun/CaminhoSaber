@@ -15,17 +15,17 @@ class ProgressoService with ChangeNotifier {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   late final RankingService _rankingService;
 
-  int _totalXP = 0;
+  int _totalPontosAcumulados = 0;
   int _totalDiamantes = 0;
   int _currentStreak = 0;
   final Map<String, int> _progressoPorCapitulo = {};
   final Map<String, List<Map<String, dynamic>>> _cloudProgressCache = {};
   final Map<String, Map<String, dynamic>> _cloudProfileCache = {};
 
-  int get totalXP => _totalXP;
-  int get totalStarsTotal => (_totalXP / 250).floor();
+  int get totalPontosAcumulados => _totalPontosAcumulados;
+  int get totalStarsTotal => (_totalPontosAcumulados / 250).floor();
   int get totalStarsDisplay => totalStarsTotal % 50;
-  int get totalPontos => totalStarsTotal; // Para compatibilidade com níveis
+  int get totalPontos => totalStarsTotal; // Estrelas usadas no ranking/níveis
   int get totalDiamantes => _totalDiamantes;
   int get currentStreak => _currentStreak;
   Map<String, int> get progressoPorCapitulo => _progressoPorCapitulo;
@@ -38,7 +38,7 @@ class ProgressoService with ChangeNotifier {
     return 'Mestre do Saber';
   }
 
-  double getNextLevelXP(int currentStars) {
+  double getNextLevelProgress(int currentStars) {
     if (currentStars < 500) return 500;
     if (currentStars < 1000) return 1000;
     if (currentStars < 3000) return 3000;
@@ -68,7 +68,7 @@ class ProgressoService with ChangeNotifier {
     final activeProfile = _profileProvider?.activeProfile;
     if (activeProfile == null) {
       _progressoPorCapitulo.clear();
-      _totalXP = 0;
+      _totalPontosAcumulados = 0;
       _totalDiamantes = 0;
       _currentStreak = 0;
       Future.microtask(() => notifyListeners());
@@ -95,15 +95,15 @@ class ProgressoService with ChangeNotifier {
     }
 
     _progressoPorCapitulo.clear();
-    int xpSoma = 0;
+    int pontosSoma = 0;
     int diamantesSoma = 0;
 
     for (var progresso in todosProgressos) {
       final tipo = progresso.tipo ?? 'quiz';
 
       if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge' || tipo == 'bonus') {
-         // Acumula o XP bruto de todas as atividades
-         xpSoma += progresso.pontuacao;
+         // Acumula os pontos brutos de todas as atividades
+         pontosSoma += progresso.pontuacao;
 
          if (tipo == 'leitura' || tipo == 'quiz') {
            _progressoPorCapitulo[progresso.capituloId] = progresso.pontuacao;
@@ -115,11 +115,11 @@ class ProgressoService with ChangeNotifier {
       }
     }
 
-    _totalXP = xpSoma;
+    _totalPontosAcumulados = pontosSoma;
 
-    // Regra: 250 XP = 1 Estrela
+    // Regra: 250 Pontos = 1 Estrela
     // Regra: 50 Estrelas = 1 Diamante
-    int totalEstrelasGerais = (_totalXP / 250).floor();
+    int totalEstrelasGerais = (_totalPontosAcumulados / 250).floor();
     int diamantesPorEstrelas = (totalEstrelasGerais / 50).floor();
 
     _totalDiamantes = diamantesPorEstrelas + diamantesSoma;
@@ -159,7 +159,7 @@ class ProgressoService with ChangeNotifier {
     final cloudProfile = _cloudProfileCache[profileUid] ?? const {};
 
     _progressoPorCapitulo.clear();
-    int xpSoma = 0;
+    int pontosSoma = 0;
     int diamantesSoma = 0;
 
     for (final entry in cloudEntries) {
@@ -168,7 +168,7 @@ class ProgressoService with ChangeNotifier {
       final pontuacao = (entry['pontuacao'] as num?)?.toInt() ?? 0;
 
       if (tipo == 'leitura' || tipo == 'quiz' || tipo == 'arcade' || tipo == 'challenge' || tipo == 'bonus') {
-        xpSoma += pontuacao;
+        pontosSoma += pontuacao;
         if ((tipo == 'leitura' || tipo == 'quiz') && capituloId.isNotEmpty) {
           _progressoPorCapitulo[capituloId] = pontuacao;
         }
@@ -179,8 +179,8 @@ class ProgressoService with ChangeNotifier {
       }
     }
 
-    _totalXP = (cloudProfile['totalXP'] as num?)?.toInt() ?? xpSoma;
-    final totalEstrelasGerais = (_totalXP / 250).floor();
+    _totalPontosAcumulados = (cloudProfile['totalPontosAcumulados'] as num?)?.toInt() ?? pontosSoma;
+    final totalEstrelasGerais = (_totalPontosAcumulados / 250).floor();
     final diamantesPorEstrelas = (totalEstrelasGerais / 50).floor();
     _totalDiamantes = (cloudProfile['totalDiamantes'] as num?)?.toInt() ?? (diamantesPorEstrelas + diamantesSoma);
     _currentStreak = (cloudProfile['currentStreak'] as num?)?.toInt() ?? 0;
@@ -274,7 +274,7 @@ class ProgressoService with ChangeNotifier {
                     ),
                   );
 
-                  // Bónus: A cada 6 dias consecutivos, ganha 500 XP
+                  // Bónus: A cada 6 dias consecutivos, ganha 500 Pontos
                   if (newStreak % 6 == 0) {
                     await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
                       capituloId: 'bonus_streak_${newStreak}_${today.millisecondsSinceEpoch}',
@@ -315,7 +315,7 @@ class ProgressoService with ChangeNotifier {
     } catch (e) {
       debugPrint('[ProgressoService] Error saving progresso: $e');
       _progressoPorCapitulo[capituloId] = max(_progressoPorCapitulo[capituloId] ?? 0, novaPontuacao);
-      _totalXP += novaPontuacao;
+      _totalPontosAcumulados += novaPontuacao;
       notifyListeners();
     }
   }
@@ -559,7 +559,7 @@ class ProgressoService with ChangeNotifier {
   Future<bool> updateArcadeRecord(String disciplinaId, int novaPontuacao) async {
     if (_profileProvider?.activeProfile == null) return false;
     final recordId = 'arcade_pb_$disciplinaId';
-    // Usamos um tipo diferente para o recorde pessoal para não duplicar XP
+    // Usamos um tipo diferente para o recorde pessoal para não duplicar pontos
     await saveProgresso(recordId, novaPontuacao, tipo: 'arcade_record');
     return true;
   }
