@@ -25,7 +25,8 @@ class ProgressoService with ChangeNotifier {
   int get totalPontosAcumulados => _totalPontosAcumulados;
   int get totalStarsTotal => (_totalPontosAcumulados / 250).floor();
   int get totalStarsDisplay => totalStarsTotal % 50;
-  int get totalPontos => totalStarsTotal; // Estrelas usadas no ranking/níveis
+  int get totalStars => totalStarsTotal; // Estrelas usadas no ranking/níveis (legacy name)
+  int get totalPontos => _totalPontosAcumulados; // Valor bruto real agora exposto como totalPontos
   int get totalDiamantes => _totalDiamantes;
   int get currentStreak => _currentStreak;
   Map<String, int> get progressoPorCapitulo => _progressoPorCapitulo;
@@ -484,9 +485,9 @@ class ProgressoService with ChangeNotifier {
         await batch.commit().timeout(const Duration(seconds: 10));
         
         // Sincroniza com o ranking global (essencial para listar todos os perfis)
-        // SEMPRE enviar totalPontosAcumulados para manter a consistência do ranking
-        await _rankingService.updateProfileRanking(profile, profile.totalPontosAcumulados); 
-        // Nota: totalPontosAcumulados é o valor bruto real
+        // SEMPRE enviar totalPontos para manter a consistência do ranking
+        await _rankingService.updateProfileRanking(profile, profile.totalPontos); 
+        // Nota: totalPontos no Profile (DB) é o valor bruto real
       }
       debugPrint('[ProgressoService] Sync massivo concluído com sucesso');
     } catch (e) {

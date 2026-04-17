@@ -269,8 +269,8 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     );
   }
 
-  void _handleDailyChallengeClick(BuildContext context, int totalPontos) {
-    if (totalPontos < 1000) {
+  void _handleDailyChallengeClick(BuildContext context, int totalStars) {
+    if (totalStars < 1000) {
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
@@ -282,9 +282,9 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
               Text('Acesso Bloqueado', style: TextStyle(fontWeight: FontWeight.bold)),
             ],
           ),
-          content: const Text(
-            'Precisas de chegar ao nível Aventureiro (1000 estrelas) para desbloquear os desafios!\n\nContinua a estudar através dos Quizzes e das Leituras Diárias para ganhar mais estrelas.',
-            style: TextStyle(fontSize: 16),
+          content: Text(
+            'Precisas de chegar ao nível Aventureiro (1.000 Estrelas) para desbloquear os desafios!\n\nAtualmente tens $totalStars Estrelas. Continua a estudar para brilhar!',
+            style: const TextStyle(fontSize: 16),
           ),
           actions: [
             TextButton(
@@ -512,7 +512,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                             'Desafio Diário',
                             Icons.auto_awesome_rounded,
                             Colors.orange.shade800,
-                            () => _handleDailyChallengeClick(context, progressoService.totalPontos)
+                            () => _handleDailyChallengeClick(context, progressoService.totalStarsTotal)
                           ),
                         ),
                         const SizedBox(width: 12),
