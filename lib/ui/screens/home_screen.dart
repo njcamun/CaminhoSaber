@@ -451,14 +451,14 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                   style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange.shade900, fontSize: 14),
                                 ),
                                 Text(
-                                  '${progressoService.totalStarsTotal} / ${progressoService.getNextLevelXP(progressoService.totalStarsTotal).toInt()} Estrelas',
+                                  '${progressoService.totalStarsTotal} / ${progressoService.getNextLevelProgress(progressoService.totalStarsTotal).toInt()} Estrelas',
                                   style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.blueGrey.shade700),
                                 ),
                               ],
                             ),
                             XPProgressBar(
                               currentXP: progressoService.totalStarsTotal.toDouble(),
-                              nextLevelXP: progressoService.getNextLevelXP(progressoService.totalStarsTotal),
+                              nextLevelXP: progressoService.getNextLevelProgress(progressoService.totalStarsTotal),
                               color: Colors.orangeAccent,
                             ),
                             const SizedBox(height: 12),
@@ -470,13 +470,13 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                                   style: TextStyle(fontSize: 11, fontWeight: FontWeight.w500, color: Colors.blueGrey.shade400),
                                 ),
                                 Text(
-                                  '${progressoService.totalXP % 250} / 250 XP',
+                                  '${progressoService.totalPontosAcumulados % 250} / 250 Pontos',
                                   style: TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.orange.shade700),
                                 ),
                               ],
                             ),
                             XPProgressBar(
-                              currentXP: (progressoService.totalXP % 250).toDouble(),
+                              currentXP: (progressoService.totalPontosAcumulados % 250).toDouble(),
                               nextLevelXP: 250,
                               color: Colors.blueAccent,
                             ),

@@ -126,8 +126,8 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
           icon: Icons.analytics_rounded,
           items: [
             {
-              'label': 'Total XP',
-              'value': ps.totalXP,
+              'label': 'Total Pontos',
+              'value': ps.totalPontosAcumulados,
               'color': Colors.blueAccent,
               'icon': Icons.bolt_rounded
             },
@@ -471,7 +471,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                           children: [
                             Text('Classe: $title', style: TextStyle(fontWeight: FontWeight.bold, color: classColor, fontSize: 18)),
                             const SizedBox(height: 4),
-                            Text('$current / $next XP para evoluir', style: TextStyle(color: Colors.grey.shade700, fontWeight: FontWeight.bold, fontSize: 12)),
+                            Text('$current / $next Estrelas para evoluir', style: TextStyle(color: Colors.grey.shade700, fontWeight: FontWeight.bold, fontSize: 12)),
                           ],
                         ),
                       ),
