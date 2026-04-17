@@ -1,4 +1,866 @@
 {
-  "disciplina": "Bíblia",
-  "quizzes": []
+"id": 1,
+"capitulo": "Gênesis: O Livro das Origens",
+"nivel": "basico",
+"dicas": [
+"Pensa no começo de tudo.",
+"Lembra-te de Adão, Eva, Noé, Abraão, José e da criação.",
+"Escolhe a resposta que combina melhor com a história bíblica."
+],
+"perguntas": [
+{
+"pergunta": "O que Deus criou no começo?",
+"opcoes": ["O mundo", "Uma cidade", "Um barco", "Um templo"],
+"respostaCorreta": "O mundo",
+"dica": "É tudo o que existe: céu, terra, plantas, animais e pessoas."
+},
+{
+"pergunta": "Qual foi o primeiro homem criado por Deus?",
+"opcoes": ["Adão", "Noé", "Abraão", "José"],
+"respostaCorreta": "Adão",
+"dica": "O nome dele aparece antes de Eva."
+},
+{
+"pergunta": "Quem foi a primeira mulher?",
+"opcoes": ["Sara", "Eva", "Rebeca", "Miriam"],
+"respostaCorreta": "Eva",
+"dica": "Ela viveu no jardim com Adão."
+},
+{
+"pergunta": "Como se chamava o jardim onde Adão e Eva viviam?",
+"opcoes": ["Jardim do Éden", "Jardim Real", "Jardim de Sião", "Jardim da Paz"],
+"respostaCorreta": "Jardim do Éden",
+"dica": "Era um lugar bonito e perfeito no início."
+},
+{
+"pergunta": "Quem construiu uma grande arca?",
+"opcoes": ["Noé", "José", "Moisés", "Isaac"],
+"respostaCorreta": "Noé",
+"dica": "Ele salvou a família e os animais do dilúvio."
+},
+{
+"pergunta": "O que entrou na arca com Noé?",
+"opcoes": ["Animais", "Soldados", "Carros", "Livros"],
+"respostaCorreta": "Animais",
+"dica": "Iam aos pares para serem preservados."
+},
+{
+"pergunta": "Quem recebeu de Deus a promessa de uma grande família?",
+"opcoes": ["Abraão", "Caim", "Esaú", "Faraó"],
+"respostaCorreta": "Abraão",
+"dica": "Ele é conhecido como pai de muitos povos."
+},
+{
+"pergunta": "Qual filho de Jacó ganhou uma túnica especial?",
+"opcoes": ["José", "Benjamim", "Rúben", "Judá"],
+"respostaCorreta": "José",
+"dica": "Os irmãos ficaram com inveja dele."
+},
+{
+"pergunta": "Onde José se tornou importante depois de muito sofrer?",
+"opcoes": ["Egito", "Babilónia", "Roma", "Jerusalém"],
+"respostaCorreta": "Egito",
+"dica": "Lá ele ajudou a guardar comida."
+},
+{
+"pergunta": "Gênesis fala principalmente sobre o quê?",
+"opcoes": ["As origens", "As guerras finais", "As viagens de Paulo", "A construção do templo"],
+"respostaCorreta": "As origens",
+"dica": "É o livro do começo de muitas coisas."
+}
+]
+},
+{
+"id": 2,
+"capitulo": "Gênesis: O Livro das Origens",
+"nivel": "medio",
+"dicas": [
+"Relaciona personagens, acontecimentos e promessas.",
+"Pensa em como cada história ensina algo importante.",
+"Escolhe a opção que mostra melhor aplicação do texto."
+],
+"perguntas": [
+{
+"pergunta": "Por que Gênesis é chamado de Livro das Origens?",
+"opcoes": ["Porque mostra o começo do mundo, do pecado e do povo de Deus", "Porque fala só de reis antigos", "Porque ensina apenas leis de guerra", "Porque conta apenas histórias do Egito"],
+"respostaCorreta": "Porque mostra o começo do mundo, do pecado e do povo de Deus",
+"dica": "Pensa nos inícios que aparecem logo nos primeiros capítulos."
+},
+{
+"pergunta": "O que a criação ensina sobre Deus?",
+"opcoes": ["Deus tem poder e sabedoria para fazer todas as coisas", "Deus precisou de ajuda dos homens", "Deus criou tudo por acaso", "Deus não se importa com a ordem"],
+"respostaCorreta": "Deus tem poder e sabedoria para fazer todas as coisas",
+"dica": "Observa a beleza e a ordem da criação."
+},
+{
+"pergunta": "Qual foi uma consequência da desobediência de Adão e Eva?",
+"opcoes": ["O pecado entrou no mundo", "Todos passaram a viver para sempre na terra", "O jardim ficou maior", "Os animais começaram a falar"],
+"respostaCorreta": "O pecado entrou no mundo",
+"dica": "A escolha errada trouxe separação e sofrimento."
+},
+{
+"pergunta": "Por que Noé construiu a arca mesmo antes da chuva chegar?",
+"opcoes": ["Porque confiou na palavra de Deus", "Porque queria viajar pelo mar", "Porque queria vender madeira", "Porque os vizinhos mandaram"],
+"respostaCorreta": "Porque confiou na palavra de Deus",
+"dica": "A fé obedece mesmo antes de ver o resultado."
+},
+{
+"pergunta": "O arco-íris após o dilúvio lembrou qual verdade?",
+"opcoes": ["Deus fez uma aliança", "Deus deixou de cuidar da terra", "Noé virou rei do mundo", "Os rios nunca mais existiriam"],
+"respostaCorreta": "Deus fez uma aliança",
+"dica": "Era um sinal visível de uma promessa divina."
+},
+{
+"pergunta": "Quando Deus chamou Abraão para sair da sua terra, o que isso mostra?",
+"opcoes": ["Que seguir Deus exige fé e obediência", "Que viajar é sempre fácil", "Que Abraão não tinha família", "Que Deus só fala com reis"],
+"respostaCorreta": "Que seguir Deus exige fé e obediência",
+"dica": "Abraão foi sem saber todos os detalhes do caminho."
+},
+{
+"pergunta": "Qual foi o problema dos construtores da torre de Babel?",
+"opcoes": ["Quiseram exaltar a si mesmos em vez de honrar a Deus", "Construíram a torre muito pequena", "Esqueceram de usar pedra", "Moravam longe demais da cidade"],
+"respostaCorreta": "Quiseram exaltar a si mesmos em vez de honrar a Deus",
+"dica": "O erro principal estava no orgulho."
+},
+{
+"pergunta": "Por que os irmãos de José o venderam?",
+"opcoes": ["Porque tinham inveja dele", "Porque José pediu para ir ao Egito", "Porque Jacó mandou", "Porque houve uma guerra"],
+"respostaCorreta": "Porque tinham inveja dele",
+"dica": "A túnica e os sonhos aumentaram esse sentimento."
+},
+{
+"pergunta": "Como José ajudou muitas pessoas no Egito?",
+"opcoes": ["Organizou alimento para o tempo de fome", "Construiu um palácio para Jacó", "Derrotou todos os exércitos vizinhos", "Dividiu o rio Nilo em dois"],
+"respostaCorreta": "Organizou alimento para o tempo de fome",
+"dica": "Ele interpretou os sonhos do faraó e planeou o futuro."
+},
+{
+"pergunta": "O reencontro de José com os irmãos mostra principalmente que",
+"opcoes": ["o perdão pode vencer o mal", "o erro nunca traz consequências", "as famílias não precisam mudar", "a vingança é sempre o melhor caminho"],
+"respostaCorreta": "o perdão pode vencer o mal",
+"dica": "José escolheu restaurar a família em vez de se vingar."
+}
+]
+},
+{
+"id": 3,
+"capitulo": "Gênesis: O Livro das Origens",
+"nivel": "avancado",
+"dicas": [
+"Analisa causas, efeitos e ligações entre os eventos.",
+"Pensa no propósito de Deus ao longo das histórias.",
+"Escolhe a resposta que melhor interpreta o significado do texto."
+],
+"perguntas": [
+{
+"pergunta": "Por que a criação em Gênesis é fundamental para entender toda a Bíblia?",
+"opcoes": ["Porque estabelece Deus como origem, autoridade e propósito de tudo", "Porque elimina a necessidade de outras histórias bíblicas", "Porque mostra que os seres humanos criaram a si mesmos", "Porque prova que a natureza governa acima de Deus"],
+"respostaCorreta": "Porque estabelece Deus como origem, autoridade e propósito de tudo",
+"dica": "Pensa em quem inicia a história e define seu sentido."
+},
+{
+"pergunta": "Qual relação existe entre a queda de Adão e Eva e os conflitos humanos que aparecem depois?",
+"opcoes": ["A desobediência rompeu a comunhão com Deus e espalhou o pecado nas relações humanas", "A queda trouxe apenas problemas no jardim", "A desobediência afetou somente os animais", "A queda não influenciou as gerações seguintes"],
+"respostaCorreta": "A desobediência rompeu a comunhão com Deus e espalhou o pecado nas relações humanas",
+"dica": "Liga o pecado original com histórias como Caim e Abel."
+},
+{
+"pergunta": "O dilúvio revela ao mesmo tempo quais dois aspectos do caráter de Deus?",
+"opcoes": ["Juízo contra o pecado e graça na preservação de Noé", "Fraqueza e dúvida", "Mudança de planos e esquecimento", "Distância e indiferença"],
+"respostaCorreta": "Juízo contra o pecado e graça na preservação de Noé",
+"dica": "Deus pune o mal, mas também salva e recomeça."
+},
+{
+"pergunta": "Qual foi o principal efeito do orgulho em Babel?",
+"opcoes": ["A humanidade foi dispersa e suas línguas foram confundidas", "Todos passaram a falar uma língua nova e melhor", "A torre se tornou lugar de adoração verdadeira", "Os povos viveram em paz permanente"],
+"respostaCorreta": "A humanidade foi dispersa e suas línguas foram confundidas",
+"dica": "O projeto humano de autoexaltação terminou em divisão."
+},
+{
+"pergunta": "Por que a aliança com Abraão é central para a unidade das Escrituras?",
+"opcoes": ["Porque inicia de forma clara a promessa de bênção para todas as nações", "Porque substitui completamente a criação", "Porque fala apenas sobre riqueza pessoal", "Porque limita Deus a uma só família sem propósito maior"],
+"respostaCorreta": "Porque inicia de forma clara a promessa de bênção para todas as nações",
+"dica": "A promessa dada a Abraão aponta para um plano maior que alcança muitos povos."
+},
+{
+"pergunta": "Quando Abraão quase oferece Isaque, a narrativa destaca principalmente",
+"opcoes": ["a confiança radical em Deus e a provisão divina", "a rejeição total da promessa", "o fim da relação entre pai e filho", "a ideia de que Deus se esquece da aliança"],
+"respostaCorreta": "a confiança radical em Deus e a provisão divina",
+"dica": "O desfecho mostra que Deus provê o necessário."
+},
+{
+"pergunta": "O conflito entre Jacó e Esaú ajuda a perceber que",
+"opcoes": ["as escolhas familiares e espirituais têm consequências duradouras", "irmãos sempre permanecem iguais", "Deus aprova toda forma de engano", "a bênção não tem valor real"],
+"respostaCorreta": "as escolhas familiares e espirituais têm consequências duradouras",
+"dica": "Observa como decisões e atitudes afetam a história da família."
+},
+{
+"pergunta": "Qual interpretação melhor resume o papel dos sonhos na história de José?",
+"opcoes": ["Eles mostram que Deus dirige a história mesmo em meio ao sofrimento", "Eles servem apenas para aumentar a fama pessoal de José", "Eles não têm ligação com os acontecimentos seguintes", "Eles explicam que o Egito controlava o destino de Israel"],
+"respostaCorreta": "Eles mostram que Deus dirige a história mesmo em meio ao sofrimento",
+"dica": "O que parecia injustiça acabou fazendo parte de um plano maior."
+},
+{
+"pergunta": "Ao dizer que o mal praticado pelos irmãos resultou em bem, a história de José ensina que",
+"opcoes": ["Deus pode transformar ações humanas más em cumprimento de seu propósito", "o mal deixa de ser mal quando traz vantagem", "os irmãos estavam certos desde o início", "o sofrimento nunca dói para quem tem fé"],
+"respostaCorreta": "Deus pode transformar ações humanas más em cumprimento de seu propósito",
+"dica": "A providência divina não apaga o pecado, mas governa acima dele."
+},
+{
+"pergunta": "Considerando Gênesis como parte do panorama geral da Bíblia, sua mensagem central aponta para",
+"opcoes": ["um Deus que cria, julga, promete e conduz a redenção desde o início", "uma coleção de histórias sem ligação entre si", "um livro apenas sobre genealogias antigas", "um relato que termina sem direção para o futuro"],
+"respostaCorreta": "um Deus que cria, julga, promete e conduz a redenção desde o início",
+"dica": "Pensa em como criação, queda, aliança e providência se ligam."
+}
+]
+},
+{
+"id": 1,
+"capitulo": "Êxodo: A Redenção e a Aliança",
+"nivel": "basico",
+"dicas": [
+"Pensa na saída do povo de Israel do Egito.",
+"Lembra-te de Moisés, Faraó e o Mar Vermelho.",
+"Escolhe a resposta mais ligada à história."
+],
+"perguntas": [
+{
+"pergunta": "Quem liderou o povo de Israel para fora do Egito?",
+"opcoes": ["Moisés", "Abraão", "José", "Davi"],
+"respostaCorreta": "Moisés",
+"dica": "Ele falou com Deus na sarça ardente."
+},
+{
+"pergunta": "De onde o povo de Israel saiu?",
+"opcoes": ["Egito", "Babilónia", "Roma", "Canaã"],
+"respostaCorreta": "Egito",
+"dica": "Era um lugar onde eles eram escravos."
+},
+{
+"pergunta": "Quem era o rei que não queria libertar o povo?",
+"opcoes": ["Faraó", "César", "Herodes", "Saul"],
+"respostaCorreta": "Faraó",
+"dica": "Ele governava o Egito."
+},
+{
+"pergunta": "O que Deus enviou ao Egito para convencer Faraó?",
+"opcoes": ["Pragas", "Chuvas leves", "Ventos frios", "Animais selvagens"],
+"respostaCorreta": "Pragas",
+"dica": "Foram sinais fortes e difíceis."
+},
+{
+"pergunta": "O que Deus abriu para o povo passar?",
+"opcoes": ["Mar Vermelho", "Rio Jordão", "Deserto", "Montanha"],
+"respostaCorreta": "Mar Vermelho",
+"dica": "As águas se dividiram."
+},
+{
+"pergunta": "O que guiava o povo durante o dia?",
+"opcoes": ["Nuvem", "Estrela", "Fogo", "Anjo"],
+"respostaCorreta": "Nuvem",
+"dica": "Era algo visível no céu."
+},
+{
+"pergunta": "O que guiava o povo durante a noite?",
+"opcoes": ["Fogo", "Sol", "Lua", "Vento"],
+"respostaCorreta": "Fogo",
+"dica": "Iluminava o caminho no escuro."
+},
+{
+"pergunta": "Onde Deus deu os mandamentos?",
+"opcoes": ["Monte Sinai", "Jerusalém", "Egito", "Belém"],
+"respostaCorreta": "Monte Sinai",
+"dica": "Moisés subiu a um monte."
+},
+{
+"pergunta": "Quantos mandamentos Deus deu?",
+"opcoes": ["Dez", "Cinco", "Doze", "Vinte"],
+"respostaCorreta": "Dez",
+"dica": "São conhecidos como os Dez Mandamentos."
+},
+{
+"pergunta": "Êxodo fala principalmente sobre",
+"opcoes": ["Libertação", "Criação", "Reis", "Guerras finais"],
+"respostaCorreta": "Libertação",
+"dica": "O povo foi tirado da escravidão."
+}
+]
+},
+{
+"id": 2,
+"capitulo": "Êxodo: A Redenção e a Aliança",
+"nivel": "medio",
+"dicas": [
+"Relaciona eventos com o significado.",
+"Pensa no que Deus ensinou ao povo.",
+"Aplica o que aprendeste nas histórias."
+],
+"perguntas": [
+{
+"pergunta": "Por que Deus libertou Israel do Egito?",
+"opcoes": ["Para cumprir sua promessa e mostrar seu poder", "Porque o Egito era pequeno", "Porque Israel era rico", "Porque Faraó pediu ajuda"],
+"respostaCorreta": "Para cumprir sua promessa e mostrar seu poder",
+"dica": "Lembra da promessa feita aos patriarcas."
+},
+{
+"pergunta": "O que a Páscoa representava para o povo?",
+"opcoes": ["Libertação da morte", "Festa da colheita", "Início do inverno", "Construção do templo"],
+"respostaCorreta": "Libertação da morte",
+"dica": "O sangue do cordeiro tinha um significado especial."
+},
+{
+"pergunta": "Por que Faraó resistia em libertar o povo?",
+"opcoes": ["Seu coração era endurecido", "Ele não conhecia Moisés", "Ele estava doente", "Ele não tinha exército"],
+"respostaCorreta": "Seu coração era endurecido",
+"dica": "Ele recusava obedecer a Deus."
+},
+{
+"pergunta": "O que o maná no deserto ensinava?",
+"opcoes": ["Deus sustenta diariamente", "O povo não precisava trabalhar", "A comida era infinita sem regras", "O deserto era fértil"],
+"respostaCorreta": "Deus sustenta diariamente",
+"dica": "Eles recebiam alimento todos os dias."
+},
+{
+"pergunta": "Qual foi a reação do povo diante das dificuldades?",
+"opcoes": ["Murmuração", "Alegria constante", "Silêncio total", "Organização perfeita"],
+"respostaCorreta": "Murmuração",
+"dica": "Eles reclamavam frequentemente."
+},
+{
+"pergunta": "Para que serviam os Dez Mandamentos?",
+"opcoes": ["Guiar o povo na relação com Deus e com os outros", "Punir apenas os inimigos", "Ensinar guerra", "Organizar comércio"],
+"respostaCorreta": "Guiar o povo na relação com Deus e com os outros",
+"dica": "São regras para viver corretamente."
+},
+{
+"pergunta": "O que significa aliança em Êxodo?",
+"opcoes": ["Acordo entre Deus e o povo", "Uma guerra", "Uma cidade", "Um templo"],
+"respostaCorreta": "Acordo entre Deus e o povo",
+"dica": "Inclui promessas e responsabilidades."
+},
+{
+"pergunta": "Por que Moisés subiu ao monte várias vezes?",
+"opcoes": ["Para falar com Deus", "Para descansar", "Para fugir do povo", "Para encontrar comida"],
+"respostaCorreta": "Para falar com Deus",
+"dica": "Era um momento especial de encontro."
+},
+{
+"pergunta": "O bezerro de ouro mostrou o quê?",
+"opcoes": ["Falta de fidelidade a Deus", "Grande sabedoria do povo", "Vitória na guerra", "Construção correta"],
+"respostaCorreta": "Falta de fidelidade a Deus",
+"dica": "Eles adoraram algo errado."
+},
+{
+"pergunta": "A libertação do Egito ensina que",
+"opcoes": ["Deus salva e cuida do seu povo", "O povo não precisa obedecer", "O Egito era perfeito", "A escravidão era boa"],
+"respostaCorreta": "Deus salva e cuida do seu povo",
+"dica": "Deus age com poder e amor."
+}
+]
+},
+{
+"id": 3,
+"capitulo": "Êxodo: A Redenção e a Aliança",
+"nivel": "avancado",
+"dicas": [
+"Analisa causas e consequências.",
+"Pensa no plano de Deus.",
+"Interpreta o significado dos eventos."
+],
+"perguntas": [
+{
+"pergunta": "Qual é o significado central da libertação do Egito?",
+"opcoes": ["Deus redime seu povo do poder da escravidão", "Israel se libertou sozinho", "O Egito perdeu sua economia apenas", "Foi um evento sem propósito espiritual"],
+"respostaCorreta": "Deus redime seu povo do poder da escravidão",
+"dica": "A ação principal vem de Deus."
+},
+{
+"pergunta": "As pragas revelam principalmente que",
+"opcoes": ["Deus tem autoridade sobre toda a criação e falsos deuses", "O Egito era mais forte", "Moisés controlava a natureza", "As pragas eram naturais apenas"],
+"respostaCorreta": "Deus tem autoridade sobre toda a criação e falsos deuses",
+"dica": "Cada praga confrontava crenças egípcias."
+},
+{
+"pergunta": "Qual relação existe entre a Páscoa e a redenção?",
+"opcoes": ["O sacrifício trouxe livramento da morte", "A festa era apenas cultural", "Não havia ligação com Deus", "Era apenas um jantar comum"],
+"respostaCorreta": "O sacrifício trouxe livramento da morte",
+"dica": "O sangue tinha um papel essencial."
+},
+{
+"pergunta": "O endurecimento do coração de Faraó mostra que",
+"opcoes": ["A resistência ao plano de Deus traz juízo", "Faraó era obediente", "Deus não tinha controle", "O povo estava errado"],
+"respostaCorreta": "A resistência ao plano de Deus traz juízo",
+"dica": "A desobediência teve consequências."
+},
+{
+"pergunta": "A travessia do Mar Vermelho simboliza",
+"opcoes": ["Uma libertação completa e intervenção divina", "Um erro estratégico", "Uma derrota militar", "Uma viagem comum"],
+"respostaCorreta": "Uma libertação completa e intervenção divina",
+"dica": "Foi um milagre decisivo."
+},
+{
+"pergunta": "A aliança no Sinai estabelece",
+"opcoes": ["Uma relação baseada em compromisso entre Deus e Israel", "Uma independência total de Deus", "Uma nova escravidão", "Um sistema político apenas"],
+"respostaCorreta": "Uma relação baseada em compromisso entre Deus e Israel",
+"dica": "Inclui leis e promessas."
+},
+{
+"pergunta": "A murmuração constante do povo revela",
+"opcoes": ["Falta de fé diante das dificuldades", "Grande maturidade espiritual", "Obediência perfeita", "Confiança absoluta"],
+"respostaCorreta": "Falta de fé diante das dificuldades",
+"dica": "Eles esqueciam rapidamente o que Deus fez."
+},
+{
+"pergunta": "O maná aponta para qual verdade maior?",
+"opcoes": ["Dependência diária de Deus", "Autossuficiência humana", "Acumular riquezas", "Evitar o trabalho"],
+"respostaCorreta": "Dependência diária de Deus",
+"dica": "Eles não podiam guardar para sempre."
+},
+{
+"pergunta": "O episódio do bezerro de ouro demonstra",
+"opcoes": ["A tendência humana à idolatria", "Fidelidade constante", "Perfeição espiritual", "Obediência completa"],
+"respostaCorreta": "A tendência humana à idolatria",
+"dica": "O povo substituiu Deus por algo visível."
+},
+{
+"pergunta": "No panorama bíblico, Êxodo aponta para",
+"opcoes": ["O padrão de redenção que Deus continua a realizar", "O fim da história de Israel", "Uma narrativa isolada", "A ausência de Deus no futuro"],
+"respostaCorreta": "O padrão de redenção que Deus continua a realizar",
+"dica": "A libertação se torna um modelo."
+}
+]
+},
+{
+"id": 1,
+"capitulo": "Levítico: Santidade e Aproximação",
+"nivel": "basico",
+"dicas": [
+"Pensa em regras dadas por Deus.",
+"Lembra-te de sacrifícios e sacerdotes.",
+"Escolhe a resposta mais simples e correta."
+],
+"perguntas": [
+{
+"pergunta": "Levítico ensina principalmente sobre",
+"opcoes": ["Santidade", "Guerras", "Reis", "Viagens"],
+"respostaCorreta": "Santidade",
+"dica": "Fala sobre ser puro diante de Deus."
+},
+{
+"pergunta": "Quem eram os líderes religiosos do povo?",
+"opcoes": ["Sacerdotes", "Soldados", "Reis", "Profetas"],
+"respostaCorreta": "Sacerdotes",
+"dica": "Eles serviam no tabernáculo."
+},
+{
+"pergunta": "O que o povo oferecia a Deus?",
+"opcoes": ["Sacrifícios", "Carros", "Casas", "Espadas"],
+"respostaCorreta": "Sacrifícios",
+"dica": "Eram ofertas especiais."
+},
+{
+"pergunta": "Onde os sacerdotes serviam?",
+"opcoes": ["Tabernáculo", "Palácio", "Cidade", "Campo"],
+"respostaCorreta": "Tabernáculo",
+"dica": "Era o lugar de adoração."
+},
+{
+"pergunta": "Deus queria que o povo fosse",
+"opcoes": ["Santo", "Rico", "Forte", "Famoso"],
+"respostaCorreta": "Santo",
+"dica": "Significa separado para Deus."
+},
+{
+"pergunta": "O que significa ser santo?",
+"opcoes": ["Ser separado para Deus", "Ser perfeito em tudo", "Ser rei", "Ser forte"],
+"respostaCorreta": "Ser separado para Deus",
+"dica": "É viver de forma especial para Deus."
+},
+{
+"pergunta": "Quem ensinava as leis ao povo?",
+"opcoes": ["Sacerdotes", "Crianças", "Reis", "Soldados"],
+"respostaCorreta": "Sacerdotes",
+"dica": "Eles explicavam o que Deus queria."
+},
+{
+"pergunta": "O povo devia obedecer a quem?",
+"opcoes": ["Deus", "Faraó", "Reis estrangeiros", "Amigos"],
+"respostaCorreta": "Deus",
+"dica": "Ele deu as leis."
+},
+{
+"pergunta": "Os sacrifícios serviam para",
+"opcoes": ["Pedir perdão", "Ganhar dinheiro", "Fazer festas", "Construir casas"],
+"respostaCorreta": "Pedir perdão",
+"dica": "Ligavam-se ao pecado."
+},
+{
+"pergunta": "Levítico mostra como",
+"opcoes": ["Aproximar-se de Deus", "Lutar guerras", "Viajar", "Construir cidades"],
+"respostaCorreta": "Aproximar-se de Deus",
+"dica": "Ensina a ter relação com Deus."
+}
+]
+},
+{
+"id": 2,
+"capitulo": "Levítico: Santidade e Aproximação",
+"nivel": "medio",
+"dicas": [
+"Relaciona leis com comportamento.",
+"Pensa no significado dos sacrifícios.",
+"Aplica o ensino à vida."
+],
+"perguntas": [
+{
+"pergunta": "Por que Deus deu leis ao povo em Levítico?",
+"opcoes": ["Para que vivessem de forma santa", "Para dificultar a vida", "Para enriquecer sacerdotes", "Para criar guerras"],
+"respostaCorreta": "Para que vivessem de forma santa",
+"dica": "As leis guiavam o comportamento."
+},
+{
+"pergunta": "O que os sacrifícios representavam?",
+"opcoes": ["Perdão e reconciliação", "Riqueza", "Vitória militar", "Construção"],
+"respostaCorreta": "Perdão e reconciliação",
+"dica": "Tinham ligação com o pecado."
+},
+{
+"pergunta": "Por que somente os sacerdotes podiam entrar em certos lugares?",
+"opcoes": ["Porque eram separados para servir", "Porque eram mais fortes", "Porque eram reis", "Porque eram ricos"],
+"respostaCorreta": "Porque eram separados para servir",
+"dica": "Tinham uma função especial."
+},
+{
+"pergunta": "O Dia da Expiação servia para",
+"opcoes": ["Purificar o povo dos pecados", "Celebrar colheitas", "Treinar soldados", "Construir casas"],
+"respostaCorreta": "Purificar o povo dos pecados",
+"dica": "Era um dia muito importante."
+},
+{
+"pergunta": "O que significa pureza em Levítico?",
+"opcoes": ["Estar limpo diante de Deus", "Ser rico", "Ser forte", "Ser famoso"],
+"respostaCorreta": "Estar limpo diante de Deus",
+"dica": "Relaciona-se com santidade."
+},
+{
+"pergunta": "Por que o povo precisava obedecer às leis?",
+"opcoes": ["Para manter relacionamento com Deus", "Para vencer guerras", "Para dominar outros povos", "Para viajar mais"],
+"respostaCorreta": "Para manter relacionamento com Deus",
+"dica": "A obediência aproximava de Deus."
+},
+{
+"pergunta": "O que acontecia quando o povo pecava?",
+"opcoes": ["Precisava oferecer sacrifícios", "Era ignorado", "Recebia recompensas", "Não acontecia nada"],
+"respostaCorreta": "Precisava oferecer sacrifícios",
+"dica": "Havia um processo de perdão."
+},
+{
+"pergunta": "Os sacerdotes tinham a função de",
+"opcoes": ["Intermediar entre Deus e o povo", "Lutar guerras", "Governar cidades", "Construir casas"],
+"respostaCorreta": "Intermediar entre Deus e o povo",
+"dica": "Eles representavam o povo diante de Deus."
+},
+{
+"pergunta": "A santidade exigida por Deus mostra que",
+"opcoes": ["Deus é puro e justo", "Deus muda sempre", "Deus não se importa", "Deus é igual aos homens"],
+"respostaCorreta": "Deus é puro e justo",
+"dica": "O caráter de Deus é perfeito."
+},
+{
+"pergunta": "Levítico ensina que a aproximação de Deus deve ser",
+"opcoes": ["Com respeito e obediência", "De qualquer maneira", "Sem regras", "Com medo apenas"],
+"respostaCorreta": "Com respeito e obediência",
+"dica": "Há um padrão estabelecido."
+}
+]
+},
+{
+"id": 3,
+"capitulo": "Levítico: Santidade e Aproximação",
+"nivel": "avancado",
+"dicas": [
+"Analisa significado espiritual.",
+"Pensa em causa e efeito.",
+"Interpreta os símbolos."
+],
+"perguntas": [
+{
+"pergunta": "A santidade em Levítico revela que",
+"opcoes": ["Deus é totalmente separado do pecado", "Deus aceita qualquer comportamento", "Deus não julga", "Deus depende do homem"],
+"respostaCorreta": "Deus é totalmente separado do pecado",
+"dica": "O padrão vem do caráter divino."
+},
+{
+"pergunta": "Os sacrifícios apontam para qual necessidade humana?",
+"opcoes": ["Reconciliação com Deus", "Poder político", "Riqueza material", "Domínio militar"],
+"respostaCorreta": "Reconciliação com Deus",
+"dica": "O pecado cria separação."
+},
+{
+"pergunta": "O sistema sacerdotal demonstra que",
+"opcoes": ["Há necessidade de mediação entre Deus e o homem", "Todos podem agir de qualquer forma", "Não há diferença entre santo e comum", "O povo era independente"],
+"respostaCorreta": "Há necessidade de mediação entre Deus e o homem",
+"dica": "Nem todos podiam se aproximar diretamente."
+},
+{
+"pergunta": "O Dia da Expiação enfatiza",
+"opcoes": ["A gravidade do pecado e a necessidade de perdão", "A alegria das colheitas", "A força militar", "A riqueza nacional"],
+"respostaCorreta": "A gravidade do pecado e a necessidade de perdão",
+"dica": "Era um momento solene."
+},
+{
+"pergunta": "A pureza ritual aponta para",
+"opcoes": ["Uma realidade espiritual mais profunda", "Apenas higiene física", "Costumes culturais sem significado", "Organização política"],
+"respostaCorreta": "Uma realidade espiritual mais profunda",
+"dica": "Vai além do externo."
+},
+{
+"pergunta": "A repetição dos sacrifícios mostra que",
+"opcoes": ["O problema do pecado não era totalmente resolvido", "Tudo estava perfeito", "Não havia pecado", "Os sacrifícios eram inúteis"],
+"respostaCorreta": "O problema do pecado não era totalmente resolvido",
+"dica": "Era necessário repetir constantemente."
+},
+{
+"pergunta": "A santidade exigida ao povo implica que",
+"opcoes": ["A vida diária deve refletir o caráter de Deus", "Apenas os líderes precisam obedecer", "A santidade é opcional", "A vida não muda"],
+"respostaCorreta": "A vida diária deve refletir o caráter de Deus",
+"dica": "Envolve todas as áreas da vida."
+},
+{
+"pergunta": "A aproximação a Deus em Levítico depende de",
+"opcoes": ["Obediência e sacrifício", "Força humana", "Riqueza", "Sabedoria humana"],
+"respostaCorreta": "Obediência e sacrifício",
+"dica": "Há condições estabelecidas."
+},
+{
+"pergunta": "No panorama bíblico, Levítico contribui para",
+"opcoes": ["Compreender a necessidade de santidade e redenção", "Eliminar a lei", "Ignorar o pecado", "Separar Deus do povo"],
+"respostaCorreta": "Compreender a necessidade de santidade e redenção",
+"dica": "Liga-se ao plano maior."
+},
+{
+"pergunta": "Levítico ensina que Deus deve ser abordado",
+"opcoes": ["Segundo seus próprios padrões", "De qualquer forma", "Sem reverência", "Com orgulho"],
+"respostaCorreta": "Segundo seus próprios padrões",
+"dica": "Deus define como se aproximar."
+}
+]
+},
+{
+"id": 1,
+"capitulo": "Números: A Jornada pelo Deserto",
+"nivel": "basico",
+"dicas": [
+"Pensa numa longa viagem pelo deserto.",
+"Lembra-te do povo de Israel e de Moisés.",
+"Escolhe a resposta mais simples."
+],
+"perguntas": [
+{
+"pergunta": "Onde o povo de Israel caminhou por muito tempo?",
+"opcoes": ["Deserto", "Cidade", "Mar", "Montanha"],
+"respostaCorreta": "Deserto",
+"dica": "Era um lugar seco e difícil."
+},
+{
+"pergunta": "Quem liderava o povo durante a jornada?",
+"opcoes": ["Moisés", "Davi", "José", "Abraão"],
+"respostaCorreta": "Moisés",
+"dica": "Ele falava com Deus."
+},
+{
+"pergunta": "O que Deus dava ao povo para comer?",
+"opcoes": ["Maná", "Peixe", "Carneiro", "Pão comprado"],
+"respostaCorreta": "Maná",
+"dica": "Caía do céu."
+},
+{
+"pergunta": "O povo sempre confiava em Deus?",
+"opcoes": ["Não", "Sim", "Sempre", "Nunca paravam"],
+"respostaCorreta": "Não",
+"dica": "Eles reclamavam muitas vezes."
+},
+{
+"pergunta": "O que o povo fazia quando tinha dificuldades?",
+"opcoes": ["Reclamava", "Agradecia sempre", "Cantava", "Dormia"],
+"respostaCorreta": "Reclamava",
+"dica": "Eles murmuravam contra Deus."
+},
+{
+"pergunta": "Quem ajudava Moisés a liderar?",
+"opcoes": ["Arão", "Faraó", "Saul", "Elias"],
+"respostaCorreta": "Arão",
+"dica": "Era seu irmão."
+},
+{
+"pergunta": "Para onde o povo estava indo?",
+"opcoes": ["Terra Prometida", "Egito", "Roma", "Babilónia"],
+"respostaCorreta": "Terra Prometida",
+"dica": "Era a promessa de Deus."
+},
+{
+"pergunta": "O que Deus queria ensinar ao povo?",
+"opcoes": ["Confiar nele", "Lutar sempre", "Viajar rápido", "Construir cidades"],
+"respostaCorreta": "Confiar nele",
+"dica": "A fé era importante."
+},
+{
+"pergunta": "O que acontecia quando desobedeciam?",
+"opcoes": ["Havia consequências", "Ganhavam recompensas", "Nada acontecia", "Ficavam ricos"],
+"respostaCorreta": "Havia consequências",
+"dica": "Deus disciplinava o povo."
+},
+{
+"pergunta": "Números fala principalmente sobre",
+"opcoes": ["Uma jornada", "Criação", "Reis", "Templos"],
+"respostaCorreta": "Uma jornada",
+"dica": "É uma viagem longa no deserto."
+}
+]
+},
+{
+"id": 2,
+"capitulo": "Números: A Jornada pelo Deserto",
+"nivel": "medio",
+"dicas": [
+"Relaciona acontecimentos com lições.",
+"Pensa nos erros do povo.",
+"Aplica o significado das histórias."
+],
+"perguntas": [
+{
+"pergunta": "Por que o livro se chama Números?",
+"opcoes": ["Porque o povo foi contado", "Porque fala de matemática", "Porque tem números secretos", "Porque fala de dinheiro"],
+"respostaCorreta": "Porque o povo foi contado",
+"dica": "Houve censos do povo."
+},
+{
+"pergunta": "Qual foi um grande problema do povo no deserto?",
+"opcoes": ["Falta de fé", "Falta de comida apenas", "Falta de líderes", "Falta de cidades"],
+"respostaCorreta": "Falta de fé",
+"dica": "Eles não confiavam em Deus."
+},
+{
+"pergunta": "O que aconteceu quando os espias voltaram da terra?",
+"opcoes": ["O povo teve medo", "O povo entrou logo", "Construíram cidades", "Fizeram festa"],
+"respostaCorreta": "O povo teve medo",
+"dica": "A maioria trouxe más notícias."
+},
+{
+"pergunta": "Por que o povo não entrou logo na Terra Prometida?",
+"opcoes": ["Por causa da desobediência", "Porque não havia caminho", "Porque Moisés não quis", "Porque Deus esqueceu"],
+"respostaCorreta": "Por causa da desobediência",
+"dica": "Eles recusaram confiar."
+},
+{
+"pergunta": "O que Deus fez durante a jornada?",
+"opcoes": ["Guiou e sustentou o povo", "Abandonou o povo", "Mudou de ideia", "Escondeu-se"],
+"respostaCorreta": "Guiou e sustentou o povo",
+"dica": "Mesmo com erros, Deus cuidava."
+},
+{
+"pergunta": "Qual foi a consequência da falta de fé?",
+"opcoes": ["Andaram mais tempo no deserto", "Entraram mais rápido", "Ganharam riquezas", "Construíram cidades"],
+"respostaCorreta": "Andaram mais tempo no deserto",
+"dica": "A jornada foi prolongada."
+},
+{
+"pergunta": "O que a nuvem representava?",
+"opcoes": ["A presença de Deus", "Uma tempestade", "Um sinal de chuva", "Fumaça comum"],
+"respostaCorreta": "A presença de Deus",
+"dica": "Guiava o povo."
+},
+{
+"pergunta": "O que aprendemos com os erros do povo?",
+"opcoes": ["Devemos confiar em Deus", "Devemos reclamar mais", "Devemos desistir", "Devemos ignorar Deus"],
+"respostaCorreta": "Devemos confiar em Deus",
+"dica": "A fé é essencial."
+},
+{
+"pergunta": "Quem foram os dois espias que confiaram em Deus?",
+"opcoes": ["Josué e Calebe", "Moisés e Arão", "Davi e Samuel", "Pedro e João"],
+"respostaCorreta": "Josué e Calebe",
+"dica": "Eles acreditaram na promessa."
+},
+{
+"pergunta": "A jornada no deserto ensina que",
+"opcoes": ["Deus é fiel mesmo quando falhamos", "Deus abandona facilmente", "O povo era perfeito", "Não há consequências"],
+"respostaCorreta": "Deus é fiel mesmo quando falhamos",
+"dica": "Deus continua presente."
+}
+]
+},
+{
+"id": 3,
+"capitulo": "Números: A Jornada pelo Deserto",
+"nivel": "avancado",
+"dicas": [
+"Analisa causas e efeitos.",
+"Pensa no comportamento do povo.",
+"Interpreta o plano de Deus."
+],
+"perguntas": [
+{
+"pergunta": "A jornada no deserto revela principalmente que",
+"opcoes": ["A fé é essencial para avançar no plano de Deus", "A força física é suficiente", "O povo não precisava de Deus", "A viagem era sem propósito"],
+"respostaCorreta": "A fé é essencial para avançar no plano de Deus",
+"dica": "Sem confiança, o progresso é impedido."
+},
+{
+"pergunta": "A recusa em entrar na Terra Prometida demonstra",
+"opcoes": ["Incredulidade diante das promessas de Deus", "Sabedoria estratégica", "Obediência perfeita", "Confiança total"],
+"respostaCorreta": "Incredulidade diante das promessas de Deus",
+"dica": "O medo foi maior que a fé."
+},
+{
+"pergunta": "O prolongamento da jornada foi consequência de",
+"opcoes": ["Desobediência e falta de fé", "Planejamento errado apenas", "Falta de recursos naturais", "Ataques constantes"],
+"respostaCorreta": "Desobediência e falta de fé",
+"dica": "As escolhas do povo tiveram impacto direto."
+},
+{
+"pergunta": "A liderança de Moisés mostra que",
+"opcoes": ["Liderar exige dependência de Deus", "Liderar é dominar os outros", "Não há dificuldades na liderança", "A liderança é fácil"],
+"respostaCorreta": "Liderar exige dependência de Deus",
+"dica": "Moisés enfrentou muitos desafios."
+},
+{
+"pergunta": "A provisão contínua de Deus no deserto indica",
+"opcoes": ["Sua fidelidade apesar da infidelidade humana", "Que o povo era perfeito", "Que não havia pecado", "Que Deus dependia do povo"],
+"respostaCorreta": "Sua fidelidade apesar da infidelidade humana",
+"dica": "Deus continuou cuidando."
+},
+{
+"pergunta": "Os censos do povo mostram",
+"opcoes": ["Organização e preparação para o futuro", "Apenas curiosidade", "Falta de propósito", "Desorganização"],
+"respostaCorreta": "Organização e preparação para o futuro",
+"dica": "Havia planejamento."
+},
+{
+"pergunta": "O contraste entre Josué/Calebe e os outros espias revela",
+"opcoes": ["Diferença entre fé e medo", "Igualdade de pensamento", "Falta de liderança", "Ausência de desafios"],
+"respostaCorreta": "Diferença entre fé e medo",
+"dica": "Dois confiaram, outros não."
+},
+{
+"pergunta": "A disciplina divina no deserto indica que",
+"opcoes": ["Deus corrige seu povo para ensinar", "Deus ignora erros", "Deus abandona facilmente", "Não há justiça"],
+"respostaCorreta": "Deus corrige seu povo para ensinar",
+"dica": "A correção tem propósito."
+},
+{
+"pergunta": "No panorama bíblico, Números destaca",
+"opcoes": ["A caminhada entre promessa e cumprimento", "O fim da história", "A ausência de Deus", "A vitória final imediata"],
+"respostaCorreta": "A caminhada entre promessa e cumprimento",
+"dica": "Ainda não chegaram ao destino."
+},
+{
+"pergunta": "A jornada no deserto aponta para",
+"opcoes": ["O processo de crescimento espiritual com desafios", "Uma vida sem dificuldades", "Um caminho sem erros", "Uma história sem significado"],
+"respostaCorreta": "O processo de crescimento espiritual com desafios",
+"dica": "O caminho ensina e transforma."
+}
+]
+}
+]
 }
