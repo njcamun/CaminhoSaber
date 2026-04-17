@@ -861,6 +861,222 @@
 "dica": "O caminho ensina e transforma."
 }
 ]
+},
+{
+"id": 1,
+"capitulo": "Deuteronômio: A Repetição da Lei",
+"nivel": "basico",
+"dicas": [
+"Pensa em lembrar as leis de Deus.",
+"Moisés fala ao povo novamente.",
+"Escolhe a resposta mais simples."
+],
+"perguntas": [
+{
+"pergunta": "Quem falou ao povo em Deuteronômio?",
+"opcoes": ["Moisés", "Davi", "Abraão", "José"],
+"respostaCorreta": "Moisés",
+"dica": "Ele foi o líder antes de Josué."
+},
+{
+"pergunta": "O que Moisés repetiu ao povo?",
+"opcoes": ["As leis de Deus", "Histórias de reis", "Guerras", "Parábolas"],
+"respostaCorreta": "As leis de Deus",
+"dica": "Ele relembrou os mandamentos."
+},
+{
+"pergunta": "Para onde o povo estava prestes a entrar?",
+"opcoes": ["Terra Prometida", "Egito", "Deserto", "Babilónia"],
+"respostaCorreta": "Terra Prometida",
+"dica": "Era a promessa de Deus."
+},
+{
+"pergunta": "O que Deus queria do povo?",
+"opcoes": ["Obediência", "Riqueza", "Força", "Fama"],
+"respostaCorreta": "Obediência",
+"dica": "Seguir os mandamentos."
+},
+{
+"pergunta": "Deus ama quando o povo",
+"opcoes": ["Obedece", "Desobedece", "Ignora", "Foge"],
+"respostaCorreta": "Obedece",
+"dica": "Isso agrada a Deus."
+},
+{
+"pergunta": "O povo devia lembrar-se de quem?",
+"opcoes": ["Deus", "Faraó", "Reis", "Soldados"],
+"respostaCorreta": "Deus",
+"dica": "Ele fez grandes coisas por eles."
+},
+{
+"pergunta": "Deuteronômio fala muito sobre",
+"opcoes": ["Lembrar", "Construir", "Lutar", "Viajar"],
+"respostaCorreta": "Lembrar",
+"dica": "Relembrar é importante."
+},
+{
+"pergunta": "O que acontece quando obedecem a Deus?",
+"opcoes": ["São abençoados", "Ficam perdidos", "Perdem tudo", "Nada muda"],
+"respostaCorreta": "São abençoados",
+"dica": "Deus recompensa a obediência."
+},
+{
+"pergunta": "O que acontece quando desobedecem?",
+"opcoes": ["Há consequências", "São recompensados", "Nada acontece", "Ficam ricos"],
+"respostaCorreta": "Há consequências",
+"dica": "A desobediência traz problemas."
+},
+{
+"pergunta": "Deuteronômio ensina a",
+"opcoes": ["Seguir a Deus", "Ignorar Deus", "Lutar sempre", "Construir cidades"],
+"respostaCorreta": "Seguir a Deus",
+"dica": "É um chamado à fidelidade."
+}
+]
+},
+{
+"id": 2,
+"capitulo": "Deuteronômio: A Repetição da Lei",
+"nivel": "medio",
+"dicas": [
+"Relaciona passado e futuro.",
+"Pensa na importância da obediência.",
+"Aplica os ensinamentos."
+],
+"perguntas": [
+{
+"pergunta": "Por que Moisés repetiu a lei ao povo?",
+"opcoes": ["Para prepará-los para a Terra Prometida", "Porque esqueceram totalmente de Deus", "Para criar novas regras", "Para mudar a história"],
+"respostaCorreta": "Para prepará-los para a Terra Prometida",
+"dica": "Eles estavam prestes a entrar numa nova fase."
+},
+{
+"pergunta": "Qual era o maior mandamento destacado?",
+"opcoes": ["Amar a Deus", "Construir templos", "Lutar guerras", "Fazer riquezas"],
+"respostaCorreta": "Amar a Deus",
+"dica": "Amar com todo o coração."
+},
+{
+"pergunta": "Por que era importante lembrar o passado?",
+"opcoes": ["Para não repetir erros e confiar em Deus", "Para viver preso ao passado", "Para esquecer Deus", "Para dominar outros povos"],
+"respostaCorreta": "Para não repetir erros e confiar em Deus",
+"dica": "A memória ajuda na fé."
+},
+{
+"pergunta": "O que Moisés avisou sobre a desobediência?",
+"opcoes": ["Traria maldição e dificuldades", "Traria riqueza", "Não teria efeito", "Seria recompensada"],
+"respostaCorreta": "Traria maldição e dificuldades",
+"dica": "Há consequências negativas."
+},
+{
+"pergunta": "O que significava ensinar a lei aos filhos?",
+"opcoes": ["Transmitir a fé às próximas gerações", "Apenas ensinar leitura", "Treinar para guerras", "Preparar para comércio"],
+"respostaCorreta": "Transmitir a fé às próximas gerações",
+"dica": "Era algo contínuo."
+},
+{
+"pergunta": "Por que Deus escolheu Israel?",
+"opcoes": ["Por amor e promessa", "Por serem fortes", "Por serem numerosos", "Por serem ricos"],
+"respostaCorreta": "Por amor e promessa",
+"dica": "Não foi por mérito deles."
+},
+{
+"pergunta": "O que a obediência demonstrava?",
+"opcoes": ["Amor a Deus", "Medo apenas", "Força física", "Riqueza"],
+"respostaCorreta": "Amor a Deus",
+"dica": "Obedecer é uma resposta ao amor."
+},
+{
+"pergunta": "Qual era a escolha apresentada ao povo?",
+"opcoes": ["Vida ou morte", "Riqueza ou pobreza", "Guerra ou paz", "Cidade ou campo"],
+"respostaCorreta": "Vida ou morte",
+"dica": "Relaciona-se com obedecer ou não."
+},
+{
+"pergunta": "Por que Moisés não entrou na Terra Prometida?",
+"opcoes": ["Por desobedecer a Deus", "Por estar cansado", "Por escolha própria", "Por falta de fé do povo apenas"],
+"respostaCorreta": "Por desobedecer a Deus",
+"dica": "Mesmo líderes enfrentam consequências."
+},
+{
+"pergunta": "Deuteronômio ensina que a relação com Deus deve ser",
+"opcoes": ["Fiel e obediente", "Indiferente", "Distante", "Opcional"],
+"respostaCorreta": "Fiel e obediente",
+"dica": "Há compromisso contínuo."
+}
+]
+},
+{
+"id": 3,
+"capitulo": "Deuteronômio: A Repetição da Lei",
+"nivel": "avancado",
+"dicas": [
+"Analisa causa e efeito.",
+"Pensa na aliança.",
+"Interpreta o significado espiritual."
+],
+"perguntas": [
+{
+"pergunta": "A repetição da lei em Deuteronômio indica que",
+"opcoes": ["A memória espiritual é essencial para a fidelidade", "A lei era inútil", "O povo era perfeito", "Não havia necessidade de ensino"],
+"respostaCorreta": "A memória espiritual é essencial para a fidelidade",
+"dica": "Esquecer leva à desobediência."
+},
+{
+"pergunta": "O chamado para amar a Deus com todo o coração implica",
+"opcoes": ["Entrega total da vida", "Apenas sentimentos", "Obediência parcial", "Rituais externos apenas"],
+"respostaCorreta": "Entrega total da vida",
+"dica": "Envolve todo o ser."
+},
+{
+"pergunta": "A relação entre obediência e bênção mostra que",
+"opcoes": ["As escolhas têm consequências espirituais reais", "Nada depende das escolhas", "Tudo é automático", "A lei não importa"],
+"respostaCorreta": "As escolhas têm consequências espirituais reais",
+"dica": "Há causa e efeito."
+},
+{
+"pergunta": "A advertência contra esquecer Deus revela",
+"opcoes": ["A tendência humana à autossuficiência", "A perfeição humana", "A ausência de tentações", "A irrelevância de Deus"],
+"respostaCorreta": "A tendência humana à autossuficiência",
+"dica": "O povo podia confiar em si mesmo."
+},
+{
+"pergunta": "A transmissão da lei às gerações futuras demonstra",
+"opcoes": ["A continuidade da fé na comunidade", "A importância apenas do presente", "O isolamento do povo", "A falta de propósito"],
+"respostaCorreta": "A continuidade da fé na comunidade",
+"dica": "A fé não termina numa geração."
+},
+{
+"pergunta": "A escolha entre vida e morte representa",
+"opcoes": ["Decisão entre obedecer ou rejeitar Deus", "Escolha física apenas", "Opção sem impacto", "Decisão política"],
+"respostaCorreta": "Decisão entre obedecer ou rejeitar Deus",
+"dica": "Tem impacto espiritual profundo."
+},
+{
+"pergunta": "O fato de Moisés não entrar na terra destaca que",
+"opcoes": ["A justiça de Deus é imparcial", "Líderes são isentos", "A obediência não importa", "Deus muda de ideia"],
+"respostaCorreta": "A justiça de Deus é imparcial",
+"dica": "Todos respondem a Deus."
+},
+{
+"pergunta": "A aliança renovada em Deuteronômio enfatiza",
+"opcoes": ["Compromisso contínuo entre Deus e o povo", "Fim da relação", "Independência humana", "Ausência de regras"],
+"respostaCorreta": "Compromisso contínuo entre Deus e o povo",
+"dica": "A relação é renovada."
+},
+{
+"pergunta": "No panorama bíblico, Deuteronômio prepara para",
+"opcoes": ["A vida na Terra Prometida sob a lei de Deus", "O fim da história", "O abandono da lei", "A ausência de Deus"],
+"respostaCorreta": "A vida na Terra Prometida sob a lei de Deus",
+"dica": "É uma transição importante."
+},
+{
+"pergunta": "Deuteronômio ensina que a fidelidade a Deus deve ser",
+"opcoes": ["Intencional e constante", "Esporádica", "Opcional", "Apenas emocional"],
+"respostaCorreta": "Intencional e constante",
+"dica": "Requer decisão contínua."
+}
+]
 }
 ]
 }
