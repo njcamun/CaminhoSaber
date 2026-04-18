@@ -9,11 +9,11 @@ import 'dart:async';
 import 'dart:math';
 
 class ProgressoService with ChangeNotifier {
-  final AppDatabase _db;
+  final AppDatabase? _db;
   ProfileProvider? _profileProvider;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  late final RankingService _rankingService;
+  final RankingService _rankingService;
 
   int _totalPontosAcumulados = 0;
   int _totalDiamantes = 0;
@@ -47,8 +47,7 @@ class ProgressoService with ChangeNotifier {
     return (currentStars + 1000).toDouble();
   }
 
-  ProgressoService(this._db, ProfileProvider? profileProvider) {
-    _rankingService = RankingService(_db);
+  ProgressoService(this._db, ProfileProvider? profileProvider, this._rankingService) {
     if (profileProvider != null) {
       updateProvider(profileProvider);
     }
@@ -80,8 +79,10 @@ class ProgressoService with ChangeNotifier {
 
     List<ProgressoCapitulo> todosProgressos = [];
     try {
-      final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfileUid));
-      todosProgressos = await query.get();
+      if (_db != null) {
+        final query = _db!.select(_db!.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfileUid));
+        todosProgressos = await query.get();
+      }
     } catch (dbError) {
       debugPrint('[ProgressoService] _loadProgresso local DB failed: $dbError');
       _applyCloudFallbackForActiveProfile();
@@ -127,12 +128,12 @@ class ProgressoService with ChangeNotifier {
 
     await _updateAndLoadStreak();
 
-    if (activeProfile.totalPontos != totalPontos ||
+    if (_db != null && (activeProfile.totalPontos != totalPontos ||
         activeProfile.totalDiamantes != _totalDiamantes ||
-        activeProfile.currentStreak != _currentStreak) {
+        activeProfile.currentStreak != _currentStreak)) {
       
       try {
-        await (_db.update(_db.profiles)..where((t) => t.uid.equals(activeProfile.uid))).write(
+        await (_db!.update(_db!.profiles)..where((t) => t.uid.equals(activeProfile.uid))).write(
           ProfilesCompanion(
             totalPontos: Value(totalPontos),
             totalDiamantes: Value(_totalDiamantes),
@@ -144,11 +145,7 @@ class ProgressoService with ChangeNotifier {
       }
     }
 
-    // IMPORTANTE: Removemos o refreshActiveProfile() daqui para quebrar o loop circular.
-    // O UI já usa Consumer2<ProfileProvider, ProgressoService> e terá os dados atualizados.
     Future.microtask(() => notifyListeners());
-    // Removido syncWithCloud daqui para evitar loop de atualização.
-    // O syncWithCloud deve ser chamado apenas após alterações locais.
   }
 
   void _applyCloudFallbackForActiveProfile() {
@@ -193,12 +190,17 @@ class ProgressoService with ChangeNotifier {
     if (_profileProvider?.activeProfile == null) return;
     final uid = _profileProvider!.activeProfile!.uid;
 
-    final stats = await (_db.select(_db.userStatsTable)..where((t) => t.profileUid.equals(uid))).getSingleOrNull();
+    if (_db == null) {
+       _currentStreak = 0;
+       return;
+    }
+
+    final stats = await (_db!.select(_db!.userStatsTable)..where((t) => t.profileUid.equals(uid))).getSingleOrNull();
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
-
+    
     if (stats == null) {
-      await _db.into(_db.userStatsTable).insert(UserStatsTableCompanion.insert(
+      await _db!.into(_db!.userStatsTable).insert(UserStatsTableCompanion.insert(
         profileUid: uid,
         lastActivityDate: today,
         currentStreak: const Value(0),
@@ -211,7 +213,7 @@ class ProgressoService with ChangeNotifier {
       if (difference == 1) {
         _currentStreak = stats.currentStreak;
       } else if (difference > 1) {
-        await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(uid))).write(
+        await (_db!.update(_db!.userStatsTable)..where((t) => t.profileUid.equals(uid))).write(
           const UserStatsTableCompanion(currentStreak: Value(0)),
         );
         _currentStreak = 0;
@@ -226,94 +228,107 @@ class ProgressoService with ChangeNotifier {
     final activeProfileUid = _profileProvider!.activeProfile!.uid;
     
     try {
-      await Future<void>(() async {
-        final progressoExistente = await (_db.select(_db.progressoCapitulos)
-          ..where((t) => t.profileUid.equals(activeProfileUid) & t.capituloId.equals(capituloId)))
-          .getSingleOrNull();
+      if (_db != null) {
+        await Future<void>(() async {
+          final progressoExistente = await (_db!.select(_db!.progressoCapitulos)
+            ..where((t) => t.profileUid.equals(activeProfileUid) & t.capituloId.equals(capituloId)))
+            .getSingleOrNull();
 
-        if (tipo == 'payment' || progressoExistente == null || (tipo != 'payment' && novaPontuacao > progressoExistente.pontuacao)) {
-          await _db.transaction(() async {
-            if (tipo == 'payment') {
-              await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
-                capituloId: '${capituloId}_${DateTime.now().millisecondsSinceEpoch}',
-                pontuacao: novaPontuacao,
-                dataConclusao: DateTime.now(),
-                profileUid: activeProfileUid,
-                tipo: Value(tipo),
-              ));
-            } else if (progressoExistente == null) {
-              await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
-                capituloId: capituloId,
-                pontuacao: novaPontuacao,
-                dataConclusao: DateTime.now(),
-                profileUid: activeProfileUid,
-                tipo: Value(tipo),
-              ));
-            } else {
-              await (_db.update(_db.progressoCapitulos)
-                ..where((t) => t.id.equals(progressoExistente.id)))
-                .write(ProgressoCapitulosCompanion(
-                  pontuacao: Value(novaPontuacao),
-                  dataConclusao: Value(DateTime.now()),
-                ));
-            }
-            
-            if (tipo == 'quiz' || tipo == 'leitura') {
-              final stats = await (_db.select(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).getSingleOrNull();
-              final today = DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day);
-              
-              if (stats != null) {
-                final lastDate = DateTime(stats.lastActivityDate.year, stats.lastActivityDate.month, stats.lastActivityDate.day);
-                if (today.difference(lastDate).inDays == 1) {
-                  int newStreak = stats.currentStreak + 1;
-                  int newHighest = max(newStreak, stats.highestStreak);
-                  await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
-                    UserStatsTableCompanion(
-                      currentStreak: Value(newStreak),
-                      lastActivityDate: Value(today),
-                      highestStreak: Value(newHighest),
-                    ),
-                  );
-
-                  // Bónus: A cada 6 dias consecutivos, ganha 500 Pontos
-                  if (newStreak % 6 == 0) {
-                    await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
-                      capituloId: 'bonus_streak_${newStreak}_${today.millisecondsSinceEpoch}',
-                      pontuacao: 500,
-                      dataConclusao: DateTime.now(),
-                      profileUid: activeProfileUid,
-                      tipo: const Value('bonus'),
-                    ));
-                  }
-                } else if (today.difference(lastDate).inDays > 1 || stats.currentStreak == 0) {
-                  await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
-                    UserStatsTableCompanion(
-                      currentStreak: const Value(1),
-                      lastActivityDate: Value(today),
-                    ),
-                  );
-                }
-              } else {
-                await _db.into(_db.userStatsTable).insert(UserStatsTableCompanion.insert(
+          if (tipo == 'payment' || progressoExistente == null || (tipo != 'payment' && novaPontuacao > progressoExistente.pontuacao)) {
+            await _db!.transaction(() async {
+              if (tipo == 'payment') {
+                await _db!.into(_db!.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                  capituloId: '${capituloId}_${DateTime.now().millisecondsSinceEpoch}',
+                  pontuacao: novaPontuacao,
+                  dataConclusao: DateTime.now(),
                   profileUid: activeProfileUid,
-                  currentStreak: const Value(1),
-                  lastActivityDate: today,
+                  tipo: Value(tipo),
                 ));
+              } else if (progressoExistente == null) {
+                await _db!.into(_db!.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                  capituloId: capituloId,
+                  pontuacao: novaPontuacao,
+                  dataConclusao: DateTime.now(),
+                  profileUid: activeProfileUid,
+                  tipo: Value(tipo),
+                ));
+              } else {
+                await (_db!.update(_db!.progressoCapitulos)
+                  ..where((t) => t.id.equals(progressoExistente.id)))
+                  .write(ProgressoCapitulosCompanion(
+                    pontuacao: Value(novaPontuacao),
+                    dataConclusao: Value(DateTime.now()),
+                  ));
               }
-            }
-          });
-          await _loadProgresso();
-          
-          // Sincroniza com o ranking global usando os PONTOS BRUTOS acumulados
-          final updatedProfile = _profileProvider?.activeProfile;
-          if (updatedProfile != null) {
-            // Enviamos os Pontos brutos (totalPontosAcumulados) para garantir precisão no ranking
-            await _rankingService.updateProfileRanking(updatedProfile, totalPontosAcumulados);
-          }
+              
+              if (tipo == 'quiz' || tipo == 'leitura') {
+                final stats = await (_db!.select(_db!.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).getSingleOrNull();
+                final today = DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day);
+                
+                if (stats != null) {
+                  final lastDate = DateTime(stats.lastActivityDate.year, stats.lastActivityDate.month, stats.lastActivityDate.day);
+                  if (today.difference(lastDate).inDays == 1) {
+                    int newStreak = stats.currentStreak + 1;
+                    int newHighest = max(newStreak, stats.highestStreak);
+                    await (_db!.update(_db!.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
+                      UserStatsTableCompanion(
+                        currentStreak: Value(newStreak),
+                        lastActivityDate: Value(today),
+                        highestStreak: Value(newHighest),
+                      ),
+                    );
 
-          await syncWithCloud(); // Sincroniza logo após salvar localmente
-        }
-      }).timeout(const Duration(seconds: 4));
+                    // Bónus: A cada 6 dias consecutivos, ganha 500 Pontos
+                    if (newStreak % 6 == 0) {
+                      await _db!.into(_db!.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                        capituloId: 'bonus_streak_${newStreak}_${today.millisecondsSinceEpoch}',
+                        pontuacao: 500,
+                        dataConclusao: DateTime.now(),
+                        profileUid: activeProfileUid,
+                        tipo: const Value('bonus'),
+                      ));
+                    }
+                  } else if (today.difference(lastDate).inDays > 1 || stats.currentStreak == 0) {
+                    await (_db!.update(_db!.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
+                      UserStatsTableCompanion(
+                        currentStreak: const Value(1),
+                        lastActivityDate: Value(today),
+                      ),
+                    );
+                  }
+                } else {
+                  await _db!.into(_db!.userStatsTable).insert(UserStatsTableCompanion.insert(
+                    profileUid: activeProfileUid,
+                    currentStreak: const Value(1),
+                    lastActivityDate: today,
+                  ));
+                }
+              }
+            });
+            await _loadProgresso();
+            
+            // Sincroniza com o ranking global usando os PONTOS BRUTOS acumulados
+            final updatedProfile = _profileProvider?.activeProfile;
+            if (updatedProfile != null) {
+              // Enviamos os Pontos brutos (totalPontosAcumulados) para garantir precisão no ranking
+              await _rankingService.updateProfileRanking(updatedProfile, totalPontosAcumulados);
+            }
+
+            await syncWithCloud(); // Sincroniza logo após salvar localmente
+          }
+        }).timeout(const Duration(seconds: 4));
+      } else {
+         // Fallback para Web/Sem DB: Apenas Cloud
+         _progressoPorCapitulo[capituloId] = max(_progressoPorCapitulo[capituloId] ?? 0, novaPontuacao);
+         _totalPontosAcumulados += novaPontuacao;
+         notifyListeners();
+         
+         final updatedProfile = _profileProvider?.activeProfile;
+         if (updatedProfile != null) {
+            await _rankingService.updateProfileRanking(updatedProfile, totalPontosAcumulados);
+         }
+         await syncActionToCloudDirectly(capituloId, novaPontuacao, tipo);
+      }
     } catch (e) {
       debugPrint('[ProgressoService] Error saving progresso: $e');
       _progressoPorCapitulo[capituloId] = max(_progressoPorCapitulo[capituloId] ?? 0, novaPontuacao);
@@ -369,66 +384,66 @@ class ProgressoService with ChangeNotifier {
         return;
       }
 
-      try {
-        await _db.transaction(() async {
-          for (var profileDoc in profilesSnapshot.docs) {
-            final profileUid = profileDoc.id;
-            
-            final profileData = profileDoc.data();
-            if (profileData.containsKey('currentStreak')) {
-              final existingStats = await (_db.select(_db.userStatsTable)..where((t) => t.profileUid.equals(profileUid))).getSingleOrNull();
-              if (existingStats == null) {
-                await _db.into(_db.userStatsTable).insert(UserStatsTableCompanion.insert(
-                  profileUid: profileUid, 
-                  lastActivityDate: DateTime.now(),
-                  currentStreak: Value(profileData['currentStreak'] ?? 0),
-                  highestStreak: Value(profileData['highestStreak'] ?? 0),
-                ));
-              }
-            }
-
-            final progressoSnapshot = await profileDoc.reference.collection('progresso').get();
-            for (var progDoc in progressoSnapshot.docs) {
-              final data = progDoc.data();
-              final capituloId = (data['capituloId'] ?? progDoc.id).toString();
+      if (_db != null) {
+        try {
+          await _db!.transaction(() async {
+            for (var profileDoc in profilesSnapshot.docs) {
+              final profileUid = profileDoc.id;
               
-              final existing = await (_db.select(_db.progressoCapitulos)
-                  ..where((t) => t.profileUid.equals(profileUid) & t.capituloId.equals(capituloId)))
-                  .getSingleOrNull();
+              final profileData = profileDoc.data();
+              if (profileData.containsKey('currentStreak')) {
+                final existingStats = await (_db!.select(_db!.userStatsTable)..where((t) => t.profileUid.equals(profileUid))).getSingleOrNull();
+                if (existingStats == null) {
+                  await _db!.into(_db!.userStatsTable).insert(UserStatsTableCompanion.insert(
+                    profileUid: profileUid, 
+                    lastActivityDate: DateTime.now(),
+                    currentStreak: Value(profileData['currentStreak'] ?? 0),
+                    highestStreak: Value(profileData['highestStreak'] ?? 0),
+                  ));
+                }
+              }
 
-              final cloudPontuacao = data['pontuacao'] ?? 0;
+              final progressoSnapshot = await profileDoc.reference.collection('progresso').get();
+              for (var progDoc in progressoSnapshot.docs) {
+                final data = progDoc.data();
+                final capituloId = (data['capituloId'] ?? progDoc.id).toString();
+                
+                final existing = await (_db!.select(_db!.progressoCapitulos)
+                    ..where((t) => t.profileUid.equals(profileUid) & t.capituloId.equals(capituloId)))
+                    .getSingleOrNull();
 
-              if (existing == null) {
-                await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
-                  capituloId: capituloId,
-                  profileUid: profileUid,
-                  pontuacao: cloudPontuacao,
-                  tipo: Value(data['tipo'] ?? 'quiz'),
-                  dataConclusao: (data['dataConclusao'] as Timestamp?)?.toDate() ?? DateTime.now(),
-                ));
-              } else if (existing.pontuacao < cloudPontuacao) {
-                await (_db.update(_db.progressoCapitulos)..where((t) => t.id.equals(existing.id))).write(
-                  ProgressoCapitulosCompanion(
-                    pontuacao: Value(cloudPontuacao),
+                final cloudPontuacao = data['pontuacao'] ?? 0;
+
+                if (existing == null) {
+                  await _db!.into(_db!.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                    capituloId: capituloId,
+                    profileUid: profileUid,
+                    pontuacao: cloudPontuacao,
                     tipo: Value(data['tipo'] ?? 'quiz'),
-                    dataConclusao: Value((data['dataConclusao'] as Timestamp?)?.toDate() ?? DateTime.now()),
-                  ),
-                );
+                    dataConclusao: (data['dataConclusao'] as Timestamp?)?.toDate() ?? DateTime.now(),
+                  ));
+                } else if (existing.pontuacao < cloudPontuacao) {
+                  await (_db!.update(_db!.progressoCapitulos)..where((t) => t.id.equals(existing.id))).write(
+                    ProgressoCapitulosCompanion(
+                      pontuacao: Value(cloudPontuacao),
+                      tipo: Value(data['tipo'] ?? 'quiz'),
+                      dataConclusao: Value((data['dataConclusao'] as Timestamp?)?.toDate() ?? DateTime.now()),
+                    ),
+                  );
+                }
               }
             }
-          }
-        });
-        debugPrint('[ProgressoService] Progress persisted to local DB');
-      } catch (dbError) {
-        debugPrint('[ProgressoService] Local DB persistence failed: $dbError, using Firestore data only');
-        _applyCloudFallbackForActiveProfile();
-        return;
+          });
+          debugPrint('[ProgressoService] Progress persisted to local DB');
+        } catch (e) {
+          debugPrint('[ProgressoService] Error in cloud-to-db sync: $e');
+        }
       }
       
       await _loadProgresso();
       debugPrint('[ProgressoService] restoreFromCloud completed successfully');
     } catch (e) {
-      debugPrint('[ProgressoService] Erro ao restaurar progresso da cloud: $e');
+      debugPrint('[ProgressoService] restoreFromCloud processing error: $e');
     }
   }
 
@@ -444,12 +459,13 @@ class ProgressoService with ChangeNotifier {
       }, SetOptions(merge: true));
 
       // 2. Sincroniza TODOS os perfis locais
-      final allLocalProfiles = await _db.select(_db.profiles).get();
-      debugPrint('[ProgressoService] Iniciando sync massivo para ${allLocalProfiles.length} perfis');
+      if (_db != null) {
+        final allLocalProfiles = await _db!.select(_db!.profiles).get();
+        debugPrint('[ProgressoService] Iniciando sync massivo para ${allLocalProfiles.length} perfis');
 
-      for (final profile in allLocalProfiles) {
-        final localProgressos = await (_db.select(_db.progressoCapitulos)
-          ..where((t) => t.profileUid.equals(profile.uid))).get();
+        for (final profile in allLocalProfiles) {
+          final localProgressos = await (_db!.select(_db!.progressoCapitulos)
+            ..where((t) => t.profileUid.equals(profile.uid))).get();
 
         // Limita o batch por perfil para segurança
         final batch = _firestore.batch();
@@ -488,6 +504,7 @@ class ProgressoService with ChangeNotifier {
         // SEMPRE enviar totalPontos para manter a consistência do ranking
         await _rankingService.updateProfileRanking(profile, profile.totalPontos); 
         // Nota: totalPontos no Profile (DB) é o valor bruto real
+        }
       }
       debugPrint('[ProgressoService] Sync massivo concluído com sucesso');
     } catch (e) {
@@ -496,8 +513,10 @@ class ProgressoService with ChangeNotifier {
   }
 
   Future<void> removeProgressForProfile(String profileUid) async {
-    await (_db.delete(_db.progressoCapitulos)..where((t) => t.profileUid.equals(profileUid))).go();
-    await (_db.delete(_db.userStatsTable)..where((t) => t.profileUid.equals(profileUid))).go();
+    if (_db != null) {
+      await (_db!.delete(_db!.progressoCapitulos)..where((t) => t.profileUid.equals(profileUid))).go();
+      await (_db!.delete(_db!.userStatsTable)..where((t) => t.profileUid.equals(profileUid))).go();
+    }
     
     final user = _auth.currentUser;
     if (user != null && !user.isAnonymous) {
@@ -517,7 +536,7 @@ class ProgressoService with ChangeNotifier {
 
   Future<Map<String, int>> getProgresso(String disciplinaId) async {
     if (_profileProvider?.activeProfile == null) return {};
-    if (kIsWeb) {
+    if (kIsWeb || _db == null) {
       return Map<String, int>.fromEntries(
         _progressoPorCapitulo.entries.where((e) => e.key.startsWith(disciplinaId)),
       );
@@ -526,7 +545,7 @@ class ProgressoService with ChangeNotifier {
     final activeProfileUid = _profileProvider!.activeProfile!.uid;
 
     try {
-      final query = _db.select(_db.progressoCapitulos)
+      final query = _db!.select(_db!.progressoCapitulos)
         ..where((t) => t.profileUid.equals(activeProfileUid) & t.capituloId.like('$disciplinaId%'));
       final progressos = await query.get();
 
@@ -584,6 +603,47 @@ class ProgressoService with ChangeNotifier {
     return _progressoPorCapitulo.keys
         .where((id) => id.startsWith('${disciplinaId}_capitulo_'))
         .length;
+  }
+
+  Future<void> syncActionToCloudDirectly(String capituloId, int pontuacao, String tipo) async {
+    final user = _auth.currentUser;
+    final activeProfile = _profileProvider?.activeProfile;
+    if (user == null || activeProfile == null || user.isAnonymous) return;
+
+    try {
+      await _firestore
+          .collection('users')
+          .doc(user.uid)
+          .collection('profiles')
+          .doc(activeProfile.uid)
+          .collection('progresso')
+          .doc(capituloId)
+          .set({
+        'capituloId': capituloId,
+        'pontuacao': pontuacao,
+        'dataConclusao': FieldValue.serverTimestamp(),
+        'tipo': tipo,
+      }, SetOptions(merge: true));
+
+      // Atualiza o cache local de nuvem para refletir na UI imediatamente
+      if (!_cloudProgressCache.containsKey(activeProfile.uid)) {
+        _cloudProgressCache[activeProfile.uid] = [];
+      }
+      final existingIndex = _cloudProgressCache[activeProfile.uid]!.indexWhere((p) => p['capituloId'] == capituloId);
+      if (existingIndex != -1) {
+        if (pontuacao > (_cloudProgressCache[activeProfile.uid]![existingIndex]['pontuacao'] as int)) {
+          _cloudProgressCache[activeProfile.uid]![existingIndex]['pontuacao'] = pontuacao;
+        }
+      } else {
+        _cloudProgressCache[activeProfile.uid]!.add({
+          'capituloId': capituloId,
+          'pontuacao': pontuacao,
+          'tipo': tipo,
+        });
+      }
+    } catch (e) {
+      debugPrint('[ProgressoService] syncActionToCloudDirectly failed: $e');
+    }
   }
 
   @override

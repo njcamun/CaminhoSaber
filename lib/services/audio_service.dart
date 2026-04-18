@@ -30,10 +30,6 @@ class AudioService {
   Future<void> _preloadSfx(String fileName) async {
     final player = AudioPlayer();
     await player.setSource(AssetSource('sounds/$fileName'));
-    await player.setVolume(0); // Start muted to "warm up"
-    await player.play(AssetSource('sounds/$fileName'));
-    await player.stop();
-    await player.setVolume(_volume);
     _sfxPlayers[fileName] = player;
   }
 

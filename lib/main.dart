@@ -21,58 +21,70 @@ import 'package:caminho_do_saber/database/database.dart';
 final GlobalKey<ScaffoldMessengerState> globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  try {
+    WidgetsFlutterBinding.ensureInitialized();
+    
+    // Inicialização do Firebase primeiro
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
 
-  // Capturador Global de Erros para facilitar o debug em Web
-  FlutterError.onError = (FlutterErrorDetails details) {
-    FlutterError.presentError(details);
-    _showErrorOverlay(details.exceptionAsString());
-  };
+    // Configuração de orientação (apenas nativo, mas seguro no web)
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
 
-  // Garantir apenas orientação vertical
-  await SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]);
+    AppDatabase? driftDb;
+    try {
+      driftDb = AppDatabase();
+    } catch (e) {
+      debugPrint('[Drift] Erro ao carregar base de dados. Usando Fallback.');
+    }
 
-  final driftDb = AppDatabase();
-  final audioService = AudioService();
-  await audioService.init();
+    final audioService = AudioService();
+    audioService.init().catchError((e) => debugPrint("Erro AudioService: $e"));
 
-  runApp(
-    MultiProvider(
-      providers: [
-        Provider(create: (_) => AuthService()),
-        Provider.value(value: driftDb),
-        Provider.value(value: audioService),
-        ChangeNotifierProvider(create: (_) => ThemeProvider()),
-        ChangeNotifierProvider(create: (_) => ProfileProvider(driftDb)),
-        Provider(create: (_) => DisciplinaService()),
-        Provider<RankingService>(
-          create: (context) => RankingService(context.read<AppDatabase>()),
-          dispose: (_, service) => service.dispose(),
-        ),
-        ChangeNotifierProvider(create: (_) => DictionaryService()),
-        ChangeNotifierProvider(create: (_) => PomodoroProvider()),
-        ChangeNotifierProxyProvider<ProfileProvider, ProgressoService>(
-          create: (context) => ProgressoService(driftDb, context.read<ProfileProvider>()),
-          update: (context, profile, previous) {
-            final service = previous!..updateProvider(profile);
-            profile.setProgressoService(service); // Vincula o serviço ao provider de perfil
-            return service;
-          },
-        ),
-        ChangeNotifierProxyProvider<ProfileProvider, FlashcardService>(
-          create: (context) => FlashcardService(driftDb, context.read<ProfileProvider>()),
-          update: (context, profile, previous) => previous!..updateProvider(profile),
-        ),
-      ],
-      child: const MyApp(),
-    ),
-  );
+    runApp(
+      MultiProvider(
+        providers: [
+          Provider(create: (_) => AuthService()),
+          if (driftDb != null) Provider.value(value: driftDb),
+          Provider.value(value: audioService),
+          ChangeNotifierProvider(create: (_) => ThemeProvider()),
+          ChangeNotifierProvider(create: (_) => ProfileProvider(driftDb)),
+          Provider(create: (_) => DisciplinaService()),
+          Provider<RankingService>(
+            create: (context) => RankingService(driftDb),
+            dispose: (_, service) => service.dispose(),
+          ),
+          ChangeNotifierProvider(create: (_) => DictionaryService()),
+          ChangeNotifierProvider(create: (_) => PomodoroProvider()),
+          ChangeNotifierProxyProvider2<ProfileProvider, RankingService, ProgressoService>(
+            create: (context) => ProgressoService(driftDb, context.read<ProfileProvider>(), context.read<RankingService>()),
+            update: (context, profile, ranking, previous) {
+              if (previous == null) return ProgressoService(driftDb, profile, ranking);
+              previous.updateProvider(profile);
+              profile.setProgressoService(previous);
+              return previous;
+            },
+          ),
+          ChangeNotifierProxyProvider<ProfileProvider, FlashcardService>(
+            create: (context) => FlashcardService(driftDb, context.read<ProfileProvider>()),
+            update: (context, profile, previous) {
+              if (previous == null) return FlashcardService(driftDb, profile);
+              previous.updateProvider(profile);
+              return previous;
+            },
+          ),
+        ],
+        child: const MyApp(),
+      ),
+    );
+  } catch (e, stack) {
+    debugPrint("ERRO FATAL NO MAIN: $e\n$stack");
+    // Em caso de erro catastrófico, tentamos rodar uma app mínima de erro
+    runApp(MaterialApp(home: Scaffold(body: Center(child: Text("Erro ao iniciar aplicação: $e")))));
+  }
 }
 
 class MyApp extends StatelessWidget {

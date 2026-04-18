@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "335055432152-fv4p1vpkb7c6d5ei15m7t8452ptacbdq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nelson.caminho_do_saber",
+            "certificate_hash": "ad4f7a798daaa9080800df88c201f6335f5c344c"
+          }
+        },
+        {
           "client_id": "335055432152-tn7toqri74dos8rdt3d5q362vejbevu7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -37,6 +45,13 @@
             {
               "client_id": "335055432152-28ir19u5e4shmr7dmlhkua98kbrfkpo0.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "335055432152-76ba151nthnc27tckp26vnfl2v9hd5d8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nelson.caminhoDoSaber"
+              }
             }
           ]
         }

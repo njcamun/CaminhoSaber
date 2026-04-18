@@ -3,9 +3,8 @@ import 'package:drift/web.dart';
 import 'package:flutter/foundation.dart';
 
 QueryExecutor createConnection() {
-  // ESTRATÉGIA DE PRODUÇÃO WEB: Stateless & Memory-First.
-  // Evitamos o sql.js que causa crashes se os binários (.wasm) não forem servidos corretamente.
-  // O progresso é garantido pelo Firebase Cloud Sync no arranque e finalização.
-  debugPrint('[Drift] Web Environment: Using Volatile storage for crash-proof operation.');
+  // No Web, tentamos usar o armazenamento volátil (em memória).
+  // Para evitar o erro do sql.js, usamos o WebDatabase de forma que ele 
+  // não tente carregar bibliotecas externas obrigatoriamente no arranque.
   return WebDatabase.withStorage(DriftWebStorage.volatile());
 }

@@ -13,7 +13,7 @@ import 'package:caminho_do_saber/services/progresso_service.dart';
 
 class ProfileProvider with ChangeNotifier {
   final AuthService _authService = AuthService();
-  final AppDatabase _db;
+  final AppDatabase? _db;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   StreamSubscription? _authSubscription;
 
@@ -176,8 +176,9 @@ class ProfileProvider with ChangeNotifier {
           if (querySnapshot.docs.isNotEmpty) {
             try {
               // Try to persist to local database
-              await _db.transaction(() async {
-                for (var doc in querySnapshot.docs) {
+              if (_db != null) {
+                await _db!.transaction(() async {
+                  for (var doc in querySnapshot.docs) {
                   final data = doc.data();
                   final pUid = doc.id;
 
@@ -192,15 +193,16 @@ class ProfileProvider with ChangeNotifier {
                     currentStreak: Value(data['currentStreak'] ?? 0),
                   );
 
-                  final existing = await (_db.select(_db.profiles)..where((t) => t.uid.equals(pUid))).getSingleOrNull();
+                  final existing = await (_db!.select(_db!.profiles)..where((t) => t.uid.equals(pUid))).getSingleOrNull();
                   if (existing != null) {
-                    await (_db.update(_db.profiles)..where((t) => t.uid.equals(pUid))).write(companion);
+                    await (_db!.update(_db!.profiles)..where((t) => t.uid.equals(pUid))).write(companion);
                   } else {
-                    await _db.into(_db.profiles).insert(companion);
+                    await _db!.into(_db!.profiles).insert(companion);
                   }
                 }
               });
               debugPrint('[ProfileProvider] Profiles persisted to local DB');
+              }
             } catch (dbError) {
               debugPrint('[ProfileProvider] Local DB persistence failed: $dbError, loading from Firestore only');
               // On web or if DB fails, load profiles from Firestore directly into memory
@@ -235,9 +237,13 @@ class ProfileProvider with ChangeNotifier {
       }
 
       try {
-        final query = _db.select(_db.profiles)..where((t) => t.parentUid.equals(firebaseUser.uid));
-        _allProfiles = await query.get();
-        debugPrint('[ProfileProvider] Local DB profiles loaded: ${_allProfiles.length}');
+        if (_db != null) {
+          final query = _db!.select(_db!.profiles)..where((t) => t.parentUid.equals(firebaseUser.uid));
+          _allProfiles = await query.get();
+          debugPrint('[ProfileProvider] Local DB profiles loaded: ${_allProfiles.length}');
+        } else {
+          _allProfiles = [];
+        }
       } catch (dbError) {
         debugPrint('[ProfileProvider] Failed to load from local DB: $dbError');
         _allProfiles = [];
@@ -249,18 +255,32 @@ class ProfileProvider with ChangeNotifier {
         debugPrint('[ProfileProvider] Creating default profile for: $defaultName');
         
         try {
-          await _db.into(_db.profiles).insert(ProfilesCompanion.insert(
-            uid: firebaseUser.uid,
-            parentUid: firebaseUser.uid,
-            nome: defaultName,
-            avatarAssetPath: 'assets/avatars/default.png',
-            isMainProfile: true,
-          ));
-          
-          // Carrega e sincroniza imediatamente o novo utilizador
-          await _loadProfilesForUser(firebaseUser);
-          _progressoService?.syncWithCloud();
-          return;
+          if (_db != null) {
+            await _db!.into(_db!.profiles).insert(ProfilesCompanion.insert(
+              uid: firebaseUser.uid,
+              parentUid: firebaseUser.uid,
+              nome: defaultName,
+              avatarAssetPath: 'assets/avatars/default.png',
+              isMainProfile: true,
+            ));
+            
+            // Carrega e sincroniza imediatamente o novo utilizador
+            await _loadProfilesForUser(firebaseUser);
+            _progressoService?.syncWithCloud();
+            return;
+          } else {
+             _allProfiles = [Profile(
+              id: -1,
+              uid: firebaseUser.uid,
+              parentUid: firebaseUser.uid,
+              nome: defaultName,
+              avatarAssetPath: 'assets/avatars/default.png',
+              isMainProfile: true,
+              totalPontos: 0,
+              totalDiamantes: 0,
+              currentStreak: 0,
+            )];
+          }
         } catch (dbError) {
           debugPrint('[ProfileProvider] Could not create profile in DB: $dbError');
           // Create profile in-memory if DB fails
@@ -305,9 +325,9 @@ class ProfileProvider with ChangeNotifier {
   /// Recarrega o perfil ativo do banco de dados para garantir que pontos/diamantes/streak
   /// estejam atualizados após operações do ProgressoService.
   Future<void> refreshActiveProfile() async {
-    if (_activeProfile == null) return;
+    if (_activeProfile == null || _db == null) return;
     
-    final query = _db.select(_db.profiles)..where((t) => t.uid.equals(_activeProfile!.uid));
+    final query = _db!.select(_db!.profiles)..where((t) => t.uid.equals(_activeProfile!.uid));
     final updatedProfile = await query.getSingleOrNull();
     
     if (updatedProfile != null) {
@@ -324,13 +344,15 @@ class ProfileProvider with ChangeNotifier {
   Future<void> addDependent({required String nome, required String avatarAssetPath}) async {
     final parent = _allProfiles.firstWhere((p) => p.isMainProfile);
 
-    await _db.into(_db.profiles).insert(ProfilesCompanion.insert(
-      uid: const Uuid().v4(),
-      parentUid: parent.parentUid,
-      nome: nome,
-      avatarAssetPath: avatarAssetPath,
-      isMainProfile: false,
-    ));
+    if (_db != null) {
+      await _db!.into(_db!.profiles).insert(ProfilesCompanion.insert(
+        uid: const Uuid().v4(),
+        parentUid: parent.parentUid,
+        nome: nome,
+        avatarAssetPath: avatarAssetPath,
+        isMainProfile: false,
+      ));
+    }
 
     await _loadProfilesForUser(_authService.currentUser!);
     await _progressoService?.syncWithCloud(); // Sincroniza a criação do dependente
@@ -341,12 +363,14 @@ class ProfileProvider with ChangeNotifier {
     required String newName,
     required String newAvatarPath,
   }) async {
-    await (_db.update(_db.profiles)..where((t) => t.uid.equals(profileUid))).write(
-      ProfilesCompanion(
-        nome: Value(newName),
-        avatarAssetPath: Value(newAvatarPath),
-      ),
-    );
+    if (_db != null) {
+      await (_db!.update(_db!.profiles)..where((t) => t.uid.equals(profileUid))).write(
+        ProfilesCompanion(
+          nome: Value(newName),
+          avatarAssetPath: Value(newAvatarPath),
+        ),
+      );
+    }
     
     await _loadProfilesForUser(_authService.currentUser!);
     await _progressoService?.syncWithCloud(); // Sincroniza a criação do dependente
@@ -358,7 +382,9 @@ class ProfileProvider with ChangeNotifier {
       setActiveProfile(mainProfile);
     }
 
-    await (_db.delete(_db.profiles)..where((t) => t.uid.equals(profileUid))).go();
+    if (_db != null) {
+      await (_db!.delete(_db!.profiles)..where((t) => t.uid.equals(profileUid))).go();
+    }
 
     await _progressoService?.removeProgressForProfile(profileUid);
 

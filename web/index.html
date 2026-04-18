@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="$FLUTTER_BASE_HREF">
-
+  <base href="/">
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Caminho do Saber - Uma aventura educativa.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="CaminhoSaber">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="icons/Icon-152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/Icon-180.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="icons/Icon-167.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
   <title>Caminho do Saber</title>
-  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .loading-container { text-align: center; }
+    .loader {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 2s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  </style>
 </head>
 <body>
+  <div id="loading" class="loading-container">
+    <div class="loader"></div>
+    <p>A carregar o Caminho do Saber...</p>
+  </div>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

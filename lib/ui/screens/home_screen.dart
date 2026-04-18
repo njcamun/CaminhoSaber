@@ -784,7 +784,10 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
       )),
       child: Container(
         width: size.width * 0.45 > 200 ? 200 : size.width * 0.45,
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 10, offset: Offset(0, 5))]),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 10, offset: Offset(0, 5))]
+        ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(20),
           child: Stack(
@@ -794,6 +797,8 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                 tag: 'disciplina_bg_${disciplina.id}',
                 child: SafeAssetImage(path: disciplina.animacao, fit: BoxFit.cover)
               ),
+              // Efeito de Brilho (Shimmer) Automático
+              _ShimmerOverlay(),
               Container(decoration: BoxDecoration(gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Colors.transparent, Colors.black.withValues(alpha: 0.85)]))),
               Positioned(bottom: 12, left: 12, right: 12, child: Column(children: [FittedBox(fit: BoxFit.scaleDown, child: Text(disciplina.nome, textAlign: TextAlign.center, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white))), const SizedBox(height: 4), Text(disciplina.descricao, textAlign: TextAlign.center, style: const TextStyle(fontSize: 12, color: Colors.white70), maxLines: 2, overflow: TextOverflow.ellipsis)])),
               if (completa)
@@ -985,6 +990,60 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
             ],
           ),
           body: _buildHomeTab(context, snapshot.data!),
+        );
+      },
+    );
+  }
+}
+
+class _ShimmerOverlay extends StatefulWidget {
+  @override
+  State<_ShimmerOverlay> createState() => _ShimmerOverlayState();
+}
+
+class _ShimmerOverlayState extends State<_ShimmerOverlay> with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(milliseconds: 3000),
+      vsync: this,
+    )..repeat();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _controller,
+      builder: (context, child) {
+        return FractionallySizedBox(
+          widthFactor: 2.0,
+          child: Transform.rotate(
+            angle: 0.5,
+            child: Transform.translate(
+              offset: Offset(-1.0 + (_controller.value * 2.0), 0),
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.white.withValues(alpha: 0.0),
+                      Colors.white.withValues(alpha: 0.2),
+                      Colors.white.withValues(alpha: 0.0),
+                    ],
+                    stops: const [0.4, 0.5, 0.6],
+                  ),
+                ),
+              ),
+            ),
+          ),
         );
       },
     );
