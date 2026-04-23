@@ -48,7 +48,7 @@ class StreakFire extends StatelessWidget {
                 '$days',
                 style: const TextStyle(
                   color: Colors.white,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w600,
                   fontSize: 12,
                   shadows: [Shadow(color: Colors.black, blurRadius: 4)],
                 ),

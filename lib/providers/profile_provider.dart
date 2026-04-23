@@ -38,17 +38,19 @@ class ProfileProvider with ChangeNotifier {
     _tryRestore();
     
     // Sincroniza o perfil atual com o ranking assim que o serviço é vinculado
-    if (_activeProfile != null && !_activeProfile!.uid.startsWith('guest')) {
+    final active = _activeProfile;
+    if (active != null && !active.uid.startsWith('guest')) {
       _progressoService?.syncWithCloud();
     }
   }
 
   void _tryRestore() {
-    if (_pendingRestore && _progressoService != null) {
+    final progresso = _progressoService;
+    if (_pendingRestore && progresso != null) {
       final user = _authService.currentUser;
       if (user != null && !user.isAnonymous) {
         _pendingRestore = false;
-        _progressoService!.restoreFromCloud();
+        progresso.restoreFromCloud();
       }
     }
   }
@@ -71,7 +73,7 @@ class ProfileProvider with ChangeNotifier {
           uid: firebaseUser.uid,
           parentUid: firebaseUser.uid,
           nome: 'Visitante',
-          avatarAssetPath: 'assets/avatars/default.png',
+          avatarAssetPath: 'assets/images/foto.png',
           isMainProfile: true,
           totalPontos: 0,
           totalDiamantes: 0,
@@ -89,11 +91,11 @@ class ProfileProvider with ChangeNotifier {
   }
 
   String _validateAvatarPath(String? path) {
-    if (path == null || path.isEmpty) return 'assets/avatars/default.png';
+    if (path == null || path.isEmpty) return 'assets/images/foto.png';
     if (path.startsWith('assets/')) return path;
 
     // Web does not support dart:io file checks.
-    if (kIsWeb) return 'assets/avatars/default.png';
+    if (kIsWeb) return 'assets/images/foto.png';
 
     try {
       final file = File(path);
@@ -101,10 +103,10 @@ class ProfileProvider with ChangeNotifier {
         return path;
       }
     } catch (_) {
-      return 'assets/avatars/default.png';
+      return 'assets/images/foto.png';
     }
     
-    return 'assets/avatars/default.png';
+    return 'assets/images/foto.png';
   }
 
   Future<void> _loadProfilesForUser(User firebaseUser) async {
@@ -152,7 +154,7 @@ class ProfileProvider with ChangeNotifier {
                   uid: firebaseUser.uid,
                   parentUid: firebaseUser.uid,
                   nome: defaultName,
-                  avatarAssetPath: 'assets/avatars/default.png',
+                  avatarAssetPath: 'assets/images/foto.png',
                   isMainProfile: true,
                   totalPontos: 0,
                   totalDiamantes: 0,
@@ -177,7 +179,7 @@ class ProfileProvider with ChangeNotifier {
             try {
               // Try to persist to local database
               if (_db != null) {
-                await _db!.transaction(() async {
+                await _db.transaction(() async {
                   for (var doc in querySnapshot.docs) {
                   final data = doc.data();
                   final pUid = doc.id;
@@ -193,11 +195,11 @@ class ProfileProvider with ChangeNotifier {
                     currentStreak: Value(data['currentStreak'] ?? 0),
                   );
 
-                  final existing = await (_db!.select(_db!.profiles)..where((t) => t.uid.equals(pUid))).getSingleOrNull();
+                  final existing = await (_db.select(_db.profiles)..where((t) => t.uid.equals(pUid))).getSingleOrNull();
                   if (existing != null) {
-                    await (_db!.update(_db!.profiles)..where((t) => t.uid.equals(pUid))).write(companion);
+                    await (_db.update(_db.profiles)..where((t) => t.uid.equals(pUid))).write(companion);
                   } else {
-                    await _db!.into(_db!.profiles).insert(companion);
+                    await _db.into(_db.profiles).insert(companion);
                   }
                 }
               });
@@ -238,7 +240,7 @@ class ProfileProvider with ChangeNotifier {
 
       try {
         if (_db != null) {
-          final query = _db!.select(_db!.profiles)..where((t) => t.parentUid.equals(firebaseUser.uid));
+          final query = _db.select(_db.profiles)..where((t) => t.parentUid.equals(firebaseUser.uid));
           _allProfiles = await query.get();
           debugPrint('[ProfileProvider] Local DB profiles loaded: ${_allProfiles.length}');
         } else {
@@ -256,11 +258,11 @@ class ProfileProvider with ChangeNotifier {
         
         try {
           if (_db != null) {
-            await _db!.into(_db!.profiles).insert(ProfilesCompanion.insert(
+            await _db.into(_db.profiles).insert(ProfilesCompanion.insert(
               uid: firebaseUser.uid,
               parentUid: firebaseUser.uid,
               nome: defaultName,
-              avatarAssetPath: 'assets/avatars/default.png',
+              avatarAssetPath: 'assets/images/foto.png',
               isMainProfile: true,
             ));
             
@@ -274,7 +276,7 @@ class ProfileProvider with ChangeNotifier {
               uid: firebaseUser.uid,
               parentUid: firebaseUser.uid,
               nome: defaultName,
-              avatarAssetPath: 'assets/avatars/default.png',
+              avatarAssetPath: 'assets/images/foto.png',
               isMainProfile: true,
               totalPontos: 0,
               totalDiamantes: 0,
@@ -289,7 +291,7 @@ class ProfileProvider with ChangeNotifier {
             uid: firebaseUser.uid,
             parentUid: firebaseUser.uid,
             nome: defaultName,
-            avatarAssetPath: 'assets/avatars/default.png',
+            avatarAssetPath: 'assets/images/foto.png',
             isMainProfile: true,
             totalPontos: 0,
             totalDiamantes: 0,
@@ -298,9 +300,10 @@ class ProfileProvider with ChangeNotifier {
         }
       }
 
-      if (_activeProfile != null) {
-        _activeProfile = _allProfiles.cast<Profile?>().firstWhere(
-          (p) => p?.uid == _activeProfile!.uid,
+    final active = _activeProfile;
+    if (active != null) {
+        _activeProfile = _allProfiles.firstWhere(
+          (p) => p.uid == active.uid,
           orElse: () => _allProfiles.firstWhere((p) => p.isMainProfile, orElse: () => _allProfiles.first),
         );
       } else {
@@ -325,9 +328,10 @@ class ProfileProvider with ChangeNotifier {
   /// Recarrega o perfil ativo do banco de dados para garantir que pontos/diamantes/streak
   /// estejam atualizados após operações do ProgressoService.
   Future<void> refreshActiveProfile() async {
-    if (_activeProfile == null || _db == null) return;
+    final activeProfile = _activeProfile;
+    if (activeProfile == null || _db == null) return;
     
-    final query = _db!.select(_db!.profiles)..where((t) => t.uid.equals(_activeProfile!.uid));
+    final query = _db.select(_db.profiles)..where((t) => t.uid.equals(activeProfile.uid));
     final updatedProfile = await query.getSingleOrNull();
     
     if (updatedProfile != null) {
@@ -345,7 +349,7 @@ class ProfileProvider with ChangeNotifier {
     final parent = _allProfiles.firstWhere((p) => p.isMainProfile);
 
     if (_db != null) {
-      await _db!.into(_db!.profiles).insert(ProfilesCompanion.insert(
+      await _db.into(_db.profiles).insert(ProfilesCompanion.insert(
         uid: const Uuid().v4(),
         parentUid: parent.parentUid,
         nome: nome,
@@ -364,7 +368,7 @@ class ProfileProvider with ChangeNotifier {
     required String newAvatarPath,
   }) async {
     if (_db != null) {
-      await (_db!.update(_db!.profiles)..where((t) => t.uid.equals(profileUid))).write(
+      await (_db.update(_db.profiles)..where((t) => t.uid.equals(profileUid))).write(
         ProfilesCompanion(
           nome: Value(newName),
           avatarAssetPath: Value(newAvatarPath),
@@ -383,7 +387,7 @@ class ProfileProvider with ChangeNotifier {
     }
 
     if (_db != null) {
-      await (_db!.delete(_db!.profiles)..where((t) => t.uid.equals(profileUid))).go();
+      await (_db.delete(_db.profiles)..where((t) => t.uid.equals(profileUid))).go();
     }
 
     await _progressoService?.removeProgressForProfile(profileUid);

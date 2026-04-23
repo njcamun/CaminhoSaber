@@ -1,7 +1,7 @@
 // lib/ui/screens/meus_flashcards_screen.dart
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/services.dart' show rootBundle, HapticFeedback;
 import 'dart:convert';
 import 'package:provider/provider.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
@@ -9,7 +9,11 @@ import 'package:caminho_do_saber/database/database.dart';
 import 'package:caminho_do_saber/services/flashcard_service.dart';
 import 'package:caminho_do_saber/ui/screens/flash_card_screen.dart';
 import 'package:caminho_do_saber/providers/profile_provider.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/models/disciplina_model.dart' as model;
+import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
+import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
+import 'package:lottie/lottie.dart';
 
 class MeusFlashcardsScreen extends StatefulWidget {
   const MeusFlashcardsScreen({super.key});
@@ -59,7 +63,7 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
   }
 
   void _showCreateFlashcardDialog() {
-    final formKey = GlobalKey<FormState>();
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
     final perguntaController = TextEditingController();
     final respostaController = TextEditingController();
     String selectedCategoria = _categorias.first;
@@ -72,11 +76,11 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
             builder: (context, setStateDialog) {
               return AlertDialog(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-                title: const Row(
+                title: Row(
                   children: [
-                    Icon(Icons.add_circle_outline, color: Colors.blue),
-                    SizedBox(width: 10),
-                    Text('Novo Flashcard', style: TextStyle(fontWeight: FontWeight.bold)),
+                    const Icon(Icons.add_circle_outline, color: AppColors.primary, size: 28),
+                    const SizedBox(width: 10),
+                    Expanded(child: Text('NOVO FLASHCARD'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18))),
                   ],
                 ),
                 content: Container(
@@ -88,38 +92,43 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           DropdownButtonFormField<String>(
-                            initialValue: selectedCategoria,
+                            value: selectedCategoria,
                             decoration: InputDecoration(
-                              labelText: 'Disciplina',
-                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                              labelText: 'DISCIPLINA'.toUpperCase(),
+                              labelStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                               prefixIcon: const Icon(Icons.category_outlined),
                             ),
-                            items: _categorias.map((cat) => DropdownMenuItem(value: cat, child: Text(cat))).toList(),
+                            items: _categorias.map((cat) => DropdownMenuItem(value: cat, child: Text(cat.toUpperCase()))).toList(),
                             onChanged: (val) => setStateDialog(() => selectedCategoria = val!),
                           ),
                           const SizedBox(height: 16),
                           TextFormField(
                             controller: perguntaController,
+                            style: const TextStyle(fontWeight: FontWeight.w600),
                             decoration: InputDecoration(
-                              labelText: 'Pergunta',
-                              hintText: 'O que queres memorizar?',
-                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                              labelText: 'PERGUNTA'.toUpperCase(),
+                              labelStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                              hintText: 'O QUE QUERES MEMORIZAR?',
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                               prefixIcon: const Icon(Icons.help_outline),
                             ),
                             maxLines: 2,
-                            validator: (value) => (value == null || value.isEmpty) ? 'Escreve uma pergunta.' : null,
+                            validator: (value) => (value == null || value.isEmpty) ? 'ESCREVE UMA PERGUNTA.' : null,
                           ),
                           const SizedBox(height: 16),
                           TextFormField(
                             controller: respostaController,
+                            style: const TextStyle(fontWeight: FontWeight.w600),
                             decoration: InputDecoration(
-                              labelText: 'Resposta',
-                              hintText: 'A resposta mágica...',
-                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                              labelText: 'RESPOSTA'.toUpperCase(),
+                              labelStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                              hintText: 'A RESPOSTA MÁGICA...',
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                               prefixIcon: const Icon(Icons.check_circle_outline),
                             ),
                             maxLines: 3,
-                            validator: (value) => (value == null || value.isEmpty) ? 'Escreve a resposta.' : null,
+                            validator: (value) => (value == null || value.isEmpty) ? 'ESCREVE A RESPOSTA.' : null,
                           ),
                         ],
                       ),
@@ -128,24 +137,25 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                 ),
                 actions: [
                   TextButton(
-                    child: const Text('Cancelar', style: TextStyle(color: Colors.grey)),
+                    child: Text('CANCELAR'.toUpperCase(), style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.w900)),
                     onPressed: () => Navigator.of(dialogContext).pop(),
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: AppColors.primary,
                       foregroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+                      elevation: 0,
                     ),
-                    child: const Text('Guardar', style: TextStyle(fontWeight: FontWeight.bold)),
+                    child: Text('GUARDAR'.toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w900, color: Colors.white)),
                     onPressed: () async {
                       if (formKey.currentState!.validate()) {
                         final profileProvider = Provider.of<ProfileProvider>(context, listen: false);
                         final flashcardService = Provider.of<FlashcardService>(context, listen: false);
                         
                         await flashcardService.addFlashcard(
-                          pergunta: perguntaController.text,
-                          resposta: respostaController.text,
+                          pergunta: perguntaController.text.trim(),
+                          resposta: respostaController.text.trim(),
                           profileUid: profileProvider.activeProfile?.uid ?? '',
                           parentUid: profileProvider.activeProfile?.parentUid ?? '',
                           disciplinaId: selectedCategoria,
@@ -155,7 +165,12 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                           Navigator.of(dialogContext).pop();
                           _refreshFlashcards();
                           ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(content: Text('Flashcard criado com alegria!'), behavior: SnackBarBehavior.floating),
+                            SnackBar(
+                              content: Text('FLASHCARD CRIADO COM ALEGRIA!'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.bold)),
+                              behavior: SnackBarBehavior.floating,
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+                              backgroundColor: AppColors.success,
+                            ),
                           );
                         }
                       }
@@ -172,31 +187,39 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
   void _showFlashcardOptions(UserFlashcard flashcard) {
     showModalBottomSheet(
       context: context,
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(25))),
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(30))),
+      backgroundColor: Colors.white,
       builder: (context) => SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10),
-          child: Wrap(
+          padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
+              Container(
+                width: 40,
+                height: 5,
+                margin: const EdgeInsets.only(bottom: 20),
+                decoration: BoxDecoration(color: Colors.grey.shade300, borderRadius: BorderRadius.circular(10)),
+              ),
               ListTile(
-                leading: const Icon(Icons.play_circle_outline, color: Colors.green),
-                title: const Text('Estudar este cartão'),
+                leading: Container(padding: const EdgeInsets.all(8), decoration: BoxDecoration(color: AppColors.success.withValues(alpha: 0.1), shape: BoxShape.circle), child: const Icon(Icons.play_circle_outline, color: AppColors.success)),
+                title: Text('ESTUDAR ESTE CARTÃO'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 13)),
                 onTap: () {
                   Navigator.pop(context);
                   _estudarCartao(flashcard);
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.edit_outlined, color: Colors.blue),
-                title: const Text('Editar este cartão'),
+                leading: Container(padding: const EdgeInsets.all(8), decoration: BoxDecoration(color: AppColors.primary.withValues(alpha: 0.1), shape: BoxShape.circle), child: const Icon(Icons.edit_outlined, color: AppColors.primary)),
+                title: Text('EDITAR ESTE CARTÃO'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 13)),
                 onTap: () {
                   Navigator.pop(context);
                   _showEditFlashcardDialog(flashcard);
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.delete_outline, color: Colors.red),
-                title: const Text('Remover cartão', style: TextStyle(color: Colors.red)),
+                leading: Container(padding: const EdgeInsets.all(8), decoration: BoxDecoration(color: AppColors.error.withValues(alpha: 0.1), shape: BoxShape.circle), child: const Icon(Icons.delete_outline, color: AppColors.error)),
+                title: Text('REMOVER CARTÃO'.toUpperCase(), style: TextStyle(color: AppColors.error, fontWeight: FontWeight.w900, fontSize: 13)),
                 onTap: () {
                   Navigator.pop(context);
                   _deleteFlashcard(flashcard);
@@ -210,7 +233,7 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
   }
 
   void _showEditFlashcardDialog(UserFlashcard flashcard) {
-    final formKey = GlobalKey<FormState>();
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
     final perguntaController = TextEditingController(text: flashcard.pergunta);
     final respostaController = TextEditingController(text: flashcard.resposta);
     String selectedCategoria = flashcard.disciplinaId;
@@ -223,11 +246,11 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
             builder: (context, setStateDialog) {
               return AlertDialog(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-                title: const Row(
+                title: Row(
                   children: [
-                    Icon(Icons.edit_note, color: Colors.orange),
-                    SizedBox(width: 10),
-                    Text('Editar Flashcard', style: TextStyle(fontWeight: FontWeight.bold)),
+                    const Icon(Icons.edit_note, color: AppColors.accent, size: 28),
+                    const SizedBox(width: 10),
+                    Expanded(child: Text('EDITAR FLASHCARD'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18))),
                   ],
                 ),
                 content: Container(
@@ -239,33 +262,38 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           DropdownButtonFormField<String>(
-                            initialValue: selectedCategoria,
+                            value: selectedCategoria,
                             decoration: InputDecoration(
-                              labelText: 'Disciplina',
-                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                              labelText: 'DISCIPLINA'.toUpperCase(),
+                              labelStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                             ),
-                            items: _categorias.map((cat) => DropdownMenuItem(value: cat, child: Text(cat))).toList(),
+                            items: _categorias.map((cat) => DropdownMenuItem(value: cat, child: Text(cat.toUpperCase()))).toList(),
                             onChanged: (val) => setStateDialog(() => selectedCategoria = val!),
                           ),
                           const SizedBox(height: 16),
                           TextFormField(
                             controller: perguntaController,
+                            style: const TextStyle(fontWeight: FontWeight.w600),
                             decoration: InputDecoration(
-                              labelText: 'Pergunta',
-                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                              labelText: 'PERGUNTA'.toUpperCase(),
+                              labelStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                             ),
                             maxLines: 2,
-                            validator: (value) => (value == null || value.isEmpty) ? 'Escreve uma pergunta.' : null,
+                            validator: (value) => (value == null || value.isEmpty) ? 'ESCREVE UMA PERGUNTA.' : null,
                           ),
                           const SizedBox(height: 16),
                           TextFormField(
                             controller: respostaController,
+                            style: const TextStyle(fontWeight: FontWeight.w600),
                             decoration: InputDecoration(
-                              labelText: 'Resposta',
-                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                              labelText: 'RESPOSTA'.toUpperCase(),
+                              labelStyle: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                             ),
                             maxLines: 3,
-                            validator: (value) => (value == null || value.isEmpty) ? 'Escreve a resposta.' : null,
+                            validator: (value) => (value == null || value.isEmpty) ? 'ESCREVE A RESPOSTA.' : null,
                           ),
                         ],
                       ),
@@ -273,18 +301,23 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                   ),
                 ),
                 actions: [
-                  TextButton(child: const Text('Cancelar', style: TextStyle(color: Colors.grey)), onPressed: () => Navigator.of(dialogContext).pop()),
+                  TextButton(child: Text('CANCELAR'.toUpperCase(), style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.w900)), onPressed: () => Navigator.of(dialogContext).pop()),
                   ElevatedButton(
-                    style: ElevatedButton.styleFrom(backgroundColor: Colors.blue, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-                    child: const Text('Atualizar'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.primary,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+                      elevation: 0,
+                    ),
+                    child: Text('ATUALIZAR'.toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w900, color: Colors.white)),
                     onPressed: () async {
                       if (formKey.currentState!.validate()) {
                         final flashcardService = Provider.of<FlashcardService>(context, listen: false);
                         
                         final updatedFlashcard = UserFlashcard(
                           id: flashcard.id,
-                          pergunta: perguntaController.text,
-                          resposta: respostaController.text,
+                          pergunta: perguntaController.text.trim(),
+                          resposta: respostaController.text.trim(),
                           profileUid: flashcard.profileUid,
                           parentUid: flashcard.parentUid,
                           disciplinaId: selectedCategoria,
@@ -297,13 +330,13 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                             Navigator.of(dialogContext).pop();
                             _refreshFlashcards();
                             ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(content: Text('Flashcard atualizado!'), behavior: SnackBarBehavior.floating),
+                              SnackBar(content: Text('FLASHCARD ATUALIZADO!'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.bold)), behavior: SnackBarBehavior.floating, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)), backgroundColor: AppColors.primary),
                             );
                           }
                         } catch (e) {
                           if (mounted) {
                             Navigator.of(dialogContext).pop();
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Erro: $e'), behavior: SnackBarBehavior.floating));
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('ERRO: $e'.toUpperCase())));
                           }
                         }
                       }
@@ -319,14 +352,14 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
 
   void _estudarCartao(UserFlashcard flashcard) {
     Navigator.of(context).push(MaterialPageRoute(builder: (context) => FlashCardScreen(
-      titulo: 'Meu Cartão',
+      titulo: 'MEU CARTÃO',
       flashCards: [model.FlashCard(pergunta: flashcard.pergunta, resposta: flashcard.resposta)],
     )));
   }
 
   void _estudarTodos(List<UserFlashcard> flashcards) {
     Navigator.of(context).push(MaterialPageRoute(builder: (context) => FlashCardScreen(
-      titulo: 'Meus Cartões',
+      titulo: 'MEUS CARTÕES',
       flashCards: flashcards.map((f) => model.FlashCard(pergunta: f.pergunta, resposta: f.resposta)).toList(),
     )));
   }
@@ -337,13 +370,19 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
       builder: (BuildContext context) {
         return AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-          title: const Text('Remover Cartão?', style: TextStyle(fontWeight: FontWeight.bold)),
-          content: const Text('Tens a certeza que queres apagar este flashcard? Não poderás recuperá-lo.'),
+          title: Row(
+            children: [
+              const Icon(Icons.delete_forever_rounded, color: AppColors.error, size: 28),
+              const SizedBox(width: 10),
+              Text('REMOVER CARTÃO?'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
+            ],
+          ),
+          content: Text('TENS A CERTEZA QUE QUERES APAGAR ESTE FLASHCARD? NÃO PODERÁS RECUPERÁ-LO.'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12, color: Colors.blueGrey)),
           actions: <Widget>[
-            TextButton(child: const Text('Manter', style: TextStyle(color: Colors.grey)), onPressed: () => Navigator.of(context).pop(false)),
+            TextButton(child: Text('MANTER'.toUpperCase(), style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.w900)), onPressed: () => Navigator.of(context).pop(false)),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.red, foregroundColor: Colors.white),
-              child: const Text('Remover'),
+              style: ElevatedButton.styleFrom(backgroundColor: AppColors.error, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)), elevation: 0),
+              child: Text('REMOVER'.toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w900, color: Colors.white)),
               onPressed: () => Navigator.of(context).pop(true),
             ),
           ],
@@ -358,12 +397,12 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
         if (mounted) {
           _refreshFlashcards();
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Cartão removido.'), behavior: SnackBarBehavior.floating),
+            SnackBar(content: Text('CARTÃO REMOVIDO.'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.bold)), behavior: SnackBarBehavior.floating, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)), backgroundColor: AppColors.error),
           );
         }
       } catch (e) {
         if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Erro: $e'), behavior: SnackBarBehavior.floating));
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('ERRO: $e'.toUpperCase())));
         }
       }
     }
@@ -371,15 +410,13 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    final isTablet = size.width > 600;
-
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Meus Cartões', style: TextStyle(fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.blue,
+        title: Text('MEUS CARTÕES'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, letterSpacing: 1.2)),
+        backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
         elevation: 4,
+        centerTitle: false,
       ),
       body: BackgroundContainer(
         child: SizedBox.expand(
@@ -396,14 +433,14 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Icon(Icons.style_outlined, size: 80, color: Colors.white.withOpacity(0.5)),
+                              Lottie.asset('assets/animations/arcade.json', height: 150, repeat: true),
                               const SizedBox(height: 20),
                               FittedBox(
                                 fit: BoxFit.scaleDown,
-                                child: const Text(
-                                  'Ainda não criaste cartões para este perfil.\nCria o teu primeiro para começar!',
+                                child: Text(
+                                  'AINDA NÃO CRIASTE CARTÕES.\nCRIA O TEU PRIMEIRO PARA COMEÇAR!'.toUpperCase(),
                                   textAlign: TextAlign.center,
-                                  style: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.w500),
+                                  style: const TextStyle(color: AppColors.primary, fontSize: 18, fontWeight: FontWeight.w900),
                                 ),
                               ),
                             ],
@@ -422,20 +459,26 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                       child: Container(
                         constraints: const BoxConstraints(maxWidth: 800),
                         child: SingleChildScrollView(
-                          padding: const EdgeInsets.fromLTRB(16, 16, 16, 100),
+                          padding: const EdgeInsets.fromLTRB(16, 20, 16, 100),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              ElevatedButton.icon(
-                                onPressed: () => _estudarTodos(allCards),
-                                icon: const Icon(Icons.school_rounded),
-                                label: const Text('Estudar Tudo deste Perfil', style: TextStyle(fontWeight: FontWeight.bold)),
-                                style: ElevatedButton.styleFrom(
-                                  backgroundColor: Colors.white.withOpacity(0.9),
-                                  foregroundColor: Colors.blue.shade800,
-                                  minimumSize: const Size(double.infinity, 55),
-                                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                                  elevation: 4,
+                              ScalePressWrapper(
+                                onTap: () => _estudarTodos(allCards),
+                                child: NeumorphicWrapper(
+                                  baseColor: Colors.white,
+                                  borderRadius: 25,
+                                  child: Container(
+                                    padding: const EdgeInsets.symmetric(vertical: 20),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: [
+                                        const Icon(Icons.school_rounded, color: AppColors.primary, size: 28),
+                                        const SizedBox(width: 15),
+                                        Text('ESTUDAR TUDO AGORA'.toUpperCase(), style: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.w900, fontSize: 16)),
+                                      ],
+                                    ),
+                                  ),
                                 ),
                               ),
                               const SizedBox(height: 10),
@@ -444,43 +487,50 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
                                   crossAxisAlignment: CrossAxisAlignment.stretch,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsets.only(top: 24.0, bottom: 8.0, left: 4.0),
+                                      padding: const EdgeInsets.only(top: 30.0, bottom: 12.0, left: 8.0),
                                       child: Row(
                                         children: [
                                           Text(
                                             entry.key.toUpperCase(),
                                             style: const TextStyle(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.white,
-                                              letterSpacing: 1.2,
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w900,
+                                              color: AppColors.primary,
+                                              letterSpacing: 1.5,
                                             ),
                                           ),
                                           const SizedBox(width: 10),
-                                          const Expanded(child: Divider(color: Colors.white24, thickness: 1.5)),
+                                          Expanded(child: Divider(color: AppColors.primary.withValues(alpha: 0.2), thickness: 2)),
                                         ],
                                       ),
                                     ),
                                     ...entry.value.map((flashcard) => Padding(
+                                      key: ValueKey('flashcard_${flashcard.id}'),
                                       padding: const EdgeInsets.only(bottom: 12.0),
-                                      child: Card(
-                                        elevation: 4,
-                                        shadowColor: Colors.black26,
-                                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                                        color: Colors.white.withOpacity(0.95),
+                                      child: NeumorphicWrapper(
+                                        baseColor: Colors.white,
+                                        borderRadius: 25,
                                         child: InkWell(
                                           onTap: () => _estudarCartao(flashcard),
-                                          onLongPress: () => _showFlashcardOptions(flashcard),
-                                          borderRadius: BorderRadius.circular(20),
+                                          onLongPress: () {
+                                            HapticFeedback.heavyImpact();
+                                            _showFlashcardOptions(flashcard);
+                                          },
+                                          borderRadius: BorderRadius.circular(25),
                                           child: ListTile(
                                             contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                                             title: Text(
-                                              flashcard.pergunta,
-                                              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black87),
+                                              flashcard.pergunta.toUpperCase(),
+                                              style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 15, color: Colors.black87),
                                               maxLines: 3,
                                               overflow: TextOverflow.ellipsis,
                                             ),
-                                            trailing: const Icon(Icons.play_circle_fill, color: Colors.blueAccent, size: 30),
+                                            subtitle: Text('PRESTA ATENÇÃO AO LONGO CLIQUE PARA OPÇÕES'.toUpperCase(), style: const TextStyle(fontSize: 9, fontWeight: FontWeight.bold, color: Colors.grey)),
+                                            trailing: Container(
+                                              padding: const EdgeInsets.all(8),
+                                              decoration: BoxDecoration(color: AppColors.primary.withValues(alpha: 0.1), shape: BoxShape.circle),
+                                              child: const Icon(Icons.play_arrow_rounded, color: AppColors.primary, size: 24),
+                                            ),
                                           ),
                                         ),
                                       ),
@@ -499,13 +549,26 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: _showCreateFlashcardDialog,
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
-        icon: const Icon(Icons.add),
-        label: const Text('Novo Cartão', style: TextStyle(fontWeight: FontWeight.bold)),
+      floatingActionButton: ScalePressWrapper(
+        onTap: _showCreateFlashcardDialog,
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+          decoration: BoxDecoration(
+            color: AppColors.primary,
+            borderRadius: BorderRadius.circular(30),
+            boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.4), blurRadius: 15, offset: const Offset(0, 5))],
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.add_rounded, color: Colors.white, size: 28),
+              const SizedBox(width: 8),
+              Text('NOVO CARTÃO'.toUpperCase(), style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w900, letterSpacing: 1.1)),
+            ],
+          ),
+        ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }

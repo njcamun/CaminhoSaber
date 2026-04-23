@@ -17,10 +17,12 @@ import 'package:caminho_do_saber/ui/widgets/retro_typewriter_text.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_pixel_explosion.dart';
 import 'package:caminho_do_saber/ui/widgets/points_flyer.dart';
 import 'package:caminho_do_saber/services/audio_service.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 
 class QuizScreen extends StatefulWidget {
   final List<PerguntaQuiz> perguntas;
   final String disciplinaId;
+  final Disciplina disciplina;
   final int capituloIndex;
   final List<FlashCard> flashCards;
 
@@ -28,6 +30,7 @@ class QuizScreen extends StatefulWidget {
     super.key,
     required this.perguntas,
     required this.disciplinaId,
+    required this.disciplina,
     required this.capituloIndex,
     required this.flashCards,
   });
@@ -187,15 +190,15 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     
     final perguntaAtual = _perguntasBaralhadas[_perguntaAtualIndex];
     final String dicaTexto = (perguntaAtual.dica != null && perguntaAtual.dica!.isNotEmpty) 
-        ? perguntaAtual.dica! 
-        : "Hum... esta pergunta é um desafio! Tenta eliminar as opções que parecem erradas.";
+        ? perguntaAtual.dica!.toUpperCase() 
+        : "HUM... ESTA PERGUNTA É UM DESAFIO! TENTA ELIMINAR AS OPÇÕES QUE PARECEM ERRADAS!";
 
     setState(() {
       _ajudaDicaUsada = true;
       _penalidadeAjudas += 2;
     });
 
-    _showHelpDialog('Dica de Estudo', dicaTexto, Icons.lightbulb_rounded, Colors.amber);
+    _showHelpDialog('Dica de Estudo', dicaTexto, Icons.lightbulb_rounded, AppColors.accent);
   }
 
   void _showHelpDialog(String title, String content, IconData icon, Color color) {
@@ -203,13 +206,24 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
       context: context,
       builder: (context) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-        title: Row(children: [Icon(icon, color: color), const SizedBox(width: 10), Text(title, style: const TextStyle(fontWeight: FontWeight.bold))]),
-        content: Text(content, style: const TextStyle(fontSize: 16, height: 1.4)),
+        title: Row(
+          children: [
+            Icon(icon, color: color, size: 28),
+            const SizedBox(width: 10),
+            Text(title.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18, color: Colors.black87)),
+          ],
+        ),
+        content: Text(content.toUpperCase(), style: const TextStyle(fontSize: 12, height: 1.4, fontWeight: FontWeight.bold, color: Colors.blueGrey)),
         actions: [
           ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: color, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))),
-            onPressed: () => Navigator.of(context).pop(), 
-            child: const Text('Entendi!')
+            style: ElevatedButton.styleFrom(
+              backgroundColor: color, 
+              foregroundColor: Colors.white, 
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+              elevation: 0,
+            ),
+            onPressed: () => Navigator.of(context).pop(),
+            child: Text('ENTENDI!'.toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w900, color: Colors.white))
           )
         ],
       ),
@@ -233,16 +247,16 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     if (estaCorreta) {
       _pontosBase += 5;
       HapticFeedback.mediumImpact();
-      _audioService.playSfx('acerto.mp3');
+      _audioService.playSfx('correct.mp3');
       if (tapPosition != Offset.zero) {
         showPointsFlyer(context, tapPosition);
-        showPixelExplosion(context, tapPosition, Colors.green);
+        showPixelExplosion(context, tapPosition, AppColors.success);
       }
     } else {
       HapticFeedback.vibrate();
-      _audioService.playSfx('erro.mp3');
+      _audioService.playSfx('incorrect.mp3');
       if (tapPosition != Offset.zero) {
-        showPixelExplosion(context, tapPosition, Colors.red);
+        showPixelExplosion(context, tapPosition, AppColors.error);
       }
     }
 
@@ -312,6 +326,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
             respostasUtilizador: _respostasUtilizador,
             desbloqueadoProximoNivel: desbloqueado,
             disciplinaId: widget.disciplinaId,
+            disciplina: widget.disciplina,
             capituloIndex: widget.capituloIndex,
             flashCards: widget.flashCards,
             penalidadeAjudas: _penalidadeAjudas,
@@ -332,7 +347,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    if (widget.perguntas.isEmpty) return const Scaffold(body: Center(child: Text("Nenhuma pergunta encontrada.")));
+    if (widget.perguntas.isEmpty) return Scaffold(body: Center(child: Text("NENHUMA PERGUNTA ENCONTRADA.".toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600))));
     
     final perguntaAtual = _perguntasBaralhadas[_perguntaAtualIndex];
     final size = MediaQuery.of(context).size;
@@ -345,17 +360,17 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
     }
 
     Color getTimerColor(int seconds) {
-      if (seconds <= 3) return Colors.red;
-      if (seconds <= 7) return Colors.orange;
-      return Colors.green;
+      if (seconds <= 3) return AppColors.error;
+      if (seconds <= 7) return AppColors.accent;
+      return AppColors.success;
     }
 
     return RetroCRTWrapper(
       child: Scaffold(
         appBar: AppBar(
-          title: FittedBox(fit: BoxFit.scaleDown, child: const Text('Desafio do Saber', style: TextStyle(fontWeight: FontWeight.bold))),
+          title: FittedBox(fit: BoxFit.scaleDown, child: const Text('DESAFIO DO SABER', style: TextStyle(fontWeight: FontWeight.w600))),
           centerTitle: true,
-          backgroundColor: Colors.blue,
+          backgroundColor: AppColors.primary,
           elevation: 4,
           actions: [
             Container(
@@ -365,7 +380,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
                 children: [
                   const Icon(Icons.timer_outlined, size: 18, color: Colors.white),
                   const SizedBox(width: 4),
-                  Text(formatTime(_segundosRestantesGlobal), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.white)),
+                  Text(formatTime(_segundosRestantesGlobal), style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 18, color: Colors.white)),
                 ],
               ),
             ),
@@ -378,7 +393,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
               children: [
                 Card(
                   elevation: 4,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
                   color: Colors.white.withValues(alpha: 0.95),
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
@@ -388,20 +403,20 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text('Pergunta ${_perguntaAtualIndex + 1}/${_perguntasBaralhadas.length}', style: const TextStyle(fontWeight: FontWeight.bold, color: Colors.blueGrey)),
-                            Text('$_segundosRestantes s', style: TextStyle(fontWeight: FontWeight.bold, color: getTimerColor(_segundosRestantes))),
+                            Text('PERGUNTA ${_perguntaAtualIndex + 1}/${_perguntasBaralhadas.length}'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600, color: Colors.blueGrey)),
+                            Text('$_segundosRestantes S', style: TextStyle(fontWeight: FontWeight.w600, color: getTimerColor(_segundosRestantes))),
                           ],
                         ),
                         const SizedBox(height: 8),
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(25),
                           child: LinearProgressIndicator(
                             value: _segundosRestantes / _tempoMaximoPergunta,
                             minHeight: 12,
                             backgroundColor: Colors.grey.shade200,
                             valueColor: AlwaysStoppedAnimation<Color>(
-                              _segundosRestantes <= 5 
-                                ? (_segundosRestantes % 2 == 0 ? Colors.red : Colors.orange)
+                              _segundosRestantes <= 5
+                                ? (_segundosRestantes % 2 == 0 ? AppColors.error : AppColors.accent)
                                 : getTimerColor(_segundosRestantes)
                             ),
                           ),
@@ -412,7 +427,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
                           child: SingleChildScrollView(
                             child: RetroTypewriterText(
                               text: perguntaAtual.pergunta,
-                              style: TextStyle(fontSize: isTablet ? 24 : 20, fontWeight: FontWeight.bold, color: Colors.black87, height: 1.3),
+                              style: TextStyle(fontSize: isTablet ? 24 : 20, fontWeight: FontWeight.w600, color: Colors.black87, height: 1.3),
                             ),
                           ),
                         ),
@@ -421,7 +436,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
                   ),
                 ),
                 const SizedBox(height: 12),
-      
+
                 Expanded(
                   child: SingleChildScrollView(
                     physics: const BouncingScrollPhysics(),
@@ -430,18 +445,18 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
                       children: [
                         ..._opcoesAtuaisBaralhadas.map((opcao) {
                           if (_opcoesRemovidas.contains(opcao)) return const SizedBox.shrink();
-                          
+
                           bool isSelected = _respostaSelecionada && opcao == _respostaSelecionadaTexto;
                           bool isCorrect = opcao == perguntaAtual.respostaCorreta;
-                          
-                          Color targetBgColor = isSelected 
-                              ? (isCorrect ? Colors.green.shade100 : Colors.red.shade100)
+
+                          Color targetBgColor = isSelected
+                              ? (isCorrect ? AppColors.success.withValues(alpha: 0.1) : AppColors.error.withValues(alpha: 0.1))
                               : Colors.white.withValues(alpha: 0.9);
-                          
-                          Color targetBorderColor = isSelected 
-                              ? (isCorrect ? Colors.green : Colors.red)
+
+                          Color targetBorderColor = isSelected
+                              ? (isCorrect ? AppColors.success : AppColors.error)
                               : Colors.blue.shade100;
-      
+
                           return Padding(
                             padding: const EdgeInsets.symmetric(vertical: 6.0),
                             child: Listener(
@@ -462,28 +477,28 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
                                     padding: EdgeInsets.symmetric(vertical: isTablet ? 24 : 16, horizontal: 20),
                                     elevation: isSelected ? 0 : 2,
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(15),
+                                      borderRadius: BorderRadius.circular(25),
                                       side: BorderSide(color: targetBorderColor, width: 2),
                                     ),
                                   ),
                                   onPressed: null,
-                                  child: Text(opcao, textAlign: TextAlign.center, style: TextStyle(fontSize: isTablet ? 18 : 16, fontWeight: FontWeight.w500)),
+                                  child: Text(opcao.toUpperCase(), textAlign: TextAlign.center, style: Theme.of(context).textTheme.labelLarge?.copyWith(fontSize: isTablet ? 18 : 16, fontWeight: FontWeight.w600)),
                                 ),
                               ),
                             ),
                           );
                         }),
-                        
+
                         if (_segundosRestantesGlobal <= 10)
                           Padding(
                             padding: const EdgeInsets.only(top: 40),
                             child: Column(
                               children: [
-                                FittedBox(fit: BoxFit.scaleDown, child: const Text('A T E N Ç Ã O ! !', style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold, fontSize: 70))),
+                                FittedBox(fit: BoxFit.scaleDown, child: Text('A T E N Ç Ã O ! !'.toUpperCase(), style: const TextStyle(color: AppColors.error, fontWeight: FontWeight.w600, fontSize: 70))),
                                 const SizedBox(height: 4),
                                 Text(
                                   '$_segundosRestantesGlobal',
-                                  style: const TextStyle(fontSize: 80, fontWeight: FontWeight.w900, color: Colors.red),
+                                  style: const TextStyle(fontSize: 80, fontWeight: FontWeight.w600, color: AppColors.error),
                                 ),
                               ],
                             ),
@@ -493,12 +508,12 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
                   ),
                 ),
                 const SizedBox(height: 12),
-      
+
                 Container(
                   padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
                   decoration: BoxDecoration(
-                    color: Colors.blue.shade800.withValues(alpha: 0.95),
-                    borderRadius: BorderRadius.circular(20),
+                    color: AppColors.primary.withValues(alpha: 0.95),
+                    borderRadius: BorderRadius.circular(25),
                     boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))],
                   ),
                   child: Row(
@@ -513,13 +528,13 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
                       _buildAjudaButton(
                         onTap: _ajudaDicaUsada || _respostaSelecionada ? null : _useHint,
                         icon: Icons.lightbulb_outline,
-                        label: 'Dica',
+                        label: 'DICA',
                         isUsed: _ajudaDicaUsada,
                       ),
                       _buildAjudaButton(
                         onTap: _ajudaPulaUsada || _respostaSelecionada ? null : _skipQuestion,
                         icon: Icons.skip_next,
-                        label: 'Pular',
+                        label: 'PULAR',
                         isUsed: _ajudaPulaUsada,
                       ),
                     ],
@@ -536,13 +551,13 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
   Widget _buildAjudaButton({required VoidCallback? onTap, required IconData icon, required String label, required bool isUsed}) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(10),
+      borderRadius: BorderRadius.circular(25),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, color: isUsed ? Colors.amber : Colors.white, size: 28),
+          Icon(icon, color: isUsed ? AppColors.accent : Colors.white, size: 28),
           const SizedBox(height: 4),
-          Text(label, style: TextStyle(color: isUsed ? Colors.amber : Colors.white, fontSize: 11, fontWeight: FontWeight.bold)),
+          Text(label.toUpperCase(), style: TextStyle(color: isUsed ? AppColors.accent : Colors.white, fontSize: 11, fontWeight: FontWeight.w600)),
         ],
       ),
     );

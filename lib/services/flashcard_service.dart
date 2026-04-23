@@ -25,7 +25,7 @@ class FlashcardService with ChangeNotifier {
   Future<List<UserFlashcard>> loadFlashcardsForProfile(String profileUid) async {
     if (_db == null) return [];
     try {
-      final query = _db!.select(_db!.userFlashcards)..where((t) => t.profileUid.equals(profileUid));
+      final query = _db.select(_db.userFlashcards)..where((t) => t.profileUid.equals(profileUid));
       return await query.get();
     } catch (e) {
       debugPrint('[FlashcardService] Error loading flashcards: $e');
@@ -41,7 +41,7 @@ class FlashcardService with ChangeNotifier {
     required String parentUid,
   }) async {
     if (_db != null) {
-      await _db!.into(_db!.userFlashcards).insert(UserFlashcardsCompanion.insert(
+      await _db.into(_db.userFlashcards).insert(UserFlashcardsCompanion.insert(
         profileUid: profileUid,
         parentUid: parentUid,
         disciplinaId: disciplinaId,
@@ -57,7 +57,7 @@ class FlashcardService with ChangeNotifier {
 
   Future<void> updateFlashcard(UserFlashcard flashcard) async {
     if (_db != null) {
-      await (_db!.update(_db!.userFlashcards)..where((t) => t.id.equals(flashcard.id))).write(
+      await (_db.update(_db.userFlashcards)..where((t) => t.id.equals(flashcard.id))).write(
         UserFlashcardsCompanion(
           pergunta: Value(flashcard.pergunta),
           resposta: Value(flashcard.resposta),
@@ -72,7 +72,7 @@ class FlashcardService with ChangeNotifier {
 
   Future<void> deleteFlashcard(int id) async {
     if (_db != null) {
-      await (_db!.delete(_db!.userFlashcards)..where((t) => t.id.equals(id))).go();
+      await (_db.delete(_db.userFlashcards)..where((t) => t.id.equals(id))).go();
     }
     
     notifyListeners();
@@ -120,7 +120,7 @@ class FlashcardService with ChangeNotifier {
           .get();
 
       if (_db != null) {
-        await _db!.transaction(() async {
+        await _db.transaction(() async {
           for (var profileDoc in profilesSnapshot.docs) {
             final profileUid = profileDoc.id;
             final flashcardsSnapshot = await profileDoc.reference.collection('flashcards').get();
@@ -128,12 +128,12 @@ class FlashcardService with ChangeNotifier {
             for (var flashDoc in flashcardsSnapshot.docs) {
               final data = flashDoc.data();
               
-              final existing = await (_db!.select(_db!.userFlashcards)
+              final existing = await (_db.select(_db.userFlashcards)
                   ..where((t) => t.profileUid.equals(profileUid) & t.pergunta.equals(data['pergunta'])))
                   .getSingleOrNull();
 
               if (existing == null) {
-                await _db!.into(_db!.userFlashcards).insert(UserFlashcardsCompanion.insert(
+                await _db.into(_db.userFlashcards).insert(UserFlashcardsCompanion.insert(
                   profileUid: profileUid,
                   parentUid: data['parentUid'] ?? user.uid,
                   disciplinaId: data['disciplinaId'] ?? 'OUTROS',

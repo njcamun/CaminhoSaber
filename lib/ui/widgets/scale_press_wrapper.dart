@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
+import 'package:caminho_do_saber/services/audio_service.dart';
 
 class ScalePressWrapper extends StatefulWidget {
   final Widget child;
@@ -32,11 +34,11 @@ class _ScalePressWrapperState extends State<ScalePressWrapper> with SingleTicker
         _controller.reverse();
         HapticFeedback.lightImpact();
       },
-      onTapUp: (_) {
+      onTapCancel: () => _controller.forward(),
+      onTap: () {
         _controller.forward();
         widget.onTap();
       },
-      onTapCancel: () => _controller.forward(),
       child: ScaleTransition(scale: _controller, child: widget.child),
     );
   }

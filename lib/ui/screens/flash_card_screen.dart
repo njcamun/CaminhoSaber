@@ -4,10 +4,9 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:caminho_do_saber/models/disciplina_model.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
-import 'package:audioplayers/audioplayers.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
 import 'package:caminho_do_saber/services/audio_service.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:provider/provider.dart';
 
 class FlashCardScreen extends StatefulWidget {
@@ -65,7 +64,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
     if (_controller.status == AnimationStatus.completed) {
       _controller.reverse();
     } else {
-      _playSound('hint.mp3');
       _controller.forward();
     }
   }
@@ -76,7 +74,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
         _cardAtualIndex++;
         _controller.reset();
       });
-      _playSound('jogo.mp3');
     }
   }
 
@@ -86,7 +83,6 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
         _cardAtualIndex--;
         _controller.reset();
       });
-      _playSound('jogo.mp3');
     }
   }
 
@@ -98,10 +94,10 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
     if (widget.flashCards.isEmpty) {
       return Scaffold(
         appBar: AppBar(
-          title: Text(widget.titulo),
-          backgroundColor: Colors.blue,
+          title: Text(widget.titulo.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600)),
+          backgroundColor: AppColors.primary,
         ),
-        body: const BackgroundContainer(child: Center(child: Text('Sem cartões.'))),
+        body: BackgroundContainer(child: Center(child: Text('SEM CARTÕES.'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600)))),
       );
     }
 
@@ -109,10 +105,10 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
 
     return Scaffold(
       appBar: AppBar(
-        title: FittedBox(fit: BoxFit.scaleDown, child: Text(widget.titulo, style: const TextStyle(fontWeight: FontWeight.bold))),
-        backgroundColor: Colors.blue,
+        title: FittedBox(fit: BoxFit.scaleDown, child: Text(widget.titulo.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600))),
+        backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
-        elevation: 0,
+        elevation: 4,
       ),
       body: BackgroundContainer(
         child: Column(
@@ -125,14 +121,14 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
                   LinearProgressIndicator(
                     value: (_cardAtualIndex + 1) / widget.flashCards.length,
                     backgroundColor: Colors.white24,
-                    valueColor: const AlwaysStoppedAnimation<Color>(Colors.orangeAccent),
-                    borderRadius: BorderRadius.circular(10),
+                    valueColor: const AlwaysStoppedAnimation<Color>(AppColors.accent),
+                    borderRadius: BorderRadius.circular(25),
                     minHeight: 8,
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    '${_cardAtualIndex + 1} de ${widget.flashCards.length}',
-                    style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                    '${_cardAtualIndex + 1} DE ${widget.flashCards.length}',
+                    style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
                   ),
                 ],
               ),
@@ -178,12 +174,12 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
               ),
             ),
 
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
-                'Desliza para os lados ou toca para virar',
+                'DESLIZA PARA OS LADOS OU TOCA PARA VIRAR'.toUpperCase(),
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.white70, fontStyle: FontStyle.italic),
+                style: const TextStyle(color: Colors.white70, fontStyle: FontStyle.italic, fontWeight: FontWeight.w600, fontSize: 10),
               ),
             ),
             
@@ -220,7 +216,7 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
         shape: BoxShape.circle,
         boxShadow: enabled ? [const BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))] : [],
       ),
-      child: Icon(icon, color: enabled ? Colors.blue.shade900 : Colors.white24, size: 32),
+      child: Icon(icon, color: enabled ? AppColors.primary : Colors.white24, size: 32),
     );
   }
 
@@ -236,13 +232,13 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
         borderRadius: BorderRadius.circular(25),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.3),
+            color: Colors.black.withValues(alpha: 0.3),
             blurRadius: 20,
             offset: const Offset(0, 10),
           ),
         ],
         border: Border.all(
-          color: isFront ? Colors.blue.shade300 : Colors.orange.shade300,
+          color: isFront ? AppColors.primary : AppColors.secondary,
           width: 8,
         ),
       ),
@@ -251,10 +247,10 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
           Positioned.fill(
             child: Opacity(
               opacity: 0.05,
-              child: CustomPaint(painter: GridPainter(color: isFront ? Colors.blue : Colors.orange)),
+              child: CustomPaint(painter: GridPainter(color: isFront ? AppColors.primary : AppColors.secondary)),
             ),
           ),
-          
+
           Padding(
             padding: const EdgeInsets.all(25),
             child: Column(
@@ -262,15 +258,15 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(isFront ? Icons.help_outline_rounded : Icons.auto_awesome_rounded, 
-                      color: isFront ? Colors.blue : Colors.orange, size: 24),
+                    Icon(isFront ? Icons.help_outline_rounded : Icons.auto_awesome_rounded,
+                      color: isFront ? AppColors.primary : AppColors.secondary, size: 24),
                     Text(
                       isFront ? 'PERGUNTA' : 'RESPOSTA',
                       style: TextStyle(
-                        fontSize: 12, 
-                        fontWeight: FontWeight.w900,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
                         letterSpacing: 2,
-                        color: isFront ? Colors.blue : Colors.orange
+                        color: isFront ? AppColors.primary : AppColors.secondary
                       ),
                     ),
                     Icon(Icons.school_rounded, color: Colors.grey.shade300, size: 24),
@@ -285,7 +281,7 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: texto.length > 50 ? 20 : 26,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w600,
                         color: Colors.blueGrey.shade900,
                         height: 1.2,
                       ),
@@ -294,9 +290,9 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
                 ),
                 const Spacer(),
                 if (!isFront)
-                  const Icon(Icons.check_circle_rounded, color: Colors.green, size: 40),
+                  const Icon(Icons.check_circle_rounded, color: AppColors.success, size: 40),
                 if (isFront)
-                  Icon(Icons.visibility_off_rounded, color: Colors.blue.shade50, size: 40),
+                  Icon(Icons.visibility_off_rounded, color: AppColors.primary.withValues(alpha: 0.1), size: 40),
               ],
             ),
           ),

@@ -11,6 +11,7 @@ import 'package:caminho_do_saber/services/ranking_service.dart';
 import 'package:caminho_do_saber/services/flashcard_service.dart';
 import 'package:caminho_do_saber/services/audio_service.dart';
 import 'package:caminho_do_saber/providers/pomodoro_provider.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/screens/home_screen.dart';
 import 'package:caminho_do_saber/ui/screens/auth/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -110,7 +111,7 @@ class MyApp extends StatelessWidget {
                 if (themeProvider.isBlueLightFilterEnabled)
                   IgnorePointer(
                     child: Container(
-                      color: Colors.orange.withValues(alpha: 0.15),
+                      color: AppColors.accent.withValues(alpha: 0.15),
                     ),
                   ),
               ],
@@ -127,7 +128,7 @@ void _showErrorOverlay(String error) {
     globalMessengerKey.currentState!.showSnackBar(
       SnackBar(
         content: Text('ERRO CAPTURADO:\n$error', style: const TextStyle(fontSize: 12)),
-        backgroundColor: Colors.red.shade900,
+        backgroundColor: Colors.redAccent,
         duration: const Duration(seconds: 10),
         action: SnackBarAction(label: 'OK', textColor: Colors.white, onPressed: () {}),
       ),

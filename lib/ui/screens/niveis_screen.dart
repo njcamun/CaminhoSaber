@@ -7,10 +7,17 @@ import 'package:caminho_do_saber/models/disciplina_model.dart';
 import 'package:caminho_do_saber/services/progresso_service.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
 import 'package:caminho_do_saber/ui/screens/quiz_screen.dart';
+import 'package:caminho_do_saber/ui/screens/capitulos_screen.dart';
+import 'package:caminho_do_saber/ui/screens/conteudo_screen.dart';
+import 'package:caminho_do_saber/services/disciplina_service.dart';
+import 'package:caminho_do_saber/models/conteudo_disciplina_model.dart';
 import 'package:caminho_do_saber/models/quiz_model.dart';
 import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
+import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
+import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
 
 class NiveisScreen extends StatefulWidget {
   final Disciplina disciplina;
@@ -41,25 +48,14 @@ class _NiveisScreenState extends State<NiveisScreen> {
     _loadData();
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
   Future<void> _loadData() async {
     try {
       await _loadQuizzes();
       await _loadProgresso();
     } catch (e) {
-      if (kDebugMode) {
-        print('Erro ao carregar níveis: $e');
-      }
+      if (kDebugMode) print('Erro ao carregar níveis: $e');
     } finally {
-      if (mounted) {
-        setState(() {
-          _isLoading = false;
-        });
-      }
+      if (mounted) setState(() => _isLoading = false);
     }
   }
 
@@ -97,29 +93,16 @@ class _NiveisScreenState extends State<NiveisScreen> {
         });
       }
     } catch (e) {
-      if (kDebugMode) {
-        print('Erro ao carregar dados da disciplina: $e');
-      }
+      if (kDebugMode) print('Erro ao carregar dados da disciplina: $e');
     }
   }
 
   Future<void> _loadProgresso() async {
     try {
       final progresso = await _progressoService.getProgresso(widget.disciplina.id);
-      if (mounted) {
-        setState(() {
-          _progressoCapitulos = progresso;
-        });
-      }
+      if (mounted) setState(() => _progressoCapitulos = progresso);
     } catch (e) {
-      if (kDebugMode) {
-        print('Erro ao carregar progresso dos níveis: $e');
-      }
-      if (mounted) {
-        setState(() {
-          _progressoCapitulos = {};
-        });
-      }
+      if (mounted) setState(() => _progressoCapitulos = {});
     }
   }
 
@@ -161,123 +144,134 @@ class _NiveisScreenState extends State<NiveisScreen> {
     final isUnlocked = _isNivelDesbloqueado(index, pontuacaoAnterior, totalPontosAnterior);
     final size = MediaQuery.of(context).size;
 
-    return InkWell(
-      onTap: isUnlocked && quizPerguntas.isNotEmpty
-          ? () async {
-              await Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => QuizScreen(
-                    perguntas: quizPerguntas,
-                    disciplinaId: widget.disciplina.id,
-                    capituloIndex: index + 1,
-                    flashCards: _flashCardsPorQuiz[capitulo.quizId] ?? [],
+    return Padding(
+      padding: const EdgeInsets.all(4.0),
+      child: ScalePressWrapper(
+        onTap: isUnlocked && quizPerguntas.isNotEmpty
+            ? () async {
+                if (pontuacao == 0) {
+                  final bool? goDirect = await showDialog<bool>(
+                    context: context,
+                    builder: (context) => AlertDialog(
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+                      title: Row(
+                        children: [
+                          const Icon(Icons.menu_book_rounded, color: AppColors.primary, size: 28),
+                          const SizedBox(width: 10),
+                          Expanded(child: Text('PREPARAÇÃO'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18))),
+                        ],
+                      ),
+                      content: Text(
+                        'RECOMENDAMOS QUE FAÇAS A LEITURA DO CONTEÚDO ANTES DE COMEÇAR O QUIZ. LEMBRA-TE QUE TAMBÉM GANHAS PONTOS AO ESTUDAR AS LIÇÕES!'.toUpperCase(),
+                        style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.blueGrey),
+                      ),
+                      actions: [
+                        TextButton(
+                          onPressed: () => Navigator.of(context).pop(true),
+                          child: Text('IR DIRETO'.toUpperCase(), style: const TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.w900)),
+                        ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: AppColors.primary,
+                            foregroundColor: Colors.white,
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+                            elevation: 0,
+                          ),
+                          onPressed: () => Navigator.of(context).pop(false),
+                          child: Text('LER AGORA'.toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w900, color: Colors.white)),
+                        ),
+                      ],
+                    ),
+                  );
+
+                  if (goDirect == null) return;
+                  if (!goDirect) {
+                    if (!mounted) return;
+                    await Navigator.of(context).push(MaterialPageRoute(builder: (context) => CapitulosScreen(disciplina: widget.disciplina)));
+                    return;
+                  }
+                }
+
+                if (!mounted) return;
+                await Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => QuizScreen(
+                      perguntas: quizPerguntas,
+                      disciplinaId: widget.disciplina.id,
+                      disciplina: widget.disciplina,
+                      capituloIndex: index + 1,
+                      flashCards: _flashCardsPorQuiz[capitulo.quizId] ?? [],
+                    ),
                   ),
-                ),
-              );
-              await _loadData();
-            }
-          : () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(isUnlocked ? 'Nenhuma pergunta disponível.' : 'Nível bloqueado! Completa o anterior com 80%+.'),
-                  duration: const Duration(milliseconds: 800),
-                ),
-              );
-            },
-      child: Card(
-        elevation: isUnlocked ? 4 : 1,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15.0)),
-        child: Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(15.0),
-            gradient: LinearGradient(
-              colors: isUnlocked
-                  ? [Colors.blue.shade400, Colors.blue.shade800]
-                  : [Colors.grey.shade300, Colors.grey.shade400],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: Stack(
-            children: [
-              if (isUnlocked)
-                Align(
-                  alignment: Alignment.center,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      FittedBox(
-                        fit: BoxFit.scaleDown,
-                        child: Text(
+                );
+                await _loadData();
+              }
+            : () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text((isUnlocked ? 'NENHUMA PERGUNTA DISPONÍVEL.' : 'NÍVEL BLOQUEADO! COMPLETA O ANTERIOR COM 80%+ .').toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900)),
+                    behavior: SnackBarBehavior.floating,
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+                    backgroundColor: AppColors.primary,
+                  ),
+                );
+              },
+        child: NeumorphicWrapper(
+          baseColor: Colors.white,
+          borderRadius: 25,
+          child: Container(
+            padding: const EdgeInsets.all(12),
+            child: Stack(
+              children: [
+                if (isUnlocked)
+                  Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
                           '${index + 1}',
                           style: TextStyle(
-                            fontSize: size.width * 0.1 > 40 ? 40 : size.width * 0.1,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                            fontSize: size.width * 0.08,
+                            fontWeight: FontWeight.w900,
+                            color: AppColors.primary,
                           ),
                         ),
-                      ),
-                      const SizedBox(height: 5),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 4),
-                        child: Text(
-                          capitulo.capitulo,
+                        const SizedBox(height: 4),
+                        Text(
+                          capitulo.capitulo.toUpperCase(),
                           textAlign: TextAlign.center,
-                          style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.white),
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: List.generate(5, (starIndex) => Icon(
-                          starIndex < estrelas ? Icons.star : Icons.star_border,
-                          color: Colors.amber,
-                          size: size.width * 0.035 > 14 ? 14 : size.width * 0.035,
-                        )),
-                      ),
-                    ],
-                  ),
-                )
-              else
-                Stack(
-                  children: [
-                    // Nível no canto superior para evitar confusão com o cadeado central
-                    Positioned(
-                      top: 8,
-                      left: 10,
-                      child: Text(
-                        '${index + 1}',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.black.withValues(alpha: 0.15),
-                        ),
-                      ),
-                    ),
-                    const Center(
-                      child: Icon(Icons.lock_rounded, color: Colors.black26, size: 42),
-                    ),
-                    Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Padding(
-                        padding: const EdgeInsets.only(bottom: 8, left: 4, right: 4),
-                        child: Text(
-                          capitulo.capitulo,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 9,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black.withValues(alpha: 0.2),
-                          ),
+                          style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: Colors.blueGrey),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                         ),
-                      ),
+                        const SizedBox(height: 4),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: List.generate(5, (starIndex) => Icon(
+                            starIndex < estrelas ? Icons.stars_rounded : Icons.star_outline_rounded,
+                            color: starIndex < estrelas ? AppColors.accent : Colors.grey.withValues(alpha: 0.3),
+                            size: 16,
+                          )),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-            ],
+                  )
+                else
+                  Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.lock_rounded, color: Colors.grey.withValues(alpha: 0.5), size: 32),
+                        const SizedBox(height: 4),
+                        Text(
+                          'NÍVEL ${index + 1}'.toUpperCase(),
+                          style: TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: Colors.grey.withValues(alpha: 0.5)),
+                        ),
+                      ],
+                    ),
+                  ),
+              ],
+            ),
           ),
         ),
       ),
@@ -288,18 +282,18 @@ class _NiveisScreenState extends State<NiveisScreen> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final isTablet = size.width > 600;
-    final headerHeight = size.height * 0.3 > 250 ? 250.0 : size.height * 0.3;
+    final headerHeight = size.height * 0.28 > 220 ? 220.0 : size.height * 0.28;
 
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text(widget.disciplina.nome, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24, color: Colors.white)),
+        title: Text(widget.disciplina.nome.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 20, color: Colors.white, letterSpacing: 1.2)),
         backgroundColor: Colors.transparent,
         elevation: 0,
+        centerTitle: false,
         leading: IconButton(icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white), onPressed: () => Navigator.pop(context)),
       ),
       body: BackgroundContainer(
-        baseColor: widget.disciplina.categoria.toUpperCase() == 'CIÊNCIAS' ? Colors.green : Colors.blue,
         child: _isLoading
             ? const Center(child: CircularProgressIndicator())
             : Column(
@@ -314,19 +308,25 @@ class _NiveisScreenState extends State<NiveisScreen> {
                         height: headerHeight,
                         decoration: BoxDecoration(
                           gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [Colors.black.withValues(alpha: 0.5), Colors.transparent, Colors.blue.withValues(alpha: 0.8)],
+                            begin: Alignment.bottomCenter,
+                            end: Alignment.topCenter,
+                            colors: [
+                              Colors.white,
+                              Colors.white.withValues(alpha: 0.5),
+                              Colors.transparent,
+                            ],
+                            stops: const [0.0, 0.3, 0.8],
                           ),
                         ),
                       ),
                       Positioned(
-                        bottom: 20, left: 20, right: 20,
+                        bottom: 25, left: 20, right: 20,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            FittedBox(fit: BoxFit.scaleDown, child: Text(widget.disciplina.nome, style: const TextStyle(color: Colors.white, fontSize: 28, fontWeight: FontWeight.bold))),
-                            Text(widget.disciplina.descricao, style: const TextStyle(color: Colors.white70, fontSize: 14), maxLines: 2, overflow: TextOverflow.ellipsis),
+                            Text(widget.disciplina.nome.toUpperCase(), style: const TextStyle(color: AppColors.primary, fontSize: 26, fontWeight: FontWeight.w900, letterSpacing: 1)),
+                            const SizedBox(height: 4),
+                            Text(widget.disciplina.descricao.toUpperCase(), style: const TextStyle(color: Color(0xFF007A9E), fontSize: 11, fontWeight: FontWeight.w800), maxLines: 2, overflow: TextOverflow.ellipsis),
                           ],
                         ),
                       ),
@@ -334,11 +334,12 @@ class _NiveisScreenState extends State<NiveisScreen> {
                   ),
                   Expanded(
                     child: GridView.builder(
-                      padding: const EdgeInsets.all(16),
+                      padding: const EdgeInsets.fromLTRB(16, 16, 16, 40),
+                      physics: const BouncingScrollPhysics(),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: isTablet ? 4 : 3, 
-                        childAspectRatio: 0.9, 
-                        crossAxisSpacing: 12, 
+                        childAspectRatio: 0.85,
+                        crossAxisSpacing: 12,
                         mainAxisSpacing: 12
                       ),
                       itemCount: _capitulos.length,

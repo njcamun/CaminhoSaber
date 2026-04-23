@@ -9,10 +9,14 @@ import 'package:caminho_do_saber/models/disciplina_model.dart';
 import 'package:caminho_do_saber/ui/screens/home_screen.dart';
 import 'package:caminho_do_saber/ui/screens/flash_card_screen.dart';
 import 'package:caminho_do_saber/ui/widgets/achievement_overlay.dart';
+import 'package:caminho_do_saber/ui/screens/conteudo_screen.dart';
+import 'package:caminho_do_saber/ui/screens/capitulos_screen.dart';
 import 'package:lottie/lottie.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:caminho_do_saber/services/audio_service.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:provider/provider.dart';
+import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
+import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
 
 class ResultadosScreen extends StatefulWidget {
   final int pontuacaoFinal;
@@ -21,6 +25,7 @@ class ResultadosScreen extends StatefulWidget {
   final bool desbloqueadoProximoNivel;
   final List<Map<String, dynamic>> respostasUtilizador;
   final String disciplinaId;
+  final Disciplina disciplina;
   final int capituloIndex;
   final List<FlashCard> flashCards;
   final int penalidadeAjudas;
@@ -36,6 +41,7 @@ class ResultadosScreen extends StatefulWidget {
     required this.desbloqueadoProximoNivel,
     required this.respostasUtilizador,
     required this.disciplinaId,
+    required this.disciplina,
     required this.capituloIndex,
     required this.flashCards,
     required this.penalidadeAjudas,
@@ -59,11 +65,6 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
   void initState() {
     super.initState();
     _iniciarAnimacao();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
   }
 
   void _playSound(String fileName) {
@@ -105,10 +106,10 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
           if (mounted) {
             AchievementOverlay.show(
               context,
-              title: 'Pontos Ganhos!',
-              message: 'Concluíste o desafio e ganhaste ${widget.pontuacaoFinal} Pontos!',
+              title: 'PONTOS GANHOS!'.toUpperCase(),
+              message: 'CONCLUÍSTE O DESAFIO E GANHASTE ${widget.pontuacaoFinal} PONTOS!'.toUpperCase(),
               icon: Icons.trending_up_rounded,
-              color: Colors.orangeAccent
+              color: AppColors.accent
             );
           }
         });
@@ -124,39 +125,40 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Teu Desempenho', style: TextStyle(fontWeight: FontWeight.bold)),
-        centerTitle: true,
-        backgroundColor: Colors.blue,
+        title: Text('TEU DESEMPENHO'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, letterSpacing: 1.2)),
+        centerTitle: false,
+        backgroundColor: AppColors.primary,
+        foregroundColor: Colors.white,
         elevation: 4,
         automaticallyImplyLeading: false,
       ),
       body: BackgroundContainer(
-        child: SizedBox.expand(
-          child: SingleChildScrollView(
-            padding: EdgeInsets.fromLTRB(16, 20, 16, isTablet ? 120 : 100),
-            child: Column(
-              children: [
-                Card(
-                  elevation: 8,
-                  shadowColor: Colors.black26,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                  color: Colors.white.withOpacity(0.95),
-                  child: Container(
-                    width: isTablet ? size.width * 0.6 : double.infinity,
-                    child: Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        if (sucesso && !kIsWeb)
-                          Positioned.fill(
-                            child: Lottie.asset(
-                              'assets/animations/festejo.json',
-                              fit: BoxFit.cover,
-                              errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.fromLTRB(16, 25, 16, 120),
+          child: Center(
+            child: Container(
+              constraints: const BoxConstraints(maxWidth: 800),
+              child: Column(
+                children: [
+                  // CARD DE RESULTADO PRINCIPAL
+                  NeumorphicWrapper(
+                    baseColor: Colors.white,
+                    borderRadius: 30,
+                    child: Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(30),
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          if (sucesso && !kIsWeb)
+                            Positioned.fill(
+                              child: Lottie.asset(
+                                'assets/animations/festejo.json',
+                                fit: BoxFit.cover,
+                                errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
+                              ),
                             ),
-                          ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
-                          child: Column(
+                          Column(
                             children: [
                               if (!kIsWeb)
                                 Lottie.asset(
@@ -164,75 +166,75 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
                                   width: 140,
                                   height: 140,
                                   repeat: true,
-                                  errorBuilder: (context, error, stackTrace) => Icon(sucesso ? Icons.check_circle : Icons.error, size: 100, color: sucesso ? Colors.green : Colors.orange),
                                 )
                               else
-                                Icon(sucesso ? Icons.check_circle : Icons.error, size: 100, color: sucesso ? Colors.green : Colors.orange),
-                              const SizedBox(height: 10),
-                              FittedBox(
-                                fit: BoxFit.scaleDown,
-                                child: Text(
-                                  sucesso ? 'PARABÉNS!' : 'QUASE LÁ!',
-                                  style: TextStyle(
-                                    fontSize: 26,
-                                    fontWeight: FontWeight.w900,
-                                    color: sucesso ? Colors.green.shade700 : Colors.orange.shade800,
-                                  ),
+                                Icon(sucesso ? Icons.check_circle_rounded : Icons.error_outline_rounded, 
+                                  size: 100, color: sucesso ? AppColors.success : AppColors.error),
+                              const SizedBox(height: 15),
+                              Text(
+                                sucesso ? 'PARABÉNS!' : 'QUASE LÁ!',
+                                style: TextStyle(
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.w900,
+                                  color: sucesso ? AppColors.success : AppColors.error,
+                                  letterSpacing: 1.5,
                                 ),
                               ),
+                              const SizedBox(height: 4),
                               Text(
-                                sucesso ? 'Nível desbloqueado com sucesso!' : 'Faltou um pouco para avançar.',
+                                (sucesso ? 'Nível desbloqueado com sucesso!' : 'Faltou um pouco para avançar.').toUpperCase(),
                                 textAlign: TextAlign.center,
-                                style: TextStyle(fontSize: 15, color: Colors.blueGrey.shade600, fontWeight: FontWeight.w500),
+                                style: const TextStyle(fontSize: 11, color: Colors.blueGrey, fontWeight: FontWeight.w900),
                               ),
-                              const SizedBox(height: 20),
+                              const SizedBox(height: 25),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: List.generate(5, (index) {
-                                  return Icon(
-                                    Icons.stars_rounded,
-                                    color: index < widget.estrelas ? Colors.amber : Colors.grey.withOpacity(0.3),
-                                    size: isTablet ? 60 : 40,
+                                  return Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                                    child: Icon(
+                                      Icons.stars_rounded,
+                                      color: index < widget.estrelas ? AppColors.accent : Colors.grey.withValues(alpha: 0.2),
+                                      size: isTablet ? 55 : 45,
+                                    ),
                                   );
                                 }),
                               ),
                             ],
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(height: 24),
+                  const SizedBox(height: 30),
 
-                _buildSectionTitle(context, 'Resumo de Pontos'),
-                Container(
-                  width: isTablet ? size.width * 0.6 : double.infinity,
-                  child: Card(
-                    elevation: 4,
-                    shadowColor: Colors.black26,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                    color: Colors.white.withOpacity(0.95),
+                  _buildSectionTitle('RESUMO DE PONTOS'),
+                  NeumorphicWrapper(
+                    baseColor: Colors.white,
+                    borderRadius: 25,
                     child: Padding(
-                      padding: const EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.all(24.0),
                       child: Column(
                         children: [
-                          _buildScoreRow('Acertos Base', '+${widget.pontosBase}', Colors.green, Icons.check_circle_outline, _showPontosBase),
-                          _buildScoreRow('Bónus Velocidade', '+${widget.bonusTempo}', Colors.blue, Icons.timer_outlined, _showBonusTempo),
-                          _buildScoreRow('Penalidade Ajudas', '-${widget.penalidadeAjudas}', Colors.red, Icons.help_outline, _showPenalidadeAjudas),
-                          _buildScoreRow('Penalidade Tempo', '-${widget.penalidadeTempo}', Colors.redAccent, Icons.hourglass_empty, _showPenalidadeTempo),
-                          
+                          _buildScoreRow('ACERTOS BASE', '+${widget.pontosBase}', AppColors.success, Icons.check_circle_outline, _showPontosBase),
+                          _buildScoreRow('BÓNUS VELOCIDADE', '+${widget.bonusTempo}', AppColors.primary, Icons.timer_outlined, _showBonusTempo),
+                          _buildScoreRow('PENALIDADE AJUDAS', '-${widget.penalidadeAjudas}', AppColors.error, Icons.help_outline, _showPenalidadeAjudas),
+                          _buildScoreRow('PENALIDADE TEMPO', '-${widget.penalidadeTempo}', AppColors.error, Icons.hourglass_empty, _showPenalidadeTempo),
+
                           AnimatedOpacity(
                             opacity: _showTotalFinal ? 1.0 : 0.0,
-                            duration: const Duration(milliseconds: 500),
+                            duration: const Duration(milliseconds: 600),
                             child: Column(
                               children: [
-                                const Divider(height: 30, thickness: 1.5),
+                                const Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15),
+                                  child: Divider(thickness: 2, color: Colors.black12),
+                                ),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    const Text('TOTAL FINAL', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black87)),
-                                    Text('${widget.pontuacaoFinal} pts', style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: Colors.blue)),
+                                    Text('TOTAL FINAL'.toUpperCase(), style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Colors.black87)),
+                                    Text('${widget.pontuacaoFinal} PTS', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: AppColors.primary)),
                                   ],
                                 ),
                               ],
@@ -242,103 +244,113 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
                       ),
                     ),
                   ),
-                ),
-                const SizedBox(height: 24),
+                  const SizedBox(height: 30),
 
-                _buildSectionTitle(context, 'Revisão das Respostas'),
-                SizedBox(
-                  height: isTablet ? 180 : 150,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: widget.respostasUtilizador.length,
-                    itemBuilder: (context, index) {
-                      final resp = widget.respostasUtilizador[index];
-                      final bool correta = resp['correta'] as bool;
-                      return GestureDetector(
-                        onTap: () => _showReviewDialog(context, resp, index + 1),
-                        child: Container(
-                          width: isTablet ? 150 : 120,
-                          margin: const EdgeInsets.only(right: 12),
-                          decoration: BoxDecoration(
-                            color: correta ? Colors.green.withOpacity(0.9) : Colors.red.withOpacity(0.9),
-                            borderRadius: BorderRadius.circular(20),
-                            boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 5, offset: Offset(0, 3))],
+                  _buildSectionTitle('REVISÃO DAS RESPOSTAS'),
+                  SizedBox(
+                    height: 140,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      padding: const EdgeInsets.symmetric(vertical: 5),
+                      itemCount: widget.respostasUtilizador.length,
+                      itemBuilder: (context, index) {
+                        final resp = widget.respostasUtilizador[index];
+                        final bool correta = resp['correta'] as bool;
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 15),
+                          child: ScalePressWrapper(
+                            onTap: () => _showReviewDialog(context, resp, index + 1),
+                            child: NeumorphicWrapper(
+                              baseColor: correta ? AppColors.success : AppColors.error,
+                              borderRadius: 25,
+                              child: Container(
+                                width: 110,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text('Q${index + 1}', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 20)),
+                                    const SizedBox(height: 5),
+                                    Icon(correta ? Icons.check_circle_outline_rounded : Icons.highlight_off_rounded, color: Colors.white, size: 32),
+                                    const SizedBox(height: 8),
+                                    Text('VER'.toUpperCase(), style: const TextStyle(color: Colors.white70, fontSize: 9, fontWeight: FontWeight.w900)),
+                                  ],
+                                ),
+                              ),
+                            ),
                           ),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text('Q${index + 1}', style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18)),
-                              const SizedBox(height: 4),
-                              Icon(correta ? Icons.check_circle_outline : Icons.highlight_off_rounded, color: Colors.white, size: 28),
-                              const SizedBox(height: 8),
-                              const Text('DETALHES', style: TextStyle(color: Colors.white70, fontSize: 10, fontWeight: FontWeight.bold)),
-                            ],
-                          ),
-                        ),
-                      );
-                    },
+                        );
+                      },
+                    ),
                   ),
-                ),
-                const SizedBox(height: 30),
+                  const SizedBox(height: 40),
 
-                Container(
-                  width: isTablet ? size.width * 0.5 : double.infinity,
-                  child: Column(
+                  // BOTÕES DE AÇÃO
+                  Column(
                     children: [
                       if (sucesso)
                         _buildActionButton(
                           context,
                           'PRÓXIMO NÍVEL',
                           Icons.arrow_forward_rounded,
-                          Colors.green.shade600,
+                          AppColors.success,
                           () => Navigator.of(context).pop(),
                         ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 15),
                       _buildActionButton(
                         context,
                         'REFAZER O QUIZ',
                         Icons.refresh_rounded,
-                        Colors.blue.shade700,
+                        AppColors.primary,
                         () => _refazerQuiz(context),
                       ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: 15),
+                      _buildActionButton(
+                        context,
+                        'ESTUDAR LIÇÃO (+15 PTS)',
+                        Icons.menu_book_rounded,
+                        AppColors.accent,
+                        () => _lerConteudo(context),
+                      ),
+                      const SizedBox(height: 15),
                       if (!sucesso)
                         _buildActionButton(
                           context,
-                          'ESTUDAR CARTÕES',
+                          'REFORÇO CARTÃO DE ESTUDO',
                           Icons.style_rounded,
-                          Colors.purple.shade600,
+                          AppColors.tertiary,
                           () => _irParaFlashcards(context),
                         ),
-                      const SizedBox(height: 8),
-                      SizedBox(
-                        width: double.infinity,
-                        child: OutlinedButton.icon(
-                          onPressed: () => Navigator.of(context).pushAndRemoveUntil(
-                            MaterialPageRoute(builder: (context) => const HomeScreen()),
-                            (route) => false,
+                      const SizedBox(height: 10),
+                      ScalePressWrapper(
+                        onTap: () => Navigator.of(context).pushAndRemoveUntil(
+                          MaterialPageRoute(builder: (context) => const HomeScreen()),
+                          (route) => false,
+                        ),
+                        child: Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(25),
+                            border: Border.all(color: AppColors.primary, width: 2),
                           ),
-                          icon: Icon(Icons.home_rounded, color: Colors.blue.shade900),
-                          label: Text(
-                            'VOLTAR AO INÍCIO',
-                            style: TextStyle(
-                              color: Colors.blue.shade900,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                            ),
-                          ),
-                          style: OutlinedButton.styleFrom(
-                            side: BorderSide(color: Colors.blue.shade900, width: 2),
-                            padding: const EdgeInsets.symmetric(vertical: 16),
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-                            backgroundColor: Colors.white.withOpacity(0.8),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(Icons.home_rounded, color: AppColors.primary, size: 20),
+                              const SizedBox(width: 10),
+                              Text(
+                                'VOLTAR AO INÍCIO'.toUpperCase(),
+                                style: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.w900, fontSize: 15),
+                              ),
+                            ],
                           ),
                         ),
                       ),
                     ],
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
@@ -346,24 +358,15 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
     );
   }
 
-  Widget _buildSectionTitle(BuildContext context, String title) {
-    final Color textColor = Theme.of(context).colorScheme.onSurface;
+  Widget _buildSectionTitle(String title) {
     return Padding(
-      padding: const EdgeInsets.only(left: 4.0, bottom: 12.0),
-      child: Row(
-        children: [
-          Text(
-            title.toUpperCase(),
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 1.2,
-              color: textColor,
-            ),
-          ),
-          const SizedBox(width: 10),
-          const Expanded(child: Divider(color: Colors.white24, thickness: 1.5)),
-        ],
+      padding: const EdgeInsets.only(left: 8, bottom: 12),
+      child: Align(
+        alignment: Alignment.centerLeft,
+        child: Text(
+          title.toUpperCase(),
+          style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w900, letterSpacing: 1.5, color: AppColors.primary),
+        ),
       ),
     );
   }
@@ -373,14 +376,18 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
       opacity: isVisible ? 1.0 : 0.0,
       duration: const Duration(milliseconds: 500),
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6.0),
+        padding: const EdgeInsets.symmetric(vertical: 8.0),
         child: Row(
           children: [
-            Icon(icon, size: 18, color: color.withOpacity(0.7)),
-            const SizedBox(width: 10),
-            Text(label, style: const TextStyle(fontSize: 15, color: Colors.blueGrey, fontWeight: FontWeight.w500)),
+            Container(
+              padding: const EdgeInsets.all(6),
+              decoration: BoxDecoration(color: color.withValues(alpha: 0.1), shape: BoxShape.circle),
+              child: Icon(icon, size: 18, color: color),
+            ),
+            const SizedBox(width: 12),
+            Text(label.toUpperCase(), style: const TextStyle(fontSize: 12, color: Colors.blueGrey, fontWeight: FontWeight.w900)),
             const Spacer(),
-            Text(value, style: TextStyle(fontSize: 16, color: color, fontWeight: FontWeight.bold)),
+            Text(value, style: TextStyle(fontSize: 18, color: color, fontWeight: FontWeight.w900)),
           ],
         ),
       ),
@@ -388,19 +395,26 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
   }
 
   Widget _buildActionButton(BuildContext context, String label, IconData icon, Color color, VoidCallback onTap) {
-    return Container(
-      width: double.infinity,
-      decoration: BoxDecoration(
-        boxShadow: [BoxShadow(color: color.withOpacity(0.3), blurRadius: 10, offset: const Offset(0, 5))],
-      ),
-      child: ElevatedButton.icon(
-        onPressed: onTap,
-        icon: Icon(icon, color: Colors.white),
-        label: Text(label, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white)),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: color,
-          padding: const EdgeInsets.symmetric(vertical: 16),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+    return ScalePressWrapper(
+      onTap: onTap,
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(vertical: 16),
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.circular(25),
+          boxShadow: [BoxShadow(color: color.withValues(alpha: 0.4), blurRadius: 12, offset: const Offset(0, 6))],
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(icon, color: Colors.white, size: 22),
+            const SizedBox(width: 12),
+            Text(
+              label.toUpperCase(),
+              style: Theme.of(context).textTheme.labelLarge?.copyWith(fontSize: 15, fontWeight: FontWeight.w900, color: Colors.white),
+            ),
+          ],
         ),
       ),
     );
@@ -413,44 +427,42 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
     showDialog(
       context: context,
       builder: (BuildContext context) {
-        final size = MediaQuery.of(context).size;
         return AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
           title: Row(
             children: [
-              Icon(correta ? Icons.check_circle_rounded : Icons.cancel_rounded, color: correta ? Colors.green : Colors.red),
+              Icon(correta ? Icons.check_circle_rounded : Icons.cancel_rounded, 
+                color: correta ? AppColors.success : AppColors.error, size: 28),
               const SizedBox(width: 10),
-              Text('Revisão Q$num'),
+              Text('REVISÃO Q$num'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
             ],
           ),
-          content: Container(
-            width: size.width * 0.8,
-            child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Text('Pergunta:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue)),
-                  const SizedBox(height: 4),
-                  Text(p.pergunta),
-                  const SizedBox(height: 16),
-                  const Text('Tua Resposta:', style: TextStyle(fontWeight: FontWeight.bold)),
-                  const SizedBox(height: 4),
-                  Text(data['respostaDada'] ?? 'Sem resposta', style: TextStyle(color: correta ? Colors.green : Colors.red)),
-                  if (!correta) ...[
-                    const SizedBox(height: 16),
-                    const Text('Resposta Correta:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
-                    const SizedBox(height: 4),
-                    Text(p.respostaCorreta),
-                  ],
+          content: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text('PERGUNTA:'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.primary, fontSize: 11)),
+                const SizedBox(height: 6),
+                Text(p.pergunta.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: Colors.blueGrey)),
+                const SizedBox(height: 20),
+                Text('TUA RESPOSTA:'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 11)),
+                const SizedBox(height: 6),
+                Text((data['respostaDada'] ?? 'Sem resposta').toString().toUpperCase(), 
+                  style: TextStyle(color: correta ? AppColors.success : AppColors.error, fontWeight: FontWeight.w900, fontSize: 14)),
+                if (!correta) ...[
+                  const SizedBox(height: 20),
+                  Text('RESPOSTA CORRETA:'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.success, fontSize: 11)),
+                  const SizedBox(height: 6),
+                  Text(p.respostaCorreta.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.success, fontSize: 14)),
                 ],
-              ),
+              ],
             ),
           ),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text('OK', style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text('ENTENDIDO'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.primary)),
             ),
           ],
         );
@@ -465,6 +477,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
         builder: (context) => QuizScreen(
           perguntas: perguntas,
           disciplinaId: widget.disciplinaId,
+          disciplina: widget.disciplina,
           capituloIndex: widget.capituloIndex,
           flashCards: widget.flashCards,
         ),
@@ -476,8 +489,19 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) => FlashCardScreen(
-          titulo: 'Reforço',
+          titulo: 'REFORÇO',
           flashCards: widget.flashCards,
+        ),
+      ),
+    );
+  }
+
+  void _lerConteudo(BuildContext context) {
+    // Redireciona para a tela de listagem de capítulos da disciplina
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (context) => CapitulosScreen(
+          disciplina: widget.disciplina,
         ),
       ),
     );

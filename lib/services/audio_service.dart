@@ -20,8 +20,8 @@ class AudioService {
 
     // Pre-initialize players for common sounds to reduce delay on Web
     if (kIsWeb) {
-      await _preloadSfx('acerto.mp3');
-      await _preloadSfx('erro.mp3');
+      await _preloadSfx('correct.mp3');
+      await _preloadSfx('incorrect.mp3');
       await _preloadSfx('hint.mp3');
       await _preloadSfx('jogo.mp3');
     }
@@ -36,20 +36,25 @@ class AudioService {
   Future<void> playSfx(String fileName) async {
     if (!_audioEnabled) return;
 
+    // Mapeamento de nomes antigos para os ficheiros reais existentes
+    String actualFile = fileName;
+    if (fileName == 'acerto.mp3') actualFile = 'correct.mp3';
+    if (fileName == 'erro.mp3') actualFile = 'incorrect.mp3';
+
     try {
-      if (_sfxPlayers.containsKey(fileName)) {
-        final player = _sfxPlayers[fileName]!;
+      if (_sfxPlayers.containsKey(actualFile)) {
+        final player = _sfxPlayers[actualFile]!;
         await player.stop();
         await player.resume();
       } else {
         // Fallback for sounds not preloaded
         final player = AudioPlayer();
         await player.setVolume(_volume);
-        await player.play(AssetSource('sounds/$fileName'));
+        await player.play(AssetSource('sounds/$actualFile'));
         player.onPlayerComplete.listen((_) => player.dispose());
       }
     } catch (e) {
-      debugPrint('Error playing SFX $fileName: $e');
+      debugPrint('Erro AudioService: $e');
     }
   }
 

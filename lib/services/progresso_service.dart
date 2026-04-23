@@ -80,7 +80,7 @@ class ProgressoService with ChangeNotifier {
     List<ProgressoCapitulo> todosProgressos = [];
     try {
       if (_db != null) {
-        final query = _db!.select(_db!.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfileUid));
+        final query = _db.select(_db.progressoCapitulos)..where((t) => t.profileUid.equals(activeProfileUid));
         todosProgressos = await query.get();
       }
     } catch (dbError) {
@@ -133,7 +133,7 @@ class ProgressoService with ChangeNotifier {
         activeProfile.currentStreak != _currentStreak)) {
       
       try {
-        await (_db!.update(_db!.profiles)..where((t) => t.uid.equals(activeProfile.uid))).write(
+        await (_db.update(_db.profiles)..where((t) => t.uid.equals(activeProfile.uid))).write(
           ProfilesCompanion(
             totalPontos: Value(totalPontos),
             totalDiamantes: Value(_totalDiamantes),
@@ -187,20 +187,21 @@ class ProgressoService with ChangeNotifier {
   }
 
   Future<void> _updateAndLoadStreak() async {
-    if (_profileProvider?.activeProfile == null) return;
-    final uid = _profileProvider!.activeProfile!.uid;
+    final activeProfile = _profileProvider?.activeProfile;
+    if (activeProfile == null) return;
+    final uid = activeProfile.uid;
 
     if (_db == null) {
        _currentStreak = 0;
        return;
     }
 
-    final stats = await (_db!.select(_db!.userStatsTable)..where((t) => t.profileUid.equals(uid))).getSingleOrNull();
+    final stats = await (_db.select(_db.userStatsTable)..where((t) => t.profileUid.equals(uid))).getSingleOrNull();
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
     
     if (stats == null) {
-      await _db!.into(_db!.userStatsTable).insert(UserStatsTableCompanion.insert(
+      await _db.into(_db.userStatsTable).insert(UserStatsTableCompanion.insert(
         profileUid: uid,
         lastActivityDate: today,
         currentStreak: const Value(0),
@@ -213,7 +214,7 @@ class ProgressoService with ChangeNotifier {
       if (difference == 1) {
         _currentStreak = stats.currentStreak;
       } else if (difference > 1) {
-        await (_db!.update(_db!.userStatsTable)..where((t) => t.profileUid.equals(uid))).write(
+        await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(uid))).write(
           const UserStatsTableCompanion(currentStreak: Value(0)),
         );
         _currentStreak = 0;
@@ -230,14 +231,14 @@ class ProgressoService with ChangeNotifier {
     try {
       if (_db != null) {
         await Future<void>(() async {
-          final progressoExistente = await (_db!.select(_db!.progressoCapitulos)
+          final progressoExistente = await (_db.select(_db.progressoCapitulos)
             ..where((t) => t.profileUid.equals(activeProfileUid) & t.capituloId.equals(capituloId)))
             .getSingleOrNull();
 
           if (tipo == 'payment' || progressoExistente == null || (tipo != 'payment' && novaPontuacao > progressoExistente.pontuacao)) {
-            await _db!.transaction(() async {
+            await _db.transaction(() async {
               if (tipo == 'payment') {
-                await _db!.into(_db!.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
                   capituloId: '${capituloId}_${DateTime.now().millisecondsSinceEpoch}',
                   pontuacao: novaPontuacao,
                   dataConclusao: DateTime.now(),
@@ -245,7 +246,7 @@ class ProgressoService with ChangeNotifier {
                   tipo: Value(tipo),
                 ));
               } else if (progressoExistente == null) {
-                await _db!.into(_db!.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
                   capituloId: capituloId,
                   pontuacao: novaPontuacao,
                   dataConclusao: DateTime.now(),
@@ -253,7 +254,7 @@ class ProgressoService with ChangeNotifier {
                   tipo: Value(tipo),
                 ));
               } else {
-                await (_db!.update(_db!.progressoCapitulos)
+                await (_db.update(_db.progressoCapitulos)
                   ..where((t) => t.id.equals(progressoExistente.id)))
                   .write(ProgressoCapitulosCompanion(
                     pontuacao: Value(novaPontuacao),
@@ -262,7 +263,7 @@ class ProgressoService with ChangeNotifier {
               }
               
               if (tipo == 'quiz' || tipo == 'leitura') {
-                final stats = await (_db!.select(_db!.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).getSingleOrNull();
+                final stats = await (_db.select(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).getSingleOrNull();
                 final today = DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day);
                 
                 if (stats != null) {
@@ -270,7 +271,7 @@ class ProgressoService with ChangeNotifier {
                   if (today.difference(lastDate).inDays == 1) {
                     int newStreak = stats.currentStreak + 1;
                     int newHighest = max(newStreak, stats.highestStreak);
-                    await (_db!.update(_db!.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
+                    await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
                       UserStatsTableCompanion(
                         currentStreak: Value(newStreak),
                         lastActivityDate: Value(today),
@@ -280,7 +281,7 @@ class ProgressoService with ChangeNotifier {
 
                     // Bónus: A cada 6 dias consecutivos, ganha 500 Pontos
                     if (newStreak % 6 == 0) {
-                      await _db!.into(_db!.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                      await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
                         capituloId: 'bonus_streak_${newStreak}_${today.millisecondsSinceEpoch}',
                         pontuacao: 500,
                         dataConclusao: DateTime.now(),
@@ -289,7 +290,7 @@ class ProgressoService with ChangeNotifier {
                       ));
                     }
                   } else if (today.difference(lastDate).inDays > 1 || stats.currentStreak == 0) {
-                    await (_db!.update(_db!.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
+                    await (_db.update(_db.userStatsTable)..where((t) => t.profileUid.equals(activeProfileUid))).write(
                       UserStatsTableCompanion(
                         currentStreak: const Value(1),
                         lastActivityDate: Value(today),
@@ -297,7 +298,7 @@ class ProgressoService with ChangeNotifier {
                     );
                   }
                 } else {
-                  await _db!.into(_db!.userStatsTable).insert(UserStatsTableCompanion.insert(
+                  await _db.into(_db.userStatsTable).insert(UserStatsTableCompanion.insert(
                     profileUid: activeProfileUid,
                     currentStreak: const Value(1),
                     lastActivityDate: today,
@@ -386,15 +387,15 @@ class ProgressoService with ChangeNotifier {
 
       if (_db != null) {
         try {
-          await _db!.transaction(() async {
+          await _db.transaction(() async {
             for (var profileDoc in profilesSnapshot.docs) {
               final profileUid = profileDoc.id;
               
               final profileData = profileDoc.data();
               if (profileData.containsKey('currentStreak')) {
-                final existingStats = await (_db!.select(_db!.userStatsTable)..where((t) => t.profileUid.equals(profileUid))).getSingleOrNull();
+                final existingStats = await (_db.select(_db.userStatsTable)..where((t) => t.profileUid.equals(profileUid))).getSingleOrNull();
                 if (existingStats == null) {
-                  await _db!.into(_db!.userStatsTable).insert(UserStatsTableCompanion.insert(
+                  await _db.into(_db.userStatsTable).insert(UserStatsTableCompanion.insert(
                     profileUid: profileUid, 
                     lastActivityDate: DateTime.now(),
                     currentStreak: Value(profileData['currentStreak'] ?? 0),
@@ -408,14 +409,14 @@ class ProgressoService with ChangeNotifier {
                 final data = progDoc.data();
                 final capituloId = (data['capituloId'] ?? progDoc.id).toString();
                 
-                final existing = await (_db!.select(_db!.progressoCapitulos)
+                final existing = await (_db.select(_db.progressoCapitulos)
                     ..where((t) => t.profileUid.equals(profileUid) & t.capituloId.equals(capituloId)))
                     .getSingleOrNull();
 
                 final cloudPontuacao = data['pontuacao'] ?? 0;
 
                 if (existing == null) {
-                  await _db!.into(_db!.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
+                  await _db.into(_db.progressoCapitulos).insert(ProgressoCapitulosCompanion.insert(
                     capituloId: capituloId,
                     profileUid: profileUid,
                     pontuacao: cloudPontuacao,
@@ -423,7 +424,7 @@ class ProgressoService with ChangeNotifier {
                     dataConclusao: (data['dataConclusao'] as Timestamp?)?.toDate() ?? DateTime.now(),
                   ));
                 } else if (existing.pontuacao < cloudPontuacao) {
-                  await (_db!.update(_db!.progressoCapitulos)..where((t) => t.id.equals(existing.id))).write(
+                  await (_db.update(_db.progressoCapitulos)..where((t) => t.id.equals(existing.id))).write(
                     ProgressoCapitulosCompanion(
                       pontuacao: Value(cloudPontuacao),
                       tipo: Value(data['tipo'] ?? 'quiz'),
@@ -460,16 +461,16 @@ class ProgressoService with ChangeNotifier {
 
       // 2. Sincroniza TODOS os perfis locais
       if (_db != null) {
-        final allLocalProfiles = await _db!.select(_db!.profiles).get();
+        final allLocalProfiles = await _db.select(_db.profiles).get();
         debugPrint('[ProgressoService] Iniciando sync massivo para ${allLocalProfiles.length} perfis');
 
         for (final profile in allLocalProfiles) {
-          final localProgressos = await (_db!.select(_db!.progressoCapitulos)
+          final localProgressos = await (_db.select(_db.progressoCapitulos)
             ..where((t) => t.profileUid.equals(profile.uid))).get();
 
         // Limita o batch por perfil para segurança
         final batch = _firestore.batch();
-        
+
         for (var p in localProgressos) {
           final docRef = _firestore
               .collection('users').doc(user.uid)
@@ -514,8 +515,8 @@ class ProgressoService with ChangeNotifier {
 
   Future<void> removeProgressForProfile(String profileUid) async {
     if (_db != null) {
-      await (_db!.delete(_db!.progressoCapitulos)..where((t) => t.profileUid.equals(profileUid))).go();
-      await (_db!.delete(_db!.userStatsTable)..where((t) => t.profileUid.equals(profileUid))).go();
+      await (_db.delete(_db.progressoCapitulos)..where((t) => t.profileUid.equals(profileUid))).go();
+      await (_db.delete(_db.userStatsTable)..where((t) => t.profileUid.equals(profileUid))).go();
     }
     
     final user = _auth.currentUser;
@@ -535,17 +536,18 @@ class ProgressoService with ChangeNotifier {
   bool isCapituloConcluido(String capituloId) => _progressoPorCapitulo.containsKey(capituloId);
 
   Future<Map<String, int>> getProgresso(String disciplinaId) async {
-    if (_profileProvider?.activeProfile == null) return {};
+    final activeProfile = _profileProvider?.activeProfile;
+    if (activeProfile == null) return {};
     if (kIsWeb || _db == null) {
       return Map<String, int>.fromEntries(
         _progressoPorCapitulo.entries.where((e) => e.key.startsWith(disciplinaId)),
       );
     }
 
-    final activeProfileUid = _profileProvider!.activeProfile!.uid;
+    final activeProfileUid = activeProfile.uid;
 
     try {
-      final query = _db!.select(_db!.progressoCapitulos)
+      final query = _db.select(_db.progressoCapitulos)
         ..where((t) => t.profileUid.equals(activeProfileUid) & t.capituloId.like('$disciplinaId%'));
       final progressos = await query.get();
 

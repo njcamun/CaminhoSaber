@@ -33,6 +33,7 @@ dependencies:
   firebase_app_check: ^0.3.0
   fl_chart: ^0.68.0
   flutter_tts: ^4.2.2
+  google_fonts: ^6.2.1
   video_player: ^2.9.2 # NOVO
   drift: ^2.18.0
   sqlite3_flutter_libs: ^0.5.24

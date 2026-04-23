@@ -1,4 +1,7 @@
+// lib/ui/widgets/background_container.dart
+
 import 'package:flutter/material.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 
 class BackgroundContainer extends StatelessWidget {
   final Widget child;
@@ -9,37 +12,16 @@ class BackgroundContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool isDarkMode = Theme.of(context).brightness == Brightness.dark;
-    final Color primaryColor = baseColor ?? Colors.blue;
-
+    
+    // Padrão Educlass: Fundo sólido e limpo para realçar os cards neumórficos e as cores vibrantes.
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 800),
+      duration: const Duration(milliseconds: 300),
+      width: double.infinity,
+      height: double.infinity,
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: isDarkMode 
-            ? [Colors.black, primaryColor.withOpacity(0.2)]
-            : [primaryColor.withOpacity(0.1), Colors.white],
-        ),
+        color: isDarkMode ? AppColors.backgroundDark : AppColors.background,
       ),
-      child: Stack(
-        children: [
-          Opacity(
-            opacity: 0.1,
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(isDarkMode 
-                    ? 'assets/images/background_dark.png' 
-                    : 'assets/images/background.png'),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-          child,
-        ],
-      ),
+      child: child,
     );
   }
 }

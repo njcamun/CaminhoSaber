@@ -3,6 +3,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
 import 'package:caminho_do_saber/services/disciplina_file_service.dart';
 import 'package:uuid/uuid.dart';
@@ -35,12 +36,16 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
     final jsonString = const JsonEncoder.withIndent('  ').convert(_disciplina.toJson());
     Clipboard.setData(ClipboardData(text: jsonString));
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('JSON da disciplina copiado para a área de transferência!')),
+      SnackBar(
+        content: Text('JSON DA DISCIPLINA COPIADO!'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600)),
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+      ),
     );
   }
 
   void _showCreateConteudoDialog() {
-    final formKey = GlobalKey<FormState>();
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
     final capituloController = TextEditingController();
     final resumoController = TextEditingController();
     final conteudoController = TextEditingController();
@@ -49,7 +54,14 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
       context: context,
       builder: (BuildContext dialogContext) {
         return AlertDialog(
-          title: const Text('Criar Novo Conteúdo'),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+          title: Row(
+            children: [
+              const Icon(Icons.add_box_rounded, color: AppColors.primary, size: 28),
+              const SizedBox(width: 10),
+              Text('CRIAR NOVO CONTEÚDO'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
+            ],
+          ),
           content: SingleChildScrollView(
             child: Form(
               key: formKey,
@@ -58,34 +70,34 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
                 children: [
                   TextFormField(
                     controller: capituloController,
-                    decoration: const InputDecoration(
-                      labelText: 'Capítulo',
-                      hintText: 'Ex: Nível 1 - Introdução',
-                      border: OutlineInputBorder(),
+                    decoration: InputDecoration(
+                      labelText: 'CAPÍTULO'.toUpperCase(),
+                      hintText: 'Ex: Nível 1 - Introdução'.toUpperCase(),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                     ),
-                    validator: (value) => value!.isEmpty ? 'Obrigatório' : null,
+                    validator: (value) => value!.isEmpty ? 'OBRIGATÓRIO' : null,
                   ),
                   const SizedBox(height: 16),
                   TextFormField(
                     controller: resumoController,
-                    decoration: const InputDecoration(
-                      labelText: 'Resumo',
-                      hintText: 'Breve descrição.',
-                      border: OutlineInputBorder(),
+                    decoration: InputDecoration(
+                      labelText: 'RESUMO'.toUpperCase(),
+                      hintText: 'Breve descrição.'.toUpperCase(),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                     ),
                     maxLines: 2,
-                    validator: (value) => value!.isEmpty ? 'Obrigatório' : null,
+                    validator: (value) => value!.isEmpty ? 'OBRIGATÓRIO' : null,
                   ),
                   const SizedBox(height: 16),
                   TextFormField(
                     controller: conteudoController,
-                    decoration: const InputDecoration(
-                      labelText: 'Conteúdo (HTML/Texto)',
-                      hintText: 'Podes usar tags HTML como <p>, <strong>...',
-                      border: OutlineInputBorder(),
+                    decoration: InputDecoration(
+                      labelText: 'CONTEÚDO (HTML/TEXTO)'.toUpperCase(),
+                      hintText: 'Podes usar tags HTML como <p>, <strong>...'.toUpperCase(),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                     ),
                     maxLines: 8,
-                    validator: (value) => value!.isEmpty ? 'Obrigatório' : null,
+                    validator: (value) => value!.isEmpty ? 'OBRIGATÓRIO' : null,
                   ),
                 ],
               ),
@@ -93,7 +105,7 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
           ),
           actions: <Widget>[
             TextButton(
-              child: const Text('Exportar Apenas Este'),
+              child: const Text('EXPORTAR APENAS ESTE', style: TextStyle(fontWeight: FontWeight.w600)),
               onPressed: () {
                 if (formKey.currentState!.validate()) {
                   final item = {
@@ -104,12 +116,23 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
                   };
                   Clipboard.setData(ClipboardData(text: const JsonEncoder.withIndent('  ').convert(item)));
                   Navigator.of(dialogContext).pop();
-                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Item copiado como JSON!')));
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('ITEM COPIADO COMO JSON!'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600)),
+                      behavior: SnackBarBehavior.floating,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+                    ),
+                  );
                 }
               },
             ),
             ElevatedButton(
-              child: const Text('Guardar'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.primary,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+              ),
+              child: Text('GUARDAR', style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w600, color: Colors.white)),
               onPressed: () async {
                 if (formKey.currentState!.validate()) {
                   final novoConteudo = UserCapitulo(
@@ -145,25 +168,31 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
           child: Wrap(
             children: <Widget>[
               ListTile(
-                leading: const Icon(Icons.copy_rounded),
-                title: const Text('Copiar JSON'),
+                leading: const Icon(Icons.copy_rounded, color: AppColors.primary),
+                title: Text('COPIAR JSON'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600)),
                 onTap: () {
                   Navigator.of(context).pop();
                   Clipboard.setData(ClipboardData(text: const JsonEncoder.withIndent('  ').convert(conteudo.toJson())));
-                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('JSON do capítulo copiado!')));
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('JSON DO CAPÍTULO COPIADO!'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600)),
+                      behavior: SnackBarBehavior.floating,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+                    ),
+                  );
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.edit),
-                title: const Text('Editar'),
+                leading: const Icon(Icons.edit, color: AppColors.primary),
+                title: Text('EDITAR'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600)),
                 onTap: () {
                   Navigator.of(context).pop();
                   _showEditConteudoDialog(conteudo);
                 },
               ),
               ListTile(
-                leading: const Icon(Icons.delete, color: Colors.red),
-                title: const Text('Remover'),
+                leading: const Icon(Icons.delete, color: AppColors.error),
+                title: Text('REMOVER'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600, color: AppColors.error)),
                 onTap: () {
                   Navigator.of(context).pop();
                   _deleteConteudo(conteudo);
@@ -178,7 +207,7 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
 
   // Métodos de edição e remoção mantidos conforme original...
   void _showEditConteudoDialog(UserCapitulo conteudo) {
-    final formKey = GlobalKey<FormState>();
+    final GlobalKey<FormState> formKey = GlobalKey<FormState>();
     final capituloController = TextEditingController(text: conteudo.capitulo);
     final resumoController = TextEditingController(text: conteudo.resumo);
     final conteudoController = TextEditingController(text: conteudo.conteudo);
@@ -187,26 +216,58 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
       context: context,
       builder: (BuildContext dialogContext) {
         return AlertDialog(
-          title: const Text('Editar Conteúdo'),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+          title: Row(
+            children: [
+              const Icon(Icons.edit_document, color: AppColors.primary, size: 28),
+              const SizedBox(width: 10),
+              Text('EDITAR CONTEÚDO'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
+            ],
+          ),
           content: SingleChildScrollView(
             child: Form(
               key: formKey,
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  TextFormField(controller: capituloController, decoration: const InputDecoration(labelText: 'Capítulo', border: OutlineInputBorder())),
+                  TextFormField(
+                    controller: capituloController,
+                    decoration: InputDecoration(
+                      labelText: 'CAPÍTULO'.toUpperCase(),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
+                    ),
+                  ),
                   const SizedBox(height: 16),
-                  TextFormField(controller: resumoController, decoration: const InputDecoration(labelText: 'Resumo', border: OutlineInputBorder()), maxLines: 2),
+                  TextFormField(
+                    controller: resumoController,
+                    decoration: InputDecoration(
+                      labelText: 'RESUMO'.toUpperCase(),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
+                    ),
+                    maxLines: 2,
+                  ),
                   const SizedBox(height: 16),
-                  TextFormField(controller: conteudoController, decoration: const InputDecoration(labelText: 'Conteúdo', border: OutlineInputBorder()), maxLines: 5),
+                  TextFormField(
+                    controller: conteudoController,
+                    decoration: InputDecoration(
+                      labelText: 'CONTEÚDO'.toUpperCase(),
+                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
+                    ),
+                    maxLines: 5,
+                  ),
                 ],
               ),
             ),
           ),
           actions: <Widget>[
-            TextButton(child: const Text('Cancelar'), onPressed: () => Navigator.of(dialogContext).pop()),
+            TextButton(child: const Text('CANCELAR', style: TextStyle(fontWeight: FontWeight.w600)), onPressed: () => Navigator.of(dialogContext).pop()),
             ElevatedButton(
-              child: const Text('Atualizar'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppColors.primary,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+              ),
+              child: const Text('ATUALIZAR', style: TextStyle(fontWeight: FontWeight.w600)),
               onPressed: () async {
                 if (formKey.currentState!.validate()) {
                   final updated = UserCapitulo(id: conteudo.id, capitulo: capituloController.text, resumo: resumoController.text, conteudo: conteudoController.text);
@@ -236,8 +297,8 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('${widget.disciplina.nome} (JSON Admin)'),
-        backgroundColor: Colors.blueGrey.shade800,
+        title: Text('${widget.disciplina.nome.toUpperCase()} (JSON ADMIN)', style: const TextStyle(fontWeight: FontWeight.w600)),
+        backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
         actions: [
           IconButton(
@@ -251,17 +312,20 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: _disciplina.capitulos.isEmpty
-              ? const Center(child: Text('Nenhum capítulo. Usa o + para criar.', style: TextStyle(color: Colors.white70)))
+              ? const Center(child: Text('NENHUM CAPÍTULO. USA O + PARA CRIAR.', style: TextStyle(color: Colors.white70, fontWeight: FontWeight.w600)))
               : ListView.builder(
                   itemCount: _disciplina.capitulos.length,
                   itemBuilder: (context, index) {
                     final item = _disciplina.capitulos[index];
                     return Card(
                       margin: const EdgeInsets.only(bottom: 12),
-                      color: Colors.white.withOpacity(0.9),
+                      color: Colors.white.withValues(alpha: 0.95),
+                      elevation: 4,
+                      shadowColor: Colors.black.withValues(alpha: 0.1),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
                       child: ListTile(
-                        title: Text(item.capitulo, style: const TextStyle(fontWeight: FontWeight.bold)),
-                        subtitle: Text(item.resumo, maxLines: 1, overflow: TextOverflow.ellipsis),
+                        title: Text(item.capitulo.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.bold, color: AppColors.primary)),
+                        subtitle: Text(item.resumo, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(color: Colors.blueGrey)),
                         trailing: const Icon(Icons.settings_ethernet_rounded),
                         onTap: () => _showConteudoOptions(context, item),
                       ),
@@ -272,7 +336,8 @@ class _AdicionarConteudoScreenState extends State<AdicionarConteudoScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _showCreateConteudoDialog,
-        backgroundColor: Colors.blueGrey.shade800,
+        backgroundColor: AppColors.primary,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
         child: const Icon(Icons.add, color: Colors.white),
       ),
     );

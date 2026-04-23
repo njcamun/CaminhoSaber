@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 
 enum AppButtonStatus { idle, success, error }
 
@@ -15,7 +16,7 @@ class AppButton extends StatefulWidget {
     required this.onTap,
     this.status = AppButtonStatus.idle,
     this.color,
-    this.borderRadius = 15.0,
+    this.borderRadius = 25.0,
     super.key,
   });
 
@@ -87,12 +88,12 @@ class _AppButtonState extends State<AppButton> with SingleTickerProviderStateMix
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 300),
             decoration: BoxDecoration(
-              color: widget.color ?? Colors.blue,
+              color: widget.color ?? AppColors.primary,
               borderRadius: BorderRadius.circular(widget.borderRadius),
               boxShadow: [
                 if (widget.status == AppButtonStatus.idle)
                   BoxShadow(
-                    color: (widget.color ?? Colors.blue).withOpacity(0.3),
+                    color: (widget.color ?? AppColors.primary).withValues(alpha: 0.3),
                     blurRadius: 8,
                     offset: const Offset(0, 4),
                   ),

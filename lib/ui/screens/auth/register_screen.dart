@@ -2,9 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:caminho_do_saber/ui/widgets/custom_text_field.dart';
+import 'package:caminho_do_saber/ui/widgets/custom_gradient_button.dart';
 import 'package:caminho_do_saber/services/auth_service.dart';
 import 'package:caminho_do_saber/ui/screens/home_screen.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
+import 'package:caminho_do_saber/ui/widgets/auth_form_card.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -57,7 +60,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           // Este 'else' pode não ser alcançado se registerWithEmail lançar exceções para erros
           // A lógica de erro é melhor tratada no bloco catch
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Erro no registo. Tente novamente.')),
+            SnackBar(content: Text('Erro no registo. Tente novamente.'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600))),
           );
         }
         // SUGESTÃO 2: Melhorar o tratamento de erros
@@ -73,7 +76,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           errorMessage = 'A palavra-passe é muito fraca.';
         }
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erro no registo: $errorMessage')),
+          SnackBar(content: Text('Erro no registo: $errorMessage'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600))),
         );
       } finally {
         // SUGESTÃO 1: Garantir que o estado de carregamento seja redefinido
@@ -88,54 +91,49 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   @override
   Widget build(BuildContext context) {
+    const primaryColor = AppColors.primary;
+
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: const Text('Criar uma Conta'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        iconTheme: IconThemeData(color: primaryColor),
       ),
       body: BackgroundContainer(
-        child: Center(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(26.0), // SUGESTÃO 5: const
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 10.0),
             child: Column(
-              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Card(
-                  elevation: 8.0,
-                  color: Colors.transparent,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(75.0),
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(75.0),
-                    child: Image.asset(
-                      'assets/images/logo.png',
-                      height: 150,
-                      width: 150,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
+                const SizedBox(height: 10),
+                Image.asset(
+                  'assets/icons/logo_B.png',
+                  height: 520,
+                  width: 520,
+                  fit: BoxFit.contain,
+                  errorBuilder: (context, error, stackTrace) => const Icon(Icons.school, size: 120, color: AppColors.primary),
                 ),
-                const SizedBox(height: 20), // SUGESTÃO 5: const
-                Card(
-                  color: Colors.white.withOpacity(0.8),
-                  elevation: 8.0,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16.0),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(24.0), // SUGESTÃO 5: const
+                Transform.translate(
+                  offset: const Offset(0, -80),
+                  child: AuthFormCard(
                     child: Form(
                       key: _formKey,
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
-                          const Text( // SUGESTÃO 5: const (se TextStyle também for)
-                            'Bem-vindo ao Caminho do Saber!',
-                            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black87),
+                          Text(
+                            'BEM-VINDO AO CAMINHO DO SABER!',
+                            style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.w600,
+                              color: primaryColor,
+                            ),
                             textAlign: TextAlign.center,
                           ),
-                          const SizedBox(height: 24), // SUGESTÃO 5: const
+                          const SizedBox(height: 24),
                           CustomTextField(
                             labelText: 'E-mail',
                             icon: Icons.email,
@@ -145,7 +143,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               if (value == null || value.trim().isEmpty) {
                                 return 'Por favor, insira o seu e-mail';
                               }
-                              // SUGESTÃO 4: Validação de email melhorada
                               final emailRegex = RegExp(
                                   r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+$");
                               if (!emailRegex.hasMatch(value.trim())) {
@@ -154,7 +151,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               return null;
                             },
                           ),
-                          const SizedBox(height: 16), // SUGESTÃO 5: const
+                          const SizedBox(height: 16),
                           CustomTextField(
                             labelText: 'Palavra-passe',
                             icon: Icons.lock,
@@ -170,7 +167,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               return null;
                             },
                           ),
-                          const SizedBox(height: 16), // SUGESTÃO 5: const
+                          const SizedBox(height: 16),
                           CustomTextField(
                             labelText: 'Confirmar Palavra-passe',
                             icon: Icons.lock,
@@ -186,25 +183,18 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               return null;
                             },
                           ),
-                          const SizedBox(height: 24), // SUGESTÃO 5: const
-                          ElevatedButton(
-                            // SUGESTÃO 1: Desabilitar botão e mostrar indicador de carregamento
-                            onPressed: _isLoading ? null : _submitForm,
-                            style: ElevatedButton.styleFrom(
-                              padding: const EdgeInsets.symmetric(vertical: 16), // SUGESTÃO 5: const
-                              textStyle: const TextStyle(fontSize: 18), // SUGESTÃO 5: const
-                            ),
-                            child: _isLoading
-                                ? const SizedBox( // SUGESTÃO 5: const
-                              height: 20,
-                              width: 20,
-                              child: CircularProgressIndicator(
-                                strokeWidth: 2,
-                                valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                              ),
-                            )
-                                : const Text('Criar Conta'), // SUGESTÃO 5: const
-                          ),
+                          const SizedBox(height: 24),
+                          _isLoading
+                              ? Center(
+                                  child: CircularProgressIndicator(
+                                    valueColor: AlwaysStoppedAnimation<Color>(primaryColor),
+                                  ),
+                                )
+                              : CustomGradientButton(
+                                  key: const ValueKey('register_submit_btn'),
+                                  text: 'CRIAR CONTA',
+                                  onPressed: _submitForm,
+                                ),
                         ],
                       ),
                     ),

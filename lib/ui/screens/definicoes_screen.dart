@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:audioplayers/audioplayers.dart';
 import 'package:caminho_do_saber/services/auth_service.dart';
 import 'package:caminho_do_saber/ui/screens/auth/login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -12,6 +11,8 @@ import 'package:provider/provider.dart';
 import 'package:caminho_do_saber/providers/pomodoro_provider.dart';
 import 'package:caminho_do_saber/providers/theme_provider.dart';
 import 'package:caminho_do_saber/services/audio_service.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
+import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
 
 class DefinicoesScreen extends StatefulWidget {
   const DefinicoesScreen({super.key});
@@ -31,11 +32,6 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
     _loadSettings();
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
   Future<void> _loadSettings() async {
     final prefs = await SharedPreferences.getInstance();
     if (mounted) {
@@ -48,18 +44,14 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
 
   Future<void> _handleAudioToggle(bool newValue) async {
     final prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _audioHabilitado = newValue;
-    });
+    setState(() => _audioHabilitado = newValue);
     await prefs.setBool('audioHabilitado', newValue);
     context.read<AudioService>().updateSettings(newValue, _volumeGeral);
   }
 
   Future<void> _setVolumeGeral(double newVolume) async {
     final prefs = await SharedPreferences.getInstance();
-    setState(() {
-      _volumeGeral = newVolume;
-    });
+    setState(() => _volumeGeral = newVolume);
     await prefs.setDouble('volumeGeral', newVolume);
     context.read<AudioService>().updateSettings(_audioHabilitado, newVolume);
   }
@@ -70,11 +62,30 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
     final bool? confirmar = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('Terminar Sessão?'),
-        content: const Text('Queres mesmo sair da tua conta?'),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+        title: Row(
+          children: [
+            const Icon(Icons.logout_rounded, color: AppColors.error, size: 28),
+            const SizedBox(width: 10),
+            Text('SAIR DA CONTA?'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
+          ],
+        ),
+        content: Text('QUERES MESMO TERMINAR A TUA SESSÃO NESTE DISPOSITIVO?'.toUpperCase(), 
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 11, color: Colors.blueGrey)),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context, false), child: const Text('Não')),
-          TextButton(onPressed: () => Navigator.pop(context, true), child: const Text('Sim', style: TextStyle(color: Colors.red))),
+          TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: Text('NÃO'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: Colors.blueGrey))),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppColors.error,
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+              elevation: 0,
+            ),
+            onPressed: () => Navigator.pop(context, true),
+            child: Text('SIM, SAIR'.toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w900, color: Colors.white)),
+          ),
         ],
       ),
     );
@@ -97,44 +108,39 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
         title: Row(
           children: [
-            Icon(Icons.timer_rounded, color: currentVal ? Colors.grey : Colors.redAccent, size: 28),
+            Icon(Icons.timer_rounded, color: AppColors.accent, size: 28),
             const SizedBox(width: 10),
-            const Text('Método Pomodoro', style: TextStyle(fontWeight: FontWeight.bold)),
+            Text('MÉTODO POMODORO'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
           ],
         ),
-        content: ConstrainedBox(
-          constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.8),
-          child: const SingleChildScrollView(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text('O que é?', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent)),
-                SizedBox(height: 4),
-                Text('É uma técnica de gestão de tempo que usa um temporizador para dividir o estudo em intervalos de 25 minutos, separados por breves pausas.'),
-                SizedBox(height: 16),
-                Text('✅ Vantagens:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.green)),
-                Text('• Aumenta o foco e a agilidade mental.\n• Evita a fadiga em sessões longas.\n• Cria um ritmo saudável de recompensas (pausas).'),
-                SizedBox(height: 16),
-                Text('⚠️ Desvantagens:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.orange)),
-                Text('• Pode interromper o "fluxo" se estiveres muito concentrado.\n• Exige disciplina para respeitar os tempos.'),
-              ],
-            ),
+        content: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('FOCO TOTAL'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.primary, fontSize: 13)),
+              const SizedBox(height: 6),
+              Text('ESTUDA DURANTE 25 MINUTOS SEM DISTRAÇÕES E FAZ UMA PAUSA DE 5 MINUTOS PARA RECUPERAR ENERGIAS!'.toUpperCase(),
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 11, color: Colors.blueGrey)),
+            ],
           ),
         ),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancelar', style: TextStyle(color: Colors.grey))),
+          TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text('CANCELAR'.toUpperCase(), style: const TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.w900))),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: currentVal ? Colors.grey : Colors.redAccent,
+              backgroundColor: AppColors.accent,
               foregroundColor: Colors.white,
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+              elevation: 0,
             ),
             onPressed: () {
               onToggle(!currentVal);
               Navigator.pop(context);
             },
-            child: Text(currentVal ? 'Desativar Agora' : 'Ativar Agora!', style: const TextStyle(fontWeight: FontWeight.bold)),
+            child: Text((currentVal ? 'DESATIVAR' : 'ATIVAR AGORA!').toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w900, color: Colors.white)),
           ),
         ],
       ),
@@ -143,15 +149,15 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    final isTablet = size.width > 600;
+    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Ajustes', style: TextStyle(fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.blue,
+        title: Text('AJUSTES'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, letterSpacing: 1.2)),
+        backgroundColor: AppColors.primary,
         elevation: 4,
         foregroundColor: Colors.white,
+        centerTitle: false,
       ),
       body: BackgroundContainer(
         child: Center(
@@ -162,116 +168,105 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
               builder: (context, snapshot) {
                 final user = snapshot.data;
                 return SingleChildScrollView(
-                  physics: const AlwaysScrollableScrollPhysics(),
-                  padding: const EdgeInsets.fromLTRB(16, 20, 16, 40),
+                  padding: const EdgeInsets.fromLTRB(16, 25, 16, 40),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      _buildSectionTitle(context, 'Conta'),
-                      Card(
-                        elevation: 4,
-                        shadowColor: Colors.black26,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                        color: Colors.white.withValues(alpha: 0.95),
+                      _buildSectionTitle('CONTA E PERFIL'),
+                      _buildNeumorphicSection(
                         child: InkWell(
                           onTap: _handleAuth,
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(25),
                           child: Padding(
-                            padding: const EdgeInsets.all(16.0),
+                            padding: const EdgeInsets.all(20.0),
                             child: Row(
                               children: [
-                                CircleAvatar(
-                                  radius: 30,
-                                  backgroundColor: Colors.blue.shade100,
-                                  backgroundImage: user?.photoURL != null ? NetworkImage(user!.photoURL!) : null,
-                                  child: user?.photoURL == null ? const Icon(Icons.person, size: 30, color: Colors.blue) : null,
+                                Container(
+                                  padding: const EdgeInsets.all(2),
+                                  decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all(color: AppColors.primary, width: 2)),
+                                  child: CircleAvatar(
+                                    radius: 30,
+                                    backgroundColor: AppColors.primary.withValues(alpha: 0.1),
+                                    backgroundImage: user?.photoURL != null ? NetworkImage(user!.photoURL!) : null,
+                                    child: user?.photoURL == null ? const Icon(Icons.person_rounded, size: 35, color: AppColors.primary) : null,
+                                  ),
                                 ),
                                 const SizedBox(width: 16),
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      FittedBox(fit: BoxFit.scaleDown, child: Text(user?.isAnonymous == true ? 'Visitante' : (user?.displayName ?? user?.email ?? 'Anónimo'), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: Colors.blueAccent))),
-                                      FittedBox(fit: BoxFit.scaleDown, child: Text(user?.isAnonymous == true ? 'Toque para sair' : (user?.email ?? 'Terminar sessão'), style: TextStyle(fontSize: 14, color: Colors.grey.shade700))),
+                                      Text(
+                                        user?.isAnonymous == true ? 'VISITANTE' : (user?.displayName?.toUpperCase() ?? user?.email?.toUpperCase() ?? 'EXPLORADOR'),
+                                        style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18, color: AppColors.primary),
+                                      ),
+                                      const SizedBox(height: 2),
+                                      Text(
+                                        (user?.isAnonymous == true ? 'TOQUE PARA SAIR' : (user?.email?.toUpperCase() ?? 'SESSÃO ATIVA')).toUpperCase(),
+                                        style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: Colors.blueGrey),
+                                      ),
                                     ],
                                   ),
                                 ),
-                                const Icon(Icons.logout, color: Colors.redAccent),
+                                const Icon(Icons.logout_rounded, color: AppColors.error),
                               ],
                             ),
                           ),
                         ),
                       ),
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 25),
 
                       if (user != null && !user.isAnonymous) ...[
-                        _buildSectionTitle(context, 'Dependentes'),
-                        Card(
-                          elevation: 4,
-                          shadowColor: Colors.black26,
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                          color: Colors.white.withValues(alpha: 0.95),
-                          child: InkWell(
-                            onTap: () {
-                              Navigator.of(context).push(MaterialPageRoute(builder: (context) => const DependentesScreen()));
-                            },
-                            borderRadius: BorderRadius.circular(20),
-                            child: const Padding(
-                              padding: EdgeInsets.all(16.0),
-                              child: Row(
-                                children: [
-                                  Icon(Icons.group_add_rounded, size: 30, color: Colors.blueAccent),
-                                  SizedBox(width: 16),
-                                  Expanded(child: Text('Gerir Perfis', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18))),
-                                  Icon(Icons.arrow_forward_ios, size: 16, color: Colors.grey),
-                                ],
-                              ),
-                            ),
+                        _buildSectionTitle('FAMÍLIA'),
+                        _buildNeumorphicSection(
+                          child: ListTile(
+                            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => const DependentesScreen())),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+                            leading: const Icon(Icons.group_add_rounded, size: 28, color: AppColors.primary),
+                            title: Text('GERIR PERFIS'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
+                            subtitle: Text('ADICIONA OU EDITA PERFIS DE ESTUDO'.toUpperCase(), style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.blueGrey)),
+                            trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 16, color: AppColors.primary),
                           ),
                         ),
-                        const SizedBox(height: 24),
+                        const SizedBox(height: 25),
                       ],
 
-                      _buildSectionTitle(context, 'Personalização'),
-                      Card(
-                        elevation: 4,
-                        shadowColor: Colors.black26,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                        color: Colors.white.withValues(alpha: 0.95),
+                      _buildSectionTitle('AMBIENTE'),
+                      _buildNeumorphicSection(
                         child: Column(
                           children: [
                             Consumer<ThemeProvider>(
-                              builder: (context, theme, child) {
-                                return SwitchListTile(
-                                  title: const Text('Filtro de Luz Azul', style: TextStyle(fontWeight: FontWeight.bold)),
-                                  subtitle: const Text('Protege os teus olhos durante a noite.', style: TextStyle(fontSize: 12)),
-                                  secondary: const Icon(Icons.remove_red_eye_rounded, color: Colors.orangeAccent),
-                                  value: theme.isBlueLightFilterEnabled,
-                                  onChanged: (val) => theme.toggleBlueLightFilter(),
-                                );
-                              },
+                              builder: (context, theme, _) => SwitchListTile(
+                                activeColor: AppColors.accent,
+                                title: Text('FILTRO DE LUZ AZUL'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
+                                subtitle: Text('PROTEGE OS TEUS OLHOS DURANTE A NOITE'.toUpperCase(), style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.blueGrey)),
+                                secondary: const Icon(Icons.nights_stay_rounded, color: AppColors.accent),
+                                value: theme.isBlueLightFilterEnabled,
+                                onChanged: (val) => theme.toggleBlueLightFilter(),
+                              ),
                             ),
-                            const Divider(height: 1, indent: 16, endIndent: 16),
+                            const Divider(indent: 70, endIndent: 20, height: 1),
                             SwitchListTile(
-                              title: const Text('Áudio Global', style: TextStyle(fontWeight: FontWeight.bold)),
-                              secondary: const Icon(Icons.volume_up, color: Colors.teal),
-                              activeThumbColor: Colors.blue,
+                              activeColor: AppColors.secondary,
+                              title: Text('EFEITOS SONOROS'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
+                              subtitle: Text('AUDIO FEEDBACK EM TODAS AS AÇÕES'.toUpperCase(), style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.blueGrey)),
+                              secondary: const Icon(Icons.volume_up_rounded, color: AppColors.secondary),
                               value: _audioHabilitado,
                               onChanged: _handleAudioToggle,
                             ),
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                              padding: const EdgeInsets.fromLTRB(70, 0, 20, 15),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  const Row(children: [Icon(Icons.music_note, size: 20, color: Colors.grey), SizedBox(width: 8), Text('Volume Geral', style: TextStyle(fontSize: 14))]),
+                                  Text('INTENSIDADE DO VOLUME'.toUpperCase(), style: const TextStyle(fontSize: 9, fontWeight: FontWeight.w900, color: Colors.blueGrey)),
                                   Slider(
                                     value: _volumeGeral,
                                     min: 0.0,
                                     max: 1.0,
                                     onChanged: _audioHabilitado ? _setVolumeGeral : null,
-                                    activeColor: Colors.blue,
-                                    inactiveColor: Colors.blue.withValues(alpha: 0.2),
+                                    activeColor: AppColors.primary,
+                                    inactiveColor: AppColors.primary.withValues(alpha: 0.2),
                                   ),
                                 ],
                               ),
@@ -279,43 +274,35 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
                           ],
                         ),
                       ),
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 25),
 
-                      _buildSectionTitle(context, 'Foco e Estudo'),
-                      Card(
-                        elevation: 4,
-                        shadowColor: Colors.black26,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                        color: Colors.white.withValues(alpha: 0.95),
+                      _buildSectionTitle('FOCO'),
+                      _buildNeumorphicSection(
                         child: Consumer<PomodoroProvider>(
-                          builder: (context, pomodoro, child) {
-                            return SwitchListTile(
-                              title: const Text('Modo Pomodoro', style: TextStyle(fontWeight: FontWeight.bold)),
-                              subtitle: const Text('Ciclos de 25 min de estudo e 5 min de pausa.', style: TextStyle(fontSize: 12)),
-                              secondary: Icon(Icons.timer_rounded, color: pomodoro.isHabilitado ? Colors.redAccent : Colors.grey),
-                              activeThumbColor: Colors.redAccent,
-                              value: pomodoro.isHabilitado,
-                              onChanged: (val) => _showPomodoroInfo(context, pomodoro.isHabilitado, (newVal) => pomodoro.togglePomodoro(newVal)),
-                            );
-                          },
+                          builder: (context, pomodoro, _) => SwitchListTile(
+                            activeColor: AppColors.accent,
+                            title: Text('MÉTODO POMODORO'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 14)),
+                            subtitle: Text('CICLOS DE ESTUDO DE 25 MINUTOS'.toUpperCase(), style: const TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.blueGrey)),
+                            secondary: Icon(Icons.timer_rounded, color: pomodoro.isHabilitado ? AppColors.accent : Colors.blueGrey),
+                            value: pomodoro.isHabilitado,
+                            onChanged: (val) => _showPomodoroInfo(context, pomodoro.isHabilitado, (newVal) => pomodoro.togglePomodoro(newVal)),
+                          ),
                         ),
                       ),
-                      const SizedBox(height: 24),
+                      const SizedBox(height: 25),
 
-                      _buildSectionTitle(context, 'Informações'),
-                      Card(
-                        elevation: 4,
-                        shadowColor: Colors.black26,
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                        color: Colors.white.withValues(alpha: 0.95),
+                      _buildSectionTitle('INFORMAÇÕES'),
+                      _buildNeumorphicSection(
                         child: Column(
                           children: [
-                            ListTile(leading: const Icon(Icons.info_outline, color: Colors.blue), title: const Text('Sobre a Aplicação', style: TextStyle(fontWeight: FontWeight.bold)), trailing: const Icon(Icons.arrow_forward_ios, size: 16), onTap: () {}),
-                            const Divider(height: 1, indent: 16, endIndent: 16),
-                            ListTile(leading: const Icon(Icons.person_outline, color: Colors.blue), title: const Text('Sobre o Programador', style: TextStyle(fontWeight: FontWeight.bold)), trailing: const Icon(Icons.arrow_forward_ios, size: 16), onTap: () {}),
+                            _buildInfoTile(Icons.info_outline_rounded, 'SOBRE A APLICAÇÃO'),
+                            const Divider(indent: 70, endIndent: 20, height: 1),
+                            _buildInfoTile(Icons.verified_user_rounded, 'POLÍTICA DE PRIVACIDADE'),
                           ],
                         ),
                       ),
+                      const SizedBox(height: 40),
+                      Text('VERSÃO 1.0.1 (EDUAURA)'.toUpperCase(), textAlign: TextAlign.center, style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: Colors.blueGrey)),
                     ],
                   ),
                 );
@@ -327,14 +314,28 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
     );
   }
 
-  Widget _buildSectionTitle(BuildContext context, String title) {
+  Widget _buildSectionTitle(String title) {
     return Padding(
-      padding: const EdgeInsets.only(left: 4.0, bottom: 8.0),
-      child: Row(children: [
-        Text(title.toUpperCase(), style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, letterSpacing: 1.2, color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.8))),
-        const SizedBox(width: 10),
-        Expanded(child: Divider(color: Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.3))),
-      ]),
+      padding: const EdgeInsets.only(left: 8, bottom: 12),
+      child: Text(title.toUpperCase(),
+          style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w900, letterSpacing: 1.5, color: AppColors.primary)),
+    );
+  }
+
+  Widget _buildNeumorphicSection({required Widget child}) {
+    return NeumorphicWrapper(
+      baseColor: Colors.white,
+      borderRadius: 25,
+      child: child,
+    );
+  }
+
+  Widget _buildInfoTile(IconData icon, String title) {
+    return ListTile(
+      leading: Icon(icon, color: AppColors.primary, size: 24),
+      title: Text(title.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 13)),
+      trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 14),
+      onTap: () {},
     );
   }
 }

@@ -18,7 +18,7 @@ class FlashCardItem extends StatelessWidget {
         elevation: 8.0, // Sombra mais pronunciada para efeito de "colado"
         margin: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 12.0),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12.0), // Bordas levemente arredondadas
+          borderRadius: BorderRadius.circular(25), // Bordas padrão Educlass
         ),
         child: Container(
           decoration: BoxDecoration(
@@ -27,14 +27,14 @@ class FlashCardItem extends StatelessWidget {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
-            borderRadius: BorderRadius.circular(12.0),
+            borderRadius: BorderRadius.circular(25),
             border: Border.all(
-              color: Colors.black.withOpacity(0.1), // Borda fina para delimitar
+              color: Colors.black.withValues(alpha: 0.1), // Borda fina para delimitar
               width: 0.5,
             ),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.15),
+                color: Colors.black.withValues(alpha: 0.15),
                 spreadRadius: 1,
                 blurRadius: 8,
                 offset: const Offset(3, 3), // Sombra mais suave
@@ -44,11 +44,11 @@ class FlashCardItem extends StatelessWidget {
           padding: const EdgeInsets.all(20.0),
           child: Center(
             child: Text(
-              title,
+              title.toUpperCase(),
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 20,
-                fontWeight: FontWeight.w500, // Peso da fonte um pouco mais leve
+                fontWeight: FontWeight.w600, // Peso da fonte Educlass Aura
                 color: Colors.grey[800], // Cor de texto mais suave
                 fontFamily: 'Caveat', // Uma fonte que lembre escrita à mão (adicione ao pubspec.yaml)
               ),

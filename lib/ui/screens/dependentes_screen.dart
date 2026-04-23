@@ -8,6 +8,7 @@ import 'package:caminho_do_saber/providers/profile_provider.dart';
 import 'package:caminho_do_saber/database/database.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
 import 'package:caminho_do_saber/services/progresso_service.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
@@ -16,13 +17,10 @@ class DependentesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    final isTablet = size.width > 600;
-
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gerir Perfis', style: TextStyle(fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.blue,
+        title: Text('Gerir Perfis'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600)),
+        backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
         elevation: 4,
       ),
@@ -52,9 +50,10 @@ class DependentesScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => _showAddOrEditDependentDialog(context),
         icon: const Icon(Icons.person_add_alt_1_rounded),
-        label: const Text('Novo Perfil', style: TextStyle(fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.blue,
+        label: Text('Novo Perfil'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600)),
+        backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
       ),
     );
   }
@@ -68,11 +67,11 @@ class DependentesScreen extends StatelessWidget {
       child: Card(
         elevation: 4,
         shadowColor: Colors.black26,
-        color: isActive ? Colors.blue.shade50.withOpacity(0.95) : Colors.white.withOpacity(0.95),
+        color: isActive ? AppColors.primary.withValues(alpha: 0.05) : Colors.white.withValues(alpha: 0.95),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(25),
           side: BorderSide(
-            color: isActive ? Colors.blue : Colors.transparent,
+            color: isActive ? AppColors.primary : Colors.transparent,
             width: 2,
           ),
         ),
@@ -81,11 +80,11 @@ class DependentesScreen extends StatelessWidget {
           leading: Container(
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              border: Border.all(color: isActive ? Colors.blue : Colors.grey.shade300, width: 2),
+              border: Border.all(color: isActive ? AppColors.primary : Colors.blueGrey.withValues(alpha: 0.3), width: 2),
             ),
             child: CircleAvatar(
               radius: 28,
-              backgroundColor: Colors.blue.shade50,
+              backgroundColor: AppColors.primary.withValues(alpha: 0.1),
               child: ClipOval(
                 child: _buildAvatarDisplay(profile.avatarAssetPath),
               ),
@@ -95,13 +94,13 @@ class DependentesScreen extends StatelessWidget {
             alignment: Alignment.centerLeft,
             fit: BoxFit.scaleDown,
             child: Text(
-              profile.nome,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: isActive ? Colors.blue.shade900 : Colors.black87),
+              profile.nome.toUpperCase(),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18, color: isActive ? AppColors.primary : Colors.black87),
             ),
           ),
           subtitle: Text(
             profile.isMainProfile ? 'Perfil Principal' : 'Perfil Dependente',
-            style: TextStyle(color: Colors.grey.shade600),
+            style: TextStyle(color: Colors.blueGrey.withValues(alpha: 0.8), fontWeight: FontWeight.w500),
           ),
           trailing: PopupMenuButton<String>(
             icon: const Icon(Icons.more_vert_rounded),
@@ -115,7 +114,7 @@ class DependentesScreen extends StatelessWidget {
             itemBuilder: (context) => [
               const PopupMenuItem(value: 'edit', child: ListTile(leading: Icon(Icons.edit_outlined), title: Text('Editar'), contentPadding: EdgeInsets.zero)),
               if (!profile.isMainProfile)
-                const PopupMenuItem(value: 'delete', child: ListTile(leading: Icon(Icons.delete_outline, color: Colors.red), title: Text('Remover', style: TextStyle(color: Colors.red)), contentPadding: EdgeInsets.zero)),
+                PopupMenuItem(value: 'delete', child: ListTile(leading: const Icon(Icons.delete_outline, color: AppColors.error), title: Text('Remover', style: TextStyle(color: AppColors.error, fontWeight: FontWeight.w600)), contentPadding: EdgeInsets.zero)),
             ],
           ),
         ),
@@ -140,6 +139,7 @@ class DependentesScreen extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     final List<String> assetAvatars = [
+      'assets/images/foto_p.png',
       'assets/avatars/avatar1.png',
       'assets/avatars/avatar2.png',
       'assets/avatars/avatar3.png',
@@ -158,9 +158,9 @@ class DependentesScreen extends StatelessWidget {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
               title: Row(
                 children: [
-                  Icon(isEditing ? Icons.edit_attributes_rounded : Icons.person_add_rounded, color: Colors.blue),
+                  Icon(isEditing ? Icons.edit_attributes_rounded : Icons.person_add_rounded, color: AppColors.primary, size: 28),
                   const SizedBox(width: 10),
-                  Text(isEditing ? 'Editar Perfil' : 'Novo Perfil', style: const TextStyle(fontWeight: FontWeight.bold)),
+                  Expanded(child: Text((isEditing ? 'Editar Perfil' : 'Novo Perfil').toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18))),
                 ],
               ),
               content: Container(
@@ -171,14 +171,16 @@ class DependentesScreen extends StatelessWidget {
                     children: [
                       TextField(
                         controller: nameController,
+                        style: const TextStyle(fontWeight: FontWeight.w600),
                         decoration: InputDecoration(
-                          labelText: 'Nome do Explorador',
-                          border: OutlineInputBorder(borderRadius: BorderRadius.circular(15)),
+                          labelText: 'Nome do Explorador'.toUpperCase(),
+                          labelStyle: const TextStyle(fontWeight: FontWeight.w600),
+                          border: OutlineInputBorder(borderRadius: BorderRadius.circular(25)),
                           prefixIcon: const Icon(Icons.face_rounded),
                         ),
                       ),
                       const SizedBox(height: 24),
-                      const Text('Personaliza o teu Avatar:', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blueGrey)),
+                      Text('Personaliza o teu Avatar:'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600, color: AppColors.primary)),
                       const SizedBox(height: 16),
                       
                       if (!kIsWeb)
@@ -195,25 +197,25 @@ class DependentesScreen extends StatelessWidget {
                               width: 80,
                               height: 80,
                               decoration: BoxDecoration(
-                                color: Colors.blue.shade50,
+                                color: AppColors.primary.withValues(alpha: 0.1),
                                 shape: BoxShape.circle,
                                 border: Border.all(
-                                  color: !selectedAvatar.startsWith('assets/') ? Colors.blue : Colors.transparent,
+                                  color: !selectedAvatar.startsWith('assets/') ? AppColors.primary : Colors.transparent,
                                   width: 3,
                                 ),
                               ),
                               child: !selectedAvatar.startsWith('assets/') 
                                 ? ClipOval(child: Image.file(File(selectedAvatar), fit: BoxFit.cover))
-                                : const Icon(Icons.camera_alt_rounded, size: 40, color: Colors.blue),
+                                : const Icon(Icons.camera_alt_rounded, size: 40, color: AppColors.primary),
                             ),
                             const SizedBox(height: 4),
-                            const Text('Tirar Foto', style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.blue)),
+                            Text('Tirar Foto'.toUpperCase(), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: AppColors.primary)),
                           ],
                         ),
                       ),
                       
                       const Padding(padding: EdgeInsets.symmetric(vertical: 16.0), child: Divider(thickness: 1)),
-                      const Text('Ou escolhe um boneco:', style: TextStyle(fontSize: 12, color: Colors.grey)),
+                      Text('Ou escolhe um boneco:'.toUpperCase(), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Colors.blueGrey)),
                       const SizedBox(height: 12),
                       Wrap(
                         spacing: 12,
@@ -230,10 +232,10 @@ class DependentesScreen extends StatelessWidget {
                               padding: const EdgeInsets.all(2),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                border: Border.all(color: isSel ? Colors.blue : Colors.transparent, width: 3),
+                                border: Border.all(color: isSel ? AppColors.primary : Colors.transparent, width: 3),
                               ),
                               child: CircleAvatar(
-                                backgroundColor: Colors.blue.shade50,
+                                backgroundColor: AppColors.primary.withValues(alpha: 0.1),
                                 child: ClipOval(child: SafeAssetImage(path: avatar, fit: BoxFit.cover)),
                               ),
                             ),
@@ -245,9 +247,9 @@ class DependentesScreen extends StatelessWidget {
                 ),
               ),
               actions: [
-                TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Cancelar', style: TextStyle(color: Colors.grey))),
+                TextButton(onPressed: () => Navigator.of(context).pop(), child: Text('Cancelar'.toUpperCase(), style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.w600))),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.blue, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
+                  style: ElevatedButton.styleFrom(backgroundColor: AppColors.primary, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25))),
                   onPressed: () {
                     if (nameController.text.isNotEmpty) {
                       if (isEditing) {
@@ -258,7 +260,7 @@ class DependentesScreen extends StatelessWidget {
                       Navigator.of(context).pop();
                     }
                   },
-                  child: const Text('Guardar', style: TextStyle(fontWeight: FontWeight.bold)),
+                  child: Text('Guardar'.toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w600, color: Colors.white)),
                 ),
               ],
             );
@@ -279,18 +281,24 @@ class DependentesScreen extends StatelessWidget {
       builder: (context) {
         return AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-          title: const Text('Remover Perfil?'),
-          content: Text('Tem a certeza que quer remover o perfil de "${profile.nome}"? Todo o seu progresso será apagado permanentemente.'),
+          title: Row(
+            children: [
+              const Icon(Icons.delete_forever_rounded, color: AppColors.error, size: 28),
+              const SizedBox(width: 10),
+              Text('Remover Perfil?'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
+            ],
+          ),
+          content: Text('Tem a certeza que quer remover o perfil de "${profile.nome}"? Todo o seu progresso será apagado permanentemente.'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12, color: Colors.blueGrey)),
           actions: [
-            TextButton(onPressed: () => Navigator.of(context).pop(), child: const Text('Cancelar')),
+            TextButton(onPressed: () => Navigator.of(context).pop(), child: Text('Cancelar'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: Colors.blueGrey))),
             ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.red, foregroundColor: Colors.white),
+              style: ElevatedButton.styleFrom(backgroundColor: AppColors.error, foregroundColor: Colors.white, shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25))),
               onPressed: () async {
                 await progressoService.removeProgressForProfile(profile.uid);
                 await profileProvider.removeDependent(profile.uid);
                 if (context.mounted) Navigator.of(context).pop();
               },
-              child: const Text('Remover'),
+              child: Text('Remover'.toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w900, color: Colors.white)),
             ),
           ],
         );

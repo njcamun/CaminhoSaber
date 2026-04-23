@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class PointsProgressBar extends StatelessWidget {
   final double currentPoints;
   final double nextLevelPoints;
-  final Color? color;
+  final List<Color>? gradientColors;
+  final Color? color; // Mantido por compatibilidade
 
   const PointsProgressBar({
     required this.currentPoints,
     required this.nextLevelPoints,
+    this.gradientColors,
     this.color,
     super.key,
   });
@@ -18,6 +20,11 @@ class PointsProgressBar extends StatelessWidget {
         ? (currentPoints / nextLevelPoints).clamp(0.0, 1.0) 
         : 0.0;
 
+    final List<Color> effectiveColors = gradientColors ?? [
+      color ?? Colors.orange,
+      (color ?? Colors.orange).withValues(alpha: 0.7),
+    ];
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -26,8 +33,8 @@ class PointsProgressBar extends StatelessWidget {
           height: 16,
           width: double.infinity,
           decoration: BoxDecoration(
-            color: Colors.black.withOpacity(0.05),
-            borderRadius: BorderRadius.circular(10),
+            color: Colors.grey.shade200,
+            borderRadius: BorderRadius.circular(25),
           ),
           child: Stack(
             children: [
@@ -44,15 +51,14 @@ class PointsProgressBar extends StatelessWidget {
                     child: Container(
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
-                          colors: [
-                            color ?? Colors.orange,
-                            (color ?? Colors.orange).withOpacity(0.7),
-                          ],
+                          colors: effectiveColors,
+                          begin: Alignment.centerLeft,
+                          end: Alignment.centerRight,
                         ),
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(25),
                         boxShadow: [
                           BoxShadow(
-                            color: (color ?? Colors.orange).withOpacity(0.4),
+                            color: effectiveColors.first.withValues(alpha: 0.3),
                             blurRadius: 6,
                             offset: const Offset(0, 2),
                           ),
@@ -64,14 +70,14 @@ class PointsProgressBar extends StatelessWidget {
                 },
                 child: Container(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(25),
                     gradient: LinearGradient(
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.white.withOpacity(0.4),
+                        Colors.white.withValues(alpha: 0.3),
                         Colors.transparent,
-                        Colors.black.withOpacity(0.1),
+                        Colors.black.withValues(alpha: 0.1),
                       ],
                     ),
                   ),

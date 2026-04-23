@@ -4,7 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:caminho_do_saber/models/disciplina_model.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
 import 'package:caminho_do_saber/ui/screens/capitulos_screen.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
+import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
+import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
 
 class EstudeScreen extends StatelessWidget {
   final List<Disciplina> disciplinas;
@@ -25,61 +28,71 @@ class EstudeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final groupedDisciplinas = _groupDisciplinasByCategory(disciplinas);
-    final size = MediaQuery.of(context).size;
-    final isTablet = size.width > 600;
+    final isTablet = MediaQuery.of(context).size.width > 600;
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Estude', style: TextStyle(fontWeight: FontWeight.bold)),
-        backgroundColor: Colors.blue,
+        title: Text('ESTUDE'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, letterSpacing: 1.2)),
+        backgroundColor: AppColors.primary,
         foregroundColor: Colors.white,
         elevation: 4,
+        centerTitle: false,
       ),
       body: BackgroundContainer(
-        child: SizedBox.expand(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 100),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: groupedDisciplinas.entries.map((entry) {
-                final categoria = entry.key;
-                final disciplinasDaCategoria = entry.value;
-                return Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(vertical: 25),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: groupedDisciplinas.entries.map((entry) {
+              return Container(
+                margin: const EdgeInsets.fromLTRB(16, 0, 16, 30),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(35),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.primary.withValues(alpha: 0.15),
+                      blurRadius: 20,
+                      offset: const Offset(0, -8),
+                    ),
+                  ],
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 24.0, bottom: 12.0, left: 4.0),
+                      padding: const EdgeInsets.only(left: 25, top: 25, bottom: 5),
                       child: Row(
                         children: [
                           Text(
-                            categoria,
+                            entry.key,
                             style: const TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                              letterSpacing: 1.2,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w900,
+                              color: AppColors.primary,
+                              letterSpacing: 2,
                             ),
                           ),
-                          const SizedBox(width: 10),
-                          const Expanded(child: Divider(color: Colors.white24, thickness: 1.5)),
+                          const SizedBox(width: 12),
+                          Expanded(child: Divider(color: AppColors.primary.withValues(alpha: 0.1), thickness: 2.5)),
                         ],
                       ),
                     ),
                     SizedBox(
-                      height: isTablet ? 220 : 180,
+                      height: 310, // Acomodar cards maiores com sombras
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: disciplinasDaCategoria.length,
+                        padding: const EdgeInsets.fromLTRB(15, 5, 15, 15),
+                        itemCount: entry.value.length,
                         itemBuilder: (context, index) {
-                          final disciplina = disciplinasDaCategoria[index];
-                          return _buildDisciplinaCard(context, disciplina, isTablet);
+                          return _buildDisciplinaCard(context, entry.value[index], isTablet);
                         },
                       ),
                     ),
                   ],
-                );
-              }).toList(),
-            ),
+                ),
+              );
+            }).toList(),
           ),
         ),
       ),
@@ -87,69 +100,106 @@ class EstudeScreen extends StatelessWidget {
   }
 
   Widget _buildDisciplinaCard(BuildContext context, Disciplina disciplina, bool isTablet) {
-    final size = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.only(right: 16.0, bottom: 8.0),
-      child: GestureDetector(
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+      child: ScalePressWrapper(
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(
             builder: (context) => CapitulosScreen(disciplina: disciplina),
           ));
         },
         child: Container(
-          width: isTablet ? 300 : size.width * 0.65 > 260 ? 260 : size.width * 0.65,
+          width: 220,
+          clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 5))],
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(25),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.shade400.withValues(alpha: 0.4),
+                blurRadius: 8,
+                offset: const Offset(0, -4),
+              ),
+            ],
           ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(20),
-            child: Stack(
-              fit: StackFit.expand,
-              children: [
-                SafeAssetImage(path: disciplina.animacao, fit: BoxFit.cover),
-                Container(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      colors: [Colors.transparent, Colors.black.withOpacity(0.85)],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      FittedBox(
-                        fit: BoxFit.scaleDown,
-                        child: Text(
-                          disciplina.nome,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: isTablet ? 24 : 20,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        disciplina.descricao,
-                        style: const TextStyle(
-                          color: Colors.white70,
-                          fontSize: 13,
-                        ),
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                      ),
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              SafeAssetImage(path: disciplina.animacao, fit: BoxFit.cover),
+              // Efeito de brilho
+              _ShimmerStatic(), 
+              Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
+                    colors: [
+                      Colors.white,
+                      Colors.white,
+                      Colors.white.withValues(alpha: 0.0),
                     ],
+                    stops: const [0.0, 0.3, 0.8],
                   ),
                 ),
-              ],
-            ),
+              ),
+              Positioned(
+                bottom: 15,
+                left: 15,
+                right: 15,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        disciplina.nome.toUpperCase(),
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          color: AppColors.primary,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      disciplina.descricao.toUpperCase(),
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        color: Color(0xFF007A9E),
+                        fontSize: 10,
+                        fontWeight: FontWeight.w800,
+                      ),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+// Pequeno efeito de brilho estático se não quisermos carregar o controlador de animação aqui
+class _ShimmerStatic extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Colors.white.withValues(alpha: 0.0),
+            Colors.white.withValues(alpha: 0.1),
+            Colors.white.withValues(alpha: 0.0),
+          ],
+          stops: const [0.4, 0.5, 0.6],
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 
 class PointsFlyer extends StatefulWidget {
   final Offset startPos;
@@ -67,26 +68,26 @@ class _PointsFlyerState extends State<PointsFlyer> with SingleTickerProviderStat
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(
-                  color: Colors.orangeAccent,
-                  borderRadius: BorderRadius.circular(20),
+                  color: AppColors.accent,
+                  borderRadius: BorderRadius.circular(25),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.orange.withOpacity(0.4),
+                      color: AppColors.accent.withValues(alpha: 0.4),
                       blurRadius: 10,
                       spreadRadius: 2,
                     )
                   ],
                 ),
-                child: const Row(
+                child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Icon(Icons.bolt_rounded, color: Colors.white, size: 18),
-                    SizedBox(width: 4),
+                    const Icon(Icons.bolt_rounded, color: Colors.white, size: 18),
+                    const SizedBox(width: 4),
                     Text(
-                      '+5 Pontos',
-                      style: TextStyle(
+                      '+5 Pontos'.toUpperCase(),
+                      style: const TextStyle(
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w600,
                         fontSize: 14,
                       ),
                     ),

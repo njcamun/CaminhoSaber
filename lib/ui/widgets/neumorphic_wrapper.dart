@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 
 class NeumorphicWrapper extends StatelessWidget {
   final Widget child;
@@ -9,7 +10,7 @@ class NeumorphicWrapper extends StatelessWidget {
   const NeumorphicWrapper({
     required this.child,
     this.isPressed = false,
-    this.borderRadius = 20,
+    this.borderRadius = 25, // Padronizado Educlass Aura
     this.baseColor = Colors.white,
     super.key,
   });
@@ -21,33 +22,9 @@ class NeumorphicWrapper extends StatelessWidget {
       decoration: BoxDecoration(
         color: baseColor,
         borderRadius: BorderRadius.circular(borderRadius),
-        boxShadow: isPressed
-            ? [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.05),
-                  offset: const Offset(4, 4),
-                  blurRadius: 4,
-                  spreadRadius: 1,
-                ),
-                BoxShadow(
-                  color: Colors.white.withValues(alpha: 0.9),
-                  offset: const Offset(-4, -4),
-                  blurRadius: 4,
-                  spreadRadius: 1,
-                ),
-              ]
-            : [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.1),
-                  offset: const Offset(6, 6),
-                  blurRadius: 10,
-                ),
-                BoxShadow(
-                  color: Colors.white.withValues(alpha: 0.8),
-                  offset: const Offset(-6, -6),
-                  blurRadius: 10,
-                ),
-              ],
+        boxShadow: isPressed 
+          ? [BoxShadow(color: Colors.black.withValues(alpha: 0.1), blurRadius: 4, offset: const Offset(0, 2))]
+          : AppShadows.primaryShadow,
       ),
       child: child,
     );

@@ -11,6 +11,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:provider/provider.dart';
 import 'package:lottie/lottie.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/widgets/quiz_option_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_crt_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_typewriter_text.dart';
@@ -63,7 +64,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
 
   String _feedbackText = "";
   IconData _feedbackIcon = Icons.star;
-  Color _feedbackColor = Colors.amber;
+  Color _feedbackColor = AppColors.accent;
   late AnimationController _feedbackController;
   late Animation<double> _feedbackAnimation;
   late Animation<double> _rotationAnimation;
@@ -186,7 +187,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
       HapticFeedback.mediumImpact();
       if (tapPosition != Offset.zero) {
         showPointsFlyer(context, tapPosition);
-        showPixelExplosion(context, tapPosition, Colors.green);
+        showPixelExplosion(context, tapPosition, AppColors.success);
       }
       setState(() {
         _pontos += 5 * _multiplicador; 
@@ -197,23 +198,23 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
         if (_acertosParaTempo >= 4) {
           _tempoRestante += 15;
           _acertosParaTempo = 0;
-          _showCentralFeedback("+15 SEGUNDOS!", Icons.timer_outlined, Colors.blueAccent);
+          _showCentralFeedback("+15 SEGUNDOS!", Icons.timer_outlined, AppColors.primary);
         }
 
         if (_acertosParaVida >= 5) {
           if (_oportunidades < 5) {
             _oportunidades++;
-            _showCentralFeedback("+1 VIDA!", Icons.favorite_rounded, Colors.greenAccent.shade700);
+            _showCentralFeedback("+1 VIDA!", Icons.favorite_rounded, AppColors.success);
           }
           _acertosParaVida = 0;
         }
 
         if (_comboConsecutivo == 10) {
           _pontos += 25;
-          _showCentralFeedback("COMBO X2 ATIVO!", Icons.bolt_rounded, Colors.orange);
+          _showCentralFeedback("COMBO X2 ATIVO!", Icons.bolt_rounded, AppColors.orange);
         } else if (_comboConsecutivo == 20) {
           _pontos += 100;
-          _showCentralFeedback("MEDALHA! X3 ATIVO!", Icons.workspace_premium_rounded, Colors.amber);
+          _showCentralFeedback("MEDALHA! X3 ATIVO!", Icons.workspace_premium_rounded, AppColors.gold);
           _progressoService.registerSpecialAchievement('medalha');
         } else if (_comboConsecutivo == 30) {
           _pontos += 250;
@@ -229,11 +230,11 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
           _showCentralFeedback("AJUDAS RESTAURADAS!", Icons.auto_fix_high_rounded, Colors.tealAccent.shade700);
         }
       });
-      _playSound('acerto.mp3');
+      _playSound('correct.mp3');
     } else {
       HapticFeedback.heavyImpact();
       if (tapPosition != Offset.zero) {
-        showPixelExplosion(context, tapPosition, Colors.red);
+        showPixelExplosion(context, tapPosition, AppColors.error);
       }
       setState(() {
         _oportunidades--;
@@ -241,7 +242,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
         _acertosParaTempo = 0;
         _acertosParaVida = 0;
       });
-      _playSound('erro.mp3');
+      _playSound('incorrect.mp3');
       
       if (_oportunidades <= 0) {
         _finishGame("SEM OPORTUNIDADES!");
@@ -287,16 +288,16 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
       context: context,
       builder: (context) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
-        title: const Row(
+        title: Row(
           children: [
-            Icon(Icons.lightbulb_outline_rounded, color: Colors.amber, size: 30),
-            SizedBox(width: 10),
-            Text('Dica Mágica', style: TextStyle(fontWeight: FontWeight.bold)),
+            const Icon(Icons.lightbulb_outline_rounded, color: AppColors.accent, size: 28),
+            const SizedBox(width: 10),
+            Text('DICA MÁGICA'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18)),
           ],
         ),
-        content: Text(pergunta.dica ?? 'Presta atenção às opções, a resposta está lá!', style: const TextStyle(fontSize: 16)),
+        content: Text(pergunta.dica?.toUpperCase() ?? 'PRESTA ATENÇÃO ÀS OPÇÕES, A RESPOSTA ESTÁ LÁ!', style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.blueGrey)),
         actions: [
-          TextButton(onPressed: () => Navigator.pop(context), child: const Text('Entendido!', style: TextStyle(fontWeight: FontWeight.bold)))
+          TextButton(onPressed: () => Navigator.pop(context), child: Text('ENTENDIDO!'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.accent)))
         ],
       ),
     );
@@ -347,36 +348,42 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
       barrierDismissible: false,
       builder: (context) => AlertDialog(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+        title: Row(
+          children: [
+            const Icon(Icons.videogame_asset_rounded, color: AppColors.error, size: 28),
+            const SizedBox(width: 10),
+            Expanded(child: Text(titulo.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18, color: AppColors.error))),
+          ],
+        ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             if (!kIsWeb)
-              const SizedBox(
-                height: 120,
-                child: Icon(Icons.gamepad, size: 80, color: Colors.redAccent),
-              )
+              Lottie.asset('assets/animations/GameOver.json', height: 120, repeat: false)
             else
-              const Icon(Icons.gamepad, size: 60, color: Colors.red),
-            const SizedBox(height: 10),
-            FittedBox(fit: BoxFit.scaleDown, child: Text(titulo, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.red))),
+              const Icon(Icons.gamepad, size: 60, color: AppColors.error),
             const SizedBox(height: 20),
-            Text('Pontuação Final: $score', style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue)),
-            const Text('A sincronizar com a nuvem...', style: TextStyle(fontSize: 12, color: Colors.grey)),
+            Text('PONTUAÇÃO FINAL:'.toUpperCase(), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900, color: Colors.blueGrey)),
+            const SizedBox(height: 5),
+            Text('$score', style: const TextStyle(fontSize: 40, fontWeight: FontWeight.w900, color: AppColors.primary)),
+            const SizedBox(height: 10),
+            Text('A SINCRONIZAR COM A NUVEM...'.toUpperCase(), style: const TextStyle(fontSize: 10, color: Colors.grey, fontWeight: FontWeight.bold)),
           ],
         ),
         actions: [
-          Center(
+          SizedBox(
+            width: double.infinity,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.purple,
+                backgroundColor: AppColors.tertiary,
                 foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25))
               ),
-              onPressed: () { 
+              onPressed: () {
                 Navigator.of(context).pop();
                 if (mounted) Navigator.of(context).pop();
               },
-              child: const Text('Voltar ao Menu', style: TextStyle(fontWeight: FontWeight.bold)),
+              child: Text('VOLTAR AO MENU'.toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w900, color: Colors.white)),
             ),
           ),
         ],
@@ -402,17 +409,17 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
     return RetroCRTWrapper(
       child: Scaffold(
         appBar: AppBar(
-          title: FittedBox(fit: BoxFit.scaleDown, child: Text('Arcade: ${widget.disciplinaNome}', style: const TextStyle(fontWeight: FontWeight.bold))),
-          backgroundColor: Colors.purple.shade700,
+          title: FittedBox(fit: BoxFit.scaleDown, child: Text('ARCADE: ${widget.disciplinaNome}'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w600))),
+          backgroundColor: AppColors.tertiary,
           foregroundColor: Colors.white,
           actions: [
             ScaleTransition(
               scale: Tween<double>(begin: 1.0, end: 1.2).animate(_pulseController),
               child: Center(
                 child: Padding(
-                  padding: const EdgeInsets.only(right: 16.0), 
-                  child: Text('$_tempoRestante s', 
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: timerColor)
+                  padding: const EdgeInsets.only(right: 16.0),
+                  child: Text('${_tempoRestante}S',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: timerColor)
                   )
                 )
               ),
@@ -433,15 +440,15 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            _buildStatusChip('Pontos: $_pontos', Icons.stars_rounded, Colors.orange.shade800, size),
+                            _buildStatusChip('PONTOS: $_pontos', Icons.stars_rounded, AppColors.gold, size),
                             const SizedBox(height: 4),
                             Row(
                               children: [
-                                _buildComboProgress(_acertosParaTempo / 4, Colors.blue, "Tempo", size),
-                                if (_multiplicador > 1) 
+                                _buildComboProgress(_acertosParaTempo / 4, AppColors.primary, "Tempo", size),
+                                if (_multiplicador > 1)
                                   Padding(
                                     padding: const EdgeInsets.only(left: 8.0),
-                                    child: Text('x$_multiplicador', style: const TextStyle(color: Colors.orange, fontWeight: FontWeight.w900, fontSize: 16)),
+                                    child: Text('X$_multiplicador', style: const TextStyle(color: AppColors.accent, fontWeight: FontWeight.w600, fontSize: 16)),
                                   ),
                               ],
                             ),
@@ -450,14 +457,14 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
-                            _buildStatusChip('Vidas: $_oportunidades', Icons.favorite_rounded, Colors.red.shade700, size),
+                            _buildStatusChip('VIDAS: $_oportunidades', Icons.favorite_rounded, AppColors.error, size),
                             const SizedBox(height: 4),
-                            _buildComboProgress(_acertosParaVida / 5, Colors.green, "Vida", size),
+                            _buildComboProgress(_acertosParaVida / 5, AppColors.success, "Vida", size),
                           ],
                         ),
                       ],
                     ),
-                    
+
                     Expanded(
                       child: Center(
                         child: SingleChildScrollView(
@@ -470,81 +477,81 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
                                 color: Colors.white.withValues(alpha: 0.95),
                                 child: Padding(
-                                  padding: const EdgeInsets.all(20.0), 
+                                  padding: const EdgeInsets.all(20.0),
                                   child: ConstrainedBox(
                                     constraints: BoxConstraints(maxHeight: size.height * 0.2),
                                     child: SingleChildScrollView(
                                       child: RetroTypewriterText(
                                         text: pergunta.pergunta,
-                                        style: TextStyle(fontSize: isTablet ? 24 : 20, fontWeight: FontWeight.bold, color: Colors.black87),
+                                        style: TextStyle(fontSize: isTablet ? 24 : 20, fontWeight: FontWeight.w600, color: Colors.black87),
                                       ),
                                     ),
                                   )
                                 )
                               ),
                               const SizedBox(height: 20),
-                              ..._opcoesAtuaisBaralhadas.map((opcao) {
-                                if (_opcoesRemovidas.contains(opcao)) return const SizedBox.shrink();
-                                
-                                bool isSelected = _opcaoSelecionada == opcao;
-                                bool isCorrect = opcao == pergunta.respostaCorreta;
-                                
-                                Color targetBgColor = isSelected 
-                                    ? (isCorrect ? Colors.green.shade100 : Colors.red.shade100)
-                                    : Colors.white.withValues(alpha: 0.9);
-                                
-                                Color targetBorderColor = isSelected 
-                                    ? (isCorrect ? Colors.green : Colors.red)
-                                    : Colors.blue.shade100;
-                
-                                return Padding(
-                                  padding: const EdgeInsets.symmetric(vertical: 4.0),
-                                  child: Listener(
-                                    onPointerDown: (details) {
-                                      if (!_estaProcessando) {
-                                        _verificarResposta(opcao, details.position);
-                                      }
-                                    },
-                                    child: QuizOptionWrapper(
-                                      isSelected: isSelected,
-                                      isCorrect: isCorrect,
-                                      child: SizedBox(
-                                        width: double.infinity, 
-                                        child: ElevatedButton(
-                                          style: ElevatedButton.styleFrom(
-                                            backgroundColor: targetBgColor, 
-                                            foregroundColor: isSelected ? (isCorrect ? Colors.green : Colors.red) : Colors.blue.shade900, 
-                                            disabledBackgroundColor: targetBgColor,
-                                            disabledForegroundColor: isSelected ? (isCorrect ? Colors.green : Colors.red) : Colors.blue.shade900,
-                                            padding: EdgeInsets.all(isTablet ? 20 : 14), 
-                                            elevation: isSelected ? 0 : 4, 
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius: BorderRadius.circular(15),
-                                              side: BorderSide(color: targetBorderColor, width: 2),
-                                            )
-                                          ),
-                                          onPressed: null,
-                                          child: Text(opcao, style: TextStyle(fontSize: isTablet ? 18 : 16, fontWeight: FontWeight.w600))
-                                        )
+                                ..._opcoesAtuaisBaralhadas.map((opcao) {
+                                  if (_opcoesRemovidas.contains(opcao)) return const SizedBox.shrink();
+
+                                  bool isSelected = _opcaoSelecionada == opcao;
+                                  bool isCorrect = opcao == pergunta.respostaCorreta;
+
+                                  Color targetBgColor = isSelected
+                                      ? (isCorrect ? Colors.green.shade100 : Colors.red.shade100)
+                                      : Colors.white.withValues(alpha: 0.9);
+
+                                  Color targetBorderColor = isSelected
+                                      ? (isCorrect ? Colors.green : Colors.red)
+                                      : Colors.blue.shade100;
+
+                                  return Padding(
+                                    padding: const EdgeInsets.symmetric(vertical: 4.0),
+                                    child: Listener(
+                                      onPointerDown: (details) {
+                                        if (!_estaProcessando) {
+                                          _verificarResposta(opcao, details.position);
+                                        }
+                                      },
+                                      child: QuizOptionWrapper(
+                                        isSelected: isSelected,
+                                        isCorrect: isCorrect,
+                                        child: SizedBox(
+                                          width: double.infinity,
+                                          child: ElevatedButton(
+                                            style: ElevatedButton.styleFrom(
+                                              backgroundColor: targetBgColor,
+                                              foregroundColor: isSelected ? (isCorrect ? AppColors.success : AppColors.error) : AppColors.primary,
+                                              disabledBackgroundColor: targetBgColor,
+                                              disabledForegroundColor: isSelected ? (isCorrect ? AppColors.success : AppColors.error) : AppColors.primary,
+                                              padding: EdgeInsets.all(isTablet ? 20 : 14),
+                                              elevation: isSelected ? 0 : 4,
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius: BorderRadius.circular(25),
+                                                side: BorderSide(color: targetBorderColor, width: 2),
+                                              )
+                                            ),
+                                            onPressed: null,
+                                            child: Text(opcao.toUpperCase(), style: Theme.of(context).textTheme.labelLarge?.copyWith(fontSize: isTablet ? 18 : 16, fontWeight: FontWeight.w600))
+                                          )
+                                        ),
                                       ),
-                                    ),
-                                  )
-                                );
-                              }).toList(),
+                                    )
+                                  );
+                                }).toList(),
                             ],
                           ),
                         ),
                       ),
                     ),
-                    
+
                     const SizedBox(height: 10),
-          
+
                     SafeArea(
                       child: Container(
                         margin: const EdgeInsets.only(bottom: 10),
                         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
                         decoration: BoxDecoration(
-                          color: Colors.blue.shade900.withValues(alpha: 0.9), 
+                          color: AppColors.primary.withValues(alpha: 0.9),
                           borderRadius: BorderRadius.circular(25),
                           border: Border.all(color: Colors.white24, width: 1.5),
                           boxShadow: const [BoxShadow(color: Colors.black38, blurRadius: 10, offset: Offset(0, 4))],
@@ -552,15 +559,15 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
-                            _buildHelpIcon(Icons.add_alarm_rounded, '+30s', _tempoAdicionalUsado, () {
+                            _buildHelpIcon(Icons.add_alarm_rounded, '+30S', _tempoAdicionalUsado, () {
                               if (!_tempoAdicionalUsado && !_estaProcessando && !_isGameOver) {
                                 setState(() { _tempoRestante += 30; _tempoAdicionalUsado = true; });
-                                _showCentralFeedback("+30 SEGUNDOS!", Icons.add_alarm_rounded, Colors.cyan);
+                                _showCentralFeedback("+30 SEGUNDOS!", Icons.add_alarm_rounded, AppColors.secondary);
                               }
                             }),
                             _buildHelpIcon(Icons.star_half_rounded, '50/50', _ajuda5050Usada, _use5050),
-                            _buildHelpIcon(Icons.lightbulb_outline_rounded, 'Dica', _ajudaDicaUsada, _useHint),
-                            _buildHelpIcon(Icons.skip_next_rounded, 'Pular', _puloUsado, _useSkip),
+                            _buildHelpIcon(Icons.lightbulb_outline_rounded, 'DICA', _ajudaDicaUsada, _useHint),
+                            _buildHelpIcon(Icons.skip_next_rounded, 'PULAR', _puloUsado, _useSkip),
                           ],
                         ),
                       ),
@@ -568,7 +575,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                   ],
                 ),
               ),
-              
+
               IgnorePointer(
                 child: Center(
                   child: ScaleTransition(
@@ -581,7 +588,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                           decoration: BoxDecoration(
                             color: _feedbackColor,
-                            borderRadius: BorderRadius.circular(50),
+                            borderRadius: BorderRadius.circular(25),
                             boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))],
                           ),
                           child: Row(
@@ -589,7 +596,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                             children: [
                               Icon(_feedbackIcon, color: Colors.white, size: 28),
                               const SizedBox(width: 12),
-                              Text(_feedbackText, style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w900)),
+                              Text(_feedbackText, style: const TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.w600)),
                             ],
                           ),
                         ),
@@ -598,7 +605,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                   ),
                 ),
               ),
-              
+
               if (_feedbackController.isAnimating)
                 IgnorePointer(
                   child: Center(
@@ -615,8 +622,26 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   Widget _buildStatusChip(String text, IconData icon, Color color, Size size) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-      decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(20), boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 4, offset: Offset(0, 2))]),
-      child: Row(children: [Icon(icon, color: Colors.white, size: 16), const SizedBox(width: 6), Text(text, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: size.width * 0.035 > 13 ? 13 : size.width * 0.035))]));
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(25),
+        boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 4, offset: Offset(0, 2))],
+      ),
+      child: Row(
+        children: [
+          Icon(icon, color: Colors.white, size: 16),
+          const SizedBox(width: 6),
+          Text(
+            text.toUpperCase(),
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w600,
+              fontSize: size.width * 0.035 > 13 ? 13 : size.width * 0.035,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   Widget _buildComboProgress(double progress, Color color, String label, Size size) {
@@ -625,7 +650,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
       height: 4,
       decoration: BoxDecoration(
         color: Colors.white24,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(25),
       ),
       child: FractionallySizedBox(
         alignment: Alignment.centerLeft,
@@ -633,7 +658,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
         child: Container(
           decoration: BoxDecoration(
             color: color,
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(25),
             boxShadow: [BoxShadow(color: color.withValues(alpha: 0.5), blurRadius: 4)],
           ),
         ),
@@ -642,6 +667,6 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
   }
 
   Widget _buildHelpIcon(IconData icon, String label, bool isUsed, VoidCallback onTap) {
-    return InkWell(onTap: isUsed ? null : onTap, child: Column(children: [Icon(icon, color: isUsed ? Colors.white24 : Colors.white, size: 24), Text(label, style: TextStyle(color: isUsed ? Colors.white24 : Colors.white, fontSize: 10, fontWeight: FontWeight.bold))]));
+    return InkWell(onTap: isUsed ? null : onTap, child: Column(children: [Icon(icon, color: isUsed ? Colors.white24 : Colors.white, size: 24), Text(label.toUpperCase(), style: TextStyle(color: isUsed ? Colors.white24 : Colors.white, fontSize: 10, fontWeight: FontWeight.w600))]));
   }
 }

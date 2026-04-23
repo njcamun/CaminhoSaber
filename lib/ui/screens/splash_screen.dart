@@ -2,6 +2,7 @@
 
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/services/auth_service.dart';
 import 'package:caminho_do_saber/ui/screens/home_screen.dart';
 import 'package:caminho_do_saber/ui/screens/auth/login_screen.dart';
@@ -19,13 +20,13 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
   late Animation<double> _scaleAnimation;
   late Animation<double> _rotationAnimation;
   late Animation<double> _fadeAnimation;
-  
+
   final double _randomRotation = (Random().nextBool() ? 1 : -1) * (0.1 + Random().nextDouble() * 0.2);
 
   @override
   void initState() {
     super.initState();
-    
+
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 4500), // Ligeiramente mais longo para suavidade
@@ -39,11 +40,11 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     ]).animate(_controller);
 
     // Scale Animation: Zoom In (0-30%), Stay (30-70%), Zoom Out (70-100%)
-    // Aumentado o tamanho máximo para 3.5 para impacto visual maior
+    // Aumentado o tamanho máximo para 9.9 (aumento de 80%) para impacto visual massivo
     _scaleAnimation = TweenSequence<double>([
-      TweenSequenceItem(tween: Tween(begin: 0.0, end: 3.5).chain(CurveTween(curve: Curves.easeOutBack)), weight: 30),
-      TweenSequenceItem(tween: ConstantTween(3.5), weight: 40),
-      TweenSequenceItem(tween: Tween(begin: 3.5, end: 0.0).chain(CurveTween(curve: Curves.easeInBack)), weight: 30),
+      TweenSequenceItem(tween: Tween(begin: 0.0, end: 9.9).chain(CurveTween(curve: Curves.easeOutBack)), weight: 30),
+      TweenSequenceItem(tween: ConstantTween(9.9), weight: 40),
+      TweenSequenceItem(tween: Tween(begin: 9.9, end: 0.0).chain(CurveTween(curve: Curves.easeInBack)), weight: 30),
     ]).animate(_controller);
 
     // Rotation Animation: Slight Tilt (0-30%), Stay (30-70%), Fast Spin Out (70-100%)
@@ -66,8 +67,8 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
 
     Navigator.of(context).pushReplacement(
       PageRouteBuilder(
-        pageBuilder: (context, animation, secondaryAnimation) => 
-            user != null ? const HomeScreen() : const LoginScreen(),
+        pageBuilder: (context, animation, secondaryAnimation) =>
+        user != null ? const HomeScreen() : const LoginScreen(),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           // Efeito de Fade In para a tela seguinte
           return FadeTransition(opacity: animation, child: child);
@@ -103,10 +104,11 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
             );
           },
           child: Image.asset(
-            'assets/images/logo.png',
-            width: 250,
-            height: 250,
+            'assets/icons/logo_cyan.png',
+            width: 2260,
+            height: 2260,
             fit: BoxFit.contain,
+            errorBuilder: (context, error, stackTrace) => const Icon(Icons.auto_awesome_rounded, size: 650, color: AppColors.primary),
           ),
         ),
       ),

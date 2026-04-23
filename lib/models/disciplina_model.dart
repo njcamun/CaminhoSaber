@@ -35,11 +35,15 @@ class Disciplina {
 class Capitulo {
   final String capitulo;
   final String resumo;
+  final String titulo;
+  final String conteudo;
   final String? quizId;
 
   Capitulo({
     required this.capitulo,
     required this.resumo,
+    required this.titulo,
+    required this.conteudo,
     this.quizId,
   });
 
@@ -47,6 +51,8 @@ class Capitulo {
     return Capitulo(
       capitulo: (json['capitulo'] ?? 'Capítulo').toString(),
       resumo: (json['resumo'] ?? 'Quiz sobre o tema.').toString(),
+      titulo: (json['titulo'] ?? json['capitulo'] ?? 'Título do Capítulo').toString(),
+      conteudo: (json['conteudo'] ?? 'Conteúdo em breve...').toString(),
       quizId: json['id']?.toString(),
     );
   }

@@ -111,9 +111,9 @@ class _AchievementWidgetState extends State<_AchievementWidget> with SingleTicke
               padding: const EdgeInsets.all(24),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(30),
-                boxShadow: [BoxShadow(color: widget.color.withOpacity(0.5), blurRadius: 20, spreadRadius: 5)],
-                border: Border.all(color: widget.color.withOpacity(0.3), width: 3),
+                borderRadius: BorderRadius.circular(25),
+                boxShadow: [BoxShadow(color: widget.color.withValues(alpha: 0.5), blurRadius: 20, spreadRadius: 5)],
+                border: Border.all(color: widget.color.withValues(alpha: 0.3), width: 3),
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -133,14 +133,14 @@ class _AchievementWidgetState extends State<_AchievementWidget> with SingleTicke
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    widget.title,
-                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: widget.color),
+                    widget.title.toUpperCase(),
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600, color: widget.color),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    widget.message,
-                    style: const TextStyle(fontSize: 16, color: Colors.blueGrey, fontWeight: FontWeight.w500),
+                    widget.message.toUpperCase(),
+                    style: const TextStyle(fontSize: 16, color: Colors.blueGrey, fontWeight: FontWeight.w600),
                     textAlign: TextAlign.center,
                   ),
                 ],

@@ -59,7 +59,7 @@ class RankingService {
 
       if (_db != null) {
         try {
-          await _db!.into(_db!.globalRanking).insertOnConflictUpdate(
+          await _db.into(_db.globalRanking).insertOnConflictUpdate(
             GlobalRankingCompanion.insert(
               profileUid: profile.uid,
               name: profile.nome,
@@ -119,10 +119,10 @@ class RankingService {
 
       if (_db != null) {
         try {
-          await _db!.transaction(() async {
-            await _db!.delete(_db!.globalRanking).go();
+          await _db.transaction(() async {
+            await _db.delete(_db.globalRanking).go();
             for (var item in rankingList) {
-              await _db!.into(_db!.globalRanking).insertOnConflictUpdate(
+              await _db.into(_db.globalRanking).insertOnConflictUpdate(
                 GlobalRankingCompanion.insert(
                   profileUid: item['profileUid'],
                   name: item['name'],
@@ -158,7 +158,7 @@ class RankingService {
       yield _lastRankingData;
       yield* _memoryRankingController.stream;
     } else {
-      yield* (_db!.select(_db!.globalRanking)
+      yield* (_db.select(_db.globalRanking)
             ..orderBy([(t) => OrderingTerm(expression: t.totalPoints, mode: OrderingMode.desc)]))
           .watch()
           .map((rows) {

@@ -64,7 +64,7 @@ class _PunchCounterState extends State<PunchCounter> with SingleTickerProviderSt
         '${widget.value}',
         style: TextStyle(
           fontSize: widget.fontSize,
-          fontWeight: FontWeight.bold,
+          fontWeight: FontWeight.w600,
           color: widget.color ?? Colors.orangeAccent,
         ),
       ),

@@ -78,14 +78,20 @@ class SafeAssetImage extends StatelessWidget {
   }
 
   Widget _buildErrorWidget() {
-    return Container(
+    return Image.asset(
+      'assets/images/foto.png',
       width: width,
       height: height,
-      color: Colors.grey.shade300,
-      child: Icon(
-        Icons.person_rounded,
-        color: Colors.grey.shade600,
-        size: (width != null) ? width! * 0.6 : 30,
+      fit: fit,
+      errorBuilder: (context, error, stackTrace) => Container(
+        width: width,
+        height: height,
+        color: Colors.grey.shade300,
+        child: Icon(
+          Icons.person_rounded,
+          color: Colors.grey.shade600,
+          size: (width != null) ? width! * 0.6 : 30,
+        ),
       ),
     );
   }

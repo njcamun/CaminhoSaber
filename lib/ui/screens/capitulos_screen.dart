@@ -1,6 +1,7 @@
 // lib/ui/screens/capitulos_screen.dart
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:caminho_do_saber/models/disciplina_model.dart';
 import 'package:caminho_do_saber/services/progresso_service.dart';
@@ -8,6 +9,10 @@ import 'package:caminho_do_saber/services/disciplina_service.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
 import 'package:caminho_do_saber/ui/screens/conteudo_screen.dart';
 import 'package:caminho_do_saber/models/conteudo_disciplina_model.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
+import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
+import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
+import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
 
 class CapitulosScreen extends StatefulWidget {
   final Disciplina disciplina;
@@ -33,9 +38,11 @@ class _CapitulosScreenState extends State<CapitulosScreen> {
   void _onCapituloTap(ConteudoCapitulo capitulo, bool isAccessible) {
     if (!isAccessible) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Conclui o capítulo anterior para desbloquear!'),
+        SnackBar(
+          content: Text('CONCLUI O CAPÍTULO ANTERIOR PARA DESBLOQUEAR!'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900)),
           behavior: SnackBarBehavior.floating,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+          backgroundColor: AppColors.primary,
         ),
       );
       return;
@@ -55,14 +62,19 @@ class _CapitulosScreenState extends State<CapitulosScreen> {
     final progressoService = context.watch<ProgressoService>();
     final size = MediaQuery.of(context).size;
     final isTablet = size.width > 600;
+    final headerHeight = size.height * 0.28 > 220 ? 220.0 : size.height * 0.28;
 
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text(widget.disciplina.nome, style: const TextStyle(fontWeight: FontWeight.bold)),
-        centerTitle: true,
-        backgroundColor: Colors.blue,
-        foregroundColor: Colors.white,
-        elevation: 4,
+        title: Text('LIÇÕES: ${widget.disciplina.nome}'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 20, color: Colors.white, letterSpacing: 1.2)),
+        centerTitle: false,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
+          onPressed: () => Navigator.pop(context),
+        ),
       ),
       body: BackgroundContainer(
         child: FutureBuilder<List<ConteudoCapitulo>>(
@@ -72,31 +84,70 @@ class _CapitulosScreenState extends State<CapitulosScreen> {
               return const Center(child: CircularProgressIndicator());
             }
             if (!snapshot.hasData || snapshot.data!.isEmpty) {
-              return const Center(child: Text('Nenhum conteúdo disponível.', style: TextStyle(color: Colors.white)));
+              return Center(child: Text('NENHUM CONTEÚDO DISPONÍVEL.'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: Colors.grey)));
             }
 
             final capitulos = snapshot.data!;
-            return GridView.builder(
-              physics: const BouncingScrollPhysics(),
-              padding: const EdgeInsets.all(20),
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: isTablet ? 3 : 2,
-                childAspectRatio: 1.1,
-                crossAxisSpacing: 16,
-                mainAxisSpacing: 16,
-              ),
-              itemCount: capitulos.length,
-              itemBuilder: (context, index) {
-                final capitulo = capitulos[index];
-                final uniqueId = '${widget.disciplina.id}_${capitulo.id}';
-                final isCompleted = progressoService.isCapituloConcluido(uniqueId);
-                final score = progressoService.progressoPorCapitulo[uniqueId] ?? 0;
-                
-                final previousId = index > 0 ? '${widget.disciplina.id}_${capitulos[index - 1].id}' : null;
-                final bool isAccessible = index == 0 || (previousId != null && progressoService.isCapituloConcluido(previousId));
+            return Column(
+              children: [
+                Stack(
+                  children: [
+                    Hero(
+                      tag: 'disciplina_bg_cap_${widget.disciplina.id}',
+                      child: SizedBox(height: headerHeight, width: double.infinity, child: SafeAssetImage(path: widget.disciplina.animacao, fit: BoxFit.cover)),
+                    ),
+                    Container(
+                      height: headerHeight,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter,
+                          colors: [
+                            Colors.white,
+                            Colors.white.withValues(alpha: 0.5),
+                            Colors.transparent,
+                          ],
+                          stops: const [0.0, 0.3, 0.8],
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      bottom: 25, left: 20, right: 20,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('MODO ESTUDO'.toUpperCase(), style: const TextStyle(color: AppColors.accent, fontSize: 12, fontWeight: FontWeight.w900, letterSpacing: 2)),
+                          Text(widget.disciplina.nome.toUpperCase(), style: const TextStyle(color: AppColors.primary, fontSize: 26, fontWeight: FontWeight.w900)),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                Expanded(
+                  child: GridView.builder(
+                    physics: const BouncingScrollPhysics(),
+                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 40),
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: isTablet ? 3 : 2,
+                      childAspectRatio: 0.9,
+                      crossAxisSpacing: 16,
+                      mainAxisSpacing: 16,
+                    ),
+                    itemCount: capitulos.length,
+                    itemBuilder: (context, index) {
+                      final capitulo = capitulos[index];
+                      final uniqueId = '${widget.disciplina.id}_${capitulo.id}';
+                      final isCompleted = progressoService.isCapituloConcluido(uniqueId);
+                      final score = progressoService.progressoPorCapitulo[uniqueId] ?? 0;
+                      
+                      final previousId = index > 0 ? '${widget.disciplina.id}_${capitulos[index - 1].id}' : null;
+                      final bool isAccessible = index == 0 || (previousId != null && progressoService.isCapituloConcluido(previousId));
 
-                return _buildNivelCard(context, capitulo, isCompleted, isAccessible, score);
-              },
+                      return _buildCapituloCard(context, index, capitulo, isCompleted, isAccessible, score);
+                    },
+                  ),
+                ),
+              ],
             );
           },
         ),
@@ -104,71 +155,66 @@ class _CapitulosScreenState extends State<CapitulosScreen> {
     );
   }
 
-  Widget _buildNivelCard(BuildContext context, ConteudoCapitulo capitulo, bool isCompleted, bool isAccessible, int score) {
-    Color borderColor;
-    Color bgColor;
-    IconData iconData = Icons.lock;
-    
-    int stars = 0;
-    if (score >= 15) {
-      stars = 3;
-    } else if (score >= 10) stars = 2;
-    else if (score >= 5) stars = 1;
-
-    if(isCompleted) {
-      borderColor = Colors.green.shade400;
-      bgColor = Colors.green.shade50;
-      iconData = Icons.check_circle_rounded;
-    } else if (isAccessible) {
-      borderColor = Colors.blue.shade400;
-      bgColor = Colors.blue.shade50;
-      iconData = Icons.play_circle_fill_rounded;
-    } else {
-      borderColor = Colors.grey.shade400;
-      bgColor = Colors.grey.shade200;
-    }
-
-    return GestureDetector(
-      onTap: () => _onCapituloTap(capitulo, isAccessible),
-      child: Card(
-        elevation: isAccessible ? 6 : 2,
-        color: bgColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-          side: BorderSide(color: borderColor, width: 2),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (isCompleted) ...[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: List.generate(3, (i) => Icon(
-                  i < stars ? Icons.star_rounded : Icons.star_outline_rounded,
-                  color: Colors.amber,
-                  size: 20,
-                )),
-              ),
-              const SizedBox(height: 4),
-            ] else 
-              Icon(iconData, color: borderColor, size: 40),
-
-            const SizedBox(height: 8),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: Text(
-                capitulo.titulo,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: isAccessible ? FontWeight.bold : FontWeight.normal,
-                  color: isAccessible ? Colors.black87 : Colors.grey.shade600,
+  Widget _buildCapituloCard(BuildContext context, int index, ConteudoCapitulo capitulo, bool isCompleted, bool isAccessible, int score) {
+    return Padding(
+      padding: const EdgeInsets.all(4.0),
+      child: ScalePressWrapper(
+        onTap: () => _onCapituloTap(capitulo, isAccessible),
+        child: NeumorphicWrapper(
+          baseColor: Colors.white,
+          borderRadius: 25,
+          child: Container(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: isAccessible ? AppColors.primary.withValues(alpha: 0.1) : Colors.grey.withValues(alpha: 0.1),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(
+                    isCompleted ? Icons.check_circle_rounded : (isAccessible ? Icons.menu_book_rounded : Icons.lock_rounded),
+                    color: isCompleted ? AppColors.success : (isAccessible ? AppColors.primary : Colors.grey),
+                    size: 32,
+                  ),
                 ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
+                const SizedBox(height: 12),
+                Text(
+                  'CAPÍTULO ${index + 1}'.toUpperCase(),
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w900,
+                    color: isAccessible ? AppColors.primary : Colors.grey,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  capitulo.titulo.toUpperCase(),
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w900,
+                    color: isAccessible ? Colors.black87 : Colors.grey.withValues(alpha: 0.7),
+                  ),
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                if (isCompleted) ...[
+                  const SizedBox(height: 8),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Icon(Icons.stars_rounded, color: AppColors.accent, size: 14),
+                      const SizedBox(width: 4),
+                      Text('CONCLUÍDO'.toUpperCase(), style: const TextStyle(color: AppColors.accent, fontSize: 9, fontWeight: FontWeight.w900)),
+                    ],
+                  ),
+                ],
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );
