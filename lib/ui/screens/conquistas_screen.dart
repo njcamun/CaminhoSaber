@@ -15,6 +15,7 @@ import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
 import 'package:lottie/lottie.dart';
+import 'package:caminho_do_saber/ui/widgets/edu_loading_widget.dart';
 
 class ConquistasScreen extends StatefulWidget {
   const ConquistasScreen({super.key});
@@ -203,15 +204,15 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                   children: [
                     Container(
                       padding: const EdgeInsets.all(10),
-                      decoration: BoxDecoration(color: classColor.withValues(alpha: 0.1), shape: BoxShape.circle),
-                      child: Icon(Icons.military_tech_rounded, color: classColor, size: 30),
+                      decoration: BoxDecoration(color: AppColors.tertiary.withValues(alpha: 0.1), shape: BoxShape.circle),
+                      child: const Icon(Icons.military_tech_rounded, color: AppColors.tertiary, size: 30),
                     ),
                     const SizedBox(width: 16),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('NÍVEL: ${title.toUpperCase()}', style: TextStyle(fontWeight: FontWeight.w900, color: classColor, fontSize: 16)),
+                          const Text('NÍVEL DE EVOLUÇÃO', style: TextStyle(fontWeight: FontWeight.w900, color: AppColors.tertiary, fontSize: 16)),
                           const SizedBox(height: 2),
                           Text('$current / ${next.toInt()} ESTRELAS'.toUpperCase(), style: const TextStyle(color: Colors.blueGrey, fontWeight: FontWeight.bold, fontSize: 11)),
                         ],
@@ -223,7 +224,7 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
                 PointsProgressBar(
                   currentPoints: current.toDouble(),
                   nextLevelPoints: next,
-                  color: classColor,
+                  gradientColors: [AppColors.tertiary, const Color(0xFFE082FF)],
                 ),
               ],
             ),
@@ -280,6 +281,12 @@ class _ConquistasScreenState extends State<ConquistasScreen> {
     return FutureBuilder<List<DisciplinaMetadata>>(
       future: _disciplinasMetadataFuture,
       builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(vertical: 40),
+            child: EduLoadingWidget(message: 'A CARREGAR TROFÉUS...'),
+          );
+        }
         if (!snapshot.hasData) return const SizedBox.shrink();
         final ps = context.watch<ProgressoService>();
         final all = snapshot.data!;

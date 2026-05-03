@@ -1,6 +1,8 @@
 // lib/ui/screens/definicoes_screen.dart
 
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:caminho_do_saber/services/auth_service.dart';
 import 'package:caminho_do_saber/ui/screens/auth/login_screen.dart';
@@ -13,6 +15,7 @@ import 'package:caminho_do_saber/providers/theme_provider.dart';
 import 'package:caminho_do_saber/services/audio_service.dart';
 import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
+import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
 
 class DefinicoesScreen extends StatefulWidget {
   const DefinicoesScreen({super.key});
@@ -147,6 +150,83 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
     );
   }
 
+  void _showAboutAppDialog(BuildContext context) async {
+    try {
+      // Caminho corrigido para a pasta de assets registada no pubspec.yaml
+      final String response = await rootBundle.loadString('assets/data/sobreNos.json');
+      final data = json.decode(response)['welcomeInfo'];
+      
+      if (!context.mounted) return;
+
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+          title: Row(
+            children: [
+              const Icon(Icons.info_rounded, color: AppColors.primary, size: 28),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  data['title'].toString().toUpperCase(),
+                  style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 18),
+                ),
+              ),
+            ],
+          ),
+          content: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  data['description'].toString().toUpperCase(),
+                  style: const TextStyle(fontSize: 11, fontWeight: FontWeight.bold, color: Colors.blueGrey, height: 1.5),
+                ),
+                const SizedBox(height: 20),
+                _buildAboutSection(data['whoAreWe']['title'], data['whoAreWe']['text'], Icons.groups_rounded, AppColors.secondary),
+                const SizedBox(height: 15),
+                _buildAboutSection(data['location']['title'], (data['location']['text'] as List).join(", "), Icons.location_on_rounded, AppColors.accent),
+                const SizedBox(height: 15),
+                _buildAboutSection('CONTACTOS', "EMAIL: ${data['contacts']['email']}\nTEL: ${data['contacts']['phone']}", Icons.contact_mail_rounded, AppColors.tertiary),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: Text('FECHAR'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.primary)),
+            ),
+          ],
+        ),
+      );
+    } catch (e) {
+      debugPrint('Erro ao carregar sobreNos.json: $e');
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('ERRO AO CARREGAR INFORMAÇÕES: $e'.toUpperCase())),
+        );
+      }
+    }
+  }
+
+  Widget _buildAboutSection(String title, String content, IconData icon, Color color) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Icon(icon, size: 16, color: color),
+            const SizedBox(width: 8),
+            Text(title.toUpperCase(), style: TextStyle(fontWeight: FontWeight.w900, fontSize: 12, color: color)),
+          ],
+        ),
+        const SizedBox(height: 4),
+        Text(content.toUpperCase(), style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w700, color: Colors.black87)),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
@@ -187,8 +267,14 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
                                   child: CircleAvatar(
                                     radius: 30,
                                     backgroundColor: AppColors.primary.withValues(alpha: 0.1),
-                                    backgroundImage: user?.photoURL != null ? NetworkImage(user!.photoURL!) : null,
-                                    child: user?.photoURL == null ? const Icon(Icons.person_rounded, size: 35, color: AppColors.primary) : null,
+                                    child: ClipOval(
+                                      child: SafeAssetImage(
+                                        path: user?.photoURL ?? 'assets/images/foto.png',
+                                        fit: BoxFit.cover,
+                                        width: 60,
+                                        height: 60,
+                                      ),
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(width: 16),
@@ -295,7 +381,7 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
                       _buildNeumorphicSection(
                         child: Column(
                           children: [
-                            _buildInfoTile(Icons.info_outline_rounded, 'SOBRE A APLICAÇÃO'),
+                            _buildInfoTile(Icons.info_outline_rounded, 'SOBRE A APLICAÇÃO', onTap: () => _showAboutAppDialog(context)),
                             const Divider(indent: 70, endIndent: 20, height: 1),
                             _buildInfoTile(Icons.verified_user_rounded, 'POLÍTICA DE PRIVACIDADE'),
                           ],
@@ -330,12 +416,12 @@ class _DefinicoesScreenState extends State<DefinicoesScreen> {
     );
   }
 
-  Widget _buildInfoTile(IconData icon, String title) {
+  Widget _buildInfoTile(IconData icon, String title, {VoidCallback? onTap}) {
     return ListTile(
       leading: Icon(icon, color: AppColors.primary, size: 24),
       title: Text(title.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 13)),
       trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 14),
-      onTap: () {},
+      onTap: onTap,
     );
   }
 }

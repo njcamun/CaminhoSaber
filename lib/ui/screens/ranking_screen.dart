@@ -115,7 +115,6 @@ class RankingScreen extends StatelessWidget {
       margin: const EdgeInsets.fromLTRB(16, 0, 16, 50),
       padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
       decoration: BoxDecoration(
-        // Coloração diferenciada com gradiente Educlass Aura para destaque total
         gradient: const LinearGradient(
           colors: [AppColors.primary, Color(0xFF00B4FF)],
           begin: Alignment.topLeft,
@@ -124,8 +123,8 @@ class RankingScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
         boxShadow: [
           BoxShadow(
-            color: AppColors.primary.withValues(alpha: 0.4),
-            blurRadius: 25,
+            color: AppColors.primary.withValues(alpha: 0.28),
+            blurRadius: 17,
             offset: const Offset(0, 8),
           )
         ],
@@ -139,14 +138,13 @@ class RankingScreen extends StatelessWidget {
             final myRank = snapshot.data ?? 0;
             return Row(
               children: [
-                // Badge branca para contrastar com o fundo azul
                 Container(
                   width: 45,
                   height: 45,
-                  decoration: const BoxDecoration(
+                  decoration: BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.circle,
-                    boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+                    boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.1), blurRadius: 4)],
                   ),
                   alignment: Alignment.center,
                   child: Text(
@@ -254,7 +252,7 @@ class RankingScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: AppColors.accent,
                   borderRadius: BorderRadius.circular(20),
-                  boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 4)],
+                  boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.1), blurRadius: 3)],
                 ),
                 child: Text('LÍDER'.toUpperCase(), style: const TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.w900)),
               ),
@@ -294,7 +292,7 @@ class RankingScreen extends StatelessWidget {
         shape: BoxShape.circle,
         border: Border.all(color: rank <= 3 ? Colors.white : badgeColor, width: 2),
         boxShadow: [
-          if (rank <= 3) BoxShadow(color: badgeColor.withValues(alpha: 0.4), blurRadius: 8, spreadRadius: 1)
+          if (rank <= 3) BoxShadow(color: AppColors.primary.withValues(alpha: 0.15), blurRadius: 6, spreadRadius: 1)
         ],
       ),
       alignment: Alignment.center,

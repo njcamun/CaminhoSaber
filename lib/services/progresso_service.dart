@@ -348,7 +348,8 @@ class ProgressoService with ChangeNotifier {
           .collection('users')
           .doc(user.uid)
           .collection('profiles')
-          .get();
+          .get()
+          .timeout(const Duration(seconds: 3)); // Proteção contra travamento
       debugPrint('[ProgressoService] Found ${profilesSnapshot.docs.length} profiles in Firestore');
 
       final Map<String, List<Map<String, dynamic>>> fetchedProgress = {};

@@ -514,7 +514,7 @@ class _QuizScreenState extends State<QuizScreen> with WidgetsBindingObserver {
                   decoration: BoxDecoration(
                     color: AppColors.primary.withValues(alpha: 0.95),
                     borderRadius: BorderRadius.circular(25),
-                    boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))],
+                    boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.1), blurRadius: 7, offset: const Offset(0, 4))],
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,

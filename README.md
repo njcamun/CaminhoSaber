@@ -1,4 +1,4 @@
-# Caminho do Saber
+# Educlass
 
 Aplicativo educacional desenvolvido em Flutter.
 

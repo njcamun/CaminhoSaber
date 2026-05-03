@@ -18,6 +18,8 @@ import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
 import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
+import 'package:caminho_do_saber/services/content_provider_service.dart';
+import 'package:caminho_do_saber/ui/widgets/edu_loading_widget.dart';
 
 class NiveisScreen extends StatefulWidget {
   final Disciplina disciplina;
@@ -61,8 +63,8 @@ class _NiveisScreenState extends State<NiveisScreen> {
 
   Future<void> _loadQuizzes() async {
     try {
-      final String assetPath = 'assets/data/${widget.disciplina.id}.json';
-      final String jsonString = await rootBundle.loadString(assetPath);
+      final contentProvider = context.read<ContentProviderService>();
+      final String jsonString = await contentProvider.getContent('${widget.disciplina.id}.json');
       final jsonMap = jsonDecode(jsonString) as Map<String, dynamic>;
 
       final List<dynamic>? quizzesJson = jsonMap['quizzes'];
@@ -282,71 +284,113 @@ class _NiveisScreenState extends State<NiveisScreen> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final isTablet = size.width > 600;
-    final headerHeight = size.height * 0.28 > 220 ? 220.0 : size.height * 0.28;
+    final expandedHeaderHeight = size.height * 0.3 > 250 ? 250.0 : size.height * 0.3;
 
     return Scaffold(
-      extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        title: Text(widget.disciplina.nome.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 20, color: Colors.white, letterSpacing: 1.2)),
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: false,
-        leading: IconButton(icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white), onPressed: () => Navigator.pop(context)),
-      ),
       body: BackgroundContainer(
         child: _isLoading
-            ? const Center(child: CircularProgressIndicator())
-            : Column(
-                children: [
-                  Stack(
-                    children: [
-                      Hero(
-                        tag: 'disciplina_bg_${widget.disciplina.id}',
-                        child: SizedBox(height: headerHeight, width: double.infinity, child: SafeAssetImage(path: widget.disciplina.animacao, fit: BoxFit.cover)),
+            ? EduLoadingWidget(message: 'BAIXANDO NOVOS DESAFIOS...')
+            : NestedScrollView(
+                headerSliverBuilder: (context, innerBoxIsScrolled) {
+                  return [
+                    SliverAppBar(
+                      expandedHeight: expandedHeaderHeight,
+                      pinned: true,
+                      elevation: 4,
+                      shadowColor: AppColors.primary.withValues(alpha: 0.1),
+                      backgroundColor: AppColors.primary,
+                      leading: IconButton(
+                        icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
+                        onPressed: () => Navigator.pop(context),
                       ),
-                      Container(
-                        height: headerHeight,
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment.bottomCenter,
-                            end: Alignment.topCenter,
-                            colors: [
-                              Colors.white,
-                              Colors.white.withValues(alpha: 0.5),
-                              Colors.transparent,
-                            ],
-                            stops: const [0.0, 0.3, 0.8],
+                      flexibleSpace: FlexibleSpaceBar(
+                        centerTitle: true,
+                        titlePadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                        title: AnimatedOpacity(
+                          duration: const Duration(milliseconds: 200),
+                          opacity: innerBoxIsScrolled ? 1.0 : 0.0,
+                          child: Text(
+                            widget.disciplina.nome.toUpperCase(),
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w900,
+                              fontSize: 16,
+                              letterSpacing: 1.2,
+                            ),
                           ),
                         ),
-                      ),
-                      Positioned(
-                        bottom: 25, left: 20, right: 20,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                        background: Stack(
+                          fit: StackFit.expand,
                           children: [
-                            Text(widget.disciplina.nome.toUpperCase(), style: const TextStyle(color: AppColors.primary, fontSize: 26, fontWeight: FontWeight.w900, letterSpacing: 1)),
-                            const SizedBox(height: 4),
-                            Text(widget.disciplina.descricao.toUpperCase(), style: const TextStyle(color: Color(0xFF007A9E), fontSize: 11, fontWeight: FontWeight.w800), maxLines: 2, overflow: TextOverflow.ellipsis),
+                            Hero(
+                              tag: 'disciplina_bg_${widget.disciplina.id}',
+                              child: SafeAssetImage(path: widget.disciplina.animacao, fit: BoxFit.cover),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.bottomCenter,
+                                  end: Alignment.topCenter,
+                                  colors: [
+                                    Colors.white,
+                                    Colors.white.withValues(alpha: 0.4),
+                                    Colors.transparent,
+                                  ],
+                                  stops: const [0.0, 0.3, 0.7],
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              bottom: 20,
+                              left: 20,
+                              right: 20,
+                              child: AnimatedOpacity(
+                                duration: const Duration(milliseconds: 200),
+                                opacity: innerBoxIsScrolled ? 0.0 : 1.0,
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      widget.disciplina.nome.toUpperCase(),
+                                      style: const TextStyle(
+                                        color: AppColors.primary,
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.w900,
+                                        letterSpacing: 1,
+                                      ),
+                                    ),
+                                    Text(
+                                      widget.disciplina.descricao.toUpperCase(),
+                                      style: const TextStyle(
+                                        color: Color(0xFF007A9E),
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w800,
+                                      ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       ),
-                    ],
-                  ),
-                  Expanded(
-                    child: GridView.builder(
-                      padding: const EdgeInsets.fromLTRB(16, 16, 16, 40),
-                      physics: const BouncingScrollPhysics(),
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: isTablet ? 4 : 3, 
-                        childAspectRatio: 0.85,
-                        crossAxisSpacing: 12,
-                        mainAxisSpacing: 12
-                      ),
-                      itemCount: _capitulos.length,
-                      itemBuilder: (context, index) => _buildNivelCard(context, index),
                     ),
+                  ];
+                },
+                body: GridView.builder(
+                  padding: const EdgeInsets.fromLTRB(16, 20, 16, 40),
+                  physics: const BouncingScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: isTablet ? 4 : 3,
+                    childAspectRatio: 0.85,
+                    crossAxisSpacing: 12,
+                    mainAxisSpacing: 12,
                   ),
-                ],
+                  itemCount: _capitulos.length,
+                  itemBuilder: (context, index) => _buildNivelCard(context, index),
+                ),
               ),
       ),
     );

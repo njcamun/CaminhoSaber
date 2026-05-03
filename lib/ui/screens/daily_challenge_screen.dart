@@ -16,6 +16,8 @@ import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
 import 'package:lottie/lottie.dart';
+import 'package:caminho_do_saber/services/content_provider_service.dart';
+import 'package:caminho_do_saber/ui/widgets/edu_loading_widget.dart';
 
 class DailyChallengeScreen extends StatefulWidget {
   const DailyChallengeScreen({super.key});
@@ -268,17 +270,7 @@ class _DailyChallengeScreenState extends State<DailyChallengeScreen> {
       ),
       body: BackgroundContainer(
         child: _isLoading
-        ? Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center, 
-              children: [
-                Lottie.asset('assets/animations/arcade.json', height: 150),
-                const SizedBox(height: 20), 
-                Text('A PREPARAR O TEU DESAFIO...'.toUpperCase(), 
-                  style: const TextStyle(color: AppColors.primary, fontWeight: FontWeight.w900, fontSize: 16))
-              ]
-            )
-          )
+        ? EduLoadingWidget(message: 'A PREPARAR O TEU DESAFIO...')
         : SingleChildScrollView(
             padding: const EdgeInsets.fromLTRB(16, 25, 16, 40),
             child: Center(

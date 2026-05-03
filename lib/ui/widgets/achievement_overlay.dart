@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 
 class AchievementOverlay extends StatelessWidget {
   final String title;
@@ -112,7 +113,7 @@ class _AchievementWidgetState extends State<_AchievementWidget> with SingleTicke
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(25),
-                boxShadow: [BoxShadow(color: widget.color.withValues(alpha: 0.5), blurRadius: 20, spreadRadius: 5)],
+                boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.2), blurRadius: 14, spreadRadius: 3)],
                 border: Border.all(color: widget.color.withValues(alpha: 0.3), width: 3),
               ),
               child: Column(

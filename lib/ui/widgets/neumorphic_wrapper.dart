@@ -23,7 +23,7 @@ class NeumorphicWrapper extends StatelessWidget {
         color: baseColor,
         borderRadius: BorderRadius.circular(borderRadius),
         boxShadow: isPressed 
-          ? [BoxShadow(color: Colors.black.withValues(alpha: 0.1), blurRadius: 4, offset: const Offset(0, 2))]
+          ? [BoxShadow(color: AppColors.primary.withValues(alpha: 0.08), blurRadius: 4, offset: const Offset(0, 2))]
           : AppShadows.primaryShadow,
       ),
       child: child,

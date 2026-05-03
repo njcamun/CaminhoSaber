@@ -1,6 +1,6 @@
 {
-    "name": "Caminho do Saber",
-    "short_name": "CaminhoSaber",
+    "name": "Educlass",
+    "short_name": "Educlass",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#2196F3",

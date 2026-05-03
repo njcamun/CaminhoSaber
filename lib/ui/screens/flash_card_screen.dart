@@ -214,7 +214,7 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
       decoration: BoxDecoration(
         color: enabled ? Colors.white : Colors.white10,
         shape: BoxShape.circle,
-        boxShadow: enabled ? [const BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))] : [],
+        boxShadow: enabled ? [BoxShadow(color: AppColors.primary.withValues(alpha: 0.1), blurRadius: 7, offset: const Offset(0, 4))] : [],
       ),
       child: Icon(icon, color: enabled ? AppColors.primary : Colors.white24, size: 32),
     );
@@ -232,8 +232,8 @@ class _FlashCardScreenState extends State<FlashCardScreen> with SingleTickerProv
         borderRadius: BorderRadius.circular(25),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.3),
-            blurRadius: 20,
+            color: AppColors.primary.withValues(alpha: 0.1),
+            blurRadius: 14,
             offset: const Offset(0, 10),
           ),
         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 
 class PointsProgressBar extends StatelessWidget {
   final double currentPoints;
@@ -33,8 +34,9 @@ class PointsProgressBar extends StatelessWidget {
           height: 16,
           width: double.infinity,
           decoration: BoxDecoration(
-            color: Colors.grey.shade200,
+            color: AppColors.primary.withValues(alpha: 0.15), // Fundo Azul Educlass Suave
             borderRadius: BorderRadius.circular(25),
+            border: Border.all(color: AppColors.primary.withValues(alpha: 0.1), width: 1),
           ),
           child: Stack(
             children: [
@@ -56,13 +58,13 @@ class PointsProgressBar extends StatelessWidget {
                           end: Alignment.centerRight,
                         ),
                         borderRadius: BorderRadius.circular(25),
-                        boxShadow: [
-                          BoxShadow(
-                            color: effectiveColors.first.withValues(alpha: 0.3),
-                            blurRadius: 6,
-                            offset: const Offset(0, 2),
-                          ),
-                        ],
+                          boxShadow: [
+                            BoxShadow(
+                              color: AppColors.primary.withValues(alpha: 0.1),
+                              blurRadius: 4,
+                              offset: const Offset(0, 2),
+                            ),
+                          ],
                       ),
                       child: child,
                     ),

@@ -403,7 +403,7 @@ class _ResultadosScreenState extends State<ResultadosScreen> {
         decoration: BoxDecoration(
           color: color,
           borderRadius: BorderRadius.circular(25),
-          boxShadow: [BoxShadow(color: color.withValues(alpha: 0.4), blurRadius: 12, offset: const Offset(0, 6))],
+          boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.15), blurRadius: 8, offset: const Offset(0, 6))],
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

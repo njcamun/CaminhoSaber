@@ -6,7 +6,7 @@ class AppColors {
   // Paleta Educlass Aura Original
   static const Color primary = Color(0xFF00C5FE);    // Azul Edu
   static const Color secondary = Color(0xFF00D2B4);  // Turquesa/Seafoam
-  static const Color tertiary = Color(0xFF9575CD);   // Lavanda Suave
+  static const Color tertiary = Color(0xFFCE47F9);   // Roxo Educlass Aura
   static const Color accent = Color(0xFFFFB300);     // Âmbar/Dourado
   
   // Padrão Educlass: Fundo Branco Puro para destaque dos componentes coloridos
@@ -23,29 +23,34 @@ class AppColors {
 }
 
 class AppShadows {
-  // Sombra Neumórfica Padrão Aura
+  // Sombra Neumórfica Padrão Aura (Azul Educlass, suave)
   static List<BoxShadow> get primaryShadow => [
     BoxShadow(
-      color: Colors.grey.shade400.withValues(alpha: 0.3),
-      blurRadius: 15,
+      color: AppColors.primary.withValues(alpha: 0.12),
+      blurRadius: 10,
       offset: const Offset(0, 8),
     ),
   ];
 
-  // Sombra de topo para seções e cards de disciplina
+  // Sombra de topo e fundo para seções (Azul Educlass, vibrante)
   static List<BoxShadow> get topShadow => [
     BoxShadow(
       color: AppColors.primary.withValues(alpha: 0.15),
-      blurRadius: 20,
+      blurRadius: 14,
       offset: const Offset(0, -8),
+    ),
+    BoxShadow(
+      color: AppColors.primary.withValues(alpha: 0.15),
+      blurRadius: 14,
+      offset: const Offset(0, 8),
     ),
   ];
 
-  // Sombra suave para itens menores
+  // Sombra suave para itens menores (Azul Educlass, mínima)
   static List<BoxShadow> get softShadow => [
     BoxShadow(
-      color: Colors.black.withValues(alpha: 0.05),
-      blurRadius: 10,
+      color: AppColors.primary.withValues(alpha: 0.08),
+      blurRadius: 7,
       offset: const Offset(0, 4),
     ),
   ];

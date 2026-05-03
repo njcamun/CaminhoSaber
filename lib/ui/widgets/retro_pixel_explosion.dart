@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 
 class PixelExplosion extends StatefulWidget {
   final Offset position;
@@ -74,8 +75,8 @@ class _PixelExplosionState extends State<PixelExplosion> with SingleTickerProvid
                     color: widget.color,
                     boxShadow: [
                       BoxShadow(
-                        color: widget.color.withValues(alpha: 0.5),
-                        blurRadius: 2,
+                        color: AppColors.primary.withValues(alpha: 0.2),
+                        blurRadius: 1,
                       )
                     ],
                   ),

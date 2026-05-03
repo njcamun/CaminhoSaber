@@ -556,7 +556,7 @@ class _MeusFlashcardsScreenState extends State<MeusFlashcardsScreen> {
           decoration: BoxDecoration(
             color: AppColors.primary,
             borderRadius: BorderRadius.circular(30),
-            boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.4), blurRadius: 15, offset: const Offset(0, 5))],
+            boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.1), blurRadius: 10, offset: const Offset(0, 5))],
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,

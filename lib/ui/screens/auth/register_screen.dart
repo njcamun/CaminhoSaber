@@ -125,7 +125,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
                           Text(
-                            'BEM-VINDO AO CAMINHO DO SABER!',
+                            'BEM-VINDO AO EDUCLASS!',
                             style: TextStyle(
                               fontSize: 22,
                               fontWeight: FontWeight.w600,

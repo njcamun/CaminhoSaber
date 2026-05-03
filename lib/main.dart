@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -19,16 +20,25 @@ import 'firebase_options.dart';
 
 import 'package:caminho_do_saber/database/database.dart';
 
+import 'package:caminho_do_saber/services/content_provider_service.dart';
+
+import 'package:caminho_do_saber/ui/screens/splash_screen.dart';
+
 final GlobalKey<ScaffoldMessengerState> globalMessengerKey = GlobalKey<ScaffoldMessengerState>();
 
 void main() async {
   try {
     WidgetsFlutterBinding.ensureInitialized();
     
-    // Inicialização do Firebase primeiro
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
+    // Inicialização do Firebase segura (com timeout curto para não travar o splash)
+    if (Firebase.apps.isEmpty) {
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      ).timeout(const Duration(seconds: 5), onTimeout: () {
+        debugPrint('[Firebase] Timeout na inicialização. Prosseguindo...');
+        return Firebase.app(); 
+      });
+    }
 
     // Configuração de orientação (apenas nativo, mas seguro no web)
     SystemChrome.setPreferredOrientations([
@@ -43,17 +53,22 @@ void main() async {
     }
 
     final audioService = AudioService();
-    audioService.init().catchError((e) => debugPrint("Erro AudioService: $e"));
+    final contentProvider = ContentProviderService();
+    
+    // Inicializações em paralelo sem bloquear a UI
+    unawaited(audioService.init().catchError((e) => debugPrint("Erro AudioService: $e")));
+    unawaited(contentProvider.prefetchManifest().catchError((e) => debugPrint("Erro Manifest: $e")));
 
     runApp(
       MultiProvider(
         providers: [
           Provider(create: (_) => AuthService()),
+          Provider.value(value: contentProvider),
           if (driftDb != null) Provider.value(value: driftDb),
           Provider.value(value: audioService),
           ChangeNotifierProvider(create: (_) => ThemeProvider()),
           ChangeNotifierProvider(create: (_) => ProfileProvider(driftDb)),
-          Provider(create: (_) => DisciplinaService()),
+          Provider(create: (context) => DisciplinaService(context.read<ContentProviderService>())),
           Provider<RankingService>(
             create: (context) => RankingService(driftDb),
             dispose: (_, service) => service.dispose(),
@@ -83,7 +98,6 @@ void main() async {
     );
   } catch (e, stack) {
     debugPrint("ERRO FATAL NO MAIN: $e\n$stack");
-    // Em caso de erro catastrófico, tentamos rodar uma app mínima de erro
     runApp(MaterialApp(home: Scaffold(body: Center(child: Text("Erro ao iniciar aplicação: $e")))));
   }
 }
@@ -99,11 +113,11 @@ class MyApp extends StatelessWidget {
         final user = authService.currentUser;
 
         return MaterialApp(
-          title: 'Caminho do Saber',
+          title: 'Educlass',
           debugShowCheckedModeBanner: false,
           scaffoldMessengerKey: globalMessengerKey,
           theme: themeProvider.themeData,
-          home: user != null ? const HomeScreen() : const LoginScreen(),
+          home: const SplashScreen(),
           builder: (context, child) {
             return Stack(
               children: [

@@ -63,6 +63,9 @@ class ProfileProvider with ChangeNotifier {
       _pendingRestore = false;
       notifyListeners();
     } else {
+      // Pequeno delay para permitir que a animação da splash ou transição ocorra suavemente
+      await Future.delayed(const Duration(milliseconds: 500));
+
       if (firebaseUser.isAnonymous) {
         _isLoading = true;
         _pendingRestore = false;
@@ -92,9 +95,9 @@ class ProfileProvider with ChangeNotifier {
 
   String _validateAvatarPath(String? path) {
     if (path == null || path.isEmpty) return 'assets/images/foto.png';
-    if (path.startsWith('assets/')) return path;
+    if (path.startsWith('assets/') || path.startsWith('http')) return path;
 
-    // Web does not support dart:io file checks.
+    // No Web, só suportamos assets ou URLs http
     if (kIsWeb) return 'assets/images/foto.png';
 
     try {
@@ -126,18 +129,26 @@ class ProfileProvider with ChangeNotifier {
               .collection('users')
               .doc(firebaseUser.uid)
               .collection('profiles')
-              .get();
+              .get()
+              .timeout(const Duration(seconds: 3)); // Limite de 3 segundos
 
           debugPrint('[ProfileProvider] Firestore profiles found: ${querySnapshot.docs.length}');
           if (kIsWeb) {
             _allProfiles = querySnapshot.docs.map((doc) {
               final data = doc.data();
+              String avatar = _validateAvatarPath(data['avatarAssetPath'] as String?);
+              
+              // Prioriza foto do Google para o perfil principal se estiver usando o padrão
+              if (doc.id == firebaseUser.uid && avatar == 'assets/images/foto.png' && firebaseUser.photoURL != null) {
+                avatar = firebaseUser.photoURL!;
+              }
+
               return Profile(
                 id: -1,
                 uid: doc.id,
                 parentUid: firebaseUser.uid,
                 nome: (data['nome'] as String?) ?? 'Perfil',
-                avatarAssetPath: _validateAvatarPath(data['avatarAssetPath'] as String?),
+                avatarAssetPath: avatar,
                 isMainProfile: (data['isMainProfile'] as bool?) ?? (doc.id == firebaseUser.uid),
                 totalPontos: (data['totalPontos'] as num?)?.toInt() ?? 0,
                 totalDiamantes: (data['totalDiamantes'] as num?)?.toInt() ?? 0,
@@ -148,13 +159,14 @@ class ProfileProvider with ChangeNotifier {
             if (_allProfiles.isEmpty) {
               final defaultName = firebaseUser.displayName ??
                   (firebaseUser.email != null ? firebaseUser.email!.split('@').first : 'Utilizador');
+              final defaultAvatar = firebaseUser.photoURL ?? 'assets/images/foto.png';
               _allProfiles = [
                 Profile(
                   id: -1,
                   uid: firebaseUser.uid,
                   parentUid: firebaseUser.uid,
                   nome: defaultName,
-                  avatarAssetPath: 'assets/images/foto.png',
+                  avatarAssetPath: defaultAvatar,
                   isMainProfile: true,
                   totalPontos: 0,
                   totalDiamantes: 0,
@@ -183,12 +195,19 @@ class ProfileProvider with ChangeNotifier {
                   for (var doc in querySnapshot.docs) {
                   final data = doc.data();
                   final pUid = doc.id;
+                  
+                  String avatarToSave = _validateAvatarPath(data['avatarAssetPath'] as String?);
+
+                  // Prioriza foto do Google para o perfil principal se estiver usando o padrão
+                  if (pUid == firebaseUser.uid && avatarToSave == 'assets/images/foto.png' && firebaseUser.photoURL != null) {
+                    avatarToSave = firebaseUser.photoURL!;
+                  }
 
                   final companion = ProfilesCompanion.insert(
                     uid: pUid,
                     parentUid: firebaseUser.uid,
                     nome: data['nome'] ?? 'Perfil',
-                    avatarAssetPath: _validateAvatarPath(data['avatarAssetPath'] as String?),
+                    avatarAssetPath: avatarToSave,
                     isMainProfile: (data['isMainProfile'] as bool?) ?? (pUid == firebaseUser.uid),
                     totalPontos: Value(data['totalPontos'] ?? 0),
                     totalDiamantes: Value(data['totalDiamantes'] ?? 0),
@@ -210,12 +229,18 @@ class ProfileProvider with ChangeNotifier {
               // On web or if DB fails, load profiles from Firestore directly into memory
               _allProfiles = querySnapshot.docs.map((doc) {
                 final data = doc.data();
+                String avatar = _validateAvatarPath(data['avatarAssetPath'] as String?);
+
+                if (doc.id == firebaseUser.uid && avatar == 'assets/images/foto.png' && firebaseUser.photoURL != null) {
+                  avatar = firebaseUser.photoURL!;
+                }
+
                 return Profile(
                   id: -1,
                   uid: doc.id,
                   parentUid: firebaseUser.uid,
                   nome: (data['nome'] as String?) ?? 'Perfil',
-                  avatarAssetPath: _validateAvatarPath(data['avatarAssetPath'] as String?),
+                  avatarAssetPath: avatar,
                   isMainProfile: (data['isMainProfile'] as bool?) ?? (doc.id == firebaseUser.uid),
                   totalPontos: (data['totalPontos'] as num?)?.toInt() ?? 0,
                   totalDiamantes: (data['totalDiamantes'] as num?)?.toInt() ?? 0,
@@ -254,6 +279,7 @@ class ProfileProvider with ChangeNotifier {
       if (_allProfiles.isEmpty) {
         String defaultName = firebaseUser.displayName ?? 
                             (firebaseUser.email != null ? firebaseUser.email!.split('@').first : 'Utilizador');
+        String defaultAvatar = firebaseUser.photoURL ?? 'assets/images/foto.png';
         debugPrint('[ProfileProvider] Creating default profile for: $defaultName');
         
         try {
@@ -262,7 +288,7 @@ class ProfileProvider with ChangeNotifier {
               uid: firebaseUser.uid,
               parentUid: firebaseUser.uid,
               nome: defaultName,
-              avatarAssetPath: 'assets/images/foto.png',
+              avatarAssetPath: defaultAvatar,
               isMainProfile: true,
             ));
             
@@ -276,7 +302,7 @@ class ProfileProvider with ChangeNotifier {
               uid: firebaseUser.uid,
               parentUid: firebaseUser.uid,
               nome: defaultName,
-              avatarAssetPath: 'assets/images/foto.png',
+              avatarAssetPath: defaultAvatar,
               isMainProfile: true,
               totalPontos: 0,
               totalDiamantes: 0,
@@ -291,7 +317,7 @@ class ProfileProvider with ChangeNotifier {
             uid: firebaseUser.uid,
             parentUid: firebaseUser.uid,
             nome: defaultName,
-            avatarAssetPath: 'assets/images/foto.png',
+            avatarAssetPath: defaultAvatar,
             isMainProfile: true,
             totalPontos: 0,
             totalDiamantes: 0,

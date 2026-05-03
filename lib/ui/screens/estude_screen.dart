@@ -45,17 +45,11 @@ class EstudeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: groupedDisciplinas.entries.map((entry) {
               return Container(
-                margin: const EdgeInsets.fromLTRB(16, 0, 16, 30),
+                margin: const EdgeInsets.only(bottom: 30), // Removidas margens laterais para expandir além da tela
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(35),
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppColors.primary.withValues(alpha: 0.15),
-                      blurRadius: 20,
-                      offset: const Offset(0, -8),
-                    ),
-                  ],
+                  boxShadow: AppShadows.topShadow,
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -116,8 +110,8 @@ class EstudeScreen extends StatelessWidget {
             borderRadius: BorderRadius.circular(25),
             boxShadow: [
               BoxShadow(
-                color: Colors.grey.shade400.withValues(alpha: 0.4),
-                blurRadius: 8,
+                color: AppColors.primary.withValues(alpha: 0.1),
+                blurRadius: 6,
                 offset: const Offset(0, -4),
               ),
             ],

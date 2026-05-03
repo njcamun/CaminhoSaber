@@ -27,6 +27,7 @@ import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/retro_crt_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/animated_stat_icon.dart';
 import 'package:caminho_do_saber/services/ranking_service.dart';
+import 'package:caminho_do_saber/services/content_provider_service.dart';
 import 'package:lottie/lottie.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -86,9 +87,15 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   }
 
   Future<List<Disciplina>> _loadDisciplinas() async {
-    final String response = await rootBundle.loadString('assets/data/disciplinas.json');
-    final List<dynamic> data = json.decode(response);
-    return data.map((json) => Disciplina.fromJson(json)).toList();
+    try {
+      final contentProvider = context.read<ContentProviderService>();
+      final String response = await contentProvider.getContent('disciplinas.json');
+      final List<dynamic> data = json.decode(response);
+      return data.map((json) => Disciplina.fromJson(json)).toList();
+    } catch (e) {
+      debugPrint('[HomeScreen] Erro ao carregar disciplinas: $e');
+      return [];
+    }
   }
 
   Map<String, List<Disciplina>> _groupDisciplinas(List<Disciplina> disciplinas) {
@@ -122,7 +129,12 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
               final p = profileProvider.allProfiles[i];
               final active = p.uid == profileProvider.activeProfile?.uid;
               return ListTile(
-                leading: CircleAvatar(backgroundImage: AssetImage(p.avatarAssetPath)),
+                leading: CircleAvatar(
+                  backgroundColor: AppColors.primary.withValues(alpha: 0.1),
+                  child: ClipOval(
+                    child: SafeAssetImage(path: p.avatarAssetPath, fit: BoxFit.cover),
+                  ),
+                ),
                 title: Text(p.nome.toUpperCase(), style: TextStyle(fontWeight: active ? FontWeight.w900 : FontWeight.normal)),
                 trailing: active ? const Icon(Icons.check_circle, color: AppColors.primary) : null,
                 onTap: () {
@@ -284,7 +296,24 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                 children: [
                   Row(
                     children: [
-                      CircleAvatar(radius: 35, backgroundImage: AssetImage(p.avatarAssetPath)),
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(color: AppColors.primary.withValues(alpha: 0.2), width: 2),
+                        ),
+                        child: CircleAvatar(
+                          radius: 35,
+                          backgroundColor: AppColors.primary.withValues(alpha: 0.1),
+                          child: ClipOval(
+                            child: SafeAssetImage(
+                              path: p.avatarAssetPath,
+                              fit: BoxFit.cover,
+                              width: 70,
+                              height: 70,
+                            ),
+                          ),
+                        ),
+                      ),
                       const SizedBox(width: 15),
                       Expanded(
                         child: Column(
@@ -344,7 +373,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                     progresso.totalStarsTotal.toDouble(), 
                     progresso.getNextLevelProgress(progresso.totalStarsTotal), 
                     null, 
-                    gradientColors: [AppColors.accent, AppColors.tertiary] // Amarelo/Âmbar -> Violeta
+                    gradientColors: [AppColors.tertiary, Color(0xFFE082FF)] // Roxo Educlass -> Roxo Claro
                   ),
                   const SizedBox(height: 12),
                   _buildProgressRow(
@@ -352,7 +381,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                     (progresso.totalPontosAcumulados % 250).toDouble(), 
                     250, 
                     null, 
-                    gradientColors: [AppColors.orange, AppColors.accent] // Laranja -> Amarelo/Âmbar
+                    gradientColors: [AppColors.orange, AppColors.accent] // Restaurado: Laranja -> Amarelo
                   ),
                 ],
               ),
@@ -580,7 +609,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
     final grouped = _groupDisciplinas(disciplinas);
     return Column(
       children: grouped.entries.map((entry) => Container(
-        margin: const EdgeInsets.fromLTRB(16, 0, 16, 30),
+        margin: const EdgeInsets.only(bottom: 30), // Removidas margens laterais para expandir além da tela
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(35),
@@ -628,7 +657,6 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(25),
-            boxShadow: AppShadows.topShadow,
           ),
           child: Stack(
             fit: StackFit.expand,
@@ -706,7 +734,7 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('ARENA ARCADE', style: TextStyle(color: AppColors.tertiary, fontSize: 32, fontWeight: FontWeight.w900, letterSpacing: 5, shadows: [Shadow(color: AppColors.accent, blurRadius: 10)])),
+                    Text('ARENA ARCADE', style: TextStyle(color: AppColors.tertiary, fontSize: 32, fontWeight: FontWeight.w900, letterSpacing: 5, shadows: [Shadow(color: AppColors.primary.withValues(alpha: 0.3), blurRadius: 7)])),
                     const SizedBox(height: 40),
                     SizedBox(
                       height: 350,
@@ -743,7 +771,8 @@ class _HomeScreenState extends State<HomeScreen> with WidgetsBindingObserver {
   }
 
   Future<void> _startArcade(BuildContext context, Disciplina d) async {
-    final String response = await rootBundle.loadString('assets/data/${d.id}.json');
+    final contentProvider = context.read<ContentProviderService>();
+    final String response = await contentProvider.getContent('${d.id}.json');
     final Map<String, dynamic> data = json.decode(response);
     final List<PerguntaQuiz> questions = (data['quizzes'] as List).expand((q) => (q['perguntas'] as List).map((p) => PerguntaQuiz.fromJson(p))).toList()..shuffle();
     if (context.mounted) Navigator.push(context, MaterialPageRoute(builder: (c)=>ArcadeQuizScreen(perguntas: questions, disciplinaNome: d.nome, disciplinaId: d.id)));
@@ -804,7 +833,7 @@ class _ModernArcadeCardState extends State<_ModernArcadeCard> with SingleTickerP
         onTap: widget.onTap,
         child: Container(
           width: 200,
-          decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(25), border: Border.all(color: AppColors.tertiary, width: 2), boxShadow: [BoxShadow(color: AppColors.tertiary.withValues(alpha: 0.5), blurRadius: 15)]),
+          decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(25), border: Border.all(color: AppColors.tertiary, width: 2), boxShadow: [BoxShadow(color: Colors.grey.shade400.withValues(alpha: 0.35), blurRadius: 10)]),
           clipBehavior: Clip.antiAlias,
           child: Stack(fit: StackFit.expand, children: [
             SafeAssetImage(path: widget.disciplina.animacao, fit: BoxFit.cover),

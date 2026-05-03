@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:caminho_do_saber/models/disciplina_model.dart';
 import 'package:caminho_do_saber/services/progresso_service.dart';
-import 'package:caminho_do_saber/services/disciplina_service.dart'; 
+import 'package:caminho_do_saber/services/disciplina_service.dart';
 import 'package:caminho_do_saber/ui/widgets/background_container.dart';
 import 'package:caminho_do_saber/ui/screens/conteudo_screen.dart';
 import 'package:caminho_do_saber/models/conteudo_disciplina_model.dart';
@@ -13,6 +13,8 @@ import 'package:caminho_do_saber/ui/theme/app_colors.dart';
 import 'package:caminho_do_saber/ui/widgets/safe_asset_image.dart';
 import 'package:caminho_do_saber/ui/widgets/neumorphic_wrapper.dart';
 import 'package:caminho_do_saber/ui/widgets/scale_press_wrapper.dart';
+
+import 'package:caminho_do_saber/ui/widgets/edu_loading_widget.dart';
 
 class CapitulosScreen extends StatefulWidget {
   final Disciplina disciplina;
@@ -62,92 +64,119 @@ class _CapitulosScreenState extends State<CapitulosScreen> {
     final progressoService = context.watch<ProgressoService>();
     final size = MediaQuery.of(context).size;
     final isTablet = size.width > 600;
-    final headerHeight = size.height * 0.28 > 220 ? 220.0 : size.height * 0.28;
+    final expandedHeaderHeight = size.height * 0.3 > 250 ? 250.0 : size.height * 0.3;
 
     return Scaffold(
-      extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        title: Text('LIÇÕES: ${widget.disciplina.nome}'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 20, color: Colors.white, letterSpacing: 1.2)),
-        centerTitle: false,
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
-          onPressed: () => Navigator.pop(context),
-        ),
-      ),
       body: BackgroundContainer(
         child: FutureBuilder<List<ConteudoCapitulo>>(
           future: _capitulosFuture,
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
+              return EduLoadingWidget(message: 'BAIXANDO LIÇÕES DA NUVEM...');
             }
             if (!snapshot.hasData || snapshot.data!.isEmpty) {
               return Center(child: Text('NENHUM CONTEÚDO DISPONÍVEL.'.toUpperCase(), style: const TextStyle(fontWeight: FontWeight.w900, color: Colors.grey)));
             }
 
             final capitulos = snapshot.data!;
-            return Column(
-              children: [
-                Stack(
-                  children: [
-                    Hero(
-                      tag: 'disciplina_bg_cap_${widget.disciplina.id}',
-                      child: SizedBox(height: headerHeight, width: double.infinity, child: SafeAssetImage(path: widget.disciplina.animacao, fit: BoxFit.cover)),
+            return NestedScrollView(
+              headerSliverBuilder: (context, innerBoxIsScrolled) {
+                return [
+                  SliverAppBar(
+                    expandedHeight: expandedHeaderHeight,
+                    pinned: true,
+                    elevation: 4,
+                    shadowColor: AppColors.primary.withValues(alpha: 0.1),
+                    backgroundColor: AppColors.primary,
+                    leading: IconButton(
+                      icon: const Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white),
+                      onPressed: () => Navigator.pop(context),
                     ),
-                    Container(
-                      height: headerHeight,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.bottomCenter,
-                          end: Alignment.topCenter,
-                          colors: [
-                            Colors.white,
-                            Colors.white.withValues(alpha: 0.5),
-                            Colors.transparent,
-                          ],
-                          stops: const [0.0, 0.3, 0.8],
+                    flexibleSpace: FlexibleSpaceBar(
+                      centerTitle: true,
+                      titlePadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                      title: AnimatedOpacity(
+                        duration: const Duration(milliseconds: 200),
+                        opacity: innerBoxIsScrolled ? 1.0 : 0.0,
+                        child: Text(
+                          widget.disciplina.nome.toUpperCase(),
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w900,
+                            fontSize: 16,
+                            letterSpacing: 1.2,
+                          ),
                         ),
                       ),
-                    ),
-                    Positioned(
-                      bottom: 25, left: 20, right: 20,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      background: Stack(
+                        fit: StackFit.expand,
                         children: [
-                          Text('MODO ESTUDO'.toUpperCase(), style: const TextStyle(color: AppColors.accent, fontSize: 12, fontWeight: FontWeight.w900, letterSpacing: 2)),
-                          Text(widget.disciplina.nome.toUpperCase(), style: const TextStyle(color: AppColors.primary, fontSize: 26, fontWeight: FontWeight.w900)),
+                          Hero(
+                            tag: 'disciplina_bg_cap_${widget.disciplina.id}',
+                            child: SafeAssetImage(path: widget.disciplina.animacao, fit: BoxFit.cover),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.bottomCenter,
+                                end: Alignment.topCenter,
+                                colors: [
+                                  Colors.white,
+                                  Colors.white.withValues(alpha: 0.4),
+                                  Colors.transparent,
+                                ],
+                                stops: const [0.0, 0.3, 0.7],
+                              ),
+                            ),
+                          ),
+                          Positioned(
+                            bottom: 25,
+                            left: 20,
+                            right: 20,
+                            child: AnimatedOpacity(
+                              duration: const Duration(milliseconds: 200),
+                              opacity: innerBoxIsScrolled ? 0.0 : 1.0,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text('MODO ESTUDO'.toUpperCase(),
+                                      style: const TextStyle(color: AppColors.accent, fontSize: 12, fontWeight: FontWeight.w900, letterSpacing: 2)),
+                                  Text(
+                                    widget.disciplina.nome.toUpperCase(),
+                                    style: const TextStyle(color: AppColors.primary, fontSize: 26, fontWeight: FontWeight.w900),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
-                  ],
-                ),
-                Expanded(
-                  child: GridView.builder(
-                    physics: const BouncingScrollPhysics(),
-                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 40),
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: isTablet ? 3 : 2,
-                      childAspectRatio: 0.9,
-                      crossAxisSpacing: 16,
-                      mainAxisSpacing: 16,
-                    ),
-                    itemCount: capitulos.length,
-                    itemBuilder: (context, index) {
-                      final capitulo = capitulos[index];
-                      final uniqueId = '${widget.disciplina.id}_${capitulo.id}';
-                      final isCompleted = progressoService.isCapituloConcluido(uniqueId);
-                      final score = progressoService.progressoPorCapitulo[uniqueId] ?? 0;
-                      
-                      final previousId = index > 0 ? '${widget.disciplina.id}_${capitulos[index - 1].id}' : null;
-                      final bool isAccessible = index == 0 || (previousId != null && progressoService.isCapituloConcluido(previousId));
-
-                      return _buildCapituloCard(context, index, capitulo, isCompleted, isAccessible, score);
-                    },
                   ),
+                ];
+              },
+              body: GridView.builder(
+                physics: const BouncingScrollPhysics(),
+                padding: const EdgeInsets.fromLTRB(16, 20, 16, 40),
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: isTablet ? 3 : 2,
+                  childAspectRatio: 0.9,
+                  crossAxisSpacing: 16,
+                  mainAxisSpacing: 16,
                 ),
-              ],
+                itemCount: capitulos.length,
+                itemBuilder: (context, index) {
+                  final capitulo = capitulos[index];
+                  final uniqueId = '${widget.disciplina.id}_${capitulo.id}';
+                  final isCompleted = progressoService.isCapituloConcluido(uniqueId);
+                  final score = progressoService.progressoPorCapitulo[uniqueId] ?? 0;
+
+                  final previousId = index > 0 ? '${widget.disciplina.id}_${capitulos[index - 1].id}' : null;
+                  final bool isAccessible = index == 0 || (previousId != null && progressoService.isCapituloConcluido(previousId));
+
+                  return _buildCapituloCard(context, index, capitulo, isCompleted, isAccessible, score);
+                },
+              ),
             );
           },
         ),

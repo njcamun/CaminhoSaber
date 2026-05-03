@@ -3,26 +3,18 @@
     {
       "palavra": "Conhecimento",
       "classe": "Substantivo",
-      "significado": "Ato ou efeito de conhecer; ideia, noção.",
+      "significado": "Ato ou efeito de conhecer; informação ou noção adquirida.",
       "sinonimo": "Sapiência, Saber",
       "antonimo": "Ignorância",
-      "exemplo": "O conhecimento é a base para o crescimento pessoal."
+      "exemplo": "O conhecimento liberta a mente."
     },
     {
-      "palavra": "Dedicação",
+      "palavra": "Educação",
       "classe": "Substantivo",
-      "significado": "Ato de se dedicar a algo ou alguém; empenho.",
-      "sinonimo": "Devotamento, Empenho",
-      "antonimo": "Desinteresse",
-      "exemplo": "A dedicação aos estudos traz bons resultados."
-    },
-    {
-      "palavra": "Sabedoria",
-      "classe": "Substantivo",
-      "significado": "Qualidade de quem é sábio; prudência.",
-      "sinonimo": "Prudência, Juízo",
-      "antonimo": "Insensatez",
-      "exemplo": "A sabedoria vem com a experiência e o estudo."
+      "significado": "Processo de facilitar o aprendizado ou a aquisição de conhecimentos.",
+      "sinonimo": "Ensino, Instrução",
+      "antonimo": "Incultura",
+      "exemplo": "A educação é a base de uma sociedade forte."
     }
   ]
 }

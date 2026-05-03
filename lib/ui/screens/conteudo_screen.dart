@@ -153,8 +153,8 @@ class _ConteudoScreenState extends State<ConteudoScreen> {
                           borderRadius: BorderRadius.circular(30),
                           boxShadow: [
                             BoxShadow(
-                              color: (isCompleted ? AppColors.success : AppColors.primary).withValues(alpha: 0.4),
-                              blurRadius: 15,
+                              color: Colors.grey.shade400.withValues(alpha: 0.28),
+                              blurRadius: 10,
                               offset: const Offset(0, 8),
                             )
                           ],

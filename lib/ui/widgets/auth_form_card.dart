@@ -16,10 +16,10 @@ class AuthFormCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(25),
         boxShadow: [
           BoxShadow(
-            color: AppColors.primary.withValues(alpha: 0.12),
-            blurRadius: 10,
+            color: AppColors.primary.withValues(alpha: 0.1),
+            blurRadius: 7,
             spreadRadius: 1,
-            offset: Offset.zero, // Sombra em todos os lados
+            offset: Offset.zero,
           ),
         ],
       ),

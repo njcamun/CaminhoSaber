@@ -554,7 +554,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                           color: AppColors.primary.withValues(alpha: 0.9),
                           borderRadius: BorderRadius.circular(25),
                           border: Border.all(color: Colors.white24, width: 1.5),
-                          boxShadow: const [BoxShadow(color: Colors.black38, blurRadius: 10, offset: Offset(0, 4))],
+                          boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.15), blurRadius: 7, offset: const Offset(0, 4))],
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -589,7 +589,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
                           decoration: BoxDecoration(
                             color: _feedbackColor,
                             borderRadius: BorderRadius.circular(25),
-                            boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 10, offset: Offset(0, 4))],
+                            boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.1), blurRadius: 7, offset: const Offset(0, 4))],
                           ),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
@@ -625,7 +625,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(25),
-        boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 4, offset: Offset(0, 2))],
+        boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.1), blurRadius: 3, offset: const Offset(0, 2))],
       ),
       child: Row(
         children: [
@@ -659,7 +659,7 @@ class _ArcadeQuizScreenState extends State<ArcadeQuizScreen> with TickerProvider
           decoration: BoxDecoration(
             color: color,
             borderRadius: BorderRadius.circular(25),
-            boxShadow: [BoxShadow(color: color.withValues(alpha: 0.5), blurRadius: 4)],
+            boxShadow: [BoxShadow(color: AppColors.primary.withValues(alpha: 0.1), blurRadius: 3)],
           ),
         ),
       ),

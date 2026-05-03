@@ -72,9 +72,9 @@ class _PointsFlyerState extends State<PointsFlyer> with SingleTickerProviderStat
                   borderRadius: BorderRadius.circular(25),
                   boxShadow: [
                     BoxShadow(
-                      color: AppColors.accent.withValues(alpha: 0.4),
-                      blurRadius: 10,
-                      spreadRadius: 2,
+                      color: AppColors.primary.withValues(alpha: 0.15),
+                      blurRadius: 7,
+                      spreadRadius: 1,
                     )
                   ],
                 ),
